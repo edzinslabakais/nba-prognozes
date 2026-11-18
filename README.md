@@ -33,6 +33,14 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 (`notify.py` var pēc izvēles sūtīt Telegram ziņas, ja tiek iestatīti noslēpumi
 `TELEGRAM_BOT_TOKEN` un `TELEGRAM_CHAT_ID`; pašlaik tas netiek izmantots.)
 
+### Crazy Dazy
+
+Katru vakaru robots no visām nakts spēlēm izvēlas arī 3 likmes ar koeficientu **4.0 vai vairāk**
+(katru no citas spēles), kurām ir vislielākā iespēja iziet. Tās var būt lieli handikapi,
+virs/zem līnijas, komandas punkti, uzvaras starpības diapazoni, kombinācijas (uzvarētājs + virs/zem)
+vai lieli underdogi. Tās tiek noslēgtas no rīta, un tām ir sava statistika (lapas apakšā).
+Pie koeficienta 4 reāla iespēja ir ap 20–23 %, tātad parasti iziet 1 no 4–5.
+
 ## Prognožu spēlei: LIKMES un REZULTĀTI
 
 ```bash

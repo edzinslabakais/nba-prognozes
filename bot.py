@@ -38,13 +38,13 @@ LINES = [x + 0.5 for x in range(-40, 40)]
 
 # --------------------------------------------------------------------------- LIKMES
 
-def _best(g: B.Grid, make, lines, pmax: float, lean_fn) -> tuple[B.Bet, float, float] | None:
+def _best(g: B.Grid, make, lines, pmax: float, lean_fn, pmin: float = 0.15) -> tuple[B.Bet, float, float] | None:
     """Highest-probability line whose estimated bookmaker odds are still >= min odds."""
     best = None
     for L in lines:
         b = make(L)
         p, push = g.prob(b)
-        if push > 0 or p > pmax or p < 0.15:
+        if push > 0 or p > pmax or p < pmin:
             continue
         score = p + 0.004 * lean_fn(L)
         if best is None or score > best[2]:
@@ -102,6 +102,84 @@ def pick_for_game(r, min_odds: float) -> list[dict]:
     return picks[:3]
 
 
+# --------------------------------------------------------------------------- CRAZY DAZY
+
+CRAZY_MIN_ODDS = 4.0
+CRAZY_COUNT = 3
+
+
+def _leans(r) -> tuple[float, float]:
+    lean_m = (r.model_margin_home - r.margin_home) if r.has_market else 0.0      # + => home
+    has_mt = r.market_total is not None and pd.notna(r.market_total)
+    lean_t = (r.model_total - r.total) if has_mt else 0.0                         # + => over
+    return lean_m, lean_t
+
+
+def crazy_for_game(r, min_odds: float) -> tuple[B.Bet, float, float, str] | None:
+    """The most likely bet in this game whose estimated odds are still >= min_odds (e.g. 4.0)."""
+    g = B.grid_for(r)
+    pmax, pmin = B.PAYOUT / min_odds, 0.08
+    H, A = r.home, r.away
+    lean_m, lean_t = _leans(r)
+    cands: list[tuple[B.Bet, float, float, str]] = []
+
+    def add(bet, lean, cat):
+        p, push = g.prob(bet)
+        if push == 0 and pmin <= p <= pmax:
+            cands.append((bet, p, p + 0.004 * lean, cat))
+
+    def add_best(c, cat):
+        if c:
+            cands.append((*c, cat))
+
+    t_main = B.half(r.total)
+    for team, home in ((H, True), (A, False)):
+        sgn = 1 if home else -1
+        add_best(_best(g, lambda L, t=team, h=home: B.bet_handicap(t, h, L), LINES, pmax,
+                       lambda L, s=sgn: s * lean_m, pmin), "handikaps")
+        add(B.bet_ml(team, home), sgn * lean_m, "uzvarētājs")
+        for lo, hi in ((1, 5), (6, 10), (11, 15), (16, 20), (21, 999)):
+            add(B.bet_band(team, home, lo, hi), sgn * lean_m, "uzvaras starpība")
+        for over in (True, False):
+            s = 1 if over else -1
+            add(B.bet_combo([B.bet_ml(team, home), B.bet_total(over, t_main)]),
+                sgn * lean_m + s * lean_t, "kombinācija")
+        exp = (r.total + (r.margin_home if home else -r.margin_home)) / 2
+        lean_team = (lean_t + (lean_m if home else -lean_m)) / 2
+        tl = [round(exp) + x + 0.5 for x in range(-35, 35)]
+        for over in (True, False):
+            s = 1 if over else -1
+            add_best(_best(g, lambda L, t=team, h=home, o=over: B.bet_team_total(t, h, o, L), tl, pmax,
+                           lambda L, s=s, lt=lean_team: s * lt, pmin), "komandas punkti")
+    tot_lines = [round(r.total) + x + 0.5 for x in range(-50, 50)]
+    for over in (True, False):
+        s = 1 if over else -1
+        add_best(_best(g, lambda L, o=over: B.bet_total(o, L), tot_lines, pmax, lambda L, s=s: s * lean_t, pmin),
+                 "kopā")
+    return max(cands, key=lambda c: c[2]) if cands else None
+
+
+def pick_crazy(df: pd.DataFrame, min_odds: float = CRAZY_MIN_ODDS, n: int = CRAZY_COUNT) -> list[dict]:
+    """Best long shot per game, then the n games where it is most likely (one bet per game)."""
+    rows = []
+    for r in df.itertuples():
+        c = crazy_for_game(r, min_odds)
+        if c:
+            b, p, score, cat = c
+            rows.append({"game_id": r.game_id, "game": f"{r.away}@{r.home}", "start_utc": str(r.start_utc),
+                         "riga_time": r.riga_time, "category": cat, "bet": b.label, "p": p, "_score": score})
+    rows.sort(key=lambda x: -x["_score"])
+    out = []
+    for x in rows[:n]:
+        x.pop("_score")
+        x["fair_odds"] = round(1 / x["p"], 2)
+        x["est_odds"] = round(B.PAYOUT / x["p"], 2)
+        x["confidence"] = int(round(100 * x["p"]))
+        x["result"] = None
+        out.append(x)
+    return out
+
+
 def cmd_likmes(args) -> None:
     MESSAGE.unlink(missing_ok=True)
     params = P.load_params()
@@ -153,6 +231,12 @@ def cmd_likmes(args) -> None:
                          for n, s, d in a.notes[:3]],
         }
 
+    crazy = pick_crazy(df)
+    print(f"\nCRAZY DAZY — 3 reālākās likmes ar koeficientu >= {CRAZY_MIN_ODDS:g}:")
+    for i, x in enumerate(crazy, 1):
+        print(f"  {i}. {x['game']:<10} {x['bet']:<26} drošība {x['confidence']:>3}/100   "
+              f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
+
     HIST.mkdir(exist_ok=True)
     f = HIST / f"{day:%Y-%m-%d}.json"
     old = json.loads(f.read_text()) if f.exists() else {"picks": [], "games": {}}
@@ -161,9 +245,13 @@ def cmd_likmes(args) -> None:
     keep = [p for p in old["picks"] if p["game_id"] in started]
     record = keep + [p for p in record if p["game_id"] not in started]
     games_all = {**{k: v for k, v in old.get("games", {}).items() if k in started}, **games_info}
+    # once any Crazy Dazy game has started, the Crazy Dazy list for the night is frozen
+    old_crazy = old.get("crazy", [])
+    if any(c["game_id"] in started for c in old_crazy):
+        crazy = old_crazy
     f.write_text(json.dumps({"date": str(day), "min_odds": args.min_odds,
                              "generated_at": now.isoformat(timespec="minutes"),
-                             "games": games_all, "picks": record},
+                             "games": games_all, "picks": record, "crazy": crazy},
                             indent=1, ensure_ascii=False))
     export_all()
     write_message(day.isoformat(), "likmes")
@@ -191,7 +279,7 @@ def settle(path: Path) -> tuple[dict, int]:
         return rec, 0
     by_id = {g.game_id: g for g in games.itertuples()}
     n_new = 0
-    for p in rec["picks"]:
+    for p in rec["picks"] + rec.get("crazy", []):
         if p.get("result"):
             continue
         g = by_id.get(p["game_id"])
@@ -244,6 +332,14 @@ def cmd_rezultati(args) -> None:
 
     all_picks = [p for r in recs for p in r["picks"]]
     print(f"Kopā ({len(recs)} dienas): {_stats(all_picks)}")
+    if show.get("crazy"):
+        print(f"\nCRAZY DAZY (koef. >= {CRAZY_MIN_ODDS:g}):")
+        for p in show["crazy"]:
+            res = p.get("result")
+            print(f"  {ICON[res]} {p['game']:<10} {p['bet']:<26} drošība {p['confidence']:>3}/100   ~{p['est_odds']:.2f}   {res or 'gaida'}")
+        all_crazy = [p for r in recs for p in r.get("crazy", [])]
+        print(f"  Crazy Dazy šī diena: {_stats(show['crazy'])}")
+        print(f"  Crazy Dazy kopā: {_stats(all_crazy)}")
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     if len(done) >= 20:
         print("\nKalibrācija (vai drošības % atbilst realitātei):")
@@ -288,7 +384,7 @@ def export_all() -> None:
     """Write export/nights/<date>.json + export/stats.json (what the phone page shows)."""
     files = sorted(HIST.glob("*.json")) if HIST.exists() else []
     (EXPORT / "nights").mkdir(parents=True, exist_ok=True)
-    all_picks, nights = [], []
+    all_picks, all_crazy, nights = [], [], []
     for f in files:
         rec = json.loads(f.read_text())
         games = rec.get("games", {})
@@ -304,12 +400,20 @@ def export_all() -> None:
             score = next((p.get("score") for p in picks if p.get("score")), None)
             out_games.append({**info, "score": score, "picks": picks})
         out_games.sort(key=lambda g: g.get("start_utc", ""))
+        crazy = rec.get("crazy", [])
+        scores = {g["game_id"]: g.get("score") for g in out_games}
+        crazy_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet",
+                                                "confidence", "fair_odds", "est_odds", "result")},
+                      "score": c.get("score") or scores.get(c["game_id"])} for c in crazy]
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
-               "summary": _summary(rec["picks"])}
+               "summary": _summary(rec["picks"]),
+               "crazy_min_odds": CRAZY_MIN_ODDS, "crazy": crazy_out, "crazy_summary": _summary(crazy)}
         (EXPORT / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
-        nights.append({"date": rec["date"], **_summary(rec["picks"])})
+        all_crazy += crazy
+        nights.append({"date": rec["date"], **_summary(rec["picks"]),
+                       "crazy": _summary(crazy)})
     buckets = []
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     for lo, hi in ((0, 35), (35, 40), (40, 45), (45, 101)):
@@ -318,7 +422,8 @@ def export_all() -> None:
             buckets.append({"range": f"{lo}-{min(hi, 100) - 1}", "n": len(b),
                             "hit_rate": round(sum(p["result"] == "izgāja" for p in b) / len(b), 3),
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
-    stats = {"overall": _summary(all_picks), "nights": nights, "calibration": buckets,
+    stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy),
+             "nights": nights, "calibration": buckets,
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
     (EXPORT / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
     write_markdown(stats)
@@ -364,6 +469,10 @@ def write_message(us_date: str, mode: str) -> None:
                 lines.append(f"{i}. {p['bet']} — {p['confidence']}/100 (~{p['est_odds']:.2f})")
             if g.get("injuries"):
                 lines.append("   ⚕ " + "; ".join(g["injuries"][:2]))
+        if doc.get("crazy"):
+            lines.append(f"\n🎲 CRAZY DAZY (koef. ≥ {doc['crazy_min_odds']:g})")
+            for c in doc["crazy"]:
+                lines.append(f"• {c['game']}: {c['bet']} — {c['confidence']}/100 (~{c['est_odds']:.2f})")
     else:
         s = doc["summary"]
         lines.append(f"📊 NBA REZULTĀTI — nakts uz {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
@@ -371,7 +480,14 @@ def write_message(us_date: str, mode: str) -> None:
             lines.append(f"\n{g.get('score') or g['away'] + ' @ ' + g['home'] + ' (vēl nav beigusies)'}")
             for p in g["picks"]:
                 lines.append(f"{RES_ICON.get(p.get('result'), '⏳')} {p['bet']} ({p['confidence']}/100)")
+        if doc.get("crazy"):
+            cs = doc["crazy_summary"]
+            lines.append(f"\n🎲 CRAZY DAZY: izgāja {cs['hits']}/{cs['settled']}")
+            for c in doc["crazy"]:
+                lines.append(f"{RES_ICON.get(c.get('result'), '⏳')} {c['game']}: {c['bet']} (~{c['est_odds']:.2f})")
         lines.append(f"\nKopā: {_overall_line(stats['overall'])}")
+        if stats.get("crazy_overall", {}).get("settled"):
+            lines.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
     EXPORT.mkdir(exist_ok=True)
     MESSAGE.write_text("\n".join(lines) + "\n")
 
@@ -410,7 +526,19 @@ def write_markdown(stats: dict) -> None:
             if g.get("injuries"):
                 out += ["", "Savainojumi/sastāvs: " + "; ".join(g["injuries"])]
             out.append("")
-    out += ["## Statistika", "", f"Kopā: {_overall_line(stats['overall'])}", ""]
+        if doc.get("crazy"):
+            out += [f"## 🎲 Crazy Dazy — koef. ≥ {doc['crazy_min_odds']:g}", "",
+                    "3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet.", "",
+                    "| Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |", "|---|---|---|---|---|---|"]
+            for c in doc["crazy"]:
+                res = f"{RES_ICON[c['result']]} {c['result']}" if c.get("result") in RES_ICON else "⏳ gaida"
+                out.append(f"| {c['game']} | **{c['bet']}** | {c['confidence']}/100 | {c['est_odds']:.2f} | "
+                           f"{c['fair_odds']:.2f} | {res} |")
+            out.append("")
+    out += ["## Statistika", "", f"Kopā: {_overall_line(stats['overall'])}"]
+    if stats.get("crazy_overall", {}).get("picks"):
+        out.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
+    out.append("")
     rows = [n for n in reversed(stats["nights"]) if n["settled"]][:14]
     if rows:
         out += ["| Nakts | Izgāja | Robots gaidīja | Vienības |", "|---|---|---|---|"]

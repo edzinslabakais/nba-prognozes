@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "min_odds": 2.1,
- "generated_at": "2026-11-18T20:13+00:00",
+ "generated_at": "2026-11-18T20:30+00:00",
  "games": [
   {
    "game_id": "401910007",
@@ -152,10 +152,10 @@
    "home_record": "6-7",
    "start_utc": "2026-11-19 00:00:00+00:00",
    "riga_time": "19.11 02:00",
-   "robot_line": "ORL -1.5",
-   "robot_total": 222.5,
-   "market_line": "ORL -1.5",
-   "market_total": 222.5,
+   "robot_line": "PHI -1.2",
+   "robot_total": 221.5,
+   "market_line": "PHI -1.5",
+   "market_total": 221.5,
    "injuries": [
     "PHI: Jaylen Brown (Out) -1.9",
     "PHI: LeBron James (spēlēja 7/10 pēdējās) +0.4"
@@ -164,25 +164,25 @@
    "picks": [
     {
      "category": "kopā",
-     "bet": "virs 225.5",
+     "bet": "virs 224.5",
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 44,
+     "result": null
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "PHI zem 109.5",
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
      "result": null
     },
     {
-     "category": "komandas punkti",
-     "bet": "PHI virs 112.5",
-     "fair_odds": 2.32,
-     "est_odds": 2.16,
-     "confidence": 43,
-     "result": null
-    },
-    {
      "category": "starpība",
-     "bet": "PHI -1.5",
-     "fair_odds": 2.34,
-     "est_odds": 2.18,
+     "bet": "ORL -1.5",
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
      "confidence": 43,
      "result": null
     }
@@ -199,9 +199,9 @@
    "start_utc": "2026-11-19 00:30:00+00:00",
    "riga_time": "19.11 02:30",
    "robot_line": "BKN -2.5",
-   "robot_total": 240.5,
+   "robot_total": 239.5,
    "market_line": "BKN -2.5",
-   "market_total": 240.5,
+   "market_total": 239.5,
    "injuries": [
     "CHI: Caleb Wilson (Out) -0.9",
     "CHI: Nic Claxton (spēlēja 4/10 pēdējās) +0.5"
@@ -210,17 +210,17 @@
    "picks": [
     {
      "category": "kopā",
-     "bet": "virs 243.5",
+     "bet": "virs 242.5",
      "fair_odds": 2.3,
      "est_odds": 2.14,
-     "confidence": 43,
+     "confidence": 44,
      "result": null
     },
     {
      "category": "komandas punkti",
-     "bet": "BKN virs 123.5",
-     "fair_odds": 2.31,
-     "est_odds": 2.15,
+     "bet": "CHI virs 120.5",
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
      "confidence": 43,
      "result": null
     },
@@ -340,9 +340,9 @@
    "home_record": "9-5",
    "start_utc": "2026-11-19 01:00:00+00:00",
    "riga_time": "19.11 03:00",
-   "robot_line": "OKC -6.0",
+   "robot_line": "OKC -6.9",
    "robot_total": 228.5,
-   "market_line": "OKC -5.5",
+   "market_line": "OKC -6.5",
    "market_total": 228.5,
    "injuries": [
     "ATL: CJ McCollum (Out) -1.2",
@@ -352,27 +352,27 @@
    "score": null,
    "picks": [
     {
-     "category": "komandas punkti",
-     "bet": "ATL zem 109.5",
-     "fair_odds": 2.26,
-     "est_odds": 2.1,
-     "confidence": 44,
-     "result": null
-    },
-    {
-     "category": "starpība",
-     "bet": "OKC -8.5",
-     "fair_odds": 2.28,
-     "est_odds": 2.12,
-     "confidence": 44,
-     "result": null
-    },
-    {
      "category": "kopā",
      "bet": "zem 225.5",
      "fair_odds": 2.3,
      "est_odds": 2.14,
-     "confidence": 44,
+     "confidence": 43,
+     "result": null
+    },
+    {
+     "category": "starpība",
+     "bet": "OKC -9.5",
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "ATL zem 108.5",
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
      "result": null
     }
    ]
@@ -564,6 +564,53 @@
  ],
  "summary": {
   "picks": 36,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401910013",
+   "game": "DET@NO",
+   "riga_time": "19.11 03:00",
+   "category": "kopā",
+   "bet": "virs 239.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910010",
+   "game": "PHI@ORL",
+   "riga_time": "19.11 02:00",
+   "category": "kombinācija",
+   "bet": "ORL uzvar & virs 221.5",
+   "confidence": 23,
+   "fair_odds": 4.32,
+   "est_odds": 4.02,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910012",
+   "game": "WSH@TOR",
+   "riga_time": "19.11 02:30",
+   "category": "kopā",
+   "bet": "virs 239.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
   "settled": 0,
   "hits": 0,
   "pushes": 0,

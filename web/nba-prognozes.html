@@ -19,6 +19,8 @@
   --bad-soft: #F8E0E1;
   --neutral-soft: #ECEEF2;
   --track: #E6E9EF;
+  --wild: #7A3FD1;
+  --wild-soft: #EEE6FB;
   --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -26,14 +28,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0C111A; --surface: #141B27; --ink: #E7EBF2; --muted: #93A0B4; --line: #253043;
     --accent: #F07B40; --accent-soft: #3A2317; --good: #45C584; --good-soft: #16301F;
-    --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A;
+    --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A; --wild: #B48AF5; --wild-soft: #2A1E40;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0C111A; --surface: #141B27; --ink: #E7EBF2; --muted: #93A0B4; --line: #253043;
   --accent: #F07B40; --accent-soft: #3A2317; --good: #45C584; --good-soft: #16301F;
-  --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A;
+  --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A; --wild: #B48AF5; --wild-soft: #2A1E40;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -119,6 +121,16 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .next .clock { font: 700 28px/1 var(--font-display); font-variant-numeric: tabular-nums; letter-spacing: 0.03em; color: var(--accent); }
 .next.live .clock { font-size: 18px; letter-spacing: 0.01em; }
 .next.live { border-color: var(--accent); background: var(--accent-soft); }
+.crazy { display: flex; flex-direction: column; gap: 10px; }
+.crazy h2 { color: var(--wild); }
+.crazy .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
+.crazy-list { background: var(--surface); border: 1px solid var(--wild); border-radius: 12px; overflow: hidden; }
+.crazy-list .picks { border-top: 0; }
+.crazy-list .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
+.crazy-list .odds b, .crazy-list .conf { color: var(--wild); }
+.crazy-list .bar i { background: var(--wild); }
+.crazy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.crazy-stats .stat b { color: var(--wild); }
 .warn { font-size: 13px; color: var(--bad); }
 table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
 th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
@@ -157,6 +169,17 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div class="tbl"><table><thead><tr><th>Drošība</th><th>Likmes</th><th>Izgāja</th><th>Robots gaidīja</th></tr></thead><tbody id="calibBody"></tbody></table></div>
   </section>
 
+  <section class="crazy" id="crazy" hidden>
+    <h2>Crazy Dazy</h2>
+    <p class="intro" id="crazyIntro">3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet. Katra ir no citas spēles.</p>
+    <div class="crazy-list"><ul class="picks" id="crazyList"></ul></div>
+    <div class="crazy-stats">
+      <div class="stat"><b id="c1">–</b><span id="c1l">Šonakt izgāja</span></div>
+      <div class="stat"><b id="c2">–</b><span id="c2l">Kopā izgāja</span></div>
+      <div class="stat"><b id="c3">–</b><span>Vienības kopā</span></div>
+    </div>
+  </section>
+
   <section class="note">
     <h2>Kā lasīt</h2>
     <p><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
@@ -175,7 +198,9 @@ const RESULT = {
   "neizgāja": ["loss", "Neizgāja"],
   "atgriezts": ["push", "Atgriezts"],
 };
-const CAT = { "starpība": "Uzvarētājs / handikaps", "kopā": "Kopējie punkti", "komandas punkti": "Komandas punkti" };
+const CAT = { "starpība": "Uzvarētājs / handikaps", "kopā": "Kopējie punkti", "komandas punkti": "Komandas punkti",
+  "handikaps": "Handikaps", "uzvarētājs": "Uzvarētājs", "uzvaras starpība": "Uzvaras starpība",
+  "kombinācija": "Kombinācija (abām daļām jāiziet)" };
 
 function nightLabel(dateStr) {
   // US date -> the Riga night that ends the next morning
@@ -218,6 +243,45 @@ function renderStrip(night) {
   }
 }
 
+function pickRow(p, gameTag) {
+  const [cls, word] = RESULT[p.result] || ["wait", "Gaida"];
+  const li = el("li", "pick " + (cls === "wait" ? "" : cls));
+  const left = el("div");
+  if (gameTag) left.append(el("span", "game-tag", gameTag));
+  left.append(el("div", "bet", p.bet));
+  left.append(el("span", "cat", CAT[p.category] || p.category || ""));
+  const right = el("div", "odds");
+  right.append(el("b", null, "~" + Number(p.est_odds).toFixed(2)));
+  right.append(el("small", null, "godīgais " + Number(p.fair_odds).toFixed(2)));
+  const meter = el("div", "meter");
+  meter.append(el("span", "pill " + cls, word));
+  const bar = el("div", "bar"); bar.setAttribute("role", "img"); bar.setAttribute("aria-label", `Drošība ${p.confidence} no 100`);
+  const fill = el("i"); fill.style.width = Math.max(0, Math.min(100, p.confidence)) + "%"; bar.append(fill);
+  const conf = el("span", "conf", String(p.confidence)); conf.append(el("small", null, "/100"));
+  meter.append(bar, conf);
+  li.append(left, right, meter);
+  return li;
+}
+
+function renderCrazy(night) {
+  const list = night?.crazy || [];
+  $("crazy").hidden = !list.length;
+  if (!list.length) return;
+  $("crazyIntro").textContent = `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${night.crazy_min_odds ?? 4}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`;
+  $("crazyList").replaceChildren(...list.map((c) => {
+    const time = (c.riga_time || "").split(" ")[1] || "";
+    const tag = `${c.game.replace("@", " @ ")}${time ? " · " + time : ""}${c.score ? " · " + c.score : ""}`;
+    return pickRow(c, tag);
+  }));
+  const s = night.crazy_summary || {};
+  $("c1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
+  $("c1l").textContent = s.settled ? "Šonakt izgāja" : "Šonakt gaida";
+  const o = state.stats?.crazy_overall;
+  $("c2").textContent = o && o.settled ? `${o.hits}/${o.settled}` : "–";
+  $("c2l").textContent = o && o.settled ? `Kopā izgāja (gaidīts ${o.expected_hits.toFixed(1)})` : "Kopā izgāja";
+  $("c3").textContent = o && o.settled ? signed(o.profit_units) : "–";
+}
+
 function renderGame(g) {
   const card = el("article", "game");
   const head = el("div", "game-head");
@@ -238,24 +302,7 @@ function renderGame(g) {
   if (g.score) card.append(el("div", "final", "Gala rezultāts: " + g.score));
 
   const ul = el("ul", "picks");
-  for (const p of g.picks || []) {
-    const [cls, word] = RESULT[p.result] || ["wait", "Gaida"];
-    const li = el("li", "pick " + (cls === "wait" ? "" : cls));
-    const left = el("div");
-    left.append(el("div", "bet", p.bet));
-    left.append(el("span", "cat", CAT[p.category] || p.category || ""));
-    const right = el("div", "odds");
-    right.append(el("b", null, "~" + Number(p.est_odds).toFixed(2)));
-    right.append(el("small", null, "godīgais " + Number(p.fair_odds).toFixed(2)));
-    const meter = el("div", "meter");
-    meter.append(el("span", "pill " + cls, word));
-    const bar = el("div", "bar"); bar.setAttribute("role", "img"); bar.setAttribute("aria-label", `Drošība ${p.confidence} no 100`);
-    const fill = el("i"); fill.style.width = Math.max(0, Math.min(100, p.confidence)) + "%"; bar.append(fill);
-    const conf = el("span", "conf", String(p.confidence)); conf.append(el("small", null, "/100"));
-    meter.append(bar, conf);
-    li.append(left, right, meter);
-    ul.append(li);
-  }
+  for (const p of g.picks || []) ul.append(pickRow(p));
   card.append(ul);
 
   if (g.injuries && g.injuries.length) {
@@ -286,6 +333,7 @@ function render() {
     $("sub").textContent = `Nakts uz ${nightLabel(night.date)} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${night.min_odds ?? 2.1}`;
     box.replaceChildren(...(night.games || []).map(renderGame));
   }
+  renderCrazy(night);
   const cal = state.stats?.calibration || [];
   $("calib").hidden = !cal.length;
   $("calibBody").replaceChildren(...cal.map((c) => {

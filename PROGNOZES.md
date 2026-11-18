@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 18.11.2026 22:13 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 22:31 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 12 spēles, koef. ≥ 2.1
 
@@ -40,23 +40,23 @@ Robots: **MIA -11.7**, kopā 237.5 · bukmeikeri: MIA -11.5, kopā 237.5
 Savainojumi/sastāvs: MIL: Ryan Rollins (Out) -0.6
 
 ### PHI @ ORL · 02:00
-Robots: **ORL -1.5**, kopā 222.5 · bukmeikeri: ORL -1.5, kopā 222.5
+Robots: **PHI -1.2**, kopā 221.5 · bukmeikeri: PHI -1.5, kopā 221.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **PHI virs 112.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
-| 3 | **PHI -1.5** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
+| 1 | **virs 224.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **PHI zem 109.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **ORL -1.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: PHI: Jaylen Brown (Out) -1.9; PHI: LeBron James (spēlēja 7/10 pēdējās) +0.4
 
 ### CHI @ BKN · 02:30
-Robots: **BKN -2.5**, kopā 240.5 · bukmeikeri: BKN -2.5, kopā 240.5
+Robots: **BKN -2.5**, kopā 239.5 · bukmeikeri: BKN -2.5, kopā 239.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **virs 243.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **BKN virs 123.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 | **virs 242.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **CHI virs 120.5** | 43/100 | 2.17 | 2.33 | ⏳ gaida |
 | 3 | **BKN -5.5** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
 
 Savainojumi/sastāvs: CHI: Caleb Wilson (Out) -0.9; CHI: Nic Claxton (spēlēja 4/10 pēdējās) +0.5
@@ -84,13 +84,13 @@ Robots: **DET -4.5**, kopā 225.5 · bukmeikeri: DET -4.5, kopā 225.5
 Savainojumi/sastāvs: NO: Dejounte Murray (Out) -0.5; NO: Trey Murphy III (Out) -0.5; NO: Yves Missi (spēlēja 2/10 pēdējās) +0.8; DET: Duncan Robinson (Out) -1.3; DET: Cade Cunningham (Day-To-Day) -1.2
 
 ### ATL @ OKC · 03:00
-Robots: **OKC -6.0**, kopā 228.5 · bukmeikeri: OKC -5.5, kopā 228.5
+Robots: **OKC -6.9**, kopā 228.5 · bukmeikeri: OKC -6.5, kopā 228.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **ATL zem 109.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
-| 2 | **OKC -8.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 3 | **zem 225.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 | **zem 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **OKC -9.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **ATL zem 108.5** | 42/100 | 2.20 | 2.36 | ⏳ gaida |
 
 Savainojumi/sastāvs: ATL: CJ McCollum (Out) -1.2; ATL: Kingston Flemings (Out) -0.4; ATL: Corey Kispert (spēlēja 5/10 pēdējās) +0.4
 
@@ -138,6 +138,17 @@ Robots: **PHX -7.5**, kopā 226.5 · bukmeikeri: PHX -7.5, kopā 226.5
 
 Savainojumi/sastāvs: PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4
 
+## 🎲 Crazy Dazy — koef. ≥ 4
+
+3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet.
+
+| Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| DET@NO | **virs 239.5** | 22/100 | 4.20 | 4.52 | ⏳ gaida |
+| PHI@ORL | **ORL uzvar & virs 221.5** | 23/100 | 4.02 | 4.32 | ⏳ gaida |
+| WSH@TOR | **virs 239.5** | 22/100 | 4.20 | 4.52 | ⏳ gaida |
+
 ## Statistika
 
 Kopā: vēl nav noslēgtu likmju
+Crazy Dazy kopā: vēl nav noslēgtu likmju

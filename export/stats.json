@@ -7,6 +7,14 @@
   "expected_hits": 0,
   "profit_units": 0
  },
+ "crazy_overall": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
  "nights": [
   {
    "date": "2026-11-18",
@@ -15,9 +23,17 @@
    "hits": 0,
    "pushes": 0,
    "expected_hits": 0,
-   "profit_units": 0
+   "profit_units": 0,
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
   }
  ],
  "calibration": [],
- "updated_at": "2026-11-18T20:13+00:00"
+ "updated_at": "2026-11-18T20:31+00:00"
 }
