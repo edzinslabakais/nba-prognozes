@@ -110,6 +110,15 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .note p { margin: 0 0 8px; }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 22px 18px; color: var(--muted); }
 .empty b { color: var(--ink); display: block; font: 700 22px var(--font-display); margin-bottom: 4px; }
+.next {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px;
+}
+.next .lbl { font-size: 13px; color: var(--muted); min-width: 0; }
+.next .lbl b { color: var(--ink); font-weight: 600; }
+.next .clock { font: 700 28px/1 var(--font-display); font-variant-numeric: tabular-nums; letter-spacing: 0.03em; color: var(--accent); }
+.next.live .clock { font-size: 18px; letter-spacing: 0.01em; }
+.next.live { border-color: var(--accent); background: var(--accent-soft); }
 .warn { font-size: 13px; color: var(--bad); }
 table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
 th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
@@ -124,6 +133,11 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <h1>NBA <span>prognozes</span></h1>
     <p class="sub" id="sub">Ielādē nakts likmes…</p>
   </header>
+
+  <div class="next" id="next" role="status" aria-live="off">
+    <span class="lbl" id="nextLbl">Nākamais atjauninājums</span>
+    <span class="clock" id="nextClock">--:--:--</span>
+  </div>
 
   <nav class="nights" id="nights" aria-label="Izvēlies nakti"></nav>
 
@@ -282,6 +296,77 @@ function render() {
   const upd = state.stats?.updated_at;
   $("updated").textContent = upd ? "Atjaunināts: " + new Date(upd).toLocaleString("lv-LV", { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
 }
+
+// ---- countdown to the next automatic update (21:30 picks, 08:30 results, Riga time)
+const SLOTS = [{ h: 8, m: 30, name: "Rezultāti" }, { h: 21, m: 30, name: "Likmes" }];
+const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
+  day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
+
+function rigaParts(date) {
+  const o = {};
+  for (const p of RIGA_FMT.formatToParts(date)) o[p.type] = Number(p.value);
+  return o;
+}
+function rigaToUtc(y, mo, d, h, mi) {
+  // find the UTC instant whose Riga wall-clock time is y-mo-d h:mi
+  let guess = Date.UTC(y, mo - 1, d, h, mi);
+  for (let i = 0; i < 2; i++) {
+    const p = rigaParts(new Date(guess));
+    const asUtc = Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute);
+    guess -= asUtc - Date.UTC(y, mo - 1, d, h, mi);
+  }
+  return guess;
+}
+function slotTimes(now) {
+  const out = [];
+  for (let k = -1; k <= 2; k++) {
+    const p = rigaParts(new Date(now + k * 86400000));
+    for (const s of SLOTS) out.push({ t: rigaToUtc(p.year, p.month, p.day, s.h, s.m), ...s });
+  }
+  return out.sort((a, b) => a.t - b.t);
+}
+const pad = (n) => String(n).padStart(2, "0");
+let pollTimer = null, lastPoll = 0;
+
+function tickCountdown() {
+  const now = Date.now();
+  const slots = slotTimes(now);
+  const prev = [...slots].reverse().find((s) => s.t <= now);
+  const next = slots.find((s) => s.t > now);
+  const updated = state.stats?.updated_at ? Date.parse(state.stats.updated_at) : NaN;
+  const box = $("next");
+  // GitHub often starts scheduled runs 5-20 min late: treat the hour after a slot as "in progress"
+  const running = prev && now - prev.t < 60 * 60000 && (isNaN(updated) || updated < prev.t - 10 * 60000);
+  if (running) {
+    box.classList.add("live");
+    $("nextLbl").innerHTML = "";
+    $("nextLbl").append(el("b", null, prev.name), document.createTextNode(` · atjauninājums notiek (GitHub var kavēties līdz ~20 min)`));
+    $("nextClock").textContent = "drīz…";
+    maybePoll(now);
+    return;
+  }
+  box.classList.remove("live");
+  const left = Math.max(0, Math.floor((next.t - now) / 1000));
+  const h = Math.floor(left / 3600), m = Math.floor((left % 3600) / 60), sec = left % 60;
+  $("nextLbl").innerHTML = "";
+  $("nextLbl").append(document.createTextNode("Nākamais atjauninājums: "), el("b", null, `${next.name} ${pad(next.h)}:${pad(next.m)}`));
+  $("nextClock").textContent = `${pad(h)}:${pad(m)}:${pad(sec)}`;
+}
+
+async function maybePoll(now) {
+  // public page only: check every 2 minutes whether a newer version is online, then reload
+  if (!document.getElementById("nba-data") || now - lastPoll < 120000 || !/^https?:/.test(location.protocol)) return;
+  lastPoll = now;
+  try {
+    const r = await fetch(location.href.split("#")[0], { cache: "no-store" });
+    const html = await r.text();
+    const m = html.match(/"updated_at":\s*"([^"]+)"/);
+    if (m && m[1] !== state.stats?.updated_at) location.reload();
+  } catch (e) { /* offline or blocked: try again later */ }
+}
+
+tickCountdown();
+setInterval(tickCountdown, 1000);
 
 async function start() {
   let db = null;
