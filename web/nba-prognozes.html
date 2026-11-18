@@ -1,4 +1,5 @@
 <title>NBA prognozes</title>
+<script>try { var t = localStorage.getItem("nba-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,6 +144,12 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .league a { font: 700 16px/1 var(--font-display); letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
 .league a[aria-current="page"] { background: var(--ink); color: var(--bg); }
 .league a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toprow { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.toprow .league { margin-bottom: 0; }
+.theme { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); margin-left: auto; }
+.theme button { border: 0; background: transparent; color: var(--muted); font: 600 13px var(--font-body); padding: 6px 11px; border-radius: 999px; cursor: pointer; }
+.theme button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.theme button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .pick.top { background: var(--accent-soft); }
 .star { display: inline-block; font: 700 11px/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--bg); background: var(--accent); border-radius: 999px; padding: 4px 8px; margin-bottom: 5px; }
@@ -204,7 +211,13 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 
 <div class="wrap">
   <header>
-    <!--LEAGUE-NAV-->
+    <div class="toprow">
+      <!--LEAGUE-NAV-->
+      <div class="theme" role="group" aria-label="Krāsu režīms">
+        <button type="button" id="themeLight" aria-pressed="false">☀ Gaišā</button>
+        <button type="button" id="themeDark" aria-pressed="false">☾ Tumšā</button>
+      </div>
+    </div>
     <h1>NBA <span>prognozes</span></h1>
     <p class="sub" id="sub">Ielādē nakts likmes…</p>
   </header>
@@ -571,6 +584,27 @@ function render() {
   const upd = state.stats?.updated_at;
   $("updated").textContent = upd ? "Atjaunināts: " + new Date(upd).toLocaleString("lv-LV", { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
 }
+
+// ---- light / dark switch (follows the phone until the viewer picks one; remembered on this device)
+function currentTheme() {
+  const t = document.documentElement.getAttribute("data-theme");
+  if (t === "light" || t === "dark") return t;
+  return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+function showTheme() {
+  const t = currentTheme();
+  $("themeLight").setAttribute("aria-pressed", String(t === "light"));
+  $("themeDark").setAttribute("aria-pressed", String(t === "dark"));
+}
+function setTheme(t) {
+  document.documentElement.setAttribute("data-theme", t);
+  try { localStorage.setItem("nba-theme", t); } catch (e) { /* storage unavailable */ }
+  showTheme();
+}
+$("themeLight").addEventListener("click", () => setTheme("light"));
+$("themeDark").addEventListener("click", () => setTheme("dark"));
+try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", showTheme); } catch (e) { /* old browser */ }
+showTheme();
 
 // ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
 const SLOTS = [{ h: 7, m: 0, name: "Rezultāti" }, { h: 8, m: 30, name: "Rezultāti (vēlās spēles)" },
