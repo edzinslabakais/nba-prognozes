@@ -167,25 +167,6 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .mt td.pos { color: var(--good); font-weight: 600; }
 .mt td.neg { color: var(--bad); font-weight: 600; }
 .month details { border-top: 0; }
-.calc { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--line);
-  border-radius: 12px; padding: 12px; }
-.calc-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
-.seg { display: inline-flex; padding: 3px; gap: 3px; border-radius: 10px; background: var(--neutral-soft); }
-.seg button { border: 0; background: transparent; color: var(--muted); font: 600 14px var(--font-body); padding: 8px 10px;
-  border-radius: 8px; cursor: pointer; }
-.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
-.seg button:focus-visible, .amt input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.amt { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
-.amt input { width: 84px; font: 700 18px var(--font-display); font-variant-numeric: tabular-nums; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; text-align: right; }
-.calc-out { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.calc-out div { background: var(--bg); border-radius: 10px; padding: 10px; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.calc-out span { font-size: 12px; color: var(--muted); }
-.calc-out b { font: 700 22px/1.1 var(--font-display); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.calc-out b.pos { color: var(--good); }
-.calc-out b.neg { color: var(--bad); }
-.calc-out small { font-size: 11px; color: var(--muted); line-height: 1.3; }
-.calc-note { margin: 0; font-size: 12px; color: var(--muted); }
 .archive { display: flex; flex-direction: column; gap: 10px; }
 .archive .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 6px; }
 .archive h3 { font: 700 17px var(--font-display); letter-spacing: 0.03em; margin: 0; }
@@ -227,23 +208,6 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <h1>NBA <span>prognozes</span></h1>
     <p class="sub" id="sub">Ielādē nakts likmes…</p>
   </header>
-
-  <section class="calc" id="calc" aria-label="Kalkulators">
-    <div class="calc-row">
-      <div class="seg" role="group" aria-label="Kuras likmes skaitīt">
-        <button type="button" id="calcAll" aria-pressed="true">Visas likmes</button>
-        <button type="button" id="calcTop" aria-pressed="false">★ Ieteiktās</button>
-        <button type="button" id="calcSafe" aria-pressed="false">Drošās</button>
-      </div>
-      <label class="amt" for="calcAmt">Uz katru likmi <input id="calcAmt" type="number" inputmode="decimal" min="0" step="1" value="10"> €</label>
-    </div>
-    <div class="calc-out">
-      <div><span id="cNightLbl">Šonakt</span><b id="cNight">–</b><small id="cNightSub"></small></div>
-      <div><span id="cMonthLbl">Šomēnes</span><b id="cMonth">–</b><small id="cMonthSub"></small></div>
-      <div><span>Kopā</span><b id="cAll">–</b><small id="cAllSub"></small></div>
-    </div>
-    <p class="calc-note">Katrai likmei liek ievadīto summu pie aptuvenā Optibet koeficienta. "Atgūts" ir izmaksātā summa, ieskaitot likmi.</p>
-  </section>
 
   <div class="next" id="next" role="status" aria-live="off">
     <span class="lbl" id="nextLbl">Nākamais atjauninājums</span>
@@ -402,83 +366,8 @@ function renderMonth() {
   }));
 }
 
-// ---- calculator: flat stake on every bet (all picks or only the ★ ones)
-const calc = { mode: "all", stake: 10 };
-try {
-  const saved = JSON.parse(localStorage.getItem("nba-calc") || "null");
-  if (saved && typeof saved.stake === "number") Object.assign(calc, saved);
-} catch (e) { /* storage unavailable */ }
-const eur = (x) => x.toLocaleString("lv-LV", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
-const signedEur = (x) => (x > 0 ? "+" : x < 0 ? "−" : "") + eur(Math.abs(x));
-
-function setMoney(id, value) {
-  const b = $(id);
-  b.classList.remove("pos", "neg");
-  if (value == null) { b.textContent = "–"; return; }
-  b.textContent = signedEur(value);
-  if (value > 0.004) b.classList.add("pos"); else if (value < -0.004) b.classList.add("neg");
-}
-
-function fromSummary(s, stake) {
-  if (!s || !s.settled) return null;
-  const staked = s.settled * stake, profit = s.profit_units * stake;
-  return { staked, back: staked + profit, profit, n: s.settled, hits: s.hits };
-}
-
-function renderCalc() {
-  const mode = ["all", "top", "safe"].includes(calc.mode) ? calc.mode : "all";
-  const stake = Math.max(0, Number(calc.stake) || 0);
-  $("calcAll").setAttribute("aria-pressed", String(mode === "all"));
-  $("calcTop").setAttribute("aria-pressed", String(mode === "top"));
-  $("calcSafe").setAttribute("aria-pressed", String(mode === "safe"));
-  if (document.activeElement !== $("calcAmt")) $("calcAmt").value = String(calc.stake);
-  const night = state.nights.find((n) => n.date === state.selected);
-  // which bets and which summaries belong to the chosen option
-  const sumKey = { all: ["summary", "all", "overall"], top: ["top_summary", "top", "top_overall"],
-                   safe: ["safe_summary", "safe", "safe_overall"] }[mode];
-  // tonight: settled result, or what the open bets would pay if they all won
-  const picks = mode === "safe" ? (night?.safe || [])
-    : (night?.games || []).flatMap((g) => g.picks || []).filter((p) => mode === "all" || p.top);
-  const settled = picks.filter((p) => p.result);
-  const open = picks.filter((p) => !p.result);
-  $("cNightLbl").textContent = night ? `Nakts uz ${nightLabel(night.date)}` : "Šonakt";
-  if (settled.length) {
-    const r = fromSummary(night[sumKey[0]], stake);
-    setMoney("cNight", r ? r.profit : null);
-    $("cNightSub").textContent = r ? `${r.hits}/${r.n} izgāja · likts ${eur(r.staked)} · atgūts ${eur(r.back)}` : "";
-  } else if (open.length) {
-    const win = open.reduce((a, p) => a + stake * (Number(p.est_odds) - 1), 0);
-    setMoney("cNight", null);
-    $("cNight").textContent = "Gaida";
-    $("cNightSub").textContent = `${open.length} likmes · likts ${eur(stake * open.length)} · ja visas izies: +${eur(win)}`;
-  } else {
-    setMoney("cNight", null); $("cNightSub").textContent = "";
-  }
-  const m = liveMonth();
-  $("cMonthLbl").textContent = m ? m.label : "Šomēnes";
-  const rm = m ? fromSummary(m[sumKey[1]], stake) : null;
-  setMoney("cMonth", rm ? rm.profit : null);
-  $("cMonthSub").textContent = rm ? `${rm.hits}/${rm.n} izgāja · likts ${eur(rm.staked)} · atgūts ${eur(rm.back)}` : "vēl nav noslēgtu likmju";
-  const ra = fromSummary(state.stats?.[sumKey[2]], stake);
-  setMoney("cAll", ra ? ra.profit : null);
-  $("cAllSub").textContent = ra ? `${ra.hits}/${ra.n} izgāja · likts ${eur(ra.staked)} · atgūts ${eur(ra.back)}` : "vēl nav noslēgtu likmju";
-}
-
-function saveCalc() {
-  try { localStorage.setItem("nba-calc", JSON.stringify(calc)); } catch (e) { /* ignore */ }
-}
-$("calcAll").addEventListener("click", () => { calc.mode = "all"; saveCalc(); renderCalc(); });
-$("calcTop").addEventListener("click", () => { calc.mode = "top"; saveCalc(); renderCalc(); });
-$("calcSafe").addEventListener("click", () => { calc.mode = "safe"; saveCalc(); renderCalc(); });
-$("calcAmt").addEventListener("input", (e) => {
-  const v = parseFloat(String(e.target.value).replace(",", "."));
-  calc.stake = isFinite(v) && v >= 0 ? v : 0;
-  saveCalc(); renderCalc();
-});
-
 function renderTop(night) {
   renderMonth();
-  renderCalc();
   const s = night?.top_summary || {};
   if (s.settled) { $("t1").textContent = `${s.hits}/${s.settled}`; $("t1l").textContent = "Šonakt uzvarēts"; }
   else { $("t1").textContent = night ? String(s.picks || 0) : "–"; $("t1l").textContent = "Šonakt likmes"; }
