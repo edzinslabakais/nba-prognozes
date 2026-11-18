@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 18.11.2026 22:11 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 22:13 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 12 spēles, koef. ≥ 2.1
 
@@ -29,12 +29,12 @@ Robots: **HOU -7.5**, kopā 225.5 · bukmeikeri: HOU -7.5, kopā 225.5
 Savainojumi/sastāvs: IND: Ivica Zubac (spēlēja 6/10 pēdējās) +0.4; HOU: Amen Thompson (Day-To-Day) -0.5
 
 ### MIL @ MIA · 02:00
-Robots: **MIA -11.7**, kopā 236.5 · bukmeikeri: MIA -11.5, kopā 236.5
+Robots: **MIA -11.7**, kopā 237.5 · bukmeikeri: MIA -11.5, kopā 237.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **MIL zem 110.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **zem 233.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 | **MIA virs 126.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
+| 2 | **zem 234.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 3 | **MIA -14.5** | 43/100 | 2.17 | 2.33 | ⏳ gaida |
 
 Savainojumi/sastāvs: MIL: Ryan Rollins (Out) -0.6
