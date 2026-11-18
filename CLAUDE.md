@@ -14,10 +14,19 @@ Lietotājs raksta latviski. Atbildi latviski.
 - Likmju vēsture glabājas `history/*.json`. Pēc LIKMES un REZULTĀTI saglabā izmaiņas
   (git commit + push), citādi vēsture pazudīs līdz ar sesiju.
 
-## Telefona lapa "NBA prognozes"
+## Automātika
+
+LIKMES (21:30) un REZULTĀTI (08:30, Rīgas laiks) automātiski palaiž GitHub Actions
+(`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Rezultāts tiek ierakstīts `PROGNOZES.md`,
+un, ja ir iestatīti noslēpumi `TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID`, tiek nosūtīta Telegram
+ziņa (`notify.py`). Claude tajā nav vajadzīgs. Pirms rokas palaišanas veic `git pull`, jo
+Actions pievieno savus commit.
+
+## Telefona lapa "NBA prognozes" (claude.ai, tikai rokas režīmā)
 
 URL: https://claude.ai/artifact/CrSWZsA6HApj7T1AwenP4x (lapas avots: `web/nba-prognozes.html`).
-Lapa rāda datus no artifact datubāzes. Pēc katras LIKMES vai REZULTĀTI komandas atjaunini to
+Lapa rāda datus no artifact datubāzes. GitHub Actions to NEatjaunina. Kad Claude čatā palaiž
+LIKMES vai REZULTĀTI, atjaunini to
 (skripts pats izveido `export/`):
 1. ArtifactData `batch` ar `set`: katram `export/nights/<datums>.json` → collection `nights`,
    doc_id `<datums>`; `export/stats.json` → collection `meta`, doc_id `stats`.

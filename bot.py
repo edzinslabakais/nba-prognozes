@@ -103,6 +103,7 @@ def pick_for_game(r, min_odds: float) -> list[dict]:
 
 
 def cmd_likmes(args) -> None:
+    MESSAGE.unlink(missing_ok=True)
     params = P.load_params()
     mw = params.get("market_weight_suggested", 0.9)
     now = pd.Timestamp.now(tz="UTC")
@@ -165,6 +166,7 @@ def cmd_likmes(args) -> None:
                              "games": games_all, "picks": record},
                             indent=1, ensure_ascii=False))
     export_all()
+    write_message(day.isoformat(), "likmes")
     print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
     print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
           f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
@@ -216,12 +218,17 @@ def cmd_rezultati(args) -> None:
     if not files:
         print("Vēl nav saglabātu likmju. Vispirms palaid: python bot.py likmes")
         return
+    MESSAGE.unlink(missing_ok=True)
     espn.FORCE_REFRESH = True  # make sure last night's scoreboard is fresh
-    recs = []
+    recs, new_dates = [], []
     for f in files:
-        rec, _ = settle(f)
+        rec, n_new = settle(f)
         recs.append(rec)
+        if n_new:
+            new_dates.append(rec["date"])
     export_all()
+    for d in new_dates[-1:]:
+        write_message(d, "rezultati")
 
     # the most recent day that has at least one settled pick
     show = next((r for r in reversed(recs) if any(p.get("result") for p in r["picks"])), recs[-1])
@@ -314,6 +321,109 @@ def export_all() -> None:
     stats = {"overall": _summary(all_picks), "nights": nights, "calibration": buckets,
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
     (EXPORT / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
+    write_markdown(stats)
+
+
+MESSAGE = EXPORT / "message.txt"
+REPORT = ROOT / "PROGNOZES.md"
+RIGA = "Europe/Riga"
+RES_ICON = {"izgāja": "✅", "neizgāja": "❌", "atgriezts": "↩️"}
+
+
+def _night_label(us_date: str) -> str:
+    d = pd.Timestamp(us_date) + pd.Timedelta(days=1)
+    return f"{d:%d.%m.}"
+
+
+def _load_night(us_date: str) -> dict | None:
+    f = EXPORT / "nights" / f"{us_date}.json"
+    return json.loads(f.read_text()) if f.exists() else None
+
+
+def _overall_line(o: dict) -> str:
+    if not o.get("settled"):
+        return "vēl nav noslēgtu likmju"
+    return (f"izgāja {o['hits']}/{o['settled']} ({100 * o['hits'] / o['settled']:.0f}%), "
+            f"robots gaidīja ~{o['expected_hits']:.1f}, vienības {o['profit_units']:+.2f}")
+
+
+def write_message(us_date: str, mode: str) -> None:
+    """Short phone message (Telegram) for tonight's picks or last night's results."""
+    doc = _load_night(us_date)
+    if not doc or not doc["games"]:
+        return
+    stats = json.loads((EXPORT / "stats.json").read_text())
+    lines = []
+    if mode == "likmes":
+        lines.append(f"🏀 NBA LIKMES — nakts uz {_night_label(us_date)} ({len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g})")
+        lines.append("drošība 1-100 · ~aptuvenais Optibet koeficients")
+        for g in doc["games"]:
+            t = (g.get("riga_time") or " ").split(" ")[-1]
+            lines.append(f"\n{g['away']} @ {g['home']}  {t}")
+            for i, p in enumerate(g["picks"], 1):
+                lines.append(f"{i}. {p['bet']} — {p['confidence']}/100 (~{p['est_odds']:.2f})")
+            if g.get("injuries"):
+                lines.append("   ⚕ " + "; ".join(g["injuries"][:2]))
+    else:
+        s = doc["summary"]
+        lines.append(f"📊 NBA REZULTĀTI — nakts uz {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
+        for g in doc["games"]:
+            lines.append(f"\n{g.get('score') or g['away'] + ' @ ' + g['home'] + ' (vēl nav beigusies)'}")
+            for p in g["picks"]:
+                lines.append(f"{RES_ICON.get(p.get('result'), '⏳')} {p['bet']} ({p['confidence']}/100)")
+        lines.append(f"\nKopā: {_overall_line(stats['overall'])}")
+    EXPORT.mkdir(exist_ok=True)
+    MESSAGE.write_text("\n".join(lines) + "\n")
+
+
+def write_markdown(stats: dict) -> None:
+    """PROGNOZES.md: readable on a phone in the GitHub app."""
+    nights = sorted(EXPORT.glob("nights/*.json"))
+    now = pd.Timestamp.now(tz="UTC").tz_convert(RIGA)
+    out = ["# 🏀 NBA prognozes", "", f"_Atjaunināts {now:%d.%m.%Y %H:%M} (Rīgas laiks)_", ""]
+    if nights:
+        doc = json.loads(nights[-1].read_text())
+        s = doc["summary"]
+        head = f"## Nakts uz {_night_label(doc['date'])} — {len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g}"
+        if s["settled"]:
+            head += f" — izgāja {s['hits']}/{s['settled']}"
+        out += [head, "",
+                "Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, "
+                "godīgais = koeficients, pie kura likme ir tieši \"vērta savu cenu\".", ""]
+        for g in doc["games"]:
+            t = (g.get("riga_time") or " ").split(" ")[-1]
+            out.append(f"### {g['away']} @ {g['home']} · {t}")
+            info = []
+            if g.get("robot_line"):
+                info.append(f"Robots: **{g['robot_line']}**, kopā {g.get('robot_total')}")
+            if g.get("market_line") and g["market_line"] != "—":
+                info.append(f"bukmeikeri: {g['market_line']}, kopā {g.get('market_total')}")
+            if g.get("score"):
+                info.append(f"gala rezultāts: **{g['score']}**")
+            if info:
+                out += [" · ".join(info), ""]
+            out += ["| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |", "|---|---|---|---|---|---|"]
+            for i, p in enumerate(g["picks"], 1):
+                res = f"{RES_ICON[p['result']]} {p['result']}" if p.get("result") in RES_ICON else "⏳ gaida"
+                out.append(f"| {i} | **{p['bet']}** | {p['confidence']}/100 | {p['est_odds']:.2f} | "
+                           f"{p['fair_odds']:.2f} | {res} |")
+            if g.get("injuries"):
+                out += ["", "Savainojumi/sastāvs: " + "; ".join(g["injuries"])]
+            out.append("")
+    out += ["## Statistika", "", f"Kopā: {_overall_line(stats['overall'])}", ""]
+    rows = [n for n in reversed(stats["nights"]) if n["settled"]][:14]
+    if rows:
+        out += ["| Nakts | Izgāja | Robots gaidīja | Vienības |", "|---|---|---|---|"]
+        for n in rows:
+            out.append(f"| {_night_label(n['date'])} | {n['hits']}/{n['settled']} | "
+                       f"{n['expected_hits']:.1f} | {n['profit_units']:+.2f} |")
+        out.append("")
+    if stats.get("calibration"):
+        out += ["### Vai drošība atbilst realitātei?", "", "| Drošība | Likmes | Izgāja | Gaidīts |", "|---|---|---|---|"]
+        for c in stats["calibration"]:
+            out.append(f"| {c['range']} | {c['n']} | {100 * c['hit_rate']:.0f}% | {100 * c['expected']:.0f}% |")
+        out.append("")
+    REPORT.write_text("\n".join(out))
 
 
 def main():
