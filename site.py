@@ -21,12 +21,12 @@ LEAGUES = [
     ("nhl", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/"),
 ]
 
-NHL_NOTE = ('<p><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī '
+NHL_NOTE = ('<p data-i18n-html="noteNhl"><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī '
             'neizšķirts. Tikai likmes ar norādi "ieskaitot papildlaiku" ietver papildlaiku un bullīšus '
             '(bullīšu uzvarētājam pieskaita 1 vārtu).</p>')
 
 
-NBA_NOTE = ('<p><b>Basketbolā</b> visas likmes vērtē pēc <b>pamatlaika</b> (48 minūtes). Tikai likmes ar norādi '
+NBA_NOTE = ('<p data-i18n-html="noteNba"><b>Basketbolā</b> visas likmes vērtē pēc <b>pamatlaika</b> (48 minūtes). Tikai likmes ar norādi '
             '"ieskaitot papildlaiku" ietver papildlaiku.</p>')
 
 STATIC_LOADER = """function start() {
@@ -61,12 +61,11 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int) -> 
     head = head.replace("<title>NBA prognozes</title>", f"<title>{title} prognozes</title>")
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
-    body = body.replace("<h1>NBA <span>prognozes</span></h1>", f"<h1>{title} <span>prognozes</span></h1>")
+    body = body.replace('<h1>NBA <span data-i18n="h1">', f'<h1>{title} <span data-i18n="h1">')
     if key == "nba":
         body = body.replace('<p id="updated"></p>', NBA_NOTE + '\n    <p id="updated"></p>')
     if key == "nhl":
         body = body.replace('<p id="updated"></p>', NHL_NOTE + '\n    <p id="updated"></p>')
-        body = body.replace('"kopā": "Kopējie punkti"', '"kopā": "Kopējie vārti"')
     body, n = re.subn(r"async function start\(\) \{.*?\n\}\nstart\(\);", lambda _: STATIC_LOADER, body, flags=re.S)
     if n != 1:
         raise SystemExit("site.py: neizdevās atrast start() funkciju veidnē")

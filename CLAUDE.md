@@ -37,6 +37,13 @@ LIKMES vai REZULTĀTI, atjaunini to
    Esošiem dokumentiem vajag `if_version`, tāpēc vispirms nolasi versijas ar `list` (`nights`, `meta`).
 2. Pārbaudi, ka rakstīšana izdevās. Lapu nepublicē no jauna, ja nemainās tās dizains.
 
+## Lapas valodas (LV / EN)
+
+Lapai ir latviešu un angļu versija (`web/nba-prognozes.html`: vārdnīca `I18N`, `NOTES`, `CAT_EN`,
+tulkotāji `trBet/trScore/trNote/trLine`). **Lietotāja noteikums:** jaunas lapas izmaiņas veic tikai
+latviski. Angļu tekstus (`I18N.en`, `NOTES.en`, `CAT_EN`, tulkotājus) atjaunini tikai tad, ja
+lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda latvisko.
+
 ## Struktūra
 
 - `espn.py` — ESPN API + kešs (`cache/`), `data.py` — tabulas, `model.py` — reitingi un savainojumi

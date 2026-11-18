@@ -1,5 +1,5 @@
 <title>NBA prognozes</title>
-<script>try { var t = localStorage.getItem("nba-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+<script>(function () { try { var th = localStorage.getItem("nba-theme"); if (th === "light" || th === "dark") document.documentElement.setAttribute("data-theme", th); if (localStorage.getItem("nba-lang") === "en") document.documentElement.lang = "en"; } catch (e) {} })();</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,10 +146,41 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .league a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .toprow { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .toprow .league { margin-bottom: 0; }
-.theme { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); margin-left: auto; }
-.theme button { border: 0; background: transparent; color: var(--muted); font: 600 13px var(--font-body); padding: 6px 11px; border-radius: 999px; cursor: pointer; }
-.theme button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
-.theme button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.controls { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.tswitch { position: relative; width: 56px; height: 30px; flex: none; border-radius: 15px; border: 1px solid var(--line);
+  background: var(--neutral-soft); padding: 0; cursor: pointer; }
+.tswitch:focus-visible, .lang-btn:focus-visible, .lang-inner button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ts-ico { position: absolute; top: 7px; width: 14px; height: 14px; fill: none; stroke: var(--muted); stroke-width: 2; stroke-linecap: round; opacity: .6; }
+.ts-moon { fill: var(--muted); stroke: none; }
+.ts-sun { left: 8px; }
+.ts-moon { right: 8px; }
+.ts-knob { position: absolute; top: 2px; left: 2px; width: 24px; height: 24px; border-radius: 50%; background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,.25); display: grid; place-items: center; }
+.ts-knob svg { width: 14px; height: 14px; grid-area: 1 / 1; }
+.ts-k-sun { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
+.ts-k-moon { fill: var(--ink); opacity: 0; }
+.tswitch[aria-checked="true"] .ts-knob { transform: translateX(26px); }
+.tswitch[aria-checked="true"] .ts-k-sun { opacity: 0; }
+.tswitch[aria-checked="true"] .ts-k-moon { opacity: 1; }
+.lang { position: relative; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 9px; border-radius: 15px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 13px var(--font-body); cursor: pointer; }
+.lang-btn svg { width: 15px; height: 15px; fill: none; stroke: var(--muted); stroke-width: 1.7; }
+.lang-chev { width: 6px; height: 6px; border-right: 1.6px solid var(--muted); border-bottom: 1.6px solid var(--muted); transform: rotate(45deg) translate(-1px, -1px); }
+.lang.open .lang-chev { transform: rotate(-135deg) translate(-1px, -1px); }
+.lang-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; display: grid; grid-template-rows: 0fr; min-width: 120px; }
+.lang.open .lang-menu { grid-template-rows: 1fr; }
+.lang-inner { overflow: hidden; min-height: 0; display: flex; flex-direction: column; background: var(--surface);
+  border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.lang:not(.open) .lang-inner { box-shadow: none; }
+.lang-inner button { border: 0; background: transparent; color: var(--ink); font: 500 14px var(--font-body); text-align: left; padding: 10px 14px; cursor: pointer; }
+.lang-inner button[aria-pressed="true"] { font-weight: 700; color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) {
+  .ts-knob { transition: transform .22s ease; }
+  .ts-knob svg { transition: opacity .2s ease; }
+  .lang-menu { transition: grid-template-rows .2s ease; }
+  .lang-chev { transition: transform .2s ease; }
+}
 .pick.top { background: var(--accent-soft); }
 .star { display: inline-block; font: 700 11px/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--bg); background: var(--accent); border-radius: 999px; padding: 4px 8px; margin-bottom: 5px; }
@@ -213,13 +244,29 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
   <header>
     <div class="toprow">
       <!--LEAGUE-NAV-->
-      <div class="theme" role="group" aria-label="Krāsu režīms">
-        <button type="button" id="themeLight" aria-pressed="false">☀ Gaišā</button>
-        <button type="button" id="themeDark" aria-pressed="false">☾ Tumšā</button>
+      <div class="controls">
+        <div class="lang" id="lang">
+          <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-controls="langMenu" data-i18n-aria="langLabel" aria-label="Valoda">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+            <span id="langCur">LV</span><span class="lang-chev" aria-hidden="true"></span>
+          </button>
+          <div class="lang-menu" id="langMenu"><div class="lang-inner" id="langInner">
+            <button type="button" data-lang="lv" aria-pressed="true">Latviešu</button>
+            <button type="button" data-lang="en" aria-pressed="false">English</button>
+          </div></div>
+        </div>
+        <button type="button" class="tswitch" id="themeSwitch" role="switch" aria-checked="false" data-i18n-aria="darkLabel" aria-label="Tumšais režīms">
+          <svg class="ts-ico ts-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+          <svg class="ts-ico ts-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <span class="ts-knob" aria-hidden="true">
+            <svg class="ts-k-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+            <svg class="ts-k-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          </span>
+        </button>
       </div>
     </div>
-    <h1>NBA <span>prognozes</span></h1>
-    <p class="sub" id="sub">Ielādē nakts likmes…</p>
+    <h1>NBA <span data-i18n="h1">prognozes</span></h1>
+    <p class="sub" id="sub" data-i18n="loading">Ielādē nakts likmes…</p>
   </header>
 
   <div class="next" id="next" role="status" aria-live="off">
@@ -227,7 +274,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <span class="clock" id="nextClock">--:--:--</span>
   </div>
 
-  <nav class="nights" id="nights" aria-label="Izvēlies nakti"></nav>
+  <nav class="nights" id="nights" data-i18n-aria="pickNight" aria-label="Izvēlies nakti"></nav>
 
   <section class="strip" id="strip" aria-label="Kopsavilkums">
     <div class="stat"><b id="s1">–</b><span id="s1l">Šī nakts</span></div>
@@ -236,11 +283,11 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
   </section>
 
   <section class="topbox" id="topbox" aria-label="Visticamākās likmes">
-    <div class="topbox-head"><b>★ Visticamākās likmes</b><span>viena katrā spēlē · 1 vienība uz likmi</span></div>
+    <div class="topbox-head"><b data-i18n="topTitle">★ Visticamākās likmes</b><span data-i18n="topSub">viena katrā spēlē · 1 vienība uz likmi</span></div>
     <div class="strip">
       <div class="stat"><b id="t1">–</b><span id="t1l">Šonakt</span></div>
       <div class="stat"><b id="t2">–</b><span id="t2l">Uzvarēts / notikušas</span></div>
-      <div class="stat"><b id="t3">–</b><span>Vienības +/−</span></div>
+      <div class="stat"><b id="t3">–</b><span data-i18n="unitsPm">Vienības +/−</span></div>
     </div>
   </section>
 
@@ -251,27 +298,27 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 
   <p class="warn" id="warn" hidden></p>
   <section class="games" id="games" aria-live="polite">
-    <div class="empty"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
+    <div class="empty" data-i18n-html="emptyLoading"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
   </section>
 
   <section class="archive" id="archive" hidden aria-label="Arhīvs pa mēnešiem">
-    <h2>Arhīvs pa mēnešiem</h2>
+    <h2 data-i18n="archive">Arhīvs pa mēnešiem</h2>
     <div class="archive" id="archiveBody"></div>
   </section>
 
   <section id="calib" hidden>
-    <h2>Vai drošība atbilst realitātei?</h2>
-    <div class="tbl"><table><thead><tr><th>Drošība</th><th>Likmes</th><th>Izgāja</th><th>Robots gaidīja</th></tr></thead><tbody id="calibBody"></tbody></table></div>
+    <h2 data-i18n="calibTitle">Vai drošība atbilst realitātei?</h2>
+    <div class="tbl"><table><thead><tr><th data-i18n="thConf">Drošība</th><th data-i18n="thBets">Likmes</th><th data-i18n="thWon">Izgāja</th><th data-i18n="thExp">Robots gaidīja</th></tr></thead><tbody id="calibBody"></tbody></table></div>
   </section>
 
   <section class="safe" id="safe" hidden>
-    <h2>Drošās likmes</h2>
-    <p class="intro" id="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
+    <h2 data-i18n="safeTitle">Drošās likmes</h2>
+    <p class="intro" id="safeIntro" data-i18n="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
     <div class="games safe-cards" id="safeList"></div>
     <div class="safe-stats">
       <div class="stat"><b id="d1">–</b><span id="d1l">Šonakt izgāja</span></div>
       <div class="stat"><b id="d2">–</b><span id="d2l">Kopā izgāja</span></div>
-      <div class="stat"><b id="d3">–</b><span>Vienības kopā</span></div>
+      <div class="stat"><b id="d3">–</b><span data-i18n="unitsTotal">Vienības kopā</span></div>
     </div>
   </section>
 
@@ -282,18 +329,18 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div class="crazy-stats">
       <div class="stat"><b id="c1">–</b><span id="c1l">Šonakt izgāja</span></div>
       <div class="stat"><b id="c2">–</b><span id="c2l">Kopā izgāja</span></div>
-      <div class="stat"><b id="c3">–</b><span>Vienības kopā</span></div>
+      <div class="stat"><b id="c3">–</b><span data-i18n="unitsTotal">Vienības kopā</span></div>
     </div>
   </section>
 
   <section class="note">
-    <h2>Kā lasīt</h2>
-    <p><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
-    <p><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
-    <p><b>★ Visticamākā pēc datiem</b>: katrā spēlē robots salīdzina savu modeli (forma, savainojumi, atpūta, vārtsargi, mājas laukums) ar bukmeikeru vērtējumu. ★ saņem likme, kurai ir laba iespēja iziet un ko dati vērtē augstāk nekā bukmeikeri. Tā netiek izvēlēta pēc zemākā koeficienta.</p>
-    <p><b>Drošās likmes</b>: koeficients vismaz 1.7. Tās tiek izvēlētas tikai pēc robota statistikas modeļa, un "Dati" rāda, cik droša likme ir pēc robota datiem. Robota paša modelis vēsturē ir bijis mazliet mazāk precīzs nekā bukmeikeri, tāpēc sekojiet līdzi statistikai.</p>
-    <p><b>Mēneša statistika</b> skaita likmes pēc spēļu datuma no mēneša 1. līdz pēdējai dienai.</p>
-    <p><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
+    <h2 data-i18n="howTo">Kā lasīt</h2>
+    <p data-i18n-html="noteConf"><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
+    <p data-i18n-html="noteOdds"><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
+    <p data-i18n-html="noteTop"><b>★ Visticamākā pēc datiem</b>: katrā spēlē robots salīdzina savu modeli (forma, savainojumi, atpūta, vārtsargi, mājas laukums) ar bukmeikeru vērtējumu. ★ saņem likme, kurai ir laba iespēja iziet un ko dati vērtē augstāk nekā bukmeikeri. Tā netiek izvēlēta pēc zemākā koeficienta.</p>
+    <p data-i18n-html="noteSafe"><b>Drošās likmes</b>: koeficients vismaz 1.7. Tās tiek izvēlētas tikai pēc robota statistikas modeļa, un "Dati" rāda, cik droša likme ir pēc robota datiem. Robota paša modelis vēsturē ir bijis mazliet mazāk precīzs nekā bukmeikeri, tāpēc sekojiet līdzi statistikai.</p>
+    <p data-i18n-html="noteMonth"><b>Mēneša statistika</b> skaita likmes pēc spēļu datuma no mēneša 1. līdz pēdējai dienai.</p>
+    <p data-i18n-html="noteUnits"><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
     <p id="updated"></p>
   </section>
 </div>
@@ -301,17 +348,155 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 <script>
 const $ = (id) => document.getElementById(id);
 const state = { nights: [], stats: null, selected: null, chosenByUser: false };
+// ---- language (LV / EN). Texts from the robot are Latvian; tr*() translate them for English.
+const IS_NHL = document.title.startsWith("NHL");
+let LANG = "lv";
+try { if (localStorage.getItem("nba-lang") === "en") LANG = "en"; } catch (e) { /* storage unavailable */ }
+const I18N = {
+  lv: {
+    h1: "prognozes", title: "prognozes", loading: "Ielādē nakts likmes…", pickNight: "Izvēlies nakti",
+    langLabel: "Valoda", darkLabel: "Tumšais režīms",
+    topTitle: "★ Visticamākās likmes", topSub: "viena katrā spēlē · 1 vienība uz likmi", unitsPm: "Vienības +/−",
+    unitsTotal: "Vienības kopā", archive: "Arhīvs pa mēnešiem", calibTitle: "Vai drošība atbilst realitātei?",
+    thConf: "Drošība", thBets: "Likmes", thWon: "Izgāja", thExp: "Robots gaidīja",
+    safeTitle: "Drošās likmes", howTo: "Kā lasīt",
+    safeIntro: "Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.",
+    crazyIntro: (o) => `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${o}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`,
+    emptyLoading: "<b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
+    noBets: "Vēl nav likmju", noNights: "Vēl nav nevienas nakts likmju.",
+    emptyText: "Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
+    sub: (night, n, odds) => `Nakts uz ${night} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${odds}`,
+    gamesShort: "sp.", wonTonight: "Šī nakts izgāja", betsTonight: "Likmes šonakt", totalWon: "Kopā izgāja",
+    totalLine: (h, n, e) => `Kopā ${h}/${n} (gaidīts ${e})`, unitsAll: "Vienības kopā",
+    tonightWonTop: "Šonakt uzvarēts", tonightBets: "Šonakt likmes", wonPlayed: "Uzvarēts / notikušas",
+    tonightWon: "Šonakt izgāja", tonightWait: "Šonakt gaida", totalWonExp: (e) => `Kopā izgāja (gaidīts ${e})`,
+    monthStats: "mēneša statistika", colWonPlayed: "Uzvarēts / notikušas", colUnits: "Vienības",
+    rowAll: "Visas likmes", rowTop: "★ Visticamākās", rowSafe: "Drošās likmes", rowCrazy: "Crazy Dazy", waiting: "gaida",
+    won: "Izgāja", lost: "Neizgāja", push: "Atgriezts", pending: "Gaida",
+    wonL: "izgāja", lostL: "neizgāja", pushL: "atgriezts", pendingL: "gaida",
+    star: "★ Visticamākā pēc datiem", fair: "godīgais", confAria: (c) => `Drošība ${c} no 100`,
+    dataSafe: (r, m) => `Dati: robots ${r} % · bukmeikeri ~${m} %`, dataTop: (r, m) => `Dati: robots ${r} % · bukmeikeri ${m} %`,
+    bets: (n) => `${n} likmes`, wonOf: (h, n) => `${h}/${n} izgāja`,
+    robot: "Robots:", bookies: "Bukmeikeri:", final: "Gala rezultāts: ", injuries: (n) => `Savainojumi un sastāvs (${n})`,
+    updated: "Atjaunināts: ", locale: "lv-LV",
+    slotResults: "Rezultāti", slotLate: "Rezultāti (vēlās spēles)", slotPicks: "Likmes",
+    nextUpdate: "Nākamais atjauninājums: ", running: " · atjauninājums notiek (GitHub var kavēties līdz ~20 min)", soon: "drīz…",
+    noData: "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.",
+    loadSlow: "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu.", loadFail: (c) => `Neizdevās ielādēt datus (${c}).`,
+    night: (d) => `Nakts uz ${d}`,
+  },
+  en: {
+    h1: "predictions", title: "predictions", loading: "Loading tonight's picks…", pickNight: "Choose a night",
+    langLabel: "Language", darkLabel: "Dark mode",
+    topTitle: "★ Most likely picks", topSub: "one per game · 1 unit per bet", unitsPm: "Units +/−",
+    unitsTotal: "Units total", archive: "Monthly archive", calibTitle: "Does the confidence match reality?",
+    thConf: "Confidence", thBets: "Bets", thWon: "Won", thExp: "Robot expected",
+    safeTitle: "Safe bets", howTo: "How to read",
+    safeIntro: "Bets from all of tonight's games with odds 1.7+, chosen only by the robot's statistics (form, ratings, injuries, rest, goalies), not by the bookmakers. Among nearly equally safe lines the one with the highest odds is taken.",
+    crazyIntro: (o) => `3 bets from all of tonight's games that have the best chance to win at odds ${o}+. Each one is from a different game.`,
+    emptyLoading: "<b>Picks not loaded yet</b>Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
+    noBets: "No picks yet", noNights: "No nights with picks yet.",
+    emptyText: "Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
+    sub: (night, n, odds) => `Night of ${night} · ${n} ${n === 1 ? "game" : "games"} · odds ≥ ${odds}`,
+    gamesShort: "g.", wonTonight: "Won tonight", betsTonight: "Bets tonight", totalWon: "Won in total",
+    totalLine: (h, n, e) => `Total ${h}/${n} (expected ${e})`, unitsAll: "Units total",
+    tonightWonTop: "Won tonight", tonightBets: "Bets tonight", wonPlayed: "Won / settled",
+    tonightWon: "Won tonight", tonightWait: "Pending tonight", totalWonExp: (e) => `Won in total (expected ${e})`,
+    monthStats: "monthly stats", colWonPlayed: "Won / settled", colUnits: "Units",
+    rowAll: "All bets", rowTop: "★ Most likely", rowSafe: "Safe bets", rowCrazy: "Crazy Dazy", waiting: "pending",
+    won: "Won", lost: "Lost", push: "Push", pending: "Pending",
+    wonL: "won", lostL: "lost", pushL: "push", pendingL: "pending",
+    star: "★ Most likely by the data", fair: "fair", confAria: (c) => `Confidence ${c} of 100`,
+    dataSafe: (r, m) => `Data: robot ${r} % · bookmakers ~${m} %`, dataTop: (r, m) => `Data: robot ${r} % · bookmakers ${m} %`,
+    bets: (n) => `${n} bets`, wonOf: (h, n) => `${h}/${n} won`,
+    robot: "Robot:", bookies: "Bookmakers:", final: "Final score: ", injuries: (n) => `Injuries and line-up (${n})`,
+    updated: "Updated: ", locale: "en-GB",
+    slotResults: "Results", slotLate: "Results (late games)", slotPicks: "Picks",
+    nextUpdate: "Next update: ", running: " · update in progress (GitHub can be up to ~20 min late)", soon: "soon…",
+    noData: "Data is not available in this view. Open the page on claude.ai, sign in and try again.",
+    loadSlow: "Can't load the data yet. Check your internet connection.", loadFail: (c) => `Could not load the data (${c}).`,
+    night: (d) => `Night of ${d}`,
+  },
+};
+const NOTES = {
+  lv: {},
+  en: {
+    noteConf: "<b>Confidence</b> is the robot's estimated chance that the bet wins. At odds of 2.1 it can hardly exceed ~45: a bookmaker only pays 2.1 if it rates the chance below 45 %. For every game the robot looks for the safest line in three categories that still pays 2.1 or more.",
+    noteOdds: "<b>~2.14</b> is the approximate Optibet price, <b>fair</b> is the price at which the bet is exactly “worth it”. If Optibet pays more than the fair price, the bet is good value. If Optibet's line differs a little, take the nearest one with odds of 2.1 or more.",
+    noteTop: "<b>★ Most likely by the data</b>: in every game the robot compares its own model (form, injuries, rest, goalies, home court) with the bookmakers. The ★ goes to a bet with a good chance to win that the data rates higher than the bookmakers do. It is not chosen by the lowest odds.",
+    noteSafe: "<b>Safe bets</b>: odds of at least 1.7, chosen only by the robot's statistical model; “Data” shows how safe the bet is by the robot's data. The robot's own model has historically been a little less accurate than the bookmakers, so keep an eye on the statistics.",
+    noteMonth: "<b>Monthly stats</b> count bets by game date from the 1st to the last day of the month.",
+    noteUnits: "<b>Units</b>: how much you would be up or down staking 1 unit on every bet at the approximate odds.",
+    noteNba: "<b>Basketball</b>: every bet is settled on <b>regulation time</b> (48 minutes). Only bets marked “incl. OT” include overtime.",
+    noteNhl: "<b>Hockey</b>: every bet is settled on <b>regulation time</b> (60 minutes), so a draw is possible. Only bets marked “incl. OT” include overtime and the shootout (the shootout winner gets 1 goal).",
+  },
+};
+const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+function t(key, ...args) {
+  const v = (I18N[LANG] && I18N[LANG][key] !== undefined) ? I18N[LANG][key] : I18N.lv[key];
+  return typeof v === "function" ? v(...args) : v;
+}
+const EN = () => LANG === "en";
+function trBet(s) {
+  if (!EN() || !s) return s;
+  return s.replace(/ \(ieskaitot papildlaiku\)/g, " (incl. OT)").replace(/(\S+) uzvar pamatlaikā/g, "$1 to win")
+    .replace(/(\S+) uzvar/g, "$1 to win").replace(/\bneizšķirts( pamatlaikā)?/g, "draw")
+    .replace(/(^|\s)virs /g, "$1over ").replace(/(^|\s)zem /g, "$1under ");
+}
+function trScore(s) {
+  if (!EN() || !s) return s;
+  return s.replace("(pamatlaikā; ar papildlaiku", "(regulation; incl. OT").replace("(pamatlaikā; papildlaikā", "(regulation; OT")
+    .replace("(pamatlaikā; bullīšos", "(regulation; shootout");
+}
+function trNote(s) {
+  if (!EN() || !s) return s;
+  return s.replace(/spēlēja (\d+)\/(\d+) pēdējās/g, "played $1/$2 recent").replace("vairs nav komandā", "no longer on the team")
+    .replace("jauns komandā / atgriežas", "new / returning").replace(/\bvārtsargs\b/g, "goalie")
+    .replace("apstiprināts", "confirmed").replace("gaidāms", "expected");
+}
+function trLine(s) {
+  if (!EN() || s == null) return s;
+  return String(s).replace("ar papildl.", "incl. OT").replace(/(^|\s)vārti(?=\s|$)/g, "$1goals")
+    .replace(/(^|\s)kopā(?=\s|$)/g, "$1total");
+}
+function monthName(m) {
+  if (!EN()) return m.label;
+  const [y, mo] = m.month.split("-");
+  return `${MONTHS_EN[Number(mo) - 1]} ${y}`;
+}
+function applyStatic() {
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-i18n]").forEach((e) => { e.textContent = t(e.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-html]").forEach((e) => {
+    const k = e.dataset.i18nHtml;
+    if (!e.dataset.lv) e.dataset.lv = e.innerHTML;  // the Latvian original
+    e.innerHTML = EN() ? (NOTES.en[k] || I18N.en[k] || e.dataset.lv) : e.dataset.lv;
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((e) => e.setAttribute("aria-label", t(e.dataset.i18nAria)));
+  document.title = `${IS_NHL ? "NHL" : "NBA"} ${t("title")}`;
+  $("langCur").textContent = LANG.toUpperCase();
+  document.querySelectorAll("#langInner button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
+}
+
 
 const RESULT = {
-  "izgāja": ["win", "Izgāja"],
-  "neizgāja": ["loss", "Neizgāja"],
-  "atgriezts": ["push", "Atgriezts"],
+  "izgāja": ["win", "won"],
+  "neizgāja": ["loss", "lost"],
+  "atgriezts": ["push", "push"],
 };
-const CAT = { "starpība": "Uzvarētājs / handikaps", "kopā": "Kopējie punkti", "komandas punkti": "Komandas punkti",
+const CAT_LV = { "starpība": "Uzvarētājs / handikaps", "kopā": "Kopējie punkti", "komandas punkti": "Komandas punkti",
   "uzvarētājs / handikaps": "Uzvarētājs / handikaps", "komandas vārti": "Komandas vārti",
   "neizšķirts": "Neizšķirts pamatlaikā",
   "handikaps": "Handikaps", "uzvarētājs": "Uzvarētājs", "uzvaras starpība": "Uzvaras starpība",
   "kombinācija": "Kombinācija (abām daļām jāiziet)" };
+const CAT_EN = { "starpība": "Winner / handicap", "kopā": "Total points", "komandas punkti": "Team points",
+  "uzvarētājs / handikaps": "Winner / handicap", "komandas vārti": "Team goals", "neizšķirts": "Regulation draw",
+  "handikaps": "Handicap", "uzvarētājs": "Winner", "uzvaras starpība": "Winning margin",
+  "kombinācija": "Combo (all parts must win)" };
+function catName(c) {
+  if (c === "kopā" && IS_NHL) return EN() ? "Total goals" : "Kopējie vārti";
+  return (EN() ? CAT_EN : CAT_LV)[c] || c || "";
+}
 
 function nightLabel(dateStr) {
   // US date -> the Riga night that ends the next morning
@@ -332,27 +517,27 @@ function renderNights() {
     b.setAttribute("aria-pressed", String(n.date === state.selected));
     b.append(document.createTextNode(nightLabel(n.date)));
     const s = n.summary || {};
-    b.append(el("small", null, s.settled ? `${s.hits}/${s.settled}` : `${(n.games || []).length} sp.`));
+    b.append(el("small", null, s.settled ? `${s.hits}/${s.settled}` : `${(n.games || []).length} ${t("gamesShort")}`));
     b.addEventListener("click", () => { state.selected = n.date; state.chosenByUser = true; render(); });
     nav.append(b);
   }
 }
 
 function monthTable(m) {
-  const t = el("table", "mt");
+  const tbl = el("table", "mt");
   const head = el("tr");
-  head.append(el("th", null, ""), el("th", null, "Uzvarēts / notikušas"), el("th", null, "Vienības"));
+  head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  for (const [label, s] of [["Visas likmes", m.all], ["★ Visticamākās", m.top], ["Drošās likmes", m.safe], ["Crazy Dazy", m.crazy]]) {
+  for (const [label, s] of [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]]) {
     const tr = el("tr");
     const settled = s && s.settled;
     const u = el("td", settled ? (s.profit_units > 0 ? "pos" : s.profit_units < 0 ? "neg" : "") : "", settled ? signed(s.profit_units) : "–");
-    tr.append(el("td", null, label), el("td", null, settled ? `${s.hits}/${s.settled} (${pct(s.hits, s.settled)})` : (s && s.picks ? `0/0 · ${s.picks} gaida` : "–")), u);
+    tr.append(el("td", null, label), el("td", null, settled ? `${s.hits}/${s.settled} (${pct(s.hits, s.settled)})` : (s && s.picks ? `0/0 · ${s.picks} ${t("waiting")}` : "–")), u);
     body.append(tr);
   }
-  t.append(thead, body);
-  return t;
+  tbl.append(thead, body);
+  return tbl;
 }
 
 function liveMonth() {
@@ -364,15 +549,15 @@ function renderMonth() {
   const cur = liveMonth();
   $("month").hidden = !cur;
   if (cur) {
-    $("monthTitle").textContent = cur.label;
-    $("monthDays").textContent = `mēneša statistika · ${cur.days}`;
+    $("monthTitle").textContent = monthName(cur);
+    $("monthDays").textContent = `${t("monthStats")} · ${cur.days}`;
     $("monthNow").replaceChildren(monthTable(cur));
   }
   const rest = months.filter((m) => m !== cur);
   $("archive").hidden = !rest.length;
   $("archiveBody").replaceChildren(...rest.map((m) => {
     const box = el("div", "box");
-    const h = el("h3", null, m.label);
+    const h = el("h3", null, monthName(m));
     h.append(el("small", null, m.days));
     box.append(h, monthTable(m));
     return box;
@@ -382,18 +567,18 @@ function renderMonth() {
 function renderTop(night) {
   renderMonth();
   const s = night?.top_summary || {};
-  if (s.settled) { $("t1").textContent = `${s.hits}/${s.settled}`; $("t1l").textContent = "Šonakt uzvarēts"; }
-  else { $("t1").textContent = night ? String(s.picks || 0) : "–"; $("t1l").textContent = "Šonakt likmes"; }
+  if (s.settled) { $("t1").textContent = `${s.hits}/${s.settled}`; $("t1l").textContent = t("tonightWonTop"); }
+  else { $("t1").textContent = night ? String(s.picks || 0) : "–"; $("t1l").textContent = t("tonightBets"); }
   const o = state.stats?.top_overall;
   const t2 = $("t2"), t3 = $("t3");
   t3.classList.remove("pos", "neg");
   if (o && o.settled) {
     t2.textContent = `${o.hits}/${o.settled}`;
-    $("t2l").textContent = `Uzvarēts / notikušas (${pct(o.hits, o.settled)})`;
+    $("t2l").textContent = `${t("wonPlayed")} (${pct(o.hits, o.settled)})`;
     t3.textContent = signed(o.profit_units);
     if (o.profit_units > 0) t3.classList.add("pos"); else if (o.profit_units < 0) t3.classList.add("neg");
   } else {
-    t2.textContent = "–"; $("t2l").textContent = "Uzvarēts / notikušas";
+    t2.textContent = "–"; $("t2l").textContent = t("wonPlayed");
     t3.textContent = "–";
   }
 }
@@ -401,39 +586,40 @@ function renderTop(night) {
 function renderStrip(night) {
   renderTop(night);
   const s = night?.summary || {};
-  if (s.settled) { $("s1").textContent = `${s.hits}/${s.settled}`; $("s1l").textContent = "Šī nakts izgāja"; }
-  else { $("s1").textContent = night ? String(s.picks || 0) : "–"; $("s1l").textContent = "Likmes šonakt"; }
+  if (s.settled) { $("s1").textContent = `${s.hits}/${s.settled}`; $("s1l").textContent = t("wonTonight"); }
+  else { $("s1").textContent = night ? String(s.picks || 0) : "–"; $("s1l").textContent = t("betsTonight"); }
   const o = state.stats?.overall;
   if (o && o.settled) {
     $("s2").textContent = pct(o.hits, o.settled);
-    $("s2l").textContent = `Kopā ${o.hits}/${o.settled} (gaidīts ${pct(o.expected_hits, o.settled - o.pushes)})`;
+    $("s2l").textContent = t("totalLine", o.hits, o.settled, pct(o.expected_hits, o.settled - o.pushes));
     $("s3").textContent = signed(o.profit_units);
-    $("s3l").textContent = "Vienības kopā";
+    $("s3l").textContent = t("unitsAll");
   } else {
-    $("s2").textContent = "–"; $("s2l").textContent = "Kopā izgāja";
-    $("s3").textContent = "–"; $("s3l").textContent = "Vienības kopā";
+    $("s2").textContent = "–"; $("s2l").textContent = t("totalWon");
+    $("s3").textContent = "–"; $("s3l").textContent = t("unitsAll");
   }
 }
 
 function pickRow(p, gameTag) {
-  const [cls, word] = RESULT[p.result] || ["wait", "Gaida"];
+  const [cls, wkey] = RESULT[p.result] || ["wait", "pending"];
+  const word = t(wkey);
   const li = el("li", "pick " + (cls === "wait" ? "" : cls) + (p.top ? " top" : ""));
   const left = el("div");
-  if (p.top) left.append(el("span", "star", "★ Visticamākā pēc datiem"), el("br"));
+  if (p.top) left.append(el("span", "star", t("star")), el("br"));
   if (gameTag) left.append(el("span", "game-tag", gameTag));
-  left.append(el("div", "bet", p.bet));
-  left.append(el("span", "cat", CAT[p.category] || p.category || ""));
+  left.append(el("div", "bet", trBet(p.bet)));
+  left.append(el("span", "cat", catName(p.category)));
   if (p.data_conf != null) {
-    left.append(el("span", "why", `Dati: robots ${p.data_conf} % · bukmeikeri ~${p.mk_conf ?? p.confidence} %`));
+    left.append(el("span", "why", t("dataSafe", p.data_conf, p.mk_conf ?? p.confidence)));
   } else if (p.top && p.p_model != null && p.p_market != null) {
-    left.append(el("span", "why", `Dati: robots ${Math.round(p.p_model * 100)} % · bukmeikeri ${Math.round(p.p_market * 100)} %`));
+    left.append(el("span", "why", t("dataTop", Math.round(p.p_model * 100), Math.round(p.p_market * 100))));
   }
   const right = el("div", "odds");
   right.append(el("b", null, "~" + Number(p.est_odds).toFixed(2)));
-  right.append(el("small", null, "godīgais " + Number(p.fair_odds).toFixed(2)));
+  right.append(el("small", null, t("fair") + " " + Number(p.fair_odds).toFixed(2)));
   const meter = el("div", "meter");
   meter.append(el("span", "pill " + cls, word));
-  const bar = el("div", "bar"); bar.setAttribute("role", "img"); bar.setAttribute("aria-label", `Drošība ${p.confidence} no 100`);
+  const bar = el("div", "bar"); bar.setAttribute("role", "img"); bar.setAttribute("aria-label", t("confAria", p.confidence));
   const fill = el("i"); fill.style.width = Math.max(0, Math.min(100, p.confidence)) + "%"; bar.append(fill);
   const conf = el("span", "conf", String(p.confidence)); conf.append(el("small", null, "/100"));
   meter.append(bar, conf);
@@ -450,10 +636,10 @@ function renderSafe(night) {
     { ...c, mk_conf: c.confidence, confidence: c.data_conf ?? c.confidence })));
   const s = night.safe_summary || {};
   $("d1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
-  $("d1l").textContent = s.settled ? "Šonakt izgāja" : `Šonakt gaida (${list.length})`;
+  $("d1l").textContent = s.settled ? t("tonightWon") : `${t("tonightWait")} (${list.length})`;
   const o = state.stats?.safe_overall;
   $("d2").textContent = o && o.settled ? `${o.hits}/${o.settled}` : "–";
-  $("d2l").textContent = o && o.settled ? `Kopā izgāja (${pct(o.hits, o.settled)})` : "Kopā izgāja";
+  $("d2l").textContent = o && o.settled ? `${t("totalWon")} (${pct(o.hits, o.settled)})` : t("totalWon");
   $("d3").textContent = o && o.settled ? signed(o.profit_units) : "–";
 }
 
@@ -461,14 +647,14 @@ function renderCrazy(night) {
   const list = night?.crazy || [];
   $("crazy").hidden = !list.length;
   if (!list.length) return;
-  $("crazyIntro").textContent = `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${night.crazy_min_odds ?? 4}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`;
+  $("crazyIntro").textContent = t("crazyIntro", night.crazy_min_odds ?? 4);
   $("crazyList").replaceChildren(...list.map((c) => betCard(c, "crazy", night.date)));
   const s = night.crazy_summary || {};
   $("c1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
-  $("c1l").textContent = s.settled ? "Šonakt izgāja" : "Šonakt gaida";
+  $("c1l").textContent = s.settled ? t("tonightWon") : t("tonightWait");
   const o = state.stats?.crazy_overall;
   $("c2").textContent = o && o.settled ? `${o.hits}/${o.settled}` : "–";
-  $("c2l").textContent = o && o.settled ? `Kopā izgāja (gaidīts ${o.expected_hits.toFixed(1)})` : "Kopā izgāja";
+  $("c2l").textContent = o && o.settled ? t("totalWonExp", o.expected_hits.toFixed(1)) : t("totalWon");
   $("c3").textContent = o && o.settled ? signed(o.profit_units) : "–";
 }
 
@@ -478,8 +664,8 @@ function gameSummary(g) {
   const picks = g.picks || [];
   const settled = picks.filter((p) => p.result && p.result !== "atgriezts");
   const hits = picks.filter((p) => p.result === "izgāja").length;
-  if (!settled.length) return [`${picks.length} likmes`, ""];
-  return [`${hits}/${settled.length} izgāja`, hits * 2 >= settled.length ? "good" : "bad"];
+  if (!settled.length) return [t("bets", picks.length), ""];
+  return [t("wonOf", hits, settled.length), hits * 2 >= settled.length ? "good" : "bad"];
 }
 
 function teamsEl(away, home, awayRec, homeRec) {
@@ -522,18 +708,18 @@ function renderGame(g, nightDate) {
   const content = [];
   const lines = el("div", "lines");
   const add = (label, val) => { const s = el("span"); s.append(document.createTextNode(label + " ")); s.append(el("b", null, val)); lines.append(s); };
-  if (g.robot_line) add("Robots:", `${g.robot_line} · ${g.robot_total ?? "–"}`);
-  if (g.market_line && g.market_line !== "—") add("Bukmeikeri:", `${g.market_line} · ${g.market_total ?? "–"}`);
+  if (g.robot_line) add(t("robot"), `${trLine(g.robot_line)} · ${trLine(g.robot_total) ?? "–"}`);
+  if (g.market_line && g.market_line !== "—") add(t("bookies"), `${trLine(g.market_line)} · ${trLine(g.market_total) ?? "–"}`);
   if (lines.childElementCount) content.push(lines);
-  if (g.score) content.push(el("div", "final", "Gala rezultāts: " + g.score));
+  if (g.score) content.push(el("div", "final", t("final") + trScore(g.score)));
   const ul = el("ul", "picks");
   for (const p of g.picks || []) ul.append(pickRow(p));
   content.push(ul);
   if (g.injuries && g.injuries.length) {
     const d = el("details");
-    d.append(el("summary", null, `Savainojumi un sastāvs (${g.injuries.length})`));
+    d.append(el("summary", null, t("injuries", g.injuries.length)));
     const list = el("ul");
-    for (const t of g.injuries) list.append(el("li", null, t));
+    for (const line of g.injuries) list.append(el("li", null, trNote(line)));
     d.append(list);
     content.push(d);
   }
@@ -544,10 +730,10 @@ function renderGame(g, nightDate) {
 // A single Safe / Crazy Dazy bet as a collapsible card: game, time and its status when closed.
 function betCard(c, kind, nightDate, rowPick) {
   const [away, home] = (c.game || "@").split("@");
-  const status = c.result === "izgāja" ? ["izgāja", "good"] : c.result === "neizgāja" ? ["neizgāja", "bad"]
-    : c.result === "atgriezts" ? ["atgriezts", ""] : ["gaida", ""];
+  const status = c.result === "izgāja" ? [t("wonL"), "good"] : c.result === "neizgāja" ? [t("lostL"), "bad"]
+    : c.result === "atgriezts" ? [t("pushL"), ""] : [t("pendingL"), ""];
   const content = [];
-  if (c.score) content.push(el("div", "final", "Gala rezultāts: " + c.score));
+  if (c.score) content.push(el("div", "final", t("final") + trScore(c.score)));
   const ul = el("ul", "picks");
   ul.append(pickRow(rowPick || c));
   content.push(ul);
@@ -564,12 +750,13 @@ function render() {
   renderStrip(night);
   const box = $("games");
   if (!night) {
-    $("sub").textContent = "Vēl nav nevienas nakts likmju.";
-    box.replaceChildren(Object.assign(el("div", "empty"), { innerHTML: "<b>Vēl nav likmju</b>" }));
-    box.firstChild.append(document.createTextNode("Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus."));
+    $("sub").textContent = t("noNights");
+    const empty = el("div", "empty");
+    empty.append(el("b", null, t("noBets")), document.createTextNode(t("emptyText")));
+    box.replaceChildren(empty);
   } else {
     const n = (night.games || []).length;
-    $("sub").textContent = `Nakts uz ${nightLabel(night.date)} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${night.min_odds ?? 2.1}`;
+    $("sub").textContent = t("sub", nightLabel(night.date), n, night.min_odds ?? 2.1);
     box.replaceChildren(...(night.games || []).map((g) => renderGame(g, night.date)));
   }
   renderSafe(night);
@@ -582,33 +769,48 @@ function render() {
     return tr;
   }));
   const upd = state.stats?.updated_at;
-  $("updated").textContent = upd ? "Atjaunināts: " + new Date(upd).toLocaleString("lv-LV", { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
+  $("updated").textContent = upd ? t("updated") + new Date(upd).toLocaleString(t("locale"), { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
 }
 
 // ---- light / dark switch (follows the phone until the viewer picks one; remembered on this device)
 function currentTheme() {
-  const t = document.documentElement.getAttribute("data-theme");
-  if (t === "light" || t === "dark") return t;
+  const th = document.documentElement.getAttribute("data-theme");
+  if (th === "light" || th === "dark") return th;
   return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
-function showTheme() {
-  const t = currentTheme();
-  $("themeLight").setAttribute("aria-pressed", String(t === "light"));
-  $("themeDark").setAttribute("aria-pressed", String(t === "dark"));
-}
-function setTheme(t) {
-  document.documentElement.setAttribute("data-theme", t);
-  try { localStorage.setItem("nba-theme", t); } catch (e) { /* storage unavailable */ }
+function showTheme() { $("themeSwitch").setAttribute("aria-checked", String(currentTheme() === "dark")); }
+$("themeSwitch").addEventListener("click", () => {
+  const th = currentTheme() === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", th);
+  try { localStorage.setItem("nba-theme", th); } catch (e) { /* storage unavailable */ }
   showTheme();
-}
-$("themeLight").addEventListener("click", () => setTheme("light"));
-$("themeDark").addEventListener("click", () => setTheme("dark"));
+});
 try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", showTheme); } catch (e) { /* old browser */ }
 showTheme();
 
+// ---- language menu (a small drop-down)
+function closeLang() { $("lang").classList.remove("open"); $("langBtn").setAttribute("aria-expanded", "false"); }
+$("langBtn").addEventListener("click", (e) => {
+  e.stopPropagation();
+  const open = !$("lang").classList.contains("open");
+  $("lang").classList.toggle("open", open);
+  $("langBtn").setAttribute("aria-expanded", String(open));
+});
+document.querySelectorAll("#langInner button").forEach((b) => b.addEventListener("click", () => {
+  LANG = b.dataset.lang;
+  try { localStorage.setItem("nba-lang", LANG); } catch (e) { /* storage unavailable */ }
+  closeLang();
+  applyStatic();
+  render();
+  tickCountdown();
+}));
+document.addEventListener("click", (e) => { if (!$("lang").contains(e.target)) closeLang(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLang(); });
+applyStatic();
+
 // ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
-const SLOTS = [{ h: 7, m: 0, name: "Rezultāti" }, { h: 8, m: 30, name: "Rezultāti (vēlās spēles)" },
-  { h: 21, m: 30, name: "Likmes" }];
+const SLOTS = [{ h: 7, m: 0, name: "slotResults" }, { h: 8, m: 30, name: "slotLate" },
+  { h: 21, m: 30, name: "slotPicks" }];
 const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
   day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
 
@@ -650,8 +852,8 @@ function tickCountdown() {
   if (running) {
     box.classList.add("live");
     $("nextLbl").innerHTML = "";
-    $("nextLbl").append(el("b", null, prev.name), document.createTextNode(` · atjauninājums notiek (GitHub var kavēties līdz ~20 min)`));
-    $("nextClock").textContent = "drīz…";
+    $("nextLbl").append(el("b", null, t(prev.name)), document.createTextNode(t("running")));
+    $("nextClock").textContent = t("soon");
     maybePoll(now);
     return;
   }
@@ -659,7 +861,7 @@ function tickCountdown() {
   const left = Math.max(0, Math.floor((next.t - now) / 1000));
   const h = Math.floor(left / 3600), m = Math.floor((left % 3600) / 60), sec = left % 60;
   $("nextLbl").innerHTML = "";
-  $("nextLbl").append(document.createTextNode("Nākamais atjauninājums: "), el("b", null, `${next.name} ${pad(next.h)}:${pad(next.m)}`));
+  $("nextLbl").append(document.createTextNode(t("nextUpdate")), el("b", null, `${t(next.name)} ${pad(next.h)}:${pad(next.m)}`));
   $("nextClock").textContent = `${pad(h)}:${pad(m)}:${pad(sec)}`;
 }
 
@@ -682,14 +884,14 @@ async function start() {
   let db = null;
   try { db = await window.claude?.use?.("db"); } catch (e) { db = null; }
   if (!db) {
-    $("sub").textContent = "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.";
+    $("sub").textContent = t("noData");
     return;
   }
   let gotNights = false;
   const timer = setTimeout(() => {
-    if (!gotNights) { $("warn").hidden = false; $("warn").textContent = "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu."; }
+    if (!gotNights) { $("warn").hidden = false; $("warn").textContent = t("loadSlow"); }
   }, 10000);
-  const fail = (e) => { clearTimeout(timer); $("warn").hidden = false; $("warn").textContent = "Neizdevās ielādēt datus (" + (e?.code || "kļūda") + ")."; };
+  const fail = (e) => { clearTimeout(timer); $("warn").hidden = false; $("warn").textContent = t("loadFail", e?.code || "error"); };
 
   db.collection("nights").orderBy("date", "desc").limit(30).onSnapshot((snap) => {
     state.nights = snap.docs.map((d) => d.data()).filter(Boolean);
