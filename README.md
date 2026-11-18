@@ -58,14 +58,10 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 - **Mēneša statistika** (no 1. līdz mēneša pēdējai dienai, pēc spēļu datuma): visas likmes,
   ★ visticamākās un Crazy Dazy.
 
-### Arhīvs (simulācija)
+### Arhīvs pa mēnešiem
 
-`python archive.py` izveido `archive/` (NBA) un `nhl/archive/`. Tajos ir likmes, ko robots būtu
-ieteicis katrā sezonas dienā pirms tā palaišanas (NBA no 20.10., NHL no 1.10. līdz 17.11.2026),
-un kā tās beidzās. Katra diena tiek aprēķināta tikai ar tolaik zināmo: iepriekšējās spēles, atpūtu,
-bukmeikeru noslēguma koeficientus un NHL vārtsargus. Tā laika savainojumu saraksti nav pieejami.
-Lapā šīs naktis ir atzīmētas kā "simulācija" un parādās sadaļā **Arhīvs pa mēnešiem**.
 Īstā statistika sākas 18.11.2026 (novembrī 18.–30.11.), nākamie mēneši ir no 1. līdz pēdējai dienai.
+Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**.
 
 ### NHL
 

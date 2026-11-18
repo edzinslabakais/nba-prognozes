@@ -50,7 +50,7 @@ def build_message() -> str:
         if not stats_f.exists():
             continue
         stats = json.loads(stats_f.read_text())
-        settled_nights = [n for n in stats.get("nights", []) if n.get("settled") and not n.get("simulated")]
+        settled_nights = [n for n in stats.get("nights", []) if n.get("settled")]
         lines.append(f"*{title}*")
         if settled_nights:
             n = settled_nights[-1]
@@ -58,7 +58,7 @@ def build_message() -> str:
             extra = f", {waiting} gaida" if waiting else ""
             lines.append(f"Nakts uz {_night_label(n['date'])}: visas {_cell(n)} · ★ {_cell(n.get('top'))} · "
                          f"Crazy {_cell(n.get('crazy'))}{extra}")
-        m = next((x for x in stats.get("months") or [] if not x.get("simulated")), None)
+        m = (stats.get("months") or [None])[0]
         if m:
             lines.append(f"{m['label']}: visas {_cell(m['all'])} · ★ {_cell(m['top'])} · Crazy {_cell(m['crazy'])}")
         lines.append(f"Kopā: visas {_cell(stats.get('overall'))} · ★ {_cell(stats.get('top_overall'))} · "

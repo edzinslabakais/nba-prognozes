@@ -168,15 +168,8 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .calc-out b.neg { color: var(--bad); }
 .calc-out small { font-size: 11px; color: var(--muted); line-height: 1.3; }
 .calc-note { margin: 0; font-size: 12px; color: var(--muted); }
-.chip.sim { border-style: dashed; color: var(--muted); }
-.chip.sim[aria-pressed="true"] { background: var(--muted); border-color: var(--muted); color: var(--bg); }
-.simnote { margin: 0; padding: 10px 12px; border-radius: 10px; border: 1px dashed var(--muted); font-size: 13px; color: var(--muted); }
-.simnote b { color: var(--ink); }
-.tag-sim { display: inline-block; margin-left: 6px; font: 600 11px var(--font-body); letter-spacing: 0.04em; text-transform: uppercase;
-  color: var(--muted); border: 1px dashed var(--muted); border-radius: 999px; padding: 2px 7px; vertical-align: middle; }
 .archive { display: flex; flex-direction: column; gap: 10px; }
 .archive .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 6px; }
-.archive .box.simbox { border-style: dashed; }
 .archive h3 { font: 700 17px var(--font-display); letter-spacing: 0.03em; margin: 0; }
 .archive h3 small { font: 500 12px var(--font-body); color: var(--muted); letter-spacing: 0; margin-left: 6px; }
 .month details summary { padding: 6px 0; }
@@ -251,7 +244,6 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div id="monthNow"></div>
   </section>
 
-  <p class="simnote" id="simnote" hidden><b>Simulācija.</b> Šajā naktī robots vēl nedarbojās. Tās ir likmes, ko robots būtu ieteicis, izmantojot tikai pirms spēles pieejamos datus: iepriekšējās spēles, atpūtu, bukmeikeru noslēguma koeficientus un NHL vārtsargus, bet bez tā laika savainojumu saraksta. Rezultāti ir īsti.</p>
   <p class="warn" id="warn" hidden></p>
   <section class="games" id="games" aria-live="polite">
     <div class="empty"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
@@ -318,7 +310,7 @@ function renderNights() {
   const nav = $("nights");
   nav.replaceChildren();
   for (const n of state.nights) {
-    const b = el("button", "chip" + (n.simulated ? " sim" : ""));
+    const b = el("button", "chip");
     b.type = "button";
     b.setAttribute("aria-pressed", String(n.date === state.selected));
     b.append(document.createTextNode(nightLabel(n.date)));
@@ -347,7 +339,7 @@ function monthTable(m) {
 }
 
 function liveMonth() {
-  return (state.stats?.months || []).find((m) => !m.simulated) || null;
+  return (state.stats?.months || [])[0] || null;
 }
 
 function renderMonth() {
@@ -362,10 +354,9 @@ function renderMonth() {
   const rest = months.filter((m) => m !== cur);
   $("archive").hidden = !rest.length;
   $("archiveBody").replaceChildren(...rest.map((m) => {
-    const box = el("div", "box" + (m.simulated ? " simbox" : ""));
+    const box = el("div", "box");
     const h = el("h3", null, m.label);
     h.append(el("small", null, m.days));
-    if (m.simulated) h.append(el("span", "tag-sim", "simulācija"));
     box.append(h, monthTable(m));
     return box;
   }));
@@ -570,7 +561,6 @@ function render() {
     box.replaceChildren(...(night.games || []).map(renderGame));
   }
   renderCrazy(night);
-  $("simnote").hidden = !night?.simulated;
   const cal = state.stats?.calibration || [];
   $("calib").hidden = !cal.length;
   $("calibBody").replaceChildren(...cal.map((c) => {

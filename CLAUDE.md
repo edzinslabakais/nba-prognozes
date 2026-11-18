@@ -42,5 +42,4 @@ LIKMES vai REZULTĀTI, atjaunini to
 - `espn.py` — ESPN API + kešs (`cache/`), `data.py` — tabulas, `model.py` — reitingi un savainojumi
 - `predict.py` — spēļu prognozes, `bets.py` — likmju varbūtības (cenu lapa / Optibet koeficientu vērtēšana)
 - `bot.py` — LIKMES / REZULTĀTI (+ kopīgā vēsture/eksports, `League`), `backtest.py` — kalibrēšana
-- `archive.py` — simulēts arhīvs (`archive/`, `nhl/archive/`, "simulated": true; neskaitās īstajā statistikā)
 - NHL: `nhl_data.py`, `nhl_model.py` (Puasona vārtu režģis), `nhl_bets.py`, `nhl_bot.py`, `nhl_backtest.py`

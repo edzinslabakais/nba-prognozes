@@ -1,6 +1,6 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 18.11.2026 23:37 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 23:42 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 3 spēles, koef. ≥ 2.1
 
@@ -61,7 +61,3 @@ Crazy Dazy kopā: vēl nav noslēgtu likmju
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|
 | Novembris 2026 (18.–30.11.) | – | – | – | – | – | – |
-| Novembris 2026 (1.–17.11.) — simulācija | 148/351 | -6.28 | 53/117 | +1.07 | 16/49 | +16.63 |
-| Oktobris 2026 (1.–31.10.) — simulācija | 270/654 | -14.97 | 90/218 | -17.50 | 25/88 | +14.37 |
-
-_Simulācija = arhīvs: ko robots būtu ieteicis pirms šīs sistēmas palaišanas, izmantojot tikai pirms spēles pieejamos datus (bez tā laika savainojumu saraksta)._
