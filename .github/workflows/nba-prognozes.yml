@@ -101,6 +101,8 @@ jobs:
       - name: Uzbūvēt lapu
         run: python site.py
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
