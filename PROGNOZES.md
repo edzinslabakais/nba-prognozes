@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 18.11.2026 23:42 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 23:47 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 12 spēles, koef. ≥ 2.1
 
@@ -73,13 +73,13 @@ Robots: **TOR -4.7**, kopā 225.5 · bukmeikeri: TOR -4.5, kopā 225.5
 Savainojumi/sastāvs: TOR: Scottie Barnes (Out) -1.3; TOR: RJ Barrett (Day-To-Day) -0.7; WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6
 
 ### DET @ NO · 03:00
-Robots: **DET -4.5**, kopā 225.5 · bukmeikeri: DET -4.5, kopā 225.5
+Robots: **DET -4.5**, kopā 226.5 · bukmeikeri: DET -4.5, kopā 226.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **DET -6.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **DET virs 116.5** | 43/100 | 2.17 | 2.33 | ⏳ gaida |
+| 1 | **DET -6.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 ★ | **virs 228.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **NO virs 112.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
 Savainojumi/sastāvs: NO: Dejounte Murray (Out) -0.5; NO: Trey Murphy III (Out) -0.5; NO: Yves Missi (spēlēja 2/10 pēdējās) +0.8; DET: Duncan Robinson (Out) -1.3; DET: Cade Cunningham (Day-To-Day) -1.2
 
@@ -95,12 +95,12 @@ Robots: **OKC -6.0**, kopā 228.5 · bukmeikeri: OKC -5.5, kopā 228.5
 Savainojumi/sastāvs: ATL: CJ McCollum (Out) -1.2; ATL: Kingston Flemings (Out) -0.4; ATL: Corey Kispert (spēlēja 5/10 pēdējās) +0.4
 
 ### GS @ DAL · 03:00
-Robots: **DAL -4.2**, kopā 224.5 · bukmeikeri: DAL -4.5, kopā 224.5
+Robots: **DAL -4.2**, kopā 225.5 · bukmeikeri: DAL -4.5, kopā 225.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **GS virs 111.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **virs 226.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 | **DAL zem 112.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 3 ★ | **GS +1.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.4; GS: Stephen Curry (Out) -2.3; GS: Brandon Williams (Out) -0.5
@@ -117,26 +117,38 @@ Robots: **BOS -2.8**, kopā 218.5 · bukmeikeri: BOS -2.5, kopā 218.5
 Savainojumi/sastāvs: BOS: Paul George (spēlēja 8/10 pēdējās) +0.4
 
 ### UTAH @ LAL · 05:00
-Robots: **LAL -10.7**, kopā 228.5 · bukmeikeri: LAL -10.5, kopā 228.5
+Robots: **LAL -12.5**, kopā 231.5 · bukmeikeri: LAL -12.5, kopā 231.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **LAL -12.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
-| 2 ★ | **virs 230.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **UTAH virs 110.5** | 43/100 | 2.17 | 2.33 | ⏳ gaida |
+| 1 | **LAL -14.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 ★ | **virs 233.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **LAL virs 123.5** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
 
-Savainojumi/sastāvs: LAL: Walker Kessler (Day-To-Day) -0.6; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4; UTAH: Lauri Markkanen (Out) -0.5
+Savainojumi/sastāvs: LAL: Austin Reaves (Out) -1.6; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4; UTAH: Lauri Markkanen (Out) -0.5
 
 ### PHX @ SAC · 05:00
-Robots: **PHX -6.6**, kopā 226.5 · bukmeikeri: PHX -6.5, kopā 226.5
+Robots: **PHX -6.5**, kopā 226.5 · bukmeikeri: PHX -6.5, kopā 226.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **PHX -8.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 ★ | **virs 228.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **SAC virs 111.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 228.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **PHX -8.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **SAC virs 111.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4
+
+## 🛡 Drošās likmes — koef. ≥ 1.7
+
+Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem; no gandrīz vienlīdz drošām līnijām ņemta ar augstāko koeficientu.
+
+| Spēle | Likme | Dati | ~Optibet | Rezultāts |
+|---|---|---|---|---|
+| ATL@OKC | **ATL zem 111.5** | 68/100 | 1.78 | ⏳ gaida |
+| DET@NO | **virs 224.5** | 68/100 | 1.78 | ⏳ gaida |
+| WSH@TOR | **virs 223.5** | 65/100 | 1.78 | ⏳ gaida |
+| PHI@ORL | **ORL virs 108.5** | 62/100 | 1.72 | ⏳ gaida |
+| GS@DAL | **GS +5.5** | 62/100 | 1.70 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -144,7 +156,7 @@ Savainojumi/sastāvs: PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| DET@NO | **virs 238.5** | 22/100 | 4.20 | 4.52 | ⏳ gaida |
+| DET@NO | **virs 239.5** | 22/100 | 4.20 | 4.51 | ⏳ gaida |
 | ATL@OKC | **ATL zem 102.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
 | WSH@TOR | **virs 238.5** | 22/100 | 4.20 | 4.52 | ⏳ gaida |
 
@@ -153,10 +165,11 @@ Savainojumi/sastāvs: PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4
 ★ Visticamākās (1 katrā spēlē): vēl nav noslēgtu likmju
 
 Visas likmes kopā: vēl nav noslēgtu likmju
+Drošās likmes kopā: vēl nav noslēgtu likmju
 Crazy Dazy kopā: vēl nav noslēgtu likmju
 
 ### Mēneša statistika
 
-| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |
-|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | – | – | – | – | – | – |
+| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
+|---|---|---|---|---|---|---|---|---|
+| Novembris 2026 (18.–30.11.) | – | – | – | – | – | – | – | – |

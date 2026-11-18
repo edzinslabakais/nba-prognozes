@@ -57,12 +57,13 @@ def build_message() -> str:
             waiting = n["picks"] - n["settled"]
             extra = f", {waiting} gaida" if waiting else ""
             lines.append(f"Nakts uz {_night_label(n['date'])}: visas {_cell(n)} · ★ {_cell(n.get('top'))} · "
-                         f"Crazy {_cell(n.get('crazy'))}{extra}")
+                         f"drošās {_cell(n.get('safe'))} · Crazy {_cell(n.get('crazy'))}{extra}")
         m = (stats.get("months") or [None])[0]
         if m:
-            lines.append(f"{m['label']}: visas {_cell(m['all'])} · ★ {_cell(m['top'])} · Crazy {_cell(m['crazy'])}")
+            lines.append(f"{m['label']}: visas {_cell(m['all'])} · ★ {_cell(m['top'])} · drošās {_cell(m.get('safe'))} · "
+                         f"Crazy {_cell(m['crazy'])}")
         lines.append(f"Kopā: visas {_cell(stats.get('overall'))} · ★ {_cell(stats.get('top_overall'))} · "
-                     f"Crazy {_cell(stats.get('crazy_overall'))}")
+                     f"drošās {_cell(stats.get('safe_overall'))} · Crazy {_cell(stats.get('crazy_overall'))}")
         lines.append("")
     if not lines:
         return ""

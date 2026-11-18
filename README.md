@@ -79,6 +79,14 @@ Pārskats: [NHL.md](NHL.md), vēsture: `nhl/history/`.
   Neizšķirts pamatlaikā: modelis 25,1 %, realitāte 25,0 %. Šajā sezonā robots + bukmeikeri
   uzvarētāju uzmin 61,5 % gadījumu, bukmeikeri vieni paši 60,3 %.
 
+### Drošās likmes
+
+Katru vakaru vismaz 3 likmes (līdz 5, ja robota dati dod ≥ 60 %), katra no citas spēles, ar
+aptuveno koeficientu **≥ 1.7**. Tās tiek izvēlētas **tikai pēc robota statistikas modeļa** (forma,
+reitingi, savainojumi, atpūta, NHL vārtsargi), nevis pēc bukmeikeriem. Ja vairākas līnijas ir gandrīz
+vienlīdz drošas (līdz 2 procentpunktu starpībai), tiek ņemta tā, kurai ir augstākais koeficients.
+Tām ir sava statistika, un tās ir arī mēneša tabulā.
+
 ### Crazy Dazy
 
 Katru vakaru robots no visām nakts spēlēm izvēlas arī 3 likmes ar koeficientu **4.0 vai vairāk**

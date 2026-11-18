@@ -185,6 +185,17 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .crazy-list .bar i { background: var(--wild); }
 .crazy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .crazy-stats .stat b { color: var(--wild); }
+.safe { display: flex; flex-direction: column; gap: 10px; }
+.safe h2 { color: var(--good); }
+.safe .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
+.safe-list { background: var(--surface); border: 1px solid var(--good); border-radius: 12px; overflow: hidden; }
+.safe-list .picks { border-top: 0; }
+.safe-list .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
+.safe-list .odds b, .safe-list .conf { color: var(--good); }
+.safe-list .bar i { background: var(--good); }
+.safe-list .why { color: var(--good); }
+.safe-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.safe-stats .stat b { color: var(--good); }
 .warn { font-size: 13px; color: var(--bad); }
 table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
 th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
@@ -259,6 +270,17 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div class="tbl"><table><thead><tr><th>Drošība</th><th>Likmes</th><th>Izgāja</th><th>Robots gaidīja</th></tr></thead><tbody id="calibBody"></tbody></table></div>
   </section>
 
+  <section class="safe" id="safe" hidden>
+    <h2>Drošās likmes</h2>
+    <p class="intro" id="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
+    <div class="safe-list"><ul class="picks" id="safeList"></ul></div>
+    <div class="safe-stats">
+      <div class="stat"><b id="d1">–</b><span id="d1l">Šonakt izgāja</span></div>
+      <div class="stat"><b id="d2">–</b><span id="d2l">Kopā izgāja</span></div>
+      <div class="stat"><b id="d3">–</b><span>Vienības kopā</span></div>
+    </div>
+  </section>
+
   <section class="crazy" id="crazy" hidden>
     <h2>Crazy Dazy</h2>
     <p class="intro" id="crazyIntro">3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet. Katra ir no citas spēles.</p>
@@ -275,6 +297,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <p><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
     <p><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
     <p><b>★ Visticamākā pēc datiem</b>: katrā spēlē robots salīdzina savu modeli (forma, savainojumi, atpūta, vārtsargi, mājas laukums) ar bukmeikeru vērtējumu. ★ saņem likme, kurai ir laba iespēja iziet un ko dati vērtē augstāk nekā bukmeikeri. Tā netiek izvēlēta pēc zemākā koeficienta.</p>
+    <p><b>Drošās likmes</b>: koeficients vismaz 1.7. Tās tiek izvēlētas tikai pēc robota statistikas modeļa, un "Dati" rāda, cik droša likme ir pēc robota datiem. Robota paša modelis vēsturē ir bijis mazliet mazāk precīzs nekā bukmeikeri, tāpēc sekojiet līdzi statistikai.</p>
     <p><b>Mēneša statistika</b> skaita likmes pēc spēļu datuma no mēneša 1. līdz pēdējai dienai.</p>
     <p><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
     <p id="updated"></p>
@@ -327,7 +350,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, "Uzvarēts / notikušas"), el("th", null, "Vienības"));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  for (const [label, s] of [["Visas likmes", m.all], ["★ Visticamākās", m.top], ["Crazy Dazy", m.crazy]]) {
+  for (const [label, s] of [["Visas likmes", m.all], ["★ Visticamākās", m.top], ["Drošās likmes", m.safe], ["Crazy Dazy", m.crazy]]) {
     const tr = el("tr");
     const settled = s && s.settled;
     const u = el("td", settled ? (s.profit_units > 0 ? "pos" : s.profit_units < 0 ? "neg" : "") : "", settled ? signed(s.profit_units) : "–");
@@ -474,7 +497,9 @@ function pickRow(p, gameTag) {
   if (gameTag) left.append(el("span", "game-tag", gameTag));
   left.append(el("div", "bet", p.bet));
   left.append(el("span", "cat", CAT[p.category] || p.category || ""));
-  if (p.top && p.p_model != null && p.p_market != null) {
+  if (p.data_conf != null) {
+    left.append(el("span", "why", `Dati: robots ${p.data_conf} % · bukmeikeri ~${p.mk_conf ?? p.confidence} %`));
+  } else if (p.top && p.p_model != null && p.p_market != null) {
     left.append(el("span", "why", `Dati: robots ${Math.round(p.p_model * 100)} % · bukmeikeri ${Math.round(p.p_market * 100)} %`));
   }
   const right = el("div", "odds");
@@ -488,6 +513,25 @@ function pickRow(p, gameTag) {
   meter.append(bar, conf);
   li.append(left, right, meter);
   return li;
+}
+
+function renderSafe(night) {
+  const list = night?.safe || [];
+  $("safe").hidden = !list.length;
+  if (!list.length) return;
+  $("safeList").replaceChildren(...list.map((c) => {
+    const time = (c.riga_time || "").split(" ")[1] || "";
+    const tag = `${c.game.replace("@", " @ ")}${time ? " · " + time : ""}${c.score ? " · " + c.score : ""}`;
+    // the bar shows how safe the bet is by our own data, which is what these picks are chosen by
+    return pickRow({ ...c, mk_conf: c.confidence, confidence: c.data_conf ?? c.confidence }, tag);
+  }));
+  const s = night.safe_summary || {};
+  $("d1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
+  $("d1l").textContent = s.settled ? "Šonakt izgāja" : `Šonakt gaida (${list.length})`;
+  const o = state.stats?.safe_overall;
+  $("d2").textContent = o && o.settled ? `${o.hits}/${o.settled}` : "–";
+  $("d2l").textContent = o && o.settled ? `Kopā izgāja (${pct(o.hits, o.settled)})` : "Kopā izgāja";
+  $("d3").textContent = o && o.settled ? signed(o.profit_units) : "–";
 }
 
 function renderCrazy(night) {
@@ -560,6 +604,7 @@ function render() {
     $("sub").textContent = `Nakts uz ${nightLabel(night.date)} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${night.min_odds ?? 2.1}`;
     box.replaceChildren(...(night.games || []).map(renderGame));
   }
+  renderSafe(night);
   renderCrazy(night);
   const cal = state.stats?.calibration || [];
   $("calib").hidden = !cal.length;

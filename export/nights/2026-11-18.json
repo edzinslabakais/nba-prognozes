@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "min_odds": 2.1,
- "generated_at": "2026-11-18T21:00+00:00",
+ "generated_at": "2026-11-18T21:47+00:00",
  "games": [
   {
    "game_id": "401910007",
@@ -346,9 +346,9 @@
    "start_utc": "2026-11-19 01:00:00+00:00",
    "riga_time": "19.11 03:00",
    "robot_line": "DET -4.5",
-   "robot_total": 225.5,
+   "robot_total": 226.5,
    "market_line": "DET -4.5",
-   "market_total": 225.5,
+   "market_total": 226.5,
    "injuries": [
     "NO: Dejounte Murray (Out) -0.5",
     "NO: Trey Murphy III (Out) -0.5",
@@ -358,17 +358,6 @@
    ],
    "score": null,
    "picks": [
-    {
-     "category": "kopā",
-     "bet": "virs 227.5",
-     "p_model": 0.6202,
-     "p_market": 0.4349,
-     "fair_odds": 2.3,
-     "est_odds": 2.14,
-     "confidence": 43,
-     "result": null,
-     "top": true
-    },
     {
      "category": "starpība",
      "bet": "DET -6.5",
@@ -381,12 +370,23 @@
      "top": false
     },
     {
+     "category": "kopā",
+     "bet": "virs 228.5",
+     "p_model": 0.5996,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
      "category": "komandas punkti",
-     "bet": "DET virs 116.5",
-     "p_model": 0.5843,
-     "p_market": 0.4284,
-     "fair_odds": 2.33,
-     "est_odds": 2.17,
+     "bet": "NO virs 112.5",
+     "p_model": 0.5591,
+     "p_market": 0.432,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
      "confidence": 43,
      "result": null,
      "top": false
@@ -460,9 +460,9 @@
    "start_utc": "2026-11-19 01:00:00+00:00",
    "riga_time": "19.11 03:00",
    "robot_line": "DAL -4.2",
-   "robot_total": 224.5,
+   "robot_total": 225.5,
    "market_line": "DAL -4.5",
-   "market_total": 224.5,
+   "market_total": 225.5,
    "injuries": [
     "DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.4",
     "GS: Stephen Curry (Out) -2.3",
@@ -472,8 +472,8 @@
    "picks": [
     {
      "category": "komandas punkti",
-     "bet": "GS virs 111.5",
-     "p_model": 0.5032,
+     "bet": "DAL zem 112.5",
+     "p_model": 0.4839,
      "p_market": 0.432,
      "fair_odds": 2.29,
      "est_odds": 2.13,
@@ -483,9 +483,9 @@
     },
     {
      "category": "kopā",
-     "bet": "virs 226.5",
-     "p_model": 0.4595,
-     "p_market": 0.4345,
+     "bet": "virs 227.5",
+     "p_model": 0.4391,
+     "p_market": 0.4349,
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
@@ -569,12 +569,12 @@
    "home_record": "13-2",
    "start_utc": "2026-11-19 03:00:00+00:00",
    "riga_time": "19.11 05:00",
-   "robot_line": "LAL -10.7",
-   "robot_total": 228.5,
-   "market_line": "LAL -10.5",
-   "market_total": 228.5,
+   "robot_line": "LAL -12.5",
+   "robot_total": 231.5,
+   "market_line": "LAL -12.5",
+   "market_total": 231.5,
    "injuries": [
-    "LAL: Walker Kessler (Day-To-Day) -0.6",
+    "LAL: Austin Reaves (Out) -1.6",
     "LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4",
     "UTAH: Lauri Markkanen (Out) -0.5"
    ],
@@ -582,20 +582,20 @@
    "picks": [
     {
      "category": "starpība",
-     "bet": "LAL -12.5",
-     "p_model": 0.5058,
-     "p_market": 0.4356,
-     "fair_odds": 2.26,
-     "est_odds": 2.1,
+     "bet": "LAL -14.5",
+     "p_model": 0.4369,
+     "p_market": 0.4363,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
      "confidence": 44,
      "result": null,
      "top": false
     },
     {
      "category": "kopā",
-     "bet": "virs 230.5",
-     "p_model": 0.5529,
-     "p_market": 0.4346,
+     "bet": "virs 233.5",
+     "p_model": 0.4903,
+     "p_market": 0.4349,
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
@@ -604,11 +604,11 @@
     },
     {
      "category": "komandas punkti",
-     "bet": "UTAH virs 110.5",
-     "p_model": 0.4879,
-     "p_market": 0.4336,
-     "fair_odds": 2.33,
-     "est_odds": 2.17,
+     "bet": "LAL virs 123.5",
+     "p_model": 0.4709,
+     "p_market": 0.4272,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
      "confidence": 43,
      "result": null,
      "top": false
@@ -625,7 +625,7 @@
    "home_record": "1-12",
    "start_utc": "2026-11-19 03:00:00+00:00",
    "riga_time": "19.11 05:00",
-   "robot_line": "PHX -6.6",
+   "robot_line": "PHX -6.5",
    "robot_total": 226.5,
    "market_line": "PHX -6.5",
    "market_total": 226.5,
@@ -634,17 +634,6 @@
    ],
    "score": null,
    "picks": [
-    {
-     "category": "starpība",
-     "bet": "PHX -8.5",
-     "p_model": 0.4517,
-     "p_market": 0.4343,
-     "fair_odds": 2.29,
-     "est_odds": 2.13,
-     "confidence": 44,
-     "result": null,
-     "top": false
-    },
     {
      "category": "kopā",
      "bet": "virs 228.5",
@@ -657,11 +646,22 @@
      "top": true
     },
     {
+     "category": "starpība",
+     "bet": "PHX -8.5",
+     "p_model": 0.4344,
+     "p_market": 0.4343,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
      "category": "komandas punkti",
      "bet": "SAC virs 111.5",
-     "p_model": 0.4762,
+     "p_model": 0.4867,
      "p_market": 0.4327,
-     "fair_odds": 2.32,
+     "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
      "result": null,
@@ -685,9 +685,9 @@
    "game": "DET@NO",
    "riga_time": "19.11 03:00",
    "category": "kopā",
-   "bet": "virs 238.5",
+   "bet": "virs 239.5",
    "confidence": 22,
-   "fair_odds": 4.52,
+   "fair_odds": 4.51,
    "est_odds": 4.2,
    "result": null,
    "score": null
@@ -727,6 +727,87 @@
  },
  "top_summary": {
   "picks": 12,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "401910014",
+   "game": "ATL@OKC",
+   "riga_time": "19.11 03:00",
+   "category": "komandas punkti",
+   "bet": "ATL zem 111.5",
+   "confidence": 52,
+   "data_conf": 68,
+   "p_model": 0.6802,
+   "fair_odds": 1.91,
+   "est_odds": 1.78,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910013",
+   "game": "DET@NO",
+   "riga_time": "19.11 03:00",
+   "category": "kopā",
+   "bet": "virs 224.5",
+   "confidence": 52,
+   "data_conf": 68,
+   "p_model": 0.6783,
+   "fair_odds": 1.92,
+   "est_odds": 1.78,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910012",
+   "game": "WSH@TOR",
+   "riga_time": "19.11 02:30",
+   "category": "kopā",
+   "bet": "virs 223.5",
+   "confidence": 52,
+   "data_conf": 65,
+   "p_model": 0.6529,
+   "fair_odds": 1.92,
+   "est_odds": 1.78,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910010",
+   "game": "PHI@ORL",
+   "riga_time": "19.11 02:00",
+   "category": "komandas punkti",
+   "bet": "ORL virs 108.5",
+   "confidence": 54,
+   "data_conf": 62,
+   "p_model": 0.6183,
+   "fair_odds": 1.85,
+   "est_odds": 1.72,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910016",
+   "game": "GS@DAL",
+   "riga_time": "19.11 03:00",
+   "category": "handikaps",
+   "bet": "GS +5.5",
+   "confidence": 55,
+   "data_conf": 62,
+   "p_model": 0.6182,
+   "fair_odds": 1.83,
+   "est_odds": 1.7,
+   "result": null,
+   "score": null
+  }
+ ],
+ "safe_summary": {
+  "picks": 5,
   "settled": 0,
   "hits": 0,
   "pushes": 0,

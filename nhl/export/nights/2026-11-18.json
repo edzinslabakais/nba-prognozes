@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "min_odds": 2.1,
- "generated_at": "2026-11-18T21:00+00:00",
+ "generated_at": "2026-11-18T21:47+00:00",
  "games": [
   {
    "game_id": "401892740",
@@ -38,10 +38,10 @@
      "category": "komandas vārti",
      "bet": "NJ virs 3.5",
      "p_model": 0.3596,
-     "p_market": 0.4126,
-     "fair_odds": 2.49,
-     "est_odds": 2.32,
-     "confidence": 40,
+     "p_market": 0.419,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
      "result": null,
      "top": false
     },
@@ -49,10 +49,10 @@
      "category": "kopā",
      "bet": "virs 6.5",
      "p_model": 0.3702,
-     "p_market": 0.3752,
-     "fair_odds": 2.68,
-     "est_odds": 2.49,
-     "confidence": 37,
+     "p_market": 0.3839,
+     "fair_odds": 2.63,
+     "est_odds": 2.44,
+     "confidence": 38,
      "result": null,
      "top": false
     }
@@ -69,9 +69,9 @@
    "start_utc": "2026-11-19 00:30:00+00:00",
    "riga_time": "19.11 02:30",
    "robot_line": "DET 38% · X 26% · BOS 37%",
-   "robot_total": "vārti 2.9–2.9",
+   "robot_total": "vārti 3.0–2.9",
    "market_line": "DET 50% ar papildl.",
-   "market_total": "kopā 6.5",
+   "market_total": "kopā 5.5",
    "injuries": [
     "DET: vārtsargs Daniil Tarasov (apstiprināts) +0.17",
     "BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03"
@@ -80,11 +80,11 @@
    "picks": [
     {
      "category": "komandas vārti",
-     "bet": "DET zem 2.5",
-     "p_model": 0.4521,
-     "p_market": 0.4397,
-     "fair_odds": 2.26,
-     "est_odds": 2.1,
+     "bet": "BOS zem 2.5",
+     "p_model": 0.4929,
+     "p_market": 0.4278,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
      "confidence": 44,
      "result": null,
      "top": true
@@ -93,9 +93,9 @@
      "category": "uzvarētājs / handikaps",
      "bet": "DET uzvar",
      "p_model": 0.3977,
-     "p_market": 0.372,
+     "p_market": 0.373,
      "fair_odds": 2.65,
-     "est_odds": 2.47,
+     "est_odds": 2.46,
      "confidence": 38,
      "result": null,
      "top": false
@@ -104,10 +104,10 @@
      "category": "kopā",
      "bet": "virs 6.5",
      "p_model": 0.3184,
-     "p_market": 0.3603,
-     "fair_odds": 2.84,
-     "est_odds": 2.65,
-     "confidence": 35,
+     "p_market": 0.3762,
+     "fair_odds": 2.75,
+     "est_odds": 2.55,
+     "confidence": 36,
      "result": null,
      "top": false
     }
@@ -123,9 +123,9 @@
    "home_record": "10-9-3",
    "start_utc": "2026-11-19 03:00:00+00:00",
    "riga_time": "19.11 05:00",
-   "robot_line": "UTA 37% · X 25% · COL 38%",
-   "robot_total": "vārti 3.1–3.1",
-   "market_line": "UTA 51% ar papildl.",
+   "robot_line": "UTA 36% · X 25% · COL 39%",
+   "robot_total": "vārti 3.1–3.2",
+   "market_line": "UTA 50% ar papildl.",
    "market_total": "kopā 6.5",
    "injuries": [
     "UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.02",
@@ -148,10 +148,10 @@
      "category": "komandas vārti",
      "bet": "UTA zem 2.5",
      "p_model": 0.4213,
-     "p_market": 0.3984,
-     "fair_odds": 2.48,
-     "est_odds": 2.31,
-     "confidence": 40,
+     "p_market": 0.4058,
+     "fair_odds": 2.45,
+     "est_odds": 2.27,
+     "confidence": 41,
      "result": null,
      "top": false
     },
@@ -159,10 +159,10 @@
      "category": "uzvarētājs / handikaps",
      "bet": "COL uzvar",
      "p_model": 0.4576,
-     "p_market": 0.364,
-     "fair_odds": 2.62,
-     "est_odds": 2.44,
-     "confidence": 38,
+     "p_market": 0.3748,
+     "fair_odds": 2.56,
+     "est_odds": 2.38,
+     "confidence": 39,
      "result": null,
      "top": false
     }
@@ -180,26 +180,26 @@
  "crazy_min_odds": 4.0,
  "crazy": [
   {
-   "game_id": "401892741",
-   "game": "COL@UTA",
-   "riga_time": "19.11 05:00",
-   "category": "kombinācija",
-   "bet": "COL uzvar & virs 5.5",
+   "game_id": "401892739",
+   "game": "BOS@DET",
+   "riga_time": "19.11 02:30",
+   "category": "handikaps",
+   "bet": "BOS -1.5",
    "confidence": 23,
-   "fair_odds": 4.41,
-   "est_odds": 4.1,
+   "fair_odds": 4.34,
+   "est_odds": 4.04,
    "result": null,
    "score": null
   },
   {
-   "game_id": "401892739",
-   "game": "BOS@DET",
-   "riga_time": "19.11 02:30",
-   "category": "kombinācija",
-   "bet": "DET uzvar & zem 6.5",
+   "game_id": "401892741",
+   "game": "COL@UTA",
+   "riga_time": "19.11 05:00",
+   "category": "handikaps",
+   "bet": "UTA -1.5",
    "confidence": 23,
-   "fair_odds": 4.39,
-   "est_odds": 4.08,
+   "fair_odds": 4.37,
+   "est_odds": 4.07,
    "result": null,
    "score": null
   },
@@ -209,9 +209,9 @@
    "riga_time": "19.11 02:30",
    "category": "komandas vārti",
    "bet": "NJ virs 4.5",
-   "confidence": 22,
-   "fair_odds": 4.52,
-   "est_odds": 4.21,
+   "confidence": 23,
+   "fair_odds": 4.44,
+   "est_odds": 4.13,
    "result": null,
    "score": null
   }
@@ -225,6 +225,59 @@
   "profit_units": 0
  },
  "top_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "401892741",
+   "game": "COL@UTA",
+   "riga_time": "19.11 05:00",
+   "category": "uzvarētājs",
+   "bet": "COL uzvar (ieskaitot papildlaiku)",
+   "confidence": 52,
+   "data_conf": 58,
+   "p_model": 0.5771,
+   "fair_odds": 1.94,
+   "est_odds": 1.81,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892740",
+   "game": "MTL@NJ",
+   "riga_time": "19.11 02:30",
+   "category": "komandas vārti",
+   "bet": "MTL virs 2.5",
+   "confidence": 51,
+   "data_conf": 54,
+   "p_model": 0.5433,
+   "fair_odds": 1.97,
+   "est_odds": 1.83,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892739",
+   "game": "BOS@DET",
+   "riga_time": "19.11 02:30",
+   "category": "kopā",
+   "bet": "zem 5.5",
+   "confidence": 46,
+   "data_conf": 51,
+   "p_model": 0.5091,
+   "fair_odds": 2.17,
+   "est_odds": 2.02,
+   "result": null,
+   "score": null
+  }
+ ],
+ "safe_summary": {
   "picks": 3,
   "settled": 0,
   "hits": 0,

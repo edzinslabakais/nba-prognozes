@@ -214,6 +214,79 @@ def pick_crazy(df: pd.DataFrame, min_odds: float = CRAZY_MIN_ODDS, n: int = CRAZ
     return out
 
 
+# --------------------------------------------------------------------------- DROŠĀS LIKMES
+
+SAFE_MIN_ODDS = 1.7      # estimated bookmaker odds must be at least this
+SAFE_MIN, SAFE_MAX = 3, 5
+SAFE_STRONG = 0.60       # more than SAFE_MIN picks only if our data gives them at least 60 %
+SAFE_TOLERANCE = 0.02    # take a line up to 2 points less likely (by our data) if it pays more
+
+
+def choose_safe(per_game: list) -> list[dict]:
+    """per_game: [(row, [(bet, p_final, p_model, category), ...]), ...]
+
+    Chosen by the robot's own statistics (p_model: form, ratings, injuries, rest, goalies), not by
+    the bookmakers. Within a game: the safest line by our data, or a nearly as safe one that pays more."""
+    best = []
+    for r, cands in per_game:
+        if not cands:
+            continue
+        top_pm = max(c[2] for c in cands)
+        near = [c for c in cands if c[2] >= top_pm - SAFE_TOLERANCE]
+        b, pf, pm, cat = max(near, key=lambda c: (round(PAYOUT_SAFE / c[1], 2), c[2]))
+        best.append({"game_id": r.game_id, "game": f"{r.away}@{r.home}", "start_utc": str(r.start_utc),
+                     "riga_time": r.riga_time, "category": cat, "bet": b.label, "p": pf, "p_model": round(pm, 4)})
+    best.sort(key=lambda x: -x["p_model"])
+    out = [x for i, x in enumerate(best) if i < SAFE_MIN or (i < SAFE_MAX and x["p_model"] >= SAFE_STRONG)]
+    for x in out:
+        x.update(fair_odds=round(1 / x["p"], 2), est_odds=round(PAYOUT_SAFE / x["p"], 2),
+                 confidence=int(round(100 * x["p"])), data_conf=int(round(100 * x["p_model"])), result=None)
+    return out
+
+
+PAYOUT_SAFE = B.PAYOUT
+
+
+def safe_candidates_nba(r) -> list:
+    g = B.grid_for(r)
+    own, _ = nba_views(r)
+    pmax = PAYOUT_SAFE / SAFE_MIN_ODDS
+    out = []
+
+    def add(bet, cat):
+        pf, push = g.prob(bet)
+        if push > 0 or not (0.35 <= pf <= pmax):
+            return
+        out.append((bet, pf, own.prob(bet)[0], cat))
+
+    m, t = r.margin_home, r.total
+    for team, home in ((r.home, True), (r.away, False)):
+        add(B.bet_ml(team, home), "uzvarētājs")
+        for x in range(-25, 25):
+            add(B.bet_handicap(team, home, x + 0.5), "handikaps")
+        exp = (t + (m if home else -m)) / 2
+        for x in range(-18, 18):
+            line = round(exp) + x + 0.5
+            add(B.bet_team_total(team, home, True, line), "komandas punkti")
+            add(B.bet_team_total(team, home, False, line), "komandas punkti")
+    for x in range(-25, 25):
+        line = round(t) + x + 0.5
+        add(B.bet_total(True, line), "kopā")
+        add(B.bet_total(False, line), "kopā")
+    return out
+
+
+def pick_safe(df: pd.DataFrame) -> list[dict]:
+    return choose_safe([(r, safe_candidates_nba(r)) for r in df.itertuples()])
+
+
+def print_safe(safe: list[dict], width: int = 26) -> None:
+    print(f"\nDROŠĀS LIKMES — pēc robota statistikas, koeficients >= {SAFE_MIN_ODDS:g}:")
+    for i, x in enumerate(safe, 1):
+        print(f"  {i}. {x['game']:<10} {x['bet']:<{width}} dati {x['data_conf']:>3}/100  drošība {x['confidence']:>3}/100   "
+              f"Optibet ~{x['est_odds']:.2f}   [{x['category']}]")
+
+
 def cmd_likmes(args) -> None:
     L.message.unlink(missing_ok=True)
     params = P.load_params()
@@ -273,13 +346,15 @@ def cmd_likmes(args) -> None:
         print(f"  {i}. {x['game']:<10} {x['bet']:<26} drošība {x['confidence']:>3}/100   "
               f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
 
-    f = save_night(day, record, games_info, crazy, args.min_odds, now)
+    safe = pick_safe(df)
+    print_safe(safe)
+    f = save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
     print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
     print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
           f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
 
 
-def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now) -> Path:
+def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now, safe=None) -> Path:
     """Write the night's picks to history (games that already started keep their old picks)."""
     L.hist.mkdir(parents=True, exist_ok=True)
     f = L.hist / f"{day:%Y-%m-%d}.json"
@@ -292,9 +367,12 @@ def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float
     old_crazy = old.get("crazy", [])
     if any(c["game_id"] in started for c in old_crazy):
         crazy = old_crazy
+    old_safe = old.get("safe", [])
+    if safe is None or any(c["game_id"] in started for c in old_safe):
+        safe = old_safe
     f.write_text(json.dumps({"date": str(day), "min_odds": min_odds,
                              "generated_at": now.isoformat(timespec="minutes"),
-                             "games": games_all, "picks": record, "crazy": crazy},
+                             "games": games_all, "picks": record, "crazy": crazy, "safe": safe},
                             indent=1, ensure_ascii=False))
     export_all()
     write_message(day.isoformat(), "likmes")
@@ -367,7 +445,7 @@ def settle(path: Path) -> tuple[dict, int]:
         return rec, 0
     by_id = {g.game_id: g for g in games.itertuples()}
     n_new = 0
-    for p in rec["picks"] + rec.get("crazy", []):
+    for p in rec["picks"] + rec.get("crazy", []) + rec.get("safe", []):
         if p.get("result"):
             continue
         g = by_id.get(p["game_id"])
@@ -427,6 +505,14 @@ def cmd_rezultati(args) -> None:
         all_crazy = [p for r in recs for p in r.get("crazy", [])]
         print(f"  Crazy Dazy šī diena: {_stats(show['crazy'])}")
         print(f"  Crazy Dazy kopā: {_stats(all_crazy)}")
+    if show.get("safe"):
+        print(f"\nDROŠĀS LIKMES (koef. >= {SAFE_MIN_ODDS:g}):")
+        for p in show["safe"]:
+            res = p.get("result")
+            print(f"  {ICON[res]} {p['game']:<10} {p['bet']:<26} dati {p.get('data_conf', '?'):>3}/100   ~{p['est_odds']:.2f}   {res or 'gaida'}")
+        all_safe = [p for r in recs for p in r.get("safe", [])]
+        print(f"  Drošās šī diena: {_stats(show['safe'])}")
+        print(f"  Drošās kopā: {_stats(all_safe)}")
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     if len(done) >= 20:
         print("\nKalibrācija (vai drošības % atbilst realitātei):")
@@ -501,7 +587,7 @@ def export_all() -> None:
     for old_doc in (L.export / "nights").glob("*.json"):  # nights that are no longer in the history
         if old_doc.stem not in live_dates:
             old_doc.unlink()
-    all_picks, all_crazy, all_top, nights = [], [], [], []
+    all_picks, all_crazy, all_top, all_safe, nights = [], [], [], [], []
     month_acc: dict[tuple, dict] = {}
     for f in files:
         rec = json.loads(f.read_text())
@@ -528,20 +614,27 @@ def export_all() -> None:
         crazy_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet",
                                                 "confidence", "fair_odds", "est_odds", "result")},
                       "score": c.get("score") or scores.get(c["game_id"])} for c in crazy]
+        safe = rec.get("safe", [])
+        safe_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet", "confidence",
+                                                "data_conf", "p_model", "fair_odds", "est_odds", "result")},
+                     "score": c.get("score") or scores.get(c["game_id"])} for c in safe]
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
                "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy),
-               "top_summary": _summary(night_top)}
+               "top_summary": _summary(night_top),
+               "safe_min_odds": SAFE_MIN_ODDS, "safe": safe_out, "safe_summary": _summary(safe)}
         (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
         all_crazy += crazy
         all_top += night_top
+        all_safe += safe
         nights.append({"date": rec["date"], **_summary(rec["picks"]),
-                       "crazy": _summary(crazy), "top": _summary(night_top)})
-        mon = month_acc.setdefault(rec["date"][:7], {"all": [], "top": [], "crazy": [], "dates": []})
+                       "crazy": _summary(crazy), "top": _summary(night_top), "safe": _summary(safe)})
+        mon = month_acc.setdefault(rec["date"][:7], {"all": [], "top": [], "safe": [], "crazy": [], "dates": []})
         mon["all"] += rec["picks"]
         mon["top"] += night_top
+        mon["safe"] += safe
         mon["crazy"] += crazy
         mon["dates"].append(rec["date"])
     buckets = []
@@ -553,6 +646,7 @@ def export_all() -> None:
                             "hit_rate": round(sum(p["result"] == "izgāja" for p in b) / len(b), 3),
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
     stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy), "top_overall": _summary(all_top),
+             "safe_overall": _summary(all_safe),
              "nights": nights, "calibration": buckets,
              "months": [_month_entry(m, acc, live_start=min(live_dates) if live_dates else None)
                         for m, acc in sorted(month_acc.items(), reverse=True)],
@@ -600,6 +694,10 @@ def write_message(us_date: str, mode: str) -> None:
                 lines.append(f"{i}. {p['bet']} — {p['confidence']}/100 (~{p['est_odds']:.2f}){star}")
             if g.get("injuries"):
                 lines.append("   ⚕ " + "; ".join(g["injuries"][:2]))
+        if doc.get("safe"):
+            lines.append(f"\n🛡 DROŠĀS LIKMES (koef. ≥ {doc['safe_min_odds']:g}, pēc robota datiem)")
+            for c in doc["safe"]:
+                lines.append(f"• {c['game']}: {c['bet']} — dati {c['data_conf']}/100 (~{c['est_odds']:.2f})")
         if doc.get("crazy"):
             lines.append(f"\n🎲 CRAZY DAZY (koef. ≥ {doc['crazy_min_odds']:g})")
             for c in doc["crazy"]:
@@ -611,6 +709,11 @@ def write_message(us_date: str, mode: str) -> None:
             lines.append(f"\n{g.get('score') or g['away'] + ' @ ' + g['home'] + ' (vēl nav beigusies)'}")
             for p in g["picks"]:
                 lines.append(f"{RES_ICON.get(p.get('result'), '⏳')} {p['bet']} ({p['confidence']}/100)")
+        if doc.get("safe"):
+            ss = doc["safe_summary"]
+            lines.append(f"\n🛡 DROŠĀS: izgāja {ss['hits']}/{ss['settled']}")
+            for c in doc["safe"]:
+                lines.append(f"{RES_ICON.get(c.get('result'), '⏳')} {c['game']}: {c['bet']} (~{c['est_odds']:.2f})")
         if doc.get("crazy"):
             cs = doc["crazy_summary"]
             lines.append(f"\n🎲 CRAZY DAZY: izgāja {cs['hits']}/{cs['settled']}")
@@ -660,6 +763,15 @@ def write_markdown(stats: dict) -> None:
             if g.get("injuries"):
                 out += ["", "Savainojumi/sastāvs: " + "; ".join(g["injuries"])]
             out.append("")
+        if doc.get("safe"):
+            out += [f"## 🛡 Drošās likmes — koef. ≥ {doc['safe_min_odds']:g}", "",
+                    "Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta, vārtsargi), "
+                    "nevis pēc bukmeikeriem; no gandrīz vienlīdz drošām līnijām ņemta ar augstāko koeficientu.", "",
+                    "| Spēle | Likme | Dati | ~Optibet | Rezultāts |", "|---|---|---|---|---|"]
+            for c in doc["safe"]:
+                res = f"{RES_ICON[c['result']]} {c['result']}" if c.get("result") in RES_ICON else "⏳ gaida"
+                out.append(f"| {c['game']} | **{c['bet']}** | {c.get('data_conf')}/100 | {c['est_odds']:.2f} | {res} |")
+            out.append("")
         if doc.get("crazy"):
             out += [f"## 🎲 Crazy Dazy — koef. ≥ {doc['crazy_min_odds']:g}", "",
                     "3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet.", "",
@@ -674,16 +786,19 @@ def write_markdown(stats: dict) -> None:
                 if t.get("settled") else "vēl nav noslēgtu likmju")
     out += ["## Statistika", "", f"★ Visticamākās (1 katrā spēlē): {top_line}", "",
             f"Visas likmes kopā: {_overall_line(stats['overall'])}"]
+    if stats.get("safe_overall", {}).get("picks"):
+        out.append(f"Drošās likmes kopā: {_overall_line(stats['safe_overall'])}")
     if stats.get("crazy_overall", {}).get("picks"):
         out.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
     out.append("")
     if stats.get("months"):
         out += ["### Mēneša statistika", "",
-                "| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |",
-                "|---|---|---|---|---|---|---|"]
+                "| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |",
+                "|---|---|---|---|---|---|---|---|---|"]
         for m in stats["months"]:
             cell = lambda s: (f"{s['hits']}/{s['settled']} | {s['profit_units']:+.2f}" if s["settled"] else "– | –")
-            out.append(f"| {m['label']} ({m['days']}) | {cell(m['all'])} | {cell(m['top'])} | {cell(m['crazy'])} |")
+            out.append(f"| {m['label']} ({m['days']}) | {cell(m['all'])} | {cell(m['top'])} | "
+                       f"{cell(m.get('safe') or {'settled': 0})} | {cell(m['crazy'])} |")
         out.append("")
     rows = [n for n in reversed(stats["nights"]) if n["settled"]][:14]
     if rows:

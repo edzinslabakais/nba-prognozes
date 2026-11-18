@@ -220,6 +220,17 @@ def pick_crazy(df: pd.DataFrame, p, min_odds: float = 4.0, n: int = 3) -> list[d
     return out
 
 
+def pick_safe(df: pd.DataFrame, p) -> list[dict]:
+    """Drošās likmes: chosen by our own model (form, goalies, injuries, rest), odds >= 1.7."""
+    per_game = []
+    for r in df.itertuples():
+        g = grid(r, p)
+        own = N.HockeyGrid(r.model_lh, r.model_la, p["tie_infl"], p["ot_k"])
+        cands = _candidates(r, g, 0.35, core.PAYOUT_SAFE / core.SAFE_MIN_ODDS, crazy=False)
+        per_game.append((r, [(b, pw, HB.prob(own, b)[0], cat) for b, pw, _, cat in cands]))
+    return core.choose_safe(per_game)
+
+
 # --------------------------------------------------------------------------- commands
 
 def cmd_likmes(args) -> None:
@@ -271,7 +282,9 @@ def cmd_likmes(args) -> None:
     for i, x in enumerate(crazy, 1):
         print(f"  {i}. {x['game']:<10} {x['bet']:<34} drošība {x['confidence']:>3}/100   "
               f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
-    f = core.save_night(day, record, games_info, crazy, args.min_odds, now)
+    safe = pick_safe(df, p)
+    core.print_safe(safe, 34)
+    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}  — rīt palaid: python nhl_bot.py rezultati")
 
 
