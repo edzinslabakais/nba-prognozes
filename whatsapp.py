@@ -1,7 +1,8 @@
 """Morning WhatsApp message with the statistics only (sent ~07:30 Riga time by GitHub Actions).
 
 Uses CallMeBot (free WhatsApp API for personal notifications). One-time setup:
-  1. Add +34 644 66 32 62 to your phone contacts (name e.g. "CallMeBot").
+  1. Add the CallMeBot WhatsApp number shown on
+     https://www.callmebot.com/blog/free-api-whatsapp-messages/ to your phone contacts.
   2. Send it this WhatsApp message:  I allow callmebot to send me messages
   3. You get a reply with your apikey.
   4. GitHub repo -> Settings -> Secrets and variables -> Actions -> New repository secret:

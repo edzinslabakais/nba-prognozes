@@ -21,7 +21,8 @@ Nekas nav jādara un nekas nav jāraksta:
 
 ### WhatsApp ziņa (CallMeBot, bezmaksas)
 
-1. Pievieno telefona kontaktiem numuru **+34 644 66 32 62** (piemēram, ar vārdu "CallMeBot").
+1. Atver https://www.callmebot.com/blog/free-api-whatsapp-messages/ un pievieno telefona kontaktiem
+   tur norādīto CallMeBot WhatsApp numuru (numurs laiku pa laikam mainās, tāpēc ņem to no šīs lapas).
 2. Nosūti tam WhatsApp ziņu: `I allow callmebot to send me messages`
 3. Atbildē saņemsi savu **apikey**.
 4. GitHub repozitorijā: **Settings → Secrets and variables → Actions → New repository secret**:
