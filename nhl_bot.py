@@ -86,6 +86,7 @@ def predict_day(day, p: dict) -> pd.DataFrame:
             "home": g.home, "away": g.away, "home_name": g.home_name, "away_name": g.away_name,
             "home_record": g.home_record, "away_record": g.away_record,
             "lh": fl[0], "la": fl[1], "model_lh": model_l[0], "model_la": model_l[1],
+            "mk_lh": market_l[0] if market_l else None, "mk_la": market_l[1] if market_l else None,
             "p_market": p_mk, "total_line": g.total_line, "has_market": market_l is not None,
             "notes_home": notes["h"], "notes_away": notes["a"],
         })
@@ -188,8 +189,12 @@ def pick_for_game(r, p, min_odds: float) -> list[dict]:
             continue
         chosen.append(c)
         used[cat] = used.get(cat, 0) + 1
-    picks = [{"category": group_of[c[3]], "bet": c[0].label, "p": c[1]} for c in chosen]
+    picks = [{"category": group_of[c[3]], "bet": c[0].label, "p": c[1], "_bet": c[0]} for c in chosen]
     picks.sort(key=lambda x: -x["p"])
+    own = N.HockeyGrid(r.model_lh, r.model_la, p["tie_infl"], p["ot_k"])
+    mkt = (N.HockeyGrid(r.mk_lh, r.mk_la, p["tie_infl"], p["ot_k"])
+           if r.mk_lh is not None and pd.notna(r.mk_lh) else None)
+    core.add_data_view(picks, own, mkt, prob=lambda gr, b: HB.prob(gr, b)[0])
     for x in picks:
         x["fair_odds"] = round(1 / x["p"], 2)
         x["est_odds"] = round(PAYOUT / x["p"], 2)
@@ -240,8 +245,9 @@ def cmd_likmes(args) -> None:
     for r in df.itertuples():
         picks = pick_for_game(r, p, args.min_odds)
         print("\n" + header(r, p))
+        top = max(range(len(picks)), key=lambda i: picks[i].get("data_score", picks[i]["p"])) if picks else -1
         for i, x in enumerate(picks, 1):
-            print(f"  {i}.{'★' if i == 1 else ' '}{x['bet']:<24} drošība {x['confidence']:>3}/100   "
+            print(f"  {i}.{'★' if i - 1 == top else ' '}{x['bet']:<24} drošība {x['confidence']:>3}/100   "
                   f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
         notes = _note_text(r.home, r.notes_home) + _note_text(r.away, r.notes_away)
         if notes:

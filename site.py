@@ -26,6 +26,9 @@ NHL_NOTE = ('<p><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 m
             '(bullīšu uzvarētājam pieskaita 1 vārtu).</p>')
 
 
+NBA_NOTE = ('<p><b>Basketbolā</b> visas likmes vērtē pēc <b>pamatlaika</b> (48 minūtes). Tikai likmes ar norādi '
+            '"ieskaitot papildlaiku" ietver papildlaiku.</p>')
+
 STATIC_LOADER = """function start() {
   let data = { nights: [], stats: null };
   try { data = JSON.parse(document.getElementById("nba-data").textContent); } catch (e) { /* keep empty */ }
@@ -59,6 +62,8 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int) -> 
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
     body = body.replace("<h1>NBA <span>prognozes</span></h1>", f"<h1>{title} <span>prognozes</span></h1>")
+    if key == "nba":
+        body = body.replace('<p id="updated"></p>', NBA_NOTE + '\n    <p id="updated"></p>')
     if key == "nhl":
         body = body.replace('<p id="updated"></p>', NHL_NOTE + '\n    <p id="updated"></p>')
         body = body.replace('"kopā": "Kopējie punkti"', '"kopā": "Kopējie vārti"')

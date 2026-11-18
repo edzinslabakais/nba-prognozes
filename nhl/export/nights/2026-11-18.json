@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "min_odds": 2.1,
- "generated_at": "2026-11-18T20:47+00:00",
+ "generated_at": "2026-11-18T21:00+00:00",
  "games": [
   {
    "game_id": "401892740",
@@ -26,6 +26,8 @@
     {
      "category": "uzvarētājs / handikaps",
      "bet": "MTL uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4661,
+     "p_market": 0.3962,
      "fair_odds": 2.44,
      "est_odds": 2.27,
      "confidence": 41,
@@ -35,6 +37,8 @@
     {
      "category": "komandas vārti",
      "bet": "NJ virs 3.5",
+     "p_model": 0.3596,
+     "p_market": 0.4126,
      "fair_odds": 2.49,
      "est_odds": 2.32,
      "confidence": 40,
@@ -44,6 +48,8 @@
     {
      "category": "kopā",
      "bet": "virs 6.5",
+     "p_model": 0.3702,
+     "p_market": 0.3752,
      "fair_odds": 2.68,
      "est_odds": 2.49,
      "confidence": 37,
@@ -75,6 +81,8 @@
     {
      "category": "komandas vārti",
      "bet": "DET zem 2.5",
+     "p_model": 0.4521,
+     "p_market": 0.4397,
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
@@ -84,6 +92,8 @@
     {
      "category": "uzvarētājs / handikaps",
      "bet": "DET uzvar",
+     "p_model": 0.3977,
+     "p_market": 0.372,
      "fair_odds": 2.65,
      "est_odds": 2.47,
      "confidence": 38,
@@ -93,6 +103,8 @@
     {
      "category": "kopā",
      "bet": "virs 6.5",
+     "p_model": 0.3184,
+     "p_market": 0.3603,
      "fair_odds": 2.84,
      "est_odds": 2.65,
      "confidence": 35,
@@ -124,6 +136,8 @@
     {
      "category": "kopā",
      "bet": "virs 6.5",
+     "p_model": 0.4628,
+     "p_market": 0.4063,
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
@@ -133,6 +147,8 @@
     {
      "category": "komandas vārti",
      "bet": "UTA zem 2.5",
+     "p_model": 0.4213,
+     "p_market": 0.3984,
      "fair_odds": 2.48,
      "est_odds": 2.31,
      "confidence": 40,
@@ -142,6 +158,8 @@
     {
      "category": "uzvarētājs / handikaps",
      "bet": "COL uzvar",
+     "p_model": 0.4576,
+     "p_market": 0.364,
      "fair_odds": 2.62,
      "est_odds": 2.44,
      "confidence": 38,

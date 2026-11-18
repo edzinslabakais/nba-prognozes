@@ -1,6 +1,6 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 18.11.2026 22:56 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 23:01 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 3 spēles, koef. ≥ 2.1
 
@@ -55,3 +55,9 @@ Savainojumi/sastāvs: UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.02; COL
 
 Visas likmes kopā: vēl nav noslēgtu likmju
 Crazy Dazy kopā: vēl nav noslēgtu likmju
+
+### Mēneša statistika
+
+| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |
+|---|---|---|---|---|---|---|
+| Novembris 2026 (1.–30.11.) | – | – | – | – | – | – |

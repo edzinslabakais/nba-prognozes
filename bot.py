@@ -94,13 +94,46 @@ def pick_for_game(r, min_odds: float) -> list[dict]:
     for cat, cands in cats.items():
         if cands:
             b, p, _ = max(cands, key=lambda x: x[2])
-            picks.append({"category": cat, "bet": b.label, "p": p})
+            picks.append({"category": cat, "bet": b.label, "p": p, "_bet": b})
     picks.sort(key=lambda x: -x["p"])
+    add_data_view(picks, *nba_views(r))
     for x in picks:
         x["fair_odds"] = round(1 / x["p"], 2)
         x["est_odds"] = round(B.PAYOUT / x["p"], 2)
         x["confidence"] = int(round(100 * x["p"]))
     return picks[:3]
+
+
+# --------------------------------------------------------------------------- "most likely by the data"
+
+EDGE_WEIGHT = 0.5  # how much the robot's own view (vs the bookmakers') counts when choosing the ★ pick
+
+
+def nba_views(r):
+    """Score grids for the robot's own model and for the bookmakers alone."""
+    own = B.Grid(r.model_margin_home, r.model_total, B.SIGMA["margin_model"], B.SIGMA["total_model"])
+    if not r.has_market:
+        return own, None
+    mt = r.market_total if r.market_total is not None and pd.notna(r.market_total) else r.total
+    return own, B.Grid(r.market_margin_home, mt, B.SIGMA["margin_market"], B.SIGMA["total_market"])
+
+
+def add_data_view(picks: list[dict], own_grid, market_grid, prob=None) -> None:
+    """Attach p_model / p_market to each pick and a data score used to choose the ★ pick:
+    final probability + half of how much more likely our own data (form, injuries, rest, goalies)
+    makes the bet than the bookmakers do."""
+    prob = prob or (lambda g, b: g.prob(b)[0])
+    for x in picks:
+        b = x.pop("_bet")
+        pm = prob(own_grid, b)
+        x["p_model"] = round(pm, 4)
+        if market_grid is not None:
+            pk = prob(market_grid, b)
+            x["p_market"] = round(pk, 4)
+            x["data_score"] = round(x["p"] + EDGE_WEIGHT * (pm - pk), 4)
+        else:
+            x["p_market"] = None
+            x["data_score"] = round(x["p"], 4)
 
 
 # --------------------------------------------------------------------------- CRAZY DAZY
@@ -202,14 +235,16 @@ def cmd_likmes(args) -> None:
     print(f"NBA LIKMES — nakts uz {(day + timedelta(days=1)):%d.%m.%Y} (ASV datums {day:%Y-%m-%d}), "
           f"min. koeficients {args.min_odds:g}")
     print("Drošība = robota aprēķinātā varbūtība, ka likme izies (1-100).")
+    print("Visas likmes vērtē pēc pamatlaika (48 min), ja vien nav rakstīts '(ieskaitot papildlaiku)'.")
     record, games_info = [], {}
     for r in df.itertuples():
         picks = pick_for_game(r, args.min_odds)
         print("\n" + B.header(r))
         if not r.has_market:
             print("  (nav bukmeikeru līnijas — mazāk precīzs vērtējums)")
+        top = max(range(len(picks)), key=lambda i: picks[i].get("data_score", picks[i]["p"])) if picks else -1
         for i, x in enumerate(picks, 1):
-            print(f"  {i}.{'★' if i == 1 else ' '}{x['bet']:<20} drošība {x['confidence']:>3}/100   "
+            print(f"  {i}.{'★' if i - 1 == top else ' '}{x['bet']:<20} drošība {x['confidence']:>3}/100   "
                   f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
         inj = [n for n in (P._inj_text(r.inj_home, 2), P._inj_text(r.inj_away, 2)) if n]
         if inj:
@@ -269,12 +304,15 @@ def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float
 # --------------------------------------------------------------------------- REZULTĀTI
 
 class Actual:
-    """Lets the same bet functions be evaluated on a finished game's real score."""
+    """Lets the same bet functions be evaluated on a finished game's real score
+    (regulation: M, T, H, A; final incl. overtime: FM, FT, FH, FA)."""
 
-    def __init__(self, home_pts: float, away_pts: float):
-        self.M = np.array([home_pts - away_pts])
-        self.T = np.array([home_pts + away_pts])
-        self.H, self.A = np.array([home_pts]), np.array([away_pts])
+    def __init__(self, home_reg: float, away_reg: float, home_pts: float, away_pts: float):
+        self.H, self.A = np.array([home_reg], float), np.array([away_reg], float)
+        self.M, self.T = self.H - self.A, self.H + self.A
+        self.FH, self.FA = np.array([home_pts], float), np.array([away_pts], float)
+        self.FM, self.FT = self.FH - self.FA, self.FH + self.FA
+        self.W = np.array([1.0])
 
 
 @dataclass
@@ -303,9 +341,13 @@ class League:
 
 
 def _nba_settle(text: str, g) -> tuple[bool, bool, str]:
+    """Settled on the regulation result unless the bet says '(ieskaitot papildlaiku)'."""
     bet = B.parse_bet(text, g)
-    win, push = bet.fn(Actual(g.home_pts, g.away_pts))
-    return bool(win[0]), bool(push[0]), f"{g.away} {int(g.away_pts)} - {int(g.home_pts)} {g.home}"
+    win, push = bet.fn(Actual(g.home_reg, g.away_reg, g.home_pts, g.away_pts))
+    score = f"{g.away} {int(g.away_reg)} - {int(g.home_reg)} {g.home}"
+    if getattr(g, "ot", False):
+        score += f" (pamatlaikā; ar papildlaiku {int(g.away_pts)} - {int(g.home_pts)})"
+    return bool(win[0]), bool(push[0]), score
 
 
 NBA = League("nba", "NBA", "🏀", ROOT, ROOT / "PROGNOZES.md", data.load_games, _nba_settle)
@@ -424,11 +466,32 @@ def _summary(picks: list[dict]) -> dict:
     }
 
 
+MONTHS_LV = ["janvāris", "februāris", "marts", "aprīlis", "maijs", "jūnijs", "jūlijs", "augusts",
+             "septembris", "oktobris", "novembris", "decembris"]
+
+
+def month_label(m: str) -> str:
+    y, mo = m.split("-")
+    return f"{MONTHS_LV[int(mo) - 1].capitalize()} {y}"
+
+
+def month_days(m: str) -> str:
+    """'1.–30.11.' — a month runs from its first to its last day (by game date)."""
+    first = pd.Timestamp(m + "-01")
+    last = first + pd.offsets.MonthEnd(0)
+    return f"1.–{last.day}.{first.month:02d}."
+
+
+def _num(v, default):
+    return default if v is None or (isinstance(v, float) and math.isnan(v)) else v
+
+
 def export_all() -> None:
     """Write export/nights/<date>.json + export/stats.json (what the phone page shows)."""
     files = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
     (L.export / "nights").mkdir(parents=True, exist_ok=True)
     all_picks, all_crazy, all_top, nights = [], [], [], []
+    month_acc: dict[str, dict] = {}
     for f in files:
         rec = json.loads(f.read_text())
         games = rec.get("games", {})
@@ -438,11 +501,12 @@ def export_all() -> None:
                                    "home": gp.iloc[0]["game"].split("@")[1],
                                    "start_utc": gp.iloc[0]["start_utc"]})
             raw = gp.to_dict("records")
-            top_i = max(range(len(raw)), key=lambda i: (raw[i]["p"], -i))  # the most likely bet of the game
+            # ★ = best by the data score (falls back to probability for older nights)
+            top_i = max(range(len(raw)), key=lambda i: (_num(raw[i].get("data_score"), raw[i]["p"]), -i))
             night_top.append(raw[top_i])
             picks = [{**{k: (None if isinstance(v, float) and math.isnan(v) else v)
                          for k, v in p.items() if k in ("bet", "category", "confidence", "fair_odds",
-                                                         "est_odds", "result", "score")},
+                                                         "est_odds", "result", "score", "p_model", "p_market")},
                       "top": i == top_i}
                      for i, p in enumerate(raw)]
             score = next((p.get("score") for p in picks if p.get("score")), None)
@@ -464,6 +528,10 @@ def export_all() -> None:
         all_top += night_top
         nights.append({"date": rec["date"], **_summary(rec["picks"]),
                        "crazy": _summary(crazy), "top": _summary(night_top)})
+        mon = month_acc.setdefault(rec["date"][:7], {"all": [], "top": [], "crazy": []})
+        mon["all"] += rec["picks"]
+        mon["top"] += night_top
+        mon["crazy"] += crazy
     buckets = []
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     for lo, hi in ((0, 35), (35, 40), (40, 45), (45, 101)):
@@ -474,6 +542,9 @@ def export_all() -> None:
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
     stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy), "top_overall": _summary(all_top),
              "nights": nights, "calibration": buckets,
+             "months": [{"month": m, "label": month_label(m), "days": month_days(m),
+                         **{k: _summary(v) for k, v in acc.items()}}
+                        for m, acc in sorted(month_acc.items(), reverse=True)],
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
     (L.export / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
     write_markdown(stats)
@@ -595,6 +666,14 @@ def write_markdown(stats: dict) -> None:
     if stats.get("crazy_overall", {}).get("picks"):
         out.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
     out.append("")
+    if stats.get("months"):
+        out += ["### Mēneša statistika", "",
+                "| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |",
+                "|---|---|---|---|---|---|---|"]
+        for m in stats["months"]:
+            cell = lambda s: (f"{s['hits']}/{s['settled']} | {s['profit_units']:+.2f}" if s["settled"] else "– | –")
+            out.append(f"| {m['label']} ({m['days']}) | {cell(m['all'])} | {cell(m['top'])} | {cell(m['crazy'])} |")
+        out.append("")
     rows = [n for n in reversed(stats["nights"]) if n["settled"]][:14]
     if rows:
         out += ["| Nakts | Izgāja | Robots gaidīja | Vienības |", "|---|---|---|---|"]

@@ -51,5 +51,36 @@
   }
  ],
  "calibration": [],
- "updated_at": "2026-11-18T20:56+00:00"
+ "months": [
+  {
+   "month": "2026-11",
+   "label": "Novembris 2026",
+   "days": "1.–30.11.",
+   "all": {
+    "picks": 36,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "top": {
+    "picks": 12,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
+  }
+ ],
+ "updated_at": "2026-11-18T21:01+00:00"
 }

@@ -53,6 +53,15 @@ def _parse_event(e: dict, day: date) -> dict | None:
         "market_margin": None,
         "market_total": None,
     }
+    # regulation (48 min) score = first 4 quarters; anything after is overtime
+    lh = [float(x.get("value", 0) or 0) for x in h.get("linescores") or []]
+    la = [float(x.get("value", 0) or 0) for x in a.get("linescores") or []]
+    if status.get("completed") and len(lh) >= 4 and len(la) >= 4:
+        row["home_reg"], row["away_reg"] = sum(lh[:4]), sum(la[:4])
+        row["ot"] = len(lh) > 4
+    else:
+        row["home_reg"], row["away_reg"] = row["home_pts"], row["away_pts"]
+        row["ot"] = False
     odds = comp.get("odds") or []
     if odds and odds[0].get("spread") is not None:
         # "spread" is the home team's line: -4.5 => home expected to win by 4.5

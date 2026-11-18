@@ -14,7 +14,8 @@
    ar koeficientu >= --min-odds.
 
 Likmju pieraksts (komandu saīsinājumi kā ESPN: BOS, GS, NY, SA, NO, UTAH, WSH ...):
-   BOS uzvar            uzvarētājs (ieskaitot papildlaiku)
+   Visas likmes vērtē pēc PAMATLAIKA (48 min), ja vien nav pierakstīts "(ieskaitot papildlaiku)".
+   BOS uzvar            uzvar pamatlaikā  (BOS uzvar (ieskaitot papildlaiku) — ar papildlaiku)
    BOS -5.5 / DEN +5.5  handikaps
    virs 228.5 / zem 228.5        kopējais punktu skaits
    BOS virs 115.5 / BOS zem 115.5  komandas punkti
@@ -55,24 +56,46 @@ def _phi(x):
 
 # --------------------------------------------------------------------------- outcome grid
 
-class Grid:
-    """Joint distribution of final (home margin, total points) on integer scores."""
+# Regulation vs overtime (measured on 2025-26): a regulation tie happens ~1.7x more often than the
+# plain normal curve says, an overtime adds ~25 points and is won by ~4 points on average.
+REG = dict(tie_k=1.7, ot_points=24.0, ot_margin=4.0, reg_offset=1.0)
+OT_TAG = " (ieskaitot papildlaiku)"
 
-    def __init__(self, margin: float, total: float, s_m: float, s_t: float):
+
+class Grid:
+    """Joint distribution of the REGULATION result (home margin M, total T, team scores H/A) and the
+    final result incl. overtime (FM, FT, FH, FA). One entry per scenario, weights W."""
+
+    def __init__(self, margin: float, total: float, s_m: float, s_t: float,
+                 tie_k=REG["tie_k"], ot_points=REG["ot_points"], ot_margin=REG["ot_margin"],
+                 reg_offset=REG["reg_offset"]):
         M = np.arange(-70, 71)
-        M = M[M != 0]                      # no ties in the NBA (overtime)
         T = np.arange(130, 331)
         pm = _phi((M + 0.5 - margin) / s_m) - _phi((M - 0.5 - margin) / s_m)
-        pt = _phi((T + 0.5 - total) / s_t) - _phi((T - 0.5 - total) / s_t)
+        pm[M == 0] *= tie_k
+        reg_total = total - reg_offset  # bookmaker totals include overtime
+        pt = _phi((T + 0.5 - reg_total) / s_t) - _phi((T - 0.5 - reg_total) / s_t)
         MM, TT = np.meshgrid(M, T, indexing="ij")
         W = np.outer(pm, pt) * ((MM + TT) % 2 == 0)   # team scores must be integers
-        self.W = W / W.sum()
-        self.M, self.T = MM, TT
-        self.H, self.A = (TT + MM) / 2, (TT - MM) / 2
+        keep = W > 1e-12
+        m, t, w = MM[keep].astype(float), TT[keep].astype(float), W[keep]
+        tie = m == 0
+        # regulation ties are played on: half won by the home team, half by the away team
+        self.M = np.concatenate([m, m[tie], m[tie]])
+        self.T = np.concatenate([t, t[tie], t[tie]])
+        self.FM = np.concatenate([np.where(tie, np.nan, m), np.full(tie.sum(), ot_margin), np.full(tie.sum(), -ot_margin)])
+        self.FT = np.concatenate([t, t[tie] + ot_points, t[tie] + ot_points])
+        self.W = np.concatenate([np.where(tie, 0.0, w), w[tie] / 2, w[tie] / 2])
+        self.W = self.W / self.W.sum()
+        ok = self.W > 0
+        for k in ("M", "T", "FM", "FT", "W"):
+            setattr(self, k, getattr(self, k)[ok])
+        self.H, self.A = (self.T + self.M) / 2, (self.T - self.M) / 2
+        self.FH, self.FA = (self.FT + self.FM) / 2, (self.FT - self.FM) / 2
 
     def prob(self, bet: "Bet") -> tuple[float, float]:
         win, push = bet.fn(self)
-        return float((self.W * win).sum()), float((self.W * push).sum())
+        return float(self.W[win].sum()), float(self.W[push].sum())
 
 
 @dataclass
@@ -81,35 +104,49 @@ class Bet:
     fn: Callable[[Grid], tuple[np.ndarray, np.ndarray]]
 
 
+def _tag(ot: bool) -> str:
+    return OT_TAG if ot else ""
+
+
+def _m(g, ot):
+    return g.FM if ot else g.M
+
+
 def _cmp(x, line, over: bool):
     return ((x > line) if over else (x < line)), (x == line)
 
 
-def bet_ml(team: str, home: bool) -> Bet:
-    return Bet(f"{team} uzvar", lambda g: ((g.M > 0) if home else (g.M < 0), np.zeros_like(g.M, bool)))
-
-
-def bet_handicap(team: str, home: bool, line: float) -> Bet:
+def bet_ml(team: str, home: bool, ot: bool = False) -> Bet:
     def fn(g):
-        x = (g.M if home else -g.M) + line
+        m = _m(g, ot)
+        return ((m > 0) if home else (m < 0)), np.zeros_like(m, bool)
+    return Bet(f"{team} uzvar{_tag(ot)}", fn)
+
+
+def bet_handicap(team: str, home: bool, line: float, ot: bool = False) -> Bet:
+    def fn(g):
+        x = (_m(g, ot) if home else -_m(g, ot)) + line
         return x > 0, x == 0
-    return Bet(f"{team} {line:+g}", fn)
+    return Bet(f"{team} {line:+g}{_tag(ot)}", fn)
 
 
-def bet_total(over: bool, line: float) -> Bet:
-    return Bet(f"{'virs' if over else 'zem'} {line:g}", lambda g: _cmp(g.T, line, over))
+def bet_total(over: bool, line: float, ot: bool = False) -> Bet:
+    return Bet(f"{'virs' if over else 'zem'} {line:g}{_tag(ot)}",
+               lambda g: _cmp(g.FT if ot else g.T, line, over))
 
 
-def bet_team_total(team: str, home: bool, over: bool, line: float) -> Bet:
-    return Bet(f"{team} {'virs' if over else 'zem'} {line:g}",
-               lambda g: _cmp(g.H if home else g.A, line, over))
-
-
-def bet_band(team: str, home: bool, lo: int, hi: float) -> Bet:
+def bet_team_total(team: str, home: bool, over: bool, line: float, ot: bool = False) -> Bet:
     def fn(g):
-        x = g.M if home else -g.M
+        pts = (g.FH if home else g.FA) if ot else (g.H if home else g.A)
+        return _cmp(pts, line, over)
+    return Bet(f"{team} {'virs' if over else 'zem'} {line:g}{_tag(ot)}", fn)
+
+
+def bet_band(team: str, home: bool, lo: int, hi: float, ot: bool = False) -> Bet:
+    def fn(g):
+        x = _m(g, ot) if home else -_m(g, ot)
         return (x >= lo) & (x <= hi), np.zeros_like(x, bool)
-    return Bet(f"{team} {lo}-{int(hi)}" if hi < 999 else f"{team} {lo}+", fn)
+    return Bet((f"{team} {lo}-{int(hi)}" if hi < 999 else f"{team} {lo}+") + _tag(ot), fn)
 
 
 def bet_combo(parts: list[Bet]) -> Bet:
@@ -140,32 +177,35 @@ def parse_bet(text: str, game) -> Bet:
     if len(parts) > 1:
         return bet_combo([parse_bet(p, game) for p in parts])
     s = re.sub(r"\s+", " ", text.strip()).replace(",", ".")
-    toks = s.split(" ")
     low = s.lower()
+    ot = "ieskaitot papildlaiku" in low or "ar papildlaiku" in low
+    low = re.sub(r"\(?\s*(ieskaitot|ar) papildlaiku\s*\)?", "", low).replace("pamatlaikā", "")
+    low = re.sub(r"\s+", " ", low).strip()
+    toks = low.split(" ")
 
     m = re.fullmatch(rf"(virs|over|o|zem|under|u) {NUM}", low)
     if m:
-        return bet_total(m.group(1) in ("virs", "over", "o"), float(m.group(2)))
+        return bet_total(m.group(1) in ("virs", "over", "o"), float(m.group(2)), ot)
 
     team = _team(toks[0], game)
     if team is None:
         raise ValueError(f"nepazīstu komandu '{toks[0]}' spēlē {game.away}@{game.home}")
     abbr, home = team
-    rest = " ".join(toks[1:]).lower()
+    rest = " ".join(toks[1:])
     if re.fullmatch(r"(uzv\w*|win|ml|1|2)", rest):
-        return bet_ml(abbr, home)
+        return bet_ml(abbr, home, ot)
     m = re.fullmatch(rf"([+-]{NUM})", rest)
     if m:
-        return bet_handicap(abbr, home, float(m.group(1)))
+        return bet_handicap(abbr, home, float(m.group(1)), ot)
     m = re.fullmatch(rf"(virs|over|zem|under) {NUM}", rest)
     if m:
-        return bet_team_total(abbr, home, m.group(1) in ("virs", "over"), float(m.group(2)))
+        return bet_team_total(abbr, home, m.group(1) in ("virs", "over"), float(m.group(2)), ot)
     m = re.fullmatch(r"(?:ar |by )?(\d+) ?- ?(\d+)", rest)
     if m:
-        return bet_band(abbr, home, int(m.group(1)), int(m.group(2)))
+        return bet_band(abbr, home, int(m.group(1)), int(m.group(2)), ot)
     m = re.fullmatch(r"(?:ar |by )?(\d+) ?\+", rest)
     if m:
-        return bet_band(abbr, home, int(m.group(1)), 999)
+        return bet_band(abbr, home, int(m.group(1)), 999, ot)
     raise ValueError(f"nesaprotu likmi '{text}'")
 
 

@@ -33,6 +33,18 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 (`notify.py` var pēc izvēles sūtīt Telegram ziņas, ja tiek iestatīti noslēpumi
 `TELEGRAM_BOT_TOKEN` un `TELEGRAM_CHAT_ID`; pašlaik tas netiek izmantots.)
 
+### Noteikumi un statistika
+
+- **Pamatlaiks:** gan NBA, gan NHL likmes vērtē pēc pamatlaika (48 / 60 min). Papildlaiks tiek
+  ieskaitīts tikai, ja likmē ir rakstīts "(ieskaitot papildlaiku)". Robots to ņem vērā jau
+  varbūtībās: NBA papildlaiks ~4,4 % spēļu, NHL neizšķirts pamatlaikā ~25 %.
+- **★ Visticamākā pēc datiem:** katrā spēlē viena likme, kurai ir laba iespēja iziet un ko
+  robota dati (forma, savainojumi, atpūta, vārtsargi) vērtē augstāk nekā bukmeikeri:
+  `drošība + 0,5 × (robota modelis − bukmeikeri)`. Tā netiek izvēlēta pēc zemākā koeficienta.
+  Tai ir sava statistika: uzvarēts/notikušas un vienības.
+- **Mēneša statistika** (no 1. līdz mēneša pēdējai dienai, pēc spēļu datuma): visas likmes,
+  ★ visticamākās un Crazy Dazy.
+
 ### NHL
 
 Tas pats hokejam: `python nhl_bot.py likmes` / `python nhl_bot.py rezultati` (automātiski kopā ar NBA).
