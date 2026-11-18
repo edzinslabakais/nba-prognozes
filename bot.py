@@ -209,7 +209,7 @@ def cmd_likmes(args) -> None:
         if not r.has_market:
             print("  (nav bukmeikeru līnijas — mazāk precīzs vērtējums)")
         for i, x in enumerate(picks, 1):
-            print(f"  {i}. {x['bet']:<20} drošība {x['confidence']:>3}/100   "
+            print(f"  {i}.{'★' if i == 1 else ' '}{x['bet']:<20} drošība {x['confidence']:>3}/100   "
                   f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
         inj = [n for n in (P._inj_text(r.inj_home, 2), P._inj_text(r.inj_away, 2)) if n]
         if inj:
@@ -428,19 +428,23 @@ def export_all() -> None:
     """Write export/nights/<date>.json + export/stats.json (what the phone page shows)."""
     files = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
     (L.export / "nights").mkdir(parents=True, exist_ok=True)
-    all_picks, all_crazy, nights = [], [], []
+    all_picks, all_crazy, all_top, nights = [], [], [], []
     for f in files:
         rec = json.loads(f.read_text())
         games = rec.get("games", {})
-        out_games = []
+        out_games, night_top = [], []
         for gid, gp in pd.DataFrame(rec["picks"]).groupby("game_id", sort=False) if rec["picks"] else []:
             info = games.get(gid, {"game_id": gid, "away": gp.iloc[0]["game"].split("@")[0],
                                    "home": gp.iloc[0]["game"].split("@")[1],
                                    "start_utc": gp.iloc[0]["start_utc"]})
-            picks = [{k: (None if isinstance(v, float) and math.isnan(v) else v)
-                      for k, v in p.items() if k in ("bet", "category", "confidence", "fair_odds",
-                                                      "est_odds", "result", "score")}
-                     for p in gp.to_dict("records")]
+            raw = gp.to_dict("records")
+            top_i = max(range(len(raw)), key=lambda i: (raw[i]["p"], -i))  # the most likely bet of the game
+            night_top.append(raw[top_i])
+            picks = [{**{k: (None if isinstance(v, float) and math.isnan(v) else v)
+                         for k, v in p.items() if k in ("bet", "category", "confidence", "fair_odds",
+                                                         "est_odds", "result", "score")},
+                      "top": i == top_i}
+                     for i, p in enumerate(raw)]
             score = next((p.get("score") for p in picks if p.get("score")), None)
             out_games.append({**info, "score": score, "picks": picks})
         out_games.sort(key=lambda g: g.get("start_utc", ""))
@@ -452,12 +456,14 @@ def export_all() -> None:
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
-               "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy)}
+               "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy),
+               "top_summary": _summary(night_top)}
         (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
         all_crazy += crazy
+        all_top += night_top
         nights.append({"date": rec["date"], **_summary(rec["picks"]),
-                       "crazy": _summary(crazy)})
+                       "crazy": _summary(crazy), "top": _summary(night_top)})
     buckets = []
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     for lo, hi in ((0, 35), (35, 40), (40, 45), (45, 101)):
@@ -466,7 +472,7 @@ def export_all() -> None:
             buckets.append({"range": f"{lo}-{min(hi, 100) - 1}", "n": len(b),
                             "hit_rate": round(sum(p["result"] == "izgāja" for p in b) / len(b), 3),
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
-    stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy),
+    stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy), "top_overall": _summary(all_top),
              "nights": nights, "calibration": buckets,
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
     (L.export / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
@@ -508,7 +514,8 @@ def write_message(us_date: str, mode: str) -> None:
             t = (g.get("riga_time") or " ").split(" ")[-1]
             lines.append(f"\n{g['away']} @ {g['home']}  {t}")
             for i, p in enumerate(g["picks"], 1):
-                lines.append(f"{i}. {p['bet']} — {p['confidence']}/100 (~{p['est_odds']:.2f})")
+                star = " ★" if p.get("top") else ""
+                lines.append(f"{i}. {p['bet']} — {p['confidence']}/100 (~{p['est_odds']:.2f}){star}")
             if g.get("injuries"):
                 lines.append("   ⚕ " + "; ".join(g["injuries"][:2]))
         if doc.get("crazy"):
@@ -565,7 +572,8 @@ def write_markdown(stats: dict) -> None:
             out += ["| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |", "|---|---|---|---|---|---|"]
             for i, p in enumerate(g["picks"], 1):
                 res = f"{RES_ICON[p['result']]} {p['result']}" if p.get("result") in RES_ICON else "⏳ gaida"
-                out.append(f"| {i} | **{p['bet']}** | {p['confidence']}/100 | {p['est_odds']:.2f} | "
+                star = " ★" if p.get("top") else ""
+                out.append(f"| {i}{star} | **{p['bet']}** | {p['confidence']}/100 | {p['est_odds']:.2f} | "
                            f"{p['fair_odds']:.2f} | {res} |")
             if g.get("injuries"):
                 out += ["", "Savainojumi/sastāvs: " + "; ".join(g["injuries"])]
@@ -579,7 +587,11 @@ def write_markdown(stats: dict) -> None:
                 out.append(f"| {c['game']} | **{c['bet']}** | {c['confidence']}/100 | {c['est_odds']:.2f} | "
                            f"{c['fair_odds']:.2f} | {res} |")
             out.append("")
-    out += ["## Statistika", "", f"Kopā: {_overall_line(stats['overall'])}"]
+    t = stats.get("top_overall", {})
+    top_line = (f"uzvarēts {t['hits']}/{t['settled']}, vienības {t['profit_units']:+.2f}"
+                if t.get("settled") else "vēl nav noslēgtu likmju")
+    out += ["## Statistika", "", f"★ Visticamākās (1 katrā spēlē): {top_line}", "",
+            f"Visas likmes kopā: {_overall_line(stats['overall'])}"]
     if stats.get("crazy_overall", {}).get("picks"):
         out.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
     out.append("")

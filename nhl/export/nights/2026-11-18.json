@@ -29,7 +29,8 @@
      "fair_odds": 2.44,
      "est_odds": 2.27,
      "confidence": 41,
-     "result": null
+     "result": null,
+     "top": true
     },
     {
      "category": "komandas vārti",
@@ -37,7 +38,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.32,
      "confidence": 40,
-     "result": null
+     "result": null,
+     "top": false
     },
     {
      "category": "kopā",
@@ -45,7 +47,8 @@
      "fair_odds": 2.68,
      "est_odds": 2.49,
      "confidence": 37,
-     "result": null
+     "result": null,
+     "top": false
     }
    ]
   },
@@ -75,7 +78,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null
+     "result": null,
+     "top": true
     },
     {
      "category": "uzvarētājs / handikaps",
@@ -83,7 +87,8 @@
      "fair_odds": 2.65,
      "est_odds": 2.47,
      "confidence": 38,
-     "result": null
+     "result": null,
+     "top": false
     },
     {
      "category": "kopā",
@@ -91,7 +96,8 @@
      "fair_odds": 2.84,
      "est_odds": 2.65,
      "confidence": 35,
-     "result": null
+     "result": null,
+     "top": false
     }
    ]
   },
@@ -121,7 +127,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null
+     "result": null,
+     "top": true
     },
     {
      "category": "komandas vārti",
@@ -129,7 +136,8 @@
      "fair_odds": 2.48,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null
+     "result": null,
+     "top": false
     },
     {
      "category": "uzvarētājs / handikaps",
@@ -137,7 +145,8 @@
      "fair_odds": 2.62,
      "est_odds": 2.44,
      "confidence": 38,
-     "result": null
+     "result": null,
+     "top": false
     }
    ]
   }
@@ -190,6 +199,14 @@
   }
  ],
  "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
   "picks": 3,
   "settled": 0,
   "hits": 0,

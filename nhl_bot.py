@@ -241,7 +241,7 @@ def cmd_likmes(args) -> None:
         picks = pick_for_game(r, p, args.min_odds)
         print("\n" + header(r, p))
         for i, x in enumerate(picks, 1):
-            print(f"  {i}. {x['bet']:<24} drošība {x['confidence']:>3}/100   "
+            print(f"  {i}.{'★' if i == 1 else ' '}{x['bet']:<24} drošība {x['confidence']:>3}/100   "
                   f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
         notes = _note_text(r.home, r.notes_home) + _note_text(r.away, r.notes_away)
         if notes:

@@ -125,6 +125,18 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .league a { font: 700 16px/1 var(--font-display); letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
 .league a[aria-current="page"] { background: var(--ink); color: var(--bg); }
 .league a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pick.top { background: var(--accent-soft); }
+.star { display: inline-block; font: 700 11px/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--bg); background: var(--accent); border-radius: 999px; padding: 4px 8px; margin-bottom: 5px; }
+.topbox { display: flex; flex-direction: column; gap: 8px; background: var(--surface); border: 1px solid var(--accent);
+  border-radius: 12px; padding: 12px; }
+.topbox-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.topbox-head b { font: 700 19px/1 var(--font-display); letter-spacing: 0.03em; text-transform: uppercase; color: var(--accent); }
+.topbox-head span { font-size: 12px; color: var(--muted); }
+.topbox .stat { background: var(--bg); border-color: transparent; }
+.topbox .stat b { color: var(--ink); }
+.topbox .stat b.pos { color: var(--good); }
+.topbox .stat b.neg { color: var(--bad); }
 .crazy { display: flex; flex-direction: column; gap: 10px; }
 .crazy h2 { color: var(--wild); }
 .crazy .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
@@ -162,6 +174,15 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div class="stat"><b id="s1">–</b><span id="s1l">Šī nakts</span></div>
     <div class="stat"><b id="s2">–</b><span id="s2l">Kopā izgāja</span></div>
     <div class="stat"><b id="s3">–</b><span id="s3l">Vienības</span></div>
+  </section>
+
+  <section class="topbox" id="topbox" aria-label="Visticamākās likmes">
+    <div class="topbox-head"><b>★ Visticamākās likmes</b><span>viena katrā spēlē · 1 vienība uz likmi</span></div>
+    <div class="strip">
+      <div class="stat"><b id="t1">–</b><span id="t1l">Šonakt</span></div>
+      <div class="stat"><b id="t2">–</b><span id="t2l">Uzvarēts / notikušas</span></div>
+      <div class="stat"><b id="t3">–</b><span>Vienības +/−</span></div>
+    </div>
   </section>
 
   <p class="warn" id="warn" hidden></p>
@@ -234,7 +255,26 @@ function renderNights() {
   }
 }
 
+function renderTop(night) {
+  const s = night?.top_summary || {};
+  if (s.settled) { $("t1").textContent = `${s.hits}/${s.settled}`; $("t1l").textContent = "Šonakt uzvarēts"; }
+  else { $("t1").textContent = night ? String(s.picks || 0) : "–"; $("t1l").textContent = "Šonakt likmes"; }
+  const o = state.stats?.top_overall;
+  const t2 = $("t2"), t3 = $("t3");
+  t3.classList.remove("pos", "neg");
+  if (o && o.settled) {
+    t2.textContent = `${o.hits}/${o.settled}`;
+    $("t2l").textContent = `Uzvarēts / notikušas (${pct(o.hits, o.settled)})`;
+    t3.textContent = signed(o.profit_units);
+    if (o.profit_units > 0) t3.classList.add("pos"); else if (o.profit_units < 0) t3.classList.add("neg");
+  } else {
+    t2.textContent = "–"; $("t2l").textContent = "Uzvarēts / notikušas";
+    t3.textContent = "–";
+  }
+}
+
 function renderStrip(night) {
+  renderTop(night);
   const s = night?.summary || {};
   if (s.settled) { $("s1").textContent = `${s.hits}/${s.settled}`; $("s1l").textContent = "Šī nakts izgāja"; }
   else { $("s1").textContent = night ? String(s.picks || 0) : "–"; $("s1l").textContent = "Likmes šonakt"; }
@@ -252,8 +292,9 @@ function renderStrip(night) {
 
 function pickRow(p, gameTag) {
   const [cls, word] = RESULT[p.result] || ["wait", "Gaida"];
-  const li = el("li", "pick " + (cls === "wait" ? "" : cls));
+  const li = el("li", "pick " + (cls === "wait" ? "" : cls) + (p.top ? " top" : ""));
   const left = el("div");
+  if (p.top) left.append(el("span", "star", "★ Visticamākā"), el("br"));
   if (gameTag) left.append(el("span", "game-tag", gameTag));
   left.append(el("div", "bet", p.bet));
   left.append(el("span", "cat", CAT[p.category] || p.category || ""));
