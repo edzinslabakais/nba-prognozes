@@ -1,0 +1,8 @@
+{
+  "half_life": 40,
+  "ridge": 3,
+  "prior_shrink": 0.4,
+  "injury_coef": 0.239,
+  "sigma": 12.5,
+  "market_weight_suggested": 0.9
+}

@@ -1,0 +1,310 @@
+<title>NBA prognozes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column like a scoreboard ticket — night picker, summary strip, one card per game. */
+:root {
+  --bg: #F2F3F6;
+  --surface: #FFFFFF;
+  --ink: #131925;
+  --muted: #5A6374;
+  --line: #DCE0E7;
+  --accent: #C9511A;
+  --accent-soft: #FBE7DC;
+  --good: #1D7F4E;
+  --good-soft: #DDF2E6;
+  --bad: #B8323A;
+  --bad-soft: #F8E0E1;
+  --neutral-soft: #ECEEF2;
+  --track: #E6E9EF;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C111A; --surface: #141B27; --ink: #E7EBF2; --muted: #93A0B4; --line: #253043;
+    --accent: #F07B40; --accent-soft: #3A2317; --good: #45C584; --good-soft: #16301F;
+    --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C111A; --surface: #141B27; --ink: #E7EBF2; --muted: #93A0B4; --line: #253043;
+  --accent: #F07B40; --accent-soft: #3A2317; --good: #45C584; --good-soft: #16301F;
+  --bad: #EA6A70; --bad-soft: #3A1A1D; --neutral-soft: #1C2432; --track: #222B3A;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px;
+}
+.wrap { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-direction: column; gap: 4px; }
+h1 {
+  font-family: var(--font-display); font-weight: 700; font-size: 38px; line-height: 1; margin: 0;
+  letter-spacing: 0.01em; text-transform: uppercase; text-wrap: balance;
+}
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); font-size: 14px; margin: 0; }
+.nights { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.nights::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  border-radius: 999px; padding: 6px 12px; font: 600 15px/1 var(--font-display); letter-spacing: 0.03em;
+  cursor: pointer; display: flex; gap: 6px; align-items: center;
+}
+.chip small { font: 500 12px var(--font-body); color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip[aria-pressed="true"] small { color: var(--bg); opacity: 0.75; }
+.chip:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0; }
+.stat b { display: block; font: 700 26px/1.05 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
+.games { display: flex; flex-direction: column; gap: 12px; }
+.game { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.game-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 12px 14px 8px; }
+.teams { font: 700 24px/1 var(--font-display); letter-spacing: 0.02em; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.teams .at { color: var(--muted); font-weight: 500; font-size: 18px; }
+.teams .rec { font: 500 12px var(--font-body); color: var(--muted); letter-spacing: 0; }
+.time { font: 600 18px/1 var(--font-display); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lines { padding: 0 14px 10px; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.lines b { color: var(--ink); font-weight: 600; }
+.final {
+  margin: 0 14px 10px; padding: 6px 10px; border-radius: 8px; background: var(--neutral-soft);
+  font: 600 17px var(--font-display); letter-spacing: 0.03em; font-variant-numeric: tabular-nums;
+}
+.picks { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.pick { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.pick:last-child { border-bottom: 0; }
+.bet { font: 700 21px/1.1 var(--font-display); letter-spacing: 0.02em; min-width: 0; overflow-wrap: anywhere; }
+.cat { display: block; font: 500 12px var(--font-body); color: var(--muted); letter-spacing: 0.02em; margin-top: 2px; }
+.odds { text-align: right; font-variant-numeric: tabular-nums; }
+.odds b { font: 700 21px/1.1 var(--font-display); color: var(--accent); }
+.odds small { display: block; font-size: 12px; color: var(--muted); }
+.meter { grid-column: 1 / -1; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.meter .lbl { font-size: 12px; color: var(--muted); }
+.bar { height: 8px; border-radius: 4px; background: var(--track); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.conf { font: 700 18px/1 var(--font-display); font-variant-numeric: tabular-nums; min-width: 52px; text-align: right; }
+.conf small { font-size: 12px; color: var(--muted); font-weight: 500; }
+.pill { font: 600 12px/1 var(--font-body); padding: 4px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.wait { background: var(--neutral-soft); color: var(--muted); }
+.pill.win { background: var(--good-soft); color: var(--good); }
+.pill.loss { background: var(--bad-soft); color: var(--bad); }
+.pill.push { background: var(--neutral-soft); color: var(--ink); }
+.pick.win { box-shadow: inset 3px 0 0 var(--good); }
+.pick.loss { box-shadow: inset 3px 0 0 var(--bad); }
+details { border-top: 1px solid var(--line); }
+summary { padding: 9px 14px; font-size: 13px; color: var(--muted); cursor: pointer; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "+ "; color: var(--accent); font-weight: 600; }
+details[open] summary::before { content: "− "; }
+details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
+.note { font-size: 13px; color: var(--muted); max-width: 65ch; }
+.note p { margin: 0 0 8px; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; padding: 22px 18px; color: var(--muted); }
+.empty b { color: var(--ink); display: block; font: 700 22px var(--font-display); margin-bottom: 4px; }
+.warn { font-size: 13px; color: var(--bad); }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; }
+h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; margin: 6px 0 0; }
+.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>NBA <span>prognozes</span></h1>
+    <p class="sub" id="sub">Ielādē nakts likmes…</p>
+  </header>
+
+  <nav class="nights" id="nights" aria-label="Izvēlies nakti"></nav>
+
+  <section class="strip" id="strip" aria-label="Kopsavilkums">
+    <div class="stat"><b id="s1">–</b><span id="s1l">Šī nakts</span></div>
+    <div class="stat"><b id="s2">–</b><span id="s2l">Kopā izgāja</span></div>
+    <div class="stat"><b id="s3">–</b><span id="s3l">Vienības</span></div>
+  </section>
+
+  <p class="warn" id="warn" hidden></p>
+  <section class="games" id="games" aria-live="polite">
+    <div class="empty"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 22:40 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
+  </section>
+
+  <section id="calib" hidden>
+    <h2>Vai drošība atbilst realitātei?</h2>
+    <div class="tbl"><table><thead><tr><th>Drošība</th><th>Likmes</th><th>Izgāja</th><th>Robots gaidīja</th></tr></thead><tbody id="calibBody"></tbody></table></div>
+  </section>
+
+  <section class="note">
+    <h2>Kā lasīt</h2>
+    <p><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
+    <p><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
+    <p><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
+    <p id="updated"></p>
+  </section>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const state = { nights: [], stats: null, selected: null, chosenByUser: false };
+
+const RESULT = {
+  "izgāja": ["win", "Izgāja"],
+  "neizgāja": ["loss", "Neizgāja"],
+  "atgriezts": ["push", "Atgriezts"],
+};
+const CAT = { "starpība": "Uzvarētājs / handikaps", "kopā": "Kopējie punkti", "komandas punkti": "Komandas punkti" };
+
+function nightLabel(dateStr) {
+  // US date -> the Riga night that ends the next morning
+  const d = new Date(dateStr + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + 1);
+  return `${String(d.getUTCDate()).padStart(2, "0")}.${String(d.getUTCMonth() + 1).padStart(2, "0")}.`;
+}
+function pct(a, b) { return b ? Math.round((100 * a) / b) + "%" : "–"; }
+function signed(x) { return (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(1); }
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+function renderNights() {
+  const nav = $("nights");
+  nav.replaceChildren();
+  for (const n of state.nights) {
+    const b = el("button", "chip");
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(n.date === state.selected));
+    b.append(document.createTextNode(nightLabel(n.date)));
+    const s = n.summary || {};
+    b.append(el("small", null, s.settled ? `${s.hits}/${s.settled}` : `${(n.games || []).length} sp.`));
+    b.addEventListener("click", () => { state.selected = n.date; state.chosenByUser = true; render(); });
+    nav.append(b);
+  }
+}
+
+function renderStrip(night) {
+  const s = night?.summary || {};
+  if (s.settled) { $("s1").textContent = `${s.hits}/${s.settled}`; $("s1l").textContent = "Šī nakts izgāja"; }
+  else { $("s1").textContent = night ? String(s.picks || 0) : "–"; $("s1l").textContent = "Likmes šonakt"; }
+  const o = state.stats?.overall;
+  if (o && o.settled) {
+    $("s2").textContent = pct(o.hits, o.settled);
+    $("s2l").textContent = `Kopā ${o.hits}/${o.settled} (gaidīts ${pct(o.expected_hits, o.settled - o.pushes)})`;
+    $("s3").textContent = signed(o.profit_units);
+    $("s3l").textContent = "Vienības kopā";
+  } else {
+    $("s2").textContent = "–"; $("s2l").textContent = "Kopā izgāja";
+    $("s3").textContent = "–"; $("s3l").textContent = "Vienības kopā";
+  }
+}
+
+function renderGame(g) {
+  const card = el("article", "game");
+  const head = el("div", "game-head");
+  const teams = el("div", "teams");
+  teams.append(el("span", null, g.away));
+  if (g.away_record) teams.append(el("span", "rec", g.away_record));
+  teams.append(el("span", "at", "@"));
+  teams.append(el("span", null, g.home));
+  if (g.home_record) teams.append(el("span", "rec", g.home_record));
+  head.append(teams, el("div", "time", (g.riga_time || "").split(" ")[1] || ""));
+  card.append(head);
+
+  const lines = el("div", "lines");
+  const add = (label, val) => { const s = el("span"); s.append(document.createTextNode(label + " ")); s.append(el("b", null, val)); lines.append(s); };
+  if (g.robot_line) add("Robots:", `${g.robot_line} · ${g.robot_total ?? "–"}`);
+  if (g.market_line && g.market_line !== "—") add("Bukmeikeri:", `${g.market_line} · ${g.market_total ?? "–"}`);
+  if (lines.childElementCount) card.append(lines);
+  if (g.score) card.append(el("div", "final", "Gala rezultāts: " + g.score));
+
+  const ul = el("ul", "picks");
+  for (const p of g.picks || []) {
+    const [cls, word] = RESULT[p.result] || ["wait", "Gaida"];
+    const li = el("li", "pick " + (cls === "wait" ? "" : cls));
+    const left = el("div");
+    left.append(el("div", "bet", p.bet));
+    left.append(el("span", "cat", CAT[p.category] || p.category || ""));
+    const right = el("div", "odds");
+    right.append(el("b", null, "~" + Number(p.est_odds).toFixed(2)));
+    right.append(el("small", null, "godīgais " + Number(p.fair_odds).toFixed(2)));
+    const meter = el("div", "meter");
+    meter.append(el("span", "pill " + cls, word));
+    const bar = el("div", "bar"); bar.setAttribute("role", "img"); bar.setAttribute("aria-label", `Drošība ${p.confidence} no 100`);
+    const fill = el("i"); fill.style.width = Math.max(0, Math.min(100, p.confidence)) + "%"; bar.append(fill);
+    const conf = el("span", "conf", String(p.confidence)); conf.append(el("small", null, "/100"));
+    meter.append(bar, conf);
+    li.append(left, right, meter);
+    ul.append(li);
+  }
+  card.append(ul);
+
+  if (g.injuries && g.injuries.length) {
+    const d = el("details");
+    d.append(el("summary", null, `Savainojumi un sastāvs (${g.injuries.length})`));
+    const list = el("ul");
+    for (const t of g.injuries) list.append(el("li", null, t));
+    d.append(list);
+    card.append(d);
+  }
+  return card;
+}
+
+function render() {
+  if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
+    state.selected = state.nights[0]?.date ?? null;
+  }
+  const night = state.nights.find((n) => n.date === state.selected);
+  renderNights();
+  renderStrip(night);
+  const box = $("games");
+  if (!night) {
+    $("sub").textContent = "Vēl nav nevienas nakts likmju.";
+    box.replaceChildren(Object.assign(el("div", "empty"), { innerHTML: "<b>Vēl nav likmju</b>" }));
+    box.firstChild.append(document.createTextNode("Robots katru vakaru ap 22:40 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus."));
+  } else {
+    const n = (night.games || []).length;
+    $("sub").textContent = `Nakts uz ${nightLabel(night.date)} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${night.min_odds ?? 2.1}`;
+    box.replaceChildren(...(night.games || []).map(renderGame));
+  }
+  const cal = state.stats?.calibration || [];
+  $("calib").hidden = !cal.length;
+  $("calibBody").replaceChildren(...cal.map((c) => {
+    const tr = el("tr");
+    tr.append(el("td", null, c.range), el("td", null, String(c.n)), el("td", null, Math.round(c.hit_rate * 100) + "%"), el("td", null, Math.round(c.expected * 100) + "%"));
+    return tr;
+  }));
+  const upd = state.stats?.updated_at;
+  $("updated").textContent = upd ? "Atjaunināts: " + new Date(upd).toLocaleString("lv-LV", { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
+}
+
+async function start() {
+  let db = null;
+  try { db = await window.claude?.use?.("db"); } catch (e) { db = null; }
+  if (!db) {
+    $("sub").textContent = "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.";
+    return;
+  }
+  let gotNights = false;
+  const timer = setTimeout(() => {
+    if (!gotNights) { $("warn").hidden = false; $("warn").textContent = "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu."; }
+  }, 10000);
+  const fail = (e) => { clearTimeout(timer); $("warn").hidden = false; $("warn").textContent = "Neizdevās ielādēt datus (" + (e?.code || "kļūda") + ")."; };
+
+  db.collection("nights").orderBy("date", "desc").limit(30).onSnapshot((snap) => {
+    state.nights = snap.docs.map((d) => d.data()).filter(Boolean);
+    if (!snap.metadata.fromCache) { gotNights = true; clearTimeout(timer); $("warn").hidden = true; }
+    render();
+  }, fail);
+  db.doc("meta/stats").onSnapshot((snap) => {
+    state.stats = snap.exists ? snap.data() : null;
+    render();
+  }, () => {});
+}
+start();
+</script>
