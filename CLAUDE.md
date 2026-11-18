@@ -19,7 +19,8 @@ Lietotājs raksta latviski. Atbildi latviski.
 
 ## Automātika
 
-LIKMES (21:30) un REZULTĀTI (08:30, Rīgas laiks) automātiski palaiž GitHub Actions
+LIKMES (21:30), REZULTĀTI (07:00 un vēlreiz 08:30) un WhatsApp statistiku (07:30, `whatsapp.py`, CallMeBot;
+Rīgas laiks) automātiski palaiž GitHub Actions
 (`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Pēc tam tiek publicēta publiskā lapa
 https://edzinslabakais.github.io/nba-prognozes/ un …/nhl/ (`site.py` → `site/`, GitHub Pages), kā arī atjaunināts
 `PROGNOZES.md`. Claude tajā nav vajadzīgs. Galvenā lapa ir šī publiskā lapa. Pirms rokas palaišanas veic `git pull`, jo

@@ -2,17 +2,18 @@
 
 GitHub's cron runs in UTC and does not know about Latvian summer time, so the
 workflow is scheduled at both possible UTC times and this script keeps only the
-one that is 21:30 (LIKMES) or 08:30 (REZULTĀTI) in Riga on that day.
+one that matches a Riga time below on that day:
+  21:30 LIKMES · 07:00 REZULTĀTI · 07:30 WhatsApp statistics · 08:30 REZULTĀTI again (late games)
 
 Usage: python scheduler.py "<github.event.schedule>" "<manual input>"
-Prints `komanda=<likmes|rezultati>` (or `komanda=` to skip) for $GITHUB_OUTPUT.
+Prints `komanda=<likmes|rezultati|whatsapp>` (or `komanda=` to skip) for $GITHUB_OUTPUT.
 """
 import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 RIGA = ZoneInfo("Europe/Riga")
-TARGETS = {(21, 30): "likmes", (8, 30): "rezultati"}
+TARGETS = {(21, 30): "likmes", (7, 0): "rezultati", (7, 30): "whatsapp", (8, 30): "rezultati"}
 
 
 def decide(cron: str, manual: str, now: datetime | None = None) -> str:

@@ -9,13 +9,25 @@ Prognozē katras NBA spēles uzvarētāju, uzvaras varbūtību, rezultātu un pu
 pip install -r requirements.txt
 ```
 
-## Automātika: katru vakaru 21:30 un katru rītu 08:30
+## Automātika: vakarā 21:30, no rīta 07:00 / 07:30 / 08:30
 
 GitHub Actions (`.github/workflows/nba-prognozes.yml`) pats palaiž robotu jūsu repozitorijā.
 Nekas nav jādara un nekas nav jāraksta:
 
 - **21:30 (Rīgas laiks): LIKMES.** 3 likmes katrai nakts spēlei.
-- **08:30: REZULTĀTI.** Kuras likmes izgāja, plus kopējā statistika.
+- **07:00: REZULTĀTI.** Kuras likmes izgāja, plus kopējā statistika.
+- **07:30: WhatsApp ziņa** ar statistikas skaitļiem (nakts, mēnesis, kopā). Iestatīšana aprakstīta zemāk.
+- **08:30: REZULTĀTI vēlreiz.** Noslēdz vēlās rietumkrasta spēles, kas ziemā beidzas pēc 7:00.
+
+### WhatsApp ziņa (CallMeBot, bezmaksas)
+
+1. Pievieno telefona kontaktiem numuru **+34 644 66 32 62** (piemēram, ar vārdu "CallMeBot").
+2. Nosūti tam WhatsApp ziņu: `I allow callmebot to send me messages`
+3. Atbildē saņemsi savu **apikey**.
+4. GitHub repozitorijā: **Settings → Secrets and variables → Actions → New repository secret**:
+   - `WHATSAPP_PHONE` = tavs numurs ar valsts kodu, piem. `+37120000000`
+   - `WHATSAPP_APIKEY` = apikey no 3. soļa
+5. Pārbaude: **Actions → NBA prognozes → Run workflow → `whatsapp`**.
 
 Pēc katras palaišanas tiek atjaunināta **publiskā lapa**:
 **https://edzinslabakais.github.io/nba-prognozes/**

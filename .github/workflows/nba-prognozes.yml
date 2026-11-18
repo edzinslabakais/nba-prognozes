@@ -1,21 +1,25 @@
 name: NBA prognozes
 
-# LIKMES katru vakaru 21:30 un REZULTĀTI katru rītu 08:30 pēc Rīgas laika.
-# GitHub cron ir UTC un nezina vasaras laiku, tāpēc katrs darbs ir ieplānots divreiz;
+# Rīgas laikā: LIKMES 21:30 · REZULTĀTI 07:00 · WhatsApp statistika 07:30 · REZULTĀTI vēlreiz 08:30
+# (8:30 noslēdz vēlās rietumkrasta spēles, kas ziemā beidzas pēc 7:00).
+# GitHub cron ir UTC un nezina vasaras laiku, tāpēc katrs laiks ir ieplānots divreiz (UTC+3 / UTC+2);
 # scheduler.py palaiž tikai to, kas tajā dienā atbilst Rīgas laikam.
 # GitHub ieplānotie darbi mēdz sākties ar 5-20 min nokavēšanos.
 on:
   schedule:
-    - cron: "30 18 * * *"  # 21:30 Rīgā vasarā (UTC+3)
-    - cron: "30 19 * * *"  # 21:30 Rīgā ziemā (UTC+2)
-    - cron: "30 5 * * *"   # 08:30 Rīgā vasarā
+    - cron: "30 18 * * *"  # 21:30 Rīgā vasarā
+    - cron: "30 19 * * *"  # 21:30 Rīgā ziemā
+    - cron: "0 4 * * *"    # 07:00 Rīgā vasarā
+    - cron: "0 5 * * *"    # 07:00 Rīgā ziemā
+    - cron: "30 4 * * *"   # 07:30 Rīgā vasarā
+    - cron: "30 5 * * *"   # 07:30 Rīgā ziemā / 08:30 vasarā
     - cron: "30 6 * * *"   # 08:30 Rīgā ziemā
   workflow_dispatch:
     inputs:
       komanda:
         description: "Ko palaist"
         type: choice
-        options: [likmes, rezultati, lapa]
+        options: [likmes, rezultati, lapa, whatsapp]
         default: likmes
 
 permissions:
@@ -91,7 +95,7 @@ jobs:
   # (vajag: repozitorijs Public, Settings -> Pages -> Source: GitHub Actions)
   pages:
     needs: [decide, run]
-    if: always() && needs.decide.outputs.komanda != '' && needs.run.result != 'failure'
+    if: always() && needs.decide.outputs.komanda != '' && needs.decide.outputs.komanda != 'whatsapp' && needs.run.result != 'failure'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -113,3 +117,22 @@ jobs:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+
+  # WhatsApp ziņa ar statistiku (vajag noslēpumus WHATSAPP_PHONE un WHATSAPP_APIKEY, sk. whatsapp.py)
+  whatsapp:
+    needs: decide
+    if: needs.decide.outputs.komanda == 'whatsapp'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Sūtīt WhatsApp
+        env:
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+        run: python whatsapp.py

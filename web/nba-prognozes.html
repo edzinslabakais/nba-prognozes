@@ -557,8 +557,9 @@ function render() {
   $("updated").textContent = upd ? "Atjaunināts: " + new Date(upd).toLocaleString("lv-LV", { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
 }
 
-// ---- countdown to the next automatic update (21:30 picks, 08:30 results, Riga time)
-const SLOTS = [{ h: 8, m: 30, name: "Rezultāti" }, { h: 21, m: 30, name: "Likmes" }];
+// ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
+const SLOTS = [{ h: 7, m: 0, name: "Rezultāti" }, { h: 8, m: 30, name: "Rezultāti (vēlās spēles)" },
+  { h: 21, m: 30, name: "Likmes" }];
 const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
   day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
 
