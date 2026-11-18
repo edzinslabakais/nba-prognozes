@@ -196,22 +196,20 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .crazy { display: flex; flex-direction: column; gap: 10px; }
 .crazy h2 { color: var(--wild); }
 .crazy .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
-.crazy-list { background: var(--surface); border: 1px solid var(--wild); border-radius: 12px; overflow: hidden; }
-.crazy-list .picks { border-top: 0; }
-.crazy-list .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
-.crazy-list .odds b, .crazy-list .conf { color: var(--wild); }
-.crazy-list .bar i { background: var(--wild); }
+.crazy-cards .game { border-color: var(--wild); }
+.crazy-cards .picks, .safe-cards .picks { border-top: 1px solid var(--line); }
+.crazy-cards .game-tag, .safe-cards .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
+.crazy-cards .odds b, .crazy-cards .conf { color: var(--wild); }
+.crazy-cards .bar i { background: var(--wild); }
 .crazy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .crazy-stats .stat b { color: var(--wild); }
 .safe { display: flex; flex-direction: column; gap: 10px; }
 .safe h2 { color: var(--good); }
 .safe .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
-.safe-list { background: var(--surface); border: 1px solid var(--good); border-radius: 12px; overflow: hidden; }
-.safe-list .picks { border-top: 0; }
-.safe-list .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
-.safe-list .odds b, .safe-list .conf { color: var(--good); }
-.safe-list .bar i { background: var(--good); }
-.safe-list .why { color: var(--good); }
+.safe-cards .game { border-color: var(--good); }
+.safe-cards .odds b, .safe-cards .conf { color: var(--good); }
+.safe-cards .bar i { background: var(--good); }
+.safe-cards .why { color: var(--good); }
 .safe-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .safe-stats .stat b { color: var(--good); }
 .warn { font-size: 13px; color: var(--bad); }
@@ -292,7 +290,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
   <section class="safe" id="safe" hidden>
     <h2>Drošās likmes</h2>
     <p class="intro" id="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
-    <div class="safe-list"><ul class="picks" id="safeList"></ul></div>
+    <div class="games safe-cards" id="safeList"></div>
     <div class="safe-stats">
       <div class="stat"><b id="d1">–</b><span id="d1l">Šonakt izgāja</span></div>
       <div class="stat"><b id="d2">–</b><span id="d2l">Kopā izgāja</span></div>
@@ -303,7 +301,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
   <section class="crazy" id="crazy" hidden>
     <h2>Crazy Dazy</h2>
     <p class="intro" id="crazyIntro">3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet. Katra ir no citas spēles.</p>
-    <div class="crazy-list"><ul class="picks" id="crazyList"></ul></div>
+    <div class="games crazy-cards" id="crazyList"></div>
     <div class="crazy-stats">
       <div class="stat"><b id="c1">–</b><span id="c1l">Šonakt izgāja</span></div>
       <div class="stat"><b id="c2">–</b><span id="c2l">Kopā izgāja</span></div>
@@ -545,12 +543,9 @@ function renderSafe(night) {
   const list = night?.safe || [];
   $("safe").hidden = !list.length;
   if (!list.length) return;
-  $("safeList").replaceChildren(...list.map((c) => {
-    const time = (c.riga_time || "").split(" ")[1] || "";
-    const tag = `${c.game.replace("@", " @ ")}${time ? " · " + time : ""}${c.score ? " · " + c.score : ""}`;
-    // the bar shows how safe the bet is by our own data, which is what these picks are chosen by
-    return pickRow({ ...c, mk_conf: c.confidence, confidence: c.data_conf ?? c.confidence }, tag);
-  }));
+  // the bar shows how safe the bet is by our own data, which is what these picks are chosen by
+  $("safeList").replaceChildren(...list.map((c) => betCard(c, "safe", night.date,
+    { ...c, mk_conf: c.confidence, confidence: c.data_conf ?? c.confidence })));
   const s = night.safe_summary || {};
   $("d1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
   $("d1l").textContent = s.settled ? "Šonakt izgāja" : `Šonakt gaida (${list.length})`;
@@ -565,11 +560,7 @@ function renderCrazy(night) {
   $("crazy").hidden = !list.length;
   if (!list.length) return;
   $("crazyIntro").textContent = `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${night.crazy_min_odds ?? 4}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`;
-  $("crazyList").replaceChildren(...list.map((c) => {
-    const time = (c.riga_time || "").split(" ")[1] || "";
-    const tag = `${c.game.replace("@", " @ ")}${time ? " · " + time : ""}${c.score ? " · " + c.score : ""}`;
-    return pickRow(c, tag);
-  }));
+  $("crazyList").replaceChildren(...list.map((c) => betCard(c, "crazy", night.date)));
   const s = night.crazy_summary || {};
   $("c1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
   $("c1l").textContent = s.settled ? "Šonakt izgāja" : "Šonakt gaida";
@@ -589,52 +580,32 @@ function gameSummary(g) {
   return [`${hits}/${settled.length} izgāja`, hits * 2 >= settled.length ? "good" : "bad"];
 }
 
-function renderGame(g, nightDate) {
-  const key = `${nightDate}:${g.game_id}`;
+function teamsEl(away, home, awayRec, homeRec) {
+  const teams = el("div", "teams");
+  teams.append(el("span", null, away));
+  if (awayRec) teams.append(el("span", "rec", awayRec));
+  teams.append(el("span", "at", "@"));
+  teams.append(el("span", null, home));
+  if (homeRec) teams.append(el("span", "rec", homeRec));
+  return teams;
+}
+
+// One collapsible card: a header row (who plays, time, summary) that slides the content open.
+function accordion(key, headLeft, time, sum, content) {
   const open = openGames.has(key);
   const card = el("article", "game" + (open ? " open" : ""));
   const head = el("button", "game-head");
   head.type = "button";
   head.setAttribute("aria-expanded", String(open));
-  const teams = el("div", "teams");
-  teams.append(el("span", null, g.away));
-  if (g.away_record) teams.append(el("span", "rec", g.away_record));
-  teams.append(el("span", "at", "@"));
-  teams.append(el("span", null, g.home));
-  if (g.home_record) teams.append(el("span", "rec", g.home_record));
   const right = el("div", "game-right");
-  const [sumText, sumCls] = gameSummary(g);
-  right.append(el("span", "time", (g.riga_time || "").split(" ")[1] || ""), el("span", "game-sum " + sumCls, sumText),
-               el("span", "chev"));
-  head.append(teams, right);
-  card.append(head);
-
+  right.append(el("span", "time", time || ""), el("span", "game-sum " + (sum[1] || ""), sum[0]), el("span", "chev"));
+  head.append(headLeft, right);
   const body = el("div", "game-body");
   const inner = el("div", "game-inner");
+  inner.append(...content);
   body.append(inner);
   body.inert = !open;  // collapsed content is not reachable by keyboard
-
-  const lines = el("div", "lines");
-  const add = (label, val) => { const s = el("span"); s.append(document.createTextNode(label + " ")); s.append(el("b", null, val)); lines.append(s); };
-  if (g.robot_line) add("Robots:", `${g.robot_line} · ${g.robot_total ?? "–"}`);
-  if (g.market_line && g.market_line !== "—") add("Bukmeikeri:", `${g.market_line} · ${g.market_total ?? "–"}`);
-  if (lines.childElementCount) inner.append(lines);
-  if (g.score) inner.append(el("div", "final", "Gala rezultāts: " + g.score));
-
-  const ul = el("ul", "picks");
-  for (const p of g.picks || []) ul.append(pickRow(p));
-  inner.append(ul);
-
-  if (g.injuries && g.injuries.length) {
-    const d = el("details");
-    d.append(el("summary", null, `Savainojumi un sastāvs (${g.injuries.length})`));
-    const list = el("ul");
-    for (const t of g.injuries) list.append(el("li", null, t));
-    d.append(list);
-    inner.append(d);
-  }
-  card.append(body);
-
+  card.append(head, body);
   head.addEventListener("click", () => {
     const nowOpen = !card.classList.contains("open");
     card.classList.toggle("open", nowOpen);
@@ -643,6 +614,43 @@ function renderGame(g, nightDate) {
     if (nowOpen) openGames.add(key); else openGames.delete(key);
   });
   return card;
+}
+
+function renderGame(g, nightDate) {
+  const content = [];
+  const lines = el("div", "lines");
+  const add = (label, val) => { const s = el("span"); s.append(document.createTextNode(label + " ")); s.append(el("b", null, val)); lines.append(s); };
+  if (g.robot_line) add("Robots:", `${g.robot_line} · ${g.robot_total ?? "–"}`);
+  if (g.market_line && g.market_line !== "—") add("Bukmeikeri:", `${g.market_line} · ${g.market_total ?? "–"}`);
+  if (lines.childElementCount) content.push(lines);
+  if (g.score) content.push(el("div", "final", "Gala rezultāts: " + g.score));
+  const ul = el("ul", "picks");
+  for (const p of g.picks || []) ul.append(pickRow(p));
+  content.push(ul);
+  if (g.injuries && g.injuries.length) {
+    const d = el("details");
+    d.append(el("summary", null, `Savainojumi un sastāvs (${g.injuries.length})`));
+    const list = el("ul");
+    for (const t of g.injuries) list.append(el("li", null, t));
+    d.append(list);
+    content.push(d);
+  }
+  return accordion(`${nightDate}:${g.game_id}`, teamsEl(g.away, g.home, g.away_record, g.home_record),
+                   (g.riga_time || "").split(" ")[1], gameSummary(g), content);
+}
+
+// A single Safe / Crazy Dazy bet as a collapsible card: game, time and its status when closed.
+function betCard(c, kind, nightDate, rowPick) {
+  const [away, home] = (c.game || "@").split("@");
+  const status = c.result === "izgāja" ? ["izgāja", "good"] : c.result === "neizgāja" ? ["neizgāja", "bad"]
+    : c.result === "atgriezts" ? ["atgriezts", ""] : ["gaida", ""];
+  const content = [];
+  if (c.score) content.push(el("div", "final", "Gala rezultāts: " + c.score));
+  const ul = el("ul", "picks");
+  ul.append(pickRow(rowPick || c));
+  content.push(ul);
+  return accordion(`${nightDate}:${kind}:${c.game_id}:${c.bet}`, teamsEl(away, home),
+                   (c.riga_time || "").split(" ")[1], status, content);
 }
 
 function render() {
