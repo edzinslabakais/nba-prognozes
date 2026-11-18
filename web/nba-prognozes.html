@@ -135,7 +135,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 
   <p class="warn" id="warn" hidden></p>
   <section class="games" id="games" aria-live="polite">
-    <div class="empty"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 22:40 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
+    <div class="empty"><b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.</div>
   </section>
 
   <section id="calib" hidden>
@@ -266,7 +266,7 @@ function render() {
   if (!night) {
     $("sub").textContent = "Vēl nav nevienas nakts likmju.";
     box.replaceChildren(Object.assign(el("div", "empty"), { innerHTML: "<b>Vēl nav likmju</b>" }));
-    box.firstChild.append(document.createTextNode("Robots katru vakaru ap 22:40 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus."));
+    box.firstChild.append(document.createTextNode("Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus."));
   } else {
     const n = (night.games || []).length;
     $("sub").textContent = `Nakts uz ${nightLabel(night.date)} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${night.min_odds ?? 2.1}`;

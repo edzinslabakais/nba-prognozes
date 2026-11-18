@@ -15,35 +15,45 @@ on:
       komanda:
         description: "Ko palaist"
         type: choice
-        options: [likmes, rezultati]
+        options: [likmes, rezultati, lapa]
         default: likmes
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: nba-prognozes
   cancel-in-progress: false
 
 jobs:
-  run:
+  decide:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    outputs:
+      komanda: ${{ steps.cmd.outputs.komanda }}
     steps:
       - uses: actions/checkout@v4
-
       - name: Izlemt, ko palaist
         id: cmd
         run: python3 scheduler.py "${{ github.event.schedule }}" "${{ inputs.komanda }}" >> "$GITHUB_OUTPUT"
 
+  run:
+    needs: decide
+    if: needs.decide.outputs.komanda == 'likmes' || needs.decide.outputs.komanda == 'rezultati'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      KOMANDA: ${{ needs.decide.outputs.komanda }}
+    steps:
+      - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
-        if: steps.cmd.outputs.komanda != ''
         with:
           python-version: "3.12"
           cache: pip
 
       - name: ESPN datu kešs
-        if: steps.cmd.outputs.komanda != ''
         uses: actions/cache@v4
         with:
           path: cache
@@ -51,22 +61,12 @@ jobs:
           restore-keys: espn-cache-
 
       - name: Instalēt
-        if: steps.cmd.outputs.komanda != ''
         run: pip install -r requirements.txt
 
-      - name: Palaist robotu (${{ steps.cmd.outputs.komanda }})
-        if: steps.cmd.outputs.komanda != ''
-        run: python bot.py ${{ steps.cmd.outputs.komanda }} --refresh
-
-      - name: Telegram ziņa
-        if: steps.cmd.outputs.komanda != ''
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python notify.py
+      - name: Palaist robotu (${{ env.KOMANDA }})
+        run: python bot.py "$KOMANDA" --refresh
 
       - name: Saglabāt vēsturi
-        if: steps.cmd.outputs.komanda != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -75,9 +75,34 @@ jobs:
             echo "Nav izmaiņu."
             exit 0
           fi
-          git commit -m "${{ steps.cmd.outputs.komanda }} $(TZ=Europe/Riga date '+%Y-%m-%d %H:%M')"
+          git commit -m "$KOMANDA $(TZ=Europe/Riga date '+%Y-%m-%d %H:%M')"
           for i in 1 2 3 4; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep $((i * 5))
           done
           exit 1
+
+  # Publiska lapa: https://<lietotājs>.github.io/nba-prognozes/
+  # (vajag: repozitorijs Public, Settings -> Pages -> Source: GitHub Actions)
+  pages:
+    needs: [decide, run]
+    if: always() && needs.decide.outputs.komanda != '' && needs.run.result != 'failure'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Uzbūvēt lapu
+        run: python site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

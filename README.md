@@ -17,23 +17,21 @@ Nekas nav jādara un nekas nav jāraksta:
 - **21:30 (Rīgas laiks): LIKMES.** 3 likmes katrai nakts spēlei.
 - **08:30: REZULTĀTI.** Kuras likmes izgāja, plus kopējā statistika.
 
-Rezultāts katru reizi tiek ierakstīts **[PROGNOZES.md](PROGNOZES.md)**. Telefonā to var atvērt
-GitHub lietotnē (repozitorijs `nba-prognozes` → `PROGNOZES.md`). Vēsture glabājas `history/`.
+Pēc katras palaišanas tiek atjaunināta **publiskā lapa**:
+**https://edzinslabakais.github.io/nba-prognozes/**
+Tā ir piemērota telefonam, tai nav vajadzīga pieteikšanās, un saiti var droši sūtīt draugiem.
+Tie paši dati ir arī failā [PROGNOZES.md](PROGNOZES.md), un vēsture glabājas `history/`.
 
 Palaist ārpus grafika: GitHub → **Actions** → **NBA prognozes** → **Run workflow** → izvēlies
-`likmes` vai `rezultati`. GitHub ieplānotie darbi mēdz sākties 5–20 minūtes vēlāk.
+`likmes`, `rezultati` vai `lapa` (tikai pārbūvē lapu). GitHub ieplānotie darbi mēdz sākties
+5–20 minūtes vēlāk.
 
-### Telegram ziņas (pēc izvēles)
+Lapai vajadzīgi divi vienreizēji iestatījumi: repozitorijam jābūt **Public**, un
+**Settings → Pages → Source** jābūt **GitHub Actions**. Lapa tiek būvēta ar `site.py`
+no `web/nba-prognozes.html` dizaina un `export/` datiem.
 
-1. Telegram lietotnē uzraksti **@BotFather** → `/newbot` → izdomā nosaukumu → nokopē **token**.
-2. Uzraksti savam jaunajam botam jebko (vai pievieno to draugu grupai un uzraksti grupā).
-3. Pārlūkā atver `https://api.telegram.org/bot<TOKEN>/getUpdates` un atrodi `"chat":{"id": ...}`.
-   Grupas id sākas ar `-`.
-4. GitHub repozitorijā: **Settings → Secrets and variables → Actions → New repository secret**:
-   - `TELEGRAM_BOT_TOKEN` = token
-   - `TELEGRAM_CHAT_ID` = chat id (vairākus atdali ar komatu)
-
-Ja šie noslēpumi nav iestatīti, robots strādā tāpat, tikai bez Telegram ziņām.
+(`notify.py` var pēc izvēles sūtīt Telegram ziņas, ja tiek iestatīti noslēpumi
+`TELEGRAM_BOT_TOKEN` un `TELEGRAM_CHAT_ID`; pašlaik tas netiek izmantots.)
 
 ## Prognožu spēlei: LIKMES un REZULTĀTI
 
