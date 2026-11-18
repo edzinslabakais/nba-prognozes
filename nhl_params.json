@@ -1,0 +1,16 @@
+{
+  "half_life": 30,
+  "ridge": 16,
+  "prior_shrink": 0.3,
+  "hca_prior": 0.15,
+  "b2b_prior": 0.15,
+  "tie_infl": 0.7,
+  "ot_k": 0.0,
+  "goalie_coef": 1.4,
+  "skater_coef": 0.2,
+  "skater_repl": 0.6,
+  "goalie_k": 1500.0,
+  "shots_pg": 28.0,
+  "market_weight": 0.8,
+  "recent_games": 10
+}

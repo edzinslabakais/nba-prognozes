@@ -33,6 +33,22 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 (`notify.py` var pēc izvēles sūtīt Telegram ziņas, ja tiek iestatīti noslēpumi
 `TELEGRAM_BOT_TOKEN` un `TELEGRAM_CHAT_ID`; pašlaik tas netiek izmantots.)
 
+### NHL
+
+Tas pats hokejam: `python nhl_bot.py likmes` / `python nhl_bot.py rezultati` (automātiski kopā ar NBA).
+Lapa: **https://edzinslabakais.github.io/nba-prognozes/nhl/** (lapas augšā pārslēgs NBA | NHL).
+Pārskats: [NHL.md](NHL.md), vēsture: `nhl/history/`.
+
+- **Visas NHL likmes vērtē pēc pamatlaika (60 min).** Tikai likmes ar norādi
+  "(ieskaitot papildlaiku)" ietver papildlaiku un bullīšus (bullīšu uzvarētājam +1 vārti).
+- Modelis: komandu uzbrukuma/aizsardzības reitingi no pamatlaika vārtiem → Puasona sadalījums
+  ar neizšķirtu korekciju. Ņem vērā startējošos vārtsargus (ESPN "probable/confirmed"),
+  savainojumus, mājas laukumu un spēli otrajā dienā pēc kārtas, un tiek sajaukts ar bukmeikeru
+  koeficientiem (80 %).
+- Kalibrēts uz 2025-26 sezonu (`python nhl_backtest.py`, parametri `nhl_params.json`).
+  Neizšķirts pamatlaikā: modelis 25,1 %, realitāte 25,0 %. Šajā sezonā robots + bukmeikeri
+  uzvarētāju uzmin 61,5 % gadījumu, bukmeikeri vieni paši 60,3 %.
+
 ### Crazy Dazy
 
 Katru vakaru robots no visām nakts spēlēm izvēlas arī 3 likmes ar koeficientu **4.0 vai vairāk**

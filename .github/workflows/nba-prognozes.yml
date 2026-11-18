@@ -63,14 +63,19 @@ jobs:
       - name: Instalēt
         run: pip install -r requirements.txt
 
-      - name: Palaist robotu (${{ env.KOMANDA }})
-        run: python bot.py "$KOMANDA" --refresh
+      - name: Palaist robotus (${{ env.KOMANDA }})
+        run: |
+          rc=0
+          echo "::group::NBA"; python bot.py "$KOMANDA" --refresh || rc=1; echo "::endgroup::"
+          echo "::group::NHL"; python nhl_bot.py "$KOMANDA" --refresh || rc=1; echo "::endgroup::"
+          exit $rc
 
       - name: Saglabāt vēsturi
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add history export odds predictions PROGNOZES.md
+          git add history export odds predictions PROGNOZES.md nhl NHL.md
           if git diff --cached --quiet; then
             echo "Nav izmaiņu."
             exit 0

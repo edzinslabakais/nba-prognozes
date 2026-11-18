@@ -20,8 +20,10 @@ import argparse
 import json
 import math
 import sys
+from dataclasses import dataclass
 from datetime import timedelta
 from pathlib import Path
+from typing import Callable
 
 import numpy as np
 import pandas as pd
@@ -32,7 +34,6 @@ import espn
 import predict as P
 
 ROOT = Path(__file__).resolve().parent
-HIST = ROOT / "history"
 LINES = [x + 0.5 for x in range(-40, 40)]
 
 
@@ -181,7 +182,7 @@ def pick_crazy(df: pd.DataFrame, min_odds: float = CRAZY_MIN_ODDS, n: int = CRAZ
 
 
 def cmd_likmes(args) -> None:
-    MESSAGE.unlink(missing_ok=True)
+    L.message.unlink(missing_ok=True)
     params = P.load_params()
     mw = params.get("market_weight_suggested", 0.9)
     now = pd.Timestamp.now(tz="UTC")
@@ -237,10 +238,17 @@ def cmd_likmes(args) -> None:
         print(f"  {i}. {x['game']:<10} {x['bet']:<26} drošība {x['confidence']:>3}/100   "
               f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
 
-    HIST.mkdir(exist_ok=True)
-    f = HIST / f"{day:%Y-%m-%d}.json"
+    f = save_night(day, record, games_info, crazy, args.min_odds, now)
+    print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
+    print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
+          f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
+
+
+def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now) -> Path:
+    """Write the night's picks to history (games that already started keep their old picks)."""
+    L.hist.mkdir(parents=True, exist_ok=True)
+    f = L.hist / f"{day:%Y-%m-%d}.json"
     old = json.loads(f.read_text()) if f.exists() else {"picks": [], "games": {}}
-    # keep picks for games that have already started, replace the rest
     started = {p["game_id"] for p in old["picks"] if pd.Timestamp(p["start_utc"]) <= now}
     keep = [p for p in old["picks"] if p["game_id"] in started]
     record = keep + [p for p in record if p["game_id"] not in started]
@@ -249,15 +257,13 @@ def cmd_likmes(args) -> None:
     old_crazy = old.get("crazy", [])
     if any(c["game_id"] in started for c in old_crazy):
         crazy = old_crazy
-    f.write_text(json.dumps({"date": str(day), "min_odds": args.min_odds,
+    f.write_text(json.dumps({"date": str(day), "min_odds": min_odds,
                              "generated_at": now.isoformat(timespec="minutes"),
                              "games": games_all, "picks": record, "crazy": crazy},
                             indent=1, ensure_ascii=False))
     export_all()
     write_message(day.isoformat(), "likmes")
-    print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
-    print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
-          f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
+    return f
 
 
 # --------------------------------------------------------------------------- REZULTĀTI
@@ -271,10 +277,50 @@ class Actual:
         self.H, self.A = np.array([home_pts]), np.array([away_pts])
 
 
+@dataclass
+class League:
+    """Where a league keeps its history/export and how its finished bets are settled."""
+    key: str
+    title: str
+    emoji: str
+    base: Path
+    report: Path
+    load_games: Callable
+    settle_bet: Callable          # (bet text, finished game row) -> (win, push, score text)
+    crazy_min_odds: float = 4.0
+
+    @property
+    def hist(self) -> Path:
+        return self.base / "history"
+
+    @property
+    def export(self) -> Path:
+        return self.base / "export"
+
+    @property
+    def message(self) -> Path:
+        return self.export / "message.txt"
+
+
+def _nba_settle(text: str, g) -> tuple[bool, bool, str]:
+    bet = B.parse_bet(text, g)
+    win, push = bet.fn(Actual(g.home_pts, g.away_pts))
+    return bool(win[0]), bool(push[0]), f"{g.away} {int(g.away_pts)} - {int(g.home_pts)} {g.home}"
+
+
+NBA = League("nba", "NBA", "🏀", ROOT, ROOT / "PROGNOZES.md", data.load_games, _nba_settle)
+L = NBA
+
+
+def configure(league: League) -> None:
+    global L
+    L = league
+
+
 def settle(path: Path) -> tuple[dict, int]:
     rec = json.loads(path.read_text())
     day = pd.Timestamp(rec["date"]).date()
-    games = data.load_games(day, day)
+    games = L.load_games(day, day)
     if games.empty:
         return rec, 0
     by_id = {g.game_id: g for g in games.itertuples()}
@@ -286,13 +332,12 @@ def settle(path: Path) -> tuple[dict, int]:
         if g is None or not g.completed:
             continue
         try:
-            bet = B.parse_bet(p["bet"], g)
+            win, push, score = L.settle_bet(p["bet"], g)
         except ValueError as e:
             print(f"Nevar novērtēt likmi {p['game']} '{p['bet']}': {e}")
             continue
-        win, push = bet.fn(Actual(g.home_pts, g.away_pts))
-        p["result"] = "atgriezts" if push[0] else ("izgāja" if win[0] else "neizgāja")
-        p["score"] = f"{g.away} {int(g.away_pts)} - {int(g.home_pts)} {g.home}"
+        p["result"] = "atgriezts" if push else ("izgāja" if win else "neizgāja")
+        p["score"] = score
         n_new += 1
     path.write_text(json.dumps(rec, indent=1, ensure_ascii=False))
     return rec, n_new
@@ -302,11 +347,11 @@ ICON = {"izgāja": "✅", "neizgāja": "❌", "atgriezts": "↩️", None: "⏳"
 
 
 def cmd_rezultati(args) -> None:
-    files = sorted(HIST.glob("*.json")) if HIST.exists() else []
+    files = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
     if not files:
         print("Vēl nav saglabātu likmju. Vispirms palaid: python bot.py likmes")
         return
-    MESSAGE.unlink(missing_ok=True)
+    L.message.unlink(missing_ok=True)
     espn.FORCE_REFRESH = True  # make sure last night's scoreboard is fresh
     recs, new_dates = [], []
     for f in files:
@@ -333,7 +378,7 @@ def cmd_rezultati(args) -> None:
     all_picks = [p for r in recs for p in r["picks"]]
     print(f"Kopā ({len(recs)} dienas): {_stats(all_picks)}")
     if show.get("crazy"):
-        print(f"\nCRAZY DAZY (koef. >= {CRAZY_MIN_ODDS:g}):")
+        print(f"\nCRAZY DAZY (koef. >= {L.crazy_min_odds:g}):")
         for p in show["crazy"]:
             res = p.get("result")
             print(f"  {ICON[res]} {p['game']:<10} {p['bet']:<26} drošība {p['confidence']:>3}/100   ~{p['est_odds']:.2f}   {res or 'gaida'}")
@@ -366,7 +411,6 @@ def _stats(picks: list[dict]) -> str:
 
 # --------------------------------------------------------------------------- export for the phone page
 
-EXPORT = ROOT / "export"
 
 
 def _summary(picks: list[dict]) -> dict:
@@ -382,8 +426,8 @@ def _summary(picks: list[dict]) -> dict:
 
 def export_all() -> None:
     """Write export/nights/<date>.json + export/stats.json (what the phone page shows)."""
-    files = sorted(HIST.glob("*.json")) if HIST.exists() else []
-    (EXPORT / "nights").mkdir(parents=True, exist_ok=True)
+    files = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
+    (L.export / "nights").mkdir(parents=True, exist_ok=True)
     all_picks, all_crazy, nights = [], [], []
     for f in files:
         rec = json.loads(f.read_text())
@@ -408,8 +452,8 @@ def export_all() -> None:
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
-               "crazy_min_odds": CRAZY_MIN_ODDS, "crazy": crazy_out, "crazy_summary": _summary(crazy)}
-        (EXPORT / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
+               "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy)}
+        (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
         all_crazy += crazy
         nights.append({"date": rec["date"], **_summary(rec["picks"]),
@@ -425,12 +469,10 @@ def export_all() -> None:
     stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy),
              "nights": nights, "calibration": buckets,
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
-    (EXPORT / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
+    (L.export / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
     write_markdown(stats)
 
 
-MESSAGE = EXPORT / "message.txt"
-REPORT = ROOT / "PROGNOZES.md"
 RIGA = "Europe/Riga"
 RES_ICON = {"izgāja": "✅", "neizgāja": "❌", "atgriezts": "↩️"}
 
@@ -441,7 +483,7 @@ def _night_label(us_date: str) -> str:
 
 
 def _load_night(us_date: str) -> dict | None:
-    f = EXPORT / "nights" / f"{us_date}.json"
+    f = L.export / "nights" / f"{us_date}.json"
     return json.loads(f.read_text()) if f.exists() else None
 
 
@@ -457,10 +499,10 @@ def write_message(us_date: str, mode: str) -> None:
     doc = _load_night(us_date)
     if not doc or not doc["games"]:
         return
-    stats = json.loads((EXPORT / "stats.json").read_text())
+    stats = json.loads((L.export / "stats.json").read_text())
     lines = []
     if mode == "likmes":
-        lines.append(f"🏀 NBA LIKMES — nakts uz {_night_label(us_date)} ({len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g})")
+        lines.append(f"{L.emoji} {L.title} LIKMES — nakts uz {_night_label(us_date)} ({len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g})")
         lines.append("drošība 1-100 · ~aptuvenais Optibet koeficients")
         for g in doc["games"]:
             t = (g.get("riga_time") or " ").split(" ")[-1]
@@ -475,7 +517,7 @@ def write_message(us_date: str, mode: str) -> None:
                 lines.append(f"• {c['game']}: {c['bet']} — {c['confidence']}/100 (~{c['est_odds']:.2f})")
     else:
         s = doc["summary"]
-        lines.append(f"📊 NBA REZULTĀTI — nakts uz {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
+        lines.append(f"📊 {L.title} REZULTĀTI — nakts uz {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
         for g in doc["games"]:
             lines.append(f"\n{g.get('score') or g['away'] + ' @ ' + g['home'] + ' (vēl nav beigusies)'}")
             for p in g["picks"]:
@@ -488,15 +530,15 @@ def write_message(us_date: str, mode: str) -> None:
         lines.append(f"\nKopā: {_overall_line(stats['overall'])}")
         if stats.get("crazy_overall", {}).get("settled"):
             lines.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
-    EXPORT.mkdir(exist_ok=True)
-    MESSAGE.write_text("\n".join(lines) + "\n")
+    L.export.mkdir(parents=True, exist_ok=True)
+    L.message.write_text("\n".join(lines) + "\n")
 
 
 def write_markdown(stats: dict) -> None:
     """PROGNOZES.md: readable on a phone in the GitHub app."""
-    nights = sorted(EXPORT.glob("nights/*.json"))
+    nights = sorted(L.export.glob("nights/*.json"))
     now = pd.Timestamp.now(tz="UTC").tz_convert(RIGA)
-    out = ["# 🏀 NBA prognozes", "", f"_Atjaunināts {now:%d.%m.%Y %H:%M} (Rīgas laiks)_", ""]
+    out = [f"# {L.emoji} {L.title} prognozes", "", f"_Atjaunināts {now:%d.%m.%Y %H:%M} (Rīgas laiks)_", ""]
     if nights:
         doc = json.loads(nights[-1].read_text())
         s = doc["summary"]
@@ -551,7 +593,7 @@ def write_markdown(stats: dict) -> None:
         for c in stats["calibration"]:
             out.append(f"| {c['range']} | {c['n']} | {100 * c['hit_rate']:.0f}% | {100 * c['expected']:.0f}% |")
         out.append("")
-    REPORT.write_text("\n".join(out))
+    L.report.write_text("\n".join(out))
 
 
 def main():
@@ -564,7 +606,7 @@ def main():
     espn.FORCE_REFRESH = args.refresh
     if args.komanda == "eksports":
         export_all()
-        print(f"Eksportēts: {EXPORT.relative_to(ROOT)}/")
+        print(f"Eksportēts: {L.export.relative_to(ROOT)}/")
         return
     (cmd_likmes if args.komanda == "likmes" else cmd_rezultati)(args)
 

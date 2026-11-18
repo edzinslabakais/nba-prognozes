@@ -9,6 +9,9 @@ Lietotājs raksta latviski. Atbildi latviski.
   Ja lietotājs norāda citu min. koeficientu, pievieno `--min-odds X`.
   Pēc tam īsi (2–4 teikumos) izcel interesantāko: spēles ar lieliem savainojumiem vai kur
   robots būtiski nepiekrīt bukmeikeriem. Neizdomā varbūtības — izmanto tikai skripta skaitļus.
+- NHL: tās pašas komandas ar `python3 nhl_bot.py likmes --refresh` / `python3 nhl_bot.py rezultati`
+  (vēsture `nhl/history/`, pārskats `NHL.md`). NHL likmes vērtē pēc pamatlaika, izņemot
+  likmes ar norādi "(ieskaitot papildlaiku)".
 - **REZULTĀTI** → palaid `python3 bot.py rezultati` un parādi kopsavilkumu (kuras likmes
   izgāja, dienas un kopējā statistika).
 - Likmju vēsture glabājas `history/*.json`. Pēc LIKMES un REZULTĀTI saglabā izmaiņas
@@ -18,7 +21,7 @@ Lietotājs raksta latviski. Atbildi latviski.
 
 LIKMES (21:30) un REZULTĀTI (08:30, Rīgas laiks) automātiski palaiž GitHub Actions
 (`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Pēc tam tiek publicēta publiskā lapa
-https://edzinslabakais.github.io/nba-prognozes/ (`site.py` → `site/`, GitHub Pages), kā arī atjaunināts
+https://edzinslabakais.github.io/nba-prognozes/ un …/nhl/ (`site.py` → `site/`, GitHub Pages), kā arī atjaunināts
 `PROGNOZES.md`. Claude tajā nav vajadzīgs. Galvenā lapa ir šī publiskā lapa. Pirms rokas palaišanas veic `git pull`, jo
 Actions pievieno savus commit.
 
@@ -37,4 +40,5 @@ LIKMES vai REZULTĀTI, atjaunini to
 
 - `espn.py` — ESPN API + kešs (`cache/`), `data.py` — tabulas, `model.py` — reitingi un savainojumi
 - `predict.py` — spēļu prognozes, `bets.py` — likmju varbūtības (cenu lapa / Optibet koeficientu vērtēšana)
-- `bot.py` — LIKMES / REZULTĀTI, `backtest.py` — precizitātes pārbaude un `params.json` kalibrēšana
+- `bot.py` — LIKMES / REZULTĀTI (+ kopīgā vēsture/eksports, `League`), `backtest.py` — kalibrēšana
+- NHL: `nhl_data.py`, `nhl_model.py` (Puasona vārtu režģis), `nhl_bets.py`, `nhl_bot.py`, `nhl_backtest.py`

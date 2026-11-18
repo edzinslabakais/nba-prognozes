@@ -3,3 +3,4 @@ __pycache__/
 *.tmp
 export/message.txt
 site/
+nhl/export/message.txt

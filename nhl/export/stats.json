@@ -1,0 +1,39 @@
+{
+ "overall": {
+  "picks": 9,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_overall": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "nights": [
+  {
+   "date": "2026-11-18",
+   "picks": 9,
+   "settled": 0,
+   "hits": 0,
+   "pushes": 0,
+   "expected_hits": 0,
+   "profit_units": 0,
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
+  }
+ ],
+ "calibration": [],
+ "updated_at": "2026-11-18T20:46+00:00"
+}

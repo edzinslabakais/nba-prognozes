@@ -34,6 +34,7 @@ DEFAULTS = dict(
 STATUS_AVAIL = {  # probability the player plays
     "out": 0.0, "suspension": 0.0, "doubtful": 0.2, "questionable": 0.5,
     "day-to-day": 0.6, "probable": 0.9, "available": 1.0,
+    "injured reserve": 0.0, "long-term injured reserve": 0.0, "ir": 0.0, "ltir": 0.0,
 }
 
 
@@ -86,7 +87,8 @@ class Ratings:
 
 
 def fit_ratings(games: pd.DataFrame, as_of: pd.Timestamp | None = None,
-                prior: Ratings | None = None, half_life=None, ridge=None) -> Ratings:
+                prior: Ratings | None = None, half_life=None, ridge=None,
+                hca_prior: float = 2.5, b2b_prior: float = 1.5, fixed_lam: float = 40.0) -> Ratings:
     """Fit ratings on completed games that started before `as_of`."""
     half_life = DEFAULTS["half_life"] if half_life is None else half_life
     ridge = DEFAULTS["ridge"] if ridge is None else ridge
@@ -99,7 +101,7 @@ def fit_ratings(games: pd.DataFrame, as_of: pd.Timestamp | None = None,
     P = 3 + 2 * n  # mu, hca, b2b, off[n], def[n]
 
     if g.empty:
-        return prior or Ratings({t: 0.0 for t in teams}, {t: 0.0 for t in teams})
+        return prior or Ratings({t: 0.0 for t in teams}, {t: 0.0 for t in teams}, hca=hca_prior, b2b=b2b_prior)
 
     ref = as_of if as_of is not None else g["start_utc"].max()
     age = (ref - g["start_utc"]).dt.total_seconds().to_numpy() / 86400
@@ -141,7 +143,7 @@ def fit_ratings(games: pd.DataFrame, as_of: pd.Timestamp | None = None,
         for col, target in ((3 + i, pri.off.get(t, 0.0)), (3 + n + i, pri.deff.get(t, 0.0))):
             row = np.zeros(P); row[col] = math.sqrt(ridge)
             reg_X.append(row); reg_y.append(math.sqrt(ridge) * target)
-    for col, target, lam in ((1, 2.5, 40.0), (2, 1.5, 40.0)):
+    for col, target, lam in ((1, hca_prior, fixed_lam), (2, b2b_prior, fixed_lam)):
         row = np.zeros(P); row[col] = math.sqrt(lam)
         reg_X.append(row); reg_y.append(math.sqrt(lam) * target)
     for start in (3, 3 + n):

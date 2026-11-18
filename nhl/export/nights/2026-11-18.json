@@ -1,0 +1,200 @@
+{
+ "date": "2026-11-18",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T20:46+00:00",
+ "games": [
+  {
+   "game_id": "401892740",
+   "away": "MTL",
+   "home": "NJ",
+   "away_name": "Montreal Canadiens",
+   "home_name": "New Jersey Devils",
+   "away_record": "12-5-4",
+   "home_record": "15-6-0",
+   "start_utc": "2026-11-19 00:30:00+00:00",
+   "riga_time": "19.11 02:30",
+   "robot_line": "NJ 47% · X 25% · MTL 29%",
+   "robot_total": "vārti 3.3–2.7",
+   "market_line": "NJ 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.05",
+    "MTL: vārtsargs Jacob Fowler (apstiprināts) +0.14"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "MTL uzvar (ieskaitot papildlaiku)",
+     "fair_odds": 2.44,
+     "est_odds": 2.27,
+     "confidence": 41,
+     "result": null
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "NJ virs 3.5",
+     "fair_odds": 2.49,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": null
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "fair_odds": 2.68,
+     "est_odds": 2.49,
+     "confidence": 37,
+     "result": null
+    }
+   ]
+  },
+  {
+   "game_id": "401892739",
+   "away": "BOS",
+   "home": "DET",
+   "away_name": "Boston Bruins",
+   "home_name": "Detroit Red Wings",
+   "away_record": "13-7-1",
+   "home_record": "8-10-3",
+   "start_utc": "2026-11-19 00:30:00+00:00",
+   "riga_time": "19.11 02:30",
+   "robot_line": "DET 38% · X 26% · BOS 37%",
+   "robot_total": "vārti 2.9–2.9",
+   "market_line": "DET 50% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "DET: vārtsargs Daniil Tarasov (apstiprināts) +0.17",
+    "BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "DET zem 2.5",
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "DET uzvar",
+     "fair_odds": 2.65,
+     "est_odds": 2.47,
+     "confidence": 38,
+     "result": null
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "fair_odds": 2.84,
+     "est_odds": 2.65,
+     "confidence": 35,
+     "result": null
+    }
+   ]
+  },
+  {
+   "game_id": "401892741",
+   "away": "COL",
+   "home": "UTA",
+   "away_name": "Colorado Avalanche",
+   "home_name": "Utah Mammoth",
+   "away_record": "12-6-3",
+   "home_record": "10-9-3",
+   "start_utc": "2026-11-19 03:00:00+00:00",
+   "riga_time": "19.11 05:00",
+   "robot_line": "UTA 37% · X 25% · COL 38%",
+   "robot_total": "vārti 3.1–3.1",
+   "market_line": "UTA 51% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.02",
+    "COL: vārtsargs Mackenzie Blackwood (apstiprināts) +0.05"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": null
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "UTA zem 2.5",
+     "fair_odds": 2.48,
+     "est_odds": 2.31,
+     "confidence": 40,
+     "result": null
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "COL uzvar",
+     "fair_odds": 2.62,
+     "est_odds": 2.44,
+     "confidence": 38,
+     "result": null
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892741",
+   "game": "COL@UTA",
+   "riga_time": "19.11 05:00",
+   "category": "kombinācija",
+   "bet": "COL uzvar & virs 5.5",
+   "confidence": 23,
+   "fair_odds": 4.41,
+   "est_odds": 4.1,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892739",
+   "game": "BOS@DET",
+   "riga_time": "19.11 02:30",
+   "category": "kombinācija",
+   "bet": "DET uzvar & zem 6.5",
+   "confidence": 23,
+   "fair_odds": 4.39,
+   "est_odds": 4.08,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892740",
+   "game": "MTL@NJ",
+   "riga_time": "19.11 02:30",
+   "category": "komandas vārti",
+   "bet": "NJ virs 4.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.21,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}

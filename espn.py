@@ -31,16 +31,20 @@ def today_et() -> date:
     return datetime.now(ET).date()
 
 
-def _cache_path(path: str, params: dict | None) -> Path:
-    key = hashlib.sha1((path + json.dumps(params or {}, sort_keys=True)).encode()).hexdigest()
+NHL = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl"
+
+
+def _cache_path(path: str, params: dict | None, base: str = BASE) -> Path:
+    prefix = "" if base == BASE else base  # NBA keeps its original cache keys
+    key = hashlib.sha1((prefix + path + json.dumps(params or {}, sort_keys=True)).encode()).hexdigest()
     return CACHE_DIR / f"{key}.json"
 
 
 def get_json(path: str, params: dict | None = None, ttl: float | None = None,
-             trim=None) -> dict:
+             trim=None, base: str = BASE) -> dict:
     """GET BASE+path. ttl=None caches forever, ttl=0 never caches.
     trim: optional function that drops unused parts before caching."""
-    f = _cache_path(path, params)
+    f = _cache_path(path, params, base)
     if f.exists() and ttl != 0 and not (FORCE_REFRESH and ttl is not None):
         if ttl is None or time.time() - f.stat().st_mtime < ttl:
             with open(f) as fh:
@@ -49,7 +53,7 @@ def get_json(path: str, params: dict | None = None, ttl: float | None = None,
     last_err: Exception | None = None
     for attempt in range(4):
         try:
-            r = _session.get(BASE + path, params=params, timeout=30)
+            r = _session.get(base + path, params=params, timeout=30)
             if r.status_code == 404:
                 raise LookupError(f"ESPN 404: {path} {params}")
             r.raise_for_status()
@@ -72,15 +76,15 @@ def get_json(path: str, params: dict | None = None, ttl: float | None = None,
     return data
 
 
-def scoreboard(d: date) -> dict:
+def scoreboard(d: date, base: str = BASE) -> dict:
     # Days at least two days in the past are final -> cache forever.
     ttl = None if d <= today_et() - timedelta(days=2) else 600
-    return get_json("/scoreboard", {"dates": d.strftime("%Y%m%d")}, ttl=ttl, trim=trim_scoreboard)
+    return get_json("/scoreboard", {"dates": d.strftime("%Y%m%d")}, ttl=ttl, trim=trim_scoreboard, base=base)
 
 
-def summary(event_id: str) -> dict:
+def summary(event_id: str, base: str = BASE) -> dict:
     """Box score + closing odds. Only call this for finished games."""
-    return get_json("/summary", {"event": str(event_id)}, ttl=None, trim=trim_summary)
+    return get_json("/summary", {"event": str(event_id)}, ttl=None, trim=trim_summary, base=base)
 
 
 _HEAVY_COMP_KEYS = ("broadcasts", "broadcast", "geoBroadcasts", "headlines", "highlights",
@@ -107,12 +111,12 @@ def trim_summary(s: dict) -> dict:
             "pickcenter": s.get("pickcenter", [])}
 
 
-def injuries() -> dict:
-    return get_json("/injuries", ttl=900)
+def injuries(base: str = BASE) -> dict:
+    return get_json("/injuries", ttl=900, base=base)
 
 
-def roster(team_id: str) -> dict:
-    return get_json(f"/teams/{team_id}/roster", ttl=6 * 3600)
+def roster(team_id: str, base: str = BASE) -> dict:
+    return get_json(f"/teams/{team_id}/roster", ttl=6 * 3600, base=base)
 
 
 _ID_RE = re.compile(r"/id/(\d+)")
