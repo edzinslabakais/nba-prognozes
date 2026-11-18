@@ -1,0 +1,283 @@
+{
+ "date": "2026-11-12",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401909976",
+   "away": "TOR",
+   "home": "PHI",
+   "away_name": "Toronto Raptors",
+   "home_name": "Philadelphia 76ers",
+   "start_utc": "2026-11-13 00:00:00+00:00",
+   "riga_time": "13.11 02:00",
+   "robot_line": "PHI -7.0",
+   "robot_total": 222.5,
+   "market_line": "PHI -7.5",
+   "market_total": 222.5,
+   "injuries": [],
+   "score": "TOR 112 - 123 PHI",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "PHI zem 112.5",
+     "p_model": 0.5453,
+     "p_market": 0.433,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "TOR 112 - 123 PHI",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "TOR +4.5",
+     "p_model": 0.5501,
+     "p_market": 0.4237,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "TOR 112 - 123 PHI",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 218.5",
+     "p_model": 0.4818,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "TOR 112 - 123 PHI",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909977",
+   "away": "DET",
+   "home": "WSH",
+   "away_name": "Detroit Pistons",
+   "home_name": "Washington Wizards",
+   "start_utc": "2026-11-13 00:00:00+00:00",
+   "riga_time": "13.11 02:00",
+   "robot_line": "DET -10.8",
+   "robot_total": 223.5,
+   "market_line": "DET -10.5",
+   "market_total": 223.5,
+   "injuries": [],
+   "score": "DET 121 - 121 WSH (pamatlaikā; ar papildlaiku 144 - 140)",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "WSH +8.5",
+     "p_model": 0.367,
+     "p_market": 0.4505,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "DET 121 - 121 WSH (pamatlaikā; ar papildlaiku 144 - 140)",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 219.5",
+     "p_model": 0.5279,
+     "p_market": 0.4346,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "DET 121 - 121 WSH (pamatlaikā; ar papildlaiku 144 - 140)",
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "DET zem 114.5",
+     "p_model": 0.455,
+     "p_market": 0.4336,
+     "fair_odds": 2.34,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "DET 121 - 121 WSH (pamatlaikā; ar papildlaiku 144 - 140)",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909978",
+   "away": "DAL",
+   "home": "MIN",
+   "away_name": "Dallas Mavericks",
+   "home_name": "Minnesota Timberwolves",
+   "start_utc": "2026-11-13 01:00:00+00:00",
+   "riga_time": "13.11 03:00",
+   "robot_line": "MIN -5.6",
+   "robot_total": 226.5,
+   "market_line": "MIN -5.5",
+   "market_total": 226.5,
+   "injuries": [],
+   "score": "DAL 94 - 133 MIN",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "MIN -7.5",
+     "p_model": 0.463,
+     "p_market": 0.434,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "DAL 94 - 133 MIN",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 222.5",
+     "p_model": 0.475,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "DAL 94 - 133 MIN",
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MIN zem 113.5",
+     "p_model": 0.4497,
+     "p_market": 0.4324,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "DAL 94 - 133 MIN",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909979",
+   "away": "CHA",
+   "home": "PHX",
+   "away_name": "Charlotte Hornets",
+   "home_name": "Phoenix Suns",
+   "start_utc": "2026-11-13 02:00:00+00:00",
+   "riga_time": "13.11 04:00",
+   "robot_line": "PHX -6.9",
+   "robot_total": 214.5,
+   "market_line": "PHX -6.5",
+   "market_total": 214.5,
+   "injuries": [],
+   "score": "CHA 96 - 101 PHX",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "CHA zem 101.5",
+     "p_model": 0.4626,
+     "p_market": 0.4279,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "CHA 96 - 101 PHX",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 216.5",
+     "p_model": 0.479,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "CHA 96 - 101 PHX",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "PHX -9.5",
+     "p_model": 0.5184,
+     "p_market": 0.4063,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "CHA 96 - 101 PHX",
+     "top": true
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 12,
+  "hits": 3,
+  "pushes": 0,
+  "expected_hits": 5.2,
+  "profit_units": -5.62
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401909977",
+   "game": "DET@WSH",
+   "riga_time": "13.11 02:00",
+   "category": "komandas punkti",
+   "bet": "WSH zem 97.5",
+   "confidence": 23,
+   "fair_odds": 4.34,
+   "est_odds": 4.04,
+   "result": "neizgāja",
+   "score": "DET 121 - 121 WSH (pamatlaikā; ar papildlaiku 144 - 140)"
+  },
+  {
+   "game_id": "401909979",
+   "game": "CHA@PHX",
+   "riga_time": "13.11 04:00",
+   "category": "komandas punkti",
+   "bet": "PHX virs 118.5",
+   "confidence": 23,
+   "fair_odds": 4.32,
+   "est_odds": 4.02,
+   "result": "neizgāja",
+   "score": "CHA 96 - 101 PHX"
+  },
+  {
+   "game_id": "401909978",
+   "game": "DAL@MIN",
+   "riga_time": "13.11 03:00",
+   "category": "handikaps",
+   "bet": "MIN -15.5",
+   "confidence": 23,
+   "fair_odds": 4.32,
+   "est_odds": 4.02,
+   "result": "izgāja",
+   "score": "DAL 94 - 133 MIN"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.69,
+  "profit_units": 1.02
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 1.72,
+  "profit_units": -4
+ },
+ "simulated": true
+}

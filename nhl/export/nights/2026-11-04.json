@@ -1,0 +1,295 @@
+{
+ "date": "2026-11-04",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892644",
+   "away": "OTT",
+   "home": "BUF",
+   "away_name": "Ottawa Senators",
+   "home_name": "Buffalo Sabres",
+   "start_utc": "2026-11-05 00:30:00+00:00",
+   "riga_time": "05.11 02:30",
+   "robot_line": "BUF 42% · X 24% · OTT 34%",
+   "robot_total": "vārti 3.4–3.1",
+   "market_line": "BUF 54% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "BUF: vārtsargs Colten Ellis +0.05",
+    "OTT: vārtsargs Samuel Ersson -0.09"
+   ],
+   "score": "OTT 2 - 1 BUF",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "BUF virs 3.5",
+     "p_model": 0.4165,
+     "p_market": 0.438,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "OTT 2 - 1 BUF",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "BUF uzvar",
+     "p_model": 0.4138,
+     "p_market": 0.4219,
+     "fair_odds": 2.38,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "OTT 2 - 1 BUF",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.381,
+     "p_market": 0.36,
+     "fair_odds": 2.75,
+     "est_odds": 2.55,
+     "confidence": 36,
+     "result": "izgāja",
+     "score": "OTT 2 - 1 BUF",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892645",
+   "away": "CHI",
+   "home": "FLA",
+   "away_name": "Chicago Blackhawks",
+   "home_name": "Florida Panthers",
+   "start_utc": "2026-11-05 00:30:00+00:00",
+   "riga_time": "05.11 02:30",
+   "robot_line": "FLA 56% · X 23% · CHI 21%",
+   "robot_total": "vārti 3.6–2.4",
+   "market_line": "FLA 69% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "FLA: vārtsargs Jacob Markstrom -0.03",
+    "CHI: vārtsargs Spencer Knight +0.02"
+   ],
+   "score": "CHI 3 - 5 FLA",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "CHI virs 2.5",
+     "p_model": 0.5085,
+     "p_market": 0.4176,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "CHI 3 - 5 FLA",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "FLA -1.5",
+     "p_model": 0.3429,
+     "p_market": 0.4292,
+     "fair_odds": 2.43,
+     "est_odds": 2.26,
+     "confidence": 41,
+     "result": "izgāja",
+     "score": "CHI 3 - 5 FLA",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4029,
+     "p_market": 0.3784,
+     "fair_odds": 2.62,
+     "est_odds": 2.43,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "CHI 3 - 5 FLA",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892646",
+   "away": "SJ",
+   "home": "LA",
+   "away_name": "San Jose Sharks",
+   "home_name": "Los Angeles Kings",
+   "start_utc": "2026-11-05 03:00:00+00:00",
+   "riga_time": "05.11 05:00",
+   "robot_line": "LA 47% · X 25% · SJ 28%",
+   "robot_total": "vārti 3.3–2.7",
+   "market_line": "LA 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "LA: vārtsargs Darcy Kuemper +0.00",
+    "SJ: vārtsargs Yaroslav Askarov +0.01"
+   ],
+   "score": "SJ 2 - 7 LA",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "LA virs 3.5",
+     "p_model": 0.3493,
+     "p_market": 0.4236,
+     "fair_odds": 2.45,
+     "est_odds": 2.28,
+     "confidence": 41,
+     "result": "izgāja",
+     "score": "SJ 2 - 7 LA",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SJ uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.432,
+     "p_market": 0.4004,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "SJ 2 - 7 LA",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3245,
+     "p_market": 0.3939,
+     "fair_odds": 2.64,
+     "est_odds": 2.45,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "SJ 2 - 7 LA",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892647",
+   "away": "CGY",
+   "home": "SEA",
+   "away_name": "Calgary Flames",
+   "home_name": "Seattle Kraken",
+   "start_utc": "2026-11-05 03:00:00+00:00",
+   "riga_time": "05.11 05:00",
+   "robot_line": "SEA 43% · X 25% · CGY 33%",
+   "robot_total": "vārti 3.3–3.0",
+   "market_line": "SEA 55% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "SEA: vārtsargs Joey Daccord -0.02",
+    "CGY: vārtsargs Dustin Wolf -0.11"
+   ],
+   "score": "CGY 1 - 1 SEA (pamatlaikā; papildlaikā 1 - 2)",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SEA uzvar",
+     "p_model": 0.4276,
+     "p_market": 0.4282,
+     "fair_odds": 2.34,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "CGY 1 - 1 SEA (pamatlaikā; papildlaikā 1 - 2)",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "CGY zem 2.5",
+     "p_model": 0.4065,
+     "p_market": 0.4326,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "CGY 1 - 1 SEA (pamatlaikā; papildlaikā 1 - 2)",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4542,
+     "p_market": 0.4202,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "CGY 1 - 1 SEA (pamatlaikā; papildlaikā 1 - 2)",
+     "top": true
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 12,
+  "hits": 7,
+  "pushes": 0,
+  "expected_hits": 4.92,
+  "profit_units": 4.29
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892647",
+   "game": "CGY@SEA",
+   "riga_time": "05.11 05:00",
+   "category": "komandas vārti",
+   "bet": "SEA virs 4.5",
+   "confidence": 23,
+   "fair_odds": 4.36,
+   "est_odds": 4.06,
+   "result": "neizgāja",
+   "score": "CGY 1 - 1 SEA (pamatlaikā; papildlaikā 1 - 2)"
+  },
+  {
+   "game_id": "401892646",
+   "game": "SJ@LA",
+   "riga_time": "05.11 05:00",
+   "category": "komandas vārti",
+   "bet": "LA virs 4.5",
+   "confidence": 23,
+   "fair_odds": 4.42,
+   "est_odds": 4.11,
+   "result": "izgāja",
+   "score": "SJ 2 - 7 LA"
+  },
+  {
+   "game_id": "401892645",
+   "game": "CHI@FLA",
+   "riga_time": "05.11 02:30",
+   "category": "neizšķirts",
+   "bet": "neizšķirts",
+   "confidence": 23,
+   "fair_odds": 4.41,
+   "est_odds": 4.1,
+   "result": "neizgāja",
+   "score": "CHI 3 - 5 FLA"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": 1.11
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 1.7,
+  "profit_units": -1.86
+ },
+ "simulated": true
+}

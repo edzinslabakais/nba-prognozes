@@ -1,0 +1,170 @@
+{
+ "date": "2026-10-14",
+ "min_odds": 2.1,
+ "simulated": true,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": {
+  "401892504": {
+   "game_id": "401892504",
+   "away": "MTL",
+   "home": "WSH",
+   "away_name": "Montreal Canadiens",
+   "home_name": "Washington Capitals",
+   "start_utc": "2026-10-14 23:30:00+00:00",
+   "riga_time": "15.10 02:30",
+   "robot_line": "WSH 39% · X 25% · MTL 36%",
+   "robot_total": "vārti 3.2–3.1",
+   "market_line": "WSH 50% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "WSH: vārtsargs Charlie Lindgren -0.01",
+    "MTL: vārtsargs Jakub Dobes -0.08"
+   ]
+  },
+  "401892505": {
+   "game_id": "401892505",
+   "away": "DAL",
+   "home": "COL",
+   "away_name": "Dallas Stars",
+   "home_name": "Colorado Avalanche",
+   "start_utc": "2026-10-15 00:30:00+00:00",
+   "riga_time": "15.10 03:30",
+   "robot_line": "COL 46% · X 25% · DAL 29%",
+   "robot_total": "vārti 3.3–2.7",
+   "market_line": "COL 59% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "COL: vārtsargs Scott Wedgewood +0.02",
+    "DAL: vārtsargs Casey DeSmith -0.10"
+   ]
+  }
+ },
+ "picks": [
+  {
+   "game_id": "401892504",
+   "game": "MTL@WSH",
+   "start_utc": "2026-10-14 23:30:00+00:00",
+   "category": "kopā",
+   "bet": "virs 6.5",
+   "p": 0.4360049161959511,
+   "p_model": 0.4157,
+   "p_market": 0.4416,
+   "data_score": 0.423,
+   "fair_odds": 2.29,
+   "est_odds": 2.13,
+   "confidence": 44,
+   "result": "izgāja",
+   "score": "MTL 4 - 5 WSH"
+  },
+  {
+   "game_id": "401892504",
+   "game": "MTL@WSH",
+   "start_utc": "2026-10-14 23:30:00+00:00",
+   "category": "komandas vārti",
+   "bet": "MTL zem 2.5",
+   "p": 0.39349916626155745,
+   "p_model": 0.4436,
+   "p_market": 0.381,
+   "data_score": 0.4248,
+   "fair_odds": 2.54,
+   "est_odds": 2.36,
+   "confidence": 39,
+   "result": "neizgāja",
+   "score": "MTL 4 - 5 WSH"
+  },
+  {
+   "game_id": "401892504",
+   "game": "MTL@WSH",
+   "start_utc": "2026-10-14 23:30:00+00:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "WSH uzvar",
+   "p": 0.38919049308909043,
+   "p_model": 0.4388,
+   "p_market": 0.3769,
+   "data_score": 0.4201,
+   "fair_odds": 2.57,
+   "est_odds": 2.39,
+   "confidence": 39,
+   "result": "izgāja",
+   "score": "MTL 4 - 5 WSH"
+  },
+  {
+   "game_id": "401892505",
+   "game": "DAL@COL",
+   "start_utc": "2026-10-15 00:30:00+00:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "DAL uzvar (ieskaitot papildlaiku)",
+   "p": 0.41416191906683564,
+   "p_model": 0.444,
+   "p_market": 0.4066,
+   "data_score": 0.4328,
+   "fair_odds": 2.41,
+   "est_odds": 2.25,
+   "confidence": 41,
+   "result": "izgāja",
+   "score": "DAL 2 - 2 COL (pamatlaikā; bullīšos 3 - 2)"
+  },
+  {
+   "game_id": "401892505",
+   "game": "DAL@COL",
+   "start_utc": "2026-10-15 00:30:00+00:00",
+   "category": "komandas vārti",
+   "bet": "COL virs 3.5",
+   "p": 0.395871053069988,
+   "p_model": 0.3555,
+   "p_market": 0.4063,
+   "data_score": 0.3705,
+   "fair_odds": 2.53,
+   "est_odds": 2.35,
+   "confidence": 40,
+   "result": "neizgāja",
+   "score": "DAL 2 - 2 COL (pamatlaikā; bullīšos 3 - 2)"
+  },
+  {
+   "game_id": "401892505",
+   "game": "DAL@COL",
+   "start_utc": "2026-10-15 00:30:00+00:00",
+   "category": "kopā",
+   "bet": "virs 6.5",
+   "p": 0.3698647569225516,
+   "p_model": 0.3438,
+   "p_market": 0.3767,
+   "data_score": 0.3534,
+   "fair_odds": 2.7,
+   "est_odds": 2.51,
+   "confidence": 37,
+   "result": "neizgāja",
+   "score": "DAL 2 - 2 COL (pamatlaikā; bullīšos 3 - 2)"
+  }
+ ],
+ "crazy": [
+  {
+   "game_id": "401892504",
+   "game": "MTL@WSH",
+   "start_utc": "2026-10-14 23:30:00+00:00",
+   "riga_time": "15.10 02:30",
+   "category": "kombinācija",
+   "bet": "MTL uzvar & virs 5.5",
+   "p": 0.22143714908972834,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "confidence": 22,
+   "result": "neizgāja",
+   "score": "MTL 4 - 5 WSH"
+  },
+  {
+   "game_id": "401892505",
+   "game": "DAL@COL",
+   "start_utc": "2026-10-15 00:30:00+00:00",
+   "riga_time": "15.10 03:30",
+   "category": "komandas vārti",
+   "bet": "COL virs 4.5",
+   "p": 0.21645710036709348,
+   "fair_odds": 4.62,
+   "est_odds": 4.3,
+   "confidence": 22,
+   "result": "neizgāja",
+   "score": "DAL 2 - 2 COL (pamatlaikā; bullīšos 3 - 2)"
+  }
+ ]
+}

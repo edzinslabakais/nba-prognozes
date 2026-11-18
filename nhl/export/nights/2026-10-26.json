@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-26",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892582",
+   "away": "LA",
+   "home": "NYR",
+   "away_name": "Los Angeles Kings",
+   "home_name": "New York Rangers",
+   "start_utc": "2026-10-26 23:00:00+00:00",
+   "riga_time": "27.10 01:00",
+   "robot_line": "NYR 42% · X 26% · LA 33%",
+   "robot_total": "vārti 3.0–2.7",
+   "market_line": "NYR 54% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "NYR: vārtsargs James Reimer -0.18",
+    "LA: vārtsargs Darcy Kuemper +0.05"
+   ],
+   "score": "LA 6 - 3 NYR",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "NYR zem 2.5",
+     "p_model": 0.4246,
+     "p_market": 0.4228,
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "LA 6 - 3 NYR",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NYR uzvar",
+     "p_model": 0.4191,
+     "p_market": 0.4144,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "LA 6 - 3 NYR",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3364,
+     "p_market": 0.3433,
+     "fair_odds": 2.92,
+     "est_odds": 2.72,
+     "confidence": 34,
+     "result": "izgāja",
+     "score": "LA 6 - 3 NYR",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892583",
+   "away": "TOR",
+   "home": "CGY",
+   "away_name": "Toronto Maple Leafs",
+   "home_name": "Calgary Flames",
+   "start_utc": "2026-10-27 00:30:00+00:00",
+   "riga_time": "27.10 02:30",
+   "robot_line": "CGY 32% · X 24% · TOR 43%",
+   "robot_total": "vārti 3.0–3.4",
+   "market_line": "TOR 55% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CGY: vārtsargs Devin Cooley +0.14",
+    "TOR: vārtsargs Sergei Bobrovsky +0.01"
+   ],
+   "score": "TOR 2 - 5 CGY",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "TOR uzvar",
+     "p_model": 0.4453,
+     "p_market": 0.4297,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "TOR 2 - 5 CGY",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "TOR virs 3.5",
+     "p_model": 0.4267,
+     "p_market": 0.4284,
+     "fair_odds": 2.34,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "TOR 2 - 5 CGY",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3966,
+     "p_market": 0.3799,
+     "fair_odds": 2.61,
+     "est_odds": 2.43,
+     "confidence": 38,
+     "result": "neizgāja",
+     "score": "TOR 2 - 5 CGY",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892584",
+   "away": "DET",
+   "home": "EDM",
+   "away_name": "Detroit Red Wings",
+   "home_name": "Edmonton Oilers",
+   "start_utc": "2026-10-27 01:30:00+00:00",
+   "riga_time": "27.10 03:30",
+   "robot_line": "EDM 48% · X 24% · DET 28%",
+   "robot_total": "vārti 3.6–2.9",
+   "market_line": "EDM 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "EDM: vārtsargs Tristan Jarry +0.02",
+    "DET: vārtsargs Michal Postava +0.04"
+   ],
+   "score": "DET 3 - 3 EDM (pamatlaikā; bullīšos 4 - 3)",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "DET uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4151,
+     "p_market": 0.3962,
+     "fair_odds": 2.5,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": "izgāja",
+     "score": "DET 3 - 3 EDM (pamatlaikā; bullīšos 4 - 3)",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4096,
+     "p_market": 0.3681,
+     "fair_odds": 2.66,
+     "est_odds": 2.47,
+     "confidence": 38,
+     "result": "neizgāja",
+     "score": "DET 3 - 3 EDM (pamatlaikā; bullīšos 4 - 3)",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "DET virs 3.5",
+     "p_model": 0.3077,
+     "p_market": 0.3243,
+     "fair_odds": 3.12,
+     "est_odds": 2.9,
+     "confidence": 32,
+     "result": "neizgāja",
+     "score": "DET 3 - 3 EDM (pamatlaikā; bullīšos 4 - 3)",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 3.52,
+  "profit_units": -3.96
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892582",
+   "game": "LA@NYR",
+   "riga_time": "27.10 01:00",
+   "category": "kopā",
+   "bet": "virs 7.5",
+   "confidence": 22,
+   "fair_odds": 4.46,
+   "est_odds": 4.15,
+   "result": "izgāja",
+   "score": "LA 6 - 3 NYR"
+  },
+  {
+   "game_id": "401892583",
+   "game": "TOR@CGY",
+   "riga_time": "27.10 02:30",
+   "category": "kombinācija",
+   "bet": "TOR uzvar & zem 6.5",
+   "confidence": 22,
+   "fair_odds": 4.57,
+   "est_odds": 4.25,
+   "result": "neizgāja",
+   "score": "TOR 2 - 5 CGY"
+  },
+  {
+   "game_id": "401892584",
+   "game": "DET@EDM",
+   "riga_time": "27.10 03:30",
+   "category": "handikaps",
+   "bet": "EDM -2.5",
+   "confidence": 21,
+   "fair_odds": 4.69,
+   "est_odds": 4.36,
+   "result": "neizgāja",
+   "score": "DET 3 - 3 EDM (pamatlaikā; bullīšos 4 - 3)"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.66,
+  "profit_units": 1.15
+ },
+ "top_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 1.26,
+  "profit_units": -0.68
+ },
+ "simulated": true
+}

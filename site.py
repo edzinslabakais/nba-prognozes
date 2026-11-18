@@ -39,7 +39,7 @@ STATIC_LOADER = """function start() {
 start();"""
 
 
-def load_data(export: Path, max_nights: int = 30) -> dict:
+def load_data(export: Path, max_nights: int = 60) -> dict:
     nights = [json.loads(f.read_text()) for f in sorted((export / "nights").glob("*.json"), reverse=True)[:max_nights]]
     stats_file = export / "stats.json"
     return {"nights": nights, "stats": json.loads(stats_file.read_text()) if stats_file.exists() else None}

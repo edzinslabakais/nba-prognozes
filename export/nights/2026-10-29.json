@@ -1,0 +1,230 @@
+{
+ "date": "2026-10-29",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401909893",
+   "away": "CLE",
+   "home": "ATL",
+   "away_name": "Cleveland Cavaliers",
+   "home_name": "Atlanta Hawks",
+   "start_utc": "2026-10-30 00:00:00+00:00",
+   "riga_time": "30.10 02:00",
+   "robot_line": "ATL -1.9",
+   "robot_total": 237.5,
+   "market_line": "ATL -1.5",
+   "market_total": 237.5,
+   "injuries": [],
+   "score": "CLE 111 - 114 ATL",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "CLE zem 115.5",
+     "p_model": 0.4718,
+     "p_market": 0.4295,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "CLE 111 - 114 ATL",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 239.5",
+     "p_model": 0.4782,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "CLE 111 - 114 ATL",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "ATL -4.5",
+     "p_model": 0.529,
+     "p_market": 0.4055,
+     "fair_odds": 2.39,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "CLE 111 - 114 ATL",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909894",
+   "away": "SAC",
+   "home": "NO",
+   "away_name": "Sacramento Kings",
+   "home_name": "New Orleans Pelicans",
+   "start_utc": "2026-10-30 00:00:00+00:00",
+   "riga_time": "30.10 02:00",
+   "robot_line": "NO -6.2",
+   "robot_total": 234.5,
+   "market_line": "NO -6.5",
+   "market_total": 234.5,
+   "injuries": [],
+   "score": "SAC 120 - 132 NO",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "SAC virs 115.5",
+     "p_model": 0.5592,
+     "p_market": 0.4327,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "SAC 120 - 132 NO",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 236.5",
+     "p_model": 0.5343,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "SAC 120 - 132 NO",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "SAC +3.5",
+     "p_model": 0.5042,
+     "p_market": 0.4241,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "SAC 120 - 132 NO",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909895",
+   "away": "MEM",
+   "home": "POR",
+   "away_name": "Memphis Grizzlies",
+   "home_name": "Portland Trail Blazers",
+   "start_utc": "2026-10-30 02:00:00+00:00",
+   "riga_time": "30.10 04:00",
+   "robot_line": "POR -7.6",
+   "robot_total": 233.5,
+   "market_line": "POR -7.5",
+   "market_total": 233.5,
+   "injuries": [],
+   "score": "MEM 124 - 103 POR",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "POR -9.5",
+     "p_model": 0.4596,
+     "p_market": 0.4346,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "MEM 124 - 103 POR",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 229.5",
+     "p_model": 0.5488,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "MEM 124 - 103 POR",
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MEM zem 110.5",
+     "p_model": 0.5331,
+     "p_market": 0.4276,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "MEM 124 - 103 POR",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 3.89,
+  "profit_units": -0.46
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401909895",
+   "game": "MEM@POR",
+   "riga_time": "30.10 04:00",
+   "category": "kopā",
+   "bet": "zem 218.5",
+   "confidence": 22,
+   "fair_odds": 4.51,
+   "est_odds": 4.2,
+   "result": "neizgāja",
+   "score": "MEM 124 - 103 POR"
+  },
+  {
+   "game_id": "401909894",
+   "game": "SAC@NO",
+   "riga_time": "30.10 02:00",
+   "category": "kopā",
+   "bet": "virs 247.5",
+   "confidence": 22,
+   "fair_odds": 4.51,
+   "est_odds": 4.2,
+   "result": "izgāja",
+   "score": "SAC 120 - 132 NO"
+  },
+  {
+   "game_id": "401909893",
+   "game": "CLE@ATL",
+   "riga_time": "30.10 02:00",
+   "category": "handikaps",
+   "bet": "ATL -12.5",
+   "confidence": 22,
+   "fair_odds": 4.61,
+   "est_odds": 4.29,
+   "result": "neizgāja",
+   "score": "CLE 111 - 114 ATL"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.66,
+  "profit_units": 1.2
+ },
+ "top_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 1.29,
+  "profit_units": 1.27
+ },
+ "simulated": true
+}

@@ -1,0 +1,283 @@
+{
+ "date": "2026-11-01",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401909903",
+   "away": "BOS",
+   "home": "ORL",
+   "away_name": "Boston Celtics",
+   "home_name": "Orlando Magic",
+   "start_utc": "2026-11-01 20:30:00+00:00",
+   "riga_time": "01.11 22:30",
+   "robot_line": "BOS -6.1",
+   "robot_total": 221.5,
+   "market_line": "BOS -6.5",
+   "market_total": 221.5,
+   "injuries": [],
+   "score": "BOS 108 - 97 ORL",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 223.5",
+     "p_model": 0.6045,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "BOS 108 - 97 ORL",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "ORL +3.5",
+     "p_model": 0.5307,
+     "p_market": 0.4241,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "BOS 108 - 97 ORL",
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "ORL virs 109.5",
+     "p_model": 0.6138,
+     "p_market": 0.4155,
+     "fair_odds": 2.37,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "BOS 108 - 97 ORL",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909904",
+   "away": "BKN",
+   "home": "IND",
+   "away_name": "Brooklyn Nets",
+   "home_name": "Indiana Pacers",
+   "start_utc": "2026-11-01 22:00:00+00:00",
+   "riga_time": "02.11 00:00",
+   "robot_line": "IND -3.8",
+   "robot_total": 230.5,
+   "market_line": "IND -3.5",
+   "market_total": 230.5,
+   "injuries": [],
+   "score": "BKN 98 - 90 IND",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "IND -5.5",
+     "p_model": 0.5155,
+     "p_market": 0.4337,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "BKN 98 - 90 IND",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 232.5",
+     "p_model": 0.5335,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "BKN 98 - 90 IND",
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "IND virs 118.5",
+     "p_model": 0.5561,
+     "p_market": 0.4288,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "BKN 98 - 90 IND",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909905",
+   "away": "LAC",
+   "home": "GS",
+   "away_name": "LA Clippers",
+   "home_name": "Golden State Warriors",
+   "start_utc": "2026-11-02 01:30:00+00:00",
+   "riga_time": "02.11 03:30",
+   "robot_line": "GS -2.2",
+   "robot_total": 220.5,
+   "market_line": "GS -1.5",
+   "market_total": 220.5,
+   "injuries": [],
+   "score": "LAC 112 - 124 GS",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "GS virs 112.5",
+     "p_model": 0.5752,
+     "p_market": 0.4295,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "LAC 112 - 124 GS",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 222.5",
+     "p_model": 0.4649,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "LAC 112 - 124 GS",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "GS -4.5",
+     "p_model": 0.6083,
+     "p_market": 0.4055,
+     "fair_odds": 2.35,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "LAC 112 - 124 GS",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909906",
+   "away": "TOR",
+   "home": "LAL",
+   "away_name": "Toronto Raptors",
+   "home_name": "Los Angeles Lakers",
+   "start_utc": "2026-11-02 02:00:00+00:00",
+   "riga_time": "02.11 04:00",
+   "robot_line": "LAL -3.2",
+   "robot_total": 224.5,
+   "market_line": "LAL -3.5",
+   "market_total": 224.5,
+   "injuries": [],
+   "score": "TOR 125 - 131 LAL",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "LAL zem 111.5",
+     "p_model": 0.4539,
+     "p_market": 0.4316,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "TOR 125 - 131 LAL",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 226.5",
+     "p_model": 0.4699,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "TOR 125 - 131 LAL",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "TOR +0.5",
+     "p_model": 0.5041,
+     "p_market": 0.4249,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "TOR 125 - 131 LAL",
+     "top": true
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 12,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 5.21,
+  "profit_units": -3.44
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401909903",
+   "game": "BOS@ORL",
+   "riga_time": "01.11 22:30",
+   "category": "kopā",
+   "bet": "virs 234.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "result": "neizgāja",
+   "score": "BOS 108 - 97 ORL"
+  },
+  {
+   "game_id": "401909905",
+   "game": "LAC@GS",
+   "riga_time": "02.11 03:30",
+   "category": "handikaps",
+   "bet": "GS -12.5",
+   "confidence": 22,
+   "fair_odds": 4.48,
+   "est_odds": 4.17,
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 GS"
+  },
+  {
+   "game_id": "401909906",
+   "game": "TOR@LAL",
+   "riga_time": "02.11 04:00",
+   "category": "komandas punkti",
+   "bet": "TOR virs 118.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": "izgāja",
+   "score": "TOR 125 - 131 LAL"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": 1.01
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 1.71,
+  "profit_units": -1.82
+ },
+ "simulated": true
+}

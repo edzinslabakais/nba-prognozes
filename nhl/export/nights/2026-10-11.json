@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-11",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892482",
+   "away": "SEA",
+   "home": "WSH",
+   "away_name": "Seattle Kraken",
+   "home_name": "Washington Capitals",
+   "start_utc": "2026-10-11 21:00:00+00:00",
+   "riga_time": "12.10 00:00",
+   "robot_line": "WSH 51% · X 24% · SEA 25%",
+   "robot_total": "vārti 3.5–2.6",
+   "market_line": "WSH 64% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "WSH: vārtsargs Logan Thompson +0.01",
+    "SEA: vārtsargs Joey Daccord -0.00"
+   ],
+   "score": "SEA 5 - 3 WSH",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4388,
+     "p_market": 0.4141,
+     "fair_odds": 2.38,
+     "est_odds": 2.22,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "SEA 5 - 3 WSH",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SEA uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.441,
+     "p_market": 0.3553,
+     "fair_odds": 2.69,
+     "est_odds": 2.5,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "SEA 5 - 3 WSH",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "WSH zem 2.5",
+     "p_model": 0.3806,
+     "p_market": 0.3103,
+     "fair_odds": 3.08,
+     "est_odds": 2.87,
+     "confidence": 32,
+     "result": "neizgāja",
+     "score": "SEA 5 - 3 WSH",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892483",
+   "away": "VAN",
+   "home": "NYR",
+   "away_name": "Vancouver Canucks",
+   "home_name": "New York Rangers",
+   "start_utc": "2026-10-11 22:00:00+00:00",
+   "riga_time": "12.10 01:00",
+   "robot_line": "NYR 61% · X 21% · VAN 18%",
+   "robot_total": "vārti 3.9–2.3",
+   "market_line": "NYR 71% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "NYR: vārtsargs Dylan Garand -0.01",
+    "VAN: vārtsargs Kevin Lankinen -0.19"
+   ],
+   "score": "VAN 2 - 6 NYR",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3966,
+     "p_market": 0.4336,
+     "fair_odds": 2.35,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "VAN 2 - 6 NYR",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "VAN virs 2.5",
+     "p_model": 0.4354,
+     "p_market": 0.4069,
+     "fair_odds": 2.42,
+     "est_odds": 2.25,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "VAN 2 - 6 NYR",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NYR -2.5",
+     "p_model": 0.3199,
+     "p_market": 0.3128,
+     "fair_odds": 3.18,
+     "est_odds": 2.96,
+     "confidence": 31,
+     "result": "izgāja",
+     "score": "VAN 2 - 6 NYR",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892484",
+   "away": "CAR",
+   "home": "PHI",
+   "away_name": "Carolina Hurricanes",
+   "home_name": "Philadelphia Flyers",
+   "start_utc": "2026-10-11 23:00:00+00:00",
+   "riga_time": "12.10 02:00",
+   "robot_line": "PHI 23% · X 24% · CAR 53%",
+   "robot_total": "vārti 2.3–3.4",
+   "market_line": "CAR 67% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "PHI: vārtsargs Joseph Woll +0.04",
+    "CAR: vārtsargs Pyotr Kochetkov +0.05"
+   ],
+   "score": "CAR 4 - 1 PHI",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "PHI virs 2.5",
+     "p_model": 0.4617,
+     "p_market": 0.4072,
+     "fair_odds": 2.39,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "CAR 4 - 1 PHI",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CAR -1.5",
+     "p_model": 0.3132,
+     "p_market": 0.3983,
+     "fair_odds": 2.63,
+     "est_odds": 2.44,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "CAR 4 - 1 PHI",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.3536,
+     "p_market": 0.3385,
+     "fair_odds": 2.92,
+     "est_odds": 2.72,
+     "confidence": 34,
+     "result": "neizgāja",
+     "score": "CAR 4 - 1 PHI",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 3,
+  "pushes": 0,
+  "expected_hits": 3.41,
+  "profit_units": -1.1
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892484",
+   "game": "CAR@PHI",
+   "riga_time": "12.10 02:00",
+   "category": "uzvarētājs",
+   "bet": "PHI uzvar",
+   "confidence": 23,
+   "fair_odds": 4.41,
+   "est_odds": 4.1,
+   "result": "neizgāja",
+   "score": "CAR 4 - 1 PHI"
+  },
+  {
+   "game_id": "401892482",
+   "game": "SEA@WSH",
+   "riga_time": "12.10 00:00",
+   "category": "handikaps",
+   "bet": "WSH -2.5",
+   "confidence": 23,
+   "fair_odds": 4.34,
+   "est_odds": 4.04,
+   "result": "neizgāja",
+   "score": "SEA 5 - 3 WSH"
+  },
+  {
+   "game_id": "401892483",
+   "game": "VAN@NYR",
+   "riga_time": "12.10 01:00",
+   "category": "neizšķirts",
+   "bet": "neizšķirts",
+   "confidence": 21,
+   "fair_odds": 4.72,
+   "est_odds": 4.39,
+   "result": "neizgāja",
+   "score": "VAN 2 - 6 NYR"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.67,
+  "profit_units": -3
+ },
+ "top_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 1.25,
+  "profit_units": -3
+ },
+ "simulated": true
+}

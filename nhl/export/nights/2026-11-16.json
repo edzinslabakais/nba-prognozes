@@ -1,0 +1,171 @@
+{
+ "date": "2026-11-16",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892726",
+   "away": "MTL",
+   "home": "NYR",
+   "away_name": "Montreal Canadiens",
+   "home_name": "New York Rangers",
+   "start_utc": "2026-11-17 00:30:00+00:00",
+   "riga_time": "17.11 02:30",
+   "robot_line": "NYR 35% · X 25% · MTL 40%",
+   "robot_total": "vārti 2.9–3.1",
+   "market_line": "MTL 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "NYR: vārtsargs Joonas Korpisalo -0.06",
+    "MTL: vārtsargs Jacob Fowler +0.14"
+   ],
+   "score": "MTL 1 - 3 NYR",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "MTL zem 2.5",
+     "p_model": 0.4206,
+     "p_market": 0.4155,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "MTL 1 - 3 NYR",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "MTL uzvar",
+     "p_model": 0.4145,
+     "p_market": 0.3947,
+     "fair_odds": 2.51,
+     "est_odds": 2.33,
+     "confidence": 40,
+     "result": "neizgāja",
+     "score": "MTL 1 - 3 NYR",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3463,
+     "p_market": 0.3723,
+     "fair_odds": 2.72,
+     "est_odds": 2.53,
+     "confidence": 37,
+     "result": "neizgāja",
+     "score": "MTL 1 - 3 NYR",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892727",
+   "away": "VAN",
+   "home": "UTA",
+   "away_name": "Vancouver Canucks",
+   "home_name": "Utah Mammoth",
+   "start_utc": "2026-11-17 02:30:00+00:00",
+   "riga_time": "17.11 04:30",
+   "robot_line": "UTA 62% · X 20% · VAN 17%",
+   "robot_total": "vārti 4.1–2.4",
+   "market_line": "UTA 74% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "UTA: vārtsargs Karel Vejmelka -0.01",
+    "VAN: vārtsargs Nikita Tolopilo -0.06"
+   ],
+   "score": "VAN 3 - 2 UTA",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "UTA zem 3.5",
+     "p_model": 0.4496,
+     "p_market": 0.4319,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "VAN 3 - 2 UTA",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3175,
+     "p_market": 0.3792,
+     "fair_odds": 2.72,
+     "est_odds": 2.53,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "VAN 3 - 2 UTA",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "UTA -2.5",
+     "p_model": 0.2689,
+     "p_market": 0.355,
+     "fair_odds": 2.96,
+     "est_odds": 2.75,
+     "confidence": 34,
+     "result": "neizgāja",
+     "score": "VAN 3 - 2 UTA",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 6,
+  "settled": 6,
+  "hits": 3,
+  "pushes": 0,
+  "expected_hits": 2.32,
+  "profit_units": 0.89
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892727",
+   "game": "VAN@UTA",
+   "riga_time": "17.11 04:30",
+   "category": "komandas vārti",
+   "bet": "VAN virs 3.5",
+   "confidence": 23,
+   "fair_odds": 4.35,
+   "est_odds": 4.05,
+   "result": "neizgāja",
+   "score": "VAN 3 - 2 UTA"
+  },
+  {
+   "game_id": "401892726",
+   "game": "MTL@NYR",
+   "riga_time": "17.11 02:30",
+   "category": "kombinācija",
+   "bet": "MTL uzvar & virs 5.5",
+   "confidence": 22,
+   "fair_odds": 4.57,
+   "est_odds": 4.25,
+   "result": "neizgāja",
+   "score": "MTL 1 - 3 NYR"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.45,
+  "profit_units": -2
+ },
+ "top_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 0.85,
+  "profit_units": 2.36
+ },
+ "simulated": true
+}

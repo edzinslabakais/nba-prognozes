@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-09",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892466",
+   "away": "NYR",
+   "home": "WSH",
+   "away_name": "New York Rangers",
+   "home_name": "Washington Capitals",
+   "start_utc": "2026-10-09 23:00:00+00:00",
+   "riga_time": "10.10 02:00",
+   "robot_line": "WSH 42% · X 26% · NYR 32%",
+   "robot_total": "vārti 3.1–2.7",
+   "market_line": "WSH 56% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "WSH: vārtsargs Logan Thompson +0.01",
+    "NYR: vārtsargs Igor Shesterkin +0.00"
+   ],
+   "score": "NYR 1 - 3 WSH",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "WSH uzvar",
+     "p_model": 0.3759,
+     "p_market": 0.4361,
+     "fair_odds": 2.36,
+     "est_odds": 2.19,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "NYR 1 - 3 WSH",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "WSH zem 2.5",
+     "p_model": 0.4281,
+     "p_market": 0.4087,
+     "fair_odds": 2.42,
+     "est_odds": 2.25,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "NYR 1 - 3 WSH",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3727,
+     "p_market": 0.3434,
+     "fair_odds": 2.87,
+     "est_odds": 2.67,
+     "confidence": 35,
+     "result": "neizgāja",
+     "score": "NYR 1 - 3 WSH",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892465",
+   "away": "SEA",
+   "home": "DET",
+   "away_name": "Seattle Kraken",
+   "home_name": "Detroit Red Wings",
+   "start_utc": "2026-10-09 23:00:00+00:00",
+   "riga_time": "10.10 02:00",
+   "robot_line": "DET 45% · X 25% · SEA 30%",
+   "robot_total": "vārti 3.2–2.7",
+   "market_line": "DET 58% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "DET: vārtsargs John Gibson +0.00",
+    "SEA: vārtsargs Philipp Grubauer -0.02"
+   ],
+   "score": "SEA 6 - 3 DET",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SEA uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4788,
+     "p_market": 0.417,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "SEA 6 - 3 DET",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "DET virs 3.5",
+     "p_model": 0.3476,
+     "p_market": 0.3989,
+     "fair_odds": 2.58,
+     "est_odds": 2.4,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "SEA 6 - 3 DET",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3661,
+     "p_market": 0.3766,
+     "fair_odds": 2.67,
+     "est_odds": 2.49,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "SEA 6 - 3 DET",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892467",
+   "away": "PIT",
+   "home": "CBJ",
+   "away_name": "Pittsburgh Penguins",
+   "home_name": "Columbus Blue Jackets",
+   "start_utc": "2026-10-09 23:00:00+00:00",
+   "riga_time": "10.10 02:00",
+   "robot_line": "CBJ 39% · X 24% · PIT 37%",
+   "robot_total": "vārti 3.3–3.2",
+   "market_line": "CBJ 50% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CBJ: vārtsargs Cam Talbot -0.12",
+    "PIT: vārtsargs Sergei Murashov +0.09"
+   ],
+   "score": "PIT 2 - 2 CBJ (pamatlaikā; bullīšos 2 - 3)",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "CBJ virs 3.5",
+     "p_model": 0.412,
+     "p_market": 0.41,
+     "fair_odds": 2.44,
+     "est_odds": 2.27,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "PIT 2 - 2 CBJ (pamatlaikā; bullīšos 2 - 3)",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CBJ uzvar",
+     "p_model": 0.3955,
+     "p_market": 0.3827,
+     "fair_odds": 2.6,
+     "est_odds": 2.41,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "PIT 2 - 2 CBJ (pamatlaikā; bullīšos 2 - 3)",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3698,
+     "p_market": 0.3603,
+     "fair_odds": 2.76,
+     "est_odds": 2.57,
+     "confidence": 36,
+     "result": "izgāja",
+     "score": "PIT 2 - 2 CBJ (pamatlaikā; bullīšos 2 - 3)",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892468",
+   "away": "ANA",
+   "home": "WPG",
+   "away_name": "Anaheim Ducks",
+   "home_name": "Winnipeg Jets",
+   "start_utc": "2026-10-10 00:00:00+00:00",
+   "riga_time": "10.10 03:00",
+   "robot_line": "WPG 41% · X 25% · ANA 34%",
+   "robot_total": "vārti 3.2–3.0",
+   "market_line": "WPG 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "WPG: vārtsargs Clay Stevenson -0.03",
+    "ANA: vārtsargs Lukas Dostal +0.00"
+   ],
+   "score": "ANA 5 - 1 WPG",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "ANA zem 2.5",
+     "p_model": 0.4809,
+     "p_market": 0.421,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "ANA 5 - 1 WPG",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4525,
+     "p_market": 0.4185,
+     "fair_odds": 2.35,
+     "est_odds": 2.19,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "ANA 5 - 1 WPG",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "WPG uzvar",
+     "p_model": 0.443,
+     "p_market": 0.3968,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "ANA 5 - 1 WPG",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 12,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 4.8,
+  "profit_units": -2.58
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892466",
+   "game": "NYR@WSH",
+   "riga_time": "10.10 02:00",
+   "category": "kombinācija",
+   "bet": "NYR uzvar & virs 4.5",
+   "confidence": 23,
+   "fair_odds": 4.35,
+   "est_odds": 4.05,
+   "result": "neizgāja",
+   "score": "NYR 1 - 3 WSH"
+  },
+  {
+   "game_id": "401892468",
+   "game": "ANA@WPG",
+   "riga_time": "10.10 03:00",
+   "category": "kombinācija",
+   "bet": "WPG uzvar & zem 6.5",
+   "confidence": 22,
+   "fair_odds": 4.46,
+   "est_odds": 4.15,
+   "result": "neizgāja",
+   "score": "ANA 5 - 1 WPG"
+  },
+  {
+   "game_id": "401892465",
+   "game": "SEA@DET",
+   "riga_time": "10.10 02:00",
+   "category": "kombinācija",
+   "bet": "SEA uzvar & virs 4.5",
+   "confidence": 22,
+   "fair_odds": 4.48,
+   "est_odds": 4.16,
+   "result": "izgāja",
+   "score": "SEA 6 - 3 DET"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": 1.16
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 1.69,
+  "profit_units": -1.83
+ },
+ "simulated": true
+}

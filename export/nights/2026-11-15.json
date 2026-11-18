@@ -1,0 +1,548 @@
+{
+ "date": "2026-11-15",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401909985",
+   "away": "IND",
+   "home": "PHI",
+   "away_name": "Indiana Pacers",
+   "home_name": "Philadelphia 76ers",
+   "start_utc": "2026-11-15 18:00:00+00:00",
+   "riga_time": "15.11 20:00",
+   "robot_line": "PHI -7.4",
+   "robot_total": 226.5,
+   "market_line": "PHI -7.5",
+   "market_total": 226.5,
+   "injuries": [],
+   "score": "IND 124 - 131 PHI",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "IND zem 107.5",
+     "p_model": 0.5381,
+     "p_market": 0.4449,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "IND 124 - 131 PHI",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 222.5",
+     "p_model": 0.576,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "IND 124 - 131 PHI",
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "IND +4.5",
+     "p_model": 0.4607,
+     "p_market": 0.4237,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "IND 124 - 131 PHI",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909986",
+   "away": "LAL",
+   "home": "PHX",
+   "away_name": "Los Angeles Lakers",
+   "home_name": "Phoenix Suns",
+   "start_utc": "2026-11-15 21:00:00+00:00",
+   "riga_time": "15.11 23:00",
+   "robot_line": "LAL -3.7",
+   "robot_total": 226.5,
+   "market_line": "LAL -3.5",
+   "market_total": 226.5,
+   "injuries": [],
+   "score": "LAL 131 - 123 PHX",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "LAL -5.5",
+     "p_model": 0.4827,
+     "p_market": 0.4337,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "LAL 131 - 123 PHX",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 228.5",
+     "p_model": 0.5898,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "LAL 131 - 123 PHX",
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "LAL virs 116.5",
+     "p_model": 0.5815,
+     "p_market": 0.4288,
+     "fair_odds": 2.32,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "LAL 131 - 123 PHX",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909987",
+   "away": "CHA",
+   "home": "LAC",
+   "away_name": "Charlotte Hornets",
+   "home_name": "LA Clippers",
+   "start_utc": "2026-11-15 21:30:00+00:00",
+   "riga_time": "15.11 23:30",
+   "robot_line": "LAC -2.1",
+   "robot_total": 214.5,
+   "market_line": "LAC -1.5",
+   "market_total": 214.5,
+   "injuries": [],
+   "score": "CHA 105 - 113 LAC",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "LAC virs 109.5",
+     "p_model": 0.5161,
+     "p_market": 0.4295,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "CHA 105 - 113 LAC",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 210.5",
+     "p_model": 0.466,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "CHA 105 - 113 LAC",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "LAC -4.5",
+     "p_model": 0.5855,
+     "p_market": 0.4055,
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "CHA 105 - 113 LAC",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909988",
+   "away": "SA",
+   "home": "UTAH",
+   "away_name": "San Antonio Spurs",
+   "home_name": "Utah Jazz",
+   "start_utc": "2026-11-15 22:00:00+00:00",
+   "riga_time": "16.11 00:00",
+   "robot_line": "SA -14.7",
+   "robot_total": 222.5,
+   "market_line": "SA -14.5",
+   "market_total": 222.5,
+   "injuries": [],
+   "score": "SA 110 - 102 UTAH",
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "SA -16.5",
+     "p_model": 0.4951,
+     "p_market": 0.4371,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "SA 110 - 102 UTAH",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 224.5",
+     "p_model": 0.4595,
+     "p_market": 0.4346,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "SA 110 - 102 UTAH",
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "UTAH zem 101.5",
+     "p_model": 0.4459,
+     "p_market": 0.4273,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "SA 110 - 102 UTAH",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909989",
+   "away": "DAL",
+   "home": "BOS",
+   "away_name": "Dallas Mavericks",
+   "home_name": "Boston Celtics",
+   "start_utc": "2026-11-15 23:00:00+00:00",
+   "riga_time": "16.11 01:00",
+   "robot_line": "BOS -14.2",
+   "robot_total": 217.5,
+   "market_line": "BOS -14.5",
+   "market_total": 217.5,
+   "injuries": [],
+   "score": "DAL 94 - 131 BOS",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "BOS zem 113.5",
+     "p_model": 0.4438,
+     "p_market": 0.4338,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "DAL 94 - 131 BOS",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 219.5",
+     "p_model": 0.4873,
+     "p_market": 0.4348,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "DAL 94 - 131 BOS",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "DAL +11.5",
+     "p_model": 0.5021,
+     "p_market": 0.4204,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "DAL 94 - 131 BOS",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909990",
+   "away": "NY",
+   "home": "TOR",
+   "away_name": "New York Knicks",
+   "home_name": "Toronto Raptors",
+   "start_utc": "2026-11-15 23:00:00+00:00",
+   "riga_time": "16.11 01:00",
+   "robot_line": "NY -4.2",
+   "robot_total": 218.5,
+   "market_line": "NY -4.5",
+   "market_total": 218.5,
+   "injuries": [],
+   "score": "NY 95 - 95 TOR (pamatlaikā; ar papildlaiku 112 - 108)",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 214.5",
+     "p_model": 0.536,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "NY 95 - 95 TOR (pamatlaikā; ar papildlaiku 112 - 108)",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "TOR +1.5",
+     "p_model": 0.5152,
+     "p_market": 0.4247,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "NY 95 - 95 TOR (pamatlaikā; ar papildlaiku 112 - 108)",
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "NY zem 108.5",
+     "p_model": 0.5494,
+     "p_market": 0.4148,
+     "fair_odds": 2.38,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "NY 95 - 95 TOR (pamatlaikā; ar papildlaiku 112 - 108)",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909991",
+   "away": "HOU",
+   "home": "WSH",
+   "away_name": "Houston Rockets",
+   "home_name": "Washington Wizards",
+   "start_utc": "2026-11-16 00:00:00+00:00",
+   "riga_time": "16.11 02:00",
+   "robot_line": "HOU -8.9",
+   "robot_total": 224.5,
+   "market_line": "HOU -8.5",
+   "market_total": 224.5,
+   "injuries": [],
+   "score": "HOU 147 - 119 WSH",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 226.5",
+     "p_model": 0.4493,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "HOU 147 - 119 WSH",
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "WSH zem 105.5",
+     "p_model": 0.4815,
+     "p_market": 0.4275,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "HOU 147 - 119 WSH",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "HOU -11.5",
+     "p_model": 0.5115,
+     "p_market": 0.4068,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "HOU 147 - 119 WSH",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909992",
+   "away": "ATL",
+   "home": "MIL",
+   "away_name": "Atlanta Hawks",
+   "home_name": "Milwaukee Bucks",
+   "start_utc": "2026-11-16 01:00:00+00:00",
+   "riga_time": "16.11 03:00",
+   "robot_line": "ATL -8.3",
+   "robot_total": 233.5,
+   "market_line": "ATL -8.5",
+   "market_total": 233.5,
+   "injuries": [],
+   "score": "ATL 113 - 106 MIL",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "ATL zem 118.5",
+     "p_model": 0.4948,
+     "p_market": 0.4333,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "izgāja",
+     "score": "ATL 113 - 106 MIL",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 229.5",
+     "p_model": 0.475,
+     "p_market": 0.4345,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "ATL 113 - 106 MIL",
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "MIL +5.5",
+     "p_model": 0.4743,
+     "p_market": 0.4233,
+     "fair_odds": 2.34,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "ATL 113 - 106 MIL",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909993",
+   "away": "OKC",
+   "home": "SAC",
+   "away_name": "Oklahoma City Thunder",
+   "home_name": "Sacramento Kings",
+   "start_utc": "2026-11-16 02:00:00+00:00",
+   "riga_time": "16.11 04:00",
+   "robot_line": "OKC -12.4",
+   "robot_total": 221.5,
+   "market_line": "OKC -12.5",
+   "market_total": 221.5,
+   "injuries": [],
+   "score": "OKC 125 - 103 SAC",
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "OKC zem 114.5",
+     "p_model": 0.5132,
+     "p_market": 0.4338,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "OKC 125 - 103 SAC",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 217.5",
+     "p_model": 0.519,
+     "p_market": 0.4346,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "OKC 125 - 103 SAC",
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "OKC -14.5",
+     "p_model": 0.4206,
+     "p_market": 0.4363,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "OKC 125 - 103 SAC",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 27,
+  "settled": 27,
+  "hits": 14,
+  "pushes": 0,
+  "expected_hits": 11.7,
+  "profit_units": 3.13
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401909986",
+   "game": "LAL@PHX",
+   "riga_time": "15.11 23:00",
+   "category": "kopā",
+   "bet": "virs 239.5",
+   "confidence": 22,
+   "fair_odds": 4.51,
+   "est_odds": 4.2,
+   "result": "izgāja",
+   "score": "LAL 131 - 123 PHX"
+  },
+  {
+   "game_id": "401909985",
+   "game": "IND@PHI",
+   "riga_time": "15.11 20:00",
+   "category": "kopā",
+   "bet": "zem 211.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "result": "neizgāja",
+   "score": "IND 124 - 131 PHI"
+  },
+  {
+   "game_id": "401909987",
+   "game": "CHA@LAC",
+   "riga_time": "15.11 23:30",
+   "category": "handikaps",
+   "bet": "LAC -12.5",
+   "confidence": 22,
+   "fair_odds": 4.52,
+   "est_odds": 4.2,
+   "result": "neizgāja",
+   "score": "CHA 105 - 113 LAC"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.66,
+  "profit_units": 1.2
+ },
+ "top_summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 5,
+  "pushes": 0,
+  "expected_hits": 3.87,
+  "profit_units": 1.91
+ },
+ "simulated": true
+}

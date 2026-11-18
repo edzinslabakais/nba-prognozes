@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-12",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892485",
+   "away": "FLA",
+   "home": "BUF",
+   "away_name": "Florida Panthers",
+   "home_name": "Buffalo Sabres",
+   "start_utc": "2026-10-12 17:00:00+00:00",
+   "riga_time": "12.10 20:00",
+   "robot_line": "BUF 38% · X 26% · FLA 36%",
+   "robot_total": "vārti 3.0–2.9",
+   "market_line": "BUF 51% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "BUF: vārtsargs Colten Ellis +0.08",
+    "FLA: vārtsargs Jacob Markstrom +0.01"
+   ],
+   "score": "FLA 3 - 5 BUF",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "BUF zem 2.5",
+     "p_model": 0.4496,
+     "p_market": 0.4265,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "FLA 3 - 5 BUF",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "BUF uzvar",
+     "p_model": 0.3909,
+     "p_market": 0.3833,
+     "fair_odds": 2.6,
+     "est_odds": 2.42,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "FLA 3 - 5 BUF",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3281,
+     "p_market": 0.3676,
+     "fair_odds": 2.78,
+     "est_odds": 2.59,
+     "confidence": 36,
+     "result": "izgāja",
+     "score": "FLA 3 - 5 BUF",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892486",
+   "away": "OTT",
+   "home": "NJ",
+   "away_name": "Ottawa Senators",
+   "home_name": "New Jersey Devils",
+   "start_utc": "2026-10-12 23:00:00+00:00",
+   "riga_time": "13.10 02:00",
+   "robot_line": "NJ 37% · X 26% · OTT 37%",
+   "robot_total": "vārti 2.9–2.9",
+   "market_line": "NJ 52% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "NJ: vārtsargs Nico Daws -0.05",
+    "OTT: vārtsargs Linus Ullmark +0.02"
+   ],
+   "score": "OTT 4 - 1 NJ",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "OTT zem 2.5",
+     "p_model": 0.4202,
+     "p_market": 0.4465,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "OTT 4 - 1 NJ",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "OTT uzvar",
+     "p_model": 0.4512,
+     "p_market": 0.3552,
+     "fair_odds": 2.67,
+     "est_odds": 2.48,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "OTT 4 - 1 NJ",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3142,
+     "p_market": 0.3676,
+     "fair_odds": 2.81,
+     "est_odds": 2.62,
+     "confidence": 36,
+     "result": "neizgāja",
+     "score": "OTT 4 - 1 NJ",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892487",
+   "away": "VGK",
+   "home": "MIN",
+   "away_name": "Vegas Golden Knights",
+   "home_name": "Minnesota Wild",
+   "start_utc": "2026-10-13 00:00:00+00:00",
+   "riga_time": "13.10 03:00",
+   "robot_line": "MIN 38% · X 26% · VGK 36%",
+   "robot_total": "vārti 3.0–2.9",
+   "market_line": "MIN 50% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "MIN: vārtsargs Jesper Wallstedt +0.00",
+    "VGK: vārtsargs Carter Hart +0.01"
+   ],
+   "score": "VGK 2 - 4 MIN",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "MIN zem 2.5",
+     "p_model": 0.453,
+     "p_market": 0.4247,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "VGK 2 - 4 MIN",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "MIN uzvar",
+     "p_model": 0.4112,
+     "p_market": 0.3773,
+     "fair_odds": 2.6,
+     "est_odds": 2.42,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "VGK 2 - 4 MIN",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.305,
+     "p_market": 0.3762,
+     "fair_odds": 2.77,
+     "est_odds": 2.57,
+     "confidence": 36,
+     "result": "neizgāja",
+     "score": "VGK 2 - 4 MIN",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 3.52,
+  "profit_units": 0.91
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892486",
+   "game": "OTT@NJ",
+   "riga_time": "13.10 02:00",
+   "category": "handikaps",
+   "bet": "NJ -1.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": "neizgāja",
+   "score": "OTT 4 - 1 NJ"
+  },
+  {
+   "game_id": "401892485",
+   "game": "FLA@BUF",
+   "riga_time": "12.10 20:00",
+   "category": "handikaps",
+   "bet": "FLA -1.5",
+   "confidence": 22,
+   "fair_odds": 4.46,
+   "est_odds": 4.15,
+   "result": "neizgāja",
+   "score": "FLA 3 - 5 BUF"
+  },
+  {
+   "game_id": "401892487",
+   "game": "VGK@MIN",
+   "riga_time": "13.10 03:00",
+   "category": "handikaps",
+   "bet": "VGK -1.5",
+   "confidence": 22,
+   "fair_odds": 4.45,
+   "est_odds": 4.14,
+   "result": "neizgāja",
+   "score": "VGK 2 - 4 MIN"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": -3
+ },
+ "top_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 1.3,
+  "profit_units": -3
+ },
+ "simulated": true
+}

@@ -1,0 +1,171 @@
+{
+ "date": "2026-10-18",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892533",
+   "away": "CBJ",
+   "home": "MIN",
+   "away_name": "Columbus Blue Jackets",
+   "home_name": "Minnesota Wild",
+   "start_utc": "2026-10-18 22:00:00+00:00",
+   "riga_time": "19.10 01:00",
+   "robot_line": "MIN 52% · X 24% · CBJ 25%",
+   "robot_total": "vārti 3.5–2.6",
+   "market_line": "MIN 63% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "MIN: vārtsargs Jesper Wallstedt +0.02",
+    "CBJ: vārtsargs Cam Talbot -0.08"
+   ],
+   "score": "CBJ 1 - 2 MIN",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.459,
+     "p_market": 0.4235,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "CBJ 1 - 2 MIN",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "MIN -1.5",
+     "p_model": 0.3815,
+     "p_market": 0.3646,
+     "fair_odds": 2.72,
+     "est_odds": 2.53,
+     "confidence": 37,
+     "result": "neizgāja",
+     "score": "CBJ 1 - 2 MIN",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.3123,
+     "p_market": 0.2823,
+     "fair_odds": 3.47,
+     "est_odds": 3.23,
+     "confidence": 29,
+     "result": "izgāja",
+     "score": "CBJ 1 - 2 MIN",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892534",
+   "away": "CAR",
+   "home": "CGY",
+   "away_name": "Carolina Hurricanes",
+   "home_name": "Calgary Flames",
+   "start_utc": "2026-10-19 00:00:00+00:00",
+   "riga_time": "19.10 03:00",
+   "robot_line": "CGY 24% · X 23% · CAR 53%",
+   "robot_total": "vārti 2.6–3.6",
+   "market_line": "CAR 64% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CGY: vārtsargs Devin Cooley +0.07",
+    "CAR: vārtsargs Brandon Bussi -0.08"
+   ],
+   "score": "CAR 2 - 3 CGY",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3876,
+     "p_market": 0.429,
+     "fair_odds": 2.38,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "CAR 2 - 3 CGY",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CAR -1.5",
+     "p_model": 0.3782,
+     "p_market": 0.3789,
+     "fair_odds": 2.64,
+     "est_odds": 2.46,
+     "confidence": 38,
+     "result": "neizgāja",
+     "score": "CAR 2 - 3 CGY",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.2525,
+     "p_market": 0.2867,
+     "fair_odds": 3.57,
+     "est_odds": 3.32,
+     "confidence": 28,
+     "result": "neizgāja",
+     "score": "CAR 2 - 3 CGY",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 6,
+  "settled": 6,
+  "hits": 3,
+  "pushes": 0,
+  "expected_hits": 2.17,
+  "profit_units": 1.6
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892533",
+   "game": "CBJ@MIN",
+   "riga_time": "19.10 01:00",
+   "category": "kombinācija",
+   "bet": "MIN uzvar & zem 5.5",
+   "confidence": 21,
+   "fair_odds": 4.76,
+   "est_odds": 4.42,
+   "result": "izgāja",
+   "score": "CBJ 1 - 2 MIN"
+  },
+  {
+   "game_id": "401892534",
+   "game": "CAR@CGY",
+   "riga_time": "19.10 03:00",
+   "category": "kombinācija",
+   "bet": "CAR uzvar & zem 5.5",
+   "confidence": 21,
+   "fair_odds": 4.79,
+   "est_odds": 4.46,
+   "result": "neizgāja",
+   "score": "CAR 2 - 3 CGY"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.42,
+  "profit_units": 2.42
+ },
+ "top_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 0.85,
+  "profit_units": 2.37
+ },
+ "simulated": true
+}

@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-05",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892445",
+   "away": "PHI",
+   "home": "TB",
+   "away_name": "Philadelphia Flyers",
+   "home_name": "Tampa Bay Lightning",
+   "start_utc": "2026-10-05 23:00:00+00:00",
+   "riga_time": "06.10 02:00",
+   "robot_line": "TB 52% · X 24% · PHI 24%",
+   "robot_total": "vārti 3.4–2.4",
+   "market_line": "TB 66% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "TB: vārtsargs Andrei Vasilevskiy +0.00",
+    "PHI: vārtsargs Dan Vladar -0.21"
+   ],
+   "score": "PHI 1 - 4 TB",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "TB virs 3.5",
+     "p_model": 0.3536,
+     "p_market": 0.4466,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "PHI 1 - 4 TB",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "TB -1.5",
+     "p_model": 0.2962,
+     "p_market": 0.3894,
+     "fair_odds": 2.71,
+     "est_odds": 2.52,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "PHI 1 - 4 TB",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3252,
+     "p_market": 0.3691,
+     "fair_odds": 2.78,
+     "est_odds": 2.59,
+     "confidence": 36,
+     "result": "neizgāja",
+     "score": "PHI 1 - 4 TB",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892446",
+   "away": "OTT",
+   "home": "BOS",
+   "away_name": "Ottawa Senators",
+   "home_name": "Boston Bruins",
+   "start_utc": "2026-10-05 23:30:00+00:00",
+   "riga_time": "06.10 02:30",
+   "robot_line": "BOS 36% · X 26% · OTT 38%",
+   "robot_total": "vārti 2.8–2.9",
+   "market_line": "OTT 52% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "BOS: vārtsargs Jeremy Swayman +0.01",
+    "OTT: vārtsargs Linus Ullmark +0.00"
+   ],
+   "score": "OTT 4 - 1 BOS",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "OTT zem 2.5",
+     "p_model": 0.4583,
+     "p_market": 0.4372,
+     "fair_odds": 2.27,
+     "est_odds": 2.11,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "OTT 4 - 1 BOS",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "OTT uzvar",
+     "p_model": 0.3685,
+     "p_market": 0.3886,
+     "fair_odds": 2.6,
+     "est_odds": 2.42,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "OTT 4 - 1 BOS",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3378,
+     "p_market": 0.3473,
+     "fair_odds": 2.9,
+     "est_odds": 2.69,
+     "confidence": 35,
+     "result": "neizgāja",
+     "score": "OTT 4 - 1 BOS",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892447",
+   "away": "WPG",
+   "home": "PIT",
+   "away_name": "Winnipeg Jets",
+   "home_name": "Pittsburgh Penguins",
+   "start_utc": "2026-10-05 23:30:00+00:00",
+   "riga_time": "06.10 02:30",
+   "robot_line": "PIT 49% · X 24% · WPG 27%",
+   "robot_total": "vārti 3.5–2.8",
+   "market_line": "PIT 61% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "PIT: vārtsargs Sergei Murashov -0.08",
+    "WPG: vārtsargs Clay Stevenson -0.17"
+   ],
+   "score": "WPG 3 - 2 PIT",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.455,
+     "p_market": 0.4162,
+     "fair_odds": 2.36,
+     "est_odds": 2.19,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "WPG 3 - 2 PIT",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "WPG uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.3988,
+     "p_market": 0.3908,
+     "fair_odds": 2.55,
+     "est_odds": 2.37,
+     "confidence": 39,
+     "result": "izgāja",
+     "score": "WPG 3 - 2 PIT",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "PIT zem 2.5",
+     "p_model": 0.3088,
+     "p_market": 0.3288,
+     "fair_odds": 3.08,
+     "est_odds": 2.86,
+     "confidence": 32,
+     "result": "izgāja",
+     "score": "WPG 3 - 2 PIT",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892448",
+   "away": "SJ",
+   "home": "DAL",
+   "away_name": "San Jose Sharks",
+   "home_name": "Dallas Stars",
+   "start_utc": "2026-10-06 00:00:00+00:00",
+   "riga_time": "06.10 03:00",
+   "robot_line": "DAL 52% · X 24% · SJ 25%",
+   "robot_total": "vārti 3.5–2.6",
+   "market_line": "DAL 66% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "DAL: vārtsargs Jake Oettinger -0.01",
+    "SJ: vārtsargs Yaroslav Askarov +0.00"
+   ],
+   "score": "SJ 0 - 5 DAL",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.467,
+     "p_market": 0.4176,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "SJ 0 - 5 DAL",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SJ uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4615,
+     "p_market": 0.3425,
+     "fair_odds": 2.73,
+     "est_odds": 2.54,
+     "confidence": 37,
+     "result": "neizgāja",
+     "score": "SJ 0 - 5 DAL",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "DAL zem 2.5",
+     "p_model": 0.4144,
+     "p_market": 0.305,
+     "fair_odds": 3.06,
+     "est_odds": 2.85,
+     "confidence": 33,
+     "result": "neizgāja",
+     "score": "SJ 0 - 5 DAL",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 12,
+  "hits": 6,
+  "pushes": 0,
+  "expected_hits": 4.59,
+  "profit_units": 2.52
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892445",
+   "game": "PHI@TB",
+   "riga_time": "06.10 02:00",
+   "category": "komandas vārti",
+   "bet": "PHI virs 3.5",
+   "confidence": 23,
+   "fair_odds": 4.36,
+   "est_odds": 4.05,
+   "result": "neizgāja",
+   "score": "PHI 1 - 4 TB"
+  },
+  {
+   "game_id": "401892447",
+   "game": "WPG@PIT",
+   "riga_time": "06.10 02:30",
+   "category": "komandas vārti",
+   "bet": "WPG zem 1.5",
+   "confidence": 23,
+   "fair_odds": 4.38,
+   "est_odds": 4.08,
+   "result": "neizgāja",
+   "score": "WPG 3 - 2 PIT"
+  },
+  {
+   "game_id": "401892446",
+   "game": "OTT@BOS",
+   "riga_time": "06.10 02:30",
+   "category": "kopā",
+   "bet": "virs 7.5",
+   "confidence": 23,
+   "fair_odds": 4.4,
+   "est_odds": 4.1,
+   "result": "neizgāja",
+   "score": "OTT 4 - 1 BOS"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": -3
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 1.72,
+  "profit_units": 0.35
+ },
+ "simulated": true
+}

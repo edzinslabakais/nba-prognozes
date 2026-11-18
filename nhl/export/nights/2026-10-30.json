@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-30",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892611",
+   "away": "NJ",
+   "home": "VGK",
+   "away_name": "New Jersey Devils",
+   "home_name": "Vegas Golden Knights",
+   "start_utc": "2026-10-30 22:00:00+00:00",
+   "riga_time": "31.10 00:00",
+   "robot_line": "VGK 39% · X 25% · NJ 36%",
+   "robot_total": "vārti 3.0–2.9",
+   "market_line": "VGK 51% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "VGK: vārtsargs Adin Hill +0.02",
+    "NJ: vārtsargs Connor Hellebuyck +0.04"
+   ],
+   "score": "NJ 5 - 2 VGK",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "NJ zem 2.5",
+     "p_model": 0.4588,
+     "p_market": 0.4384,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "NJ 5 - 2 VGK",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "VGK uzvar",
+     "p_model": 0.4135,
+     "p_market": 0.3836,
+     "fair_odds": 2.57,
+     "est_odds": 2.39,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "NJ 5 - 2 VGK",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3733,
+     "p_market": 0.3722,
+     "fair_odds": 2.69,
+     "est_odds": 2.5,
+     "confidence": 37,
+     "result": "izgāja",
+     "score": "NJ 5 - 2 VGK",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892612",
+   "away": "WPG",
+   "home": "FLA",
+   "away_name": "Winnipeg Jets",
+   "home_name": "Florida Panthers",
+   "start_utc": "2026-10-30 23:00:00+00:00",
+   "riga_time": "31.10 01:00",
+   "robot_line": "FLA 53% · X 24% · WPG 24%",
+   "robot_total": "vārti 3.5–2.5",
+   "market_line": "FLA 66% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "FLA: vārtsargs Akira Schmid -0.00",
+    "WPG: vārtsargs Nico Daws -0.03"
+   ],
+   "score": "WPG 2 - 5 FLA",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "FLA -1.5",
+     "p_model": 0.3288,
+     "p_market": 0.3907,
+     "fair_odds": 2.65,
+     "est_odds": 2.46,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "WPG 2 - 5 FLA",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3671,
+     "p_market": 0.3792,
+     "fair_odds": 2.66,
+     "est_odds": 2.47,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "WPG 2 - 5 FLA",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "FLA zem 2.5",
+     "p_model": 0.3672,
+     "p_market": 0.324,
+     "fair_odds": 3.01,
+     "est_odds": 2.8,
+     "confidence": 33,
+     "result": "neizgāja",
+     "score": "WPG 2 - 5 FLA",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892613",
+   "away": "SEA",
+   "home": "CGY",
+   "away_name": "Seattle Kraken",
+   "home_name": "Calgary Flames",
+   "start_utc": "2026-10-31 00:00:00+00:00",
+   "riga_time": "31.10 02:00",
+   "robot_line": "CGY 36% · X 25% · SEA 40%",
+   "robot_total": "vārti 3.0–3.2",
+   "market_line": "SEA 51% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CGY: vārtsargs Dustin Wolf -0.15",
+    "SEA: vārtsargs Philipp Grubauer +0.03"
+   ],
+   "score": "SEA 2 - 6 CGY",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "CGY zem 2.5",
+     "p_model": 0.4195,
+     "p_market": 0.4134,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "SEA 2 - 6 CGY",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4454,
+     "p_market": 0.4063,
+     "fair_odds": 2.42,
+     "est_odds": 2.25,
+     "confidence": 41,
+     "result": "izgāja",
+     "score": "SEA 2 - 6 CGY",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SEA uzvar",
+     "p_model": 0.4367,
+     "p_market": 0.3857,
+     "fair_odds": 2.53,
+     "est_odds": 2.35,
+     "confidence": 40,
+     "result": "neizgāja",
+     "score": "SEA 2 - 6 CGY",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 9,
+  "settled": 9,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 3.52,
+  "profit_units": 0.68
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892611",
+   "game": "NJ@VGK",
+   "riga_time": "31.10 00:00",
+   "category": "kombinācija",
+   "bet": "VGK uzvar & zem 6.5",
+   "confidence": 23,
+   "fair_odds": 4.42,
+   "est_odds": 4.11,
+   "result": "neizgāja",
+   "score": "NJ 5 - 2 VGK"
+  },
+  {
+   "game_id": "401892612",
+   "game": "WPG@FLA",
+   "riga_time": "31.10 01:00",
+   "category": "kombinācija",
+   "bet": "FLA uzvar & virs 6.5",
+   "confidence": 23,
+   "fair_odds": 4.36,
+   "est_odds": 4.05,
+   "result": "izgāja",
+   "score": "WPG 2 - 5 FLA"
+  },
+  {
+   "game_id": "401892613",
+   "game": "SEA@CGY",
+   "riga_time": "31.10 02:00",
+   "category": "handikaps",
+   "bet": "CGY -1.5",
+   "confidence": 22,
+   "fair_odds": 4.46,
+   "est_odds": 4.15,
+   "result": "izgāja",
+   "score": "SEA 2 - 6 CGY"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 0.68,
+  "profit_units": 5.2
+ },
+ "top_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 1.23,
+  "profit_units": 1.72
+ },
+ "simulated": true
+}

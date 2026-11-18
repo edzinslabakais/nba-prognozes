@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 18.11.2026 23:01 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 23:37 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 12 spēles, koef. ≥ 2.1
 
@@ -159,4 +159,8 @@ Crazy Dazy kopā: vēl nav noslēgtu likmju
 
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|
-| Novembris 2026 (1.–30.11.) | – | – | – | – | – | – |
+| Novembris 2026 (18.–30.11.) | – | – | – | – | – | – |
+| Novembris 2026 (1.–17.11.) — simulācija | 154/366 | -34.50 | 46/122 | -22.80 | 12/47 | +2.80 |
+| Oktobris 2026 (20.–31.10.) — simulācija | 104/264 | -40.50 | 41/88 | -0.11 | 12/35 | +14.93 |
+
+_Simulācija = arhīvs: ko robots būtu ieteicis pirms šīs sistēmas palaišanas, izmantojot tikai pirms spēles pieejamos datus (bez tā laika savainojumu saraksta)._

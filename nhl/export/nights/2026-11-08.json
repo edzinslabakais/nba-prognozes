@@ -1,0 +1,407 @@
+{
+ "date": "2026-11-08",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892674",
+   "away": "FLA",
+   "home": "BOS",
+   "away_name": "Florida Panthers",
+   "home_name": "Boston Bruins",
+   "start_utc": "2026-11-08 18:00:00+00:00",
+   "riga_time": "08.11 20:00",
+   "robot_line": "BOS 47% · X 25% · FLA 28%",
+   "robot_total": "vārti 3.3–2.6",
+   "market_line": "BOS 58% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "BOS: vārtsargs Jeremy Swayman -0.01",
+    "FLA: vārtsargs Jacob Markstrom -0.03"
+   ],
+   "score": "FLA 1 - 4 BOS",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "FLA uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.3535,
+     "p_market": 0.417,
+     "fair_odds": 2.47,
+     "est_odds": 2.3,
+     "confidence": 40,
+     "result": "neizgāja",
+     "score": "FLA 1 - 4 BOS",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "BOS virs 3.5",
+     "p_model": 0.4894,
+     "p_market": 0.3773,
+     "fair_odds": 2.51,
+     "est_odds": 2.33,
+     "confidence": 40,
+     "result": "izgāja",
+     "score": "FLA 1 - 4 BOS",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4376,
+     "p_market": 0.3477,
+     "fair_odds": 2.74,
+     "est_odds": 2.55,
+     "confidence": 36,
+     "result": "neizgāja",
+     "score": "FLA 1 - 4 BOS",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892675",
+   "away": "VGK",
+   "home": "BUF",
+   "away_name": "Vegas Golden Knights",
+   "home_name": "Buffalo Sabres",
+   "start_utc": "2026-11-08 20:30:00+00:00",
+   "riga_time": "08.11 22:30",
+   "robot_line": "BUF 36% · X 25% · VGK 39%",
+   "robot_total": "vārti 3.0–3.1",
+   "market_line": "VGK 53% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "BUF: vārtsargs Colten Ellis +0.06",
+    "VGK: vārtsargs Adin Hill -0.01"
+   ],
+   "score": "VGK 4 - 1 BUF",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4624,
+     "p_market": 0.412,
+     "fair_odds": 2.37,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "VGK 4 - 1 BUF",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "BUF zem 2.5",
+     "p_model": 0.4207,
+     "p_market": 0.4193,
+     "fair_odds": 2.38,
+     "est_odds": 2.22,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "VGK 4 - 1 BUF",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "VGK uzvar",
+     "p_model": 0.3478,
+     "p_market": 0.4016,
+     "fair_odds": 2.56,
+     "est_odds": 2.38,
+     "confidence": 39,
+     "result": "izgāja",
+     "score": "VGK 4 - 1 BUF",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892677",
+   "away": "TB",
+   "home": "WPG",
+   "away_name": "Tampa Bay Lightning",
+   "home_name": "Winnipeg Jets",
+   "start_utc": "2026-11-08 23:00:00+00:00",
+   "riga_time": "09.11 01:00",
+   "robot_line": "WPG 30% · X 24% · TB 46%",
+   "robot_total": "vārti 2.8–3.4",
+   "market_line": "TB 59% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "WPG: vārtsargs Stuart Skinner +0.01",
+    "TB: vārtsargs Andrei Vasilevskiy +0.00"
+   ],
+   "score": "TB 3 - 4 WPG",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "TB virs 3.5",
+     "p_model": 0.4018,
+     "p_market": 0.4268,
+     "fair_odds": 2.37,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "TB 3 - 4 WPG",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "WPG uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4674,
+     "p_market": 0.4066,
+     "fair_odds": 2.39,
+     "est_odds": 2.22,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "TB 3 - 4 WPG",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.3968,
+     "p_market": 0.421,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "TB 3 - 4 WPG",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892676",
+   "away": "NJ",
+   "home": "TOR",
+   "away_name": "New Jersey Devils",
+   "home_name": "Toronto Maple Leafs",
+   "start_utc": "2026-11-09 00:00:00+00:00",
+   "riga_time": "09.11 02:00",
+   "robot_line": "TOR 30% · X 24% · NJ 45%",
+   "robot_total": "vārti 2.9–3.4",
+   "market_line": "NJ 59% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "TOR: vārtsargs Anthony Stolarz +0.04",
+    "NJ: vārtsargs Connor Hellebuyck +0.03"
+   ],
+   "score": "NJ 4 - 0 TOR",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "NJ virs 3.5",
+     "p_model": 0.4152,
+     "p_market": 0.435,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "NJ 4 - 0 TOR",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4779,
+     "p_market": 0.4153,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "NJ 4 - 0 TOR",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "TOR uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4988,
+     "p_market": 0.4066,
+     "fair_odds": 2.36,
+     "est_odds": 2.19,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "NJ 4 - 0 TOR",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401892678",
+   "away": "PHI",
+   "home": "CGY",
+   "away_name": "Philadelphia Flyers",
+   "home_name": "Calgary Flames",
+   "start_utc": "2026-11-09 00:00:00+00:00",
+   "riga_time": "09.11 02:00",
+   "robot_line": "CGY 35% · X 26% · PHI 39%",
+   "robot_total": "vārti 2.8–2.9",
+   "market_line": "PHI 53% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "CGY: vārtsargs Devin Cooley +0.13",
+    "PHI: vārtsargs Dan Vladar -0.01"
+   ],
+   "score": "PHI 3 - 3 CGY (pamatlaikā; papildlaikā 3 - 4)",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "PHI uzvar",
+     "p_model": 0.3559,
+     "p_market": 0.3972,
+     "fair_odds": 2.57,
+     "est_odds": 2.39,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "PHI 3 - 3 CGY (pamatlaikā; papildlaikā 3 - 4)",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.4039,
+     "p_market": 0.3342,
+     "fair_odds": 2.87,
+     "est_odds": 2.67,
+     "confidence": 35,
+     "result": "neizgāja",
+     "score": "PHI 3 - 3 CGY (pamatlaikā; papildlaikā 3 - 4)",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "PHI -1.5",
+     "p_model": 0.2156,
+     "p_market": 0.2551,
+     "fair_odds": 4.05,
+     "est_odds": 3.77,
+     "confidence": 25,
+     "result": "neizgāja",
+     "score": "PHI 3 - 3 CGY (pamatlaikā; papildlaikā 3 - 4)",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892679",
+   "away": "PIT",
+   "home": "ANA",
+   "away_name": "Pittsburgh Penguins",
+   "home_name": "Anaheim Ducks",
+   "start_utc": "2026-11-09 01:00:00+00:00",
+   "riga_time": "09.11 03:00",
+   "robot_line": "ANA 42% · X 24% · PIT 35%",
+   "robot_total": "vārti 3.6–3.3",
+   "market_line": "ANA 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "ANA: vārtsargs Laurent Brossoit +0.02",
+    "PIT: vārtsargs Arturs Silovs -0.03"
+   ],
+   "score": "PIT 2 - 5 ANA",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "PIT virs 3.5",
+     "p_model": 0.4105,
+     "p_market": 0.4303,
+     "fair_odds": 2.35,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "PIT 2 - 5 ANA",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "ANA uzvar",
+     "p_model": 0.482,
+     "p_market": 0.4032,
+     "fair_odds": 2.39,
+     "est_odds": 2.22,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "PIT 2 - 5 ANA",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 7.5",
+     "p_model": 0.4342,
+     "p_market": 0.3867,
+     "fair_odds": 2.53,
+     "est_odds": 2.35,
+     "confidence": 40,
+     "result": "neizgāja",
+     "score": "PIT 2 - 5 ANA",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 18,
+  "settled": 18,
+  "hits": 7,
+  "pushes": 0,
+  "expected_hits": 7.16,
+  "profit_units": -2.27
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892678",
+   "game": "PHI@CGY",
+   "riga_time": "09.11 02:00",
+   "category": "komandas vārti",
+   "bet": "CGY zem 1.5",
+   "confidence": 23,
+   "fair_odds": 4.37,
+   "est_odds": 4.06,
+   "result": "neizgāja",
+   "score": "PHI 3 - 3 CGY (pamatlaikā; papildlaikā 3 - 4)"
+  },
+  {
+   "game_id": "401892675",
+   "game": "VGK@BUF",
+   "riga_time": "08.11 22:30",
+   "category": "handikaps",
+   "bet": "BUF -1.5",
+   "confidence": 23,
+   "fair_odds": 4.41,
+   "est_odds": 4.1,
+   "result": "neizgāja",
+   "score": "VGK 4 - 1 BUF"
+  },
+  {
+   "game_id": "401892674",
+   "game": "FLA@BOS",
+   "riga_time": "08.11 20:00",
+   "category": "komandas vārti",
+   "bet": "BOS virs 4.5",
+   "confidence": 22,
+   "fair_odds": 4.57,
+   "est_odds": 4.25,
+   "result": "neizgāja",
+   "score": "FLA 1 - 4 BOS"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.67,
+  "profit_units": -3
+ },
+ "top_summary": {
+  "picks": 6,
+  "settled": 6,
+  "hits": 4,
+  "pushes": 0,
+  "expected_hits": 2.43,
+  "profit_units": 2.97
+ },
+ "simulated": true
+}

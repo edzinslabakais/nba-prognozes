@@ -336,6 +336,11 @@ class League:
         return self.base / "export"
 
     @property
+    def archive(self) -> Path:
+        """Simulated past nights (archive.py)."""
+        return self.base / "archive"
+
+    @property
     def message(self) -> Path:
         return self.export / "message.txt"
 
@@ -475,11 +480,24 @@ def month_label(m: str) -> str:
     return f"{MONTHS_LV[int(mo) - 1].capitalize()} {y}"
 
 
-def month_days(m: str) -> str:
-    """'1.–30.11.' — a month runs from its first to its last day (by game date)."""
+def month_days(m: str, first_day: int = 1, last_day: int | None = None) -> str:
+    """'1.–30.11.' — a month runs from its first to its last day (by game date);
+    the month tracking started in begins on that day, e.g. '18.–30.11.'."""
     first = pd.Timestamp(m + "-01")
-    last = first + pd.offsets.MonthEnd(0)
-    return f"1.–{last.day}.{first.month:02d}."
+    last = last_day or (first + pd.offsets.MonthEnd(0)).day
+    return f"{first_day}.–{last}.{first.month:02d}."
+
+
+def _month_entry(m: str, sim: bool, acc: dict, live_start: str | None) -> dict:
+    dates = sorted(acc["dates"])
+    first_day, last_day = 1, None
+    if sim:  # a simulated stretch covers exactly the days it has
+        first_day, last_day = int(dates[0][8:]), int(dates[-1][8:])
+    elif live_start and live_start[:7] == m:  # live tracking began during this month
+        first_day = int(live_start[8:])
+    return {"month": m, "label": month_label(m), "simulated": sim,
+            "days": month_days(m, first_day, last_day),
+            **{k: _summary(v) for k, v in acc.items() if k != "dates"}}
 
 
 def _num(v, default):
@@ -488,12 +506,16 @@ def _num(v, default):
 
 def export_all() -> None:
     """Write export/nights/<date>.json + export/stats.json (what the phone page shows)."""
-    files = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
+    live = sorted(L.hist.glob("*.json")) if L.hist.exists() else []
+    sims = sorted(L.archive.glob("*.json")) if L.archive.exists() else []
+    live_dates = {f.stem for f in live}
+    files = [f for f in sims if f.stem not in live_dates] + live
     (L.export / "nights").mkdir(parents=True, exist_ok=True)
     all_picks, all_crazy, all_top, nights = [], [], [], []
-    month_acc: dict[str, dict] = {}
-    for f in files:
+    month_acc: dict[tuple, dict] = {}
+    for f in sorted(files, key=lambda f: f.stem):
         rec = json.loads(f.read_text())
+        sim = bool(rec.get("simulated"))
         games = rec.get("games", {})
         out_games, night_top = [], []
         for gid, gp in pd.DataFrame(rec["picks"]).groupby("game_id", sort=False) if rec["picks"] else []:
@@ -521,17 +543,19 @@ def export_all() -> None:
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
                "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy),
-               "top_summary": _summary(night_top)}
+               "top_summary": _summary(night_top), "simulated": sim}
         (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
-        all_picks += rec["picks"]
-        all_crazy += crazy
-        all_top += night_top
-        nights.append({"date": rec["date"], **_summary(rec["picks"]),
+        if not sim:  # the real track record counts only nights picked live
+            all_picks += rec["picks"]
+            all_crazy += crazy
+            all_top += night_top
+        nights.append({"date": rec["date"], "simulated": sim, **_summary(rec["picks"]),
                        "crazy": _summary(crazy), "top": _summary(night_top)})
-        mon = month_acc.setdefault(rec["date"][:7], {"all": [], "top": [], "crazy": []})
+        mon = month_acc.setdefault((rec["date"][:7], sim), {"all": [], "top": [], "crazy": [], "dates": []})
         mon["all"] += rec["picks"]
         mon["top"] += night_top
         mon["crazy"] += crazy
+        mon["dates"].append(rec["date"])
     buckets = []
     done = [p for p in all_picks if p.get("result") in ("izgāja", "neizgāja")]
     for lo, hi in ((0, 35), (35, 40), (40, 45), (45, 101)):
@@ -542,9 +566,9 @@ def export_all() -> None:
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
     stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy), "top_overall": _summary(all_top),
              "nights": nights, "calibration": buckets,
-             "months": [{"month": m, "label": month_label(m), "days": month_days(m),
-                         **{k: _summary(v) for k, v in acc.items()}}
-                        for m, acc in sorted(month_acc.items(), reverse=True)],
+             "months": [_month_entry(m, sim, acc, live_start=min(live_dates) if live_dates else None)
+                        for (m, sim), acc in sorted(month_acc.items(), key=lambda kv: (kv[0][0], not kv[0][1]),
+                                                    reverse=True)],
              "updated_at": pd.Timestamp.now(tz="UTC").isoformat(timespec="minutes")}
     (L.export / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1))
     write_markdown(stats)
@@ -672,9 +696,12 @@ def write_markdown(stats: dict) -> None:
                 "|---|---|---|---|---|---|---|"]
         for m in stats["months"]:
             cell = lambda s: (f"{s['hits']}/{s['settled']} | {s['profit_units']:+.2f}" if s["settled"] else "– | –")
-            out.append(f"| {m['label']} ({m['days']}) | {cell(m['all'])} | {cell(m['top'])} | {cell(m['crazy'])} |")
+            tag = " — simulācija" if m.get("simulated") else ""
+            out.append(f"| {m['label']} ({m['days']}){tag} | {cell(m['all'])} | {cell(m['top'])} | {cell(m['crazy'])} |")
+        out += ["", "_Simulācija = arhīvs: ko robots būtu ieteicis pirms šīs sistēmas palaišanas, izmantojot tikai "
+                "pirms spēles pieejamos datus (bez tā laika savainojumu saraksta)._"]
         out.append("")
-    rows = [n for n in reversed(stats["nights"]) if n["settled"]][:14]
+    rows = [n for n in reversed(stats["nights"]) if n["settled"] and not n.get("simulated")][:14]
     if rows:
         out += ["| Nakts | Izgāja | Robots gaidīja | Vienības |", "|---|---|---|---|"]
         for n in rows:

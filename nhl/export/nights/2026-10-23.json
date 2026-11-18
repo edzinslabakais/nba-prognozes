@@ -1,0 +1,171 @@
+{
+ "date": "2026-10-23",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892564",
+   "away": "MTL",
+   "home": "CHI",
+   "away_name": "Montreal Canadiens",
+   "home_name": "Chicago Blackhawks",
+   "start_utc": "2026-10-24 00:00:00+00:00",
+   "riga_time": "24.10 03:00",
+   "robot_line": "CHI 29% · X 24% · MTL 47%",
+   "robot_total": "vārti 2.8–3.4",
+   "market_line": "MTL 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CHI: vārtsargs Spencer Knight +0.02",
+    "MTL: vārtsargs Jacob Fowler +0.10"
+   ],
+   "score": "MTL 4 - 1 CHI",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "MTL virs 3.5",
+     "p_model": 0.3735,
+     "p_market": 0.4428,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "MTL 4 - 1 CHI",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4446,
+     "p_market": 0.4099,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "MTL 4 - 1 CHI",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CHI uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4568,
+     "p_market": 0.3962,
+     "fair_odds": 2.45,
+     "est_odds": 2.28,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "MTL 4 - 1 CHI",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401892565",
+   "away": "TB",
+   "home": "COL",
+   "away_name": "Tampa Bay Lightning",
+   "home_name": "Colorado Avalanche",
+   "start_utc": "2026-10-24 01:00:00+00:00",
+   "riga_time": "24.10 04:00",
+   "robot_line": "COL 40% · X 25% · TB 35%",
+   "robot_total": "vārti 3.2–3.0",
+   "market_line": "COL 53% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "COL: vārtsargs Mackenzie Blackwood -0.01",
+    "TB: vārtsargs Andrei Vasilevskiy -0.00"
+   ],
+   "score": "TB 3 - 6 COL",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "TB zem 2.5",
+     "p_model": 0.4188,
+     "p_market": 0.4241,
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "TB 3 - 6 COL",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4133,
+     "p_market": 0.4184,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": "neizgāja",
+     "score": "TB 3 - 6 COL",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "COL uzvar",
+     "p_model": 0.3994,
+     "p_market": 0.4012,
+     "fair_odds": 2.49,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": "izgāja",
+     "score": "TB 3 - 6 COL",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 6,
+  "settled": 6,
+  "hits": 3,
+  "pushes": 0,
+  "expected_hits": 2.5,
+  "profit_units": 0.72
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892564",
+   "game": "MTL@CHI",
+   "riga_time": "24.10 03:00",
+   "category": "komandas vārti",
+   "bet": "CHI zem 1.5",
+   "confidence": 23,
+   "fair_odds": 4.41,
+   "est_odds": 4.1,
+   "result": "izgāja",
+   "score": "MTL 4 - 1 CHI"
+  },
+  {
+   "game_id": "401892565",
+   "game": "TB@COL",
+   "riga_time": "24.10 04:00",
+   "category": "handikaps",
+   "bet": "TB -1.5",
+   "confidence": 22,
+   "fair_odds": 4.57,
+   "est_odds": 4.25,
+   "result": "neizgāja",
+   "score": "TB 3 - 6 COL"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.45,
+  "profit_units": 2.1
+ },
+ "top_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.83,
+  "profit_units": -2
+ },
+ "simulated": true
+}

@@ -1,0 +1,351 @@
+{
+ "date": "2026-10-25",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892578",
+   "away": "FLA",
+   "home": "CHI",
+   "away_name": "Florida Panthers",
+   "home_name": "Chicago Blackhawks",
+   "start_utc": "2026-10-25 19:00:00+00:00",
+   "riga_time": "25.10 21:00",
+   "robot_line": "CHI 26% · X 24% · FLA 50%",
+   "robot_total": "vārti 2.6–3.5",
+   "market_line": "FLA 64% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CHI: vārtsargs Spencer Knight +0.02",
+    "FLA: vārtsargs Akira Schmid -0.03"
+   ],
+   "score": "FLA 3 - 2 CHI",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "FLA virs 3.5",
+     "p_model": 0.379,
+     "p_market": 0.4521,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "FLA 3 - 2 CHI",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.431,
+     "p_market": 0.4294,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "FLA 3 - 2 CHI",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CHI uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4631,
+     "p_market": 0.3631,
+     "fair_odds": 2.61,
+     "est_odds": 2.43,
+     "confidence": 38,
+     "result": "neizgāja",
+     "score": "FLA 3 - 2 CHI",
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401892579",
+   "away": "NYI",
+   "home": "DAL",
+   "away_name": "New York Islanders",
+   "home_name": "Dallas Stars",
+   "start_utc": "2026-10-25 22:00:00+00:00",
+   "riga_time": "26.10 00:00",
+   "robot_line": "DAL 48% · X 26% · NYI 26%",
+   "robot_total": "vārti 3.0–2.3",
+   "market_line": "DAL 62% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "DAL: vārtsargs Jake Oettinger +0.03",
+    "NYI: vārtsargs Ilya Sorokin +0.05"
+   ],
+   "score": "NYI 3 - 6 DAL",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "DAL zem 2.5",
+     "p_model": 0.5385,
+     "p_market": 0.4177,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": "neizgāja",
+     "score": "NYI 3 - 6 DAL",
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 5.5",
+     "p_model": 0.3608,
+     "p_market": 0.4486,
+     "fair_odds": 2.33,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "NYI 3 - 6 DAL",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NYI uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4567,
+     "p_market": 0.3775,
+     "fair_odds": 2.54,
+     "est_odds": 2.36,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "NYI 3 - 6 DAL",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401891807",
+   "away": "MTL",
+   "home": "WPG",
+   "away_name": "Montreal Canadiens",
+   "home_name": "Winnipeg Jets",
+   "start_utc": "2026-10-25 23:00:00+00:00",
+   "riga_time": "26.10 01:00",
+   "robot_line": "WPG 35% · X 26% · MTL 39%",
+   "robot_total": "vārti 2.9–3.0",
+   "market_line": "MTL 53% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "WPG: vārtsargs Stuart Skinner +0.03",
+    "MTL: vārtsargs Jacob Fowler +0.10"
+   ],
+   "score": "MTL 2 - 1 WPG",
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "MTL zem 2.5",
+     "p_model": 0.4717,
+     "p_market": 0.4159,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "MTL 2 - 1 WPG",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "MTL uzvar",
+     "p_model": 0.3606,
+     "p_market": 0.3988,
+     "fair_odds": 2.56,
+     "est_odds": 2.38,
+     "confidence": 39,
+     "result": "izgāja",
+     "score": "MTL 2 - 1 WPG",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3275,
+     "p_market": 0.3677,
+     "fair_odds": 2.78,
+     "est_odds": 2.59,
+     "confidence": 36,
+     "result": "neizgāja",
+     "score": "MTL 2 - 1 WPG",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892580",
+   "away": "COL",
+   "home": "NSH",
+   "away_name": "Colorado Avalanche",
+   "home_name": "Nashville Predators",
+   "start_utc": "2026-10-26 00:00:00+00:00",
+   "riga_time": "26.10 02:00",
+   "robot_line": "NSH 22% · X 22% · COL 55%",
+   "robot_total": "vārti 2.6–3.8",
+   "market_line": "COL 68% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "NSH: vārtsargs Justus Annunen -0.13",
+    "COL: vārtsargs Scott Wedgewood +0.02"
+   ],
+   "score": "COL 2 - 6 NSH",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4174,
+     "p_market": 0.4323,
+     "fair_odds": 2.33,
+     "est_odds": 2.17,
+     "confidence": 43,
+     "result": "izgāja",
+     "score": "COL 2 - 6 NSH",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "COL -1.5",
+     "p_model": 0.3638,
+     "p_market": 0.4175,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "COL 2 - 6 NSH",
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "COL virs 4.5",
+     "p_model": 0.2715,
+     "p_market": 0.3126,
+     "fair_odds": 3.29,
+     "est_odds": 3.06,
+     "confidence": 30,
+     "result": "neizgāja",
+     "score": "COL 2 - 6 NSH",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892581",
+   "away": "MIN",
+   "home": "VAN",
+   "away_name": "Minnesota Wild",
+   "home_name": "Vancouver Canucks",
+   "start_utc": "2026-10-26 02:00:00+00:00",
+   "riga_time": "26.10 04:00",
+   "robot_line": "VAN 26% · X 23% · MIN 51%",
+   "robot_total": "vārti 2.7–3.6",
+   "market_line": "MIN 64% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "VAN: vārtsargs Leevi Merilainen +0.23",
+    "MIN: vārtsargs Calvin Pickard -0.20"
+   ],
+   "score": "MIN 4 - 1 VAN",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4071,
+     "p_market": 0.4406,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": "neizgāja",
+     "score": "MIN 4 - 1 VAN",
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "VAN uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4438,
+     "p_market": 0.3553,
+     "fair_odds": 2.68,
+     "est_odds": 2.49,
+     "confidence": 37,
+     "result": "neizgāja",
+     "score": "MIN 4 - 1 VAN",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "MIN zem 2.5",
+     "p_model": 0.3678,
+     "p_market": 0.2926,
+     "fair_odds": 3.25,
+     "est_odds": 3.03,
+     "confidence": 31,
+     "result": "neizgāja",
+     "score": "MIN 4 - 1 VAN",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 15,
+  "settled": 15,
+  "hits": 5,
+  "pushes": 0,
+  "expected_hits": 5.95,
+  "profit_units": -3.95
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892579",
+   "game": "NYI@DAL",
+   "riga_time": "26.10 00:00",
+   "category": "kopā",
+   "bet": "zem 3.5",
+   "confidence": 23,
+   "fair_odds": 4.35,
+   "est_odds": 4.05,
+   "result": "neizgāja",
+   "score": "NYI 3 - 6 DAL"
+  },
+  {
+   "game_id": "401892580",
+   "game": "COL@NSH",
+   "riga_time": "26.10 02:00",
+   "category": "uzvarētājs",
+   "bet": "NSH uzvar",
+   "confidence": 22,
+   "fair_odds": 4.51,
+   "est_odds": 4.19,
+   "result": "izgāja",
+   "score": "COL 2 - 6 NSH"
+  },
+  {
+   "game_id": "401891807",
+   "game": "MTL@WPG",
+   "riga_time": "26.10 01:00",
+   "category": "handikaps",
+   "bet": "WPG -1.5",
+   "confidence": 22,
+   "fair_odds": 4.56,
+   "est_odds": 4.24,
+   "result": "neizgāja",
+   "score": "MTL 2 - 1 WPG"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 3,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.67,
+  "profit_units": 1.19
+ },
+ "top_summary": {
+  "picks": 5,
+  "settled": 5,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 2.05,
+  "profit_units": -0.65
+ },
+ "simulated": true
+}

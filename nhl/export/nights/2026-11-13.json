@@ -1,0 +1,171 @@
+{
+ "date": "2026-11-13",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-18T21:37+00:00",
+ "games": [
+  {
+   "game_id": "401892706",
+   "away": "NYR",
+   "home": "VAN",
+   "away_name": "New York Rangers",
+   "home_name": "Vancouver Canucks",
+   "start_utc": "2026-11-14 02:00:00+00:00",
+   "riga_time": "14.11 04:00",
+   "robot_line": "VAN 24% · X 23% · NYR 52%",
+   "robot_total": "vārti 2.6–3.6",
+   "market_line": "NYR 64% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "VAN: vārtsargs Leevi Merilainen +0.08",
+    "NYR: vārtsargs Dylan Garand +0.01"
+   ],
+   "score": "NYR 5 - 1 VAN",
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4148,
+     "p_market": 0.4141,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 41,
+     "result": "neizgāja",
+     "score": "NYR 5 - 1 VAN",
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NYR -1.5",
+     "p_model": 0.3533,
+     "p_market": 0.3808,
+     "fair_odds": 2.66,
+     "est_odds": 2.48,
+     "confidence": 38,
+     "result": "izgāja",
+     "score": "NYR 5 - 1 VAN",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.2751,
+     "p_market": 0.2742,
+     "fair_odds": 3.64,
+     "est_odds": 3.39,
+     "confidence": 27,
+     "result": "neizgāja",
+     "score": "NYR 5 - 1 VAN",
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892707",
+   "away": "NSH",
+   "home": "VGK",
+   "away_name": "Nashville Predators",
+   "home_name": "Vegas Golden Knights",
+   "start_utc": "2026-11-14 03:00:00+00:00",
+   "riga_time": "14.11 05:00",
+   "robot_line": "VGK 46% · X 25% · NSH 29%",
+   "robot_total": "vārti 3.3–2.7",
+   "market_line": "VGK 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "VGK: vārtsargs Adin Hill +0.03",
+    "NSH: vārtsargs Juuse Saros +0.09"
+   ],
+   "score": "NSH 2 - 2 VGK (pamatlaikā; bullīšos 3 - 2)",
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NSH uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4932,
+     "p_market": 0.3962,
+     "fair_odds": 2.4,
+     "est_odds": 2.24,
+     "confidence": 42,
+     "result": "izgāja",
+     "score": "NSH 2 - 2 VGK (pamatlaikā; bullīšos 3 - 2)",
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "VGK virs 3.5",
+     "p_model": 0.2939,
+     "p_market": 0.419,
+     "fair_odds": 2.55,
+     "est_odds": 2.37,
+     "confidence": 39,
+     "result": "neizgāja",
+     "score": "NSH 2 - 2 VGK (pamatlaikā; bullīšos 3 - 2)",
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3062,
+     "p_market": 0.3839,
+     "fair_odds": 2.73,
+     "est_odds": 2.54,
+     "confidence": 37,
+     "result": "neizgāja",
+     "score": "NSH 2 - 2 VGK (pamatlaikā; bullīšos 3 - 2)",
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 6,
+  "settled": 6,
+  "hits": 2,
+  "pushes": 0,
+  "expected_hits": 2.24,
+  "profit_units": -1.28
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892707",
+   "game": "NSH@VGK",
+   "riga_time": "14.11 05:00",
+   "category": "komandas vārti",
+   "bet": "VGK virs 4.5",
+   "confidence": 21,
+   "fair_odds": 4.68,
+   "est_odds": 4.36,
+   "result": "neizgāja",
+   "score": "NSH 2 - 2 VGK (pamatlaikā; bullīšos 3 - 2)"
+  },
+  {
+   "game_id": "401892706",
+   "game": "NYR@VAN",
+   "riga_time": "14.11 04:00",
+   "category": "kombinācija",
+   "bet": "NYR uzvar & zem 5.5",
+   "confidence": 20,
+   "fair_odds": 4.9,
+   "est_odds": 4.56,
+   "result": "neizgāja",
+   "score": "NYR 5 - 1 VAN"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0.42,
+  "profit_units": -2
+ },
+ "top_summary": {
+  "picks": 2,
+  "settled": 2,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 0.83,
+  "profit_units": 0.24
+ },
+ "simulated": true
+}
