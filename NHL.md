@@ -1,13 +1,13 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 18.11.2026 22:47 (Rīgas laiks)_
+_Atjaunināts 18.11.2026 22:48 (Rīgas laiks)_
 
 ## Nakts uz 19.11. — 3 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### MTL @ NJ · 02:30
-Robots: **NJ 47% · X 25% · MTL 29%**, kopā vārti 3.3–2.7 · bukmeikeri: NJ 60% ar papildl., kopā kopā 6.5
+Robots: **NJ 47% · X 25% · MTL 29%**, vārti 3.3–2.7 · bukmeikeri: NJ 60% ar papildl., kopā 6.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
@@ -18,7 +18,7 @@ Robots: **NJ 47% · X 25% · MTL 29%**, kopā vārti 3.3–2.7 · bukmeikeri: NJ
 Savainojumi/sastāvs: NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.05; MTL: vārtsargs Jacob Fowler (apstiprināts) +0.14
 
 ### BOS @ DET · 02:30
-Robots: **DET 38% · X 26% · BOS 37%**, kopā vārti 2.9–2.9 · bukmeikeri: DET 50% ar papildl., kopā kopā 6.5
+Robots: **DET 38% · X 26% · BOS 37%**, vārti 2.9–2.9 · bukmeikeri: DET 50% ar papildl., kopā 6.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
@@ -29,7 +29,7 @@ Robots: **DET 38% · X 26% · BOS 37%**, kopā vārti 2.9–2.9 · bukmeikeri: D
 Savainojumi/sastāvs: DET: vārtsargs Daniil Tarasov (apstiprināts) +0.17; BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03
 
 ### COL @ UTA · 05:00
-Robots: **UTA 37% · X 25% · COL 38%**, kopā vārti 3.1–3.1 · bukmeikeri: UTA 51% ar papildl., kopā kopā 6.5
+Robots: **UTA 37% · X 25% · COL 38%**, vārti 3.1–3.1 · bukmeikeri: UTA 51% ar papildl., kopā 6.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|

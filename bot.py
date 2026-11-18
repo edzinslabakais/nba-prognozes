@@ -552,10 +552,12 @@ def write_markdown(stats: dict) -> None:
             t = (g.get("riga_time") or " ").split(" ")[-1]
             out.append(f"### {g['away']} @ {g['home']} · {t}")
             info = []
+            def _tot(v):
+                return v if isinstance(v, str) else f"kopā {v}"
             if g.get("robot_line"):
-                info.append(f"Robots: **{g['robot_line']}**, kopā {g.get('robot_total')}")
+                info.append(f"Robots: **{g['robot_line']}**, {_tot(g.get('robot_total'))}")
             if g.get("market_line") and g["market_line"] != "—":
-                info.append(f"bukmeikeri: {g['market_line']}, kopā {g.get('market_total')}")
+                info.append(f"bukmeikeri: {g['market_line']}, {_tot(g.get('market_total'))}")
             if g.get("score"):
                 info.append(f"gala rezultāts: **{g['score']}**")
             if info:
