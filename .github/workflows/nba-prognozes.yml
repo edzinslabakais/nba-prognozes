@@ -19,18 +19,22 @@ on:
     - cron: "33 5 * * *"   # 07:33 ziemā  -> WhatsApp
     - cron: "33 4 * * *"   # 07:33 vasarā -> WhatsApp
     - cron: "17 6 * * *"   # 08:17 ziemā  -> REZULTĀTI
+  # "⟳" button on the web page opens an issue titled e.g. "atjaunot nba" (only the owner's count)
+  issues:
+    types: [opened]
   workflow_dispatch:
     inputs:
       komanda:
         description: "Ko palaist"
         type: choice
-        options: [likmes, likmes_eu, rezultati, lapa, whatsapp]
+        options: [likmes, likmes_eu, rezultati, rezultati_nba, rezultati_nhl, rezultati_el, rezultati_cl, lapa, whatsapp]
         default: likmes
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: nba-prognozes
@@ -45,11 +49,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Izlemt, ko palaist
         id: cmd
+        env:  # passed as variables, never pasted into the shell command
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          REPO_OWNER: ${{ github.repository_owner }}
         run: python3 scheduler.py "${{ github.event.schedule }}" "${{ inputs.komanda }}" >> "$GITHUB_OUTPUT"
 
   run:
     needs: decide
-    if: contains(fromJSON('["likmes","likmes_eu","rezultati"]'), needs.decide.outputs.komanda)
+    if: needs.decide.outputs.komanda == 'likmes' || needs.decide.outputs.komanda == 'likmes_eu' || startsWith(needs.decide.outputs.komanda, 'rezultati')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -78,6 +86,10 @@ jobs:
           case "$KOMANDA" in
             likmes)    bots="bot.py nhl_bot.py"; cmd=likmes ;;
             likmes_eu) bots="el_bot.py cl_bot.py"; cmd=likmes ;;
+            rezultati_nba) bots="bot.py"; cmd=rezultati ;;
+            rezultati_nhl) bots="nhl_bot.py"; cmd=rezultati ;;
+            rezultati_el)  bots="el_bot.py"; cmd=rezultati ;;
+            rezultati_cl)  bots="cl_bot.py"; cmd=rezultati ;;
             *)         bots="bot.py nhl_bot.py el_bot.py cl_bot.py"; cmd=rezultati ;;
           esac
           for b in $bots; do
@@ -155,3 +167,17 @@ jobs:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
         run: python whatsapp.py
+
+  # close the refresh request once the page is updated
+  close_issue:
+    needs: [decide, pages]
+    if: always() && github.event_name == 'issues' && needs.decide.outputs.komanda != ''
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          OK: ${{ needs.pages.result }}
+        run: |
+          if [ "$OK" = "success" ]; then msg="Rezultāti atjaunoti, lapa publicēta."; else msg="Atjaunošana neizdevās — sk. Actions žurnālu."; fi
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --comment "$msg"
