@@ -154,10 +154,11 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .statspage .period-title { flex-direction: column; align-items: flex-start; gap: 3px; }
 .statspage .period-title .rec { font-size: 12px; }
 .statspage .game-inner { display: flex; flex-direction: column; gap: 10px; }
-.league { display: inline-flex; gap: 4px; max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 3px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); align-self: flex-start; }
+.league { display: inline-flex; flex-wrap: wrap; gap: 2px 4px; max-width: 100%; padding: 3px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); align-self: flex-start; }
 .league a { font: 700 16px/1 var(--font-display); letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
 .league a[aria-current="page"] { background: var(--ink); color: var(--bg); }
 .league a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) { .league a { padding: 7px 9px; } }
 .toprow { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .toprow .league { margin-bottom: 0; }
 .controls { display: flex; align-items: center; gap: 10px; margin-left: auto; }
@@ -230,7 +231,7 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .crazy h2 { color: var(--wild); }
 .crazy .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
 .crazy-cards .game { border-color: var(--wild); }
-.crazy-cards .picks, .safe-cards .picks { border-top: 1px solid var(--line); }
+.crazy-cards .picks, .safe-cards .picks, .best-cards .picks { border-top: 1px solid var(--line); }
 .crazy-cards .game-tag, .safe-cards .game-tag { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0.02em; }
 .crazy-cards .odds b, .crazy-cards .conf { color: var(--wild); }
 .crazy-cards .bar i { background: var(--wild); }
@@ -239,6 +240,8 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .safe { display: flex; flex-direction: column; gap: 10px; }
 .safe h2 { color: var(--good); }
 .safe .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
+.games > .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
+.games > h2 { margin: 0; }
 .safe-cards .game { border-color: var(--good); }
 .safe-cards .odds b, .safe-cards .conf { color: var(--good); }
 .safe-cards .bar i { background: var(--good); }
@@ -365,6 +368,7 @@ const $ = (id) => document.getElementById(id);
 const state = { nights: [], stats: null, selected: null, chosenByUser: false };
 // ---- language (LV / EN). Texts from the robot are Latvian; tr*() translate them for English.
 const LEAGUE_KEY = "nba"; const DAY_MODE = false; const LEAGUE_TITLE = "NBA";  // site.py sets these per league
+const SIMPLE = false;  // NCAA / Championship: only the best bets of the night + Crazy Dazy (no ★, no safe bets)
 const IS_NHL = LEAGUE_KEY === "nhl";
 const GOALS = LEAGUE_KEY === "nhl" || LEAGUE_KEY === "cl";
 let LANG = "lv";
@@ -378,12 +382,16 @@ const I18N = {
     thConf: "Drošība", thBets: "Likmes", thWon: "Izgāja", thExp: "Robots gaidīja",
     safeTitle: "Drošās likmes", howTo: "Kā lasīt",
     safeIntro: "Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras ir visdrošākās pēc bukmeikeru vērtējuma. Sezonas pārbaudē tas strādāja labāk nekā robota paša statistika. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.",
-    crazyIntro: (o) => `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${o}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`,
+    crazyIntro: (o, n = 3) => `${n} likmes no visām ${DAY_MODE ? "dienas" : "nakts"} spēlēm, kurām ar koeficientu ${o}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`,
     emptyLoading: "<b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
     noBets: "Vēl nav likmju", noNights: DAY_MODE ? "Vēl nav nevienas dienas likmju." : "Vēl nav nevienas nakts likmju.",
-    emptyText: DAY_MODE ? "Spēļu dienās ap 12:30 (Rīgas laikā) robots ieliek šeit 3 likmes katrai dienas spēlei, bet nākamajā rītā pieraksta rezultātus."
+    emptyText: SIMPLE ? `${DAY_MODE ? "Spēļu dienās ap 12:30" : "Katru vakaru ap 21:30"} (Rīgas laikā) robots ieliek šeit labākās likmes no visām spēlēm, bet nākamajā rītā pieraksta rezultātus.`
+      : DAY_MODE ? "Spēļu dienās ap 12:30 (Rīgas laikā) robots ieliek šeit 3 likmes katrai dienas spēlei, bet nākamajā rītā pieraksta rezultātus."
       : "Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
     sub: (night, n, odds) => `${DAY_MODE ? "Spēles" : "Nakts uz"} ${night} · ${n} ${n === 1 ? "spēle" : "spēles"} · koeficients ≥ ${odds}`,
+    subSimple: (night, n, odds) => `${DAY_MODE ? "Spēles" : "Nakts uz"} ${night} · ${n} labākās likmes · koeficients ≥ ${odds}`,
+    simpleTitle: (n) => `${n} labākās likmes`,
+    simpleIntro: "No visām spēlēm robots katrā izvēlas drošāko likmi ar koeficientu 2.1+ un parāda visdrošākās (viena no spēles). Sakārtotas pēc drošības.",
     gamesShort: "sp.", wonTonight: "Šī nakts izgāja", betsTonight: "Likmes šonakt", totalWon: "Kopā izgāja",
     totalLine: (h, n, e) => `Kopā ${h}/${n} (gaidīts ${e})`, unitsAll: "Vienības kopā",
     tonightWonTop: "Šonakt uzvarēts", tonightBets: "Šonakt likmes", wonPlayed: "Uzvarēts / notikušas",
@@ -553,7 +561,9 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  for (const [label, s] of [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]]) {
+  const rows = SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+    : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
+  for (const [label, s] of rows) {
     const tr = el("tr");
     const settled = s && s.settled;
     const u = el("td", settled ? (s.profit_units > 0 ? "pos" : s.profit_units < 0 ? "neg" : "") : "", settled ? signed(s.profit_units) : "–");
@@ -629,13 +639,13 @@ function pickRow(p, gameTag, ctx) {
   const word = t(wkey);
   const li = el("li", "pick " + (cls === "wait" ? "" : cls) + (p.top ? " top" : ""));
   const left = el("div");
-  if (p.top) left.append(el("span", "star", t("star")), el("br"));
+  if (p.top && !SIMPLE) left.append(el("span", "star", t("star")), el("br"));
   if (gameTag) left.append(el("span", "game-tag", gameTag));
   left.append(el("div", "bet", trBet(withNames(p.bet, ctx))));
   left.append(el("span", "cat", catName(p.category)));
   if (p.data_conf != null) {
     left.append(el("span", "why", t("dataSafe", p.data_conf, p.p_model != null ? Math.round(p.p_model * 100) : "–")));
-  } else if (p.top && p.p_model != null && p.p_market != null) {
+  } else if (p.top && !SIMPLE && p.p_model != null && p.p_market != null) {
     left.append(el("span", "why", t("dataTop", Math.round(p.p_model * 100), Math.round(p.p_market * 100))));
   }
   const right = el("div", "odds");
@@ -671,7 +681,7 @@ function renderCrazy(night) {
   const list = night?.crazy || [];
   $("crazy").hidden = !list.length;
   if (!list.length) return;
-  $("crazyIntro").textContent = t("crazyIntro", night.crazy_min_odds ?? 4);
+  $("crazyIntro").textContent = t("crazyIntro", night.crazy_min_odds ?? 4, list.length);
   $("crazyList").replaceChildren(...list.map((c) => betCard(c, "crazy", night.date)));
   const s = night.crazy_summary || {};
   $("c1").textContent = s.settled ? `${s.hits}/${s.settled}` : "–";
@@ -749,6 +759,16 @@ function renderGame(g, nightDate) {
   }
   return accordion(`${nightDate}:${g.game_id}`, teamsEl(g.away_short || g.away, g.home_short || g.home, g.away_record, g.home_record),
                    (g.riga_time || "").split(" ")[1], gameSummary(g), content);
+}
+
+// NCAA / Championship: every chosen bet as its own card, most likely first
+function simpleCards(night) {
+  const out = [];
+  for (const g of night.games || []) for (const p of g.picks || []) {
+    out.push({ ...p, game_id: g.game_id, game: `${g.away}@${g.home}`, riga_time: g.riga_time,
+               away_short: g.away_short, home_short: g.home_short, score: g.score });
+  }
+  return out.sort((a, b) => b.confidence - a.confidence);
 }
 
 // A single Safe / Crazy Dazy bet as a collapsible card: game, time and its status when closed.
@@ -842,7 +862,7 @@ function renderStatsPage() {
   const since = `${firstDate.slice(8)}.${firstDate.slice(5, 7)}.${firstDate.slice(0, 4)}`;
   $("sub").textContent = `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${rows.length} spēļu dienas`;
   const nodes = [
-    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: visas likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma."),
+    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: visas likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti."),
   ];
   const current = el("div", "games");
   current.append(
@@ -885,9 +905,17 @@ function render() {
     box.replaceChildren(empty);
   } else {
     const n = (night.games || []).length;
-    $("sub").textContent = t("sub", nightLabel(night.date), n, night.min_odds ?? 2.1);
-    box.replaceChildren(...(night.games || []).map((g) => renderGame(g, night.date)));
+    if (SIMPLE) {
+      const cards = simpleCards(night);
+      $("sub").textContent = t("subSimple", nightLabel(night.date), cards.length, night.min_odds ?? 2.1);
+      const h = el("h2", null, t("simpleTitle", cards.length));
+      box.replaceChildren(h, el("p", "intro", t("simpleIntro")), ...cards.map((c) => betCard(c, "best", night.date)));
+    } else {
+      $("sub").textContent = t("sub", nightLabel(night.date), n, night.min_odds ?? 2.1);
+      box.replaceChildren(...(night.games || []).map((g) => renderGame(g, night.date)));
+    }
   }
+  if (SIMPLE) { box.classList.add("best-cards"); $("topbox").hidden = true; for (const k of ["noteTop", "noteSafe"]) { const e = document.querySelector(`[data-i18n-html="${k}"]`); if (e) e.hidden = true; } }
   renderSafe(night);
   renderCrazy(night);
   const cal = state.stats?.calibration || [];

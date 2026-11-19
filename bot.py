@@ -119,7 +119,8 @@ def nba_views(r):
     if not r.has_market:
         return own, None
     mt = r.market_total if r.market_total is not None and pd.notna(r.market_total) else r.total
-    return own, B.Grid(r.market_margin_home, mt, B.SIGMA["margin_market"], B.SIGMA["total_market"])
+    return own, B.Grid(r.market_margin_home, mt, getattr(r, "s_m", None) or B.SIGMA["margin_market"],
+                       getattr(r, "s_t", None) or B.SIGMA["total_market"], **(getattr(r, "reg", None) or {}))
 
 
 def add_data_view(picks: list[dict], own_grid, market_grid, prob=None) -> None:
@@ -381,7 +382,9 @@ def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float
     started = {p["game_id"] for p in old["picks"] if pd.Timestamp(p["start_utc"]) <= now}
     keep = [p for p in old["picks"] if p["game_id"] in started]
     record = keep + [p for p in record if p["game_id"] not in started]
-    games_all = {**{k: v for k, v in old.get("games", {}).items() if k in started}, **games_info}
+    clean = lambda d: {k: (None if isinstance(v, float) and math.isnan(v) else v) for k, v in d.items()}  # NaN is not JSON
+    games_all = {**{k: v for k, v in old.get("games", {}).items() if k in started},
+                 **{k: clean(v) for k, v in games_info.items()}}
     # once any Crazy Dazy game has started, the Crazy Dazy list for the night is frozen
     old_crazy = old.get("crazy", [])
     if any(c["game_id"] in started for c in old_crazy):

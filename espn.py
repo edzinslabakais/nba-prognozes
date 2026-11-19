@@ -76,10 +76,11 @@ def get_json(path: str, params: dict | None = None, ttl: float | None = None,
     return data
 
 
-def scoreboard(d: date, base: str = BASE) -> dict:
+def scoreboard(d: date, base: str = BASE, extra: dict | None = None) -> dict:
     # Days at least two days in the past are final -> cache forever.
     ttl = None if d <= today_et() - timedelta(days=2) else 600
-    return get_json("/scoreboard", {"dates": d.strftime("%Y%m%d")}, ttl=ttl, trim=trim_scoreboard, base=base)
+    params = {"dates": d.strftime("%Y%m%d"), **(extra or {})}
+    return get_json("/scoreboard", params, ttl=ttl, trim=trim_scoreboard, base=base)
 
 
 def summary(event_id: str, base: str = BASE) -> dict:

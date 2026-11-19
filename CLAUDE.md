@@ -53,8 +53,11 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - NHL: `nhl_data.py`, `nhl_model.py` (Puasona vārtu režģis), `nhl_bets.py`, `nhl_bot.py`, `nhl_backtest.py`
 - EuroLeague: `el_bot.py` (oficiālais EuroLeague avots, bez koeficientiem, `el_params.json`), lapa `site/el/`
 - Čempionu līga: `cl_bot.py` (ESPN + koeficienti, 90 min. likmes, `cl_params.json`), lapa `site/cl/`
+- NCAA: `ncaa_bot.py` (10 labākās likmes naktī + 5 Crazy Dazy, `ncaa_params.json`), lapa `site/ncaa/`;
+  Championship: `ch_bot.py` (izmanto `cl_bot.py` dzinēju ar `soccer/eng.2`, līdz 10 likmēm + 3 Crazy Dazy), lapa `site/ch/`.
+  Abas ir `SIMPLE` lapas (bez ★/drošajām) un netiek ieskaitītas kopējā statistikā (`site.py` `SIMPLE`).
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
-  Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl`.
+  Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|ncaa|ch`.
 - Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas
   kopā, 4 grupas (visas, ★, drošās, Crazy Dazy) pa nedēļām (P–Sv), mēnešiem, gadiem.
 - Simulācijas atziņa (19.11.2026): robota paša modeļa novirze no bukmeikeriem pasliktināja izvēli;

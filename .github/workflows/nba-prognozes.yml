@@ -24,7 +24,7 @@ on:
       komanda:
         description: "Ko palaist"
         type: choice
-        options: [likmes, likmes_eu, rezultati, rezultati_nba, rezultati_nhl, rezultati_el, rezultati_cl, lapa, whatsapp]
+        options: [likmes, likmes_eu, rezultati, rezultati_nba, rezultati_nhl, rezultati_el, rezultati_cl, rezultati_ncaa, rezultati_ch, lapa, whatsapp]
         default: likmes
 
 permissions:
@@ -76,13 +76,15 @@ jobs:
         run: |
           rc=0
           case "$KOMANDA" in
-            likmes)    bots="bot.py nhl_bot.py"; cmd=likmes ;;
-            likmes_eu) bots="el_bot.py cl_bot.py"; cmd=likmes ;;
+            likmes)    bots="bot.py nhl_bot.py ncaa_bot.py"; cmd=likmes ;;
+            likmes_eu) bots="el_bot.py cl_bot.py ch_bot.py"; cmd=likmes ;;
             rezultati_nba) bots="bot.py"; cmd=rezultati ;;
             rezultati_nhl) bots="nhl_bot.py"; cmd=rezultati ;;
             rezultati_el)  bots="el_bot.py"; cmd=rezultati ;;
             rezultati_cl)  bots="cl_bot.py"; cmd=rezultati ;;
-            *)         bots="bot.py nhl_bot.py el_bot.py cl_bot.py"; cmd=rezultati ;;
+            rezultati_ncaa) bots="ncaa_bot.py"; cmd=rezultati ;;
+            rezultati_ch)  bots="ch_bot.py"; cmd=rezultati ;;
+            *)         bots="bot.py nhl_bot.py el_bot.py cl_bot.py ncaa_bot.py ch_bot.py"; cmd=rezultati ;;
           esac
           for b in $bots; do
             echo "::group::$b $cmd"; python "$b" "$cmd" --refresh || rc=1; echo "::endgroup::"
@@ -94,7 +96,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md
+          for x in history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md ncaa NCAA.md ch CH.md; do
+            if [ -e "$x" ]; then git add "$x"; fi
+          done
           if git diff --cached --quiet; then
             echo "Nav izmaiņu."
             exit 0

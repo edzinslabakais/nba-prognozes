@@ -252,9 +252,9 @@ def candidate_bets(r) -> list[Bet]:
 def grid_for(r) -> Grid:
     """Score grid for a prediction row. A league without bookmaker lines (EuroLeague) passes its own
     spreads as `s_m` / `s_t` (and overtime settings as `reg`)."""
-    s_m = SIGMA["margin_market"] if r.has_market else getattr(r, "s_m", None) or SIGMA["margin_model"]
     has_mt = r.market_total is not None and pd.notna(r.market_total)
-    s_t = SIGMA["total_market"] if has_mt else getattr(r, "s_t", None) or SIGMA["total_model"]
+    s_m = getattr(r, "s_m", None) or (SIGMA["margin_market"] if r.has_market else SIGMA["margin_model"])
+    s_t = getattr(r, "s_t", None) or (SIGMA["total_market"] if has_mt else SIGMA["total_model"])
     return Grid(r.margin_home, r.total, s_m, s_t, **(getattr(r, "reg", None) or {}))
 
 
