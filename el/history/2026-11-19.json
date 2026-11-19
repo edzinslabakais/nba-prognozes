@@ -258,7 +258,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "ULK 70 - 78 MIL"
   },
   {
    "game_id": "E2026_123",
@@ -273,7 +274,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "ULK 70 - 78 MIL"
   },
   {
    "game_id": "E2026_123",
@@ -288,7 +290,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "ULK 70 - 78 MIL"
   },
   {
    "game_id": "E2026_126",
@@ -303,7 +306,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "HTA 96 - 97 PRS"
   },
   {
    "game_id": "E2026_126",
@@ -318,7 +322,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "HTA 96 - 97 PRS"
   },
   {
    "game_id": "E2026_126",
@@ -333,7 +338,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "HTA 96 - 97 PRS"
   },
   {
    "game_id": "E2026_125",
@@ -393,7 +399,8 @@
    "fair_odds": 4.3,
    "est_odds": 4.0,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "ULK 70 - 78 MIL"
   },
   {
    "game_id": "E2026_124",
@@ -455,7 +462,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "HTA 96 - 97 PRS"
   },
   {
    "game_id": "E2026_124",
