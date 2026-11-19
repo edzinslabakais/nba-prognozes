@@ -1,0 +1,447 @@
+{
+ "date": "2026-11-19",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-19T06:49+00:00",
+ "games": [
+  {
+   "game_id": "E2026_122",
+   "away": "DUB",
+   "home": "TEL",
+   "away_name": "Dubai Basketball",
+   "home_name": "Maccabi Rapyd Tel Aviv",
+   "away_short": "Dubai",
+   "home_short": "Maccabi",
+   "start_utc": "2026-11-19 17:15:00+00:00",
+   "riga_time": "19.11 19:15",
+   "robot_line": "DUB -0.9",
+   "robot_total": 180.6,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "DUB zem 88.5",
+     "p_model": 0.4393,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "DUB -2.5",
+     "p_model": 0.4374,
+     "p_market": null,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 176.5",
+     "p_model": 0.4356,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_121",
+   "away": "PAN",
+   "home": "ZAL",
+   "away_name": "Panathinaikos AKTOR Athens",
+   "home_name": "Zalgiris Kaunas",
+   "away_short": "Panathinaikos",
+   "home_short": "Zalgiris",
+   "start_utc": "2026-11-19 18:00:00+00:00",
+   "riga_time": "19.11 20:00",
+   "robot_line": "ZAL -3.4",
+   "robot_total": 170.2,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 171.5",
+     "p_model": 0.4382,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "PAN +1.5",
+     "p_model": 0.437,
+     "p_market": null,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "ZAL zem 84.5",
+     "p_model": 0.4365,
+     "p_market": null,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_124",
+   "away": "BAS",
+   "home": "MUN",
+   "away_name": "Kosner Baskonia Vitoria-Gasteiz",
+   "home_name": "FC Bayern Munich",
+   "away_short": "Baskonia",
+   "home_short": "Bayern Munich",
+   "start_utc": "2026-11-19 19:00:00+00:00",
+   "riga_time": "19.11 21:00",
+   "robot_line": "MUN -5.6",
+   "robot_total": 180.7,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "BAS virs 88.5",
+     "p_model": 0.4372,
+     "p_market": null,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 176.5",
+     "p_model": 0.433,
+     "p_market": null,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "MUN -7.5",
+     "p_model": 0.4307,
+     "p_market": null,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_123",
+   "away": "ULK",
+   "home": "MIL",
+   "away_name": "Fenerbahce Tarfin Istanbul",
+   "home_name": "Armani Olimpia Milan",
+   "away_short": "Fenerbahce",
+   "home_short": "Milan",
+   "start_utc": "2026-11-19 19:30:00+00:00",
+   "riga_time": "19.11 21:30",
+   "robot_line": "ULK -2.7",
+   "robot_total": 166.5,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "ULK virs 85.5",
+     "p_model": 0.4387,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 162.5",
+     "p_model": 0.4373,
+     "p_market": null,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "ULK -4.5",
+     "p_model": 0.4324,
+     "p_market": null,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_126",
+   "away": "HTA",
+   "home": "PRS",
+   "away_name": "Hapoel IBI Tel Aviv",
+   "home_name": "Paris Basketball",
+   "away_short": "Hapoel TLV",
+   "home_short": "Paris",
+   "start_utc": "2026-11-19 19:45:00+00:00",
+   "riga_time": "19.11 21:45",
+   "robot_line": "PRS -1.2",
+   "robot_total": 184.0,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "PRS virs 93.5",
+     "p_model": 0.4387,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "HTA -0.5",
+     "p_model": 0.4346,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 185.5",
+     "p_model": 0.4335,
+     "p_market": null,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_125",
+   "away": "VIR",
+   "home": "PAM",
+   "away_name": "Virtus Bologna",
+   "home_name": "Valencia Basket",
+   "away_short": "Virtus Bologna",
+   "home_short": "Valencia",
+   "start_utc": "2026-11-19 20:00:00+00:00",
+   "riga_time": "19.11 22:00",
+   "robot_line": "PAM -12.0",
+   "robot_total": 178.2,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 179.5",
+     "p_model": 0.4386,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "PAM zem 92.5",
+     "p_model": 0.4263,
+     "p_market": null,
+     "fair_odds": 2.35,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "VIR +9.5",
+     "p_model": 0.4156,
+     "p_market": null,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 18,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "E2026_123",
+   "game": "ULK@MIL",
+   "riga_time": "19.11 21:30",
+   "category": "komandas punkti",
+   "bet": "ULK zem 76.5",
+   "confidence": 23,
+   "fair_odds": 4.3,
+   "est_odds": 4.0,
+   "result": null,
+   "score": null,
+   "away_short": "Fenerbahce",
+   "home_short": "Milan"
+  },
+  {
+   "game_id": "E2026_124",
+   "game": "BAS@MUN",
+   "riga_time": "19.11 21:00",
+   "category": "handikaps",
+   "bet": "BAS -2.5",
+   "confidence": 23,
+   "fair_odds": 4.3,
+   "est_odds": 4.0,
+   "result": null,
+   "score": null,
+   "away_short": "Baskonia",
+   "home_short": "Bayern Munich"
+  },
+  {
+   "game_id": "E2026_122",
+   "game": "DUB@TEL",
+   "riga_time": "19.11 19:15",
+   "category": "komandas punkti",
+   "bet": "DUB virs 97.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": null,
+   "score": null,
+   "away_short": "Dubai",
+   "home_short": "Maccabi"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 6,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "E2026_125",
+   "game": "VIR@PAM",
+   "riga_time": "19.11 22:00",
+   "category": "kopā",
+   "bet": "virs 175.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5322,
+   "fair_odds": 1.88,
+   "est_odds": 1.75,
+   "result": null,
+   "score": null,
+   "away_short": "Virtus Bologna",
+   "home_short": "Valencia"
+  },
+  {
+   "game_id": "E2026_126",
+   "game": "HTA@PRS",
+   "riga_time": "19.11 21:45",
+   "category": "kopā",
+   "bet": "virs 181.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5271,
+   "fair_odds": 1.9,
+   "est_odds": 1.76,
+   "result": null,
+   "score": null,
+   "away_short": "Hapoel TLV",
+   "home_short": "Paris"
+  },
+  {
+   "game_id": "E2026_124",
+   "game": "BAS@MUN",
+   "riga_time": "19.11 21:00",
+   "category": "kopā",
+   "bet": "zem 180.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5266,
+   "fair_odds": 1.9,
+   "est_odds": 1.77,
+   "result": null,
+   "score": null,
+   "away_short": "Baskonia",
+   "home_short": "Bayern Munich"
+  }
+ ],
+ "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}

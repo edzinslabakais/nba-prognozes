@@ -70,7 +70,7 @@ class Grid:
                  tie_k=REG["tie_k"], ot_points=REG["ot_points"], ot_margin=REG["ot_margin"],
                  reg_offset=REG["reg_offset"]):
         M = np.arange(-70, 71)
-        T = np.arange(130, 331)
+        T = np.arange(90, 331)
         pm = _phi((M + 0.5 - margin) / s_m) - _phi((M - 0.5 - margin) / s_m)
         pm[M == 0] *= tie_k
         reg_total = total - reg_offset  # bookmaker totals include overtime
@@ -250,9 +250,12 @@ def candidate_bets(r) -> list[Bet]:
 
 
 def grid_for(r) -> Grid:
-    s_m = SIGMA["margin_market"] if r.has_market else SIGMA["margin_model"]
-    s_t = SIGMA["total_market"] if r.market_total is not None and pd.notna(r.market_total) else SIGMA["total_model"]
-    return Grid(r.margin_home, r.total, s_m, s_t)
+    """Score grid for a prediction row. A league without bookmaker lines (EuroLeague) passes its own
+    spreads as `s_m` / `s_t` (and overtime settings as `reg`)."""
+    s_m = SIGMA["margin_market"] if r.has_market else getattr(r, "s_m", None) or SIGMA["margin_model"]
+    has_mt = r.market_total is not None and pd.notna(r.market_total)
+    s_t = SIGMA["total_market"] if has_mt else getattr(r, "s_t", None) or SIGMA["total_model"]
+    return Grid(r.margin_home, r.total, s_m, s_t, **(getattr(r, "reg", None) or {}))
 
 
 def header(r) -> str:

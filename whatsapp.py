@@ -24,7 +24,8 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent
-LEAGUES = [("NBA", ROOT / "export"), ("NHL", ROOT / "nhl" / "export")]
+LEAGUES = [("NBA", ROOT / "export", 1), ("NHL", ROOT / "nhl" / "export", 1),
+           ("EuroLeague", ROOT / "el" / "export", 0), ("Čempionu līga", ROOT / "cl" / "export", 0)]
 
 
 def _units(x: float) -> str:
@@ -37,15 +38,15 @@ def _cell(s: dict | None) -> str:
     return f"{s['hits']}/{s['settled']} ({_units(s['profit_units'])})"
 
 
-def _night_label(us_date: str) -> str:
+def _night_label(us_date: str, offset: int = 1) -> str:
     from datetime import date, timedelta
-    d = date.fromisoformat(us_date) + timedelta(days=1)
+    d = date.fromisoformat(us_date) + timedelta(days=offset)
     return f"{d:%d.%m.}"
 
 
 def build_message() -> str:
     lines = []
-    for title, export in LEAGUES:
+    for title, export, offset in LEAGUES:
         stats_f = export / "stats.json"
         if not stats_f.exists():
             continue
@@ -56,7 +57,7 @@ def build_message() -> str:
             n = settled_nights[-1]
             waiting = n["picks"] - n["settled"]
             extra = f", {waiting} gaida" if waiting else ""
-            lines.append(f"Nakts uz {_night_label(n['date'])}: visas {_cell(n)} · ★ {_cell(n.get('top'))} · "
+            lines.append(f"{'Nakts uz' if offset else 'Spēles'} {_night_label(n['date'], offset)}: visas {_cell(n)} · ★ {_cell(n.get('top'))} · "
                          f"drošās {_cell(n.get('safe'))} · Crazy {_cell(n.get('crazy'))}{extra}")
         m = (stats.get("months") or [None])[0]
         if m:

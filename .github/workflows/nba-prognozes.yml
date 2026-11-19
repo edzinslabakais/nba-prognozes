@@ -8,6 +8,8 @@ name: NBA prognozes
 on:
   schedule:
     # Rīgas laiks ziemā = UTC+2, vasarā = UTC+3; scheduler.py izvēlas pareizo pēc datuma.
+    - cron: "17 10 * * *"  # 12:17 ziemā  -> LIKMES (Eiropas līgas)
+    - cron: "17 9 * * *"   # 12:17 vasarā -> LIKMES (Eiropas līgas)
     - cron: "17 19 * * *"  # 21:17 ziemā  -> LIKMES
     - cron: "17 18 * * *"  # 21:17 vasarā -> LIKMES
     - cron: "47 4 * * *"   # 06:47 ziemā  -> REZULTĀTI
@@ -22,7 +24,7 @@ on:
       komanda:
         description: "Ko palaist"
         type: choice
-        options: [likmes, rezultati, lapa, whatsapp]
+        options: [likmes, likmes_eu, rezultati, lapa, whatsapp]
         default: likmes
 
 permissions:
@@ -47,7 +49,7 @@ jobs:
 
   run:
     needs: decide
-    if: needs.decide.outputs.komanda == 'likmes' || needs.decide.outputs.komanda == 'rezultati'
+    if: contains(fromJSON('["likmes","likmes_eu","rezultati"]'), needs.decide.outputs.komanda)
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -73,8 +75,14 @@ jobs:
       - name: Palaist robotus (${{ env.KOMANDA }})
         run: |
           rc=0
-          echo "::group::NBA"; python bot.py "$KOMANDA" --refresh || rc=1; echo "::endgroup::"
-          echo "::group::NHL"; python nhl_bot.py "$KOMANDA" --refresh || rc=1; echo "::endgroup::"
+          case "$KOMANDA" in
+            likmes)    bots="bot.py nhl_bot.py"; cmd=likmes ;;
+            likmes_eu) bots="el_bot.py cl_bot.py"; cmd=likmes ;;
+            *)         bots="bot.py nhl_bot.py el_bot.py cl_bot.py"; cmd=rezultati ;;
+          esac
+          for b in $bots; do
+            echo "::group::$b $cmd"; python "$b" "$cmd" --refresh || rc=1; echo "::endgroup::"
+          done
           exit $rc
 
       - name: Saglabāt vēsturi
@@ -82,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add history export odds predictions PROGNOZES.md nhl NHL.md
+          git add history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md
           if git diff --cached --quiet; then
             echo "Nav izmaiņu."
             exit 0

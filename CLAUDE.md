@@ -51,3 +51,8 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - `predict.py` — spēļu prognozes, `bets.py` — likmju varbūtības (cenu lapa / Optibet koeficientu vērtēšana)
 - `bot.py` — LIKMES / REZULTĀTI (+ kopīgā vēsture/eksports, `League`), `backtest.py` — kalibrēšana
 - NHL: `nhl_data.py`, `nhl_model.py` (Puasona vārtu režģis), `nhl_bets.py`, `nhl_bot.py`, `nhl_backtest.py`
+- EuroLeague: `el_bot.py` (oficiālais EuroLeague avots, bez koeficientiem, `el_params.json`), lapa `site/el/`
+- Čempionu līga: `cl_bot.py` (ESPN + koeficienti, 90 min. likmes, `cl_params.json`), lapa `site/cl/`
+- Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
+- Simulācijas atziņa (19.11.2026): robota paša modeļa novirze no bukmeikeriem pasliktināja izvēli;
+  ★ un drošās likmes izvēlas pēc bukmeikeru varbūtības, NBA `market_weight_suggested` = 1.0.

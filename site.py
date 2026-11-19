@@ -16,9 +16,11 @@ TEMPLATE = ROOT / "web" / "nba-prognozes.html"
 OUT = ROOT / "site"
 
 LEAGUES = [
-    # key, title, export folder, output folder, link from the site root
-    ("nba", "NBA", ROOT / "export", OUT, ""),
-    ("nhl", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/"),
+    # key, nav label, page title, export folder, output folder, link from the site root, day mode, picks time
+    ("nba", "NBA", "NBA", ROOT / "export", OUT, "", False, (21, 30)),
+    ("nhl", "NHL", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/", False, (21, 30)),
+    ("el", "EL", "EuroLeague", ROOT / "el" / "export", OUT / "el", "el/", True, (12, 30)),
+    ("cl", "ČL", "Čempionu līgas", ROOT / "cl" / "export", OUT / "cl", "cl/", True, (12, 30)),
 ]
 
 NHL_NOTE = ('<p data-i18n-html="noteNhl"><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī '
@@ -48,13 +50,23 @@ def load_data(export: Path, max_nights: int = 60) -> dict:
 def nav(current: str, depth: int) -> str:
     up = "../" * depth
     links = []
-    for key, title, _, _, href in LEAGUES:
+    for key, label, _, _, _, href, _, _ in LEAGUES:
         cur = ' aria-current="page"' if key == current else ""
-        links.append(f'<a href="{up}{href or "./"}"{cur}>{title}</a>')
+        links.append(f'<a href="{up}{href or "./"}"{cur}>{label}</a>')
     return '<nav class="league" aria-label="Līga">' + "".join(links) + "</nav>"
 
 
-def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int) -> Path:
+EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: bukmeikeru koeficientu šai līgai nav, tāpēc varbūtības '
+           'nāk no robota modeļa (komandu reitingi, mājas laukums, atpūta), kas kalibrēts uz 2025-26 sezonu '
+           '(uzvarētāju uzmin ~62 % gadījumu). Visas likmes vērtē pēc <b>pamatlaika</b> (40 minūtes).</p>')
+CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc <b>90 minūtēm</b> (bez pagarinājuma un '
+           'pēcspēles sitieniem). Sagaidāmie vārti ir aprēķināti no bukmeikeru koeficientiem, un no tiem tiek '
+           'novērtētas visas likmes, arī "abas komandas gūst vārtus" un "uzvara vai neizšķirts".</p>')
+NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE"}
+
+
+def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int, day_mode: bool = False,
+              picks_time=(21, 30)) -> Path:
     src = TEMPLATE.read_text()
     head, body = src.split('<div class="wrap">', 1)
     head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">', "")
@@ -62,6 +74,12 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int) -> 
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
     body = body.replace('<h1>NBA <span data-i18n="h1">', f'<h1>{title} <span data-i18n="h1">')
+    body = body.replace('const LEAGUE_KEY = "nba"; const DAY_MODE = false; const LEAGUE_TITLE = "NBA";',
+                        f'const LEAGUE_KEY = "{key}"; const DAY_MODE = {"true" if day_mode else "false"}; '
+                        f'const LEAGUE_TITLE = "{title}";')
+    body = body.replace('{ h: 21, m: 30, name: "slotPicks" }', f'{{ h: {picks_time[0]}, m: {picks_time[1]}, name: "slotPicks" }}')
+    if key in ("el", "cl"):
+        body = body.replace('<p id="updated"></p>', globals()[NOTES_BY_LEAGUE[key]] + '\n    <p id="updated"></p>')
     if key == "nba":
         body = body.replace('<p id="updated"></p>', NBA_NOTE + '\n    <p id="updated"></p>')
     if key == "nhl":
@@ -89,8 +107,8 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int) -> 
 def build() -> list[Path]:
     OUT.mkdir(exist_ok=True)
     (OUT / ".nojekyll").write_text("")
-    return [build_one(key, title, exp, out, depth=0 if out == OUT else 1)
-            for key, title, exp, out, _ in LEAGUES]
+    return [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
+            for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
 
 
 if __name__ == "__main__":

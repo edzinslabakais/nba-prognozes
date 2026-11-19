@@ -1,0 +1,12 @@
+{
+  "half_life": 60,
+  "ridge": 12,
+  "prior_shrink": 0.7,
+  "hca_prior": 3.0,
+  "sigma_margin": 11.25,
+  "sigma_total": 17.0,
+  "tie_k": 1.29,
+  "ot_points": 31.1,
+  "ot_margin": 5.3,
+  "reg_offset": 1.32
+}

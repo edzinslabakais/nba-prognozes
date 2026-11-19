@@ -114,7 +114,8 @@ EDGE_WEIGHT = 0.5  # how much the robot's own view (vs the bookmakers') counts w
 
 def nba_views(r):
     """Score grids for the robot's own model and for the bookmakers alone."""
-    own = B.Grid(r.model_margin_home, r.model_total, B.SIGMA["margin_model"], B.SIGMA["total_model"])
+    own = B.Grid(r.model_margin_home, r.model_total, getattr(r, "s_m", None) or B.SIGMA["margin_model"],
+                 getattr(r, "s_t", None) or B.SIGMA["total_model"], **(getattr(r, "reg", None) or {}))
     if not r.has_market:
         return own, None
     mt = r.market_total if r.market_total is not None and pd.notna(r.market_total) else r.total
@@ -422,6 +423,7 @@ class League:
     load_games: Callable
     settle_bet: Callable          # (bet text, finished game row) -> (win, push, score text)
     crazy_min_odds: float = 4.0
+    day_offset: int = 1           # NBA/NHL: a US game date is the Riga night ending the next morning
 
     @property
     def hist(self) -> Path:
@@ -629,13 +631,14 @@ def export_all() -> None:
         out_games.sort(key=lambda g: g.get("start_utc", ""))
         crazy = rec.get("crazy", [])
         scores = {g["game_id"]: g.get("score") for g in out_games}
+        shorts = {g["game_id"]: {k: g.get(k) for k in ("away_short", "home_short") if g.get(k)} for g in out_games}
         crazy_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet",
                                                 "confidence", "fair_odds", "est_odds", "result")},
-                      "score": c.get("score") or scores.get(c["game_id"])} for c in crazy]
+                      "score": c.get("score") or scores.get(c["game_id"]), **shorts.get(c["game_id"], {})} for c in crazy]
         safe = rec.get("safe", [])
         safe_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet", "confidence",
                                                 "data_conf", "p_model", "fair_odds", "est_odds", "result")},
-                     "score": c.get("score") or scores.get(c["game_id"])} for c in safe]
+                     "score": c.get("score") or scores.get(c["game_id"]), **shorts.get(c["game_id"], {})} for c in safe]
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
@@ -678,8 +681,12 @@ RES_ICON = {"izgāja": "✅", "neizgāja": "❌", "atgriezts": "↩️"}
 
 
 def _night_label(us_date: str) -> str:
-    d = pd.Timestamp(us_date) + pd.Timedelta(days=1)
+    d = pd.Timestamp(us_date) + pd.Timedelta(days=L.day_offset)
     return f"{d:%d.%m.}"
+
+
+def _night_word() -> str:
+    return "Nakts uz" if L.day_offset else "Spēles"
 
 
 def _load_night(us_date: str) -> dict | None:
@@ -702,7 +709,7 @@ def write_message(us_date: str, mode: str) -> None:
     stats = json.loads((L.export / "stats.json").read_text())
     lines = []
     if mode == "likmes":
-        lines.append(f"{L.emoji} {L.title} LIKMES — nakts uz {_night_label(us_date)} ({len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g})")
+        lines.append(f"{L.emoji} {L.title} LIKMES — {_night_word().lower()} {_night_label(us_date)} ({len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g})")
         lines.append("drošība 1-100 · ~aptuvenais Optibet koeficients")
         for g in doc["games"]:
             t = (g.get("riga_time") or " ").split(" ")[-1]
@@ -722,7 +729,7 @@ def write_message(us_date: str, mode: str) -> None:
                 lines.append(f"• {c['game']}: {c['bet']} — {c['confidence']}/100 (~{c['est_odds']:.2f})")
     else:
         s = doc["summary"]
-        lines.append(f"📊 {L.title} REZULTĀTI — nakts uz {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
+        lines.append(f"📊 {L.title} REZULTĀTI — {_night_word().lower()} {_night_label(us_date)}: izgāja {s['hits']}/{s['settled']}")
         for g in doc["games"]:
             lines.append(f"\n{g.get('score') or g['away'] + ' @ ' + g['home'] + ' (vēl nav beigusies)'}")
             for p in g["picks"]:
@@ -752,7 +759,7 @@ def write_markdown(stats: dict) -> None:
     if nights:
         doc = json.loads(nights[-1].read_text())
         s = doc["summary"]
-        head = f"## Nakts uz {_night_label(doc['date'])} — {len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g}"
+        head = f"## {_night_word()} {_night_label(doc['date'])} — {len(doc['games'])} spēles, koef. ≥ {doc['min_odds']:g}"
         if s["settled"]:
             head += f" — izgāja {s['hits']}/{s['settled']}"
         out += [head, "",

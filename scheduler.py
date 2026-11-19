@@ -17,7 +17,8 @@ RIGA = ZoneInfo("Europe/Riga")
 # scheduled runs the most at :00 and :30 (sometimes by up to an hour). Results can run several
 # times safely: each pass only settles games that have finished.
 TARGETS = {
-    (21, 17): "likmes",       # nominal 21:30
+    (12, 17): "likmes_eu",    # nominal 12:30 (EuroLeague, Champions League: evening games in Europe)
+    (21, 17): "likmes",       # nominal 21:30 (NBA, NHL)
     (6, 47): "rezultati",     # nominal 07:00
     (7, 17): "rezultati",     # catch-up pass
     (7, 33): "whatsapp",      # nominal 07:30

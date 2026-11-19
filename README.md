@@ -66,6 +66,20 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 Īstā statistika sākas 18.11.2026 (novembrī 18.–30.11.), nākamie mēneši ir no 1. līdz pēdējai dienai.
 Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**.
 
+### EuroLeague un Čempionu līga
+
+- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL).
+- **Laiks:** Eiropas spēles sākas vakarā, tāpēc to likmes ir **ap 12:30** (palaišana 12:17), bet rezultāti
+  nākamajā rītā kopā ar NBA/NHL. Datums lapā ir spēļu diena.
+- **EuroLeague** (`el_bot.py`): dati no oficiālā EuroLeague avota (api-live.euroleague.net). Bukmeikeru
+  koeficientu tur nav, tāpēc varbūtības nāk no robota modeļa (reitingi, mājas laukums ~+3,4 p., atpūta),
+  kas kalibrēts ar `python el_bot.py kalibret` uz 2025-26 sezonu (uzvarētāju uzmin ~62 %). Likmes vērtē
+  pēc pamatlaika (40 min).
+- **Čempionu līga** (`cl_bot.py`): ESPN dati ar DraftKings koeficientiem (1X2 un virs/zem). Sagaidāmie vārti
+  tiek atrisināti no koeficientiem, un tad Puasona sadalījums (ar neizšķirtu korekciju, `cl_bot.py kalibret`)
+  novērtē visas 90 minūšu likmes: uzvara, neizšķirts, uzvara vai neizšķirts, handikaps, virs/zem,
+  komandas vārti, "abas komandas gūst vārtus" un kombinācijas.
+
 ### NHL
 
 Tas pats hokejam: `python nhl_bot.py likmes` / `python nhl_bot.py rezultati` (automātiski kopā ar NBA).

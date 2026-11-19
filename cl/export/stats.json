@@ -1,0 +1,38 @@
+{
+ "overall": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_overall": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_overall": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_overall": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "nights": [],
+ "calibration": [],
+ "months": [],
+ "updated_at": "2026-11-19T06:49+00:00"
+}
