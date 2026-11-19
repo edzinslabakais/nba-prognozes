@@ -1,8 +1,8 @@
 # 🏀 EuroLeague prognozes
 
-_Atjaunināts 20.11.2026 00:34 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 00:57 (Rīgas laiks)_
 
-## Spēles 19.11. — 6 spēles, koef. ≥ 2.1 — izgāja 9/15
+## Spēles 19.11. — 6 spēles, koef. ≥ 2.1 — izgāja 11/18
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -52,13 +52,13 @@ Robots: **PRS -1.2**, kopā 184.0 · gala rezultāts: **HTA 96 - 97 PRS**
 | 3 | **virs 185.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
 
 ### VIR @ PAM · 22:00
-Robots: **PAM -12.0**, kopā 178.2
+Robots: **PAM -12.0**, kopā 178.2 · gala rezultāts: **VIR 87 - 92 PAM**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 179.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **PAM zem 92.5** | 43/100 | 2.18 | 2.35 | ⏳ gaida |
-| 3 | **VIR +9.5** | 42/100 | 2.24 | 2.41 | ⏳ gaida |
+| 1 ★ | **virs 179.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
+| 2 | **PAM zem 92.5** | 43/100 | 2.18 | 2.35 | ✅ izgāja |
+| 3 | **VIR +9.5** | 42/100 | 2.24 | 2.41 | ✅ izgāja |
 
 ## 🛡 Drošās likmes — koef. ≥ 1.7
 
@@ -66,7 +66,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| VIR@PAM | **virs 175.5** | 53/100 | 1.75 | ⏳ gaida |
+| VIR@PAM | **virs 175.5** | 53/100 | 1.75 | ✅ izgāja |
 | HTA@PRS | **virs 181.5** | 53/100 | 1.76 | ✅ izgāja |
 | BAS@MUN | **zem 180.5** | 53/100 | 1.77 | ❌ neizgāja |
 
@@ -82,24 +82,24 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 2/5, vienības -0.76
+★ Visticamākās (1 katrā spēlē): uzvarēts 2/6, vienības -1.76
 
-Visas likmes kopā: izgāja 9/15 (60%), robots gaidīja ~6.5, vienības +4.20
-Drošās likmes kopā: izgāja 1/2 (50%), robots gaidīja ~1.1, vienības -0.24
+Visas likmes kopā: izgāja 11/18 (61%), robots gaidīja ~7.8, vienības +5.62
+Drošās likmes kopā: izgāja 2/3 (67%), robots gaidīja ~1.6, vienības +0.51
 Crazy Dazy kopā: izgāja 1/3 (33%), robots gaidīja ~0.7, vienības +1.00
 
 ### Mēneša statistika
 
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (19.–30.11.) | 9/15 | +4.20 | 2/5 | -0.76 | 1/2 | -0.24 | 1/3 | +1.00 |
+| Novembris 2026 (19.–30.11.) | 11/18 | +5.62 | 2/6 | -1.76 | 2/3 | +0.51 | 1/3 | +1.00 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 19.11. | 9/15 | 6.5 | +4.20 |
+| 19.11. | 11/18 | 7.8 | +5.62 |
 
 ### Vai drošība atbilst realitātei?
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 15 | 60% | 44% |
+| 40-44 | 18 | 61% | 43% |
