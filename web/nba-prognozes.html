@@ -150,7 +150,10 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .statspage details { border-top: 0; }
 .statspage details summary { padding: 6px 0; }
 .statspage .game-inner { padding: 0 14px 12px; }
-.statspage .teams { font-size: 19px; }
+.statspage .teams { font-size: 21px; }
+.statspage .period-title { flex-direction: column; align-items: flex-start; gap: 3px; }
+.statspage .period-title .rec { font-size: 12px; }
+.statspage .game-inner { display: flex; flex-direction: column; gap: 10px; }
 .league { display: inline-flex; gap: 4px; max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 3px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); align-self: flex-start; }
 .league a { font: 700 16px/1 var(--font-display); letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
 .league a[aria-current="page"] { background: var(--ink); color: var(--bg); }
@@ -802,30 +805,23 @@ function group(rows, keyFn) {
   return out;
 }
 function periodContent(g) {
+  // the totals first, then every sport on its own (shown right away when the section is opened)
   const parts = [monthTable(g ? g.agg : blankAgg())];
-  if (g && g.leagues.size) {
-    const d = el("details");
-    d.append(el("summary", null, "Pa sporta veidiem"));
+  if (g && g.leagues.size > 1) {
     const box = el("div", "per-league");
-    for (const [, L] of g.leagues) { box.append(el("h3", null, L.title), monthTable(L.agg)); }
-    d.append(box);
-    parts.push(d);
+    for (const [, L] of g.leagues) box.append(el("h3", null, L.title), monthTable(L.agg));
+    parts.push(box);
   }
   return parts;
 }
-function periodCard(title, sub, g, now) {
-  const card = el("section", "period" + (now ? " now" : ""));
-  const head = el("div", "topbox-head");
-  head.append(el("b", null, title), el("span", null, sub));
-  card.append(head, ...periodContent(g));
-  return card;
-}
-function archiveItem(key, title, sub, g) {
-  const a = g.agg.all;
-  const sum = a.settled ? [`${a.hits}/${a.settled} · ${signed(a.profit_units)}`, a.profit_units >= 0 ? "good" : "bad"] : [t("waiting"), ""];
-  const left = el("div", "teams");
+function periodItem(key, title, sub, g) {
+  const a = g ? g.agg.all : {};
+  const sum = a.settled ? [`${a.hits}/${a.settled} · ${signed(a.profit_units)}`, a.profit_units >= 0 ? "good" : "bad"]
+    : [a.picks ? `${a.picks} ${t("waiting")}` : "–", ""];
+  const left = el("div", "teams period-title");
   left.append(el("span", null, title));
-  return accordion(key, left, sub, sum, periodContent(g));
+  if (sub) left.append(el("span", "rec", sub));
+  return accordion(key, left, "", sum, periodContent(g));
 }
 function renderStatsPage() {
   for (const id of ["nights", "strip", "topbox", "month", "games", "archive", "calib", "safe", "crazy", "notes", "warn"]) {
@@ -847,23 +843,27 @@ function renderStatsPage() {
   $("sub").textContent = `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${rows.length} spēļu dienas`;
   const nodes = [
     el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: visas likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma."),
-    periodCard("Šī nedēļa", weekLabel(wk), weeks.get(wk), true),
-    periodCard("Šis mēnesis", `${monthLabelLv(mo)} · ${firstDay}.–${lastDay}.${mo.slice(5)}.`, months.get(mo), true),
-    periodCard("Šis gads", `${yr}. gads`, years.get(yr), true),
-    periodCard("Kopā", `kopš ${since}`, all.get("all"), false),
   ];
+  const current = el("div", "games");
+  current.append(
+    periodItem(`now:w`, "Šī nedēļa", weekLabel(wk), weeks.get(wk)),
+    periodItem(`now:m`, "Šis mēnesis", `${monthLabelLv(mo)} · ${firstDay}.–${lastDay}.${mo.slice(5)}.`, months.get(mo)),
+    periodItem(`now:y`, "Šis gads", `${yr}`, years.get(yr)),
+    periodItem(`now:all`, "Kopā", `kopš ${since}`, all.get("all")),
+  );
+  nodes.push(current);
   const pastWeeks = [...weeks.keys()].filter((k) => k !== wk).sort().reverse();
   const pastMonths = [...months.keys()].filter((k) => k !== mo).sort().reverse();
   if (pastWeeks.length) {
     nodes.push(el("h2", null, "Iepriekšējās nedēļas"));
     const box = el("div", "games");
-    box.append(...pastWeeks.map((k) => archiveItem(`w:${k}`, weekLabel(k), "", weeks.get(k))));
+    box.append(...pastWeeks.map((k) => periodItem(`w:${k}`, weekLabel(k), "", weeks.get(k))));
     nodes.push(box);
   }
   if (pastMonths.length) {
     nodes.push(el("h2", null, "Iepriekšējie mēneši"));
     const box = el("div", "games");
-    box.append(...pastMonths.map((k) => archiveItem(`m:${k}`, monthLabelLv(k), "", months.get(k))));
+    box.append(...pastMonths.map((k) => periodItem(`m:${k}`, monthLabelLv(k), "", months.get(k))));
     nodes.push(box);
   }
   page.replaceChildren(...nodes);
