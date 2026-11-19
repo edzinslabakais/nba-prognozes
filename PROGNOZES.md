@@ -1,50 +1,50 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 19.11.2026 09:42 (Rīgas laiks)_
+_Atjaunināts 19.11.2026 22:13 (Rīgas laiks)_
 
 ## Nakts uz 20.11. — 4 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### POR @ MIL · 03:00
-Robots: **POR -9.5**, kopā 225.5 · bukmeikeri: POR -9.5, kopā 225.5
+Robots: **POR -11.5**, kopā 230.5 · bukmeikeri: POR -11.5, kopā 230.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **POR -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **MIL virs 109.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **POR -13.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **zem 226.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **POR zem 118.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: POR: Robert Williams III (Out) -1.0; POR: Deni Avdija (Day-To-Day) -0.8
+Savainojumi/sastāvs: MIL: Kyle Kuzma (Out) -0.9; POR: Robert Williams III (Out) -1.0; POR: Deni Avdija (Day-To-Day) -0.8
 
 ### NY @ MIN · 03:00
-Robots: **NY -1.5**, kopā 217.5 · bukmeikeri: NY -1.5, kopā 217.5
+Robots: **NY -1.5**, kopā 216.5 · bukmeikeri: NY -1.5, kopā 216.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **zem 212.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **MIN -0.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIN virs 109.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 3 | **NY zem 106.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
 ### GS @ MEM · 03:00
-Robots: **MEM -8.5**, kopā 225.5 · bukmeikeri: MEM -8.5, kopā 225.5
+Robots: **MEM -5.5**, kopā 224.5 · bukmeikeri: MEM -5.5, kopā 224.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MEM -10.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **MEM zem 114.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **zem 220.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **MEM -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **MEM zem 112.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: GS: Stephen Curry (Out) -2.0; GS: Brandon Williams (Out) -0.5
+Savainojumi/sastāvs: MEM: Ty Jerome (Out) -1.5; MEM: Zach Edey (Out) -0.7; GS: Stephen Curry (Out) -2.0; GS: Brandon Williams (Out) -0.5
 
 ### LAC @ SA · 03:00
-Robots: **SA -16.5**, kopā 225.5 · bukmeikeri: SA -16.5, kopā 225.5
+Robots: **SA -15.5**, kopā 224.5 · bukmeikeri: SA -15.5, kopā 224.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SA -18.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **SA zem 118.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 1 ★ | **SA -17.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **zem 220.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **SA zem 117.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: SA: Dylan Harper (Out) -2.0
 
@@ -54,9 +54,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| NY@MIN | **MIN virs 106.5** | 54/100 | 1.74 | ⏳ gaida |
-| GS@MEM | **MEM virs 115.5** | 53/100 | 1.75 | ⏳ gaida |
-| POR@MIL | **MIL zem 108.5** | 53/100 | 1.75 | ⏳ gaida |
+| NY@MIN | **NY zem 109.5** | 54/100 | 1.74 | ⏳ gaida |
+| GS@MEM | **MEM virs 113.5** | 53/100 | 1.75 | ⏳ gaida |
+| LAC@SA | **SA virs 118.5** | 53/100 | 1.75 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -64,9 +64,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| POR@MIL | **POR 21+** | 22/100 | 4.27 | 4.59 | ⏳ gaida |
-| GS@MEM | **GS -1.5** | 23/100 | 4.02 | 4.33 | ⏳ gaida |
-| LAC@SA | **SA -26.5** | 23/100 | 4.08 | 4.39 | ⏳ gaida |
+| LAC@SA | **LAC virs 112.5** | 23/100 | 4.01 | 4.32 | ⏳ gaida |
+| POR@MIL | **MIL zem 100.5** | 23/100 | 4.04 | 4.34 | ⏳ gaida |
+| GS@MEM | **MEM -15.5** | 23/100 | 4.05 | 4.35 | ⏳ gaida |
 
 ## Statistika
 
