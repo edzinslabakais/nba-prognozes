@@ -1,19 +1,22 @@
 name: NBA prognozes
 
-# Rīgas laikā: LIKMES 21:30 · REZULTĀTI 07:00 · WhatsApp statistika 07:30 · REZULTĀTI vēlreiz 08:30
-# (8:30 noslēdz vēlās rietumkrasta spēles, kas ziemā beidzas pēc 7:00).
+# Rīgas laikā: LIKMES ~21:30 · REZULTĀTI ~07:00 (+07:17) · WhatsApp ~07:30 · REZULTĀTI vēlreiz ~08:30.
+# Laiki ir nedaudz pirms nominālā un ne uz pilnu/pusstundu, jo GitHub tad kavē visvairāk (līdz ~1 h).
 # GitHub cron ir UTC un nezina vasaras laiku, tāpēc katrs laiks ir ieplānots divreiz (UTC+3 / UTC+2);
 # scheduler.py palaiž tikai to, kas tajā dienā atbilst Rīgas laikam.
 # GitHub ieplānotie darbi mēdz sākties ar 5-20 min nokavēšanos.
 on:
   schedule:
-    - cron: "30 18 * * *"  # 21:30 Rīgā vasarā
-    - cron: "30 19 * * *"  # 21:30 Rīgā ziemā
-    - cron: "0 4 * * *"    # 07:00 Rīgā vasarā
-    - cron: "0 5 * * *"    # 07:00 Rīgā ziemā
-    - cron: "30 4 * * *"   # 07:30 Rīgā vasarā
-    - cron: "30 5 * * *"   # 07:30 Rīgā ziemā / 08:30 vasarā
-    - cron: "30 6 * * *"   # 08:30 Rīgā ziemā
+    # Rīgas laiks ziemā = UTC+2, vasarā = UTC+3; scheduler.py izvēlas pareizo pēc datuma.
+    - cron: "17 19 * * *"  # 21:17 ziemā  -> LIKMES
+    - cron: "17 18 * * *"  # 21:17 vasarā -> LIKMES
+    - cron: "47 4 * * *"   # 06:47 ziemā  -> REZULTĀTI
+    - cron: "47 3 * * *"   # 06:47 vasarā -> REZULTĀTI
+    - cron: "17 5 * * *"   # 07:17 ziemā / 08:17 vasarā -> REZULTĀTI
+    - cron: "17 4 * * *"   # 07:17 vasarā -> REZULTĀTI
+    - cron: "33 5 * * *"   # 07:33 ziemā  -> WhatsApp
+    - cron: "33 4 * * *"   # 07:33 vasarā -> WhatsApp
+    - cron: "17 6 * * *"   # 08:17 ziemā  -> REZULTĀTI
   workflow_dispatch:
     inputs:
       komanda:

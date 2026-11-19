@@ -9,15 +9,19 @@ Prognozē katras NBA spēles uzvarētāju, uzvaras varbūtību, rezultātu un pu
 pip install -r requirements.txt
 ```
 
-## Automātika: vakarā 21:30, no rīta 07:00 / 07:30 / 08:30
+## Automātika: vakarā ~21:30, no rīta ~07:00 / ~07:30 / ~08:30
 
 GitHub Actions (`.github/workflows/nba-prognozes.yml`) pats palaiž robotu jūsu repozitorijā.
 Nekas nav jādara un nekas nav jāraksta:
 
 - **21:30 (Rīgas laiks): LIKMES.** 3 likmes katrai nakts spēlei.
-- **07:00: REZULTĀTI.** Kuras likmes izgāja, plus kopējā statistika.
+- **~07:00: REZULTĀTI** (palaišana 06:47 un vēlreiz 07:17). Kuras likmes izgāja, plus kopējā statistika.
 - **07:30: WhatsApp ziņa** ar statistikas skaitļiem (nakts, mēnesis, kopā). Iestatīšana aprakstīta zemāk.
-- **08:30: REZULTĀTI vēlreiz.** Noslēdz vēlās rietumkrasta spēles, kas ziemā beidzas pēc 7:00.
+- **~08:30: REZULTĀTI vēlreiz** (palaišana 08:17). Noslēdz vēlās rietumkrasta spēles, kas ziemā beidzas pēc 7:00.
+
+GitHub ieplānotos darbus mēdz sākt vēlāk, dažreiz pat līdz 1 stundai, īpaši ap pilnu stundu vai
+pusstundu. Tāpēc palaišana ir ieplānota dažas minūtes pirms nominālā laika uz "nepāra" minūtēm, un
+rezultāti tiek pārbaudīti vairākas reizes. Vajadzības gadījumā: **Actions → Run workflow**.
 
 ### WhatsApp ziņa (CallMeBot, bezmaksas)
 
