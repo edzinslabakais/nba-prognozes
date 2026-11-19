@@ -21,7 +21,7 @@
     "NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.05",
     "MTL: vārtsargs Jacob Fowler (apstiprināts) +0.14"
    ],
-   "score": null,
+   "score": "MTL 3 - 2 NJ",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -31,7 +31,8 @@
      "fair_odds": 2.44,
      "est_odds": 2.27,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "MTL 3 - 2 NJ",
      "top": true
     },
     {
@@ -42,7 +43,8 @@
      "fair_odds": 2.46,
      "est_odds": 2.29,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MTL 3 - 2 NJ",
      "top": false
     },
     {
@@ -53,7 +55,8 @@
      "fair_odds": 2.63,
      "est_odds": 2.44,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MTL 3 - 2 NJ",
      "top": false
     }
    ]
@@ -76,7 +79,7 @@
     "DET: vārtsargs Daniil Tarasov (apstiprināts) +0.17",
     "BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03"
    ],
-   "score": null,
+   "score": "BOS 4 - 1 DET",
    "picks": [
     {
      "category": "komandas vārti",
@@ -86,7 +89,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 4 - 1 DET",
      "top": true
     },
     {
@@ -97,7 +101,8 @@
      "fair_odds": 2.65,
      "est_odds": 2.46,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 4 - 1 DET",
      "top": false
     },
     {
@@ -108,7 +113,8 @@
      "fair_odds": 2.75,
      "est_odds": 2.55,
      "confidence": 36,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 4 - 1 DET",
      "top": false
     }
    ]
@@ -142,6 +148,7 @@
      "est_odds": 2.23,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -153,6 +160,7 @@
      "est_odds": 2.27,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -164,6 +172,7 @@
      "est_odds": 2.38,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -171,11 +180,11 @@
  ],
  "summary": {
   "picks": 9,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.38,
+  "profit_units": -3.73
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -188,8 +197,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.04,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "BOS 4 - 1 DET"
   },
   {
    "game_id": "401892741",
@@ -212,25 +221,25 @@
    "confidence": 23,
    "fair_odds": 4.44,
    "est_odds": 4.13,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "MTL 3 - 2 NJ"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 2,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.46,
+  "profit_units": 2.04
  },
  "top_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 2,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.85,
+  "profit_units": 0.27
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -259,8 +268,8 @@
    "p_model": 0.5433,
    "fair_odds": 1.97,
    "est_odds": 1.83,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "MTL 3 - 2 NJ"
   },
   {
    "game_id": "401892739",
@@ -273,16 +282,16 @@
    "p_model": 0.5091,
    "fair_odds": 2.17,
    "est_odds": 2.02,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "BOS 4 - 1 DET"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 2,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.97,
+  "profit_units": 1.85
  }
 }

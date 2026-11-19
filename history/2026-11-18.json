@@ -252,7 +252,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 124 - 121 CLE"
   },
   {
    "game_id": "401910007",
@@ -267,7 +268,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 124 - 121 CLE"
   },
   {
    "game_id": "401910007",
@@ -282,7 +284,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 124 - 121 CLE"
   },
   {
    "game_id": "401910008",
@@ -297,7 +300,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "HOU 119 - 104 IND"
   },
   {
    "game_id": "401910008",
@@ -312,7 +316,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "HOU 119 - 104 IND"
   },
   {
    "game_id": "401910008",
@@ -327,7 +332,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "HOU 119 - 104 IND"
   },
   {
    "game_id": "401910009",
@@ -342,7 +348,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.1,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 130 - 137 MIA"
   },
   {
    "game_id": "401910009",
@@ -357,7 +364,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 130 - 137 MIA"
   },
   {
    "game_id": "401910009",
@@ -372,7 +380,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 130 - 137 MIA"
   },
   {
    "game_id": "401910010",
@@ -387,7 +396,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHI 121 - 116 ORL"
   },
   {
    "game_id": "401910010",
@@ -402,7 +412,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 121 - 116 ORL"
   },
   {
    "game_id": "401910010",
@@ -417,7 +428,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 121 - 116 ORL"
   },
   {
    "game_id": "401910011",
@@ -432,7 +444,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 137 - 107 BKN"
   },
   {
    "game_id": "401910011",
@@ -447,7 +460,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 137 - 107 BKN"
   },
   {
    "game_id": "401910011",
@@ -462,7 +476,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 137 - 107 BKN"
   },
   {
    "game_id": "401910012",
@@ -477,7 +492,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   },
   {
    "game_id": "401910012",
@@ -492,7 +508,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   },
   {
    "game_id": "401910012",
@@ -507,7 +524,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   },
   {
    "game_id": "401910013",
@@ -522,7 +540,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910013",
@@ -537,7 +556,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910013",
@@ -552,7 +572,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910014",
@@ -567,7 +588,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910014",
@@ -582,7 +604,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910014",
@@ -597,7 +620,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910016",
@@ -612,7 +636,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 94 - 116 DAL"
   },
   {
    "game_id": "401910016",
@@ -627,7 +652,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 94 - 116 DAL"
   },
   {
    "game_id": "401910016",
@@ -642,7 +668,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 94 - 116 DAL"
   },
   {
    "game_id": "401910015",
@@ -657,7 +684,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 101 - 105 DEN"
   },
   {
    "game_id": "401910015",
@@ -672,7 +700,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 101 - 105 DEN"
   },
   {
    "game_id": "401910015",
@@ -687,7 +716,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 101 - 105 DEN"
   },
   {
    "game_id": "401910017",
@@ -702,7 +732,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 109 - 97 LAL"
   },
   {
    "game_id": "401910017",
@@ -717,7 +748,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 109 - 97 LAL"
   },
   {
    "game_id": "401910017",
@@ -732,7 +764,8 @@
    "fair_odds": 2.34,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 109 - 97 LAL"
   },
   {
    "game_id": "401910018",
@@ -747,7 +780,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PHX 128 - 107 SAC"
   },
   {
    "game_id": "401910018",
@@ -762,7 +796,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PHX 128 - 107 SAC"
   },
   {
    "game_id": "401910018",
@@ -777,7 +812,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHX 128 - 107 SAC"
   }
  ],
  "crazy": [
@@ -792,7 +828,8 @@
    "fair_odds": 4.51,
    "est_odds": 4.2,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910014",
@@ -805,7 +842,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910012",
@@ -818,7 +856,8 @@
    "fair_odds": 4.52,
    "est_odds": 4.2,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   }
  ],
  "safe": [
@@ -835,7 +874,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 68,
-   "result": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910013",
@@ -850,7 +890,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 68,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910012",
@@ -865,7 +906,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 65,
-   "result": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   },
   {
    "game_id": "401910010",
@@ -880,7 +922,8 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 121 - 116 ORL"
   },
   {
    "game_id": "401910016",
@@ -895,7 +938,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 94 - 116 DAL"
   }
  ]
 }

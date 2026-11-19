@@ -23,7 +23,7 @@
     "MEM: Ty Jerome (Out) -1.8",
     "MEM: Isaiah Stewart (Out) -0.7"
    ],
-   "score": null,
+   "score": "MEM 124 - 121 CLE",
    "picks": [
     {
      "category": "komandas punkti",
@@ -33,7 +33,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 124 - 121 CLE",
      "top": false
     },
     {
@@ -44,7 +45,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 124 - 121 CLE",
      "top": false
     },
     {
@@ -55,7 +57,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 124 - 121 CLE",
      "top": true
     }
    ]
@@ -78,7 +81,7 @@
     "IND: Ivica Zubac (spēlēja 6/10 pēdējās) +0.4",
     "HOU: Amen Thompson (Day-To-Day) -0.5"
    ],
-   "score": null,
+   "score": "HOU 119 - 104 IND",
    "picks": [
     {
      "category": "starpība",
@@ -88,7 +91,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "HOU 119 - 104 IND",
      "top": true
     },
     {
@@ -99,7 +103,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "HOU 119 - 104 IND",
      "top": false
     },
     {
@@ -110,7 +115,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "HOU 119 - 104 IND",
      "top": false
     }
    ]
@@ -132,7 +138,7 @@
    "injuries": [
     "MIL: Ryan Rollins (Out) -0.6"
    ],
-   "score": null,
+   "score": "MIL 130 - 137 MIA",
    "picks": [
     {
      "category": "starpība",
@@ -142,7 +148,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 130 - 137 MIA",
      "top": true
     },
     {
@@ -153,7 +160,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 130 - 137 MIA",
      "top": false
     },
     {
@@ -164,7 +172,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 130 - 137 MIA",
      "top": false
     }
    ]
@@ -187,7 +196,7 @@
     "PHI: Jaylen Brown (Out) -1.9",
     "PHI: LeBron James (spēlēja 7/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "PHI 121 - 116 ORL",
    "picks": [
     {
      "category": "starpība",
@@ -197,7 +206,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PHI 121 - 116 ORL",
      "top": false
     },
     {
@@ -208,7 +218,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHI 121 - 116 ORL",
      "top": true
     },
     {
@@ -219,7 +230,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHI 121 - 116 ORL",
      "top": false
     }
    ]
@@ -242,7 +254,7 @@
     "CHI: Caleb Wilson (Out) -0.9",
     "CHI: Nic Claxton (spēlēja 4/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "CHI 137 - 107 BKN",
    "picks": [
     {
      "category": "kopā",
@@ -252,7 +264,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "CHI 137 - 107 BKN",
      "top": true
     },
     {
@@ -263,7 +276,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CHI 137 - 107 BKN",
      "top": false
     },
     {
@@ -274,7 +288,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CHI 137 - 107 BKN",
      "top": false
     }
    ]
@@ -298,7 +313,7 @@
     "TOR: RJ Barrett (Day-To-Day) -0.7",
     "WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6"
    ],
-   "score": null,
+   "score": "WSH 103 - 99 TOR",
    "picks": [
     {
      "category": "starpība",
@@ -308,7 +323,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WSH 103 - 99 TOR",
      "top": false
     },
     {
@@ -319,7 +335,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WSH 103 - 99 TOR",
      "top": true
     },
     {
@@ -330,7 +347,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WSH 103 - 99 TOR",
      "top": false
     }
    ]
@@ -356,7 +374,7 @@
     "DET: Duncan Robinson (Out) -1.3",
     "DET: Cade Cunningham (Day-To-Day) -1.2"
    ],
-   "score": null,
+   "score": "DET 122 - 109 NO",
    "picks": [
     {
      "category": "starpība",
@@ -366,7 +384,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DET 122 - 109 NO",
      "top": false
     },
     {
@@ -377,7 +396,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DET 122 - 109 NO",
      "top": true
     },
     {
@@ -388,7 +408,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DET 122 - 109 NO",
      "top": false
     }
    ]
@@ -412,7 +433,7 @@
     "ATL: Kingston Flemings (Out) -0.4",
     "ATL: Corey Kispert (spēlēja 5/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "ATL 117 - 112 OKC",
    "picks": [
     {
      "category": "kopā",
@@ -422,7 +443,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ATL 117 - 112 OKC",
      "top": false
     },
     {
@@ -433,7 +455,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ATL 117 - 112 OKC",
      "top": false
     },
     {
@@ -444,7 +467,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ATL 117 - 112 OKC",
      "top": true
     }
    ]
@@ -468,7 +492,7 @@
     "GS: Stephen Curry (Out) -2.3",
     "GS: Brandon Williams (Out) -0.5"
    ],
-   "score": null,
+   "score": "GS 94 - 116 DAL",
    "picks": [
     {
      "category": "komandas punkti",
@@ -478,7 +502,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "GS 94 - 116 DAL",
      "top": false
     },
     {
@@ -489,7 +514,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "GS 94 - 116 DAL",
      "top": false
     },
     {
@@ -500,7 +526,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "GS 94 - 116 DAL",
      "top": true
     }
    ]
@@ -522,7 +549,7 @@
    "injuries": [
     "BOS: Paul George (spēlēja 8/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "BOS 101 - 105 DEN",
    "picks": [
     {
      "category": "komandas punkti",
@@ -532,7 +559,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "BOS 101 - 105 DEN",
      "top": true
     },
     {
@@ -543,7 +571,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "BOS 101 - 105 DEN",
      "top": false
     },
     {
@@ -554,7 +583,8 @@
      "fair_odds": 2.41,
      "est_odds": 2.24,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 101 - 105 DEN",
      "top": false
     }
    ]
@@ -578,7 +608,7 @@
     "LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4",
     "UTAH: Lauri Markkanen (Out) -0.5"
    ],
-   "score": null,
+   "score": "UTAH 109 - 97 LAL",
    "picks": [
     {
      "category": "starpība",
@@ -588,7 +618,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTAH 109 - 97 LAL",
      "top": false
     },
     {
@@ -599,7 +630,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTAH 109 - 97 LAL",
      "top": true
     },
     {
@@ -610,7 +642,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTAH 109 - 97 LAL",
      "top": false
     }
    ]
@@ -632,7 +665,7 @@
    "injuries": [
     "PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "PHX 128 - 107 SAC",
    "picks": [
     {
      "category": "kopā",
@@ -642,7 +675,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHX 128 - 107 SAC",
      "top": true
     },
     {
@@ -653,7 +687,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHX 128 - 107 SAC",
      "top": false
     },
     {
@@ -664,7 +699,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PHX 128 - 107 SAC",
      "top": false
     }
    ]
@@ -672,11 +708,11 @@
  ],
  "summary": {
   "picks": 36,
-  "settled": 0,
-  "hits": 0,
+  "settled": 36,
+  "hits": 14,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 15.6,
+  "profit_units": -6.05
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -689,8 +725,8 @@
    "confidence": 22,
    "fair_odds": 4.51,
    "est_odds": 4.2,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910014",
@@ -701,8 +737,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910012",
@@ -713,25 +749,25 @@
    "confidence": 22,
    "fair_odds": 4.52,
    "est_odds": 4.2,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.68,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 12,
-  "settled": 0,
-  "hits": 0,
+  "settled": 12,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 5.21,
+  "profit_units": 2.98
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -746,8 +782,8 @@
    "p_model": 0.6802,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "ATL 117 - 112 OKC"
   },
   {
    "game_id": "401910013",
@@ -760,8 +796,8 @@
    "p_model": 0.6783,
    "fair_odds": 1.92,
    "est_odds": 1.78,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "DET 122 - 109 NO"
   },
   {
    "game_id": "401910012",
@@ -774,8 +810,8 @@
    "p_model": 0.6529,
    "fair_odds": 1.92,
    "est_odds": 1.78,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "WSH 103 - 99 TOR"
   },
   {
    "game_id": "401910010",
@@ -788,8 +824,8 @@
    "p_model": 0.6183,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "PHI 121 - 116 ORL"
   },
   {
    "game_id": "401910016",
@@ -802,16 +838,16 @@
    "p_model": 0.6182,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "GS 94 - 116 DAL"
   }
  ],
  "safe_summary": {
   "picks": 5,
-  "settled": 0,
-  "hits": 0,
+  "settled": 5,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.65,
+  "profit_units": -1.5
  }
 }

@@ -75,7 +75,8 @@
    "fair_odds": 2.44,
    "est_odds": 2.27,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 3 - 2 NJ"
   },
   {
    "game_id": "401892740",
@@ -90,7 +91,8 @@
    "fair_odds": 2.46,
    "est_odds": 2.29,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "MTL 3 - 2 NJ"
   },
   {
    "game_id": "401892740",
@@ -105,7 +107,8 @@
    "fair_odds": 2.63,
    "est_odds": 2.44,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "MTL 3 - 2 NJ"
   },
   {
    "game_id": "401892739",
@@ -120,7 +123,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 4 - 1 DET"
   },
   {
    "game_id": "401892739",
@@ -135,7 +139,8 @@
    "fair_odds": 2.65,
    "est_odds": 2.46,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 4 - 1 DET"
   },
   {
    "game_id": "401892739",
@@ -150,7 +155,8 @@
    "fair_odds": 2.75,
    "est_odds": 2.55,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 4 - 1 DET"
   },
   {
    "game_id": "401892741",
@@ -210,7 +216,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 4 - 1 DET"
   },
   {
    "game_id": "401892741",
@@ -236,7 +243,8 @@
    "fair_odds": 4.44,
    "est_odds": 4.13,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "MTL 3 - 2 NJ"
   }
  ],
  "safe": [
@@ -268,7 +276,8 @@
    "est_odds": 1.83,
    "confidence": 51,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 3 - 2 NJ"
   },
   {
    "game_id": "401892739",
@@ -283,7 +292,8 @@
    "est_odds": 2.02,
    "confidence": 46,
    "data_conf": 51,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 4 - 1 DET"
   }
  ]
 }
