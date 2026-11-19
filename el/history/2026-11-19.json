@@ -114,7 +114,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "DUB 80 - 74 TEL"
   },
   {
    "game_id": "E2026_122",
@@ -129,7 +130,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "DUB 80 - 74 TEL"
   },
   {
    "game_id": "E2026_122",
@@ -144,7 +146,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "DUB 80 - 74 TEL"
   },
   {
    "game_id": "E2026_121",
@@ -159,7 +162,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PAN 87 - 72 ZAL"
   },
   {
    "game_id": "E2026_121",
@@ -174,7 +178,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "PAN 87 - 72 ZAL"
   },
   {
    "game_id": "E2026_121",
@@ -189,7 +194,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "PAN 87 - 72 ZAL"
   },
   {
    "game_id": "E2026_124",
@@ -204,7 +210,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN"
   },
   {
    "game_id": "E2026_124",
@@ -219,7 +226,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN"
   },
   {
    "game_id": "E2026_124",
@@ -234,7 +242,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BAS 81 - 100 MUN"
   },
   {
    "game_id": "E2026_123",
@@ -397,7 +406,8 @@
    "fair_odds": 4.3,
    "est_odds": 4.0,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN"
   },
   {
    "game_id": "E2026_122",
@@ -410,7 +420,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "DUB 80 - 74 TEL"
   }
  ],
  "safe": [
@@ -460,7 +471,8 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN"
   }
  ]
 }

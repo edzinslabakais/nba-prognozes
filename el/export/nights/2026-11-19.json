@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "DUB 80 - 74 TEL",
    "picks": [
     {
      "category": "komandas punkti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "DUB 80 - 74 TEL",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "DUB 80 - 74 TEL",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "DUB 80 - 74 TEL",
      "top": false
     }
    ]
@@ -70,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "PAN 87 - 72 ZAL",
    "picks": [
     {
      "category": "kopā",
@@ -80,7 +83,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PAN 87 - 72 ZAL",
      "top": true
     },
     {
@@ -91,7 +95,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "PAN 87 - 72 ZAL",
      "top": false
     },
     {
@@ -102,7 +107,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "PAN 87 - 72 ZAL",
      "top": false
     }
    ]
@@ -122,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "BAS 81 - 100 MUN",
    "picks": [
     {
      "category": "komandas punkti",
@@ -132,7 +138,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BAS 81 - 100 MUN",
      "top": true
     },
     {
@@ -143,7 +150,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BAS 81 - 100 MUN",
      "top": false
     },
     {
@@ -154,7 +162,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "BAS 81 - 100 MUN",
      "top": false
     }
    ]
@@ -185,6 +194,7 @@
      "est_odds": 2.12,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -196,6 +206,7 @@
      "est_odds": 2.13,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -207,6 +218,7 @@
      "est_odds": 2.15,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -237,6 +249,7 @@
      "est_odds": 2.12,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -248,6 +261,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -259,6 +273,7 @@
      "est_odds": 2.15,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -289,6 +304,7 @@
      "est_odds": 2.12,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -300,6 +316,7 @@
      "est_odds": 2.18,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -311,6 +328,7 @@
      "est_odds": 2.24,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -318,11 +336,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 0,
-  "hits": 0,
+  "settled": 9,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.93,
+  "profit_units": 3.8
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -349,8 +367,8 @@
    "confidence": 23,
    "fair_odds": 4.3,
    "est_odds": 4.0,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN",
    "away_short": "Baskonia",
    "home_short": "Bayern Munich"
   },
@@ -363,27 +381,27 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "DUB 80 - 74 TEL",
    "away_short": "Dubai",
    "home_short": "Maccabi"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 2,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.46,
+  "profit_units": -2
  },
  "top_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.31,
+  "profit_units": -0.88
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -430,18 +448,18 @@
    "p_model": 0.5266,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "BAS 81 - 100 MUN",
    "away_short": "Baskonia",
    "home_short": "Bayern Munich"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.53,
+  "profit_units": -1
  }
 }
