@@ -171,7 +171,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892741",
@@ -186,7 +187,8 @@
    "fair_odds": 2.45,
    "est_odds": 2.27,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892741",
@@ -201,7 +203,8 @@
    "fair_odds": 2.56,
    "est_odds": 2.38,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 1 - 4 UTA"
   }
  ],
  "crazy": [
@@ -230,7 +233,8 @@
    "fair_odds": 4.37,
    "est_odds": 4.07,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892740",
@@ -261,7 +265,8 @@
    "est_odds": 1.81,
    "confidence": 52,
    "data_conf": 58,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892740",

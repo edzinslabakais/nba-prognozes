@@ -1,6 +1,6 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 19.11.2026 07:59 (Rīgas laiks)_
+_Atjaunināts 19.11.2026 09:02 (Rīgas laiks)_
 
 ## Nakts uz 20.11. — 12 spēles, koef. ≥ 2.1
 
@@ -160,25 +160,25 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 1/2, vienības +0.27
+★ Visticamākās (1 katrā spēlē): uzvarēts 1/3, vienības -0.73
 
-Visas likmes kopā: izgāja 1/6 (17%), robots gaidīja ~2.4, vienības -3.73
-Drošās likmes kopā: izgāja 2/2 (100%), robots gaidīja ~1.0, vienības +1.85
-Crazy Dazy kopā: izgāja 1/2 (50%), robots gaidīja ~0.5, vienības +2.04
+Visas likmes kopā: izgāja 1/9 (11%), robots gaidīja ~3.6, vienības -6.73
+Drošās likmes kopā: izgāja 2/3 (67%), robots gaidīja ~1.5, vienības +0.85
+Crazy Dazy kopā: izgāja 2/3 (67%), robots gaidīja ~0.7, vienības +5.11
 
 ### Mēneša statistika
 
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 1/6 | -3.73 | 1/2 | +0.27 | 2/2 | +1.85 | 1/2 | +2.04 |
+| Novembris 2026 (18.–30.11.) | 1/9 | -6.73 | 1/3 | -0.73 | 2/3 | +0.85 | 2/3 | +5.11 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 19.11. | 1/6 | 2.4 | -3.73 |
+| 19.11. | 1/9 | 3.6 | -6.73 |
 
 ### Vai drošība atbilst realitātei?
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 35-39 | 3 | 0% | 37% |
-| 40-44 | 3 | 33% | 42% |
+| 35-39 | 4 | 0% | 38% |
+| 40-44 | 5 | 20% | 42% |

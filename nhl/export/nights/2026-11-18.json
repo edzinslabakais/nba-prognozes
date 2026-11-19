@@ -137,7 +137,7 @@
     "UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.02",
     "COL: vārtsargs Mackenzie Blackwood (apstiprināts) +0.05"
    ],
-   "score": null,
+   "score": "COL 1 - 4 UTA",
    "picks": [
     {
      "category": "kopā",
@@ -147,8 +147,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 1 - 4 UTA",
      "top": true
     },
     {
@@ -159,8 +159,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.27,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 1 - 4 UTA",
      "top": false
     },
     {
@@ -171,8 +171,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 1 - 4 UTA",
      "top": false
     }
    ]
@@ -180,11 +180,11 @@
  ],
  "summary": {
   "picks": 9,
-  "settled": 6,
+  "settled": 9,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 2.38,
-  "profit_units": -3.73
+  "expected_hits": 3.6,
+  "profit_units": -6.73
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -209,8 +209,8 @@
    "confidence": 23,
    "fair_odds": 4.37,
    "est_odds": 4.07,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892740",
@@ -227,19 +227,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 2,
-  "hits": 1,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0.46,
-  "profit_units": 2.04
+  "expected_hits": 0.68,
+  "profit_units": 5.11
  },
  "top_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.85,
-  "profit_units": 0.27
+  "expected_hits": 1.27,
+  "profit_units": -0.73
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -254,8 +254,8 @@
    "p_model": 0.5771,
    "fair_odds": 1.94,
    "est_odds": 1.81,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "COL 1 - 4 UTA"
   },
   {
    "game_id": "401892740",
@@ -288,10 +288,10 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 0.97,
-  "profit_units": 1.85
+  "expected_hits": 1.48,
+  "profit_units": 0.85
  }
 }
