@@ -80,6 +80,12 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
   novērtē visas 90 minūšu likmes: uzvara, neizšķirts, uzvara vai neizšķirts, handikaps, virs/zem,
   komandas vārti, "abas komandas gūst vārtus" un kombinācijas.
 
+### Kopējā statistika
+
+Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas
+likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Pieejama šī nedēļa (pirmdiena–svētdiena), šis mēnesis,
+šis gads un kopā, katram ar sadalījumu pa sporta veidiem, kā arī iepriekšējo nedēļu un mēnešu arhīvs.
+
 ### NHL
 
 Tas pats hokejam: `python nhl_bot.py likmes` / `python nhl_bot.py rezultati` (automātiski kopā ar NBA).

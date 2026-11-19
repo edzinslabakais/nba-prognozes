@@ -36,6 +36,7 @@ STATIC_LOADER = """function start() {
   try { data = JSON.parse(document.getElementById("nba-data").textContent); } catch (e) { /* keep empty */ }
   state.nights = data.nights || [];
   state.stats = data.stats || null;
+  state.combined = data.combined || [];
   render();
 }
 start();"""
@@ -50,7 +51,7 @@ def load_data(export: Path, max_nights: int = 60) -> dict:
 def nav(current: str, depth: int) -> str:
     up = "../" * depth
     links = []
-    for key, label, _, _, _, href, _, _ in LEAGUES:
+    for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
         links.append(f'<a href="{up}{href or "./"}"{cur}>{label}</a>')
     return '<nav class="league" aria-label="Līga">' + "".join(links) + "</nav>"
@@ -65,14 +66,33 @@ CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc
 NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE"}
 
 
-def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int, day_mode: bool = False,
-              picks_time=(21, 30)) -> Path:
+def combined_data() -> dict:
+    """Every league's per-night summaries for the overall statistics page (grouped by week/month/year there)."""
+    rows, updated = [], []
+    for key, label, _, export, _, _, _, _ in LEAGUES:
+        f = export / "stats.json"
+        if not f.exists():
+            continue
+        s = json.loads(f.read_text())
+        updated.append(s.get("updated_at") or "")
+        for n in s.get("nights", []):
+            rows.append({"league": key, "title": label, "date": n["date"],
+                         "all": {k: n.get(k, 0) for k in ("picks", "settled", "hits", "pushes", "expected_hits", "profit_units")},
+                         "top": n.get("top"), "safe": n.get("safe"), "crazy": n.get("crazy")})
+    return {"nights": [], "stats": {"updated_at": max(updated) if updated else None}, "combined": rows}
+
+
+def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: int, day_mode: bool = False,
+              picks_time=(21, 30), data_override: dict | None = None) -> Path:
     src = TEMPLATE.read_text()
     head, body = src.split('<div class="wrap">', 1)
     head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">', "")
     head = head.replace("<title>NBA prognozes</title>", f"<title>{title} prognozes</title>")
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
+    if key == "stats":
+        head = head.replace("<title>Statistika prognozes</title>", "<title>Kopējā statistika</title>")
+        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Kopējā <span>statistika</span></h1>')
     body = body.replace('<h1>NBA <span data-i18n="h1">', f'<h1>{title} <span data-i18n="h1">')
     body = body.replace('const LEAGUE_KEY = "nba"; const DAY_MODE = false; const LEAGUE_TITLE = "NBA";',
                         f'const LEAGUE_KEY = "{key}"; const DAY_MODE = {"true" if day_mode else "false"}; '
@@ -87,7 +107,8 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int, day
     body, n = re.subn(r"async function start\(\) \{.*?\n\}\nstart\(\);", lambda _: STATIC_LOADER, body, flags=re.S)
     if n != 1:
         raise SystemExit("site.py: neizdevās atrast start() funkciju veidnē")
-    data = json.dumps(load_data(export), ensure_ascii=False).replace("</", "<\\/")
+    data = json.dumps(data_override if data_override is not None else load_data(export),
+                      ensure_ascii=False).replace("</", "<\\/")
     html = (
         "<!doctype html>\n<html lang=\"lv\">\n<head>\n<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n"
@@ -107,8 +128,10 @@ def build_one(key: str, title: str, export: Path, out_dir: Path, depth: int, day
 def build() -> list[Path]:
     OUT.mkdir(exist_ok=True)
     (OUT / ".nojekyll").write_text("")
-    return [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
-            for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
+    pages = [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
+             for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
+    pages.append(build_one("stats", "Statistika", None, OUT / "stats", 1, data_override=combined_data()))
+    return pages
 
 
 if __name__ == "__main__":

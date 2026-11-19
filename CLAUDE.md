@@ -54,5 +54,8 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - EuroLeague: `el_bot.py` (oficiālais EuroLeague avots, bez koeficientiem, `el_params.json`), lapa `site/el/`
 - Čempionu līga: `cl_bot.py` (ESPN + koeficienti, 90 min. likmes, `cl_params.json`), lapa `site/cl/`
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
+  Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl`.
+- Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas
+  kopā, 4 grupas (visas, ★, drošās, Crazy Dazy) pa nedēļām (P–Sv), mēnešiem, gadiem.
 - Simulācijas atziņa (19.11.2026): robota paša modeļa novirze no bukmeikeriem pasliktināja izvēli;
   ★ un drošās likmes izvēlas pēc bukmeikeru varbūtības, NBA `market_weight_suggested` = 1.0.

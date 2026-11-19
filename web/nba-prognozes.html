@@ -140,15 +140,17 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .next .clock { font: 700 28px/1 var(--font-display); font-variant-numeric: tabular-nums; letter-spacing: 0.03em; color: var(--accent); }
 .next.live .clock { font-size: 18px; letter-spacing: 0.01em; }
 .next.live { border-color: var(--accent); background: var(--accent-soft); }
-.next-right { display: flex; align-items: center; gap: 10px; }
-.refresh { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border-radius: 50%;
-  border: 1px solid var(--line); background: var(--bg); color: var(--accent); }
-.refresh svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.refresh:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.refresh.spin svg { animation: spin 1.2s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-@media (prefers-reduced-motion: reduce) { .refresh.spin svg { animation: none; } }
-.refresh-note { margin: -8px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--accent-soft); font-size: 13px; color: var(--ink); }
+.statspage { display: flex; flex-direction: column; gap: 14px; }
+.statspage .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
+.statspage .period { display: flex; flex-direction: column; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.statspage .period.now { border-color: var(--accent); }
+.statspage .period .topbox-head b { color: var(--ink); }
+.statspage .per-league { display: flex; flex-direction: column; gap: 10px; padding: 4px 0 2px; }
+.statspage .per-league h3 { font: 700 16px var(--font-display); letter-spacing: 0.03em; margin: 0; }
+.statspage details { border-top: 0; }
+.statspage details summary { padding: 6px 0; }
+.statspage .game-inner { padding: 0 14px 12px; }
+.statspage .teams { font-size: 19px; }
 .league { display: inline-flex; gap: 4px; max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 3px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); align-self: flex-start; }
 .league a { font: 700 16px/1 var(--font-display); letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
 .league a[aria-current="page"] { background: var(--ink); color: var(--bg); }
@@ -280,14 +282,9 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 
   <div class="next" id="next" role="status" aria-live="off">
     <span class="lbl" id="nextLbl">Nākamais atjauninājums</span>
-    <span class="next-right">
-      <span class="clock" id="nextClock">--:--:--</span>
-      <a class="refresh" id="refreshBtn" href="#" target="_blank" rel="noopener" data-i18n-aria="refreshLabel" aria-label="Atjaunot rezultātus">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg>
-      </a>
-    </span>
+    <span class="clock" id="nextClock">--:--:--</span>
   </div>
-  <p class="refresh-note" id="refreshNote" hidden></p>
+  <section class="statspage" id="statsPage" hidden aria-label="Kopējā statistika"></section>
 
   <nav class="nights" id="nights" data-i18n-aria="pickNight" aria-label="Izvēlies nakti"></nav>
 
@@ -348,7 +345,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     </div>
   </section>
 
-  <section class="note">
+  <section class="note" id="notes">
     <h2 data-i18n="howTo">Kā lasīt</h2>
     <p data-i18n-html="noteConf"><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
     <p data-i18n-html="noteOdds"><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
@@ -402,9 +399,6 @@ const I18N = {
     noData: "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.",
     loadSlow: "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu.", loadFail: (c) => `Neizdevās ielādēt datus (${c}).`,
     night: (d) => `Nakts uz ${d}`,
-    refreshLabel: "Atjaunot rezultātus",
-    refreshNote: "Atvērās GitHub. Nospied tur “Create” (Submit new issue). Robots atjaunos šī sporta rezultātus, un pēc ~2–3 minūtēm šī lapa atjaunosies pati.",
-    refreshBody: "Pieprasījums no mājaslapas: atjaunot rezultātus. Robots šo pieprasījumu aizvērs pats.",
   },
   en: {
     h1: "predictions", title: "predictions", loading: "Loading tonight's picks…", pickNight: "Choose a night",
@@ -435,9 +429,6 @@ const I18N = {
     noData: "Data is not available in this view. Open the page on claude.ai, sign in and try again.",
     loadSlow: "Can't load the data yet. Check your internet connection.", loadFail: (c) => `Could not load the data (${c}).`,
     night: (d) => `Night of ${d}`,
-    refreshLabel: "Refresh results",
-    refreshNote: "GitHub has opened. Tap “Create” (Submit new issue) there. The robot will refresh this sport's results and this page will reload by itself in ~2–3 minutes.",
-    refreshBody: "Request from the web page: refresh the results. The robot will close this request itself.",
   },
 };
 const NOTES = {
@@ -503,7 +494,7 @@ function applyStatic() {
     e.innerHTML = EN() ? (NOTES.en[k] || I18N.en[k] || e.dataset.lv) : e.dataset.lv;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((e) => e.setAttribute("aria-label", t(e.dataset.i18nAria)));
-  document.title = `${LEAGUE_TITLE} ${t("title")}`;
+  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : `${LEAGUE_TITLE} ${t("title")}`;
   $("langCur").textContent = LANG.toUpperCase();
   document.querySelectorAll("#langInner button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
 }
@@ -773,7 +764,113 @@ function betCard(c, kind, nightDate, rowPick) {
                    (c.riga_time || "").split(" ")[1], status, content);
 }
 
+// ---- overall statistics page (all sports together, by week / month / year)
+const SUM_KEYS = ["picks", "settled", "hits", "pushes", "expected_hits", "profit_units"];
+const CATS4 = ["all", "top", "safe", "crazy"];
+function blankAgg() { return { all: {}, top: {}, safe: {}, crazy: {} }; }
+function addInto(agg, row) {
+  for (const c of CATS4) for (const k of SUM_KEYS) agg[c][k] = (agg[c][k] || 0) + (row[c]?.[k] || 0);
+}
+function isoDay(d) { return d.toISOString().slice(0, 10); }
+function mondayOf(dateStr) {
+  const d = new Date(dateStr + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return isoDay(d);
+}
+const dm = (d) => `${String(d.getUTCDate()).padStart(2, "0")}.${String(d.getUTCMonth() + 1).padStart(2, "0")}.`;
+function weekLabel(mon) {
+  const a = new Date(mon + "T12:00:00Z"), b = new Date(a);
+  b.setUTCDate(b.getUTCDate() + 6);
+  return a.getUTCMonth() === b.getUTCMonth() ? `${a.getUTCDate()}.–${dm(b)}` : `${dm(a)}–${dm(b)}`;
+}
+function monthLabelLv(m) {
+  const n = ["janvāris", "februāris", "marts", "aprīlis", "maijs", "jūnijs", "jūlijs", "augusts", "septembris", "oktobris", "novembris", "decembris"];
+  const [y, mo] = m.split("-");
+  const name = n[Number(mo) - 1];
+  return `${name[0].toUpperCase()}${name.slice(1)} ${y}`;
+}
+function group(rows, keyFn) {
+  const out = new Map();
+  for (const r of rows) {
+    const k = keyFn(r);
+    if (!out.has(k)) out.set(k, { agg: blankAgg(), leagues: new Map() });
+    const g = out.get(k);
+    addInto(g.agg, r);
+    if (!g.leagues.has(r.league)) g.leagues.set(r.league, { title: r.title, agg: blankAgg() });
+    addInto(g.leagues.get(r.league).agg, r);
+  }
+  return out;
+}
+function periodContent(g) {
+  const parts = [monthTable(g ? g.agg : blankAgg())];
+  if (g && g.leagues.size) {
+    const d = el("details");
+    d.append(el("summary", null, "Pa sporta veidiem"));
+    const box = el("div", "per-league");
+    for (const [, L] of g.leagues) { box.append(el("h3", null, L.title), monthTable(L.agg)); }
+    d.append(box);
+    parts.push(d);
+  }
+  return parts;
+}
+function periodCard(title, sub, g, now) {
+  const card = el("section", "period" + (now ? " now" : ""));
+  const head = el("div", "topbox-head");
+  head.append(el("b", null, title), el("span", null, sub));
+  card.append(head, ...periodContent(g));
+  return card;
+}
+function archiveItem(key, title, sub, g) {
+  const a = g.agg.all;
+  const sum = a.settled ? [`${a.hits}/${a.settled} · ${signed(a.profit_units)}`, a.profit_units >= 0 ? "good" : "bad"] : [t("waiting"), ""];
+  const left = el("div", "teams");
+  left.append(el("span", null, title));
+  return accordion(key, left, sub, sum, periodContent(g));
+}
+function renderStatsPage() {
+  for (const id of ["nights", "strip", "topbox", "month", "games", "archive", "calib", "safe", "crazy", "notes", "warn"]) {
+    const e = document.getElementById(id); if (e) e.hidden = true;
+  }
+  const page = $("statsPage");
+  page.hidden = false;
+  const rows = state.combined || [];
+  const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
+  const weeks = group(rows, (r) => mondayOf(r.date));
+  const months = group(rows, (r) => r.date.slice(0, 7));
+  const years = group(rows, (r) => r.date.slice(0, 4));
+  const all = group(rows, () => "all");
+  const wk = mondayOf(today), mo = today.slice(0, 7), yr = today.slice(0, 4);
+  const lastDay = new Date(Date.UTC(Number(yr), Number(mo.slice(5)), 0)).getUTCDate();
+  const firstDate = rows.map((r) => r.date).sort()[0] || today;  // tracking started on this day
+  const firstDay = firstDate.slice(0, 7) === mo ? Number(firstDate.slice(8)) : 1;
+  const since = `${firstDate.slice(8)}.${firstDate.slice(5, 7)}.${firstDate.slice(0, 4)}`;
+  $("sub").textContent = `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${rows.length} spēļu dienas`;
+  const nodes = [
+    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: visas likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma."),
+    periodCard("Šī nedēļa", weekLabel(wk), weeks.get(wk), true),
+    periodCard("Šis mēnesis", `${monthLabelLv(mo)} · ${firstDay}.–${lastDay}.${mo.slice(5)}.`, months.get(mo), true),
+    periodCard("Šis gads", `${yr}. gads`, years.get(yr), true),
+    periodCard("Kopā", `kopš ${since}`, all.get("all"), false),
+  ];
+  const pastWeeks = [...weeks.keys()].filter((k) => k !== wk).sort().reverse();
+  const pastMonths = [...months.keys()].filter((k) => k !== mo).sort().reverse();
+  if (pastWeeks.length) {
+    nodes.push(el("h2", null, "Iepriekšējās nedēļas"));
+    const box = el("div", "games");
+    box.append(...pastWeeks.map((k) => archiveItem(`w:${k}`, weekLabel(k), "", weeks.get(k))));
+    nodes.push(box);
+  }
+  if (pastMonths.length) {
+    nodes.push(el("h2", null, "Iepriekšējie mēneši"));
+    const box = el("div", "games");
+    box.append(...pastMonths.map((k) => archiveItem(`m:${k}`, monthLabelLv(k), "", months.get(k))));
+    nodes.push(box);
+  }
+  page.replaceChildren(...nodes);
+}
+
 function render() {
+  if (LEAGUE_KEY === "stats") { renderStatsPage(); return; }
   if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
     state.selected = state.nights[0]?.date ?? null;
   }
@@ -835,7 +932,6 @@ document.querySelectorAll("#langInner button").forEach((b) => b.addEventListener
   applyStatic();
   render();
   tickCountdown();
-  setupRefresh();
 }));
 document.addEventListener("click", (e) => { if (!$("lang").contains(e.target)) closeLang(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLang(); });
@@ -875,8 +971,6 @@ let pollTimer = null, lastPoll = 0;
 
 function tickCountdown() {
   const now = Date.now();
-  if (refreshUntil > now) maybePoll(now, 30000);
-  else if (refreshUntil) { refreshUntil = 0; $("refreshBtn").classList.remove("spin"); }
   const slots = slotTimes(now);
   const prev = [...slots].reverse().find((s) => s.t <= now);
   const next = slots.find((s) => s.t > now);
@@ -899,23 +993,6 @@ function tickCountdown() {
   $("nextLbl").append(document.createTextNode(t("nextUpdate")), el("b", null, `${t(next.name)} ${pad(next.h)}:${pad(next.m)}`));
   $("nextClock").textContent = `${pad(h)}:${pad(m)}:${pad(sec)}`;
 }
-
-let refreshUntil = 0;
-const REPO = "edzinslabakais/nba-prognozes";
-function setupRefresh() {
-  const btn = $("refreshBtn");
-  const title = `atjaunot ${LEAGUE_KEY}`;
-  btn.href = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(t("refreshBody"))}`;
-}
-$("refreshBtn").addEventListener("click", () => {
-  setupRefresh();
-  $("refreshNote").textContent = t("refreshNote");
-  $("refreshNote").hidden = false;
-  $("refreshBtn").classList.add("spin");
-  refreshUntil = Date.now() + 10 * 60000;  // watch for the new version for 10 minutes
-  lastPoll = Date.now();
-});
-setupRefresh();
 
 async function maybePoll(now, every = 120000) {
   // public page only: check whether a newer version is online, then reload

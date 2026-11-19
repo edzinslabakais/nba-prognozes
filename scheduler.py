@@ -38,28 +38,7 @@ def decide(cron: str, manual: str, now: datetime | None = None) -> str:
     return TARGETS.get((local.hour, local.minute), "")
 
 
-LEAGUE_WORDS = {"nba": "nba", "nhl": "nhl", "el": "el", "euroleague": "el", "eirolīga": "el",
-                "cl": "cl", "čl": "cl", "champions": "cl", "čempionu": "cl"}
-
-
-def from_issue(title: str, author: str, owner: str) -> str:
-    """A "refresh" request opened from the web page as a GitHub issue, e.g. "atjaunot nba".
-    Only the repository owner may trigger it."""
-    if not title or not author or author.lower() != (owner or "").lower():
-        return ""
-    words = title.strip().lower().split()
-    if not words or words[0] not in ("atjaunot", "refresh", "atjauno"):
-        return ""
-    league = LEAGUE_WORDS.get(words[1]) if len(words) > 1 else None
-    return f"rezultati_{league}" if league else "rezultati"
-
-
 if __name__ == "__main__":
-    import os
     cron = sys.argv[1] if len(sys.argv) > 1 else ""
     manual = sys.argv[2] if len(sys.argv) > 2 else ""
-    if os.environ.get("ISSUE_TITLE"):
-        cmd = from_issue(os.environ["ISSUE_TITLE"], os.environ.get("ISSUE_AUTHOR", ""), os.environ.get("REPO_OWNER", ""))
-    else:
-        cmd = decide(cron.strip(), manual.strip())
-    print(f"komanda={cmd}")
+    print(f"komanda={decide(cron.strip(), manual.strip())}")
