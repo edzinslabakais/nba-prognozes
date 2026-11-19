@@ -55,10 +55,9 @@ no `web/nba-prognozes.html` dizaina un `export/` datiem.
 - **Pamatlaiks:** gan NBA, gan NHL likmes vērtē pēc pamatlaika (48 / 60 min). Papildlaiks tiek
   ieskaitīts tikai, ja likmē ir rakstīts "(ieskaitot papildlaiku)". Robots to ņem vērā jau
   varbūtībās: NBA papildlaiks ~4,4 % spēļu, NHL neizšķirts pamatlaikā ~25 %.
-- **★ Visticamākā pēc datiem:** katrā spēlē viena likme, kurai ir laba iespēja iziet un ko
-  robota dati (forma, savainojumi, atpūta, vārtsargi) vērtē augstāk nekā bukmeikeri:
-  `drošība + 0,5 × (robota modelis − bukmeikeri)`. Tā netiek izvēlēta pēc zemākā koeficienta.
-  Tai ir sava statistika: uzvarēts/notikušas un vienības.
+- **★ Visticamākā:** katrā spēlē likme, ko bukmeikeri vērtē kā visticamāko. Sezonas simulācijā
+  (okt.–nov. 2026, ~1600 likmes) robota paša modeļa "atradumi" pret bukmeikeriem biežāk zaudēja
+  (NBA 39 %, NHL 27 %, kad robots vērtēja >10 procentpunktus augstāk), tāpēc ★ izvēlas pēc bukmeikeriem.
 - **Mēneša statistika** (no 1. līdz mēneša pēdējai dienai, pēc spēļu datuma): visas likmes,
   ★ visticamākās un Crazy Dazy.
 
@@ -85,11 +84,11 @@ Pārskats: [NHL.md](NHL.md), vēsture: `nhl/history/`.
 
 ### Drošās likmes
 
-Katru vakaru vismaz 3 likmes (līdz 5, ja robota dati dod ≥ 60 %), katra no citas spēles, ar
-aptuveno koeficientu **≥ 1.7**. Tās tiek izvēlētas **tikai pēc robota statistikas modeļa** (forma,
-reitingi, savainojumi, atpūta, NHL vārtsargi), nevis pēc bukmeikeriem. Ja vairākas līnijas ir gandrīz
-vienlīdz drošas (līdz 2 procentpunktu starpībai), tiek ņemta tā, kurai ir augstākais koeficients.
-Tām ir sava statistika, un tās ir arī mēneša tabulā.
+Katru vakaru vismaz 3 likmes (līdz 5, ja tās ir ≥ 56 % drošas), katra no citas spēles, ar aptuveno
+koeficientu **≥ 1.7**. Drošumu nosaka **bukmeikeru vērtējums**: simulācijā šīs likmes izgāja 51–53 %
+gadījumu, bet pēc robota modeļa izvēlētās tikai 42–47 %. Robota vērtējums ir parādīts blakus
+salīdzināšanai. Ja vairākas līnijas ir gandrīz vienlīdz drošas (līdz 2 procentpunktiem), tiek ņemta
+tā, kurai ir augstākais koeficients.
 
 ### Crazy Dazy
 

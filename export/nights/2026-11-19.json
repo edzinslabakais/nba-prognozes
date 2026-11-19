@@ -1,0 +1,339 @@
+{
+ "date": "2026-11-19",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-19T05:58+00:00",
+ "games": [
+  {
+   "game_id": "401910020",
+   "away": "POR",
+   "home": "MIL",
+   "away_name": "Portland Trail Blazers",
+   "home_name": "Milwaukee Bucks",
+   "away_record": "9-5",
+   "home_record": "1-14",
+   "start_utc": "2026-11-20 01:00:00+00:00",
+   "riga_time": "20.11 03:00",
+   "robot_line": "POR -9.5",
+   "robot_total": 225.5,
+   "market_line": "POR -9.5",
+   "market_total": 225.5,
+   "injuries": [
+    "POR: Robert Williams III (Out) -1.0",
+    "POR: Deni Avdija (Day-To-Day) -0.8"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "POR -11.5",
+     "p_model": 0.5594,
+     "p_market": 0.4352,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 227.5",
+     "p_model": 0.4917,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MIL virs 109.5",
+     "p_model": 0.4069,
+     "p_market": 0.4335,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401910021",
+   "away": "NY",
+   "home": "MIN",
+   "away_name": "New York Knicks",
+   "home_name": "Minnesota Timberwolves",
+   "away_record": "8-6",
+   "home_record": "11-4",
+   "start_utc": "2026-11-20 01:00:00+00:00",
+   "riga_time": "20.11 03:00",
+   "robot_line": "NY -1.5",
+   "robot_total": 217.5,
+   "market_line": "NY -1.5",
+   "market_total": 217.5,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 219.5",
+     "p_model": 0.2687,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "MIN -0.5",
+     "p_model": 0.5806,
+     "p_market": 0.4334,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MIN virs 109.5",
+     "p_model": 0.3769,
+     "p_market": 0.4308,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401910019",
+   "away": "GS",
+   "home": "MEM",
+   "away_name": "Golden State Warriors",
+   "home_name": "Memphis Grizzlies",
+   "away_record": "8-7",
+   "home_record": "11-4",
+   "start_utc": "2026-11-20 01:00:00+00:00",
+   "riga_time": "20.11 03:00",
+   "robot_line": "MEM -8.5",
+   "robot_total": 225.5,
+   "market_line": "MEM -8.5",
+   "market_total": 225.5,
+   "injuries": [
+    "GS: Stephen Curry (Out) -2.0",
+    "GS: Brandon Williams (Out) -0.5"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 227.5",
+     "p_model": 0.5334,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "MEM -10.5",
+     "p_model": 0.4194,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MEM zem 114.5",
+     "p_model": 0.3727,
+     "p_market": 0.4333,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401910022",
+   "away": "LAC",
+   "home": "SA",
+   "away_name": "LA Clippers",
+   "home_name": "San Antonio Spurs",
+   "away_record": "4-9",
+   "home_record": "12-3",
+   "start_utc": "2026-11-20 01:00:00+00:00",
+   "riga_time": "20.11 03:00",
+   "robot_line": "SA -16.5",
+   "robot_total": 225.5,
+   "market_line": "SA -16.5",
+   "market_total": 225.5,
+   "injuries": [
+    "SA: Dylan Harper (Out) -2.0"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "SA -18.5",
+     "p_model": 0.3989,
+     "p_market": 0.4378,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 227.5",
+     "p_model": 0.458,
+     "p_market": 0.4348,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "SA zem 118.5",
+     "p_model": 0.4459,
+     "p_market": 0.4337,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401910020",
+   "game": "POR@MIL",
+   "riga_time": "20.11 03:00",
+   "category": "uzvaras starpība",
+   "bet": "POR 21+",
+   "confidence": 22,
+   "fair_odds": 4.59,
+   "est_odds": 4.27,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910019",
+   "game": "GS@MEM",
+   "riga_time": "20.11 03:00",
+   "category": "handikaps",
+   "bet": "GS -1.5",
+   "confidence": 23,
+   "fair_odds": 4.33,
+   "est_odds": 4.02,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910022",
+   "game": "LAC@SA",
+   "riga_time": "20.11 03:00",
+   "category": "handikaps",
+   "bet": "SA -26.5",
+   "confidence": 23,
+   "fair_odds": 4.39,
+   "est_odds": 4.08,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "401910021",
+   "game": "NY@MIN",
+   "riga_time": "20.11 03:00",
+   "category": "komandas punkti",
+   "bet": "MIN virs 106.5",
+   "confidence": 54,
+   "data_conf": 54,
+   "p_model": 0.4755,
+   "fair_odds": 1.87,
+   "est_odds": 1.74,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910019",
+   "game": "GS@MEM",
+   "riga_time": "20.11 03:00",
+   "category": "komandas punkti",
+   "bet": "MEM virs 115.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5951,
+   "fair_odds": 1.88,
+   "est_odds": 1.75,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401910020",
+   "game": "POR@MIL",
+   "riga_time": "20.11 03:00",
+   "category": "komandas punkti",
+   "bet": "MIL zem 108.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5603,
+   "fair_odds": 1.88,
+   "est_odds": 1.75,
+   "result": null,
+   "score": null
+  }
+ ],
+ "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}

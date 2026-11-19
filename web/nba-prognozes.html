@@ -313,7 +313,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
 
   <section class="safe" id="safe" hidden>
     <h2 data-i18n="safeTitle">Drošās likmes</h2>
-    <p class="intro" id="safeIntro" data-i18n="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
+    <p class="intro" id="safeIntro" data-i18n="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras ir visdrošākās pēc bukmeikeru vērtējuma. Sezonas pārbaudē tas strādāja labāk nekā robota paša statistika. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
     <div class="games safe-cards" id="safeList"></div>
     <div class="safe-stats">
       <div class="stat"><b id="d1">–</b><span id="d1l">Šonakt izgāja</span></div>
@@ -337,8 +337,8 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <h2 data-i18n="howTo">Kā lasīt</h2>
     <p data-i18n-html="noteConf"><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
     <p data-i18n-html="noteOdds"><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
-    <p data-i18n-html="noteTop"><b>★ Visticamākā pēc datiem</b>: katrā spēlē robots salīdzina savu modeli (forma, savainojumi, atpūta, vārtsargi, mājas laukums) ar bukmeikeru vērtējumu. ★ saņem likme, kurai ir laba iespēja iziet un ko dati vērtē augstāk nekā bukmeikeri. Tā netiek izvēlēta pēc zemākā koeficienta.</p>
-    <p data-i18n-html="noteSafe"><b>Drošās likmes</b>: koeficients vismaz 1.7. Tās tiek izvēlētas tikai pēc robota statistikas modeļa, un "Dati" rāda, cik droša likme ir pēc robota datiem. Robota paša modelis vēsturē ir bijis mazliet mazāk precīzs nekā bukmeikeri, tāpēc sekojiet līdzi statistikai.</p>
+    <p data-i18n-html="noteTop"><b>★ Visticamākā</b>: katrā spēlē likme, ko bukmeikeri vērtē kā visticamāko. Sezonas pārbaudē (~1600 likmes) tas deva labākus rezultātus nekā robota paša modelis: robota "atradumi" pret bukmeikeriem biežāk zaudēja. Tā netiek izvēlēta pēc zemākā koeficienta, jo visām trim likmēm koeficients ir līdzīgs.</p>
+    <p data-i18n-html="noteSafe"><b>Drošās likmes</b>: koeficients vismaz 1.7. Drošums ir bukmeikeru vērtējums, un robota paša vērtējums ir parādīts blakus salīdzināšanai. Sezonas pārbaudē likmes pēc robota modeļa izgāja 42–47 % gadījumu, bet pēc bukmeikeriem 51–53 %.</p>
     <p data-i18n-html="noteMonth"><b>Mēneša statistika</b> skaita likmes pēc spēļu datuma no mēneša 1. līdz pēdējai dienai.</p>
     <p data-i18n-html="noteUnits"><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
     <p id="updated"></p>
@@ -360,7 +360,7 @@ const I18N = {
     unitsTotal: "Vienības kopā", archive: "Arhīvs pa mēnešiem", calibTitle: "Vai drošība atbilst realitātei?",
     thConf: "Drošība", thBets: "Likmes", thWon: "Izgāja", thExp: "Robots gaidīja",
     safeTitle: "Drošās likmes", howTo: "Kā lasīt",
-    safeIntro: "Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras robots izvēlas tikai pēc statistikas datiem (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.",
+    safeIntro: "Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras ir visdrošākās pēc bukmeikeru vērtējuma. Sezonas pārbaudē tas strādāja labāk nekā robota paša statistika. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.",
     crazyIntro: (o) => `3 likmes no visām nakts spēlēm, kurām ar koeficientu ${o}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`,
     emptyLoading: "<b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
     noBets: "Vēl nav likmju", noNights: "Vēl nav nevienas nakts likmju.",
@@ -374,8 +374,8 @@ const I18N = {
     rowAll: "Visas likmes", rowTop: "★ Visticamākās", rowSafe: "Drošās likmes", rowCrazy: "Crazy Dazy", waiting: "gaida",
     won: "Izgāja", lost: "Neizgāja", push: "Atgriezts", pending: "Gaida",
     wonL: "izgāja", lostL: "neizgāja", pushL: "atgriezts", pendingL: "gaida",
-    star: "★ Visticamākā pēc datiem", fair: "godīgais", confAria: (c) => `Drošība ${c} no 100`,
-    dataSafe: (r, m) => `Dati: robots ${r} % · bukmeikeri ~${m} %`, dataTop: (r, m) => `Dati: robots ${r} % · bukmeikeri ${m} %`,
+    star: "★ Visticamākā", fair: "godīgais", confAria: (c) => `Drošība ${c} no 100`,
+    dataSafe: (k, r) => `Bukmeikeri ${k} % · robots ${r} %`, dataTop: (r, m) => `Bukmeikeri ${m} % · robots ${r} %`,
     bets: (n) => `${n} likmes`, wonOf: (h, n) => `${h}/${n} izgāja`,
     robot: "Robots:", bookies: "Bukmeikeri:", final: "Gala rezultāts: ", injuries: (n) => `Savainojumi un sastāvs (${n})`,
     updated: "Atjaunināts: ", locale: "lv-LV",
@@ -392,7 +392,6 @@ const I18N = {
     unitsTotal: "Units total", archive: "Monthly archive", calibTitle: "Does the confidence match reality?",
     thConf: "Confidence", thBets: "Bets", thWon: "Won", thExp: "Robot expected",
     safeTitle: "Safe bets", howTo: "How to read",
-    safeIntro: "Bets from all of tonight's games with odds 1.7+, chosen only by the robot's statistics (form, ratings, injuries, rest, goalies), not by the bookmakers. Among nearly equally safe lines the one with the highest odds is taken.",
     crazyIntro: (o) => `3 bets from all of tonight's games that have the best chance to win at odds ${o}+. Each one is from a different game.`,
     emptyLoading: "<b>Picks not loaded yet</b>Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
     noBets: "No picks yet", noNights: "No nights with picks yet.",
@@ -406,8 +405,7 @@ const I18N = {
     rowAll: "All bets", rowTop: "★ Most likely", rowSafe: "Safe bets", rowCrazy: "Crazy Dazy", waiting: "pending",
     won: "Won", lost: "Lost", push: "Push", pending: "Pending",
     wonL: "won", lostL: "lost", pushL: "push", pendingL: "pending",
-    star: "★ Most likely by the data", fair: "fair", confAria: (c) => `Confidence ${c} of 100`,
-    dataSafe: (r, m) => `Data: robot ${r} % · bookmakers ~${m} %`, dataTop: (r, m) => `Data: robot ${r} % · bookmakers ${m} %`,
+    fair: "fair", confAria: (c) => `Confidence ${c} of 100`,
     bets: (n) => `${n} bets`, wonOf: (h, n) => `${h}/${n} won`,
     robot: "Robot:", bookies: "Bookmakers:", final: "Final score: ", injuries: (n) => `Injuries and line-up (${n})`,
     updated: "Updated: ", locale: "en-GB",
@@ -423,8 +421,6 @@ const NOTES = {
   en: {
     noteConf: "<b>Confidence</b> is the robot's estimated chance that the bet wins. At odds of 2.1 it can hardly exceed ~45: a bookmaker only pays 2.1 if it rates the chance below 45 %. For every game the robot looks for the safest line in three categories that still pays 2.1 or more.",
     noteOdds: "<b>~2.14</b> is the approximate Optibet price, <b>fair</b> is the price at which the bet is exactly “worth it”. If Optibet pays more than the fair price, the bet is good value. If Optibet's line differs a little, take the nearest one with odds of 2.1 or more.",
-    noteTop: "<b>★ Most likely by the data</b>: in every game the robot compares its own model (form, injuries, rest, goalies, home court) with the bookmakers. The ★ goes to a bet with a good chance to win that the data rates higher than the bookmakers do. It is not chosen by the lowest odds.",
-    noteSafe: "<b>Safe bets</b>: odds of at least 1.7, chosen only by the robot's statistical model; “Data” shows how safe the bet is by the robot's data. The robot's own model has historically been a little less accurate than the bookmakers, so keep an eye on the statistics.",
     noteMonth: "<b>Monthly stats</b> count bets by game date from the 1st to the last day of the month.",
     noteUnits: "<b>Units</b>: how much you would be up or down staking 1 unit on every bet at the approximate odds.",
     noteNba: "<b>Basketball</b>: every bet is settled on <b>regulation time</b> (48 minutes). Only bets marked “incl. OT” include overtime.",
@@ -610,7 +606,7 @@ function pickRow(p, gameTag) {
   left.append(el("div", "bet", trBet(p.bet)));
   left.append(el("span", "cat", catName(p.category)));
   if (p.data_conf != null) {
-    left.append(el("span", "why", t("dataSafe", p.data_conf, p.mk_conf ?? p.confidence)));
+    left.append(el("span", "why", t("dataSafe", p.data_conf, p.p_model != null ? Math.round(p.p_model * 100) : "–")));
   } else if (p.top && p.p_model != null && p.p_market != null) {
     left.append(el("span", "why", t("dataTop", Math.round(p.p_model * 100), Math.round(p.p_market * 100))));
   }

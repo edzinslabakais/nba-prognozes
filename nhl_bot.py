@@ -220,15 +220,18 @@ def pick_crazy(df: pd.DataFrame, p, min_odds: float = 4.0, n: int = 3) -> list[d
     return out
 
 
-def pick_safe(df: pd.DataFrame, p) -> list[dict]:
-    """Drošās likmes: chosen by our own model (form, goalies, injuries, rest), odds >= 1.7."""
+def pick_safe(df: pd.DataFrame, p, rank_by: str = "market") -> list[dict]:
+    """Drošās likmes: odds >= 1.7, ranked by the bookmakers' probability (see core.choose_safe)."""
     per_game = []
     for r in df.itertuples():
         g = grid(r, p)
         own = N.HockeyGrid(r.model_lh, r.model_la, p["tie_infl"], p["ot_k"])
+        mkt = (N.HockeyGrid(r.mk_lh, r.mk_la, p["tie_infl"], p["ot_k"])
+               if r.mk_lh is not None and pd.notna(r.mk_lh) else None)
         cands = _candidates(r, g, 0.35, core.PAYOUT_SAFE / core.SAFE_MIN_ODDS, crazy=False)
-        per_game.append((r, [(b, pw, HB.prob(own, b)[0], cat) for b, pw, _, cat in cands]))
-    return core.choose_safe(per_game)
+        per_game.append((r, [(b, pw, HB.prob(own, b)[0], cat, HB.prob(mkt, b)[0] if mkt is not None else None)
+                             for b, pw, _, cat in cands]))
+    return core.choose_safe(per_game, rank_by)
 
 
 # --------------------------------------------------------------------------- commands

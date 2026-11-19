@@ -35,6 +35,9 @@ import predict as P
 
 ROOT = Path(__file__).resolve().parent
 LINES = [x + 0.5 for x in range(-40, 40)]
+# Season simulation (Oct–Nov 2026, ~1600 bets): leaning towards the side our own model likes more than
+# the bookmakers made the regular picks WORSE, so it is switched off (Crazy Dazy keeps its own lean).
+PICK_LEAN = 0.0
 
 
 # --------------------------------------------------------------------------- LIKMES
@@ -47,7 +50,7 @@ def _best(g: B.Grid, make, lines, pmax: float, lean_fn, pmin: float = 0.15) -> t
         p, push = g.prob(b)
         if push > 0 or p > pmax or p < pmin:
             continue
-        score = p + 0.004 * lean_fn(L)
+        score = p + PICK_LEAN * lean_fn(L)
         if best is None or score > best[2]:
             best = (b, p, score)
     return best
@@ -71,7 +74,7 @@ def pick_for_game(r, min_odds: float) -> list[dict]:
         ml = B.bet_ml(team, home)
         p, _ = g.prob(ml)
         if 0.15 <= p <= pmax:
-            cats["starpība"].append((ml, p, p + 0.004 * sgn * lean_m))
+            cats["starpība"].append((ml, p, p + PICK_LEAN * sgn * lean_m))
     t0 = round(r.total)
     tot_lines = [t0 + x + 0.5 for x in range(-40, 40)]
     for over in (True, False):
@@ -119,18 +122,20 @@ def nba_views(r):
 
 
 def add_data_view(picks: list[dict], own_grid, market_grid, prob=None) -> None:
-    """Attach p_model / p_market to each pick and a data score used to choose the ★ pick:
-    final probability + half of how much more likely our own data (form, injuries, rest, goalies)
-    makes the bet than the bookmakers do."""
+    """Attach p_model / p_market to each pick and the score that chooses the ★ pick.
+
+    Season simulation: the more our own model liked a bet compared with the bookmakers, the more
+    often it LOST (NBA 39 %, NHL 27 % when the gap was > 10 points). The bookmakers' own probability
+    picked better ★ bets (NBA 46 % vs 41 %, NHL 44 % vs 43 %), so the ★ goes to the bet the
+    bookmakers rate most likely."""
     prob = prob or (lambda g, b: g.prob(b)[0])
     for x in picks:
         b = x.pop("_bet")
-        pm = prob(own_grid, b)
-        x["p_model"] = round(pm, 4)
+        x["p_model"] = round(prob(own_grid, b), 4)
         if market_grid is not None:
             pk = prob(market_grid, b)
             x["p_market"] = round(pk, 4)
-            x["data_score"] = round(x["p"] + EDGE_WEIGHT * (pm - pk), 4)
+            x["data_score"] = round(pk, 4)
         else:
             x["p_market"] = None
             x["data_score"] = round(x["p"], 4)
@@ -218,29 +223,36 @@ def pick_crazy(df: pd.DataFrame, min_odds: float = CRAZY_MIN_ODDS, n: int = CRAZ
 
 SAFE_MIN_ODDS = 1.7      # estimated bookmaker odds must be at least this
 SAFE_MIN, SAFE_MAX = 3, 5
-SAFE_STRONG = 0.60       # more than SAFE_MIN picks only if our data gives them at least 60 %
+SAFE_STRONG = 0.56       # more than SAFE_MIN picks only if they are at least this likely
 SAFE_TOLERANCE = 0.02    # take a line up to 2 points less likely (by our data) if it pays more
 
 
-def choose_safe(per_game: list) -> list[dict]:
-    """per_game: [(row, [(bet, p_final, p_model, category), ...]), ...]
+def choose_safe(per_game: list, rank_by: str = "market") -> list[dict]:
+    """per_game: [(row, [(bet, p_final, p_model, category, p_market), ...]), ...]
 
-    Chosen by the robot's own statistics (p_model: form, ratings, injuries, rest, goalies), not by
-    the bookmakers. Within a game: the safest line by our data, or a nearly as safe one that pays more."""
+    rank_by="market": the bookmakers' probability decides how safe a bet is (what the season simulation
+    supports); "model": our own statistics model. Within a game: the safest line, or a nearly as safe
+    one (within 2 points) that pays more."""
     best = []
     for r, cands in per_game:
         if not cands:
             continue
-        top_pm = max(c[2] for c in cands)
-        near = [c for c in cands if c[2] >= top_pm - SAFE_TOLERANCE]
-        b, pf, pm, cat = max(near, key=lambda c: (round(PAYOUT_SAFE / c[1], 2), c[2]))
+        rank = (lambda c: c[4] if rank_by == "market" and c[4] is not None else (c[2] if rank_by == "model" else c[1]))
+        top = max(rank(c) for c in cands)
+        near = [c for c in cands if rank(c) >= top - SAFE_TOLERANCE]
+        b, pf, pm, cat, pk = max(near, key=lambda c: (round(PAYOUT_SAFE / c[1], 2), rank(c)))
         best.append({"game_id": r.game_id, "game": f"{r.away}@{r.home}", "start_utc": str(r.start_utc),
-                     "riga_time": r.riga_time, "category": cat, "bet": b.label, "p": pf, "p_model": round(pm, 4)})
-    best.sort(key=lambda x: -x["p_model"])
-    out = [x for i, x in enumerate(best) if i < SAFE_MIN or (i < SAFE_MAX and x["p_model"] >= SAFE_STRONG)]
+                     "riga_time": r.riga_time, "category": cat, "bet": b.label, "p": pf,
+                     "p_model": round(pm, 4), "p_market": round(pk, 4) if pk is not None else None,
+                     "_rank": rank((b, pf, pm, cat, pk))})
+    best.sort(key=lambda x: -x["_rank"])
+    out = [x for i, x in enumerate(best) if i < SAFE_MIN or (i < SAFE_MAX and x["_rank"] >= SAFE_STRONG)]
     for x in out:
+        rk = x.pop("_rank")
         x.update(fair_odds=round(1 / x["p"], 2), est_odds=round(PAYOUT_SAFE / x["p"], 2),
-                 confidence=int(round(100 * x["p"])), data_conf=int(round(100 * x["p_model"])), result=None)
+                 confidence=int(round(100 * x["p"])), data_conf=int(round(100 * rk)), result=None)
+    for x in best[len(out):]:
+        x.pop("_rank", None)
     return out
 
 
@@ -249,7 +261,7 @@ PAYOUT_SAFE = B.PAYOUT
 
 def safe_candidates_nba(r) -> list:
     g = B.grid_for(r)
-    own, _ = nba_views(r)
+    own, mkt = nba_views(r)
     pmax = PAYOUT_SAFE / SAFE_MIN_ODDS
     out = []
 
@@ -257,7 +269,7 @@ def safe_candidates_nba(r) -> list:
         pf, push = g.prob(bet)
         if push > 0 or not (0.35 <= pf <= pmax):
             return
-        out.append((bet, pf, own.prob(bet)[0], cat))
+        out.append((bet, pf, own.prob(bet)[0], cat, mkt.prob(bet)[0] if mkt is not None else None))
 
     m, t = r.margin_home, r.total
     for team, home in ((r.home, True), (r.away, False)):
@@ -276,14 +288,14 @@ def safe_candidates_nba(r) -> list:
     return out
 
 
-def pick_safe(df: pd.DataFrame) -> list[dict]:
-    return choose_safe([(r, safe_candidates_nba(r)) for r in df.itertuples()])
+def pick_safe(df: pd.DataFrame, rank_by: str = "market") -> list[dict]:
+    return choose_safe([(r, safe_candidates_nba(r)) for r in df.itertuples()], rank_by)
 
 
 def print_safe(safe: list[dict], width: int = 26) -> None:
-    print(f"\nDROŠĀS LIKMES — pēc robota statistikas, koeficients >= {SAFE_MIN_ODDS:g}:")
+    print(f"\nDROŠĀS LIKMES — koeficients >= {SAFE_MIN_ODDS:g}:")
     for i, x in enumerate(safe, 1):
-        print(f"  {i}. {x['game']:<10} {x['bet']:<{width}} dati {x['data_conf']:>3}/100  drošība {x['confidence']:>3}/100   "
+        print(f"  {i}. {x['game']:<10} {x['bet']:<{width}} bukm. {x['data_conf']:>3}/100  drošība {x['confidence']:>3}/100   "
               f"Optibet ~{x['est_odds']:.2f}   [{x['category']}]")
 
 
@@ -340,7 +352,13 @@ def cmd_likmes(args) -> None:
                          for n, s, d in a.notes[:3]],
         }
 
-    crazy = pick_crazy(df)
+    # Crazy Dazy keeps the earlier 90 % bookmakers / 10 % model mix (it did better that way in the simulation)
+    cmw = params.get("crazy_market_weight", 0.9)
+    crazy_df = df
+    if cmw != mw:
+        crazy_df = P.predict([day], cmw, params)
+        crazy_df = crazy_df[crazy_df["start_utc"] > now] if not crazy_df.empty else crazy_df
+    crazy = pick_crazy(crazy_df)
     print(f"\nCRAZY DAZY — 3 reālākās likmes ar koeficientu >= {CRAZY_MIN_ODDS:g}:")
     for i, x in enumerate(crazy, 1):
         print(f"  {i}. {x['game']:<10} {x['bet']:<26} drošība {x['confidence']:>3}/100   "
