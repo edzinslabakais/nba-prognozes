@@ -313,7 +313,7 @@ def safe_all(df: pd.DataFrame, per_game: list | None = None) -> list[dict]:
 
 
 def print_safe(safe: list[dict], width: int = 26) -> None:
-    print(f"\nDROŠĀS LIKMES — koeficients >= {SAFE_MIN_ODDS:g}:")
+    print(f"\n1.7+ LIKMES — koeficients >= {SAFE_MIN_ODDS:g}:")
     for i, x in enumerate(safe, 1):
         print(f"  {i}. {x['game']:<10} {x['bet']:<{width}} bukm. {x['data_conf']:>3}/100  drošība {x['confidence']:>3}/100   "
               f"Optibet ~{x['est_odds']:.2f}   [{x['category']}]")
@@ -557,7 +557,7 @@ def cmd_rezultati(args) -> None:
         print(f"  Crazy Dazy šī diena: {_stats(show['crazy'])}")
         print(f"  Crazy Dazy kopā: {_stats(all_crazy)}")
     if show.get("safe"):
-        print(f"\nDROŠĀS LIKMES (koef. >= {SAFE_MIN_ODDS:g}):")
+        print(f"\n1.7+ LIKMES (koef. >= {SAFE_MIN_ODDS:g}):")
         for p in show["safe"]:
             res = p.get("result")
             print(f"  {ICON[res]} {p['game']:<10} {p['bet']:<26} dati {p.get('data_conf', '?'):>3}/100   ~{p['est_odds']:.2f}   {res or 'gaida'}")
@@ -758,7 +758,7 @@ def write_message(us_date: str, mode: str) -> None:
             if g.get("injuries"):
                 lines.append("   ⚕ " + "; ".join(g["injuries"][:2]))
         if doc.get("safe"):
-            lines.append(f"\n🛡 DROŠĀS LIKMES (koef. ≥ {doc['safe_min_odds']:g}, pēc robota datiem)")
+            lines.append(f"\n🛡 1.7+ LIKMES (koef. ≥ {doc['safe_min_odds']:g}, pēc bukmeikeru vērtējuma)")
             for c in doc["safe"]:
                 lines.append(f"• {c['game']}: {c['bet']} — dati {c['data_conf']}/100 (~{c['est_odds']:.2f})")
         if doc.get("crazy"):
@@ -827,7 +827,7 @@ def write_markdown(stats: dict) -> None:
                 out += ["", "Savainojumi/sastāvs: " + "; ".join(g["injuries"])]
             out.append("")
         if doc.get("safe"):
-            out += [f"## 🛡 Drošās likmes — koef. ≥ {doc['safe_min_odds']:g}", "",
+            out += [f"## 🛡 1.7+ — koef. ≥ {doc['safe_min_odds']:g}", "",
                     "Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta, vārtsargi), "
                     "nevis pēc bukmeikeriem; no gandrīz vienlīdz drošām līnijām ņemta ar augstāko koeficientu.", "",
                     "| Spēle | Likme | Dati | ~Optibet | Rezultāts |", "|---|---|---|---|---|"]
@@ -847,16 +847,16 @@ def write_markdown(stats: dict) -> None:
     t = stats.get("top_overall", {})
     top_line = (f"uzvarēts {t['hits']}/{t['settled']}, vienības {t['profit_units']:+.2f}"
                 if t.get("settled") else "vēl nav noslēgtu likmju")
-    out += ["## Statistika", "", f"★ Visticamākās (1 katrā spēlē): {top_line}", "",
-            f"Visas likmes kopā: {_overall_line(stats['overall'])}"]
+    out += ["## Statistika", "", f"★ Reālākās no 2.1+ (1 katrā spēlē): {top_line}", "",
+            f"2.1+ kopā: {_overall_line(stats['overall'])}"]
     if stats.get("safe_overall", {}).get("picks"):
-        out.append(f"Drošās likmes kopā: {_overall_line(stats['safe_overall'])}")
+        out.append(f"1.7+ kopā: {_overall_line(stats['safe_overall'])}")
     if stats.get("crazy_overall", {}).get("picks"):
         out.append(f"Crazy Dazy kopā: {_overall_line(stats['crazy_overall'])}")
     out.append("")
     if stats.get("months"):
         out += ["### Mēneša statistika", "",
-                "| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |",
+                "| Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |",
                 "|---|---|---|---|---|---|---|---|---|"]
         for m in stats["months"]:
             cell = lambda s: (f"{s['hits']}/{s['settled']} | {s['profit_units']:+.2f}" if s["settled"] else "– | –")

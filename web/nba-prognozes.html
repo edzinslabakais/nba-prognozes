@@ -303,8 +303,8 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <div class="stat"><b id="s3">–</b><span id="s3l">Vienības</span></div>
   </section>
 
-  <section class="topbox" id="topbox" aria-label="Visticamākās likmes">
-    <div class="topbox-head"><b data-i18n="topTitle">★ Visticamākās likmes</b><span data-i18n="topSub">viena katrā spēlē · 1 vienība uz likmi</span></div>
+  <section class="topbox" id="topbox" aria-label="Reālākās no 2.1+">
+    <div class="topbox-head"><b data-i18n="topTitle">★ Reālākās no 2.1+</b><span data-i18n="topSub">viena katrā spēlē · 1 vienība uz likmi</span></div>
     <div class="strip">
       <div class="stat"><b id="t1">–</b><span id="t1l">Šonakt</span></div>
       <div class="stat"><b id="t2">–</b><span id="t2l">Uzvarēts / notikušas</span></div>
@@ -333,7 +333,7 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
   </section>
 
   <section class="safe" id="safe" hidden>
-    <h2 data-i18n="safeTitle">Drošās likmes</h2>
+    <h2 data-i18n="safeTitle">1.7+</h2>
     <p class="intro" id="safeIntro" data-i18n="safeIntro">Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras ir visdrošākās pēc bukmeikeru vērtējuma. Sezonas pārbaudē tas strādāja labāk nekā robota paša statistika. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.</p>
     <div class="games safe-cards" id="safeList"></div>
     <div class="safe-stats">
@@ -358,8 +358,8 @@ h2 { font: 700 22px var(--font-display); text-transform: uppercase; letter-spaci
     <h2 data-i18n="howTo">Kā lasīt</h2>
     <p data-i18n-html="noteConf"><b>Drošība</b> ir robota aprēķinātā varbūtība, ka likme izies. Pie koeficienta 2.1 tā praktiski nevar pārsniegt ~45: bukmeikers maksā 2.1 tikai tad, ja pats vērtē varbūtību zem 45 %. Robots katrai spēlei meklē drošāko līniju trīs kategorijās, kas vēl dod koeficientu 2.1 vai vairāk.</p>
     <p data-i18n-html="noteOdds"><b>~2.14</b> ir aptuvens Optibet koeficients, <b>godīgais</b> ir koeficients, pie kura likme ir tieši "vērta savu cenu". Ja Optibet dod vairāk par godīgo, likme ir izdevīga. Ja Optibet līnija nedaudz atšķiras, ņem tuvāko ar koeficientu 2.1 vai vairāk.</p>
-    <p data-i18n-html="noteTop"><b>★ Visticamākā</b>: katrā spēlē likme, ko bukmeikeri vērtē kā visticamāko. Sezonas pārbaudē (~1600 likmes) tas deva labākus rezultātus nekā robota paša modelis: robota "atradumi" pret bukmeikeriem biežāk zaudēja. Tā netiek izvēlēta pēc zemākā koeficienta, jo visām trim likmēm koeficients ir līdzīgs.</p>
-    <p data-i18n-html="noteSafe"><b>Drošās likmes</b>: koeficients vismaz 1.7. Drošums ir bukmeikeru vērtējums, un robota paša vērtējums ir parādīts blakus salīdzināšanai. Sezonas pārbaudē likmes pēc robota modeļa izgāja 42–47 % gadījumu, bet pēc bukmeikeriem 51–53 %.</p>
+    <p data-i18n-html="noteTop"><b>★ Reālākā no 2.1+</b>: katrā spēlē likme, ko bukmeikeri vērtē kā visticamāko. Sezonas pārbaudē (~1600 likmes) tas deva labākus rezultātus nekā robota paša modelis: robota "atradumi" pret bukmeikeriem biežāk zaudēja. Tā netiek izvēlēta pēc zemākā koeficienta, jo visām trim likmēm koeficients ir līdzīgs.</p>
+    <p data-i18n-html="noteSafe"><b>1.7+</b>: koeficients vismaz 1.7. Drošums ir bukmeikeru vērtējums, un robota paša vērtējums ir parādīts blakus salīdzināšanai. Sezonas pārbaudē likmes pēc robota modeļa izgāja 42–47 % gadījumu, bet pēc bukmeikeriem 51–53 %.</p>
     <p data-i18n-html="noteMonth"><b>Mēneša statistika</b> skaita likmes pēc spēļu datuma no mēneša 1. līdz pēdējai dienai.</p>
     <p data-i18n-html="noteUnits"><b>Vienības</b>: cik būtu plusos vai mīnusos, ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta.</p>
     <p id="updated"></p>
@@ -380,10 +380,10 @@ const I18N = {
   lv: {
     h1: "prognozes", title: "prognozes", loading: "Ielādē nakts likmes…", pickNight: "Izvēlies nakti",
     langLabel: "Valoda", darkLabel: "Tumšais režīms",
-    topTitle: "★ Visticamākās likmes", topSub: "viena katrā spēlē · 1 vienība uz likmi", unitsPm: "Vienības +/−",
+    topTitle: "★ Reālākās no 2.1+", topSub: "viena katrā spēlē · 1 vienība uz likmi", unitsPm: "Vienības +/−",
     unitsTotal: "Vienības kopā", archive: "Arhīvs pa mēnešiem", calibTitle: "Vai drošība atbilst realitātei?",
     thConf: "Drošība", thBets: "Likmes", thWon: "Izgāja", thExp: "Robots gaidīja",
-    safeTitle: "Drošās likmes", howTo: "Kā lasīt",
+    safeTitle: "1.7+", howTo: "Kā lasīt",
     safeIntro: "Likmes no visām nakts spēlēm ar koeficientu 1.7+, kuras ir visdrošākās pēc bukmeikeru vērtējuma. Sezonas pārbaudē tas strādāja labāk nekā robota paša statistika. No gandrīz vienlīdz drošām līnijām tiek ņemta tā, kurai ir augstākais koeficients.",
     crazyIntro: (o, n = 3) => `${n} likmes no visām ${DAY_MODE ? "dienas" : "nakts"} spēlēm, kurām ar koeficientu ${o}+ ir vislielākā iespēja iziet. Katra ir no citas spēles.`,
     emptyLoading: "<b>Likmes vēl nav ielādētas</b>Robots katru vakaru ap 21:30 (Rīgas laikā) ieliek šeit 3 likmes katrai nakts spēlei, bet no rīta pieraksta rezultātus.",
@@ -400,10 +400,10 @@ const I18N = {
     tonightWonTop: "Šonakt uzvarēts", tonightBets: "Šonakt likmes", wonPlayed: "Uzvarēts / notikušas",
     tonightWon: "Šonakt izgāja", tonightWait: "Šonakt gaida", totalWonExp: (e) => `Kopā izgāja (gaidīts ${e})`,
     monthStats: "mēneša statistika", colWonPlayed: "Uzvarēts / notikušas", colUnits: "Vienības",
-    rowAll: "Visas likmes", rowTop: "★ Visticamākās", rowSafe: "Drošās likmes", rowCrazy: "Crazy Dazy", waiting: "gaida",
+    rowAll: "2.1+", rowTop: "★ Reālākās no 2.1+", rowSafe: "1.7+", rowCrazy: "Crazy Dazy", waiting: "gaida",
     won: "Izgāja", lost: "Neizgāja", push: "Atgriezts", pending: "Gaida",
     wonL: "izgāja", lostL: "neizgāja", pushL: "atgriezts", pendingL: "gaida",
-    star: "★ Visticamākā", fair: "godīgais", confAria: (c) => `Drošība ${c} no 100`,
+    star: "★ Reālākā no 2.1+", fair: "godīgais", confAria: (c) => `Drošība ${c} no 100`,
     dataSafe: (k, r) => `Bukmeikeri ${k} % · robots ${r} %`, dataTop: (r, m) => `Bukmeikeri ${m} % · robots ${r} %`,
     bets: (n) => `${n} likmes`, wonOf: (h, n) => `${h}/${n} izgāja`,
     robot: "Robots:", bookies: "Bukmeikeri:", final: "Gala rezultāts: ", injuries: (n) => `Savainojumi un sastāvs (${n})`,
@@ -508,7 +508,7 @@ function applyStatic() {
     e.innerHTML = EN() ? (NOTES.en[k] || I18N.en[k] || e.dataset.lv) : e.dataset.lv;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((e) => e.setAttribute("aria-label", t(e.dataset.i18nAria)));
-  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : LEAGUE_KEY === "drosas" ? "Drošās likmes" : `${LEAGUE_TITLE} ${t("title")}`;
+  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : LEAGUE_KEY === "drosas" ? "1.7+ likmes" : `${LEAGUE_TITLE} ${t("title")}`;
   $("langCur").textContent = LANG.toUpperCase();
   document.querySelectorAll("#langInner button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
 }
@@ -564,7 +564,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  const rows = LEAGUE_KEY === "drosas" ? [["Drošās likmes", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+  const rows = LEAGUE_KEY === "drosas" ? [["1.7+", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
     : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
   for (const [label, s] of rows) {
     const tr = el("tr");
@@ -865,7 +865,7 @@ function renderStatsPage() {
   const since = `${firstDate.slice(8)}.${firstDate.slice(5, 7)}.${firstDate.slice(0, 4)}`;
   $("sub").textContent = `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${rows.length} spēļu dienas`;
   const nodes = [
-    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: visas likmes, ★ visticamākās, drošās likmes un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti."),
+    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti."),
   ];
   const current = el("div", "games");
   current.append(

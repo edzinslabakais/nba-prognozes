@@ -54,7 +54,7 @@ def load_data(export: Path, max_nights: int = 60) -> dict:
 def nav(current: str, depth: int) -> str:
     up = "../" * depth
     links = []
-    for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "Drošās", "drosas/"),
+    for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "1.7+", "drosas/"),
                                                                        ("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
         links.append(f'<a href="{up}{href or "./"}"{cur}>{label}</a>')
@@ -121,8 +121,8 @@ def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: i
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
     if key == "drosas":
-        head = head.replace("<title>Drošās likmes prognozes</title>", "<title>Drošās likmes</title>")
-        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Drošās <span>likmes</span></h1>')
+        head = head.replace("<title>1.7+ likmes prognozes</title>", "<title>1.7+ likmes</title>")
+        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>1.7+ <span>likmes</span></h1>')
     if key == "stats":
         head = head.replace("<title>Statistika prognozes</title>", "<title>Kopējā statistika</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Kopējā <span>statistika</span></h1>')
@@ -161,7 +161,7 @@ def build() -> list[Path]:
     (OUT / ".nojekyll").write_text("")
     pages = [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
              for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
-    pages.append(build_one("drosas", "Drošās likmes", None, OUT / "drosas", 1, True, (12, 30), data_override=safe_page_data()))
+    pages.append(build_one("drosas", "1.7+ likmes", None, OUT / "drosas", 1, True, (12, 30), data_override=safe_page_data()))
     pages.append(build_one("stats", "Statistika", None, OUT / "stats", 1, data_override=combined_data()))
     return pages
 
