@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 20.11.2026 07:45 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 08:02 (Rīgas laiks)_
 
-## Nakts uz 20.11. — 12 spēles, koef. ≥ 2.1 — izgāja 11/33
+## Nakts uz 20.11. — 12 spēles, koef. ≥ 2.1 — izgāja 11/36
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -128,13 +128,13 @@ Robots: **SEA 48% · X 24% · VAN 29%**, vārti 3.5–2.8 · bukmeikeri: SEA 60%
 Savainojumi/sastāvs: SEA: vārtsargs Philipp Grubauer (gaidāms) +0.05; VAN: vārtsargs Leevi Merilainen (apstiprināts) +0.03
 
 ### DAL @ VGK · 05:00
-Robots: **VGK 40% · X 26% · DAL 34%**, vārti 3.0–2.7 · bukmeikeri: VGK 53% ar papildl., kopā 5.5
+Robots: **VGK 40% · X 26% · DAL 34%**, vārti 3.0–2.7 · bukmeikeri: VGK 53% ar papildl., kopā 5.5 · gala rezultāts: **DAL 3 - 3 VGK (pamatlaikā; bullīšos 4 - 3)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **VGK zem 2.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **VGK uzvar** | 40/100 | 2.30 | 2.48 | ⏳ gaida |
-| 3 | **zem 4.5** | 35/100 | 2.69 | 2.89 | ⏳ gaida |
+| 1 ★ | **VGK zem 2.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
+| 2 | **VGK uzvar** | 40/100 | 2.30 | 2.48 | ❌ neizgāja |
+| 3 | **zem 4.5** | 35/100 | 2.69 | 2.89 | ❌ neizgāja |
 
 Savainojumi/sastāvs: VGK: vārtsargs Adin Hill (apstiprināts) +0.04; DAL: vārtsargs Jake Oettinger (gaidāms) +0.01
 
@@ -160,9 +160,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 4/14, vienības -4.92
+★ Visticamākās (1 katrā spēlē): uzvarēts 4/15, vienības -5.92
 
-Visas likmes kopā: izgāja 12/42 (29%), robots gaidīja ~16.9, vienības -14.67
+Visas likmes kopā: izgāja 12/45 (27%), robots gaidīja ~18.1, vienības -17.67
 Drošās likmes kopā: izgāja 5/6 (83%), robots gaidīja ~3.1, vienības +3.10
 Crazy Dazy kopā: izgāja 4/6 (67%), robots gaidīja ~1.4, vienības +10.29
 
@@ -170,11 +170,11 @@ Crazy Dazy kopā: izgāja 4/6 (67%), robots gaidīja ~1.4, vienības +10.29
 
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 12/42 | -14.67 | 4/14 | -4.92 | 5/6 | +3.10 | 4/6 | +10.29 |
+| Novembris 2026 (18.–30.11.) | 12/45 | -17.67 | 4/15 | -5.92 | 5/6 | +3.10 | 4/6 | +10.29 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 20.11. | 11/33 | 13.3 | -7.94 |
+| 20.11. | 11/36 | 14.5 | -10.94 |
 | 19.11. | 1/9 | 3.6 | -6.73 |
 
 ### Vai drošība atbilst realitātei?
@@ -182,5 +182,5 @@ Crazy Dazy kopā: izgāja 4/6 (67%), robots gaidīja ~1.4, vienības +10.29
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
 | 0-34 | 1 | 0% | 32% |
-| 35-39 | 14 | 21% | 38% |
-| 40-44 | 27 | 33% | 42% |
+| 35-39 | 15 | 20% | 37% |
+| 40-44 | 29 | 31% | 42% |

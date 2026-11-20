@@ -659,7 +659,7 @@
     "VGK: vārtsargs Adin Hill (apstiprināts) +0.04",
     "DAL: vārtsargs Jake Oettinger (gaidāms) +0.01"
    ],
-   "score": null,
+   "score": "DAL 3 - 3 VGK (pamatlaikā; bullīšos 4 - 3)",
    "picks": [
     {
      "category": "komandas vārti",
@@ -669,8 +669,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 3 VGK (pamatlaikā; bullīšos 4 - 3)",
      "top": true
     },
     {
@@ -681,8 +681,8 @@
      "fair_odds": 2.48,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 3 VGK (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     },
     {
@@ -693,8 +693,8 @@
      "fair_odds": 2.89,
      "est_odds": 2.69,
      "confidence": 35,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 3 VGK (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     }
    ]
@@ -702,11 +702,11 @@
  ],
  "summary": {
   "picks": 36,
-  "settled": 33,
+  "settled": 36,
   "hits": 11,
   "pushes": 0,
-  "expected_hits": 13.35,
-  "profit_units": -7.94
+  "expected_hits": 14.54,
+  "profit_units": -10.94
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -757,11 +757,11 @@
  },
  "top_summary": {
   "picks": 12,
-  "settled": 11,
+  "settled": 12,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 4.67,
-  "profit_units": -4.19
+  "expected_hits": 5.11,
+  "profit_units": -5.19
  },
  "safe_min_odds": 1.7,
  "safe": [

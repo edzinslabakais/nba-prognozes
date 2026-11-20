@@ -1,11 +1,11 @@
 {
  "overall": {
   "picks": 45,
-  "settled": 42,
+  "settled": 45,
   "hits": 12,
   "pushes": 0,
-  "expected_hits": 16.95,
-  "profit_units": -14.67
+  "expected_hits": 18.14,
+  "profit_units": -17.67
  },
  "crazy_overall": {
   "picks": 6,
@@ -17,11 +17,11 @@
  },
  "top_overall": {
   "picks": 15,
-  "settled": 14,
+  "settled": 15,
   "hits": 4,
   "pushes": 0,
-  "expected_hits": 5.94,
-  "profit_units": -4.92
+  "expected_hits": 6.38,
+  "profit_units": -5.92
  },
  "safe_overall": {
   "picks": 6,
@@ -68,11 +68,11 @@
   {
    "date": "2026-11-19",
    "picks": 36,
-   "settled": 33,
+   "settled": 36,
    "hits": 11,
    "pushes": 0,
-   "expected_hits": 13.35,
-   "profit_units": -7.94,
+   "expected_hits": 14.54,
+   "profit_units": -10.94,
    "crazy": {
     "picks": 3,
     "settled": 3,
@@ -83,11 +83,11 @@
    },
    "top": {
     "picks": 12,
-    "settled": 11,
+    "settled": 12,
     "hits": 3,
     "pushes": 0,
-    "expected_hits": 4.67,
-    "profit_units": -4.19
+    "expected_hits": 5.11,
+    "profit_units": -5.19
    },
    "safe": {
     "picks": 3,
@@ -108,14 +108,14 @@
   },
   {
    "range": "35-39",
-   "n": 14,
-   "hit_rate": 0.214,
-   "expected": 0.376
+   "n": 15,
+   "hit_rate": 0.2,
+   "expected": 0.374
   },
   {
    "range": "40-44",
-   "n": 27,
-   "hit_rate": 0.333,
+   "n": 29,
+   "hit_rate": 0.31,
    "expected": 0.421
   }
  ],
@@ -126,19 +126,19 @@
    "days": "18.–30.11.",
    "all": {
     "picks": 45,
-    "settled": 42,
+    "settled": 45,
     "hits": 12,
     "pushes": 0,
-    "expected_hits": 16.95,
-    "profit_units": -14.67
+    "expected_hits": 18.14,
+    "profit_units": -17.67
    },
    "top": {
     "picks": 15,
-    "settled": 14,
+    "settled": 15,
     "hits": 4,
     "pushes": 0,
-    "expected_hits": 5.94,
-    "profit_units": -4.92
+    "expected_hits": 6.38,
+    "profit_units": -5.92
    },
    "safe": {
     "picks": 6,
@@ -158,5 +158,5 @@
    }
   }
  ],
- "updated_at": "2026-11-20T05:45+00:00"
+ "updated_at": "2026-11-20T06:02+00:00"
 }
