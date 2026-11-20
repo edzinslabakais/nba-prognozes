@@ -913,16 +913,15 @@ function renderSafePage() {
   }
   const night = state.nights.find((n) => n.date === state.selected);
   renderNights();
-  const allBets = state.nights.flatMap((n) => n.bets || []);
-  const o = sumOf(allBets);
+  // the strip is about the chosen day only; every league has its own statistics further down
   const s = night ? night.summary : null;
-  $("s1").textContent = s ? (s.settled ? `${s.hits}/${s.settled}` : String(s.picks)) : "–";
-  $("s1l").textContent = s && s.settled ? "Šajā dienā izgāja" : "Likmes šajā dienā";
-  $("s2").textContent = o.settled ? pct(o.hits, o.settled) : "–";
-  $("s2l").textContent = o.settled ? `Kopā izgāja (${o.hits}/${o.settled})` : "Kopā izgāja";
-  $("s3").textContent = o.settled ? signed(o.profit_units) : "–";
-  $("s3").className = o.profit_units > 0 ? "pos" : o.profit_units < 0 ? "neg" : "";
-  $("s3l").textContent = "Vienības kopā";
+  $("s1").textContent = s ? String(s.picks) : "–";
+  $("s1l").textContent = "Likmes šajā dienā";
+  $("s2").textContent = s && s.settled ? `${s.hits}/${s.settled}` : "–";
+  $("s2l").textContent = s && s.settled ? `Izgāja (${pct(s.hits, s.settled)})` : "Izgāja";
+  $("s3").textContent = s && s.settled ? signed(s.profit_units) : "–";
+  $("s3").className = s && s.profit_units > 0 ? "pos" : s && s.profit_units < 0 ? "neg" : "";
+  $("s3l").textContent = "Vienības šajā dienā";
   $("sub").textContent = night ? `${nightLabel(night.date)} vakara un nakts spēles · ${night.bets.length} likmes · koeficients ≥ 1.7`
     : "Vēl nav nevienas dienas likmju.";
   const box = $("games");
@@ -942,22 +941,48 @@ function renderSafePage() {
       nodes.push(h, ...L.bets.map((b) => betCard(b, `sa:${key}`, night.date, { ...b, mk_conf: b.confidence })));
     }
   }
-  // own statistics: this week / month / all time, with every league on its own
-  const rows = [];
-  for (const n of state.nights) {
-    const per = new Map();
-    for (const b of n.bets || []) { if (!per.has(b.league)) per.set(b.league, { title: b.league_title, bets: [] }); per.get(b.league).bets.push(b); }
-    for (const [lg, v] of per) rows.push({ league: lg, title: v.title, date: n.date, all: sumOf(v.bets), top: {}, safe: {}, crazy: {} });
-  }
+  // statistics for every league on its own (no totals across leagues)
   const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
-  const weeks = group(rows, (r) => mondayOf(r.date)), months = group(rows, (r) => r.date.slice(0, 7));
   const wk = mondayOf(today), mo = today.slice(0, 7);
-  nodes.push(el("h2", null, "Statistika"));
+  const LEAGUE_ORDER = ["nba", "nhl", "el", "cl", "ncaa", "ch"];
+  const leagues = new Map();
+  for (const n of state.nights) for (const b of n.bets || []) {
+    if (!leagues.has(b.league)) leagues.set(b.league, { title: b.league_title, bets: [] });
+    leagues.get(b.league).bets.push({ ...b, date: n.date });
+  }
+  nodes.push(el("h2", null, "Statistika pa līgām"));
+  nodes.push(el("p", "intro", "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai."));
   const stats = el("div", "games");
-  stats.append(periodItem("sa:w", "Šī nedēļa", weekLabel(wk), weeks.get(wk)),
-               periodItem("sa:m", "Šis mēnesis", monthLabelLv(mo), months.get(mo)),
-               periodItem("sa:all", "Kopā", "", group(rows, () => "all").get("all")));
-  for (const k of [...weeks.keys()].filter((k) => k !== wk).sort().reverse()) stats.append(periodItem(`sa:w:${k}`, weekLabel(k), "", weeks.get(k)));
+  for (const [key, L] of [...leagues].sort((a, b) => LEAGUE_ORDER.indexOf(a[0]) - LEAGUE_ORDER.indexOf(b[0]))) {
+    const bets = L.bets;
+    const periods = [["Šī nedēļa", bets.filter((b) => mondayOf(b.date) === wk)],
+                     ["Šis mēnesis", bets.filter((b) => b.date.slice(0, 7) === mo)],
+                     ["Kopā", bets]];
+    const weeks = [...new Set(bets.map((b) => mondayOf(b.date)))].filter((w) => w !== wk).sort().reverse();
+    for (const w of weeks) periods.push([weekLabel(w), bets.filter((b) => mondayOf(b.date) === w)]);
+    const months = [...new Set(bets.map((b) => b.date.slice(0, 7)))].filter((m) => m !== mo).sort().reverse();
+    for (const m of months) periods.push([monthLabelLv(m), bets.filter((b) => b.date.slice(0, 7) === m)]);
+    const tbl = el("table", "mt");
+    const head = el("tr");
+    head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
+    const thead = el("thead"); thead.append(head);
+    const body = el("tbody");
+    for (const [label, list] of periods) {
+      const x = sumOf(list);
+      const tr = el("tr");
+      tr.append(el("td", null, label),
+                el("td", null, x.settled ? `${x.hits}/${x.settled} (${pct(x.hits, x.settled)})` : (x.picks ? `0/0 · ${x.picks} ${t("waiting")}` : "–")),
+                el("td", x.settled ? (x.profit_units > 0 ? "pos" : x.profit_units < 0 ? "neg" : "") : "", x.settled ? signed(x.profit_units) : "–"));
+      body.append(tr);
+    }
+    tbl.append(thead, body);
+    const all = sumOf(bets);
+    const sum = all.settled ? [`${all.hits}/${all.settled} · ${signed(all.profit_units)}`, all.profit_units >= 0 ? "good" : "bad"]
+      : [`${all.picks} ${t("waiting")}`, ""];
+    const left = el("div", "teams period-title");
+    left.append(el("span", null, L.title));
+    stats.append(accordion(`sa:stats:${key}`, left, "", sum, [tbl]));
+  }
   nodes.push(stats);
   box.replaceChildren(...nodes);
   const upd = state.stats?.updated_at;
