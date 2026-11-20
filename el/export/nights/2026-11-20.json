@@ -1,0 +1,343 @@
+{
+ "date": "2026-11-20",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-20T11:15+00:00",
+ "games": [
+  {
+   "game_id": "E2026_127",
+   "away": "ASV",
+   "home": "IST",
+   "away_name": "LDLC ASVEL Villeurbanne",
+   "home_name": "Anadolu Efes Istanbul",
+   "away_short": "LDLC ASVEL",
+   "home_short": "Anadolu Efes",
+   "start_utc": "2026-11-20 17:30:00+00:00",
+   "riga_time": "20.11 19:30",
+   "robot_line": "IST -7.2",
+   "robot_total": 171.9,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "IST virs 90.5",
+     "p_model": 0.4347,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 173.5",
+     "p_model": 0.4308,
+     "p_market": null,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "IST -9.5",
+     "p_model": 0.4151,
+     "p_market": null,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_130",
+   "away": "MAD",
+   "home": "OLY",
+   "away_name": "Real Madrid",
+   "home_name": "Olympiacos Piraeus",
+   "away_short": "Real Madrid",
+   "home_short": "Olympiacos",
+   "start_utc": "2026-11-20 19:15:00+00:00",
+   "riga_time": "20.11 21:15",
+   "robot_line": "OLY -4.2",
+   "robot_total": 178.0,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 179.5",
+     "p_model": 0.4349,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "MAD zem 84.5",
+     "p_model": 0.4304,
+     "p_market": null,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "OLY -6.5",
+     "p_model": 0.4144,
+     "p_market": null,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_128",
+   "away": "RED",
+   "home": "BAR",
+   "away_name": "Crvena Zvezda Meridianbet Belgrade",
+   "home_name": "FC Barcelona",
+   "away_short": "Crvena Zvezda",
+   "home_short": "FC Barcelona",
+   "start_utc": "2026-11-20 19:30:00+00:00",
+   "riga_time": "20.11 21:30",
+   "robot_line": "BAR -2.7",
+   "robot_total": 167.4,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 163.5",
+     "p_model": 0.439,
+     "p_market": null,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "BAR -4.5",
+     "p_model": 0.432,
+     "p_market": null,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "RED virs 83.5",
+     "p_model": 0.4305,
+     "p_market": null,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "E2026_129",
+   "away": "BES",
+   "home": "PAR",
+   "away_name": "Besiktas Fuzul Istanbul",
+   "home_name": "Partizan Mozzart Bet Belgrade",
+   "away_short": "Besiktas",
+   "home_short": "Partizan",
+   "start_utc": "2026-11-20 19:45:00+00:00",
+   "riga_time": "20.11 21:45",
+   "robot_line": "PAR -3.0",
+   "robot_total": 164.0,
+   "market_line": "—",
+   "market_total": null,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "PAR virs 84.5",
+     "p_model": 0.4357,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 165.5",
+     "p_model": 0.4348,
+     "p_market": null,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "starpība",
+     "bet": "BES +0.5",
+     "p_model": 0.4165,
+     "p_market": null,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 12,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "E2026_128",
+   "game": "RED@BAR",
+   "riga_time": "20.11 21:30",
+   "category": "handikaps",
+   "bet": "RED -5.5",
+   "confidence": 23,
+   "fair_odds": 4.33,
+   "est_odds": 4.03,
+   "result": null,
+   "score": null,
+   "away_short": "Crvena Zvezda",
+   "home_short": "FC Barcelona"
+  },
+  {
+   "game_id": "E2026_127",
+   "game": "ASV@IST",
+   "riga_time": "20.11 19:30",
+   "category": "handikaps",
+   "bet": "IST -15.5",
+   "confidence": 23,
+   "fair_odds": 4.38,
+   "est_odds": 4.08,
+   "result": null,
+   "score": null,
+   "away_short": "LDLC ASVEL",
+   "home_short": "Anadolu Efes"
+  },
+  {
+   "game_id": "E2026_130",
+   "game": "MAD@OLY",
+   "riga_time": "20.11 21:15",
+   "category": "handikaps",
+   "bet": "OLY -12.5",
+   "confidence": 23,
+   "fair_odds": 4.39,
+   "est_odds": 4.08,
+   "result": null,
+   "score": null,
+   "away_short": "Real Madrid",
+   "home_short": "Olympiacos"
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "E2026_128",
+   "game": "RED@BAR",
+   "riga_time": "20.11 21:30",
+   "category": "kopā",
+   "bet": "zem 167.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5326,
+   "fair_odds": 1.88,
+   "est_odds": 1.75,
+   "result": null,
+   "score": null,
+   "away_short": "Crvena Zvezda",
+   "home_short": "FC Barcelona"
+  },
+  {
+   "game_id": "E2026_130",
+   "game": "MAD@OLY",
+   "riga_time": "20.11 21:15",
+   "category": "kopā",
+   "bet": "virs 175.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5284,
+   "fair_odds": 1.89,
+   "est_odds": 1.76,
+   "result": null,
+   "score": null,
+   "away_short": "Real Madrid",
+   "home_short": "Olympiacos"
+  },
+  {
+   "game_id": "E2026_127",
+   "game": "ASV@IST",
+   "riga_time": "20.11 19:30",
+   "category": "komandas punkti",
+   "bet": "IST zem 89.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5264,
+   "fair_odds": 1.9,
+   "est_odds": 1.77,
+   "result": null,
+   "score": null,
+   "away_short": "LDLC ASVEL",
+   "home_short": "Anadolu Efes"
+  }
+ ],
+ "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}
