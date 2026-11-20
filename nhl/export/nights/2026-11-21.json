@@ -1,0 +1,893 @@
+{
+ "date": "2026-11-21",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-20T17:42+00:00",
+ "games": [
+  {
+   "game_id": "401892754",
+   "away": "EDM",
+   "home": "CAR",
+   "away_name": "Edmonton Oilers",
+   "home_name": "Carolina Hurricanes",
+   "away_record": "17-4-3",
+   "home_record": "16-3-3",
+   "start_utc": "2026-11-21 18:00:00+00:00",
+   "riga_time": "21.11 20:00",
+   "robot_line": "CAR 48% · X 24% · EDM 28%",
+   "robot_total": "vārti 3.5–2.7",
+   "market_line": "CAR 60% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "CAR: vārtsargs Pyotr Kochetkov (gaidāms) +0.06",
+    "EDM: vārtsargs Devon Levi (gaidāms) -0.01"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "CAR virs 3.5",
+     "p_model": 0.4049,
+     "p_market": 0.4428,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4446,
+     "p_market": 0.4099,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "EDM uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4127,
+     "p_market": 0.3962,
+     "fair_odds": 2.5,
+     "est_odds": 2.33,
+     "confidence": 40,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892755",
+   "away": "CHI",
+   "home": "CGY",
+   "away_name": "Chicago Blackhawks",
+   "home_name": "Calgary Flames",
+   "away_record": "6-14-2",
+   "home_record": "10-12-1",
+   "start_utc": "2026-11-21 20:30:00+00:00",
+   "riga_time": "21.11 22:30",
+   "robot_line": "CGY 46% · X 25% · CHI 29%",
+   "robot_total": "vārti 3.3–2.7",
+   "market_line": "CGY 59% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "CGY: vārtsargs Dustin Wolf (gaidāms) -0.07",
+    "CHI: vārtsargs Spencer Knight (gaidāms) +0.02"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "CHI uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4599,
+     "p_market": 0.4066,
+     "fair_odds": 2.4,
+     "est_odds": 2.23,
+     "confidence": 42,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "CGY virs 3.5",
+     "p_model": 0.3719,
+     "p_market": 0.3999,
+     "fair_odds": 2.54,
+     "est_odds": 2.36,
+     "confidence": 39,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3811,
+     "p_market": 0.3681,
+     "fair_odds": 2.7,
+     "est_odds": 2.51,
+     "confidence": 37,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892756",
+   "away": "BUF",
+   "home": "FLA",
+   "away_name": "Buffalo Sabres",
+   "home_name": "Florida Panthers",
+   "away_record": "9-9-4",
+   "home_record": "12-8-3",
+   "start_utc": "2026-11-21 23:00:00+00:00",
+   "riga_time": "22.11 01:00",
+   "robot_line": "FLA 44% · X 25% · BUF 31%",
+   "robot_total": "vārti 3.3–2.8",
+   "market_line": "FLA 58% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "FLA: vārtsargs Jacob Markstrom (gaidāms) +0.02",
+    "BUF: vārtsargs Alex Lyon (gaidāms) +0.09"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "BUF uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4926,
+     "p_market": 0.417,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4272,
+     "p_market": 0.4257,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "FLA virs 3.5",
+     "p_model": 0.3609,
+     "p_market": 0.4158,
+     "fair_odds": 2.47,
+     "est_odds": 2.3,
+     "confidence": 40,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892757",
+   "away": "PIT",
+   "home": "NSH",
+   "away_name": "Pittsburgh Penguins",
+   "home_name": "Nashville Predators",
+   "away_record": "7-12-2",
+   "home_record": "11-6-5",
+   "start_utc": "2026-11-21 23:00:00+00:00",
+   "riga_time": "22.11 01:00",
+   "robot_line": "NSH 45% · X 25% · PIT 30%",
+   "robot_total": "vārti 3.3–2.8",
+   "market_line": "NSH 56% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "NSH: vārtsargs Juuse Saros (gaidāms) +0.11",
+    "PIT: vārtsargs Arturs Silovs (gaidāms) -0.08"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "PIT uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.3842,
+     "p_market": 0.4365,
+     "fair_odds": 2.35,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4315,
+     "p_market": 0.4177,
+     "fair_odds": 2.38,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "NSH virs 3.5",
+     "p_model": 0.4351,
+     "p_market": 0.4079,
+     "fair_odds": 2.42,
+     "est_odds": 2.25,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892763",
+   "away": "NJ",
+   "home": "STL",
+   "away_name": "New Jersey Devils",
+   "home_name": "St. Louis Blues",
+   "away_record": "15-7-0",
+   "home_record": "11-9-2",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "STL 33% · X 25% · NJ 41%",
+   "robot_total": "vārti 2.8–3.1",
+   "market_line": "NJ 54% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "STL: vārtsargs Joel Hofer (gaidāms) +0.10",
+    "NJ: vārtsargs Connor Hellebuyck (gaidāms) +0.05"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NJ uzvar",
+     "p_model": 0.4059,
+     "p_market": 0.4163,
+     "fair_odds": 2.41,
+     "est_odds": 2.25,
+     "confidence": 41,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "NJ zem 2.5",
+     "p_model": 0.4043,
+     "p_market": 0.401,
+     "fair_odds": 2.49,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3777,
+     "p_market": 0.3727,
+     "fair_odds": 2.68,
+     "est_odds": 2.49,
+     "confidence": 37,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892762",
+   "away": "NYI",
+   "home": "DET",
+   "away_name": "New York Islanders",
+   "home_name": "Detroit Red Wings",
+   "away_record": "10-6-5",
+   "home_record": "8-11-3",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "DET 34% · X 26% · NYI 40%",
+   "robot_total": "vārti 2.8–3.0",
+   "market_line": "NYI 50% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "DET: vārtsargs John Gibson (apstiprināts) -0.23",
+    "NYI: vārtsargs Ilya Sorokin (gaidāms) +0.09"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "NYI zem 2.5",
+     "p_model": 0.3614,
+     "p_market": 0.4432,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "NYI uzvar",
+     "p_model": 0.4995,
+     "p_market": 0.3757,
+     "fair_odds": 2.5,
+     "est_odds": 2.33,
+     "confidence": 40,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.3568,
+     "p_market": 0.3515,
+     "fair_odds": 2.85,
+     "est_odds": 2.65,
+     "confidence": 35,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892761",
+   "away": "LA",
+   "home": "OTT",
+   "away_name": "Los Angeles Kings",
+   "home_name": "Ottawa Senators",
+   "away_record": "7-11-2",
+   "home_record": "14-6-3",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "OTT 47% · X 25% · LA 28%",
+   "robot_total": "vārti 3.2–2.5",
+   "market_line": "OTT 59% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "OTT: vārtsargs Linus Ullmark (gaidāms) +0.27",
+    "LA: vārtsargs Darcy Kuemper (gaidāms) -0.01"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "LA uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.3804,
+     "p_market": 0.4066,
+     "fair_odds": 2.49,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "OTT zem 2.5",
+     "p_model": 0.4144,
+     "p_market": 0.3858,
+     "fair_odds": 2.55,
+     "est_odds": 2.38,
+     "confidence": 39,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 4.5",
+     "p_model": 0.3896,
+     "p_market": 0.3299,
+     "fair_odds": 2.93,
+     "est_odds": 2.72,
+     "confidence": 34,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892764",
+   "away": "VGK",
+   "home": "WPG",
+   "away_name": "Vegas Golden Knights",
+   "home_name": "Winnipeg Jets",
+   "away_record": "13-6-5",
+   "home_record": "11-9-3",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "WPG 33% · X 25% · VGK 42%",
+   "robot_total": "vārti 2.9–3.3",
+   "market_line": "VGK 55% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "WPG: vārtsargs Stuart Skinner (gaidāms) -0.03",
+    "VGK: vārtsargs Adin Hill (gaidāms) +0.04"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "WPG zem 2.5",
+     "p_model": 0.4408,
+     "p_market": 0.4374,
+     "fair_odds": 2.28,
+     "est_odds": 2.12,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "VGK uzvar",
+     "p_model": 0.4137,
+     "p_market": 0.4278,
+     "fair_odds": 2.35,
+     "est_odds": 2.19,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.4285,
+     "p_market": 0.4116,
+     "fair_odds": 2.41,
+     "est_odds": 2.24,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892759",
+   "away": "CBJ",
+   "home": "TOR",
+   "away_name": "Columbus Blue Jackets",
+   "home_name": "Toronto Maple Leafs",
+   "away_record": "8-12-0",
+   "home_record": "8-13-3",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "TOR 40% · X 25% · CBJ 35%",
+   "robot_total": "vārti 3.2–3.0",
+   "market_line": "TOR 53% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "TOR: vārtsargs Sergei Bobrovsky (gaidāms) -0.09",
+    "CBJ: vārtsargs Jet Greaves (gaidāms) -0.10"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "CBJ zem 2.5",
+     "p_model": 0.3933,
+     "p_market": 0.4305,
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 5.5",
+     "p_model": 0.395,
+     "p_market": 0.427,
+     "fair_odds": 2.38,
+     "est_odds": 2.21,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "TOR uzvar",
+     "p_model": 0.3832,
+     "p_market": 0.4007,
+     "fair_odds": 2.52,
+     "est_odds": 2.34,
+     "confidence": 40,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892758",
+   "away": "WSH",
+   "home": "BOS",
+   "away_name": "Washington Capitals",
+   "home_name": "Boston Bruins",
+   "away_record": "10-10-0",
+   "home_record": "14-7-1",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "BOS 41% · X 25% · WSH 35%",
+   "robot_total": "vārti 3.3–3.1",
+   "market_line": "BOS 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "BOS: vārtsargs Jeremy Swayman (gaidāms) -0.02",
+    "WSH: vārtsargs Logan Thompson (gaidāms) -0.00"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.467,
+     "p_market": 0.424,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "WSH zem 2.5",
+     "p_model": 0.4088,
+     "p_market": 0.4084,
+     "fair_odds": 2.45,
+     "est_odds": 2.28,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "BOS uzvar",
+     "p_model": 0.4444,
+     "p_market": 0.3978,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892760",
+   "away": "PHI",
+   "home": "MTL",
+   "away_name": "Philadelphia Flyers",
+   "home_name": "Montreal Canadiens",
+   "away_record": "8-11-6",
+   "home_record": "14-5-4",
+   "start_utc": "2026-11-22 00:00:00+00:00",
+   "riga_time": "22.11 02:00",
+   "robot_line": "MTL 47% · X 25% · PHI 28%",
+   "robot_total": "vārti 3.2–2.6",
+   "market_line": "MTL 60% ar papildl.",
+   "market_total": "kopā 5.5",
+   "injuries": [
+    "MTL: vārtsargs Jacob Fowler (gaidāms) +0.13",
+    "PHI: vārtsargs Dan Vladar (gaidāms) -0.02"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "PHI uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.432,
+     "p_market": 0.4004,
+     "fair_odds": 2.46,
+     "est_odds": 2.29,
+     "confidence": 41,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "MTL virs 3.5",
+     "p_model": 0.3306,
+     "p_market": 0.4044,
+     "fair_odds": 2.57,
+     "est_odds": 2.39,
+     "confidence": 39,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.2999,
+     "p_market": 0.3682,
+     "fair_odds": 2.83,
+     "est_odds": 2.63,
+     "confidence": 35,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892765",
+   "away": "ANA",
+   "home": "UTA",
+   "away_name": "Anaheim Ducks",
+   "home_name": "Utah Mammoth",
+   "away_record": "11-11-1",
+   "home_record": "11-9-3",
+   "start_utc": "2026-11-22 02:00:00+00:00",
+   "riga_time": "22.11 04:00",
+   "robot_line": "UTA 46% · X 24% · ANA 31%",
+   "robot_total": "vārti 3.6–3.1",
+   "market_line": "UTA 59% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "UTA: vārtsargs Karel Vejmelka (gaidāms) -0.01",
+    "ANA: vārtsargs Lukas Dostal (gaidāms) -0.10"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "ANA uzvar (ieskaitot papildlaiku)",
+     "p_model": 0.4971,
+     "p_market": 0.4066,
+     "fair_odds": 2.36,
+     "est_odds": 2.2,
+     "confidence": 42,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "ANA zem 2.5",
+     "p_model": 0.2956,
+     "p_market": 0.4286,
+     "fair_odds": 2.49,
+     "est_odds": 2.32,
+     "confidence": 40,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 7.5",
+     "p_model": 0.4408,
+     "p_market": 0.3373,
+     "fair_odds": 2.81,
+     "est_odds": 2.61,
+     "confidence": 36,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892766",
+   "away": "MIN",
+   "home": "VAN",
+   "away_name": "Minnesota Wild",
+   "home_name": "Vancouver Canucks",
+   "away_record": "17-3-4",
+   "home_record": "5-18-1",
+   "start_utc": "2026-11-22 03:00:00+00:00",
+   "riga_time": "22.11 05:00",
+   "robot_line": "VAN 18% · X 21% · MIN 61%",
+   "robot_total": "vārti 2.4–4.0",
+   "market_line": "MIN 71% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "VAN: vārtsargs Leevi Merilainen (gaidāms) +0.03",
+    "MIN: vārtsargs Jesper Wallstedt (gaidāms) +0.04"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas vārti",
+     "bet": "VAN virs 2.5",
+     "p_model": 0.3953,
+     "p_market": 0.4462,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.4124,
+     "p_market": 0.4403,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "MIN virs 4.5",
+     "p_model": 0.3458,
+     "p_market": 0.3429,
+     "fair_odds": 2.91,
+     "est_odds": 2.71,
+     "confidence": 34,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401892767",
+   "away": "SEA",
+   "home": "SJ",
+   "away_name": "Seattle Kraken",
+   "home_name": "San Jose Sharks",
+   "away_record": "10-8-1",
+   "home_record": "10-12-2",
+   "start_utc": "2026-11-22 03:00:00+00:00",
+   "riga_time": "22.11 05:00",
+   "robot_line": "SJ 38% · X 25% · SEA 37%",
+   "robot_total": "vārti 3.2–3.1",
+   "market_line": "SJ 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "SJ: vārtsargs Yaroslav Askarov (gaidāms) -0.03",
+    "SEA: vārtsargs Philipp Grubauer (gaidāms) +0.04"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 6.5",
+     "p_model": 0.425,
+     "p_market": 0.4284,
+     "fair_odds": 2.34,
+     "est_odds": 2.18,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "komandas vārti",
+     "bet": "SEA zem 2.5",
+     "p_model": 0.3625,
+     "p_market": 0.4022,
+     "fair_odds": 2.54,
+     "est_odds": 2.36,
+     "confidence": 39,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "uzvarētājs / handikaps",
+     "bet": "SJ uzvar",
+     "p_model": 0.3314,
+     "p_market": 0.3936,
+     "fair_odds": 2.63,
+     "est_odds": 2.44,
+     "confidence": 38,
+     "result": null,
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 42,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401892759",
+   "game": "CBJ@TOR",
+   "riga_time": "22.11 02:00",
+   "category": "kombinācija",
+   "bet": "TOR uzvar & virs 5.5",
+   "confidence": 23,
+   "fair_odds": 4.3,
+   "est_odds": 4.0,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892762",
+   "game": "NYI@DET",
+   "riga_time": "22.11 02:00",
+   "category": "kopā",
+   "bet": "virs 7.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892754",
+   "game": "EDM@CAR",
+   "riga_time": "21.11 20:00",
+   "category": "komandas vārti",
+   "bet": "EDM zem 1.5",
+   "confidence": 23,
+   "fair_odds": 4.32,
+   "est_odds": 4.01,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 14,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "401892762",
+   "game": "NYI@DET",
+   "riga_time": "22.11 02:00",
+   "category": "komandas vārti",
+   "bet": "DET virs 2.5",
+   "confidence": 53,
+   "data_conf": 55,
+   "p_model": 0.4636,
+   "fair_odds": 1.88,
+   "est_odds": 1.74,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892757",
+   "game": "PIT@NSH",
+   "riga_time": "22.11 01:00",
+   "category": "komandas vārti",
+   "bet": "PIT virs 2.5",
+   "confidence": 54,
+   "data_conf": 55,
+   "p_model": 0.4971,
+   "fair_odds": 1.86,
+   "est_odds": 1.73,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401892760",
+   "game": "PHI@MTL",
+   "riga_time": "22.11 02:00",
+   "category": "kopā",
+   "bet": "virs 5.5",
+   "confidence": 53,
+   "data_conf": 54,
+   "p_model": 0.4703,
+   "fair_odds": 1.89,
+   "est_odds": 1.76,
+   "result": null,
+   "score": null
+  }
+ ],
+ "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}

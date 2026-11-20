@@ -1,80 +1,80 @@
 # 🏀 NCAA prognozes
 
-_Atjaunināts 20.11.2026 09:41 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 19:43 (Rīgas laiks)_
 
-## Nakts uz 20.11. — 10 spēles, koef. ≥ 2.1 — izgāja 5/10
+## Nakts uz 21.11. — 10 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
-### UMBC @ OSU · 02:00
-Robots: **OSU -28.5**, kopā 155.5 · bukmeikeri: OSU -28.5, kopā 155.5 · gala rezultāts: **UMBC 62 - 101 OSU**
+### MAN @ MIA · 00:00
+Robots: **MIA -36.5**, kopā 150.5 · bukmeikeri: MIA -36.5, kopā 150.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **UMBC virs 64.5** | 44/100 | 2.10 | 2.26 | ❌ neizgāja |
+| 1 ★ | **MAN +34.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### COFC @ DRKE · 02:30
-Robots: **DRKE -1.5**, kopā 158.5 · bukmeikeri: DRKE -1.5, kopā 158.5 · gala rezultāts: **COFC 70 - 86 DRKE**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **COFC virs 79.5** | 44/100 | 2.11 | 2.27 | ❌ neizgāja |
-
-### SEMO @ STMN · 03:00
-Robots: **STMN -6.5**, kopā 149.5 · bukmeikeri: STMN -6.5, kopā 149.5 · gala rezultāts: **SEMO 61 - 93 STMN**
+### DAY @ UTAH · 00:30
+Robots: **UTAH -1.5**, kopā 138.5 · bukmeikeri: UTAH -1.5, kopā 138.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SEMO virs 72.5** | 44/100 | 2.10 | 2.26 | ❌ neizgāja |
+| 1 ★ | **DAY virs 69.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### STET @ LOU · 03:00
-Robots: **LOU -36.5**, kopā 154.5 · bukmeikeri: LOU -36.5, kopā 154.5 · gala rezultāts: **STET 69 - 83 LOU**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **STET +34.5** | 44/100 | 2.10 | 2.26 | ✅ izgāja |
-
-### SUU @ TEX · 03:00
-Robots: **TEX -35.5**, kopā 155.5 · bukmeikeri: TEX -35.5, kopā 155.5 · gala rezultāts: **SUU 68 - 92 TEX**
+### MONM @ PRIN · 02:00
+Robots: **PRIN -3.5**, kopā 140.5 · bukmeikeri: PRIN -3.5, kopā 140.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SUU +33.5** | 44/100 | 2.10 | 2.26 | ✅ izgāja |
+| 1 ★ | **MONM virs 69.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### RUTG @ UNLV · 03:30
-Robots: **RUTG -2.5**, kopā 157.5 · bukmeikeri: RUTG -2.5, kopā 157.5 · gala rezultāts: **RUTG 89 - 70 UNLV**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **UNLV virs 78.5** | 44/100 | 2.11 | 2.27 | ❌ neizgāja |
-
-### USM @ GRAM · 04:00
-Robots: **USM -1.5**, kopā 144.5 · bukmeikeri: USM -1.5, kopā 144.5 · gala rezultāts: **USM 75 - 75 GRAM (pamatlaikā; ar papildlaiku 103 - 100)**
+### OAK @ PUR · 02:00
+Robots: **PUR -20.5**, kopā 147.5 · bukmeikeri: PUR -20.5, kopā 147.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **GRAM virs 72.5** | 44/100 | 2.11 | 2.26 | ✅ izgāja |
+| 1 ★ | **OAK +18.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### UCSB @ PEPP · 04:00
-Robots: **UCSB -1.5**, kopā 148.5 · bukmeikeri: UCSB -1.5, kopā 148.5 · gala rezultāts: **UCSB 88 - 80 PEPP**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **PEPP virs 74.5** | 44/100 | 2.11 | 2.27 | ✅ izgāja |
-
-### HOU @ KU · 06:00
-Robots: **HOU -3.5**, kopā 150.5 · bukmeikeri: HOU -3.5, kopā 150.5 · gala rezultāts: **HOU 92 - 83 KU**
+### SCST @ CIT · 02:00
+Robots: **CIT -3.5**, kopā 142.5 · bukmeikeri: CIT -3.5, kopā 142.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **KU virs 74.5** | 44/100 | 2.10 | 2.26 | ✅ izgāja |
+| 1 ★ | **SCST virs 70.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### TAR @ USC · 06:00
-Robots: **USC -28.5**, kopā 158.5 · bukmeikeri: USC -28.5, kopā 158.5 · gala rezultāts: **TAR 51 - 96 USC**
+### CMU @ PITT · 02:00
+Robots: **PITT -21.5**, kopā 144.5 · bukmeikeri: PITT -21.5, kopā 144.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **TAR +26.5** | 44/100 | 2.11 | 2.27 | ❌ neizgāja |
+| 1 ★ | **CMU +19.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+
+### CCU @ TENN · 02:00
+Robots: **TENN -26.5**, kopā 147.5 · bukmeikeri: TENN -26.5, kopā 147.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **CCU virs 61.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+
+### TLSA @ MSST · 02:30
+Robots: **MSST -7.5**, kopā 152.5 · bukmeikeri: MSST -7.5, kopā 152.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **TLSA virs 73.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+
+### LEM @ MIZ · 03:00
+Robots: **MIZ -36.5**, kopā 155.5 · bukmeikeri: MIZ -36.5, kopā 155.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **LEM +34.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+
+### MRSH @ UNC · 04:00
+Robots: **UNC -19.5**, kopā 158.5 · bukmeikeri: UNC -19.5, kopā 158.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **MRSH virs 70.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -82,11 +82,11 @@ Robots: **USC -28.5**, kopā 158.5 · bukmeikeri: USC -28.5, kopā 158.5 · gala
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| USM@GRAM | **GRAM uzvar & virs 144.5** | 20/100 | 4.55 | 4.89 | ❌ neizgāja |
-| UCSB@PEPP | **PEPP uzvar & virs 148.5** | 20/100 | 4.55 | 4.89 | ❌ neizgāja |
-| TA&M@TCU | **TCU uzvar & zem 163.5** | 23/100 | 4.05 | 4.36 | ❌ neizgāja |
-| GASO@HCU | **HCU 1-5** | 15/100 | 6.31 | 6.78 | ❌ neizgāja |
-| COFC@DRKE | **COFC uzvar & zem 158.5** | 23/100 | 4.06 | 4.36 | ❌ neizgāja |
+| UNT@APP | **APP uzvar & zem 132.5** | 20/100 | 4.72 | 5.07 | ⏳ gaida |
+| UTM@SIU | **UTM uzvar & virs 148.5** | 20/100 | 4.55 | 4.89 | ⏳ gaida |
+| DAY@UTAH | **DAY uzvar & virs 138.5** | 21/100 | 4.54 | 4.88 | ⏳ gaida |
+| RICH@WKU | **WKU uzvar & zem 149.5** | 23/100 | 4.05 | 4.36 | ⏳ gaida |
+| BELL@EKU | **EKU 21+** | 18/100 | 5.16 | 5.54 | ⏳ gaida |
 
 ## Statistika
 

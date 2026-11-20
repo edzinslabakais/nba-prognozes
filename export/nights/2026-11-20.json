@@ -1,0 +1,620 @@
+{
+ "date": "2026-11-20",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-20T17:42+00:00",
+ "games": [
+  {
+   "game_id": "401909305",
+   "away": "CHA",
+   "home": "ATL",
+   "away_name": "Charlotte Hornets",
+   "home_name": "Atlanta Hawks",
+   "away_record": "4-10",
+   "home_record": "9-6",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "ATL -7.5",
+   "robot_total": 218.5,
+   "market_line": "ATL -7.5",
+   "market_total": 218.5,
+   "injuries": [
+    "ATL: CJ McCollum (Out) -1.1",
+    "ATL: Jalen Johnson (spēlēja 7/10 pēdējās) +0.6",
+    "CHA: Grayson Allen (Out) -1.1"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 214.5",
+     "p_model": 0.4917,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "ATL -9.5",
+     "p_model": 0.509,
+     "p_market": 0.4346,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "ATL zem 110.5",
+     "p_model": 0.4362,
+     "p_market": 0.433,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909306",
+   "away": "ORL",
+   "home": "BKN",
+   "away_name": "Orlando Magic",
+   "home_name": "Brooklyn Nets",
+   "away_record": "6-8",
+   "home_record": "3-11",
+   "start_utc": "2026-11-21 00:30:00+00:00",
+   "riga_time": "21.11 02:30",
+   "robot_line": "ORL -6.5",
+   "robot_total": 224.5,
+   "market_line": "ORL -6.5",
+   "market_total": 224.5,
+   "injuries": [],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 220.5",
+     "p_model": 0.3715,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "ORL -8.5",
+     "p_model": 0.3775,
+     "p_market": 0.4343,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "BKN virs 110.5",
+     "p_model": 0.5267,
+     "p_market": 0.4327,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909307",
+   "away": "IND",
+   "home": "CLE",
+   "away_name": "Indiana Pacers",
+   "home_name": "Cleveland Cavaliers",
+   "away_record": "5-10",
+   "home_record": "8-8",
+   "start_utc": "2026-11-21 00:30:00+00:00",
+   "riga_time": "21.11 02:30",
+   "robot_line": "CLE -5.5",
+   "robot_total": 233.5,
+   "market_line": "CLE -5.5",
+   "market_total": 233.5,
+   "injuries": [
+    "CLE: Evan Mobley (Out) -1.2",
+    "CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 235.5",
+     "p_model": 0.416,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "CLE -7.5",
+     "p_model": 0.4708,
+     "p_market": 0.434,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "IND virs 115.5",
+     "p_model": 0.3984,
+     "p_market": 0.4324,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909308",
+   "away": "TOR",
+   "home": "DET",
+   "away_name": "Toronto Raptors",
+   "home_name": "Detroit Pistons",
+   "away_record": "5-10",
+   "home_record": "10-4",
+   "start_utc": "2026-11-21 00:30:00+00:00",
+   "riga_time": "21.11 02:30",
+   "robot_line": "DET -6.5",
+   "robot_total": 216.5,
+   "market_line": "DET -6.5",
+   "market_total": 216.5,
+   "injuries": [
+    "DET: Duncan Robinson (Out) -1.2",
+    "DET: Cade Cunningham (Day-To-Day) -0.9",
+    "DET: Isaiah Joe (spēlēja 1/10 pēdējās) +0.4",
+    "TOR: RJ Barrett (Out) -1.6",
+    "TOR: Collin Murray-Boyles (Out) -0.6",
+    "TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.1"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 212.5",
+     "p_model": 0.3215,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "DET -8.5",
+     "p_model": 0.4162,
+     "p_market": 0.4343,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "TOR virs 106.5",
+     "p_model": 0.5456,
+     "p_market": 0.4327,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909310",
+   "away": "NO",
+   "home": "OKC",
+   "away_name": "New Orleans Pelicans",
+   "home_name": "Oklahoma City Thunder",
+   "away_record": "5-11",
+   "home_record": "9-6",
+   "start_utc": "2026-11-21 01:00:00+00:00",
+   "riga_time": "21.11 03:00",
+   "robot_line": "OKC -11.5",
+   "robot_total": 228.5,
+   "market_line": "OKC -11.5",
+   "market_total": 228.5,
+   "injuries": [
+    "NO: Dejounte Murray (Out) -0.5",
+    "NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4",
+    "NO: Yves Missi (spēlēja 3/10 pēdējās) +0.6"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "OKC -13.5",
+     "p_model": 0.4878,
+     "p_market": 0.4359,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "zem 224.5",
+     "p_model": 0.4239,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "OKC zem 117.5",
+     "p_model": 0.3969,
+     "p_market": 0.4337,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909309",
+   "away": "WSH",
+   "home": "CHI",
+   "away_name": "Washington Wizards",
+   "home_name": "Chicago Bulls",
+   "away_record": "5-11",
+   "home_record": "4-10",
+   "start_utc": "2026-11-21 01:00:00+00:00",
+   "riga_time": "21.11 03:00",
+   "robot_line": "CHI -2.5",
+   "robot_total": 237.5,
+   "market_line": "CHI -2.5",
+   "market_total": 237.5,
+   "injuries": [
+    "CHI: Caleb Wilson (Out) -0.8",
+    "CHI: Nic Claxton (spēlēja 5/10 pēdējās) +0.5",
+    "WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 239.5",
+     "p_model": 0.5661,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "CHI -4.5",
+     "p_model": 0.5027,
+     "p_market": 0.4335,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "CHI zem 117.5",
+     "p_model": 0.3,
+     "p_market": 0.4312,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909311",
+   "away": "PHX",
+   "home": "UTAH",
+   "away_name": "Phoenix Suns",
+   "home_name": "Utah Jazz",
+   "away_record": "7-7",
+   "home_record": "3-13",
+   "start_utc": "2026-11-21 02:30:00+00:00",
+   "riga_time": "21.11 04:30",
+   "robot_line": "PHX -4.5",
+   "robot_total": 225.5,
+   "market_line": "PHX -4.5",
+   "market_total": 225.5,
+   "injuries": [
+    "PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "virs 227.5",
+     "p_model": 0.4608,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "PHX -6.5",
+     "p_model": 0.3783,
+     "p_market": 0.4338,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "PHX zem 112.5",
+     "p_model": 0.4523,
+     "p_market": 0.432,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909312",
+   "away": "HOU",
+   "home": "DEN",
+   "away_name": "Houston Rockets",
+   "home_name": "Denver Nuggets",
+   "away_record": "12-4",
+   "home_record": "8-5",
+   "start_utc": "2026-11-21 03:00:00+00:00",
+   "riga_time": "21.11 05:00",
+   "robot_line": "DEN -1.5",
+   "robot_total": 226.5,
+   "market_line": "DEN -1.5",
+   "market_total": 226.5,
+   "injuries": [
+    "HOU: Alperen Sengun (Day-To-Day) -1.2"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "kopā",
+     "bet": "zem 222.5",
+     "p_model": 0.4681,
+     "p_market": 0.4349,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "starpība",
+     "bet": "HOU -0.5",
+     "p_model": 0.5609,
+     "p_market": 0.4334,
+     "fair_odds": 2.31,
+     "est_odds": 2.15,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "DEN zem 111.5",
+     "p_model": 0.5336,
+     "p_market": 0.4308,
+     "fair_odds": 2.32,
+     "est_odds": 2.16,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  },
+  {
+   "game_id": "401909313",
+   "away": "SAC",
+   "home": "LAL",
+   "away_name": "Sacramento Kings",
+   "home_name": "Los Angeles Lakers",
+   "away_record": "1-13",
+   "home_record": "13-3",
+   "start_utc": "2026-11-21 03:00:00+00:00",
+   "riga_time": "21.11 05:00",
+   "robot_line": "LAL -14.5",
+   "robot_total": 229.5,
+   "market_line": "LAL -14.5",
+   "market_total": 229.5,
+   "injuries": [
+    "LAL: Austin Reaves (Out) -1.4",
+    "LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4"
+   ],
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "LAL -16.5",
+     "p_model": 0.4548,
+     "p_market": 0.4371,
+     "fair_odds": 2.29,
+     "est_odds": 2.13,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    },
+    {
+     "category": "kopā",
+     "bet": "virs 231.5",
+     "p_model": 0.5193,
+     "p_market": 0.4348,
+     "fair_odds": 2.3,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    },
+    {
+     "category": "komandas punkti",
+     "bet": "LAL zem 119.5",
+     "p_model": 0.3648,
+     "p_market": 0.4338,
+     "fair_odds": 2.31,
+     "est_odds": 2.14,
+     "confidence": 43,
+     "result": null,
+     "top": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 27,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401909306",
+   "game": "ORL@BKN",
+   "riga_time": "21.11 02:30",
+   "category": "komandas punkti",
+   "bet": "ORL zem 106.5",
+   "confidence": 23,
+   "fair_odds": 4.3,
+   "est_odds": 4.0,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401909313",
+   "game": "SAC@LAL",
+   "riga_time": "21.11 05:00",
+   "category": "handikaps",
+   "bet": "LAL -24.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401909307",
+   "game": "IND@CLE",
+   "riga_time": "21.11 02:30",
+   "category": "handikaps",
+   "bet": "CLE -15.5",
+   "confidence": 23,
+   "fair_odds": 4.31,
+   "est_odds": 4.01,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 9,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [
+  {
+   "game_id": "401909312",
+   "game": "HOU@DEN",
+   "riga_time": "21.11 05:00",
+   "category": "komandas punkti",
+   "bet": "DEN zem 114.5",
+   "confidence": 54,
+   "data_conf": 54,
+   "p_model": 0.6318,
+   "fair_odds": 1.87,
+   "est_odds": 1.74,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401909309",
+   "game": "WSH@CHI",
+   "riga_time": "21.11 03:00",
+   "category": "komandas punkti",
+   "bet": "CHI virs 118.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.6701,
+   "fair_odds": 1.87,
+   "est_odds": 1.74,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401909311",
+   "game": "PHX@UTAH",
+   "riga_time": "21.11 04:30",
+   "category": "komandas punkti",
+   "bet": "PHX virs 113.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5142,
+   "fair_odds": 1.88,
+   "est_odds": 1.74,
+   "result": null,
+   "score": null
+  }
+ ],
+ "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}

@@ -1,0 +1,426 @@
+{
+ "date": "2026-11-20",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-20T17:43+00:00",
+ "games": [
+  {
+   "game_id": "401921723",
+   "away": "MAN",
+   "home": "MIA",
+   "away_name": "Manhattan Jaspers",
+   "home_name": "Miami Hurricanes",
+   "away_short": "Manhattan",
+   "home_short": "Miami",
+   "away_record": "1-4",
+   "home_record": "4-1",
+   "start_utc": "2026-11-20 22:00:00+00:00",
+   "riga_time": "21.11 00:00",
+   "robot_line": "MIA -36.5",
+   "robot_total": 150.5,
+   "market_line": "MIA -36.5",
+   "injuries": [],
+   "market_total": 150.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "MAN +34.5",
+     "p_model": 0.4661,
+     "p_market": 0.4425,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401921419",
+   "away": "DAY",
+   "home": "UTAH",
+   "away_name": "Dayton Flyers",
+   "home_name": "Utah Utes",
+   "away_short": "Dayton",
+   "home_short": "Utah",
+   "away_record": "2-3",
+   "home_record": "3-1",
+   "start_utc": "2026-11-20 22:30:00+00:00",
+   "riga_time": "21.11 00:30",
+   "robot_line": "UTAH -1.5",
+   "robot_total": 138.5,
+   "market_line": "UTAH -1.5",
+   "injuries": [],
+   "market_total": 138.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "DAY virs 69.5",
+     "p_model": 0.6809,
+     "p_market": 0.4425,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401924736",
+   "away": "MONM",
+   "home": "PRIN",
+   "away_name": "Monmouth Hawks",
+   "home_name": "Princeton Tigers",
+   "away_short": "Monmouth",
+   "home_short": "Princeton",
+   "away_record": "1-3",
+   "home_record": "3-2",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "PRIN -3.5",
+   "robot_total": 140.5,
+   "market_line": "PRIN -3.5",
+   "injuries": [],
+   "market_total": 140.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "MONM virs 69.5",
+     "p_model": 0.2786,
+     "p_market": 0.4427,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401926134",
+   "away": "OAK",
+   "home": "PUR",
+   "away_name": "Oakland Golden Grizzlies",
+   "home_name": "Purdue Boilermakers",
+   "away_short": "Oakland",
+   "home_short": "Purdue",
+   "away_record": "1-6",
+   "home_record": "3-2",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "PUR -20.5",
+   "robot_total": 147.5,
+   "market_line": "PUR -20.5",
+   "injuries": [],
+   "market_total": 147.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "OAK +18.5",
+     "p_model": 0.4308,
+     "p_market": 0.4426,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401925927",
+   "away": "SCST",
+   "home": "CIT",
+   "away_name": "South Carolina State Bulldogs",
+   "home_name": "The Citadel Bulldogs",
+   "away_short": "SC State",
+   "home_short": "The Citadel",
+   "away_record": "3-2",
+   "home_record": "3-2",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "CIT -3.5",
+   "robot_total": 142.5,
+   "market_line": "CIT -3.5",
+   "injuries": [],
+   "market_total": 142.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "SCST virs 70.5",
+     "p_model": 0.3213,
+     "p_market": 0.4424,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401909709",
+   "away": "CMU",
+   "home": "PITT",
+   "away_name": "Central Michigan Chippewas",
+   "home_name": "Pittsburgh Panthers",
+   "away_short": "C Michigan",
+   "home_short": "Pitt",
+   "away_record": "4-1",
+   "home_record": "5-0",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "PITT -21.5",
+   "robot_total": 144.5,
+   "market_line": "PITT -21.5",
+   "injuries": [],
+   "market_total": 144.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "CMU +19.5",
+     "p_model": 0.5366,
+     "p_market": 0.4423,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401906852",
+   "away": "CCU",
+   "home": "TENN",
+   "away_name": "Coastal Carolina Chanticleers",
+   "home_name": "Tennessee Volunteers",
+   "away_short": "Coastal",
+   "home_short": "Tennessee",
+   "away_record": "2-3",
+   "home_record": "4-0",
+   "start_utc": "2026-11-21 00:00:00+00:00",
+   "riga_time": "21.11 02:00",
+   "robot_line": "TENN -26.5",
+   "robot_total": 147.5,
+   "market_line": "TENN -26.5",
+   "injuries": [],
+   "market_total": 147.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "CCU virs 61.5",
+     "p_model": 0.1612,
+     "p_market": 0.4422,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401925865",
+   "away": "TLSA",
+   "home": "MSST",
+   "away_name": "Tulsa Golden Hurricane",
+   "home_name": "Mississippi State Bulldogs",
+   "away_short": "Tulsa",
+   "home_short": "Mississippi St",
+   "away_record": "4-0",
+   "home_record": "4-1",
+   "start_utc": "2026-11-21 00:30:00+00:00",
+   "riga_time": "21.11 02:30",
+   "robot_line": "MSST -7.5",
+   "robot_total": 152.5,
+   "market_line": "MSST -7.5",
+   "injuries": [],
+   "market_total": 152.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "TLSA virs 73.5",
+     "p_model": 0.6382,
+     "p_market": 0.4428,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401919784",
+   "away": "LEM",
+   "home": "MIZ",
+   "away_name": "Le Moyne Dolphins",
+   "home_name": "Missouri Tigers",
+   "away_short": "Le Moyne",
+   "home_short": "Missouri",
+   "away_record": "2-3",
+   "home_record": "4-1",
+   "start_utc": "2026-11-21 01:00:00+00:00",
+   "riga_time": "21.11 03:00",
+   "robot_line": "MIZ -36.5",
+   "robot_total": 155.5,
+   "market_line": "MIZ -36.5",
+   "injuries": [],
+   "market_total": 155.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "starpība",
+     "bet": "LEM +34.5",
+     "p_model": 0.5292,
+     "p_market": 0.4425,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  },
+  {
+   "game_id": "401912710",
+   "away": "MRSH",
+   "home": "UNC",
+   "away_name": "Marshall Thundering Herd",
+   "home_name": "North Carolina Tar Heels",
+   "away_short": "Marshall",
+   "home_short": "North Carolina",
+   "away_record": "2-3",
+   "home_record": "3-1",
+   "start_utc": "2026-11-21 02:00:00+00:00",
+   "riga_time": "21.11 04:00",
+   "robot_line": "UNC -19.5",
+   "robot_total": 158.5,
+   "market_line": "UNC -19.5",
+   "injuries": [],
+   "market_total": 158.5,
+   "score": null,
+   "picks": [
+    {
+     "category": "komandas punkti",
+     "bet": "MRSH virs 70.5",
+     "p_model": 0.4157,
+     "p_market": 0.4428,
+     "fair_odds": 2.26,
+     "est_odds": 2.1,
+     "confidence": 44,
+     "result": null,
+     "top": true
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "picks": 10,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "crazy_min_odds": 4.0,
+ "crazy": [
+  {
+   "game_id": "401925828",
+   "game": "UNT@APP",
+   "riga_time": "21.11 01:30",
+   "category": "kombinācija",
+   "bet": "APP uzvar & zem 132.5",
+   "confidence": 20,
+   "fair_odds": 5.07,
+   "est_odds": 4.72,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401916124",
+   "game": "UTM@SIU",
+   "riga_time": "21.11 00:30",
+   "category": "kombinācija",
+   "bet": "UTM uzvar & virs 148.5",
+   "confidence": 20,
+   "fair_odds": 4.89,
+   "est_odds": 4.55,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401921419",
+   "game": "DAY@UTAH",
+   "riga_time": "21.11 00:30",
+   "category": "kombinācija",
+   "bet": "DAY uzvar & virs 138.5",
+   "confidence": 21,
+   "fair_odds": 4.88,
+   "est_odds": 4.54,
+   "result": null,
+   "score": null,
+   "away_short": "Dayton",
+   "home_short": "Utah"
+  },
+  {
+   "game_id": "401927396",
+   "game": "RICH@WKU",
+   "riga_time": "21.11 02:00",
+   "category": "kombinācija",
+   "bet": "WKU uzvar & zem 149.5",
+   "confidence": 23,
+   "fair_odds": 4.36,
+   "est_odds": 4.05,
+   "result": null,
+   "score": null
+  },
+  {
+   "game_id": "401921107",
+   "game": "BELL@EKU",
+   "riga_time": "21.11 02:00",
+   "category": "uzvaras starpība",
+   "bet": "EKU 21+",
+   "confidence": 18,
+   "fair_odds": 5.54,
+   "est_odds": 5.16,
+   "result": null,
+   "score": null
+  }
+ ],
+ "crazy_summary": {
+  "picks": 5,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "top_summary": {
+  "picks": 10,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_min_odds": 1.7,
+ "safe": [],
+ "safe_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ }
+}
