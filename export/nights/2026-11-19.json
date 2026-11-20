@@ -22,7 +22,7 @@
     "POR: Robert Williams III (Out) -1.0",
     "POR: Deni Avdija (Day-To-Day) -0.8"
    ],
-   "score": null,
+   "score": "POR 124 - 114 MIL",
    "picks": [
     {
      "category": "starpība",
@@ -32,7 +32,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 124 - 114 MIL",
      "top": true
     },
     {
@@ -43,7 +44,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 124 - 114 MIL",
      "top": false
     },
     {
@@ -54,7 +56,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 124 - 114 MIL",
      "top": false
     }
    ]
@@ -74,7 +77,7 @@
    "market_line": "NY -1.5",
    "market_total": 216.5,
    "injuries": [],
-   "score": null,
+   "score": "NY 102 - 99 MIN",
    "picks": [
     {
      "category": "kopā",
@@ -84,7 +87,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "NY 102 - 99 MIN",
      "top": true
     },
     {
@@ -95,7 +99,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NY 102 - 99 MIN",
      "top": false
     },
     {
@@ -106,7 +111,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "NY 102 - 99 MIN",
      "top": false
     }
    ]
@@ -131,7 +137,7 @@
     "GS: Stephen Curry (Out) -2.0",
     "GS: Brandon Williams (Out) -0.5"
    ],
-   "score": null,
+   "score": "GS 98 - 126 MEM",
    "picks": [
     {
      "category": "kopā",
@@ -141,7 +147,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "GS 98 - 126 MEM",
      "top": true
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "GS 98 - 126 MEM",
      "top": false
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "GS 98 - 126 MEM",
      "top": false
     }
    ]
@@ -185,7 +194,7 @@
    "injuries": [
     "SA: Dylan Harper (Out) -2.0"
    ],
-   "score": null,
+   "score": "LAC 112 - 124 SA",
    "picks": [
     {
      "category": "starpība",
@@ -195,7 +204,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 112 - 124 SA",
      "top": true
     },
     {
@@ -206,7 +216,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 112 - 124 SA",
      "top": false
     },
     {
@@ -217,7 +228,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 112 - 124 SA",
      "top": false
     }
    ]
@@ -225,11 +237,11 @@
  ],
  "summary": {
   "picks": 12,
-  "settled": 0,
-  "hits": 0,
+  "settled": 12,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 5.21,
+  "profit_units": -5.56
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -242,8 +254,8 @@
    "confidence": 23,
    "fair_odds": 4.32,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 SA"
   },
   {
    "game_id": "401910020",
@@ -254,8 +266,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.04,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "POR 124 - 114 MIL"
   },
   {
    "game_id": "401910019",
@@ -266,25 +278,25 @@
    "confidence": 23,
    "fair_odds": 4.35,
    "est_odds": 4.05,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "GS 98 - 126 MEM"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": 1.05
  },
  "top_summary": {
   "picks": 4,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.74,
+  "profit_units": -1.86
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -299,8 +311,8 @@
    "p_model": 0.736,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "NY 102 - 99 MIN"
   },
   {
    "game_id": "401910019",
@@ -313,8 +325,8 @@
    "p_model": 0.6276,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "GS 98 - 126 MEM"
   },
   {
    "game_id": "401910022",
@@ -327,16 +339,16 @@
    "p_model": 0.5541,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "LAC 112 - 124 SA"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": 2.24
  }
 }

@@ -20,7 +20,7 @@
    "market_line": "OSU -28.5",
    "injuries": [],
    "market_total": 155.5,
-   "score": null,
+   "score": "UMBC 62 - 101 OSU",
    "picks": [
     {
      "category": "komandas punkti",
@@ -30,7 +30,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UMBC 62 - 101 OSU",
      "top": true
     }
    ]
@@ -52,7 +53,7 @@
    "market_line": "DRKE -1.5",
    "injuries": [],
    "market_total": 158.5,
-   "score": null,
+   "score": "COFC 70 - 86 DRKE",
    "picks": [
     {
      "category": "komandas punkti",
@@ -62,7 +63,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "COFC 70 - 86 DRKE",
      "top": true
     }
    ]
@@ -84,7 +86,7 @@
    "market_line": "STMN -6.5",
    "injuries": [],
    "market_total": 149.5,
-   "score": null,
+   "score": "SEMO 61 - 93 STMN",
    "picks": [
     {
      "category": "komandas punkti",
@@ -94,7 +96,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SEMO 61 - 93 STMN",
      "top": true
     }
    ]
@@ -116,7 +119,7 @@
    "market_line": "LOU -36.5",
    "injuries": [],
    "market_total": 154.5,
-   "score": null,
+   "score": "STET 69 - 83 LOU",
    "picks": [
     {
      "category": "starpība",
@@ -126,7 +129,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "STET 69 - 83 LOU",
      "top": true
     }
    ]
@@ -148,7 +152,7 @@
    "market_line": "TEX -35.5",
    "injuries": [],
    "market_total": 155.5,
-   "score": null,
+   "score": "SUU 68 - 92 TEX",
    "picks": [
     {
      "category": "starpība",
@@ -158,7 +162,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "SUU 68 - 92 TEX",
      "top": true
     }
    ]
@@ -180,7 +185,7 @@
    "market_line": "RUTG -2.5",
    "injuries": [],
    "market_total": 157.5,
-   "score": null,
+   "score": "RUTG 89 - 70 UNLV",
    "picks": [
     {
      "category": "komandas punkti",
@@ -190,7 +195,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "RUTG 89 - 70 UNLV",
      "top": true
     }
    ]
@@ -212,7 +218,7 @@
    "market_line": "USM -1.5",
    "injuries": [],
    "market_total": 144.5,
-   "score": null,
+   "score": "USM 75 - 75 GRAM (pamatlaikā; ar papildlaiku 103 - 100)",
    "picks": [
     {
      "category": "komandas punkti",
@@ -222,7 +228,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "USM 75 - 75 GRAM (pamatlaikā; ar papildlaiku 103 - 100)",
      "top": true
     }
    ]
@@ -244,7 +251,7 @@
    "market_line": "UCSB -1.5",
    "injuries": [],
    "market_total": 148.5,
-   "score": null,
+   "score": "UCSB 88 - 80 PEPP",
    "picks": [
     {
      "category": "komandas punkti",
@@ -254,7 +261,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "UCSB 88 - 80 PEPP",
      "top": true
     }
    ]
@@ -287,6 +295,7 @@
      "est_odds": 2.1,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     }
    ]
@@ -319,6 +328,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     }
    ]
@@ -326,11 +336,11 @@
  ],
  "summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.53,
+  "profit_units": 0.42
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -343,8 +353,8 @@
    "confidence": 20,
    "fair_odds": 4.89,
    "est_odds": 4.55,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "USM 75 - 75 GRAM (pamatlaikā; ar papildlaiku 103 - 100)",
    "away_short": "Southern Miss",
    "home_short": "Grambling"
   },
@@ -357,8 +367,8 @@
    "confidence": 20,
    "fair_odds": 4.89,
    "est_odds": 4.55,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "UCSB 88 - 80 PEPP",
    "away_short": "Santa Barbara",
    "home_short": "Pepperdine"
   },
@@ -371,8 +381,8 @@
    "confidence": 23,
    "fair_odds": 4.36,
    "est_odds": 4.05,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "TA&M 81 - 81 TCU (pamatlaikā; ar papildlaiku 97 - 92)"
   },
   {
    "game_id": "401921028",
@@ -383,8 +393,8 @@
    "confidence": 15,
    "fair_odds": 6.78,
    "est_odds": 6.31,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "GASO 86 - 79 HCU"
   },
   {
    "game_id": "401926814",
@@ -395,27 +405,27 @@
    "confidence": 23,
    "fair_odds": 4.36,
    "est_odds": 4.06,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "COFC 70 - 86 DRKE",
    "away_short": "Charleston",
    "home_short": "Drake"
   }
  ],
  "crazy_summary": {
   "picks": 5,
-  "settled": 0,
+  "settled": 5,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.02,
+  "profit_units": -5
  },
  "top_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.53,
+  "profit_units": 0.42
  },
  "safe_min_odds": 1.7,
  "safe": [],

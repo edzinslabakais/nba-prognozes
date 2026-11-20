@@ -93,7 +93,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 124 - 114 MIL"
   },
   {
    "game_id": "401910020",
@@ -108,7 +109,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 124 - 114 MIL"
   },
   {
    "game_id": "401910020",
@@ -123,7 +125,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 124 - 114 MIL"
   },
   {
    "game_id": "401910021",
@@ -138,7 +141,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "NY 102 - 99 MIN"
   },
   {
    "game_id": "401910021",
@@ -153,7 +157,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "NY 102 - 99 MIN"
   },
   {
    "game_id": "401910021",
@@ -168,7 +173,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "NY 102 - 99 MIN"
   },
   {
    "game_id": "401910019",
@@ -183,7 +189,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 98 - 126 MEM"
   },
   {
    "game_id": "401910019",
@@ -198,7 +205,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "GS 98 - 126 MEM"
   },
   {
    "game_id": "401910019",
@@ -213,7 +221,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "GS 98 - 126 MEM"
   },
   {
    "game_id": "401910022",
@@ -228,7 +237,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 SA"
   },
   {
    "game_id": "401910022",
@@ -243,7 +253,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 SA"
   },
   {
    "game_id": "401910022",
@@ -258,7 +269,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 SA"
   }
  ],
  "crazy": [
@@ -273,7 +285,8 @@
    "fair_odds": 4.32,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 112 - 124 SA"
   },
   {
    "game_id": "401910020",
@@ -286,7 +299,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 124 - 114 MIL"
   },
   {
    "game_id": "401910019",
@@ -299,7 +313,8 @@
    "fair_odds": 4.35,
    "est_odds": 4.05,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "GS 98 - 126 MEM"
   }
  ],
  "safe": [
@@ -317,7 +332,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "NY 102 - 99 MIN"
   },
   {
    "game_id": "401910019",
@@ -333,7 +349,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "GS 98 - 126 MEM"
   },
   {
    "game_id": "401910022",
@@ -349,7 +366,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 112 - 124 SA"
   }
  ]
 }

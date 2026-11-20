@@ -21,7 +21,7 @@
     "TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.11",
     "LA: vārtsargs Darcy Kuemper (apstiprināts) -0.01"
    ],
-   "score": null,
+   "score": "LA 3 - 3 TOR (pamatlaikā; bullīšos 4 - 3)",
    "picks": [
     {
      "category": "kopā",
@@ -31,7 +31,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LA 3 - 3 TOR (pamatlaikā; bullīšos 4 - 3)",
      "top": true
     },
     {
@@ -42,7 +43,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LA 3 - 3 TOR (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     },
     {
@@ -53,7 +55,8 @@
      "fair_odds": 2.55,
      "est_odds": 2.37,
      "confidence": 39,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LA 3 - 3 TOR (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     }
    ]
@@ -76,7 +79,7 @@
     "OTT: vārtsargs Samuel Ersson (apstiprināts) -0.07",
     "PHI: vārtsargs Joseph Woll (apstiprināts) +0.05"
    ],
-   "score": null,
+   "score": "PHI 5 - 5 OTT (pamatlaikā; papildlaikā 6 - 5)",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -86,7 +89,8 @@
      "fair_odds": 2.42,
      "est_odds": 2.25,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHI 5 - 5 OTT (pamatlaikā; papildlaikā 6 - 5)",
      "top": false
     },
     {
@@ -97,7 +101,8 @@
      "fair_odds": 2.53,
      "est_odds": 2.35,
      "confidence": 40,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHI 5 - 5 OTT (pamatlaikā; papildlaikā 6 - 5)",
      "top": true
     },
     {
@@ -108,7 +113,8 @@
      "fair_odds": 2.71,
      "est_odds": 2.52,
      "confidence": 37,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHI 5 - 5 OTT (pamatlaikā; papildlaikā 6 - 5)",
      "top": false
     }
    ]
@@ -131,7 +137,7 @@
     "PIT: vārtsargs Arturs Silovs (apstiprināts) -0.07",
     "STL: vārtsargs Joel Hofer (apstiprināts) +0.14"
    ],
-   "score": null,
+   "score": "STL 5 - 2 PIT",
    "picks": [
     {
      "category": "kopā",
@@ -141,7 +147,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "STL 5 - 2 PIT",
      "top": true
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.35,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "STL 5 - 2 PIT",
      "top": false
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 2.55,
      "est_odds": 2.37,
      "confidence": 39,
-     "result": null,
+     "result": "izgāja",
+     "score": "STL 5 - 2 PIT",
      "top": false
     }
    ]
@@ -186,7 +195,7 @@
     "WSH: vārtsargs Logan Thompson (apstiprināts) +0.01",
     "BUF: vārtsargs Ukko-Pekka Luukkonen (apstiprināts) -0.09"
    ],
-   "score": null,
+   "score": "BUF 6 - 3 WSH",
    "picks": [
     {
      "category": "komandas vārti",
@@ -196,7 +205,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BUF 6 - 3 WSH",
      "top": true
     },
     {
@@ -207,7 +217,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BUF 6 - 3 WSH",
      "top": false
     },
     {
@@ -218,7 +229,8 @@
      "fair_odds": 2.72,
      "est_odds": 2.53,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BUF 6 - 3 WSH",
      "top": false
     }
    ]
@@ -241,7 +253,7 @@
     "CAR: vārtsargs Pyotr Kochetkov (gaidāms) +0.08",
     "MTL: vārtsargs Jakub Dobes (apstiprināts) -0.34"
    ],
-   "score": null,
+   "score": "MTL 1 - 1 CAR (pamatlaikā; papildlaikā 2 - 1)",
    "picks": [
     {
      "category": "kopā",
@@ -251,7 +263,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MTL 1 - 1 CAR (pamatlaikā; papildlaikā 2 - 1)",
      "top": true
     },
     {
@@ -262,7 +275,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MTL 1 - 1 CAR (pamatlaikā; papildlaikā 2 - 1)",
      "top": false
     },
     {
@@ -273,7 +287,8 @@
      "fair_odds": 2.87,
      "est_odds": 2.67,
      "confidence": 35,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MTL 1 - 1 CAR (pamatlaikā; papildlaikā 2 - 1)",
      "top": false
     }
    ]
@@ -296,7 +311,7 @@
     "WPG: vārtsargs Nico Daws (gaidāms) +0.05",
     "NYI: vārtsargs Semyon Varlamov (gaidāms) -0.13"
    ],
-   "score": null,
+   "score": "NYI 3 - 3 WPG (pamatlaikā; papildlaikā 3 - 4)",
    "picks": [
     {
      "category": "kopā",
@@ -306,7 +321,8 @@
      "fair_odds": 2.42,
      "est_odds": 2.25,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NYI 3 - 3 WPG (pamatlaikā; papildlaikā 3 - 4)",
      "top": false
     },
     {
@@ -317,7 +333,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NYI 3 - 3 WPG (pamatlaikā; papildlaikā 3 - 4)",
      "top": true
     },
     {
@@ -328,7 +345,8 @@
      "fair_odds": 2.61,
      "est_odds": 2.43,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NYI 3 - 3 WPG (pamatlaikā; papildlaikā 3 - 4)",
      "top": false
     }
    ]
@@ -351,7 +369,7 @@
     "TB: vārtsargs Andrei Vasilevskiy (gaidāms) -0.01",
     "EDM: vārtsargs Devon Levi (apstiprināts) -0.02"
    ],
-   "score": null,
+   "score": "EDM 1 - 3 TB",
    "picks": [
     {
      "category": "kopā",
@@ -361,7 +379,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "EDM 1 - 3 TB",
      "top": false
     },
     {
@@ -372,7 +391,8 @@
      "fair_odds": 2.36,
      "est_odds": 2.2,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "EDM 1 - 3 TB",
      "top": true
     },
     {
@@ -383,7 +403,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
+     "result": "neizgāja",
+     "score": "EDM 1 - 3 TB",
      "top": false
     }
    ]
@@ -406,7 +427,7 @@
     "CHI: vārtsargs Spencer Knight (gaidāms) +0.02",
     "CBJ: vārtsargs Cam Talbot (apstiprināts) +0.10"
    ],
-   "score": null,
+   "score": "CBJ 4 - 2 CHI",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -416,7 +437,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.24,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CBJ 4 - 2 CHI",
      "top": true
     },
     {
@@ -427,7 +449,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
+     "result": "izgāja",
+     "score": "CBJ 4 - 2 CHI",
      "top": false
     },
     {
@@ -438,7 +461,8 @@
      "fair_odds": 2.74,
      "est_odds": 2.55,
      "confidence": 36,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CBJ 4 - 2 CHI",
      "top": false
     }
    ]
@@ -461,7 +485,7 @@
     "CGY: vārtsargs Dustin Wolf (apstiprināts) -0.06",
     "MIN: vārtsargs Jesper Wallstedt (apstiprināts) +0.04"
    ],
-   "score": null,
+   "score": "MIN 4 - 1 CGY",
    "picks": [
     {
      "category": "komandas vārti",
@@ -471,7 +495,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIN 4 - 1 CGY",
      "top": true
     },
     {
@@ -482,7 +507,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIN 4 - 1 CGY",
      "top": false
     },
     {
@@ -493,7 +519,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIN 4 - 1 CGY",
      "top": false
     }
    ]
@@ -516,7 +543,7 @@
     "COL: vārtsargs Scott Wedgewood (gaidāms) -0.21",
     "ANA: vārtsargs Lukas Dostal (apstiprināts) -0.09"
    ],
-   "score": null,
+   "score": "ANA 0 - 4 COL",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -526,7 +553,8 @@
      "fair_odds": 2.43,
      "est_odds": 2.26,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "ANA 0 - 4 COL",
      "top": true
     },
     {
@@ -537,7 +565,8 @@
      "fair_odds": 2.51,
      "est_odds": 2.33,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ANA 0 - 4 COL",
      "top": false
     },
     {
@@ -548,7 +577,8 @@
      "fair_odds": 2.82,
      "est_odds": 2.62,
      "confidence": 35,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ANA 0 - 4 COL",
      "top": false
     }
    ]
@@ -571,7 +601,7 @@
     "SEA: vārtsargs Philipp Grubauer (gaidāms) +0.05",
     "VAN: vārtsargs Leevi Merilainen (apstiprināts) +0.03"
    ],
-   "score": null,
+   "score": "VAN 1 - 5 SEA",
    "picks": [
     {
      "category": "kopā",
@@ -581,7 +611,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "VAN 1 - 5 SEA",
      "top": true
     },
     {
@@ -592,7 +623,8 @@
      "fair_odds": 2.47,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "VAN 1 - 5 SEA",
      "top": false
     },
     {
@@ -603,7 +635,8 @@
      "fair_odds": 3.09,
      "est_odds": 2.87,
      "confidence": 32,
-     "result": null,
+     "result": "neizgāja",
+     "score": "VAN 1 - 5 SEA",
      "top": false
     }
    ]
@@ -637,6 +670,7 @@
      "est_odds": 2.12,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -648,6 +682,7 @@
      "est_odds": 2.3,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -659,6 +694,7 @@
      "est_odds": 2.69,
      "confidence": 35,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -666,11 +702,11 @@
  ],
  "summary": {
   "picks": 36,
-  "settled": 0,
-  "hits": 0,
+  "settled": 33,
+  "hits": 11,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 13.35,
+  "profit_units": -7.94
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -683,8 +719,8 @@
    "confidence": 23,
    "fair_odds": 4.41,
    "est_odds": 4.1,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "ANA 0 - 4 COL"
   },
   {
    "game_id": "401892750",
@@ -695,8 +731,8 @@
    "confidence": 23,
    "fair_odds": 4.36,
    "est_odds": 4.06,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "MIN 4 - 1 CGY"
   },
   {
    "game_id": "401892745",
@@ -707,25 +743,25 @@
    "confidence": 23,
    "fair_odds": 4.43,
    "est_odds": 4.12,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "STL 5 - 2 PIT"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.68,
+  "profit_units": 5.18
  },
  "top_summary": {
   "picks": 12,
-  "settled": 0,
-  "hits": 0,
+  "settled": 11,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.67,
+  "profit_units": -4.19
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -740,8 +776,8 @@
    "p_model": 0.4838,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "PHI 5 - 5 OTT (pamatlaikā; papildlaikā 6 - 5)"
   },
   {
    "game_id": "401892748",
@@ -754,8 +790,8 @@
    "p_model": 0.526,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "CBJ 4 - 2 CHI"
   },
   {
    "game_id": "401892751",
@@ -768,16 +804,16 @@
    "p_model": 0.3862,
    "fair_odds": 1.95,
    "est_odds": 1.82,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "ANA 0 - 4 COL"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.59,
+  "profit_units": 2.25
  }
 }
