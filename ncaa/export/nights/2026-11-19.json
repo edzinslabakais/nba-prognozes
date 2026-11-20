@@ -284,7 +284,7 @@
    "market_line": "HOU -3.5",
    "injuries": [],
    "market_total": 150.5,
-   "score": null,
+   "score": "HOU 92 - 83 KU",
    "picks": [
     {
      "category": "komandas punkti",
@@ -294,8 +294,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "HOU 92 - 83 KU",
      "top": true
     }
    ]
@@ -336,11 +336,11 @@
  ],
  "summary": {
   "picks": 10,
-  "settled": 9,
-  "hits": 4,
+  "settled": 10,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.98,
-  "profit_units": -0.58
+  "expected_hits": 4.42,
+  "profit_units": 0.52
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -421,11 +421,11 @@
  },
  "top_summary": {
   "picks": 10,
-  "settled": 9,
-  "hits": 4,
+  "settled": 10,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.98,
-  "profit_units": -0.58
+  "expected_hits": 4.42,
+  "profit_units": 0.52
  },
  "safe_min_odds": 1.7,
  "safe": [],

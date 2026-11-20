@@ -1,8 +1,8 @@
 # 🏀 NCAA prognozes
 
-_Atjaunināts 20.11.2026 08:13 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 09:41 (Rīgas laiks)_
 
-## Nakts uz 20.11. — 10 spēles, koef. ≥ 2.1 — izgāja 4/9
+## Nakts uz 20.11. — 10 spēles, koef. ≥ 2.1 — izgāja 5/10
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -63,11 +63,11 @@ Robots: **UCSB -1.5**, kopā 148.5 · bukmeikeri: UCSB -1.5, kopā 148.5 · gala
 | 1 ★ | **PEPP virs 74.5** | 44/100 | 2.11 | 2.27 | ✅ izgāja |
 
 ### HOU @ KU · 06:00
-Robots: **HOU -3.5**, kopā 150.5 · bukmeikeri: HOU -3.5, kopā 150.5
+Robots: **HOU -3.5**, kopā 150.5 · bukmeikeri: HOU -3.5, kopā 150.5 · gala rezultāts: **HOU 92 - 83 KU**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **KU virs 74.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+| 1 ★ | **KU virs 74.5** | 44/100 | 2.10 | 2.26 | ✅ izgāja |
 
 ### TAR @ USC · 06:00
 Robots: **USC -28.5**, kopā 158.5 · bukmeikeri: USC -28.5, kopā 158.5 · gala rezultāts: **TAR 51 - 96 USC**
@@ -90,23 +90,23 @@ Robots: **USC -28.5**, kopā 158.5 · bukmeikeri: USC -28.5, kopā 158.5 · gala
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 4/9, vienības -0.58
+★ Visticamākās (1 katrā spēlē): uzvarēts 5/10, vienības +0.52
 
-Visas likmes kopā: izgāja 4/9 (44%), robots gaidīja ~4.0, vienības -0.58
+Visas likmes kopā: izgāja 5/10 (50%), robots gaidīja ~4.4, vienības +0.52
 Crazy Dazy kopā: izgāja 0/5 (0%), robots gaidīja ~1.0, vienības -5.00
 
 ### Mēneša statistika
 
 | Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (19.–30.11.) | 4/9 | -0.58 | 4/9 | -0.58 | – | – | 0/5 | -5.00 |
+| Novembris 2026 (19.–30.11.) | 5/10 | +0.52 | 5/10 | +0.52 | – | – | 0/5 | -5.00 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 20.11. | 4/9 | 4.0 | -0.58 |
+| 20.11. | 5/10 | 4.4 | +0.52 |
 
 ### Vai drošība atbilst realitātei?
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 9 | 44% | 44% |
+| 40-44 | 10 | 50% | 44% |
