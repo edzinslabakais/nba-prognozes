@@ -57,7 +57,7 @@ def nav(current: str, depth: int) -> str:
     for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "1.7+", "drosas/"),
                                                                        ("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
-        links.append(f'<a href="{up}{href or "./"}"{cur}>{label}</a>')
+        links.append(f'<a href="{up}{href or "./"}" data-nav="{key}"{cur}>{label}</a>')
     return '<nav class="league" aria-label="Līga">' + "".join(links) + "</nav>"
 
 

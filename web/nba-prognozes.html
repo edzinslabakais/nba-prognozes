@@ -413,28 +413,44 @@ const I18N = {
     noData: "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.",
     loadSlow: "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu.", loadFail: (c) => `Neizdevās ielādēt datus (${c}).`,
     night: (d) => `Nakts uz ${d}`,
+    statsSub: (n) => `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${n} spēļu dienas`,
+    statsIntro: "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti.",
+    thisWeek: "Šī nedēļa", thisMonth: "Šis mēnesis", thisYear: "Šis gads", allTime: "Kopā", since: (d) => `kopš ${d}`,
+    pastWeeks: "Iepriekšējās nedēļas", pastMonths: "Iepriekšējie mēneši",
+    dayBets: "Likmes šajā dienā", dayUnits: "Vienības šajā dienā", noDays: "Vēl nav nevienas dienas likmju.",
+    safeSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · koeficients ≥ 1.7`,
+    safePageIntro: "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA, NHL un NCAA spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".",
+    perLeague: "Statistika pa līgām",
+    perLeagueIntro: "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai.",
   },
   en: {
     h1: "predictions", title: "predictions", loading: "Loading tonight's picks…", pickNight: "Choose a night",
     langLabel: "Language", darkLabel: "Dark mode",
-    topTitle: "★ Most likely picks", topSub: "one per game · 1 unit per bet", unitsPm: "Units +/−",
+    topTitle: "★ Most realistic 2.1+", topSub: "one per game · 1 unit per bet", unitsPm: "Units +/−",
     unitsTotal: "Units total", archive: "Monthly archive", calibTitle: "Does the confidence match reality?",
     thConf: "Confidence", thBets: "Bets", thWon: "Won", thExp: "Robot expected",
-    safeTitle: "Safe bets", howTo: "How to read",
-    crazyIntro: (o) => `3 bets from all of tonight's games that have the best chance to win at odds ${o}+. Each one is from a different game.`,
+    safeTitle: "1.7+", howTo: "How to read",
+    safeIntro: "Bets from all of tonight's games at odds 1.7+ that the bookmakers rate as the safest. In the season test this worked better than the robot's own statistics. Among almost equally safe lines, the one with the highest odds is taken.",
+    crazyIntro: (o, n = 3) => `${n} bets from all of ${DAY_MODE ? "the day's" : "tonight's"} games that have the best chance to win at odds ${o}+. Each one is from a different game.`,
     emptyLoading: "<b>Picks not loaded yet</b>Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
-    noBets: "No picks yet", noNights: "No nights with picks yet.",
-    emptyText: "Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
-    sub: (night, n, odds) => `Night of ${night} · ${n} ${n === 1 ? "game" : "games"} · odds ≥ ${odds}`,
+    noBets: "No picks yet", noNights: DAY_MODE ? "No days with picks yet." : "No nights with picks yet.",
+    emptyText: SIMPLE ? `${DAY_MODE ? "On match days around 12:30" : "Every evening around 21:30"} (Riga time) the robot posts the best bets from all games here, and records the results the next morning.`
+      : DAY_MODE ? "On match days around 12:30 (Riga time) the robot posts 3 bets for each game of the day here, and records the results the next morning."
+      : "Every evening around 21:30 (Riga time) the robot posts 3 bets for each game of the night here, and records the results in the morning.",
+    sub: (night, n, odds) => `${DAY_MODE ? "Games on" : "Night of"} ${night} · ${n} ${n === 1 ? "game" : "games"} · odds ≥ ${odds}`,
+    subSimple: (night, n, odds) => `${DAY_MODE ? "Games on" : "Night of"} ${night} · ${n} best bets · odds ≥ ${odds}`,
+    simpleTitle: (n) => `${n} best bets`,
+    simpleIntro: "In every game the robot finds the safest bet at odds 2.1+ and shows the safest of them (one per game). Sorted by confidence.",
     gamesShort: "g.", wonTonight: "Won tonight", betsTonight: "Bets tonight", totalWon: "Won in total",
     totalLine: (h, n, e) => `Total ${h}/${n} (expected ${e})`, unitsAll: "Units total",
     tonightWonTop: "Won tonight", tonightBets: "Bets tonight", wonPlayed: "Won / settled",
     tonightWon: "Won tonight", tonightWait: "Pending tonight", totalWonExp: (e) => `Won in total (expected ${e})`,
     monthStats: "monthly stats", colWonPlayed: "Won / settled", colUnits: "Units",
-    rowAll: "All bets", rowTop: "★ Most likely", rowSafe: "Safe bets", rowCrazy: "Crazy Dazy", waiting: "pending",
+    rowAll: "2.1+", rowTop: "★ Most realistic 2.1+", rowSafe: "1.7+", rowCrazy: "Crazy Dazy", waiting: "pending",
     won: "Won", lost: "Lost", push: "Push", pending: "Pending",
     wonL: "won", lostL: "lost", pushL: "push", pendingL: "pending",
-    fair: "fair", confAria: (c) => `Confidence ${c} of 100`,
+    star: "★ Most realistic 2.1+", fair: "fair", confAria: (c) => `Confidence ${c} of 100`,
+    dataSafe: (k, r) => `Bookmakers ${k} % · robot ${r} %`, dataTop: (r, m) => `Bookmakers ${m} % · robot ${r} %`,
     bets: (n) => `${n} bets`, wonOf: (h, n) => `${h}/${n} won`,
     robot: "Robot:", bookies: "Bookmakers:", final: "Final score: ", injuries: (n) => `Injuries and line-up (${n})`,
     updated: "Updated: ", locale: "en-GB",
@@ -443,11 +459,26 @@ const I18N = {
     noData: "Data is not available in this view. Open the page on claude.ai, sign in and try again.",
     loadSlow: "Can't load the data yet. Check your internet connection.", loadFail: (c) => `Could not load the data (${c}).`,
     night: (d) => `Night of ${d}`,
+    statsSub: (n) => `All sports together (NBA, NHL, EuroLeague, Champions League) · ${n} match days`,
+    statsIntro: "Four groups of bets, added up across all sports: 2.1+, ★ most realistic 2.1+, 1.7+ and Crazy Dazy. Units: the result of staking 1 unit on every bet at the approximate odds. A week runs Monday to Sunday and bets count by game date. NCAA and the Championship are not included here.",
+    thisWeek: "This week", thisMonth: "This month", thisYear: "This year", allTime: "All time", since: (d) => `since ${d}`,
+    pastWeeks: "Previous weeks", pastMonths: "Previous months",
+    dayBets: "Bets on this day", dayUnits: "Units on this day", noDays: "No days with picks yet.",
+    safeSub: (d, n) => `Evening and night games of ${d} · ${n} bets · odds ≥ 1.7`,
+    safePageIntro: "In every game of every league the robot finds the safest bet at odds 1.7 or more (by the bookmakers' rating where available). The date is the evening the games start in Riga time; NBA, NHL and NCAA games are played during the night. Bets are settled on regulation time (90 minutes in football) unless marked “incl. OT”.",
+    perLeague: "Statistics by league",
+    perLeagueIntro: "Every league is rated on its own. Units: the result of staking 1 unit on every bet at the approximate odds. A week runs Monday to Sunday.",
   },
 };
 const NOTES = {
   lv: {},
   en: {
+    noteTop: "<b>★ Most realistic 2.1+</b>: in every game the bet the bookmakers rate as the most likely. In the season test (~1600 bets) this did better than the robot's own model: the robot's “finds” against the bookmakers lost more often. It is not chosen by the lowest odds, since all three bets have similar odds.",
+    noteSafe: "<b>1.7+</b>: odds of at least 1.7. The safety is the bookmakers' rating, with the robot's own rating shown next to it for comparison. In the season test bets chosen by the robot's model won 42–47 % of the time, by the bookmakers 51–53 %.",
+    noteEl: "<b>EuroLeague</b>: there are no bookmaker odds for this league, so the probabilities come from the robot's model (team ratings, home court, rest), calibrated on the 2025-26 season (it picks the winner ~62 % of the time). All bets are settled on <b>regulation time</b> (40 minutes).",
+    noteCl: "<b>Football</b>: all bets are settled on <b>90 minutes</b> (no extra time or penalties). The expected goals are worked out from the bookmakers' odds, and every bet is rated from them, including “both teams to score” and “win or draw”.",
+    noteNcaa: "<b>NCAA</b> (US college basketball): there are too many games, so the robot takes the safest bet of each game and shows the <b>10 safest</b>, plus 5 Crazy Dazy. Where ESPN has a bookmakers' line it is used, otherwise the robot's model (team ratings, home court, neutral court, rest). Bets are settled on <b>regulation time</b> (2 halves, 40 minutes). NCAA is not included in the overall statistics.",
+    noteCh: "<b>Championship</b> (English second tier): the safest bet of each game at odds 2.1+, showing up to the <b>10 safest</b>, plus Crazy Dazy. The expected goals are worked out from the bookmakers' odds; bets are settled on <b>90 minutes</b>. The Championship is not included in the overall statistics.",
     noteConf: "<b>Confidence</b> is the robot's estimated chance that the bet wins. At odds of 2.1 it can hardly exceed ~45: a bookmaker only pays 2.1 if it rates the chance below 45 %. For every game the robot looks for the safest line in three categories that still pays 2.1 or more.",
     noteOdds: "<b>~2.14</b> is the approximate Optibet price, <b>fair</b> is the price at which the bet is exactly “worth it”. If Optibet pays more than the fair price, the bet is good value. If Optibet's line differs a little, take the nearest one with odds of 2.1 or more.",
     noteMonth: "<b>Monthly stats</b> count bets by game date from the 1st to the last day of the month.",
@@ -474,14 +505,16 @@ function withNames(text, ctx) {
 }
 function trBet(s) {
   if (!EN() || !s) return s;
-  return s.replace(/ \(ieskaitot papildlaiku\)/g, " (incl. OT)").replace(/(\S+) uzvar pamatlaikā/g, "$1 to win")
+  return s.replace(/ \(ieskaitot papildlaiku\)/g, " (incl. OT)")
+    .replace(/abas komandas gūst vārtus/g, "both teams to score").replace(/abas komandas negūst vārtus/g, "both teams to score: no")
+    .replace(/(\S+) vai neizšķirts/g, "$1 or draw").replace(/(\S+) uzvar pamatlaikā/g, "$1 to win")
     .replace(/(\S+) uzvar/g, "$1 to win").replace(/\bneizšķirts( pamatlaikā)?/g, "draw")
     .replace(/(^|\s)virs /g, "$1over ").replace(/(^|\s)zem /g, "$1under ");
 }
 function trScore(s) {
   if (!EN() || !s) return s;
   return s.replace("(pamatlaikā; ar papildlaiku", "(regulation; incl. OT").replace("(pamatlaikā; papildlaikā", "(regulation; OT")
-    .replace("(pamatlaikā; bullīšos", "(regulation; shootout");
+    .replace("(pamatlaikā; bullīšos", "(regulation; shootout").replace("(90 min.; pēc pagarinājuma", "(90 min.; after extra time");
 }
 function trNote(s) {
   if (!EN() || !s) return s;
@@ -500,6 +533,8 @@ function monthName(m) {
   return `${MONTHS_EN[Number(mo) - 1]} ${y}`;
 }
 function applyStatic() {
+  const h1 = document.querySelector("h1");
+  if (h1 && !h1.dataset.lv) h1.dataset.lv = h1.innerHTML;  // the Latvian original, before any translation
   document.documentElement.lang = LANG;
   document.querySelectorAll("[data-i18n]").forEach((e) => { e.textContent = t(e.dataset.i18n); });
   document.querySelectorAll("[data-i18n-html]").forEach((e) => {
@@ -508,7 +543,15 @@ function applyStatic() {
     e.innerHTML = EN() ? (NOTES.en[k] || I18N.en[k] || e.dataset.lv) : e.dataset.lv;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((e) => e.setAttribute("aria-label", t(e.dataset.i18nAria)));
-  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : LEAGUE_KEY === "drosas" ? "1.7+ likmes" : `${LEAGUE_TITLE} ${t("title")}`;
+  document.title = pageTitle();
+  if (h1) {
+    const words = pageTitle().split(" ");
+    h1.innerHTML = EN() ? `${words.slice(0, -1).join(" ")} <span>${words[words.length - 1]}</span>` : h1.dataset.lv;
+  }
+  document.querySelectorAll("nav.league a[data-nav]").forEach((a) => {
+    if (!a.dataset.lv) a.dataset.lv = a.textContent;
+    a.textContent = EN() ? ({ stats: "Stats", cl: "CL" }[a.dataset.nav] || a.dataset.lv) : a.dataset.lv;
+  });
   $("langCur").textContent = LANG.toUpperCase();
   document.querySelectorAll("#langInner button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
 }
@@ -528,6 +571,13 @@ const CAT_EN = { "starpība": "Winner / handicap", "kopā": "Total points", "kom
   "uzvarētājs / handikaps": "Winner / handicap", "komandas vārti": "Team goals", "neizšķirts": "Regulation draw",
   "handikaps": "Handicap", "uzvarētājs": "Winner", "uzvaras starpība": "Winning margin",
   "kombinācija": "Combo (all parts must win)" };
+const LEAGUE_EN = { "ČL": "CL", "Čempionu līga": "Champions League", "Čempionu līgas": "Champions League" };
+function leagueName(x) { return EN() ? (LEAGUE_EN[x] || x) : x; }
+function pageTitle() {
+  if (LEAGUE_KEY === "stats") return EN() ? "Overall statistics" : "Kopējā statistika";
+  if (LEAGUE_KEY === "drosas") return EN() ? "1.7+ bets" : "1.7+ likmes";
+  return `${leagueName(LEAGUE_TITLE)} ${t("title")}`;
+}
 function catName(c) {
   if (c === "kopā" && GOALS) return EN() ? "Total goals" : "Kopējie vārti";
   return (EN() ? CAT_EN : CAT_LV)[c] || c || "";
@@ -564,7 +614,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  const rows = LEAGUE_KEY === "drosas" ? [["1.7+", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+  const rows = LEAGUE_KEY === "drosas" ? [[t("rowSafe"), m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
     : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
   for (const [label, s] of rows) {
     const tr = el("tr");
@@ -812,6 +862,7 @@ function weekLabel(mon) {
 function monthLabelLv(m) {
   const n = ["janvāris", "februāris", "marts", "aprīlis", "maijs", "jūnijs", "jūlijs", "augusts", "septembris", "oktobris", "novembris", "decembris"];
   const [y, mo] = m.split("-");
+  if (EN()) return `${MONTHS_EN[Number(mo) - 1]} ${y}`;
   const name = n[Number(mo) - 1];
   return `${name[0].toUpperCase()}${name.slice(1)} ${y}`;
 }
@@ -832,7 +883,7 @@ function periodContent(g) {
   const parts = [monthTable(g ? g.agg : blankAgg())];
   if (g && g.leagues.size > 1) {
     const box = el("div", "per-league");
-    for (const [, L] of g.leagues) box.append(el("h3", null, L.title), monthTable(L.agg));
+    for (const [, L] of g.leagues) box.append(el("h3", null, leagueName(L.title)), monthTable(L.agg));
     parts.push(box);
   }
   return parts;
@@ -863,28 +914,28 @@ function renderStatsPage() {
   const firstDate = rows.map((r) => r.date).sort()[0] || today;  // tracking started on this day
   const firstDay = firstDate.slice(0, 7) === mo ? Number(firstDate.slice(8)) : 1;
   const since = `${firstDate.slice(8)}.${firstDate.slice(5, 7)}.${firstDate.slice(0, 4)}`;
-  $("sub").textContent = `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${rows.length} spēļu dienas`;
+  $("sub").textContent = t("statsSub", rows.length);
   const nodes = [
-    el("p", "intro", "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti."),
+    el("p", "intro", t("statsIntro")),
   ];
   const current = el("div", "games");
   current.append(
-    periodItem(`now:w`, "Šī nedēļa", weekLabel(wk), weeks.get(wk)),
-    periodItem(`now:m`, "Šis mēnesis", `${monthLabelLv(mo)} · ${firstDay}.–${lastDay}.${mo.slice(5)}.`, months.get(mo)),
-    periodItem(`now:y`, "Šis gads", `${yr}`, years.get(yr)),
-    periodItem(`now:all`, "Kopā", `kopš ${since}`, all.get("all")),
+    periodItem(`now:w`, t("thisWeek"), weekLabel(wk), weeks.get(wk)),
+    periodItem(`now:m`, t("thisMonth"), `${monthLabelLv(mo)} · ${firstDay}.–${lastDay}.${mo.slice(5)}.`, months.get(mo)),
+    periodItem(`now:y`, t("thisYear"), `${yr}`, years.get(yr)),
+    periodItem(`now:all`, t("allTime"), t("since", since), all.get("all")),
   );
   nodes.push(current);
   const pastWeeks = [...weeks.keys()].filter((k) => k !== wk).sort().reverse();
   const pastMonths = [...months.keys()].filter((k) => k !== mo).sort().reverse();
   if (pastWeeks.length) {
-    nodes.push(el("h2", null, "Iepriekšējās nedēļas"));
+    nodes.push(el("h2", null, t("pastWeeks")));
     const box = el("div", "games");
     box.append(...pastWeeks.map((k) => periodItem(`w:${k}`, weekLabel(k), "", weeks.get(k))));
     nodes.push(box);
   }
   if (pastMonths.length) {
-    nodes.push(el("h2", null, "Iepriekšējie mēneši"));
+    nodes.push(el("h2", null, t("pastMonths")));
     const box = el("div", "games");
     box.append(...pastMonths.map((k) => periodItem(`m:${k}`, monthLabelLv(k), "", months.get(k))));
     nodes.push(box);
@@ -916,17 +967,16 @@ function renderSafePage() {
   // the strip is about the chosen day only; every league has its own statistics further down
   const s = night ? night.summary : null;
   $("s1").textContent = s ? String(s.picks) : "–";
-  $("s1l").textContent = "Likmes šajā dienā";
+  $("s1l").textContent = t("dayBets");
   $("s2").textContent = s && s.settled ? `${s.hits}/${s.settled}` : "–";
-  $("s2l").textContent = s && s.settled ? `Izgāja (${pct(s.hits, s.settled)})` : "Izgāja";
+  $("s2l").textContent = s && s.settled ? `${t("won")} (${pct(s.hits, s.settled)})` : t("won");
   $("s3").textContent = s && s.settled ? signed(s.profit_units) : "–";
   $("s3").className = s && s.profit_units > 0 ? "pos" : s && s.profit_units < 0 ? "neg" : "";
-  $("s3l").textContent = "Vienības šajā dienā";
-  $("sub").textContent = night ? `${nightLabel(night.date)} vakara un nakts spēles · ${night.bets.length} likmes · koeficients ≥ 1.7`
-    : "Vēl nav nevienas dienas likmju.";
+  $("s3l").textContent = t("dayUnits");
+  $("sub").textContent = night ? t("safeSub", nightLabel(night.date), night.bets.length) : t("noDays");
   const box = $("games");
   box.classList.add("safe-cards");
-  const nodes = [el("p", "intro", "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA, NHL un NCAA spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".")];
+  const nodes = [el("p", "intro", t("safePageIntro"))];
   if (night) {
     const byLeague = new Map();
     for (const b of night.bets) {
@@ -936,8 +986,8 @@ function renderSafePage() {
     const ORDER = ["nba", "nhl", "el", "cl", "ncaa", "ch"];
     for (const [key, L] of [...byLeague].sort((a, b) => ORDER.indexOf(a[0]) - ORDER.indexOf(b[0]))) {
       const ss = sumOf(L.bets);
-      const h = el("h3", "league-h", L.title);
-      h.append(el("small", null, ss.settled ? `${ss.hits}/${ss.settled} · ${signed(ss.profit_units)}` : `${L.bets.length} likmes`));
+      const h = el("h3", "league-h", leagueName(L.title));
+      h.append(el("small", null, ss.settled ? `${ss.hits}/${ss.settled} · ${signed(ss.profit_units)}` : t("bets", L.bets.length)));
       nodes.push(h, ...L.bets.map((b) => betCard(b, `sa:${key}`, night.date, { ...b, mk_conf: b.confidence })));
     }
   }
@@ -950,14 +1000,14 @@ function renderSafePage() {
     if (!leagues.has(b.league)) leagues.set(b.league, { title: b.league_title, bets: [] });
     leagues.get(b.league).bets.push({ ...b, date: n.date });
   }
-  nodes.push(el("h2", null, "Statistika pa līgām"));
-  nodes.push(el("p", "intro", "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai."));
+  nodes.push(el("h2", null, t("perLeague")));
+  nodes.push(el("p", "intro", t("perLeagueIntro")));
   const stats = el("div", "games");
   for (const [key, L] of [...leagues].sort((a, b) => LEAGUE_ORDER.indexOf(a[0]) - LEAGUE_ORDER.indexOf(b[0]))) {
     const bets = L.bets;
-    const periods = [["Šī nedēļa", bets.filter((b) => mondayOf(b.date) === wk)],
-                     ["Šis mēnesis", bets.filter((b) => b.date.slice(0, 7) === mo)],
-                     ["Kopā", bets]];
+    const periods = [[t("thisWeek"), bets.filter((b) => mondayOf(b.date) === wk)],
+                     [t("thisMonth"), bets.filter((b) => b.date.slice(0, 7) === mo)],
+                     [t("allTime"), bets]];
     const weeks = [...new Set(bets.map((b) => mondayOf(b.date)))].filter((w) => w !== wk).sort().reverse();
     for (const w of weeks) periods.push([weekLabel(w), bets.filter((b) => mondayOf(b.date) === w)]);
     const months = [...new Set(bets.map((b) => b.date.slice(0, 7)))].filter((m) => m !== mo).sort().reverse();
@@ -980,7 +1030,7 @@ function renderSafePage() {
     const sum = all.settled ? [`${all.hits}/${all.settled} · ${signed(all.profit_units)}`, all.profit_units >= 0 ? "good" : "bad"]
       : [`${all.picks} ${t("waiting")}`, ""];
     const left = el("div", "teams period-title");
-    left.append(el("span", null, L.title));
+    left.append(el("span", null, leagueName(L.title)));
     stats.append(accordion(`sa:stats:${key}`, left, "", sum, [tbl]));
   }
   nodes.push(stats);
