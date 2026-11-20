@@ -312,13 +312,14 @@ def pick_crazy(df, p, min_odds=4.0, n=3) -> list[dict]:
     return rows[:n]
 
 
-def pick_safe(df, p) -> list[dict]:
+def pick_safe(df, p, all_games: bool = False) -> list[dict]:
     per_game = []
     for r in df.itertuples():
         g = N.HockeyGrid(r.lh, r.la, p["tie_infl"], 0.0)
         cands = candidates(r, g, 0.35, PAYOUT / core.SAFE_MIN_ODDS, crazy=False)
         per_game.append((r, [(b, pw, pw, cat, pw) for b, pw, cat in cands]))
-    return core.choose_safe(per_game, "market")
+    out = core.choose_safe(per_game, "market", all_games)
+    return core.with_names(out, df) if all_games else out
 
 
 def predict_day(day: date, p) -> pd.DataFrame:
@@ -380,7 +381,8 @@ def cmd_likmes(args) -> None:
     safe = pick_safe(df, p)
     core.print_safe(safe, 34)
     print("\nCRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
-    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
+    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
+                        safe_all=pick_safe(df, p, all_games=True))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}")
 
 

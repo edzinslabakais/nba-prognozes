@@ -1,7 +1,7 @@
 {
  "date": "2026-11-20",
  "min_odds": 2.1,
- "generated_at": "2026-11-20T11:15+00:00",
+ "generated_at": "2026-11-20T17:48+00:00",
  "games": [
   {
    "game_id": "E2026_127",
@@ -333,6 +333,70 @@
   }
  ],
  "safe_summary": {
+  "picks": 3,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "safe_all": [
+  {
+   "game_id": "E2026_128",
+   "game": "RED@BAR",
+   "start_utc": "2026-11-20 19:30:00+00:00",
+   "riga_time": "20.11 21:30",
+   "category": "kopā",
+   "bet": "zem 167.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5326,
+   "p_market": null,
+   "fair_odds": 1.88,
+   "est_odds": 1.75,
+   "result": null,
+   "away_short": "Crvena Zvezda",
+   "home_short": "FC Barcelona",
+   "score": null
+  },
+  {
+   "game_id": "E2026_130",
+   "game": "MAD@OLY",
+   "start_utc": "2026-11-20 19:15:00+00:00",
+   "riga_time": "20.11 21:15",
+   "category": "kopā",
+   "bet": "virs 175.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5284,
+   "p_market": null,
+   "fair_odds": 1.89,
+   "est_odds": 1.76,
+   "result": null,
+   "away_short": "Real Madrid",
+   "home_short": "Olympiacos",
+   "score": null
+  },
+  {
+   "game_id": "E2026_129",
+   "game": "BES@PAR",
+   "start_utc": "2026-11-20 19:45:00+00:00",
+   "riga_time": "20.11 21:45",
+   "category": "komandas punkti",
+   "bet": "BES zem 80.5",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5255,
+   "p_market": null,
+   "fair_odds": 1.9,
+   "est_odds": 1.77,
+   "result": null,
+   "away_short": "Besiktas",
+   "home_short": "Partizan",
+   "score": null
+  }
+ ],
+ "safe_all_summary": {
   "picks": 3,
   "settled": 0,
   "hits": 0,

@@ -23,6 +23,14 @@
   "expected_hits": 4.42,
   "profit_units": 0.52
  },
+ "safe_all_overall": {
+  "picks": 54,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
  "safe_overall": {
   "picks": 0,
   "settled": 0,
@@ -63,6 +71,14 @@
     "pushes": 0,
     "expected_hits": 0,
     "profit_units": 0
+   },
+   "safe_all": {
+    "picks": 0,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
    }
   },
   {
@@ -91,6 +107,14 @@
    },
    "safe": {
     "picks": 0,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe_all": {
+    "picks": 54,
     "settled": 0,
     "hits": 0,
     "pushes": 0,
@@ -146,5 +170,5 @@
    }
   }
  ],
- "updated_at": "2026-11-20T17:43+00:00"
+ "updated_at": "2026-11-20T17:49+00:00"
 }

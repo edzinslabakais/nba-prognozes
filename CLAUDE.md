@@ -56,6 +56,8 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - NCAA: `ncaa_bot.py` (10 labākās likmes naktī + 5 Crazy Dazy, `ncaa_params.json`), lapa `site/ncaa/`;
   Championship: `ch_bot.py` (izmanto `cl_bot.py` dzinēju ar `soccer/eng.2`, līdz 10 likmēm + 3 Crazy Dazy), lapa `site/ch/`.
   Abas ir `SIMPLE` lapas (bez ★/drošajām) un netiek ieskaitītas kopējā statistikā (`site.py` `SIMPLE`).
+- Drošās likmes lapa `site/drosas/`: katrs robots saglabā `safe_all` (katrā spēlē drošākā likme ar koef. ≥ 1.7,
+  `bot.safe_all` / `choose_safe(all_games=True)`), `site.py` `safe_page_data()` savāc visas līgas; sava statistika.
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
   Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|ncaa|ch`.
 - Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas

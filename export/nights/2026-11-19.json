@@ -350,5 +350,14 @@
   "pushes": 0,
   "expected_hits": 1.6,
   "profit_units": 2.24
+ },
+ "safe_all": [],
+ "safe_all_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
  }
 }

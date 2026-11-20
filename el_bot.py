@@ -179,7 +179,7 @@ def cmd_likmes(args) -> None:
     safe = core.pick_safe(df)
     core.print_safe(safe)
     print(f"\nCRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
-    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
+    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe, safe_all=core.safe_all(df))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}")
 
 

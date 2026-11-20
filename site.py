@@ -54,7 +54,8 @@ def load_data(export: Path, max_nights: int = 60) -> dict:
 def nav(current: str, depth: int) -> str:
     up = "../" * depth
     links = []
-    for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("stats", "Statistika", "stats/")]:
+    for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "Drošās", "drosas/"),
+                                                                       ("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
         links.append(f'<a href="{up}{href or "./"}"{cur}>{label}</a>')
     return '<nav class="league" aria-label="Līga">' + "".join(links) + "</nav>"
@@ -94,6 +95,23 @@ def combined_data() -> dict:
     return {"nights": [], "stats": {"updated_at": max(updated) if updated else None}, "combined": rows}
 
 
+def safe_page_data(max_days: int = 60) -> dict:
+    """Drošās likmes page: the safest bet (odds >= 1.7) of every game in every league, per day."""
+    days: dict[str, list] = {}
+    updated = []
+    for key, label, title, export, *_ in LEAGUES:
+        sf = export / "stats.json"
+        if sf.exists():
+            updated.append(json.loads(sf.read_text()).get("updated_at") or "")
+        for f in sorted((export / "nights").glob("*.json")) if (export / "nights").exists() else []:
+            n = json.loads(f.read_text())
+            for b in n.get("safe_all") or []:
+                days.setdefault(n["date"], []).append({**b, "league": key, "league_title": title if key != "cl" else "Čempionu līga"})
+    nights = [{"date": d, "bets": sorted(v, key=lambda b: (b.get("start_utc") or "", b["league"]))}
+              for d, v in sorted(days.items(), reverse=True)[:max_days]]
+    return {"nights": nights, "stats": {"updated_at": max(updated) if updated else None}}
+
+
 def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: int, day_mode: bool = False,
               picks_time=(21, 30), data_override: dict | None = None) -> Path:
     src = TEMPLATE.read_text()
@@ -102,6 +120,9 @@ def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: i
     head = head.replace("<title>NBA prognozes</title>", f"<title>{title} prognozes</title>")
     body = '<div class="wrap">' + body
     body = body.replace("<!--LEAGUE-NAV-->", nav(key, depth))
+    if key == "drosas":
+        head = head.replace("<title>Drošās likmes prognozes</title>", "<title>Drošās likmes</title>")
+        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Drošās <span>likmes</span></h1>')
     if key == "stats":
         head = head.replace("<title>Statistika prognozes</title>", "<title>Kopējā statistika</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Kopējā <span>statistika</span></h1>')
@@ -140,6 +161,7 @@ def build() -> list[Path]:
     (OUT / ".nojekyll").write_text("")
     pages = [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
              for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
+    pages.append(build_one("drosas", "Drošās likmes", None, OUT / "drosas", 1, True, (12, 30), data_override=safe_page_data()))
     pages.append(build_one("stats", "Statistika", None, OUT / "stats", 1, data_override=combined_data()))
     return pages
 

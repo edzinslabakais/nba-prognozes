@@ -242,6 +242,9 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .safe .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
 .games > .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
 .games > h2 { margin: 0; }
+.games > .league-h { font: 700 18px var(--font-display); letter-spacing: 0.03em; text-transform: uppercase; margin: 8px 0 0; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.games > .league-h small { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0; text-transform: none; }
+.safe-cards > .games .game { border-color: var(--line); }
 .safe-cards .game { border-color: var(--good); }
 .safe-cards .odds b, .safe-cards .conf { color: var(--good); }
 .safe-cards .bar i { background: var(--good); }
@@ -505,7 +508,7 @@ function applyStatic() {
     e.innerHTML = EN() ? (NOTES.en[k] || I18N.en[k] || e.dataset.lv) : e.dataset.lv;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((e) => e.setAttribute("aria-label", t(e.dataset.i18nAria)));
-  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : `${LEAGUE_TITLE} ${t("title")}`;
+  document.title = LEAGUE_KEY === "stats" ? "Kopējā statistika" : LEAGUE_KEY === "drosas" ? "Drošās likmes" : `${LEAGUE_TITLE} ${t("title")}`;
   $("langCur").textContent = LANG.toUpperCase();
   document.querySelectorAll("#langInner button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
 }
@@ -561,7 +564,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  const rows = SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+  const rows = LEAGUE_KEY === "drosas" ? [["Drošās likmes", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
     : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
   for (const [label, s] of rows) {
     const tr = el("tr");
@@ -889,8 +892,81 @@ function renderStatsPage() {
   page.replaceChildren(...nodes);
 }
 
+// ---- Drošās likmes page: the safest bet (odds >= 1.7) of every game in every league, with its own statistics
+function sumOf(bets) {
+  const settled = bets.filter((b) => ["izgāja", "neizgāja", "atgriezts"].includes(b.result));
+  const hits = settled.filter((b) => b.result === "izgāja");
+  const pushes = settled.filter((b) => b.result === "atgriezts").length;
+  const profit = hits.reduce((a, b) => a + Number(b.est_odds), 0) + pushes - settled.length;
+  return { picks: bets.length, settled: settled.length, hits: hits.length, pushes, profit_units: Math.round(profit * 100) / 100 };
+}
+function renderSafePage() {
+  for (const id of ["topbox", "month", "archive", "calib", "safe", "crazy", "statsPage"]) {
+    const e = document.getElementById(id); if (e) e.hidden = true;
+  }
+  for (const c of $("notes").children) c.hidden = c.id !== "updated";
+  for (const n of state.nights) { n.summary = sumOf(n.bets || []); n.games = n.bets || []; }
+  if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
+    // today's evening by default (tomorrow's bets are already there when a league has no games tonight)
+    const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
+    state.selected = (state.nights.find((n) => n.date <= today) || state.nights[state.nights.length - 1])?.date ?? null;
+  }
+  const night = state.nights.find((n) => n.date === state.selected);
+  renderNights();
+  const allBets = state.nights.flatMap((n) => n.bets || []);
+  const o = sumOf(allBets);
+  const s = night ? night.summary : null;
+  $("s1").textContent = s ? (s.settled ? `${s.hits}/${s.settled}` : String(s.picks)) : "–";
+  $("s1l").textContent = s && s.settled ? "Šajā dienā izgāja" : "Likmes šajā dienā";
+  $("s2").textContent = o.settled ? pct(o.hits, o.settled) : "–";
+  $("s2l").textContent = o.settled ? `Kopā izgāja (${o.hits}/${o.settled})` : "Kopā izgāja";
+  $("s3").textContent = o.settled ? signed(o.profit_units) : "–";
+  $("s3").className = o.profit_units > 0 ? "pos" : o.profit_units < 0 ? "neg" : "";
+  $("s3l").textContent = "Vienības kopā";
+  $("sub").textContent = night ? `${nightLabel(night.date)} vakara un nakts spēles · ${night.bets.length} likmes · koeficients ≥ 1.7`
+    : "Vēl nav nevienas dienas likmju.";
+  const box = $("games");
+  box.classList.add("safe-cards");
+  const nodes = [el("p", "intro", "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA, NHL un NCAA spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".")];
+  if (night) {
+    const byLeague = new Map();
+    for (const b of night.bets) {
+      if (!byLeague.has(b.league)) byLeague.set(b.league, { title: b.league_title, bets: [] });
+      byLeague.get(b.league).bets.push(b);
+    }
+    const ORDER = ["nba", "nhl", "el", "cl", "ncaa", "ch"];
+    for (const [key, L] of [...byLeague].sort((a, b) => ORDER.indexOf(a[0]) - ORDER.indexOf(b[0]))) {
+      const ss = sumOf(L.bets);
+      const h = el("h3", "league-h", L.title);
+      h.append(el("small", null, ss.settled ? `${ss.hits}/${ss.settled} · ${signed(ss.profit_units)}` : `${L.bets.length} likmes`));
+      nodes.push(h, ...L.bets.map((b) => betCard(b, `sa:${key}`, night.date, { ...b, mk_conf: b.confidence })));
+    }
+  }
+  // own statistics: this week / month / all time, with every league on its own
+  const rows = [];
+  for (const n of state.nights) {
+    const per = new Map();
+    for (const b of n.bets || []) { if (!per.has(b.league)) per.set(b.league, { title: b.league_title, bets: [] }); per.get(b.league).bets.push(b); }
+    for (const [lg, v] of per) rows.push({ league: lg, title: v.title, date: n.date, all: sumOf(v.bets), top: {}, safe: {}, crazy: {} });
+  }
+  const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
+  const weeks = group(rows, (r) => mondayOf(r.date)), months = group(rows, (r) => r.date.slice(0, 7));
+  const wk = mondayOf(today), mo = today.slice(0, 7);
+  nodes.push(el("h2", null, "Statistika"));
+  const stats = el("div", "games");
+  stats.append(periodItem("sa:w", "Šī nedēļa", weekLabel(wk), weeks.get(wk)),
+               periodItem("sa:m", "Šis mēnesis", monthLabelLv(mo), months.get(mo)),
+               periodItem("sa:all", "Kopā", "", group(rows, () => "all").get("all")));
+  for (const k of [...weeks.keys()].filter((k) => k !== wk).sort().reverse()) stats.append(periodItem(`sa:w:${k}`, weekLabel(k), "", weeks.get(k)));
+  nodes.push(stats);
+  box.replaceChildren(...nodes);
+  const upd = state.stats?.updated_at;
+  $("updated").textContent = upd ? t("updated") + new Date(upd).toLocaleString(t("locale"), { timeZone: "Europe/Riga", dateStyle: "short", timeStyle: "short" }) : "";
+}
+
 function render() {
   if (LEAGUE_KEY === "stats") { renderStatsPage(); return; }
+  if (LEAGUE_KEY === "drosas") { renderSafePage(); return; }
   if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
     state.selected = state.nights[0]?.date ?? null;
   }
@@ -968,6 +1044,7 @@ applyStatic();
 // ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
 const SLOTS = [{ h: 7, m: 0, name: "slotResults" }, { h: 8, m: 30, name: "slotLate" },
   { h: 21, m: 30, name: "slotPicks" }];
+if (LEAGUE_KEY === "drosas") SLOTS.push({ h: 21, m: 30, name: "slotPicks" });  // 12:30 Europe + 21:30 America
 const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
   day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
 

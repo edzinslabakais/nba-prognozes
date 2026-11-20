@@ -229,7 +229,7 @@ SAFE_STRONG = 0.56       # more than SAFE_MIN picks only if they are at least th
 SAFE_TOLERANCE = 0.02    # take a line up to 2 points less likely (by our data) if it pays more
 
 
-def choose_safe(per_game: list, rank_by: str = "market") -> list[dict]:
+def choose_safe(per_game: list, rank_by: str = "market", all_games: bool = False) -> list[dict]:
     """per_game: [(row, [(bet, p_final, p_model, category, p_market), ...]), ...]
 
     rank_by="market": the bookmakers' probability decides how safe a bet is (what the season simulation
@@ -248,7 +248,7 @@ def choose_safe(per_game: list, rank_by: str = "market") -> list[dict]:
                      "p_model": round(pm, 4), "p_market": round(pk, 4) if pk is not None else None,
                      "_rank": rank((b, pf, pm, cat, pk))})
     best.sort(key=lambda x: -x["_rank"])
-    out = [x for i, x in enumerate(best) if i < SAFE_MIN or (i < SAFE_MAX and x["_rank"] >= SAFE_STRONG)]
+    out = best if all_games else [x for i, x in enumerate(best) if i < SAFE_MIN or (i < SAFE_MAX and x["_rank"] >= SAFE_STRONG)]
     for x in out:
         rk = x.pop("_rank")
         x.update(fair_odds=round(1 / x["p"], 2), est_odds=round(PAYOUT_SAFE / x["p"], 2),
@@ -290,8 +290,26 @@ def safe_candidates_nba(r) -> list:
     return out
 
 
-def pick_safe(df: pd.DataFrame, rank_by: str = "market") -> list[dict]:
-    return choose_safe([(r, safe_candidates_nba(r)) for r in df.itertuples()], rank_by)
+def pick_safe(df: pd.DataFrame, rank_by: str = "market", all_games: bool = False) -> list[dict]:
+    return choose_safe([(r, safe_candidates_nba(r)) for r in df.itertuples()], rank_by, all_games)
+
+
+def with_names(bets: list[dict], df: pd.DataFrame) -> list[dict]:
+    """Add team short names (shown on the page) to bets of a separate list such as the Drošās likmes page."""
+    rows = {r.game_id: r for r in df.itertuples()}
+    for x in bets:
+        r = rows.get(x["game_id"])
+        for side in ("away", "home"):
+            v = getattr(r, f"{side}_short", None) if r is not None else None
+            if v:
+                x[f"{side}_short"] = v
+    return bets
+
+
+def safe_all(df: pd.DataFrame, per_game: list | None = None) -> list[dict]:
+    """Drošās likmes page: the safest bet with odds >= 1.7 in EVERY game (not only the best 3-5)."""
+    per_game = per_game if per_game is not None else [(r, safe_candidates_nba(r)) for r in df.itertuples()]
+    return with_names(choose_safe(per_game, "market", all_games=True), df)
 
 
 def print_safe(safe: list[dict], width: int = 26) -> None:
@@ -368,13 +386,16 @@ def cmd_likmes(args) -> None:
 
     safe = pick_safe(df)
     print_safe(safe)
-    f = save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
+    sa = safe_all(df)
+    print(f"Drošās likmes lapai: {len(sa)} likmes (katrā spēlē drošākā ar koef. >= {SAFE_MIN_ODDS:g})")
+    f = save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe, safe_all=sa)
     print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
     print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
           f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
 
 
-def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now, safe=None) -> Path:
+def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now, safe=None,
+               safe_all=None) -> Path:
     """Write the night's picks to history (games that already started keep their old picks)."""
     L.hist.mkdir(parents=True, exist_ok=True)
     f = L.hist / f"{day:%Y-%m-%d}.json"
@@ -392,9 +413,16 @@ def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float
     old_safe = old.get("safe", [])
     if safe is None or any(c["game_id"] in started for c in old_safe):
         safe = old_safe
+    # Drošās likmes page: per game, bets of games that already started stay as they were
+    old_all = old.get("safe_all", [])
+    if safe_all is None:
+        safe_all = old_all
+    else:
+        safe_all = [x for x in old_all if x["game_id"] in started] + [x for x in safe_all if x["game_id"] not in started]
     f.write_text(json.dumps({"date": str(day), "min_odds": min_odds,
                              "generated_at": now.isoformat(timespec="minutes"),
-                             "games": games_all, "picks": record, "crazy": crazy, "safe": safe},
+                             "games": games_all, "picks": record, "crazy": crazy, "safe": safe,
+                             "safe_all": safe_all},
                             indent=1, ensure_ascii=False))
     export_all()
     write_message(day.isoformat(), "likmes")
@@ -468,7 +496,7 @@ def settle(path: Path) -> tuple[dict, int]:
         return rec, 0
     by_id = {g.game_id: g for g in games.itertuples()}
     n_new = 0
-    for p in rec["picks"] + rec.get("crazy", []) + rec.get("safe", []):
+    for p in rec["picks"] + rec.get("crazy", []) + rec.get("safe", []) + rec.get("safe_all", []):
         if p.get("result"):
             continue
         g = by_id.get(p["game_id"])
@@ -642,19 +670,25 @@ def export_all() -> None:
         safe_out = [{**{k: c.get(k) for k in ("game_id", "game", "riga_time", "category", "bet", "confidence",
                                                 "data_conf", "p_model", "fair_odds", "est_odds", "result")},
                      "score": c.get("score") or scores.get(c["game_id"]), **shorts.get(c["game_id"], {})} for c in safe]
+        safe_all_out = [{**{k: c.get(k) for k in ("game_id", "game", "start_utc", "riga_time", "category", "bet",
+                                                    "confidence", "data_conf", "p_model", "p_market", "fair_odds",
+                                                    "est_odds", "result", "away_short", "home_short")},
+                         "score": c.get("score") or scores.get(c["game_id"])} for c in rec.get("safe_all", [])]
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
                "crazy_min_odds": L.crazy_min_odds, "crazy": crazy_out, "crazy_summary": _summary(crazy),
                "top_summary": _summary(night_top),
-               "safe_min_odds": SAFE_MIN_ODDS, "safe": safe_out, "safe_summary": _summary(safe)}
+               "safe_min_odds": SAFE_MIN_ODDS, "safe": safe_out, "safe_summary": _summary(safe),
+               "safe_all": safe_all_out, "safe_all_summary": _summary(rec.get("safe_all", []))}
         (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
         all_crazy += crazy
         all_top += night_top
         all_safe += safe
         nights.append({"date": rec["date"], **_summary(rec["picks"]),
-                       "crazy": _summary(crazy), "top": _summary(night_top), "safe": _summary(safe)})
+                       "crazy": _summary(crazy), "top": _summary(night_top), "safe": _summary(safe),
+                       "safe_all": _summary(rec.get("safe_all", []))})
         mon = month_acc.setdefault(rec["date"][:7], {"all": [], "top": [], "safe": [], "crazy": [], "dates": []})
         mon["all"] += rec["picks"]
         mon["top"] += night_top
@@ -670,6 +704,7 @@ def export_all() -> None:
                             "hit_rate": round(sum(p["result"] == "izgāja" for p in b) / len(b), 3),
                             "expected": round(sum(p["p"] for p in b) / len(b), 3)})
     stats = {"overall": _summary(all_picks), "crazy_overall": _summary(all_crazy), "top_overall": _summary(all_top),
+             "safe_all_overall": _summary([x for f in files for x in json.loads(f.read_text()).get("safe_all", [])]),
              "safe_overall": _summary(all_safe),
              "nights": nights, "calibration": buckets,
              "months": [_month_entry(m, acc, live_start=min(live_dates) if live_dates else None)

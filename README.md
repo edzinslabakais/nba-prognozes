@@ -92,6 +92,12 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
 - **Championship** (`ch_bot.py`, Anglijas otrā līga): **līdz 10** drošākajām likmēm + **3 Crazy Dazy**, ap 12:30.
   Tas pats futbola modelis kā Čempionu līgai (vārti no bukmeikeru koeficientiem), 90 minūtes.
 
+### Drošās likmes (atsevišķa lapa)
+
+…/nba-prognozes/drosas/ — katrā spēlē visās līgās (NBA, NHL, EuroLeague, Čempionu līga, NCAA, Championship) drošākā
+likme ar koeficientu vismaz 1.7 (pēc bukmeikeru vērtējuma, kur tas pieejams). Lapai ir sava statistika (diena, nedēļa,
+mēnesis, kopā, ar sadalījumu pa līgām); tā netiek jaukta ar pārējo statistiku.
+
 ### Kopējā statistika
 
 Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas

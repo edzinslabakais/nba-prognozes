@@ -1,6 +1,6 @@
 # 🏀 NCAA prognozes
 
-_Atjaunināts 20.11.2026 19:43 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 19:49 (Rīgas laiks)_
 
 ## Nakts uz 21.11. — 10 spēles, koef. ≥ 2.1
 

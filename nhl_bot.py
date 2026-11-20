@@ -220,7 +220,7 @@ def pick_crazy(df: pd.DataFrame, p, min_odds: float = 4.0, n: int = 3) -> list[d
     return out
 
 
-def pick_safe(df: pd.DataFrame, p, rank_by: str = "market") -> list[dict]:
+def pick_safe(df: pd.DataFrame, p, rank_by: str = "market", all_games: bool = False) -> list[dict]:
     """Drošās likmes: odds >= 1.7, ranked by the bookmakers' probability (see core.choose_safe)."""
     per_game = []
     for r in df.itertuples():
@@ -231,7 +231,8 @@ def pick_safe(df: pd.DataFrame, p, rank_by: str = "market") -> list[dict]:
         cands = _candidates(r, g, 0.35, core.PAYOUT_SAFE / core.SAFE_MIN_ODDS, crazy=False)
         per_game.append((r, [(b, pw, HB.prob(own, b)[0], cat, HB.prob(mkt, b)[0] if mkt is not None else None)
                              for b, pw, _, cat in cands]))
-    return core.choose_safe(per_game, rank_by)
+    out = core.choose_safe(per_game, rank_by, all_games)
+    return core.with_names(out, df) if all_games else out
 
 
 # --------------------------------------------------------------------------- commands
@@ -287,7 +288,8 @@ def cmd_likmes(args) -> None:
               f"godīgais koef. {x['fair_odds']:.2f}  (Optibet ~{x['est_odds']:.2f})   [{x['category']}]")
     safe = pick_safe(df, p)
     core.print_safe(safe, 34)
-    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe)
+    f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
+                        safe_all=pick_safe(df, p, all_games=True))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}  — rīt palaid: python nhl_bot.py rezultati")
 
 

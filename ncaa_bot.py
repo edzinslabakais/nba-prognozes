@@ -192,7 +192,7 @@ def cmd_likmes(args) -> None:
             "market_line": P_fmt(r), "injuries": [],
             "market_total": float(r.market_total) if r.has_market and pd.notna(r.market_total) else None,
         }
-    f = core.save_night(day, best, games_info, crazy, args.min_odds, now, safe=[])
+    f = core.save_night(day, best, games_info, crazy, args.min_odds, now, safe=[], safe_all=core.safe_all(df))
     print(f"Saglabāts: {f.relative_to(core.ROOT)}")
 
 

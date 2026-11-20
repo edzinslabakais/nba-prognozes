@@ -1,6 +1,6 @@
 # ⚽ Čempionu līga prognozes
 
-_Atjaunināts 19.11.2026 08:49 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 19:49 (Rīgas laiks)_
 
 ## Statistika
 
