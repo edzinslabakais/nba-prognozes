@@ -1,6 +1,6 @@
 # 🏀 NCAA prognozes
 
-_Atjaunināts 20.11.2026 19:49 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 22:08 (Rīgas laiks)_
 
 ## Nakts uz 21.11. — 10 spēles, koef. ≥ 2.1
 
@@ -27,13 +27,6 @@ Robots: **PRIN -3.5**, kopā 140.5 · bukmeikeri: PRIN -3.5, kopā 140.5
 |---|---|---|---|---|---|
 | 1 ★ | **MONM virs 69.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### OAK @ PUR · 02:00
-Robots: **PUR -20.5**, kopā 147.5 · bukmeikeri: PUR -20.5, kopā 147.5
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **OAK +18.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
-
 ### SCST @ CIT · 02:00
 Robots: **CIT -3.5**, kopā 142.5 · bukmeikeri: CIT -3.5, kopā 142.5
 
@@ -47,6 +40,13 @@ Robots: **PITT -21.5**, kopā 144.5 · bukmeikeri: PITT -21.5, kopā 144.5
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | 1 ★ | **CMU +19.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+
+### OAK @ PUR · 02:00
+Robots: **PUR -21.5**, kopā 147.5 · bukmeikeri: PUR -21.5, kopā 147.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **OAK +19.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
 ### CCU @ TENN · 02:00
 Robots: **TENN -26.5**, kopā 147.5 · bukmeikeri: TENN -26.5, kopā 147.5
@@ -69,12 +69,12 @@ Robots: **MIZ -36.5**, kopā 155.5 · bukmeikeri: MIZ -36.5, kopā 155.5
 |---|---|---|---|---|---|
 | 1 ★ | **LEM +34.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
-### MRSH @ UNC · 04:00
-Robots: **UNC -19.5**, kopā 158.5 · bukmeikeri: UNC -19.5, kopā 158.5
+### HALL @ NCSU · 04:30
+Robots: **NCSU -3.5**, kopā 140.5 · bukmeikeri: NCSU -3.5, kopā 140.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **MRSH virs 70.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
+| 1 ★ | **HALL virs 69.5** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -82,22 +82,22 @@ Robots: **UNC -19.5**, kopā 158.5 · bukmeikeri: UNC -19.5, kopā 158.5
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| UNT@APP | **APP uzvar & zem 132.5** | 20/100 | 4.72 | 5.07 | ⏳ gaida |
-| UTM@SIU | **UTM uzvar & virs 148.5** | 20/100 | 4.55 | 4.89 | ⏳ gaida |
+| UNT@APP | **APP uzvar & zem 131.5** | 21/100 | 4.38 | 4.71 | ⏳ gaida |
+| UTM@SIU | **UTM uzvar & virs 149.5** | 19/100 | 4.88 | 5.25 | ⏳ gaida |
 | DAY@UTAH | **DAY uzvar & virs 138.5** | 21/100 | 4.54 | 4.88 | ⏳ gaida |
 | RICH@WKU | **WKU uzvar & zem 149.5** | 23/100 | 4.05 | 4.36 | ⏳ gaida |
 | BELL@EKU | **EKU 21+** | 18/100 | 5.16 | 5.54 | ⏳ gaida |
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 5/10, vienības +0.52
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 5/10, vienības +0.52
 
-Visas likmes kopā: izgāja 5/10 (50%), robots gaidīja ~4.4, vienības +0.52
+2.1+ kopā: izgāja 5/10 (50%), robots gaidīja ~4.4, vienības +0.52
 Crazy Dazy kopā: izgāja 0/5 (0%), robots gaidīja ~1.0, vienības -5.00
 
 ### Mēneša statistika
 
-| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
+| Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
 | Novembris 2026 (19.–30.11.) | 5/10 | +0.52 | 5/10 | +0.52 | – | – | 0/5 | -5.00 |
 

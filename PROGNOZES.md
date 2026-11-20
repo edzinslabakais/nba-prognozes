@@ -1,19 +1,19 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 20.11.2026 19:49 (Rīgas laiks)_
+_Atjaunināts 20.11.2026 22:08 (Rīgas laiks)_
 
 ## Nakts uz 21.11. — 9 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### CHA @ ATL · 02:00
-Robots: **ATL -7.5**, kopā 218.5 · bukmeikeri: ATL -7.5, kopā 218.5
+Robots: **ATL -7.5**, kopā 219.5 · bukmeikeri: ATL -7.5, kopā 219.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 214.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **ATL -9.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **ATL zem 110.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **CHA virs 107.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: ATL: CJ McCollum (Out) -1.1; ATL: Jalen Johnson (spēlēja 7/10 pēdējās) +0.6; CHA: Grayson Allen (Out) -1.1
 
@@ -27,13 +27,13 @@ Robots: **ORL -6.5**, kopā 224.5 · bukmeikeri: ORL -6.5, kopā 224.5
 | 3 | **BKN virs 110.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 ### IND @ CLE · 02:30
-Robots: **CLE -5.5**, kopā 233.5 · bukmeikeri: CLE -5.5, kopā 233.5
+Robots: **CLE -5.5**, kopā 234.5 · bukmeikeri: CLE -5.5, kopā 234.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 235.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **zem 230.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **CLE -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **IND virs 115.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **CLE zem 117.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: CLE: Evan Mobley (Out) -1.2; CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5
 
@@ -49,13 +49,13 @@ Robots: **DET -6.5**, kopā 216.5 · bukmeikeri: DET -6.5, kopā 216.5
 Savainojumi/sastāvs: DET: Duncan Robinson (Out) -1.2; DET: Cade Cunningham (Day-To-Day) -0.9; DET: Isaiah Joe (spēlēja 1/10 pēdējās) +0.4; TOR: RJ Barrett (Out) -1.6; TOR: Collin Murray-Boyles (Out) -0.6; TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.1
 
 ### NO @ OKC · 03:00
-Robots: **OKC -11.5**, kopā 228.5 · bukmeikeri: OKC -11.5, kopā 228.5
+Robots: **OKC -11.5**, kopā 227.5 · bukmeikeri: OKC -11.5, kopā 227.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | 1 ★ | **OKC -13.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **zem 224.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **OKC zem 117.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 2 | **virs 229.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **NO virs 109.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: NO: Dejounte Murray (Out) -0.5; NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4; NO: Yves Missi (spēlēja 3/10 pēdējās) +0.6
 
@@ -68,7 +68,7 @@ Robots: **CHI -2.5**, kopā 237.5 · bukmeikeri: CHI -2.5, kopā 237.5
 | 2 | **CHI -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 | 3 | **CHI zem 117.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
-Savainojumi/sastāvs: CHI: Caleb Wilson (Out) -0.8; CHI: Nic Claxton (spēlēja 5/10 pēdējās) +0.5; WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6
+Savainojumi/sastāvs: CHI: Caleb Wilson (Out) -0.8; CHI: Jalen Smith (Day-To-Day) -0.5; CHI: Nic Claxton (spēlēja 5/10 pēdējās) +0.5; WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6
 
 ### PHX @ UTAH · 04:30
 Robots: **PHX -4.5**, kopā 225.5 · bukmeikeri: PHX -4.5, kopā 225.5
@@ -103,7 +103,7 @@ Robots: **LAL -14.5**, kopā 229.5 · bukmeikeri: LAL -14.5, kopā 229.5
 
 Savainojumi/sastāvs: LAL: Austin Reaves (Out) -1.4; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4
 
-## 🛡 Drošās likmes — koef. ≥ 1.7
+## 🛡 1.7+ — koef. ≥ 1.7
 
 Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem; no gandrīz vienlīdz drošām līnijām ņemta ar augstāko koeficientu.
 
@@ -125,15 +125,15 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Visticamākās (1 katrā spēlē): uzvarēts 8/16, vienības +1.12
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 8/16, vienības +1.12
 
-Visas likmes kopā: izgāja 17/48 (35%), robots gaidīja ~20.8, vienības -11.61
-Drošās likmes kopā: izgāja 5/8 (62%), robots gaidīja ~4.2, vienības +0.74
+2.1+ kopā: izgāja 17/48 (35%), robots gaidīja ~20.8, vienības -11.61
+1.7+ kopā: izgāja 5/8 (62%), robots gaidīja ~4.2, vienības +0.74
 Crazy Dazy kopā: izgāja 1/6 (17%), robots gaidīja ~1.4, vienības -1.95
 
 ### Mēneša statistika
 
-| Mēnesis | Visas: uzvarēts | Vien. | ★ Visticamākās | Vien. | Drošās | Vien. | Crazy Dazy | Vien. |
+| Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
 | Novembris 2026 (18.–30.11.) | 17/48 | -11.61 | 8/16 | +1.12 | 5/8 | +0.74 | 1/6 | -1.95 |
 

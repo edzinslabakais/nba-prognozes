@@ -24,7 +24,7 @@
   "profit_units": 0.52
  },
  "safe_all_overall": {
-  "picks": 54,
+  "picks": 50,
   "settled": 0,
   "hits": 0,
   "pushes": 0,
@@ -114,7 +114,7 @@
     "profit_units": 0
    },
    "safe_all": {
-    "picks": 54,
+    "picks": 50,
     "settled": 0,
     "hits": 0,
     "pushes": 0,
@@ -170,5 +170,5 @@
    }
   }
  ],
- "updated_at": "2026-11-20T17:49+00:00"
+ "updated_at": "2026-11-20T20:08+00:00"
 }
