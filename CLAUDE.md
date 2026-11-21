@@ -57,6 +57,9 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
   `SIMPLE` lapa (bez ★/1.7+) un netiek ieskaitīta kopējā statistikā (`site.py` `SIMPLE`). NCAA izņemts 21.11.2026 (nestabils).
 - Drošās likmes lapa `site/drosas/`: katrs robots saglabā `safe_all` (katrā spēlē drošākā likme ar koef. ≥ 1.7,
   `bot.safe_all` / `choose_safe(all_games=True)`), `site.py` `safe_page_data()` savāc visas līgas; sava statistika.
+- Robota lapa `site/robots/`: `robot` saraksts katrā naktī — likme izvēlēta TIKAI pēc robota modeļa (`bot.choose_robot`,
+  `robot_candidates_nba`, `nhl_bot.pick_robot`, `cl_bot.pick_robot` ar `fit_football` Puasona modeli), bukmeikeru līnija
+  tikai koeficientam (≥ 1.7, ≤ 6.0); `site.py` `safe_page_data(field="robot")`; sava statistika pa līgām.
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
   Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|ch`.
 - Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas

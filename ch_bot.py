@@ -68,7 +68,7 @@ def cmd_likmes(args) -> None:
     games_info = {k: v for k, v in games_info.items() if k in used}
     print("CRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
     f = core.save_night(day, best, games_info, crazy, args.min_odds, now, safe=[],
-                        safe_all=F.pick_safe(df, p, all_games=True))
+                        safe_all=F.pick_safe(df, p, all_games=True), robot=F.pick_robot(df, p))
     print(f"Saglabāts: {f.relative_to(core.ROOT)}")
 
 

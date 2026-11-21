@@ -93,6 +93,13 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
 likme ar koeficientu vismaz 1.7 (pēc bukmeikeru vērtējuma, kur tas pieejams). Lapai ir sava statistika (diena, nedēļa,
 mēnesis, kopā, ar sadalījumu pa līgām); tā netiek jaukta ar pārējo statistiku.
 
+### Robota likmes (atsevišķa lapa)
+
+…/nba-prognozes/robots/ — katrā spēlē (NBA, NHL, EuroLeague, Čempionu līga, Championship) likme, kurai robota PAŠA
+modelis dod vislielāko iespēju; bukmeikeru prognozes izvēlē neņem vērā, to līniju izmanto tikai koeficientam (vismaz 1.7).
+Futbolam robotam ir savs Puasona modelis (komandu uzbrukums/aizsardzība no 90 minūšu rezultātiem, šī + pagājušā sezona).
+Sava statistika pa līgām; netiek jaukta ar citām sadaļām.
+
 ### Kopējā statistika
 
 Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas

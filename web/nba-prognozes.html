@@ -421,6 +421,8 @@ const I18N = {
     safeSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · koeficients ≥ 1.7`,
     safePageIntro: "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA un NHL spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".",
     perLeague: "Statistika pa līgām",
+    robotSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · tikai robota modelis · koeficients ≥ 1.7`,
+    robotPageIntro: "Šīs likmes izvēlas tikai robota paša modelis: komandu reitingi no rezultātiem, mājas laukums, atpūta, savainojumi (NBA) un vārtsargi (NHL); futbolā komandu uzbrukuma un aizsardzības spēks no 90 minūšu rezultātiem. Bukmeikeru prognozes izvēlē netiek ņemtas vērā. Bukmeikeru līnija tiek izmantota tikai, lai atrastu tuvāko pieejamo likmi un tās koeficientu (vismaz 1.7). Katrā spēlē viena likme, kurai robots dod vislielāko iespēju. Pie likmes redzams robota un bukmeikeru vērtējums. EuroLeague bukmeikeru datu nav, tāpēc tur koeficients ir aptuvens.",
     perLeagueIntro: "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai.",
   },
   en: {
@@ -575,6 +577,7 @@ function leagueName(x) { return EN() ? (LEAGUE_EN[x] || x) : x; }
 function pageTitle() {
   if (LEAGUE_KEY === "stats") return EN() ? "Overall statistics" : "Kopējā statistika";
   if (LEAGUE_KEY === "drosas") return EN() ? "1.7+ bets" : "1.7+ likmes";
+  if (LEAGUE_KEY === "robots") return EN() ? "Robot bets" : "Robota likmes";
   return `${leagueName(LEAGUE_TITLE)} ${t("title")}`;
 }
 function catName(c) {
@@ -613,7 +616,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  const rows = LEAGUE_KEY === "drosas" ? [[t("rowSafe"), m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+  const rows = LEAGUE_KEY === "drosas" ? [[t("rowSafe"), m.all]] : LEAGUE_KEY === "robots" ? [["Robots", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
     : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
   for (const [label, s] of rows) {
     const tr = el("tr");
@@ -950,6 +953,7 @@ function sumOf(bets) {
   const profit = hits.reduce((a, b) => a + Number(b.est_odds), 0) + pushes - settled.length;
   return { picks: bets.length, settled: settled.length, hits: hits.length, pushes, profit_units: Math.round(profit * 100) / 100 };
 }
+const ROBOT_PAGE = LEAGUE_KEY === "robots";
 function renderSafePage() {
   for (const id of ["topbox", "month", "archive", "calib", "safe", "crazy", "statsPage"]) {
     const e = document.getElementById(id); if (e) e.hidden = true;
@@ -972,10 +976,10 @@ function renderSafePage() {
   $("s3").textContent = s && s.settled ? signed(s.profit_units) : "–";
   $("s3").className = s && s.profit_units > 0 ? "pos" : s && s.profit_units < 0 ? "neg" : "";
   $("s3l").textContent = t("dayUnits");
-  $("sub").textContent = night ? t("safeSub", nightLabel(night.date), night.bets.length) : t("noDays");
+  $("sub").textContent = night ? t(ROBOT_PAGE ? "robotSub" : "safeSub", nightLabel(night.date), night.bets.length) : t("noDays");
   const box = $("games");
-  box.classList.add("safe-cards");
-  const nodes = [el("p", "intro", t("safePageIntro"))];
+  if (!ROBOT_PAGE) box.classList.add("safe-cards");
+  const nodes = [el("p", "intro", t(ROBOT_PAGE ? "robotPageIntro" : "safePageIntro"))];
   if (night) {
     const byLeague = new Map();
     for (const b of night.bets) {
@@ -1040,7 +1044,7 @@ function renderSafePage() {
 
 function render() {
   if (LEAGUE_KEY === "stats") { renderStatsPage(); return; }
-  if (LEAGUE_KEY === "drosas") { renderSafePage(); return; }
+  if (LEAGUE_KEY === "drosas" || LEAGUE_KEY === "robots") { renderSafePage(); return; }
   if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
     state.selected = state.nights[0]?.date ?? null;
   }
@@ -1118,7 +1122,7 @@ applyStatic();
 // ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
 const SLOTS = [{ h: 7, m: 0, name: "slotResults" }, { h: 8, m: 30, name: "slotLate" },
   { h: 21, m: 30, name: "slotPicks" }];
-if (LEAGUE_KEY === "drosas") SLOTS.push({ h: 21, m: 30, name: "slotPicks" });  // 12:30 Europe + 21:30 America
+if (LEAGUE_KEY === "drosas" || LEAGUE_KEY === "robots") SLOTS.push({ h: 21, m: 30, name: "slotPicks" });  // 12:30 Europe + 21:30 America
 const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
   day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
 

@@ -1,6 +1,6 @@
 {
  "overall": {
-  "picks": 0,
+  "picks": 10,
   "settled": 0,
   "hits": 0,
   "pushes": 0,
@@ -8,7 +8,7 @@
   "profit_units": 0
  },
  "crazy_overall": {
-  "picks": 0,
+  "picks": 3,
   "settled": 0,
   "hits": 0,
   "pushes": 0,
@@ -16,7 +16,7 @@
   "profit_units": 0
  },
  "top_overall": {
-  "picks": 0,
+  "picks": 10,
   "settled": 0,
   "hits": 0,
   "pushes": 0,
@@ -24,7 +24,7 @@
   "profit_units": 0
  },
  "safe_all_overall": {
-  "picks": 0,
+  "picks": 11,
   "settled": 0,
   "hits": 0,
   "pushes": 0,
@@ -39,8 +39,88 @@
   "expected_hits": 0,
   "profit_units": 0
  },
- "nights": [],
+ "nights": [
+  {
+   "date": "2026-11-21",
+   "picks": 10,
+   "settled": 0,
+   "hits": 0,
+   "pushes": 0,
+   "expected_hits": 0,
+   "profit_units": 0,
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "top": {
+    "picks": 10,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe": {
+    "picks": 0,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe_all": {
+    "picks": 11,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
+  }
+ ],
  "calibration": [],
- "months": [],
- "updated_at": "2026-11-20T17:49+00:00"
+ "months": [
+  {
+   "month": "2026-11",
+   "label": "Novembris 2026",
+   "days": "21.–30.11.",
+   "all": {
+    "picks": 10,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "top": {
+    "picks": 10,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe": {
+    "picks": 0,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
+  }
+ ],
+ "updated_at": "2026-11-21T08:02+00:00"
 }
