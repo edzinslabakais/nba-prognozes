@@ -243,6 +243,11 @@ details ul { margin: 0; padding: 0 14px 12px 30px; font-size: 13px; }
 .games > .intro { font-size: 13px; color: var(--muted); margin: 0; max-width: 65ch; }
 .games > h2 { margin: 0; }
 .games > .league-h { font: 700 18px var(--font-display); letter-spacing: 0.03em; text-transform: uppercase; margin: 8px 0 0; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.odds-in { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); padding: 8px 12px 12px; }
+.odds-in input { width: 84px; font: 600 15px var(--font-body); padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+.games > details.rules { font-size: 13px; color: var(--muted); }
+.games > details.rules summary { cursor: pointer; font-weight: 600; color: var(--ink); padding: 4px 0; }
+.games > details.rules p { margin: 6px 0; }
 .games > .league-h small { font: 600 13px var(--font-body); color: var(--muted); letter-spacing: 0; text-transform: none; }
 .safe-cards > .games .game { border-color: var(--line); }
 .safe-cards .game { border-color: var(--good); }
@@ -421,6 +426,8 @@ const I18N = {
     safeSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · koeficients ≥ 1.7`,
     safePageIntro: "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA un NHL spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".",
     perLeague: "Statistika pa līgām",
+    p15Sub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · koeficients ≥ 1.5`,
+    p15PageIntro: "Likmes ar koeficientu vismaz 1.5. Katrai līgai noteikumi (kuri likmju veidi, vai robota modelim jāpiekrīt bukmeikeriem, cik likmju dienā) izvēlēti, pārbaudot visu pagājušo sezonu, un tad pārbaudīti uz šo sezonu, ko izvēle nebija redzējusi. Katrā spēlē ne vairāk kā viena likme; dienās, kad neviena likme neatbilst noteikumiem, likmju nav. Drošība ir bukmeikeru vērtējums, robota vērtējums redzams blakus. Ja ieraksti īsto Optibet koeficientu, statistika šajā ierīcē rēķinās ar to.",
     robotSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · tikai robota modelis · koeficients ≥ 1.7`,
     robotPageIntro: "Šīs likmes izvēlas tikai robota paša modelis: komandu reitingi no rezultātiem, mājas laukums, atpūta, savainojumi (NBA) un vārtsargi (NHL); futbolā komandu uzbrukuma un aizsardzības spēks no 90 minūšu rezultātiem. Bukmeikeru prognozes izvēlē netiek ņemtas vērā. Bukmeikeru līnija tiek izmantota tikai, lai atrastu tuvāko pieejamo likmi un tās koeficientu (vismaz 1.7). Katrā spēlē viena likme, kurai robots dod vislielāko iespēju. Pie likmes redzams robota un bukmeikeru vērtējums. EuroLeague bukmeikeru datu nav, tāpēc tur koeficients ir aptuvens.",
     perLeagueIntro: "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai.",
@@ -578,6 +585,7 @@ function pageTitle() {
   if (LEAGUE_KEY === "stats") return EN() ? "Overall statistics" : "Kopējā statistika";
   if (LEAGUE_KEY === "drosas") return EN() ? "1.7+ bets" : "1.7+ likmes";
   if (LEAGUE_KEY === "robots") return EN() ? "Robot bets" : "Robota likmes";
+  if (LEAGUE_KEY === "p15") return EN() ? "1.5+ bets" : "1.5+ likmes";
   return `${leagueName(LEAGUE_TITLE)} ${t("title")}`;
 }
 function catName(c) {
@@ -616,7 +624,7 @@ function monthTable(m) {
   head.append(el("th", null, ""), el("th", null, t("colWonPlayed")), el("th", null, t("colUnits")));
   const thead = el("thead"); thead.append(head);
   const body = el("tbody");
-  const rows = LEAGUE_KEY === "drosas" ? [[t("rowSafe"), m.all]] : LEAGUE_KEY === "robots" ? [["Robots", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
+  const rows = LEAGUE_KEY === "drosas" ? [[t("rowSafe"), m.all]] : LEAGUE_KEY === "robots" ? [["Robots", m.all]] : LEAGUE_KEY === "p15" ? [["1.5+", m.all]] : SIMPLE ? [[t("rowAll"), m.all], [t("rowCrazy"), m.crazy]]
     : [[t("rowAll"), m.all], [t("rowTop"), m.top], [t("rowSafe"), m.safe], [t("rowCrazy"), m.crazy]];
   for (const [label, s] of rows) {
     const tr = el("tr");
@@ -954,12 +962,41 @@ function sumOf(bets) {
   return { picks: bets.length, settled: settled.length, hits: hits.length, pushes, profit_units: Math.round(profit * 100) / 100 };
 }
 const ROBOT_PAGE = LEAGUE_KEY === "robots";
+const P15_PAGE = LEAGUE_KEY === "p15";
+// 1.5+ page: the real Optibet odds the viewer typed in (kept on this device) replace the estimate
+function oddsKey(date, b) { return `p15odds:${date}:${b.game_id}:${b.bet}`; }
+function realOdds(date, b) {
+  try { const v = parseFloat(localStorage.getItem(oddsKey(date, b))); return v > 1 ? v : null; } catch (e) { return null; }
+}
+function withRealOdds(date, b) {
+  if (!P15_PAGE) return b;
+  const base = b.est_base ?? b.est_odds, o = realOdds(date, b);
+  return { ...b, est_base: base, est_odds: o || base, real: !!o };
+}
+function oddsInput(date, b) {
+  const row = el("label", "odds-in");
+  row.append(document.createTextNode("Optibet koeficients: "));
+  const inp = el("input");
+  inp.type = "number"; inp.step = "0.01"; inp.min = "1.01"; inp.inputMode = "decimal";
+  inp.placeholder = Number(b.est_base ?? b.est_odds).toFixed(2);
+  const v = realOdds(date, b);
+  if (v) inp.value = v.toFixed(2);
+  inp.addEventListener("change", () => {
+    try {
+      const x = parseFloat(inp.value);
+      if (x > 1) localStorage.setItem(oddsKey(date, b), String(x)); else localStorage.removeItem(oddsKey(date, b));
+    } catch (e) { /* storage blocked: nothing to remember */ }
+    renderSafePage();
+  });
+  row.append(inp);
+  return row;
+}
 function renderSafePage() {
   for (const id of ["topbox", "month", "archive", "calib", "safe", "crazy", "statsPage"]) {
     const e = document.getElementById(id); if (e) e.hidden = true;
   }
   for (const c of $("notes").children) c.hidden = c.id !== "updated";
-  for (const n of state.nights) { n.summary = sumOf(n.bets || []); n.games = n.bets || []; }
+  for (const n of state.nights) { n.bets = (n.bets || []).map((b) => withRealOdds(n.date, b)); n.summary = sumOf(n.bets); n.games = n.bets; }
   if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
     // today's evening by default (tomorrow's bets are already there when a league has no games tonight)
     const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
@@ -976,10 +1013,24 @@ function renderSafePage() {
   $("s3").textContent = s && s.settled ? signed(s.profit_units) : "–";
   $("s3").className = s && s.profit_units > 0 ? "pos" : s && s.profit_units < 0 ? "neg" : "";
   $("s3l").textContent = t("dayUnits");
-  $("sub").textContent = night ? t(ROBOT_PAGE ? "robotSub" : "safeSub", nightLabel(night.date), night.bets.length) : t("noDays");
+  $("sub").textContent = night ? t(P15_PAGE ? "p15Sub" : ROBOT_PAGE ? "robotSub" : "safeSub", nightLabel(night.date), night.bets.length) : t("noDays");
   const box = $("games");
-  if (!ROBOT_PAGE) box.classList.add("safe-cards");
-  const nodes = [el("p", "intro", t(ROBOT_PAGE ? "robotPageIntro" : "safePageIntro"))];
+  if (!ROBOT_PAGE && !P15_PAGE) box.classList.add("safe-cards");
+  const nodes = [el("p", "intro", t(P15_PAGE ? "p15PageIntro" : ROBOT_PAGE ? "robotPageIntro" : "safePageIntro"))];
+  if (P15_PAGE && state.rules && Object.keys(state.rules).length) {
+    const d = el("details", "rules");
+    d.append(el("summary", null, "Noteikumi katrai līgai un vēstures pārbaude"));
+    const NAMES = { nba: "NBA", nhl: "NHL", cl: "Čempionu līga", ch: "Championship" };
+    for (const [lg, r] of Object.entries(state.rules)) {
+      const p = el("p");
+      p.append(el("b", null, NAMES[lg] || lg), document.createTextNode(
+        `: likmju veidi — ${r.cats.join(", ")}; ${r.gap == null ? "robota piekrišana nav vajadzīga" : `robota modelim jāvērtē likme vismaz par ${Math.round(r.gap * 100)} punktiem augstāk nekā bukmeikeriem`}; ` +
+        `bukmeikeru varbūtība ≥ ${Math.round(r.p_min * 100)} %; ${r.per_day ? `ne vairāk kā ${r.per_day} likmes dienā` : "bez dienas ierobežojuma"}. ` +
+        `Pagājušajā sezonā: ${r.train}. Šajā sezonā (pārbaude uz neredzētiem datiem): ${r.test}; bez filtriem būtu ${r.baseline_test}.`));
+      d.append(p);
+    }
+    nodes.push(d);
+  }
   if (night) {
     const byLeague = new Map();
     for (const b of night.bets) {
@@ -991,7 +1042,11 @@ function renderSafePage() {
       const ss = sumOf(L.bets);
       const h = el("h3", "league-h", leagueName(L.title));
       h.append(el("small", null, ss.settled ? `${ss.hits}/${ss.settled} · ${signed(ss.profit_units)}` : t("bets", L.bets.length)));
-      nodes.push(h, ...L.bets.map((b) => betCard(b, `sa:${key}`, night.date, { ...b, mk_conf: b.confidence })));
+      nodes.push(h, ...L.bets.map((b) => {
+        const card = betCard(b, `sa:${key}`, night.date, { ...b, mk_conf: b.confidence });
+        if (P15_PAGE) card.querySelector(".game-inner").append(oddsInput(night.date, b));
+        return card;
+      }));
     }
   }
   // statistics for every league on its own (no totals across leagues)
@@ -1044,7 +1099,7 @@ function renderSafePage() {
 
 function render() {
   if (LEAGUE_KEY === "stats") { renderStatsPage(); return; }
-  if (LEAGUE_KEY === "drosas" || LEAGUE_KEY === "robots") { renderSafePage(); return; }
+  if (["drosas", "robots", "p15"].includes(LEAGUE_KEY)) { renderSafePage(); return; }
   if (!state.chosenByUser || !state.nights.some((n) => n.date === state.selected)) {
     state.selected = state.nights[0]?.date ?? null;
   }
@@ -1122,7 +1177,7 @@ applyStatic();
 // ---- countdown to the next automatic update (21:30 picks, 07:00 + 08:30 results, Riga time)
 const SLOTS = [{ h: 7, m: 0, name: "slotResults" }, { h: 8, m: 30, name: "slotLate" },
   { h: 21, m: 30, name: "slotPicks" }];
-if (LEAGUE_KEY === "drosas" || LEAGUE_KEY === "robots") SLOTS.push({ h: 21, m: 30, name: "slotPicks" });  // 12:30 Europe + 21:30 America
+if (["drosas", "robots", "p15"].includes(LEAGUE_KEY)) SLOTS.push({ h: 21, m: 30, name: "slotPicks" });  // 12:30 Europe + 21:30 America
 const RIGA_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Riga", year: "numeric", month: "2-digit",
   day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" });
 

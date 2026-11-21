@@ -1,0 +1,64 @@
+{
+  "nba": {
+    "cats": [
+      "handikaps",
+      "komandas punkti",
+      "kopā",
+      "uzvarētājs"
+    ],
+    "gap": null,
+    "p_min": 0.42272727272727273,
+    "per_day": 0,
+    "train": "669/1065 (63%, gaidīts 62%), vienības -57.9 (-5.4%)",
+    "test": "150/235 (64%, gaidīts 62%), vienības -9.0 (-3.8%)",
+    "baseline_test": "150/235 (64%, gaidīts 62%), vienības -9.0 (-3.8%)",
+    "enabled": true,
+    "filters_help": false
+  },
+  "nhl": {
+    "cats": [
+      "handikaps",
+      "komandas vārti",
+      "kopā",
+      "uzvarētājs"
+    ],
+    "gap": null,
+    "p_min": 0.42272727272727273,
+    "per_day": 0,
+    "train": "592/1015 (58%, gaidīts 60%), vienības -95.0 (-9.4%)",
+    "test": "208/349 (60%, gaidīts 60%), vienības -26.4 (-7.6%)",
+    "baseline_test": "208/349 (60%, gaidīts 60%), vienības -26.4 (-7.6%)",
+    "enabled": true,
+    "filters_help": false
+  },
+  "cl": {
+    "cats": [
+      "komandas vārti",
+      "kopā",
+      "uzvarētājs / handikaps"
+    ],
+    "gap": null,
+    "p_min": 0.42272727272727273,
+    "per_day": 0,
+    "train": "66/99 (67%, gaidīts 59%), vienības +4.0 (+4.0%)",
+    "test": "52/72 (72%, gaidīts 60%), vienības +9.0 (+12.5%)",
+    "baseline_test": "52/72 (72%, gaidīts 60%), vienības +9.0 (+12.5%)",
+    "enabled": true,
+    "filters_help": false
+  },
+  "ch": {
+    "cats": [
+      "komandas vārti",
+      "kopā",
+      "uzvarētājs / handikaps"
+    ],
+    "gap": null,
+    "p_min": 0.42272727272727273,
+    "per_day": 0,
+    "train": "195/316 (62%, gaidīts 59%), vienības -7.0 (-2.2%)",
+    "test": "127/191 (66%, gaidīts 59%), vienības +10.6 (+5.6%)",
+    "baseline_test": "127/191 (66%, gaidīts 59%), vienības +10.6 (+5.6%)",
+    "enabled": true,
+    "filters_help": false
+  }
+}

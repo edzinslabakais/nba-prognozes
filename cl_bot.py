@@ -411,6 +411,10 @@ def robot_lambdas(day: date, todo: pd.DataFrame) -> dict:
 
 def pick_robot(df: pd.DataFrame, p) -> list[dict]:
     """Robota lapa: chosen only by the robot's own goal model; the bookmakers' prices only give the odds."""
+    return core.choose_robot(robot_per_game(df, p), df)
+
+
+def robot_per_game(df: pd.DataFrame, p) -> list:
     if df.empty or "olh" not in df:
         return []
     per_game = []
@@ -421,7 +425,7 @@ def pick_robot(df: pd.DataFrame, p) -> list[dict]:
         mkt = N.HockeyGrid(r.lh, r.la, p["tie_infl"], 0.0)
         cands = candidates(r, own, 0.0, 1.0, crazy=False)
         per_game.append((r, [(b, pw, HB.prob(mkt, b)[0], cat) for b, pw, cat in cands]))
-    return core.choose_robot(per_game, df)
+    return per_game
 
 
 # --------------------------------------------------------------------------- commands
@@ -462,7 +466,8 @@ def cmd_likmes(args) -> None:
     core.print_safe(safe, 34)
     print("\nCRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
     f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
-                        safe_all=pick_safe(df, p, all_games=True), robot=pick_robot(df, p))
+                        safe_all=pick_safe(df, p, all_games=True), robot=pick_robot(df, p),
+                        p15=core.choose_15(robot_per_game(df, p), df, CL.key))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}")
 
 

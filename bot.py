@@ -378,6 +378,42 @@ def robot_all(df: pd.DataFrame) -> list[dict]:
     return choose_robot([(r, robot_candidates_nba(r)) for r in df.itertuples()], df)
 
 
+# --------------------------------------------------------------------------- 1.5+ (noteikumi no sim15.py pārbaudes)
+
+P15_RULES = ROOT / "p15_rules.json"
+
+
+def choose_15(per_game: list, df: pd.DataFrame, league: str) -> list[dict]:
+    """1.5+ page: per_game as for choose_robot. The rule for each league (bet types, does the robot's own model
+    have to agree with the bookmakers, minimum bookmaker probability, bets per day) was chosen on last season
+    and checked on this season by sim15.py. The bookmakers' probability sets the price and the safety."""
+    rules = json.loads(P15_RULES.read_text()) if P15_RULES.exists() else {}
+    rule = rules.get(league)
+    if not rule or not rule.get("enabled", True):
+        return []
+    lo, hi = max(rule["p_min"], PAYOUT_SAFE / 2.2), PAYOUT_SAFE / 1.5
+    best = []
+    for r, cands in per_game:
+        ok = [(b, pr, pk, cat) for b, pr, pk, cat in cands
+              if pk is not None and lo <= pk <= hi and cat in rule["cats"]
+              and (rule["gap"] is None or pr - pk >= rule["gap"])]
+        if not ok:
+            continue
+        b, pr, pk, cat = max(ok, key=lambda c: c[2])
+        best.append({"game_id": r.game_id, "game": f"{r.away}@{r.home}", "start_utc": str(r.start_utc),
+                     "riga_time": r.riga_time, "category": cat, "bet": b.label, "p": pk,
+                     "p_model": round(pr, 4), "p_market": round(pk, 4), "fair_odds": round(1 / pk, 2),
+                     "est_odds": round(PAYOUT_SAFE / pk, 2), "confidence": int(round(100 * pk)),
+                     "data_conf": int(round(100 * pk)), "result": None, "_e": pr - pk})
+    best.sort(key=lambda x: -x["_e"])
+    if rule.get("per_day"):
+        best = best[: rule["per_day"]]
+    for x in best:
+        x.pop("_e")
+    best.sort(key=lambda x: x["start_utc"])
+    return with_names(best, df)
+
+
 def print_safe(safe: list[dict], width: int = 26) -> None:
     print(f"\n1.7+ LIKMES — koeficients >= {SAFE_MIN_ODDS:g}:")
     for i, x in enumerate(safe, 1):
@@ -453,17 +489,20 @@ def cmd_likmes(args) -> None:
     safe = pick_safe(df)
     print_safe(safe)
     sa = safe_all(df)
-    rb = robot_all(df)
+    per_game_rb = [(r, robot_candidates_nba(r)) for r in df.itertuples()]
+    rb = choose_robot(per_game_rb, df)
+    p15 = choose_15(per_game_rb, df, "nba")
+    print(f"1.5+ lapai: {len(p15)} likmes")
     print(f"Robota lapai: {len(rb)} likmes (tikai robota modelis, bukmeikeru koef. >= {ROBOT_MIN_ODDS:g})")
     print(f"Drošās likmes lapai: {len(sa)} likmes (katrā spēlē drošākā ar koef. >= {SAFE_MIN_ODDS:g})")
-    f = save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe, safe_all=sa, robot=rb)
+    f = save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe, safe_all=sa, robot=rb, p15=p15)
     print(f"\nSaglabāts: {f.relative_to(ROOT)}  — rīt palaid: python bot.py rezultati")
     print("Ja Optibet līnija nedaudz atšķiras (piem. -7.5 vietā -8.5), ņem tuvāko ar koef. >= "
           f"{args.min_odds:g}; godīgais koef. parāda, cik likme ir vērta.")
 
 
 def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float, now, safe=None,
-               safe_all=None, robot=None) -> Path:
+               safe_all=None, robot=None, p15=None) -> Path:
     """Write the night's picks to history (games that already started keep their old picks)."""
     L.hist.mkdir(parents=True, exist_ok=True)
     f = L.hist / f"{day:%Y-%m-%d}.json"
@@ -492,10 +531,13 @@ def save_night(day, record: list, games_info: dict, crazy: list, min_odds: float
         robot = old_robot
     else:
         robot = [x for x in old_robot if x["game_id"] in started] + [x for x in robot if x["game_id"] not in started]
+    old_15 = old.get("p15", [])
+    if p15 is None or any(c["game_id"] in started for c in old_15):
+        p15 = old_15  # the day's rule picks are frozen once one of their games has started
     f.write_text(json.dumps({"date": str(day), "min_odds": min_odds,
                              "generated_at": now.isoformat(timespec="minutes"),
                              "games": games_all, "picks": record, "crazy": crazy, "safe": safe,
-                             "safe_all": safe_all, "robot": robot},
+                             "safe_all": safe_all, "robot": robot, "p15": p15},
                             indent=1, ensure_ascii=False))
     export_all()
     write_message(day.isoformat(), "likmes")
@@ -569,7 +611,7 @@ def settle(path: Path) -> tuple[dict, int]:
         return rec, 0
     by_id = {g.game_id: g for g in games.itertuples()}
     n_new = 0
-    for p in rec["picks"] + rec.get("crazy", []) + rec.get("safe", []) + rec.get("safe_all", []) + rec.get("robot", []):
+    for p in rec["picks"] + rec.get("crazy", []) + rec.get("safe", []) + rec.get("safe_all", []) + rec.get("robot", []) + rec.get("p15", []):
         if p.get("result"):
             continue
         g = by_id.get(p["game_id"])
@@ -751,6 +793,10 @@ def export_all() -> None:
                                                 "confidence", "data_conf", "p_model", "p_market", "fair_odds",
                                                 "est_odds", "result", "away_short", "home_short")},
                       "score": c.get("score") or scores.get(c["game_id"])} for c in rec.get("robot", [])]
+        p15_out = [{**{k: c.get(k) for k in ("game_id", "game", "start_utc", "riga_time", "category", "bet",
+                                              "confidence", "data_conf", "p_model", "p_market", "fair_odds",
+                                              "est_odds", "result", "away_short", "home_short")},
+                    "score": c.get("score") or scores.get(c["game_id"])} for c in rec.get("p15", [])]
         doc = {"date": rec["date"], "min_odds": rec.get("min_odds", 2.1),
                "generated_at": rec.get("generated_at"), "games": out_games,
                "summary": _summary(rec["picks"]),
@@ -758,7 +804,8 @@ def export_all() -> None:
                "top_summary": _summary(night_top),
                "safe_min_odds": SAFE_MIN_ODDS, "safe": safe_out, "safe_summary": _summary(safe),
                "safe_all": safe_all_out, "safe_all_summary": _summary(rec.get("safe_all", [])),
-               "robot": robot_out, "robot_summary": _summary(rec.get("robot", []))}
+               "robot": robot_out, "robot_summary": _summary(rec.get("robot", [])),
+               "p15": p15_out, "p15_summary": _summary(rec.get("p15", []))}
         (L.export / "nights" / f"{rec['date']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
         all_picks += rec["picks"]
         all_crazy += crazy

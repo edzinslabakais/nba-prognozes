@@ -867,5 +867,14 @@
   "pushes": 0,
   "expected_hits": 0,
   "profit_units": 0
+ },
+ "p15": [],
+ "p15_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
  }
 }

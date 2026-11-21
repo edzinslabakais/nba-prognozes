@@ -100,6 +100,14 @@ modelis dod vislielāko iespēju; bukmeikeru prognozes izvēlē neņem vērā, t
 Futbolam robotam ir savs Puasona modelis (komandu uzbrukums/aizsardzība no 90 minūšu rezultātiem, šī + pagājušā sezona).
 Sava statistika pa līgām; netiek jaukta ar citām sadaļām.
 
+### 1.5+ likmes (atsevišķa lapa)
+
+…/nba-prognozes/p15/ — viena likme katrā spēlē (NBA, NHL, Čempionu līga, Championship) ar koeficientu vismaz 1.5.
+Noteikumi katrai līgai izvēlēti ar `python sim15.py dati` + `python sim15.py analize`: visa pagājušā sezona un šī sezona
+ar bukmeikeru noslēguma līnijām (walk-forward, robots redz tikai iepriekšējās spēles). 21.11.2026 pārbaudē neviens filtrs
+(likmju veids, robota piekrišana, likmju skaits dienā) nestrādāja uz šīs sezonas datiem, tāpēc visām līgām ir
+vienkāršais noteikums. Lapā var ierakstīt īsto Optibet koeficientu; statistika tajā ierīcē rēķinās ar to.
+
 ### Kopējā statistika
 
 Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas

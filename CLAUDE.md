@@ -60,6 +60,9 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - Robota lapa `site/robots/`: `robot` saraksts katrā naktī — likme izvēlēta TIKAI pēc robota modeļa (`bot.choose_robot`,
   `robot_candidates_nba`, `nhl_bot.pick_robot`, `cl_bot.pick_robot` ar `fit_football` Puasona modeli), bukmeikeru līnija
   tikai koeficientam (≥ 1.7, ≤ 6.0); `site.py` `safe_page_data(field="robot")`; sava statistika pa līgām.
+- 1.5+ lapa `site/p15/`: `p15` saraksts (`bot.choose_15`), noteikumi `p15_rules.json` no `sim15.py` (`dati` → vēstures
+  likmes ar noslēguma līnijām `sim15/`, `analize` → noteikumi: izvēle uz pagājušo sezonu, pārbaude uz šo; ja filtrs
+  nepalīdz šajā sezonā, vienkāršais noteikums = drošākā likme katrā spēlē). Optibet koef. ievade lapā (localStorage).
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
   Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|ch`.
 - Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas

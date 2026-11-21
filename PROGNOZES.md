@@ -1,74 +1,74 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 21.11.2026 19:19 (Rīgas laiks)_
+_Atjaunināts 21.11.2026 19:28 (Rīgas laiks)_
 
 ## Nakts uz 22.11. — 6 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### MIL @ PHI · 20:00
-Robots: **PHI -11.5**, kopā 229.5 · bukmeikeri: PHI -11.5, kopā 229.5
+Robots: **PHI -10.5**, kopā 228.5 · bukmeikeri: PHI -10.5, kopā 228.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **PHI -13.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **virs 231.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **PHI -12.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **zem 224.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 3 | **MIL virs 110.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: PHI: Jaylen Brown (Out) -1.9; PHI: Tyrese Maxey (Day-To-Day) -0.9; PHI: LeBron James (spēlēja 7/10 pēdējās) +0.5
+Savainojumi/sastāvs: PHI: Jaylen Brown (Out) -1.9; PHI: LeBron James (spēlēja 7/10 pēdējās) +0.5
 
 ### POR @ NY · 02:30
-Robots: **NY -5.5**, kopā 217.5 · bukmeikeri: NY -5.5, kopā 217.5
+Robots: **NY -3.5**, kopā 215.5 · bukmeikeri: NY -3.5, kopā 215.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **NY -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **POR virs 107.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **virs 217.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **NY -5.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 3 | **POR virs 107.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
 
-Savainojumi/sastāvs: NY: OG Anunoby (Day-To-Day) -0.5; POR: Deni Avdija (Day-To-Day) -0.5
+Savainojumi/sastāvs: NY: Karl-Anthony Towns (Day-To-Day) -1.1; NY: OG Anunoby (Day-To-Day) -0.5; POR: Deni Avdija (Day-To-Day) -0.5
 
 ### MEM @ MIN · 03:00
-Robots: **MIN -5.5**, kopā 227.5 · bukmeikeri: MIN -5.5, kopā 227.5
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **virs 229.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MIN -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **MEM virs 112.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-
-Savainojumi/sastāvs: MEM: Cameron Boozer (Out) -1.8; MEM: Javon Small (Out) -0.7
-
-### NO @ SA · 03:00
-Robots: **SA -17.5**, kopā 227.5 · bukmeikeri: SA -17.5, kopā 227.5
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **SA -19.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **virs 229.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **NO virs 106.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
-
-Savainojumi/sastāvs: SA: Dylan Harper (Out) -1.8; NO: Dejounte Murray (Out) -0.5; NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4; NO: Yves Missi (spēlēja 4/10 pēdējās) +0.5
-
-### LAC @ DAL · 03:00
-Robots: **DAL -5.5**, kopā 228.5 · bukmeikeri: DAL -5.5, kopā 228.5
+Robots: **MIN -6.5**, kopā 228.5 · bukmeikeri: MIN -6.5, kopā 228.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | 1 ★ | **zem 224.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **MIN -8.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **MEM virs 112.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+
+Savainojumi/sastāvs: MEM: Cameron Boozer (Out) -1.8; MEM: Javon Small (Out) -0.7; MEM: Jerami Grant (Out) -0.7
+
+### NO @ SA · 03:00
+Robots: **SA -18.5**, kopā 229.5 · bukmeikeri: SA -18.5, kopā 229.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **SA -20.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
+| 2 | **virs 231.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **SA zem 121.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+
+Savainojumi/sastāvs: SA: Dylan Harper (Out) -1.8; NO: Dejounte Murray (Out) -0.5; NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4; NO: Yves Missi (spēlēja 4/10 pēdējās) +0.5
+
+### LAC @ DAL · 03:00
+Robots: **DAL -5.5**, kopā 230.5 · bukmeikeri: DAL -5.5, kopā 230.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **zem 226.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **DAL -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **DAL zem 114.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **DAL zem 115.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: DAL: P.J. Washington (Day-To-Day) -0.4; DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.5
 
 ### BOS @ SAC · 05:00
-Robots: **BOS -12.5**, kopā 217.5 · bukmeikeri: BOS -12.5, kopā 217.5
+Robots: **BOS -13.5**, kopā 217.5 · bukmeikeri: BOS -13.5, kopā 217.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **BOS -14.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 1 ★ | **BOS -15.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
 | 2 | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **BOS zem 112.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 3 | **SAC virs 103.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: BOS: Jayson Tatum (Day-To-Day) -0.8; BOS: Derrick White (Day-To-Day) -0.4
 
@@ -78,9 +78,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
+| POR@NY | **POR zem 106.5** | 53/100 | 1.74 | ⏳ gaida |
+| LAC@DAL | **DAL virs 116.5** | 53/100 | 1.75 | ⏳ gaida |
 | MEM@MIN | **MEM zem 111.5** | 53/100 | 1.75 | ⏳ gaida |
-| POR@NY | **POR zem 106.5** | 53/100 | 1.75 | ⏳ gaida |
-| LAC@DAL | **DAL virs 115.5** | 53/100 | 1.75 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -88,9 +88,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| NO@SA | **SA zem 113.5** | 23/100 | 4.02 | 4.32 | ⏳ gaida |
-| BOS@SAC | **SAC zem 93.5** | 23/100 | 4.02 | 4.32 | ⏳ gaida |
-| LAC@DAL | **DAL -15.5** | 23/100 | 4.03 | 4.34 | ⏳ gaida |
+| POR@NY | **NY zem 100.5** | 23/100 | 4.00 | 4.31 | ⏳ gaida |
+| MIL@PHI | **PHI zem 110.5** | 23/100 | 4.03 | 4.34 | ⏳ gaida |
+| LAC@DAL | **DAL -15.5** | 23/100 | 4.04 | 4.34 | ⏳ gaida |
 
 ## Statistika
 
