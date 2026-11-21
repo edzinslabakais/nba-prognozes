@@ -179,7 +179,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PNE 1 - 1 WHU"
   },
   {
    "game_id": "401880156",
@@ -229,7 +230,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880158",
@@ -245,7 +247,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "WXM 1 - 0 LCN"
   },
   {
    "game_id": "401880160",
@@ -261,7 +264,8 @@
    "fair_odds": 2.34,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880157",
@@ -277,7 +281,8 @@
    "fair_odds": 2.42,
    "est_odds": 2.25,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "BRC 0 - 2 MID"
   },
   {
    "game_id": "401880149",
@@ -293,7 +298,8 @@
    "fair_odds": 2.45,
    "est_odds": 2.28,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHA 1 - 2 WOL"
   },
   {
    "game_id": "401880155",
@@ -326,7 +332,8 @@
    "fair_odds": 2.61,
    "est_odds": 2.42,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "WBA 2 - 2 SWA"
   }
  ],
  "crazy": [
@@ -341,7 +348,8 @@
    "fair_odds": 4.32,
    "est_odds": 4.02,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880154",
@@ -354,7 +362,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880157",
@@ -367,7 +376,8 @@
    "fair_odds": 4.37,
    "est_odds": 4.06,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "BRC 0 - 2 MID"
   }
  ],
  "safe": [],
@@ -386,9 +396,10 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bristol City",
-   "home_short": "Boro"
+   "home_short": "Boro",
+   "score": "BRC 0 - 2 MID"
   },
   {
    "game_id": "401880149",
@@ -404,9 +415,10 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Charlton",
-   "home_short": "Wolves"
+   "home_short": "Wolves",
+   "score": "CHA 1 - 2 WOL"
   },
   {
    "game_id": "401880153",
@@ -441,9 +453,10 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Watford",
-   "home_short": "Sheffield Utd"
+   "home_short": "Sheffield Utd",
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880160",
@@ -459,9 +472,10 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Portsmouth",
-   "home_short": "Bolton"
+   "home_short": "Bolton",
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880150",
@@ -477,9 +491,10 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Preston",
-   "home_short": "West Ham"
+   "home_short": "West Ham",
+   "score": "PNE 1 - 1 WHU"
   },
   {
    "game_id": "401880155",
@@ -514,9 +529,10 @@
    "est_odds": 1.79,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
-   "home_short": "Swansea"
+   "home_short": "Swansea",
+   "score": "WBA 2 - 2 SWA"
   },
   {
    "game_id": "401880152",
@@ -532,9 +548,10 @@
    "est_odds": 1.81,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
-   "home_short": "Stoke"
+   "home_short": "Stoke",
+   "score": "BIR 0 - 1 STK"
   },
   {
    "game_id": "401880158",
@@ -550,9 +567,10 @@
    "est_odds": 1.87,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Wrexham",
-   "home_short": "Lincoln City"
+   "home_short": "Lincoln City",
+   "score": "WXM 1 - 0 LCN"
   },
   {
    "game_id": "401880156",
@@ -589,9 +607,10 @@
    "est_odds": 1.82,
    "confidence": 64,
    "data_conf": 51,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Charlton",
-   "home_short": "Wolves"
+   "home_short": "Wolves",
+   "score": "CHA 1 - 2 WOL"
   },
   {
    "game_id": "401880150",
@@ -607,9 +626,10 @@
    "est_odds": 1.81,
    "confidence": 64,
    "data_conf": 51,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Preston",
-   "home_short": "West Ham"
+   "home_short": "West Ham",
+   "score": "PNE 1 - 1 WHU"
   },
   {
    "game_id": "401880157",
@@ -625,9 +645,10 @@
    "est_odds": 1.73,
    "confidence": 61,
    "data_conf": 54,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bristol City",
-   "home_short": "Boro"
+   "home_short": "Boro",
+   "score": "BRC 0 - 2 MID"
   },
   {
    "game_id": "401880151",
@@ -643,9 +664,10 @@
    "est_odds": 1.79,
    "confidence": 60,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
-   "home_short": "Swansea"
+   "home_short": "Swansea",
+   "score": "WBA 2 - 2 SWA"
   },
   {
    "game_id": "401880155",
@@ -699,9 +721,10 @@
    "est_odds": 1.87,
    "confidence": 54,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Wrexham",
-   "home_short": "Lincoln City"
+   "home_short": "Lincoln City",
+   "score": "WXM 1 - 0 LCN"
   },
   {
    "game_id": "401880160",
@@ -717,9 +740,10 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Portsmouth",
-   "home_short": "Bolton"
+   "home_short": "Bolton",
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880154",
@@ -735,9 +759,10 @@
    "est_odds": 1.98,
    "confidence": 52,
    "data_conf": 47,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Watford",
-   "home_short": "Sheffield Utd"
+   "home_short": "Sheffield Utd",
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880152",
@@ -753,9 +778,10 @@
    "est_odds": 1.81,
    "confidence": 50,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
-   "home_short": "Stoke"
+   "home_short": "Stoke",
+   "score": "BIR 0 - 1 STK"
   },
   {
    "game_id": "401880156",

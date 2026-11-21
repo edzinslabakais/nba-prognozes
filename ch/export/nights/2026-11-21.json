@@ -111,7 +111,7 @@
    "market_line": "—",
    "market_total": "kopā 3.5",
    "injuries": [],
-   "score": null,
+   "score": "PNE 1 - 1 WHU",
    "picks": [
     {
      "category": "kopā",
@@ -121,8 +121,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "PNE 1 - 1 WHU",
      "top": true
     }
    ]
@@ -142,7 +142,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "WAT 0 - 4 SHU",
    "picks": [
     {
      "category": "komandas vārti",
@@ -152,8 +152,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "WAT 0 - 4 SHU",
      "top": true
     }
    ]
@@ -173,7 +173,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "WXM 1 - 0 LCN",
    "picks": [
     {
      "category": "kopā",
@@ -183,8 +183,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "WXM 1 - 0 LCN",
      "top": true
     }
    ]
@@ -204,7 +204,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "POR 1 - 1 BOL",
    "picks": [
     {
      "category": "kopā",
@@ -214,8 +214,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "POR 1 - 1 BOL",
      "top": true
     }
    ]
@@ -235,7 +235,7 @@
    "market_line": "—",
    "market_total": "kopā 3.5",
    "injuries": [],
-   "score": null,
+   "score": "BRC 0 - 2 MID",
    "picks": [
     {
      "category": "komandas vārti",
@@ -245,8 +245,8 @@
      "fair_odds": 2.42,
      "est_odds": 2.25,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "BRC 0 - 2 MID",
      "top": true
     }
    ]
@@ -266,7 +266,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "CHA 1 - 2 WOL",
    "picks": [
     {
      "category": "komandas vārti",
@@ -276,8 +276,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "CHA 1 - 2 WOL",
      "top": true
     }
    ]
@@ -297,7 +297,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "WBA 2 - 2 SWA",
    "picks": [
     {
      "category": "komandas vārti",
@@ -307,8 +307,8 @@
      "fair_odds": 2.61,
      "est_odds": 2.42,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "WBA 2 - 2 SWA",
      "top": true
     }
    ]
@@ -316,11 +316,11 @@
  ],
  "summary": {
   "picks": 10,
-  "settled": 3,
-  "hits": 1,
+  "settled": 10,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.27,
-  "profit_units": -0.87
+  "expected_hits": 4.2,
+  "profit_units": -5.45
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -333,8 +333,8 @@
    "confidence": 23,
    "fair_odds": 4.32,
    "est_odds": 4.02,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "POR 1 - 1 BOL",
    "away_short": "Portsmouth",
    "home_short": "Bolton"
   },
@@ -347,8 +347,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.04,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "WAT 0 - 4 SHU",
    "away_short": "Watford",
    "home_short": "Sheffield Utd"
   },
@@ -361,27 +361,27 @@
    "confidence": 23,
    "fair_odds": 4.37,
    "est_odds": 4.06,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "BRC 0 - 2 MID",
    "away_short": "Bristol City",
    "home_short": "Boro"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 10,
-  "settled": 3,
-  "hits": 1,
+  "settled": 10,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.27,
-  "profit_units": -0.87
+  "expected_hits": 4.2,
+  "profit_units": -5.45
  },
  "safe_min_odds": 1.7,
  "safe": [],
@@ -407,10 +407,10 @@
    "p_market": 0.537,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bristol City",
    "home_short": "Boro",
-   "score": null
+   "score": "BRC 0 - 2 MID"
   },
   {
    "game_id": "401880149",
@@ -425,10 +425,10 @@
    "p_market": 0.5357,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Charlton",
    "home_short": "Wolves",
-   "score": null
+   "score": "CHA 1 - 2 WOL"
   },
   {
    "game_id": "401880153",
@@ -461,10 +461,10 @@
    "p_market": 0.5292,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Watford",
    "home_short": "Sheffield Utd",
-   "score": null
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880160",
@@ -479,10 +479,10 @@
    "p_market": 0.5246,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Portsmouth",
    "home_short": "Bolton",
-   "score": null
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880150",
@@ -497,10 +497,10 @@
    "p_market": 0.5245,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Preston",
    "home_short": "West Ham",
-   "score": null
+   "score": "PNE 1 - 1 WHU"
   },
   {
    "game_id": "401880155",
@@ -533,10 +533,10 @@
    "p_market": 0.5195,
    "fair_odds": 1.92,
    "est_odds": 1.79,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
    "home_short": "Swansea",
-   "score": null
+   "score": "WBA 2 - 2 SWA"
   },
   {
    "game_id": "401880152",
@@ -551,10 +551,10 @@
    "p_market": 0.5137,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
    "home_short": "Stoke",
-   "score": null
+   "score": "BIR 0 - 1 STK"
   },
   {
    "game_id": "401880158",
@@ -569,10 +569,10 @@
    "p_market": 0.4967,
    "fair_odds": 2.01,
    "est_odds": 1.87,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Wrexham",
    "home_short": "Lincoln City",
-   "score": null
+   "score": "WXM 1 - 0 LCN"
   },
   {
    "game_id": "401880156",
@@ -595,11 +595,11 @@
  ],
  "safe_all_summary": {
   "picks": 11,
-  "settled": 3,
-  "hits": 0,
+  "settled": 11,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.5,
-  "profit_units": -3
+  "expected_hits": 5.68,
+  "profit_units": -5.73
  },
  "robot": [
   {
@@ -615,10 +615,10 @@
    "p_market": 0.5122,
    "fair_odds": 1.56,
    "est_odds": 1.82,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Charlton",
    "home_short": "Wolves",
-   "score": null
+   "score": "CHA 1 - 2 WOL"
   },
   {
    "game_id": "401880150",
@@ -633,10 +633,10 @@
    "p_market": 0.5137,
    "fair_odds": 1.57,
    "est_odds": 1.81,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Preston",
    "home_short": "West Ham",
-   "score": null
+   "score": "PNE 1 - 1 WHU"
   },
   {
    "game_id": "401880157",
@@ -651,10 +651,10 @@
    "p_market": 0.537,
    "fair_odds": 1.64,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bristol City",
    "home_short": "Boro",
-   "score": null
+   "score": "BRC 0 - 2 MID"
   },
   {
    "game_id": "401880151",
@@ -669,10 +669,10 @@
    "p_market": 0.5195,
    "fair_odds": 1.67,
    "est_odds": 1.79,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
    "home_short": "Swansea",
-   "score": null
+   "score": "WBA 2 - 2 SWA"
   },
   {
    "game_id": "401880155",
@@ -723,10 +723,10 @@
    "p_market": 0.4967,
    "fair_odds": 1.86,
    "est_odds": 1.87,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Wrexham",
    "home_short": "Lincoln City",
-   "score": null
+   "score": "WXM 1 - 0 LCN"
   },
   {
    "game_id": "401880160",
@@ -741,10 +741,10 @@
    "p_market": 0.5246,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Portsmouth",
    "home_short": "Bolton",
-   "score": null
+   "score": "POR 1 - 1 BOL"
   },
   {
    "game_id": "401880154",
@@ -759,10 +759,10 @@
    "p_market": 0.4708,
    "fair_odds": 1.93,
    "est_odds": 1.98,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Watford",
    "home_short": "Sheffield Utd",
-   "score": null
+   "score": "WAT 0 - 4 SHU"
   },
   {
    "game_id": "401880152",
@@ -777,10 +777,10 @@
    "p_market": 0.5137,
    "fair_odds": 1.99,
    "est_odds": 1.81,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
    "home_short": "Stoke",
-   "score": null
+   "score": "BIR 0 - 1 STK"
   },
   {
    "game_id": "401880156",
@@ -803,10 +803,10 @@
  ],
  "robot_summary": {
   "picks": 11,
-  "settled": 3,
-  "hits": 0,
+  "settled": 11,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.6,
-  "profit_units": -3
+  "expected_hits": 6.17,
+  "profit_units": -7.37
  }
 }
