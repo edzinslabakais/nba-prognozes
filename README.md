@@ -68,7 +68,7 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
 
 ### EuroLeague un Čempionu līga
 
-- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | NCAA | CH | Statistika).
+- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | CH | 1.7+ | Statistika).
 - **Laiks:** Eiropas spēles sākas vakarā, tāpēc to likmes ir **ap 12:30** (palaišana 12:17), bet rezultāti
   nākamajā rītā kopā ar NBA/NHL. Datums lapā ir spēļu diena.
 - **EuroLeague** (`el_bot.py`): dati no oficiālā EuroLeague avota (api-live.euroleague.net). Bukmeikeru
@@ -80,21 +80,16 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
   novērtē visas 90 minūšu likmes: uzvara, neizšķirts, uzvara vai neizšķirts, handikaps, virs/zem,
   komandas vārti, "abas komandas gūst vārtus" un kombinācijas.
 
-### NCAA un Championship (tikai labākās likmes)
+### Championship (tikai labākās likmes)
 
-- **Lapas:** …/nba-prognozes/ncaa/ un …/nba-prognozes/ch/. Šīm līgām spēļu ir pārāk daudz 3 likmēm katrā,
-  tāpēc robots katrā spēlē atrod drošāko likmi ar koeficientu 2.1+ un parāda tikai visdrošākās (viena no spēles).
-  Bez ★ un drošajām likmēm, un tās **netiek ieskaitītas kopējā statistikā**.
-- **NCAA** (`ncaa_bot.py`, ASV koledžu basketbols, I divīzija): **10 labākās** likmes naktī + **5 Crazy Dazy**,
-  likmes ap 21:30 kopā ar NBA. Kur ESPN ir bukmeikeru līnija, izmanto to, citur robota reitingu modeli
-  (~360 komandas, mājas un neitrāls laukums, atpūta), kalibrēts ar `python ncaa_bot.py kalibret`.
-  Vērtē pēc pamatlaika (2 puslaiki, 40 min).
-- **Championship** (`ch_bot.py`, Anglijas otrā līga): **līdz 10** drošākajām likmēm + **3 Crazy Dazy**, ap 12:30.
-  Tas pats futbola modelis kā Čempionu līgai (vārti no bukmeikeru koeficientiem), 90 minūtes.
+- **Lapa:** …/nba-prognozes/ch/ (`ch_bot.py`, Anglijas otrā līga): **līdz 10** drošākajām likmēm ar koeficientu 2.1+
+  (viena no spēles) + **3 Crazy Dazy**, ap 12:30. Tas pats futbola modelis kā Čempionu līgai (vārti no bukmeikeru
+  koeficientiem), 90 minūtes. Bez ★ un 1.7+ sadaļas, un tā **netiek ieskaitīta kopējā statistikā**.
+- NCAA koledžu basketbols tika izmēģināts un 21.11.2026 izņemts (pārāk nestabils).
 
 ### Drošās likmes (atsevišķa lapa)
 
-…/nba-prognozes/drosas/ — katrā spēlē visās līgās (NBA, NHL, EuroLeague, Čempionu līga, NCAA, Championship) drošākā
+…/nba-prognozes/drosas/ — katrā spēlē visās līgās (NBA, NHL, EuroLeague, Čempionu līga, Championship) drošākā
 likme ar koeficientu vismaz 1.7 (pēc bukmeikeru vērtējuma, kur tas pieejams). Lapai ir sava statistika (diena, nedēļa,
 mēnesis, kopā, ar sadalījumu pa līgām); tā netiek jaukta ar pārējo statistiku.
 

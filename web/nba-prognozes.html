@@ -371,7 +371,7 @@ const $ = (id) => document.getElementById(id);
 const state = { nights: [], stats: null, selected: null, chosenByUser: false };
 // ---- language (LV / EN). Texts from the robot are Latvian; tr*() translate them for English.
 const LEAGUE_KEY = "nba"; const DAY_MODE = false; const LEAGUE_TITLE = "NBA";  // site.py sets these per league
-const SIMPLE = false;  // NCAA / Championship: only the best bets of the night + Crazy Dazy (no ★, no safe bets)
+const SIMPLE = false;  // Championship: only the best bets of the night + Crazy Dazy (no ★, no safe bets)
 const IS_NHL = LEAGUE_KEY === "nhl";
 const GOALS = LEAGUE_KEY === "nhl" || LEAGUE_KEY === "cl";
 let LANG = "lv";
@@ -414,12 +414,12 @@ const I18N = {
     loadSlow: "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu.", loadFail: (c) => `Neizdevās ielādēt datus (${c}).`,
     night: (d) => `Nakts uz ${d}`,
     statsSub: (n) => `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${n} spēļu dienas`,
-    statsIntro: "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. NCAA un Championship šeit netiek ieskaitīti.",
+    statsIntro: "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma. Championship šeit netiek ieskaitīts.",
     thisWeek: "Šī nedēļa", thisMonth: "Šis mēnesis", thisYear: "Šis gads", allTime: "Kopā", since: (d) => `kopš ${d}`,
     pastWeeks: "Iepriekšējās nedēļas", pastMonths: "Iepriekšējie mēneši",
     dayBets: "Likmes šajā dienā", dayUnits: "Vienības šajā dienā", noDays: "Vēl nav nevienas dienas likmju.",
     safeSub: (d, n) => `${d} vakara un nakts spēles · ${n} likmes · koeficients ≥ 1.7`,
-    safePageIntro: "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA, NHL un NCAA spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".",
+    safePageIntro: "Katrā spēlē visās līgās robots atrod drošāko likmi ar koeficientu 1.7 vai vairāk (pēc bukmeikeru vērtējuma, kur tas ir pieejams). Spēles datums ir vakars, kad tās sākas pēc Rīgas laika; NBA un NHL spēles notiek naktī. Likmes vērtē pēc pamatlaika (futbolā 90 minūtes), ja vien nav rakstīts \"ieskaitot papildlaiku\".",
     perLeague: "Statistika pa līgām",
     perLeagueIntro: "Katra līga ir vērtēta atsevišķi. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai.",
   },
@@ -460,12 +460,12 @@ const I18N = {
     loadSlow: "Can't load the data yet. Check your internet connection.", loadFail: (c) => `Could not load the data (${c}).`,
     night: (d) => `Night of ${d}`,
     statsSub: (n) => `All sports together (NBA, NHL, EuroLeague, Champions League) · ${n} match days`,
-    statsIntro: "Four groups of bets, added up across all sports: 2.1+, ★ most realistic 2.1+, 1.7+ and Crazy Dazy. Units: the result of staking 1 unit on every bet at the approximate odds. A week runs Monday to Sunday and bets count by game date. NCAA and the Championship are not included here.",
+    statsIntro: "Four groups of bets, added up across all sports: 2.1+, ★ most realistic 2.1+, 1.7+ and Crazy Dazy. Units: the result of staking 1 unit on every bet at the approximate odds. A week runs Monday to Sunday and bets count by game date. The Championship is not included here.",
     thisWeek: "This week", thisMonth: "This month", thisYear: "This year", allTime: "All time", since: (d) => `since ${d}`,
     pastWeeks: "Previous weeks", pastMonths: "Previous months",
     dayBets: "Bets on this day", dayUnits: "Units on this day", noDays: "No days with picks yet.",
     safeSub: (d, n) => `Evening and night games of ${d} · ${n} bets · odds ≥ 1.7`,
-    safePageIntro: "In every game of every league the robot finds the safest bet at odds 1.7 or more (by the bookmakers' rating where available). The date is the evening the games start in Riga time; NBA, NHL and NCAA games are played during the night. Bets are settled on regulation time (90 minutes in football) unless marked “incl. OT”.",
+    safePageIntro: "In every game of every league the robot finds the safest bet at odds 1.7 or more (by the bookmakers' rating where available). The date is the evening the games start in Riga time; NBA and NHL games are played during the night. Bets are settled on regulation time (90 minutes in football) unless marked “incl. OT”.",
     perLeague: "Statistics by league",
     perLeagueIntro: "Every league is rated on its own. Units: the result of staking 1 unit on every bet at the approximate odds. A week runs Monday to Sunday.",
   },
@@ -477,7 +477,6 @@ const NOTES = {
     noteSafe: "<b>1.7+</b>: odds of at least 1.7. The safety is the bookmakers' rating, with the robot's own rating shown next to it for comparison. In the season test bets chosen by the robot's model won 42–47 % of the time, by the bookmakers 51–53 %.",
     noteEl: "<b>EuroLeague</b>: there are no bookmaker odds for this league, so the probabilities come from the robot's model (team ratings, home court, rest), calibrated on the 2025-26 season (it picks the winner ~62 % of the time). All bets are settled on <b>regulation time</b> (40 minutes).",
     noteCl: "<b>Football</b>: all bets are settled on <b>90 minutes</b> (no extra time or penalties). The expected goals are worked out from the bookmakers' odds, and every bet is rated from them, including “both teams to score” and “win or draw”.",
-    noteNcaa: "<b>NCAA</b> (US college basketball): there are too many games, so the robot takes the safest bet of each game and shows the <b>10 safest</b>, plus 5 Crazy Dazy. Where ESPN has a bookmakers' line it is used, otherwise the robot's model (team ratings, home court, neutral court, rest). Bets are settled on <b>regulation time</b> (2 halves, 40 minutes). NCAA is not included in the overall statistics.",
     noteCh: "<b>Championship</b> (English second tier): the safest bet of each game at odds 2.1+, showing up to the <b>10 safest</b>, plus Crazy Dazy. The expected goals are worked out from the bookmakers' odds; bets are settled on <b>90 minutes</b>. The Championship is not included in the overall statistics.",
     noteConf: "<b>Confidence</b> is the robot's estimated chance that the bet wins. At odds of 2.1 it can hardly exceed ~45: a bookmaker only pays 2.1 if it rates the chance below 45 %. For every game the robot looks for the safest line in three categories that still pays 2.1 or more.",
     noteOdds: "<b>~2.14</b> is the approximate Optibet price, <b>fair</b> is the price at which the bet is exactly “worth it”. If Optibet pays more than the fair price, the bet is good value. If Optibet's line differs a little, take the nearest one with odds of 2.1 or more.",
@@ -814,7 +813,7 @@ function renderGame(g, nightDate) {
                    (g.riga_time || "").split(" ")[1], gameSummary(g), content);
 }
 
-// NCAA / Championship: every chosen bet as its own card, most likely first
+// Championship: every chosen bet as its own card, most likely first
 function simpleCards(night) {
   const out = [];
   for (const g of night.games || []) for (const p of g.picks || []) {
@@ -983,7 +982,7 @@ function renderSafePage() {
       if (!byLeague.has(b.league)) byLeague.set(b.league, { title: b.league_title, bets: [] });
       byLeague.get(b.league).bets.push(b);
     }
-    const ORDER = ["nba", "nhl", "el", "cl", "ncaa", "ch"];
+    const ORDER = ["nba", "nhl", "el", "cl", "ch"];
     for (const [key, L] of [...byLeague].sort((a, b) => ORDER.indexOf(a[0]) - ORDER.indexOf(b[0]))) {
       const ss = sumOf(L.bets);
       const h = el("h3", "league-h", leagueName(L.title));
@@ -994,7 +993,7 @@ function renderSafePage() {
   // statistics for every league on its own (no totals across leagues)
   const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
   const wk = mondayOf(today), mo = today.slice(0, 7);
-  const LEAGUE_ORDER = ["nba", "nhl", "el", "cl", "ncaa", "ch"];
+  const LEAGUE_ORDER = ["nba", "nhl", "el", "cl", "ch"];
   const leagues = new Map();
   for (const n of state.nights) for (const b of n.bets || []) {
     if (!leagues.has(b.league)) leagues.set(b.league, { title: b.league_title, bets: [] });

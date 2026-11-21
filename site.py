@@ -21,10 +21,9 @@ LEAGUES = [
     ("nhl", "NHL", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/", False, (21, 30)),
     ("el", "EL", "EuroLeague", ROOT / "el" / "export", OUT / "el", "el/", True, (12, 30)),
     ("cl", "ČL", "Čempionu līgas", ROOT / "cl" / "export", OUT / "cl", "cl/", True, (12, 30)),
-    ("ncaa", "NCAA", "NCAA", ROOT / "ncaa" / "export", OUT / "ncaa", "ncaa/", False, (21, 30)),
     ("ch", "CH", "Championship", ROOT / "ch" / "export", OUT / "ch", "ch/", True, (12, 30)),
 ]
-SIMPLE = {"ncaa", "ch"}  # only the night's best bets + Crazy Dazy, and kept out of the combined statistics
+SIMPLE = {"ch"}  # only the day's best bets + Crazy Dazy, and kept out of the combined statistics
 
 NHL_NOTE = ('<p data-i18n-html="noteNhl"><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī '
             'neizšķirts. Tikai likmes ar norādi "ieskaitot papildlaiku" ietver papildlaiku un bullīšus '
@@ -67,14 +66,10 @@ EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: bukmeikeru koeficientu
 CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc <b>90 minūtēm</b> (bez pagarinājuma un '
            'pēcspēles sitieniem). Sagaidāmie vārti ir aprēķināti no bukmeikeru koeficientiem, un no tiem tiek '
            'novērtētas visas likmes, arī "abas komandas gūst vārtus" un "uzvara vai neizšķirts".</p>')
-NCAA_NOTE = ('<p data-i18n-html="noteNcaa"><b>NCAA</b> (ASV koledžu basketbols): spēļu ir pārāk daudz, tāpēc robots no katras '
-             'spēles ņem drošāko likmi un parāda <b>10 visdrošākās</b>, kā arī 5 Crazy Dazy. Kur ESPN ir bukmeikeru līnija, '
-             'tiek izmantota tā, citur robota modelis (komandu reitingi, mājas laukums, neitrāls laukums, atpūta). '
-             'Likmes vērtē pēc <b>pamatlaika</b> (2 puslaiki, 40 minūtes). NCAA netiek ieskaitīta kopējā statistikā.</p>')
 CH_NOTE = ('<p data-i18n-html="noteCh"><b>Championship</b> (Anglijas otrā līga): no katras spēles drošākā likme ar koeficientu '
            '2.1+, parādītas līdz <b>10 visdrošākajām</b>, kā arī Crazy Dazy. Sagaidāmie vārti ir aprēķināti no bukmeikeru '
            'koeficientiem, likmes vērtē pēc <b>90 minūtēm</b>. Championship netiek ieskaitīts kopējā statistikā.</p>')
-NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE", "ncaa": "NCAA_NOTE", "ch": "CH_NOTE"}
+NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE", "ch": "CH_NOTE"}
 
 
 def combined_data() -> dict:
