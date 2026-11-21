@@ -20,7 +20,7 @@
    "market_line": "MIA -36.5",
    "injuries": [],
    "market_total": 150.5,
-   "score": null,
+   "score": "MAN 54 - 106 MIA",
    "picks": [
     {
      "category": "starpība",
@@ -30,7 +30,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MAN 54 - 106 MIA",
      "top": true
     }
    ]
@@ -52,7 +53,7 @@
    "market_line": "UTAH -1.5",
    "injuries": [],
    "market_total": 138.5,
-   "score": null,
+   "score": "DAY 63 - 46 UTAH",
    "picks": [
     {
      "category": "komandas punkti",
@@ -62,7 +63,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DAY 63 - 46 UTAH",
      "top": true
     }
    ]
@@ -84,7 +86,7 @@
    "market_line": "PRIN -3.5",
    "injuries": [],
    "market_total": 140.5,
-   "score": null,
+   "score": "MONM 64 - 75 PRIN",
    "picks": [
     {
      "category": "komandas punkti",
@@ -94,7 +96,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MONM 64 - 75 PRIN",
      "top": true
     }
    ]
@@ -116,7 +119,7 @@
    "market_line": "CIT -3.5",
    "injuries": [],
    "market_total": 142.5,
-   "score": null,
+   "score": "SCST 63 - 79 CIT",
    "picks": [
     {
      "category": "komandas punkti",
@@ -126,7 +129,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SCST 63 - 79 CIT",
      "top": true
     }
    ]
@@ -148,7 +152,7 @@
    "market_line": "PITT -21.5",
    "injuries": [],
    "market_total": 144.5,
-   "score": null,
+   "score": "CMU 82 - 104 PITT",
    "picks": [
     {
      "category": "starpība",
@@ -158,7 +162,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CMU 82 - 104 PITT",
      "top": true
     }
    ]
@@ -180,7 +185,7 @@
    "market_line": "PUR -21.5",
    "injuries": [],
    "market_total": 147.5,
-   "score": null,
+   "score": "OAK 49 - 95 PUR",
    "picks": [
     {
      "category": "starpība",
@@ -190,7 +195,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "OAK 49 - 95 PUR",
      "top": true
     }
    ]
@@ -212,7 +218,7 @@
    "market_line": "TENN -26.5",
    "injuries": [],
    "market_total": 147.5,
-   "score": null,
+   "score": "CCU 51 - 78 TENN",
    "picks": [
     {
      "category": "komandas punkti",
@@ -222,7 +228,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CCU 51 - 78 TENN",
      "top": true
     }
    ]
@@ -244,7 +251,7 @@
    "market_line": "MSST -7.5",
    "injuries": [],
    "market_total": 152.5,
-   "score": null,
+   "score": "TLSA 61 - 72 MSST",
    "picks": [
     {
      "category": "komandas punkti",
@@ -254,7 +261,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "TLSA 61 - 72 MSST",
      "top": true
     }
    ]
@@ -276,7 +284,7 @@
    "market_line": "MIZ -36.5",
    "injuries": [],
    "market_total": 155.5,
-   "score": null,
+   "score": "LEM 64 - 91 MIZ",
    "picks": [
     {
      "category": "starpība",
@@ -286,7 +294,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "LEM 64 - 91 MIZ",
      "top": true
     }
    ]
@@ -308,7 +317,7 @@
    "market_line": "NCSU -3.5",
    "injuries": [],
    "market_total": 140.5,
-   "score": null,
+   "score": "HALL 73 - 73 NCSU (pamatlaikā; ar papildlaiku 87 - 81)",
    "picks": [
     {
      "category": "komandas punkti",
@@ -318,7 +327,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "HALL 73 - 73 NCSU (pamatlaikā; ar papildlaiku 87 - 81)",
      "top": true
     }
    ]
@@ -326,11 +336,11 @@
  ],
  "summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 10,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.42,
+  "profit_units": -5.8
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -343,8 +353,8 @@
    "confidence": 21,
    "fair_odds": 4.71,
    "est_odds": 4.38,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "UNT 75 - 81 APP"
   },
   {
    "game_id": "401916124",
@@ -355,8 +365,8 @@
    "confidence": 19,
    "fair_odds": 5.25,
    "est_odds": 4.88,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "UTM 76 - 73 SIU"
   },
   {
    "game_id": "401921419",
@@ -367,8 +377,8 @@
    "confidence": 21,
    "fair_odds": 4.88,
    "est_odds": 4.54,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "DAY 63 - 46 UTAH",
    "away_short": "Dayton",
    "home_short": "Utah"
   },
@@ -381,8 +391,8 @@
    "confidence": 23,
    "fair_odds": 4.36,
    "est_odds": 4.05,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "WKU 82 - 68 RICH"
   },
   {
    "game_id": "401921107",
@@ -393,25 +403,25 @@
    "confidence": 18,
    "fair_odds": 5.54,
    "est_odds": 5.16,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "BELL 79 - 76 EKU"
   }
  ],
  "crazy_summary": {
   "picks": 5,
-  "settled": 0,
+  "settled": 5,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.02,
+  "profit_units": -5
  },
  "top_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 10,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.42,
+  "profit_units": -5.8
  },
  "safe_min_odds": 1.7,
  "safe": [],
@@ -437,10 +447,10 @@
    "p_market": 0.5376,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "North Texas",
    "home_short": "App State",
-   "score": null
+   "score": "UNT 75 - 81 APP"
   },
   {
    "game_id": "401926755",
@@ -455,10 +465,10 @@
    "p_market": null,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Neumann",
    "home_short": "Lehigh",
-   "score": null
+   "score": "NEU 38 - 79 LEH"
   },
   {
    "game_id": "401935675",
@@ -473,10 +483,10 @@
    "p_market": null,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Coast",
    "home_short": "Pepperdine",
-   "score": null
+   "score": "WCBC 54 - 140 PEPP"
   },
   {
    "game_id": "401912710",
@@ -491,10 +501,10 @@
    "p_market": 0.5294,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Marshall",
    "home_short": "North Carolina",
-   "score": null
+   "score": "MRSH 72 - 88 UNC"
   },
   {
    "game_id": "401929460",
@@ -509,10 +519,10 @@
    "p_market": null,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Worcester St",
    "home_short": "Bryant",
-   "score": null
+   "score": "WORC 61 - 75 BRY"
   },
   {
    "game_id": "401928795",
@@ -527,10 +537,10 @@
    "p_market": 0.529,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Sam Houston",
    "home_short": "Boise St",
-   "score": null
+   "score": "SHSU 83 - 69 BOIS"
   },
   {
    "game_id": "401919784",
@@ -545,10 +555,10 @@
    "p_market": 0.5289,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Le Moyne",
    "home_short": "Missouri",
-   "score": null
+   "score": "LEM 64 - 91 MIZ"
   },
   {
    "game_id": "401913529",
@@ -563,10 +573,10 @@
    "p_market": 0.5289,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "E Illinois",
    "home_short": "Illinois",
-   "score": null
+   "score": "EIU 52 - 114 ILL"
   },
   {
    "game_id": "401925740",
@@ -581,10 +591,10 @@
    "p_market": 0.5288,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Miss Valley St",
    "home_short": "Arkansas",
-   "score": null
+   "score": "MVSU 48 - 92 ARK"
   },
   {
    "game_id": "401906852",
@@ -599,10 +609,10 @@
    "p_market": 0.5286,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Coastal",
    "home_short": "Tennessee",
-   "score": null
+   "score": "CCU 51 - 78 TENN"
   },
   {
    "game_id": "401909709",
@@ -617,10 +627,10 @@
    "p_market": 0.5285,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "C Michigan",
    "home_short": "Pitt",
-   "score": null
+   "score": "CMU 82 - 104 PITT"
   },
   {
    "game_id": "401909799",
@@ -635,10 +645,10 @@
    "p_market": 0.5267,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Campbell",
    "home_short": "Kansas St",
-   "score": null
+   "score": "CAM 80 - 70 KSU"
   },
   {
    "game_id": "401921757",
@@ -653,10 +663,10 @@
    "p_market": 0.5264,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "UCF",
    "home_short": "Vanderbilt",
-   "score": null
+   "score": "UCF 74 - 82 VAN"
   },
   {
    "game_id": "401924844",
@@ -671,10 +681,10 @@
    "p_market": 0.5261,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Niagara",
    "home_short": "Delaware St",
-   "score": null
+   "score": "NIA 85 - 85 DSU (pamatlaikā; ar papildlaiku 103 - 101)"
   },
   {
    "game_id": "401929459",
@@ -689,10 +699,10 @@
    "p_market": 0.5261,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "South Alabama",
    "home_short": "SMU",
-   "score": null
+   "score": "USA 55 - 101 SMU"
   },
   {
    "game_id": "401921723",
@@ -707,10 +717,10 @@
    "p_market": 0.5257,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Manhattan",
    "home_short": "Miami",
-   "score": null
+   "score": "MAN 54 - 106 MIA"
   },
   {
    "game_id": "401929353",
@@ -725,10 +735,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Cent Baptist",
    "home_short": "Incarnate Word",
-   "score": null
+   "score": "CNTB 71 - 120 UIW"
   },
   {
    "game_id": "401920357",
@@ -743,10 +753,10 @@
    "p_market": 0.525,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Harvard",
    "home_short": "Holy Cross",
-   "score": null
+   "score": "HARV 77 - 65 HC"
   },
   {
    "game_id": "401916299",
@@ -761,10 +771,10 @@
    "p_market": 0.5248,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Wagner",
    "home_short": "Maryland",
-   "score": null
+   "score": "WAG 45 - 62 MD"
   },
   {
    "game_id": "401920818",
@@ -779,10 +789,10 @@
    "p_market": 0.5247,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "SE Louisiana",
    "home_short": "Kennesaw St",
-   "score": null
+   "score": "SELA 59 - 96 KENN"
   },
   {
    "game_id": "401926134",
@@ -797,10 +807,10 @@
    "p_market": 0.5244,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Oakland",
    "home_short": "Purdue",
-   "score": null
+   "score": "OAK 49 - 95 PUR"
   },
   {
    "game_id": "401925080",
@@ -833,10 +843,10 @@
    "p_market": 0.5239,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Iowa",
    "home_short": "Xavier",
-   "score": null
+   "score": "IOWA 83 - 65 XAV"
   },
   {
    "game_id": "401921107",
@@ -851,10 +861,10 @@
    "p_market": 0.5237,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bellarmine",
    "home_short": "E Kentucky",
-   "score": null
+   "score": "BELL 79 - 76 EKU"
   },
   {
    "game_id": "401925664",
@@ -869,10 +879,10 @@
    "p_market": 0.5237,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Alabama St",
    "home_short": "Fresno St",
-   "score": null
+   "score": "ALST 68 - 80 FRES"
   },
   {
    "game_id": "401906784",
@@ -887,10 +897,10 @@
    "p_market": 0.5237,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Georgia",
    "home_short": "Georgia Tech",
-   "score": null
+   "score": "UGA 88 - 82 GT"
   },
   {
    "game_id": "401911252",
@@ -923,10 +933,10 @@
    "p_market": 0.5236,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Bakersfield",
    "home_short": "Idaho",
-   "score": null
+   "score": "CSUB 81 - 84 IDHO"
   },
   {
    "game_id": "401921007",
@@ -941,10 +951,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Kansas City",
    "home_short": "Iona",
-   "score": null
+   "score": "KC 61 - 62 IONA"
   },
   {
    "game_id": "401927396",
@@ -959,10 +969,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Richmond",
    "home_short": "Western KY",
-   "score": null
+   "score": "WKU 82 - 68 RICH"
   },
   {
    "game_id": "401925865",
@@ -977,10 +987,10 @@
    "p_market": 0.5234,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Tulsa",
    "home_short": "Mississippi St",
-   "score": null
+   "score": "TLSA 61 - 72 MSST"
   },
   {
    "game_id": "401920298",
@@ -995,10 +1005,10 @@
    "p_market": 0.5234,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Delaware",
    "home_short": "CSU Northridge",
-   "score": null
+   "score": "DEL 82 - 82 CSUN (pamatlaikā; ar papildlaiku 97 - 92)"
   },
   {
    "game_id": "401920922",
@@ -1013,10 +1023,10 @@
    "p_market": 0.5234,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "W Michigan",
    "home_short": "Mount St Marys",
-   "score": null
+   "score": "WMU 73 - 67 MSM"
   },
   {
    "game_id": "401917903",
@@ -1031,10 +1041,10 @@
    "p_market": null,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Paine",
    "home_short": "West Georgia",
-   "score": null
+   "score": "PANE 56 - 105 WGA"
   },
   {
    "game_id": "401922022",
@@ -1049,10 +1059,10 @@
    "p_market": 0.5229,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "S Dakota St",
    "home_short": "Idaho St",
-   "score": null
+   "score": "SDST 71 - 86 IDST"
   },
   {
    "game_id": "401920066",
@@ -1067,10 +1077,10 @@
    "p_market": 0.5228,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Rhode Island",
    "home_short": "Liberty",
-   "score": null
+   "score": "URI 68 - 71 LIB"
   },
   {
    "game_id": "401920707",
@@ -1085,10 +1095,10 @@
    "p_market": 0.5227,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Lipscomb",
    "home_short": "Alabama A&M",
-   "score": null
+   "score": "LIP 69 - 85 AAMU"
   },
   {
    "game_id": "401921692",
@@ -1103,10 +1113,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Wisconsin",
    "home_short": "Murray St",
-   "score": null
+   "score": "WIS 53 - 70 MUR"
   },
   {
    "game_id": "401916290",
@@ -1121,10 +1131,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Kentucky",
    "home_short": "Indiana",
-   "score": null
+   "score": "UK 76 - 90 IU"
   },
   {
    "game_id": "401916125",
@@ -1139,10 +1149,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Utah Valley",
    "home_short": "East Carolina",
-   "score": null
+   "score": "ECU 79 - 90 UVU"
   },
   {
    "game_id": "401925927",
@@ -1157,10 +1167,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "SC State",
    "home_short": "The Citadel",
-   "score": null
+   "score": "SCST 63 - 79 CIT"
   },
   {
    "game_id": "401924736",
@@ -1175,10 +1185,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Monmouth",
    "home_short": "Princeton",
-   "score": null
+   "score": "MONM 64 - 75 PRIN"
   },
   {
    "game_id": "401921691",
@@ -1193,10 +1203,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Seton Hall",
    "home_short": "NC State",
-   "score": null
+   "score": "HALL 73 - 73 NCSU (pamatlaikā; ar papildlaiku 87 - 81)"
   },
   {
    "game_id": "401920195",
@@ -1211,10 +1221,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Saint Joseph's",
    "home_short": "Drexel",
-   "score": null
+   "score": "JOES 64 - 75 DREX"
   },
   {
    "game_id": "401919827",
@@ -1229,10 +1239,10 @@
    "p_market": 0.5225,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Mercyhurst",
    "home_short": "Canisius",
-   "score": null
+   "score": "MERC 56 - 63 CAN"
   },
   {
    "game_id": "401916124",
@@ -1247,10 +1257,10 @@
    "p_market": 0.5224,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "UT Martin",
    "home_short": "S Illinois",
-   "score": null
+   "score": "UTM 76 - 73 SIU"
   },
   {
    "game_id": "401921419",
@@ -1265,10 +1275,10 @@
    "p_market": 0.5223,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Dayton",
    "home_short": "Utah",
-   "score": null
+   "score": "DAY 63 - 46 UTAH"
   },
   {
    "game_id": "401926782",
@@ -1283,10 +1293,10 @@
    "p_market": 0.5223,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Georgia St",
    "home_short": "Jax State",
-   "score": null
+   "score": "GAST 77 - 82 JXST"
   },
   {
    "game_id": "401920427",
@@ -1301,10 +1311,10 @@
    "p_market": 0.5205,
    "fair_odds": 1.92,
    "est_odds": 1.79,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Loyola MD",
    "home_short": "Virginia",
-   "score": null
+   "score": "L-MD 61 - 103 UVA"
   },
   {
    "game_id": "401928834",
@@ -1319,18 +1329,18 @@
    "p_market": null,
    "fair_odds": 1.93,
    "est_odds": 1.79,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "WVU Tech",
    "home_short": "Akron",
-   "score": null
+   "score": "WVUT 71 - 116 AKR"
   }
  ],
  "safe_all_summary": {
   "picks": 50,
-  "settled": 0,
-  "hits": 0,
+  "settled": 48,
+  "hits": 22,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 25.2,
+  "profit_units": -8.96
  }
 }

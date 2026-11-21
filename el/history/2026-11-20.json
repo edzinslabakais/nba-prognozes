@@ -82,7 +82,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "ASV 81 - 107 IST"
   },
   {
    "game_id": "E2026_127",
@@ -97,7 +98,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "ASV 81 - 107 IST"
   },
   {
    "game_id": "E2026_127",
@@ -112,7 +114,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "ASV 81 - 107 IST"
   },
   {
    "game_id": "E2026_130",
@@ -127,7 +130,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MAD 76 - 92 OLY"
   },
   {
    "game_id": "E2026_130",
@@ -142,7 +146,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MAD 76 - 92 OLY"
   },
   {
    "game_id": "E2026_130",
@@ -157,7 +162,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "MAD 76 - 92 OLY"
   },
   {
    "game_id": "E2026_128",
@@ -172,7 +178,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_128",
@@ -187,7 +194,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_128",
@@ -202,7 +210,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_129",
@@ -217,7 +226,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "BES 77 - 77 PAR (pamatlaikā; ar papildlaiku 87 - 91)"
   },
   {
    "game_id": "E2026_129",
@@ -232,7 +242,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BES 77 - 77 PAR (pamatlaikā; ar papildlaiku 87 - 91)"
   },
   {
    "game_id": "E2026_129",
@@ -247,7 +258,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "BES 77 - 77 PAR (pamatlaikā; ar papildlaiku 87 - 91)"
   }
  ],
  "crazy": [
@@ -262,7 +274,8 @@
    "fair_odds": 4.33,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_127",
@@ -275,7 +288,8 @@
    "fair_odds": 4.38,
    "est_odds": 4.08,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "ASV 81 - 107 IST"
   },
   {
    "game_id": "E2026_130",
@@ -288,7 +302,8 @@
    "fair_odds": 4.39,
    "est_odds": 4.08,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "MAD 76 - 92 OLY"
   }
  ],
  "safe": [
@@ -306,7 +321,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_130",
@@ -322,7 +338,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "MAD 76 - 92 OLY"
   },
   {
    "game_id": "E2026_127",
@@ -338,7 +355,8 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "ASV 81 - 107 IST"
   }
  ],
  "safe_all": [
@@ -356,9 +374,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Crvena Zvezda",
-   "home_short": "FC Barcelona"
+   "home_short": "FC Barcelona",
+   "score": "RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)"
   },
   {
    "game_id": "E2026_130",
@@ -374,9 +393,10 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Real Madrid",
-   "home_short": "Olympiacos"
+   "home_short": "Olympiacos",
+   "score": "MAD 76 - 92 OLY"
   },
   {
    "game_id": "E2026_129",
@@ -392,9 +412,10 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Besiktas",
-   "home_short": "Partizan"
+   "home_short": "Partizan",
+   "score": "BES 77 - 77 PAR (pamatlaikā; ar papildlaiku 87 - 91)"
   }
  ]
 }
