@@ -415,5 +415,14 @@
   "pushes": 0,
   "expected_hits": 1.59,
   "profit_units": -1.23
+ },
+ "robot": [],
+ "robot_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
  }
 }

@@ -195,7 +195,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "QPR 1 - 0 MIL"
   },
   {
    "game_id": "401880153",
@@ -211,7 +212,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "DER 0 - 2 SOU"
   },
   {
    "game_id": "401880154",
@@ -307,7 +309,8 @@
    "fair_odds": 2.54,
    "est_odds": 2.36,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "CAR 1 - 2 NOR"
   },
   {
    "game_id": "401880151",
@@ -419,9 +422,10 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Derby",
-   "home_short": "Southampton"
+   "home_short": "Southampton",
+   "score": "DER 0 - 2 SOU"
   },
   {
    "game_id": "401880154",
@@ -491,9 +495,10 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Cardiff",
-   "home_short": "Norwich City"
+   "home_short": "Norwich City",
+   "score": "CAR 1 - 2 NOR"
   },
   {
    "game_id": "401880151",
@@ -563,9 +568,10 @@
    "est_odds": 2.12,
    "confidence": 44,
    "data_conf": 44,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "QPR",
-   "home_short": "Millwall"
+   "home_short": "Millwall",
+   "score": "QPR 1 - 0 MIL"
   }
  ],
  "robot": [
@@ -655,9 +661,10 @@
    "est_odds": 1.78,
    "confidence": 58,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Cardiff",
-   "home_short": "Norwich City"
+   "home_short": "Norwich City",
+   "score": "CAR 1 - 2 NOR"
   },
   {
    "game_id": "401880153",
@@ -673,9 +680,10 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Derby",
-   "home_short": "Southampton"
+   "home_short": "Southampton",
+   "score": "DER 0 - 2 SOU"
   },
   {
    "game_id": "401880158",
@@ -763,9 +771,10 @@
    "est_odds": 2.25,
    "confidence": 48,
    "data_conf": 41,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "QPR",
-   "home_short": "Millwall"
+   "home_short": "Millwall",
+   "score": "QPR 1 - 0 MIL"
   }
  ]
 }
