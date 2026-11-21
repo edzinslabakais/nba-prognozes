@@ -915,10 +915,10 @@
    "p_market": 0.5236,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Saint Louis",
    "home_short": "Saint Mary's",
-   "score": null
+   "score": "SLU 78 - 95 SMC"
   },
   {
    "game_id": "401920137",
@@ -1337,10 +1337,10 @@
  ],
  "safe_all_summary": {
   "picks": 50,
-  "settled": 48,
+  "settled": 49,
   "hits": 22,
   "pushes": 0,
-  "expected_hits": 25.2,
-  "profit_units": -8.96
+  "expected_hits": 25.73,
+  "profit_units": -9.96
  }
 }

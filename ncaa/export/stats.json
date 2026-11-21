@@ -25,11 +25,11 @@
  },
  "safe_all_overall": {
   "picks": 50,
-  "settled": 48,
+  "settled": 49,
   "hits": 22,
   "pushes": 0,
-  "expected_hits": 25.2,
-  "profit_units": -8.96
+  "expected_hits": 25.73,
+  "profit_units": -9.96
  },
  "safe_overall": {
   "picks": 0,
@@ -115,11 +115,11 @@
    },
    "safe_all": {
     "picks": 50,
-    "settled": 48,
+    "settled": 49,
     "hits": 22,
     "pushes": 0,
-    "expected_hits": 25.2,
-    "profit_units": -8.96
+    "expected_hits": 25.73,
+    "profit_units": -9.96
    }
   }
  ],
@@ -170,5 +170,5 @@
    }
   }
  ],
- "updated_at": "2026-11-21T06:00+00:00"
+ "updated_at": "2026-11-21T07:33+00:00"
 }

@@ -1019,9 +1019,10 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Saint Louis",
-   "home_short": "Saint Mary's"
+   "home_short": "Saint Mary's",
+   "score": "SLU 78 - 95 SMC"
   },
   {
    "game_id": "401920137",
