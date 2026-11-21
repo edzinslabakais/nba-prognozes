@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 21.11.2026 21:13 (Rīgas laiks)_
+_Atjaunināts 21.11.2026 21:53 (Rīgas laiks)_
 
 ## Nakts uz 22.11. — 6 spēles, koef. ≥ 2.1
 
@@ -40,24 +40,24 @@ Robots: **MIN -6.5**, kopā 228.5 · bukmeikeri: MIN -6.5, kopā 228.5
 Savainojumi/sastāvs: MEM: Cameron Boozer (Out) -1.8; MEM: Javon Small (Out) -0.7; MEM: Jerami Grant (Out) -0.7
 
 ### NO @ SA · 03:00
-Robots: **SA -18.5**, kopā 229.5 · bukmeikeri: SA -18.5, kopā 229.5
+Robots: **SA -19.5**, kopā 227.5 · bukmeikeri: SA -19.5, kopā 227.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SA -20.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **virs 231.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **SA zem 121.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **SA -21.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
+| 2 | **virs 229.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **NO virs 105.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: SA: Dylan Harper (Out) -1.8; NO: Dejounte Murray (Out) -0.5; NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4; NO: Yves Missi (spēlēja 4/10 pēdējās) +0.5
+Savainojumi/sastāvs: SA: Dylan Harper (Out) -1.8; NO: Dejounte Murray (Out) -0.5; NO: Trey Murphy III (Out) -0.4; NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4
 
 ### LAC @ DAL · 03:00
-Robots: **DAL -5.5**, kopā 230.5 · bukmeikeri: DAL -5.5, kopā 230.5
+Robots: **DAL -4.5**, kopā 230.5 · bukmeikeri: DAL -4.5, kopā 230.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | 1 ★ | **zem 226.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **DAL -7.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **DAL zem 115.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 2 | **DAL -6.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 3 | **LAC virs 114.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: DAL: P.J. Washington (Day-To-Day) -0.4; DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.5
 
@@ -79,7 +79,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
 | POR@NY | **POR zem 106.5** | 53/100 | 1.74 | ⏳ gaida |
-| LAC@DAL | **DAL virs 116.5** | 53/100 | 1.75 | ⏳ gaida |
+| LAC@DAL | **LAC zem 113.5** | 53/100 | 1.74 | ⏳ gaida |
 | MEM@MIN | **MEM zem 111.5** | 53/100 | 1.75 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
