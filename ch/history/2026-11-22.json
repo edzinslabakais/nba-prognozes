@@ -35,7 +35,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BLK 2 - 2 BUR"
   },
   {
    "game_id": "401880159",
@@ -51,7 +52,8 @@
    "fair_odds": 3.03,
    "est_odds": 2.82,
    "confidence": 33,
-   "result": null
+   "result": "izgāja",
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "crazy": [
@@ -66,7 +68,8 @@
    "fair_odds": 4.65,
    "est_odds": 4.33,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "safe": [],
@@ -85,9 +88,10 @@
    "est_odds": 1.87,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Blackburn",
-   "home_short": "Burnley"
+   "home_short": "Burnley",
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "robot": [
@@ -105,9 +109,10 @@
    "est_odds": 1.85,
    "confidence": 61,
    "data_conf": 50,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Blackburn",
-   "home_short": "Burnley"
+   "home_short": "Burnley",
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "p15": [
@@ -125,9 +130,10 @@
    "est_odds": 1.63,
    "confidence": 57,
    "data_conf": 57,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Blackburn",
-   "home_short": "Burnley"
+   "home_short": "Burnley",
+   "score": "BLK 2 - 2 BUR"
   }
  ]
 }

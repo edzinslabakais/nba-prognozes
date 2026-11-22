@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "BLK 2 - 2 BUR",
    "picks": [
     {
      "category": "kopā",
@@ -28,7 +28,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BLK 2 - 2 BUR",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 3.03,
      "est_odds": 2.82,
      "confidence": 33,
-     "result": null,
+     "result": "izgāja",
+     "score": "BLK 2 - 2 BUR",
      "top": false
     }
    ]
@@ -47,11 +49,11 @@
  ],
  "summary": {
   "picks": 2,
-  "settled": 0,
-  "hits": 0,
+  "settled": 2,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.76,
+  "profit_units": 0.82
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -64,27 +66,27 @@
    "confidence": 22,
    "fair_odds": 4.65,
    "est_odds": 4.33,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "BLK 2 - 2 BUR",
    "away_short": "Blackburn",
    "home_short": "Burnley"
   }
  ],
  "crazy_summary": {
   "picks": 1,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.22,
+  "profit_units": -1
  },
  "top_summary": {
   "picks": 1,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.43,
+  "profit_units": -1
  },
  "safe_min_odds": 1.7,
  "safe": [],
@@ -110,19 +112,19 @@
    "p_market": 0.4978,
    "fair_odds": 2.01,
    "est_odds": 1.87,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Blackburn",
    "home_short": "Burnley",
-   "score": null
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "safe_all_summary": {
   "picks": 1,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.5,
+  "profit_units": -1
  },
  "robot": [
   {
@@ -138,19 +140,19 @@
    "p_market": 0.5022,
    "fair_odds": 1.64,
    "est_odds": 1.85,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Blackburn",
    "home_short": "Burnley",
-   "score": null
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "robot_summary": {
   "picks": 1,
-  "settled": 0,
-  "hits": 0,
+  "settled": 1,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.61,
+  "profit_units": 0.85
  },
  "p15": [
   {
@@ -166,18 +168,18 @@
    "p_market": 0.5707,
    "fair_odds": 1.75,
    "est_odds": 1.63,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Blackburn",
    "home_short": "Burnley",
-   "score": null
+   "score": "BLK 2 - 2 BUR"
   }
  ],
  "p15_summary": {
   "picks": 1,
-  "settled": 0,
-  "hits": 0,
+  "settled": 1,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.57,
+  "profit_units": 0.63
  }
 }
