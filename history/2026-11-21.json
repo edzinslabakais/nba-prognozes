@@ -136,7 +136,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910023",
@@ -151,7 +152,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910023",
@@ -166,7 +168,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910024",
@@ -181,7 +184,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910024",
@@ -196,7 +200,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910024",
@@ -211,7 +216,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910026",
@@ -226,7 +232,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910026",
@@ -241,7 +248,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910026",
@@ -256,7 +264,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910027",
@@ -271,7 +280,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910027",
@@ -286,7 +296,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910027",
@@ -301,7 +312,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910025",
@@ -316,7 +328,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910025",
@@ -331,7 +344,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910025",
@@ -346,7 +360,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910028",
@@ -361,7 +376,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910028",
@@ -376,7 +392,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910028",
@@ -391,7 +408,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 96 - 97 SAC"
   }
  ],
  "crazy": [
@@ -406,7 +424,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.0,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910023",
@@ -419,7 +438,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910025",
@@ -432,7 +452,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 100 - 110 DAL"
   }
  ],
  "safe": [
@@ -450,7 +471,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910025",
@@ -466,7 +488,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -482,7 +505,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 95 - 104 MIN"
   }
  ],
  "safe_all": [
@@ -500,7 +524,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910024",
@@ -516,7 +541,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910025",
@@ -532,7 +558,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -548,7 +575,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910028",
@@ -564,7 +592,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910027",
@@ -580,7 +609,8 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "NO 91 - 114 SA"
   }
  ],
  "robot": [
@@ -598,7 +628,8 @@
    "est_odds": 1.71,
    "confidence": 57,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910027",
@@ -614,7 +645,8 @@
    "est_odds": 1.71,
    "confidence": 69,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910024",
@@ -630,7 +662,8 @@
    "est_odds": 1.73,
    "confidence": 61,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910028",
@@ -646,7 +679,8 @@
    "est_odds": 1.78,
    "confidence": 60,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910026",
@@ -662,7 +696,8 @@
    "est_odds": 1.73,
    "confidence": 57,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910025",
@@ -678,7 +713,8 @@
    "est_odds": 1.79,
    "confidence": 56,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   }
  ],
  "p15": [
@@ -696,7 +732,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910024",
@@ -712,7 +749,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910027",
@@ -728,7 +766,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910025",
@@ -744,7 +783,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -760,7 +800,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910028",
@@ -776,7 +817,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 96 - 97 SAC"
   }
  ]
 }

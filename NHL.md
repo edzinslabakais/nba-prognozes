@@ -1,140 +1,140 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 21.11.2026 21:53 (Rīgas laiks)_
+_Atjaunināts 22.11.2026 07:41 (Rīgas laiks)_
 
-## Nakts uz 22.11. — 14 spēles, koef. ≥ 2.1
+## Nakts uz 22.11. — 14 spēles, koef. ≥ 2.1 — izgāja 14/36
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### EDM @ CAR · 20:00
-Robots: **CAR 53% · X 24% · EDM 24%**, vārti 3.5–2.5 · bukmeikeri: CAR 66% ar papildl., kopā 6.5
+Robots: **CAR 53% · X 24% · EDM 24%**, vārti 3.5–2.5 · bukmeikeri: CAR 66% ar papildl., kopā 6.5 · gala rezultāts: **EDM 4 - 7 CAR**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 5.5** | 44/100 | 2.11 | 2.27 | ⏳ gaida |
-| 2 | **CAR -1.5** | 38/100 | 2.47 | 2.66 | ⏳ gaida |
-| 3 | **zem 4.5** | 30/100 | 3.14 | 3.38 | ⏳ gaida |
+| 1 ★ | **zem 5.5** | 44/100 | 2.11 | 2.27 | ❌ neizgāja |
+| 2 | **CAR -1.5** | 38/100 | 2.47 | 2.66 | ✅ izgāja |
+| 3 | **zem 4.5** | 30/100 | 3.14 | 3.38 | ❌ neizgāja |
 
 Savainojumi/sastāvs: CAR: vārtsargs Pyotr Kochetkov (gaidāms) +0.06; EDM: vārtsargs Devon Levi (gaidāms) -0.01
 
 ### CHI @ CGY · 22:30
-Robots: **CGY 46% · X 25% · CHI 29%**, vārti 3.2–2.7 · bukmeikeri: CGY 59% ar papildl., kopā 5.5
+Robots: **CGY 46% · X 25% · CHI 29%**, vārti 3.2–2.7 · bukmeikeri: CGY 59% ar papildl., kopā 5.5 · gala rezultāts: **CHI 3 - 3 CGY (pamatlaikā; papildlaikā 4 - 3)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **CHI uzvar (ieskaitot papildlaiku)** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
-| 2 | **CGY virs 3.5** | 39/100 | 2.39 | 2.57 | ⏳ gaida |
-| 3 | **virs 6.5** | 36/100 | 2.57 | 2.76 | ⏳ gaida |
+| 1 ★ | **CHI uzvar (ieskaitot papildlaiku)** | 42/100 | 2.23 | 2.40 | ✅ izgāja |
+| 2 | **CGY virs 3.5** | 39/100 | 2.39 | 2.57 | ❌ neizgāja |
+| 3 | **virs 6.5** | 36/100 | 2.57 | 2.76 | ❌ neizgāja |
 
 Savainojumi/sastāvs: CGY: vārtsargs Dustin Wolf (gaidāms) -0.07; CHI: vārtsargs Spencer Knight (gaidāms) +0.02
 
 ### BUF @ FLA · 01:00
-Robots: **FLA 43% · X 25% · BUF 32%**, vārti 3.2–2.9 · bukmeikeri: FLA 56% ar papildl., kopā 6.5
+Robots: **FLA 43% · X 25% · BUF 32%**, vārti 3.2–2.9 · bukmeikeri: FLA 56% ar papildl., kopā 6.5 · gala rezultāts: **BUF 3 - 4 FLA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **zem 5.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
-| 2 ★ | **FLA uzvar** | 43/100 | 2.17 | 2.34 | ⏳ gaida |
-| 3 | **FLA virs 3.5** | 39/100 | 2.39 | 2.57 | ⏳ gaida |
+| 1 | **zem 5.5** | 43/100 | 2.15 | 2.32 | ❌ neizgāja |
+| 2 ★ | **FLA uzvar** | 43/100 | 2.17 | 2.34 | ✅ izgāja |
+| 3 | **FLA virs 3.5** | 39/100 | 2.39 | 2.57 | ✅ izgāja |
 
 Savainojumi/sastāvs: FLA: vārtsargs Jacob Markstrom (apstiprināts) +0.02; BUF: vārtsargs Alex Lyon (gaidāms) +0.09
 
 ### PIT @ NSH · 01:00
-Robots: **NSH 44% · X 25% · PIT 31%**, vārti 3.3–2.9 · bukmeikeri: NSH 55% ar papildl., kopā 6.5
+Robots: **NSH 44% · X 25% · PIT 31%**, vārti 3.3–2.9 · bukmeikeri: NSH 55% ar papildl., kopā 6.5 · gala rezultāts: **PIT 3 - 4 NSH**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **NSH uzvar** | 44/100 | 2.10 | 2.26 | ⏳ gaida |
-| 2 | **virs 6.5** | 41/100 | 2.24 | 2.41 | ⏳ gaida |
-| 3 | **NSH virs 3.5** | 41/100 | 2.25 | 2.42 | ⏳ gaida |
+| 1 ★ | **NSH uzvar** | 44/100 | 2.10 | 2.26 | ✅ izgāja |
+| 2 | **virs 6.5** | 41/100 | 2.24 | 2.41 | ✅ izgāja |
+| 3 | **NSH virs 3.5** | 41/100 | 2.25 | 2.42 | ✅ izgāja |
 
 Savainojumi/sastāvs: NSH: vārtsargs Juuse Saros (gaidāms) +0.11; PIT: vārtsargs Arturs Silovs (gaidāms) -0.08
 
 ### NJ @ STL · 02:00
-Robots: **STL 33% · X 25% · NJ 41%**, vārti 2.8–3.1 · bukmeikeri: NJ 54% ar papildl., kopā 6.5
+Robots: **STL 33% · X 25% · NJ 41%**, vārti 2.8–3.1 · bukmeikeri: NJ 54% ar papildl., kopā 6.5 · gala rezultāts: **NJ 6 - 9 STL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **NJ uzvar** | 41/100 | 2.24 | 2.41 | ⏳ gaida |
-| 2 | **NJ zem 2.5** | 40/100 | 2.32 | 2.49 | ⏳ gaida |
-| 3 | **virs 6.5** | 37/100 | 2.49 | 2.68 | ⏳ gaida |
+| 1 ★ | **NJ uzvar** | 41/100 | 2.24 | 2.41 | ❌ neizgāja |
+| 2 | **NJ zem 2.5** | 40/100 | 2.32 | 2.49 | ❌ neizgāja |
+| 3 | **virs 6.5** | 37/100 | 2.49 | 2.68 | ✅ izgāja |
 
 Savainojumi/sastāvs: STL: vārtsargs Joel Hofer (gaidāms) +0.10; NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.05
 
 ### NYI @ DET · 02:00
-Robots: **DET 32% · X 25% · NYI 43%**, vārti 2.8–3.2 · bukmeikeri: NYI 54% ar papildl., kopā 5.5
+Robots: **DET 32% · X 25% · NYI 43%**, vārti 2.8–3.2 · bukmeikeri: NYI 54% ar papildl., kopā 5.5 · gala rezultāts: **NYI 3 - 2 DET**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **DET uzvar (ieskaitot papildlaiku)** | 44/100 | 2.11 | 2.26 | ⏳ gaida |
-| 2 | **NYI zem 2.5** | 39/100 | 2.38 | 2.56 | ⏳ gaida |
-| 3 | **virs 6.5** | 37/100 | 2.50 | 2.69 | ⏳ gaida |
+| 1 ★ | **DET uzvar (ieskaitot papildlaiku)** | 44/100 | 2.11 | 2.26 | ❌ neizgāja |
+| 2 | **NYI zem 2.5** | 39/100 | 2.38 | 2.56 | ❌ neizgāja |
+| 3 | **virs 6.5** | 37/100 | 2.50 | 2.69 | ❌ neizgāja |
 
 Savainojumi/sastāvs: DET: vārtsargs John Gibson (apstiprināts) -0.23; NYI: vārtsargs Ilya Sorokin (gaidāms) +0.09
 
 ### LA @ OTT · 02:00
-Robots: **OTT 50% · X 25% · LA 25%**, vārti 3.3–2.4 · bukmeikeri: OTT 62% ar papildl., kopā 5.5
+Robots: **OTT 50% · X 25% · LA 25%**, vārti 3.3–2.4 · bukmeikeri: OTT 62% ar papildl., kopā 5.5 · gala rezultāts: **LA 2 - 4 OTT**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **LA virs 2.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **LA uzvar (ieskaitot papildlaiku)** | 38/100 | 2.47 | 2.65 | ⏳ gaida |
-| 3 | **zem 4.5** | 35/100 | 2.66 | 2.86 | ⏳ gaida |
+| 1 ★ | **LA virs 2.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
+| 2 | **LA uzvar (ieskaitot papildlaiku)** | 38/100 | 2.47 | 2.65 | ❌ neizgāja |
+| 3 | **zem 4.5** | 35/100 | 2.66 | 2.86 | ❌ neizgāja |
 
 Savainojumi/sastāvs: OTT: vārtsargs Linus Ullmark (apstiprināts) +0.27; LA: vārtsargs Anton Forsberg (apstiprināts) +0.01
 
 ### VGK @ WPG · 02:00
-Robots: **WPG 33% · X 25% · VGK 42%**, vārti 2.9–3.3 · bukmeikeri: VGK 55% ar papildl., kopā 6.5
+Robots: **WPG 33% · X 25% · VGK 42%**, vārti 2.9–3.3 · bukmeikeri: VGK 55% ar papildl., kopā 6.5 · gala rezultāts: **VGK 4 - 4 WPG (pamatlaikā; bullīšos 5 - 4)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **WPG zem 2.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **VGK uzvar** | 42/100 | 2.19 | 2.35 | ⏳ gaida |
-| 3 | **zem 5.5** | 41/100 | 2.24 | 2.41 | ⏳ gaida |
+| 1 ★ | **WPG zem 2.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
+| 2 | **VGK uzvar** | 42/100 | 2.19 | 2.35 | ❌ neizgāja |
+| 3 | **zem 5.5** | 41/100 | 2.24 | 2.41 | ❌ neizgāja |
 
 Savainojumi/sastāvs: WPG: vārtsargs Stuart Skinner (apstiprināts) -0.03; VGK: vārtsargs Adin Hill (gaidāms) +0.04
 
 ### CBJ @ TOR · 02:00
-Robots: **TOR 39% · X 25% · CBJ 36%**, vārti 3.1–3.0 · bukmeikeri: TOR 52% ar papildl., kopā 6.5
+Robots: **TOR 39% · X 25% · CBJ 36%**, vārti 3.1–3.0 · bukmeikeri: TOR 52% ar papildl., kopā 6.5 · gala rezultāts: **CBJ 4 - 3 TOR**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 5.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 2 | **CBJ zem 2.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
-| 3 | **TOR uzvar** | 39/100 | 2.39 | 2.57 | ⏳ gaida |
+| 1 ★ | **zem 5.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
+| 2 | **CBJ zem 2.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
+| 3 | **TOR uzvar** | 39/100 | 2.39 | 2.57 | ❌ neizgāja |
 
 Savainojumi/sastāvs: TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.09; CBJ: vārtsargs Cam Talbot (apstiprināts) +0.10
 
 ### WSH @ BOS · 02:00
-Robots: **BOS 43% · X 24% · WSH 32%**, vārti 3.4–3.0 · bukmeikeri: BOS 55% ar papildl., kopā 6.5
+Robots: **BOS 43% · X 24% · WSH 32%**, vārti 3.4–3.0 · bukmeikeri: BOS 55% ar papildl., kopā 6.5 · gala rezultāts: **WSH 5 - 7 BOS**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 44/100 | 2.11 | 2.26 | ⏳ gaida |
-| 2 | **BOS uzvar** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **BOS virs 3.5** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 44/100 | 2.11 | 2.26 | ✅ izgāja |
+| 2 | **BOS uzvar** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
+| 3 | **BOS virs 3.5** | 43/100 | 2.18 | 2.34 | ✅ izgāja |
 
 Savainojumi/sastāvs: BOS: vārtsargs Jeremy Swayman (apstiprināts) -0.02; WSH: vārtsargs Charlie Lindgren (apstiprināts) +0.00
 
 ### PHI @ MTL · 02:00
-Robots: **MTL 46% · X 25% · PHI 29%**, vārti 3.2–2.6 · bukmeikeri: MTL 59% ar papildl., kopā 5.5
+Robots: **MTL 46% · X 25% · PHI 29%**, vārti 3.2–2.6 · bukmeikeri: MTL 59% ar papildl., kopā 5.5 · gala rezultāts: **PHI 4 - 3 MTL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **PHI uzvar (ieskaitot papildlaiku)** | 41/100 | 2.26 | 2.43 | ⏳ gaida |
-| 2 | **MTL zem 2.5** | 39/100 | 2.38 | 2.56 | ⏳ gaida |
-| 3 | **virs 6.5** | 35/100 | 2.69 | 2.89 | ⏳ gaida |
+| 1 ★ | **PHI uzvar (ieskaitot papildlaiku)** | 41/100 | 2.26 | 2.43 | ✅ izgāja |
+| 2 | **MTL zem 2.5** | 39/100 | 2.38 | 2.56 | ❌ neizgāja |
+| 3 | **virs 6.5** | 35/100 | 2.69 | 2.89 | ✅ izgāja |
 
 Savainojumi/sastāvs: MTL: vārtsargs Jacob Fowler (apstiprināts) +0.13; PHI: vārtsargs Dan Vladar (apstiprināts) -0.02
 
 ### ANA @ UTA · 04:00
-Robots: **UTA 47% · X 23% · ANA 30%**, vārti 3.8–3.1 · bukmeikeri: UTA 60% ar papildl., kopā 6.5
+Robots: **UTA 47% · X 23% · ANA 30%**, vārti 3.8–3.1 · bukmeikeri: UTA 60% ar papildl., kopā 6.5 · gala rezultāts: **ANA 2 - 3 UTA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **ANA uzvar (ieskaitot papildlaiku)** | 41/100 | 2.26 | 2.43 | ⏳ gaida |
-| 2 ★ | **ANA zem 2.5** | 40/100 | 2.35 | 2.53 | ⏳ gaida |
-| 3 | **virs 7.5** | 38/100 | 2.46 | 2.65 | ⏳ gaida |
+| 1 | **ANA uzvar (ieskaitot papildlaiku)** | 41/100 | 2.26 | 2.43 | ❌ neizgāja |
+| 2 ★ | **ANA zem 2.5** | 40/100 | 2.35 | 2.53 | ✅ izgāja |
+| 3 | **virs 7.5** | 38/100 | 2.46 | 2.65 | ❌ neizgāja |
 
 Savainojumi/sastāvs: UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.04; ANA: vārtsargs Lukas Dostal (gaidāms) -0.10
 
@@ -166,9 +166,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| PIT@NSH | **PIT virs 2.5** | 56/100 | 1.70 | ⏳ gaida |
-| NJ@STL | **NJ uzvar (ieskaitot papildlaiku)** | 54/100 | 1.72 | ⏳ gaida |
-| EDM@CAR | **CAR uzvar** | 54/100 | 1.77 | ⏳ gaida |
+| PIT@NSH | **PIT virs 2.5** | 56/100 | 1.70 | ✅ izgāja |
+| NJ@STL | **NJ uzvar (ieskaitot papildlaiku)** | 54/100 | 1.72 | ❌ neizgāja |
+| EDM@CAR | **CAR uzvar** | 54/100 | 1.77 | ✅ izgāja |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -176,26 +176,27 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| PIT@NSH | **NSH virs 4.5** | 23/100 | 4.04 | 4.34 | ⏳ gaida |
-| NJ@STL | **NJ uzvar & virs 5.5** | 23/100 | 4.02 | 4.32 | ⏳ gaida |
-| NYI@DET | **DET zem 1.5** | 23/100 | 4.09 | 4.40 | ⏳ gaida |
+| PIT@NSH | **NSH virs 4.5** | 23/100 | 4.04 | 4.34 | ❌ neizgāja |
+| NJ@STL | **NJ uzvar & virs 5.5** | 23/100 | 4.02 | 4.32 | ❌ neizgāja |
+| NYI@DET | **DET zem 1.5** | 23/100 | 4.09 | 4.40 | ❌ neizgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 4/15, vienības -5.92
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 10/27, vienības -4.70
 
-2.1+ kopā: izgāja 12/45 (27%), robots gaidīja ~18.1, vienības -17.67
-1.7+ kopā: izgāja 5/6 (83%), robots gaidīja ~3.1, vienības +3.10
-Crazy Dazy kopā: izgāja 4/6 (67%), robots gaidīja ~1.4, vienības +10.29
+2.1+ kopā: izgāja 26/81 (32%), robots gaidīja ~32.7, vienības -21.59
+1.7+ kopā: izgāja 7/9 (78%), robots gaidīja ~4.7, vienības +3.57
+Crazy Dazy kopā: izgāja 4/9 (44%), robots gaidīja ~2.0, vienības +7.29
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 12/45 | -17.67 | 4/15 | -5.92 | 5/6 | +3.10 | 4/6 | +10.29 |
+| Novembris 2026 (18.–30.11.) | 26/81 | -21.59 | 10/27 | -4.70 | 7/9 | +3.57 | 4/9 | +7.29 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 22.11. | 14/36 | 14.5 | -3.92 |
 | 20.11. | 11/36 | 14.5 | -10.94 |
 | 19.11. | 1/9 | 3.6 | -6.73 |
 
@@ -203,6 +204,6 @@ Crazy Dazy kopā: izgāja 4/6 (67%), robots gaidīja ~1.4, vienības +10.29
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 1 | 0% | 32% |
-| 35-39 | 15 | 20% | 37% |
-| 40-44 | 29 | 31% | 42% |
+| 0-34 | 2 | 0% | 31% |
+| 35-39 | 28 | 25% | 38% |
+| 40-44 | 51 | 37% | 42% |

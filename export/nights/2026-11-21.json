@@ -21,7 +21,7 @@
     "PHI: Jaylen Brown (Out) -1.9",
     "PHI: LeBron James (spēlēja 7/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "MIL 129 - 132 PHI",
    "picks": [
     {
      "category": "starpība",
@@ -31,7 +31,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 129 - 132 PHI",
      "top": true
     },
     {
@@ -42,7 +43,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 129 - 132 PHI",
      "top": false
     },
     {
@@ -53,7 +55,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 129 - 132 PHI",
      "top": false
     }
    ]
@@ -77,7 +80,7 @@
     "NY: OG Anunoby (Day-To-Day) -0.5",
     "POR: Deni Avdija (Day-To-Day) -0.5"
    ],
-   "score": null,
+   "score": "POR 96 - 97 NY",
    "picks": [
     {
      "category": "kopā",
@@ -87,7 +90,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 96 - 97 NY",
      "top": true
     },
     {
@@ -98,7 +102,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 96 - 97 NY",
      "top": false
     },
     {
@@ -109,7 +114,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 96 - 97 NY",
      "top": false
     }
    ]
@@ -133,7 +139,7 @@
     "MEM: Javon Small (Out) -0.7",
     "MEM: Jerami Grant (Out) -0.7"
    ],
-   "score": null,
+   "score": "MEM 95 - 104 MIN",
    "picks": [
     {
      "category": "kopā",
@@ -143,7 +149,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 95 - 104 MIN",
      "top": true
     },
     {
@@ -154,7 +161,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 95 - 104 MIN",
      "top": false
     },
     {
@@ -165,7 +173,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MEM 95 - 104 MIN",
      "top": false
     }
    ]
@@ -190,7 +199,7 @@
     "NO: Trey Murphy III (Out) -0.4",
     "NO: DeAndre Jordan (spēlēja 3/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "NO 91 - 114 SA",
    "picks": [
     {
      "category": "starpība",
@@ -200,7 +209,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "NO 91 - 114 SA",
      "top": true
     },
     {
@@ -211,7 +221,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NO 91 - 114 SA",
      "top": false
     },
     {
@@ -222,7 +233,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NO 91 - 114 SA",
      "top": false
     }
    ]
@@ -245,7 +257,7 @@
     "DAL: P.J. Washington (Day-To-Day) -0.4",
     "DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "LAC 100 - 110 DAL",
    "picks": [
     {
      "category": "kopā",
@@ -255,7 +267,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "LAC 100 - 110 DAL",
      "top": true
     },
     {
@@ -266,7 +279,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "LAC 100 - 110 DAL",
      "top": false
     },
     {
@@ -277,7 +291,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 100 - 110 DAL",
      "top": false
     }
    ]
@@ -300,7 +315,7 @@
     "BOS: Jayson Tatum (Day-To-Day) -0.8",
     "BOS: Derrick White (Day-To-Day) -0.4"
    ],
-   "score": null,
+   "score": "BOS 96 - 97 SAC",
    "picks": [
     {
      "category": "starpība",
@@ -310,7 +325,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 96 - 97 SAC",
      "top": true
     },
     {
@@ -321,7 +337,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 96 - 97 SAC",
      "top": false
     },
     {
@@ -332,7 +349,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 96 - 97 SAC",
      "top": false
     }
    ]
@@ -340,11 +358,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 0,
-  "hits": 0,
+  "settled": 18,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 7.82,
+  "profit_units": -5.18
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -357,8 +375,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.0,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910023",
@@ -369,8 +387,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.03,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910025",
@@ -381,25 +399,25 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.04,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "LAC 100 - 110 DAL"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": 1.0
  },
  "top_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.62,
+  "profit_units": 0.4
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -414,8 +432,8 @@
    "p_model": 0.4787,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910025",
@@ -428,8 +446,8 @@
    "p_model": 0.5494,
    "fair_odds": 1.88,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -442,17 +460,17 @@
    "p_model": 0.5318,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "MEM 95 - 104 MIN"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": 2.23
  },
  "safe_all": [
   {
@@ -468,10 +486,10 @@
    "p_market": 0.5317,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910024",
@@ -486,10 +504,10 @@
    "p_market": 0.5336,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910025",
@@ -504,10 +522,10 @@
    "p_market": 0.5332,
    "fair_odds": 1.88,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -522,10 +540,10 @@
    "p_market": 0.5325,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910028",
@@ -540,10 +558,10 @@
    "p_market": 0.5315,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910027",
@@ -558,19 +576,19 @@
    "p_market": 0.525,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NO 91 - 114 SA"
   }
  ],
  "safe_all_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.19,
+  "profit_units": 2.75
  },
  "robot": [
   {
@@ -586,10 +604,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.75,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910027",
@@ -604,10 +622,10 @@
    "p_market": 0.5436,
    "fair_odds": 1.46,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910024",
@@ -622,10 +640,10 @@
    "p_market": 0.5381,
    "fair_odds": 1.63,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910028",
@@ -640,10 +658,10 @@
    "p_market": 0.5224,
    "fair_odds": 1.66,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 96 - 97 SAC"
   },
   {
    "game_id": "401910026",
@@ -658,10 +676,10 @@
    "p_market": 0.5374,
    "fair_odds": 1.76,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910025",
@@ -676,19 +694,19 @@
    "p_market": 0.519,
    "fair_odds": 1.78,
    "est_odds": 1.79,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 100 - 110 DAL"
   }
  ],
  "robot_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.6,
+  "profit_units": -0.77
  },
  "p15": [
   {
@@ -704,10 +722,10 @@
    "p_market": 0.6174,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 129 - 132 PHI"
   },
   {
    "game_id": "401910024",
@@ -722,10 +740,10 @@
    "p_market": 0.6195,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 96 - 97 NY"
   },
   {
    "game_id": "401910027",
@@ -740,10 +758,10 @@
    "p_market": 0.6176,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NO 91 - 114 SA"
   },
   {
    "game_id": "401910025",
@@ -758,10 +776,10 @@
    "p_market": 0.6187,
    "fair_odds": 1.62,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 100 - 110 DAL"
   },
   {
    "game_id": "401910026",
@@ -776,10 +794,10 @@
    "p_market": 0.6184,
    "fair_odds": 1.62,
    "est_odds": 1.5,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 95 - 104 MIN"
   },
   {
    "game_id": "401910028",
@@ -794,18 +812,18 @@
    "p_market": 0.6192,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 96 - 97 SAC"
   }
  ],
  "p15_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.71,
+  "profit_units": -1.49
  }
 }
