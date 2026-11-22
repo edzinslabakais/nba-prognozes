@@ -1,6 +1,6 @@
 # 🏀 EuroLeague prognozes
 
-_Atjaunināts 22.11.2026 07:41 (Rīgas laiks)_
+_Atjaunināts 22.11.2026 08:02 (Rīgas laiks)_
 
 ## Spēles 20.11. — 4 spēles, koef. ≥ 2.1 — izgāja 7/12
 

@@ -717,7 +717,7 @@
     "VAN: vārtsargs Leevi Merilainen (apstiprināts) +0.03",
     "MIN: vārtsargs Jesper Wallstedt (apstiprināts) +0.04"
    ],
-   "score": null,
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)",
    "picks": [
     {
      "category": "kopā",
@@ -727,8 +727,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)",
      "top": false
     },
     {
@@ -739,8 +739,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)",
      "top": true
     },
     {
@@ -751,8 +751,8 @@
      "fair_odds": 2.96,
      "est_odds": 2.76,
      "confidence": 34,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)",
      "top": false
     }
    ]
@@ -775,7 +775,7 @@
     "SJ: vārtsargs Alex Nedeljkovic (apstiprināts) +0.06",
     "SEA: vārtsargs Philipp Grubauer (gaidāms) +0.04"
    ],
-   "score": null,
+   "score": "SEA 3 - 4 SJ",
    "picks": [
     {
      "category": "kopā",
@@ -785,8 +785,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SEA 3 - 4 SJ",
      "top": true
     },
     {
@@ -797,8 +797,8 @@
      "fair_odds": 2.48,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "SEA 3 - 4 SJ",
      "top": false
     },
     {
@@ -809,8 +809,8 @@
      "fair_odds": 2.61,
      "est_odds": 2.43,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SEA 3 - 4 SJ",
      "top": false
     }
    ]
@@ -818,11 +818,11 @@
  ],
  "summary": {
   "picks": 42,
-  "settled": 36,
-  "hits": 14,
+  "settled": 42,
+  "hits": 17,
   "pushes": 0,
-  "expected_hits": 14.53,
-  "profit_units": -3.92
+  "expected_hits": 16.9,
+  "profit_units": -3.03
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -873,11 +873,11 @@
  },
  "top_summary": {
   "picks": 14,
-  "settled": 12,
-  "hits": 6,
+  "settled": 14,
+  "hits": 8,
   "pushes": 0,
-  "expected_hits": 5.14,
-  "profit_units": 1.22
+  "expected_hits": 5.98,
+  "profit_units": 3.68
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -1054,10 +1054,10 @@
    "p_market": 0.5322,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892759",
@@ -1090,10 +1090,10 @@
    "p_market": 0.5174,
    "fair_odds": 1.97,
    "est_odds": 1.83,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892761",
@@ -1188,11 +1188,11 @@
  ],
  "safe_all_summary": {
   "picks": 14,
-  "settled": 12,
-  "hits": 7,
+  "settled": 14,
+  "hits": 9,
   "pushes": 0,
-  "expected_hits": 5.99,
-  "profit_units": 0.97
+  "expected_hits": 7.02,
+  "profit_units": 2.56
  },
  "robot": [
   {
@@ -1352,10 +1352,10 @@
    "p_market": 0.5287,
    "fair_odds": 1.85,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892767",
@@ -1370,10 +1370,10 @@
    "p_market": 0.4826,
    "fair_odds": 1.88,
    "est_odds": 1.93,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892759",
@@ -1450,11 +1450,11 @@
  ],
  "robot_summary": {
   "picks": 14,
-  "settled": 12,
+  "settled": 14,
   "hits": 5,
   "pushes": 0,
-  "expected_hits": 6.49,
-  "profit_units": -2.95
+  "expected_hits": 7.56,
+  "profit_units": -4.95
  },
  "p15": [
   {
@@ -1686,10 +1686,10 @@
    "p_market": 0.6159,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892766",
@@ -1704,18 +1704,18 @@
    "p_market": 0.6143,
    "fair_odds": 1.63,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   }
  ],
  "p15_summary": {
   "picks": 14,
-  "settled": 12,
+  "settled": 14,
   "hits": 7,
   "pushes": 0,
-  "expected_hits": 7.26,
-  "profit_units": -1.23
+  "expected_hits": 8.49,
+  "profit_units": -3.23
  }
 }

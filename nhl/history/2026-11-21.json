@@ -860,7 +860,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892766",
@@ -875,7 +876,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892766",
@@ -890,7 +892,8 @@
    "fair_odds": 2.96,
    "est_odds": 2.76,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892767",
@@ -905,7 +908,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892767",
@@ -920,7 +924,8 @@
    "fair_odds": 2.48,
    "est_odds": 2.31,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892767",
@@ -935,7 +940,8 @@
    "fair_odds": 2.61,
    "est_odds": 2.43,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "SEA 3 - 4 SJ"
   }
  ],
  "crazy": [
@@ -1152,7 +1158,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892759",
@@ -1185,7 +1192,8 @@
    "est_odds": 1.83,
    "confidence": 51,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892761",
@@ -1424,7 +1432,8 @@
    "est_odds": 1.76,
    "confidence": 54,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   },
   {
    "game_id": "401892767",
@@ -1440,7 +1449,8 @@
    "est_odds": 1.93,
    "confidence": 53,
    "data_conf": 48,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892759",
@@ -1730,7 +1740,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 3 - 4 SJ"
   },
   {
    "game_id": "401892766",
@@ -1746,7 +1757,8 @@
    "est_odds": 1.51,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)"
   }
  ]
 }

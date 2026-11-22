@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 22.11.2026 07:41 (Rīgas laiks)_
+_Atjaunināts 22.11.2026 08:02 (Rīgas laiks)_
 
-## Nakts uz 22.11. — 14 spēles, koef. ≥ 2.1 — izgāja 14/36
+## Nakts uz 22.11. — 14 spēles, koef. ≥ 2.1 — izgāja 17/42
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -139,24 +139,24 @@ Robots: **UTA 47% · X 23% · ANA 30%**, vārti 3.8–3.1 · bukmeikeri: UTA 60%
 Savainojumi/sastāvs: UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.04; ANA: vārtsargs Lukas Dostal (gaidāms) -0.10
 
 ### MIN @ VAN · 05:00
-Robots: **VAN 17% · X 21% · MIN 62%**, vārti 2.3–4.0 · bukmeikeri: MIN 72% ar papildl., kopā 6.5
+Robots: **VAN 17% · X 21% · MIN 62%**, vārti 2.3–4.0 · bukmeikeri: MIN 72% ar papildl., kopā 6.5 · gala rezultāts: **MIN 3 - 3 VAN (pamatlaikā; bullīšos 3 - 4)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **virs 6.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
-| 2 ★ | **VAN virs 2.5** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
-| 3 | **MIN virs 4.5** | 34/100 | 2.76 | 2.96 | ⏳ gaida |
+| 1 | **virs 6.5** | 42/100 | 2.22 | 2.39 | ❌ neizgāja |
+| 2 ★ | **VAN virs 2.5** | 42/100 | 2.23 | 2.40 | ✅ izgāja |
+| 3 | **MIN virs 4.5** | 34/100 | 2.76 | 2.96 | ❌ neizgāja |
 
 Savainojumi/sastāvs: VAN: vārtsargs Leevi Merilainen (apstiprināts) +0.03; MIN: vārtsargs Jesper Wallstedt (apstiprināts) +0.04
 
 ### SEA @ SJ · 05:00
-Robots: **SJ 38% · X 25% · SEA 37%**, vārti 3.1–3.1 · bukmeikeri: SJ 52% ar papildl., kopā 6.5
+Robots: **SJ 38% · X 25% · SEA 37%**, vārti 3.1–3.1 · bukmeikeri: SJ 52% ar papildl., kopā 6.5 · gala rezultāts: **SEA 3 - 4 SJ**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
-| 2 | **SEA zem 2.5** | 40/100 | 2.31 | 2.48 | ⏳ gaida |
-| 3 | **SJ uzvar** | 38/100 | 2.43 | 2.61 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 42/100 | 2.23 | 2.40 | ✅ izgāja |
+| 2 | **SEA zem 2.5** | 40/100 | 2.31 | 2.48 | ❌ neizgāja |
+| 3 | **SJ uzvar** | 38/100 | 2.43 | 2.61 | ✅ izgāja |
 
 Savainojumi/sastāvs: SJ: vārtsargs Alex Nedeljkovic (apstiprināts) +0.06; SEA: vārtsargs Philipp Grubauer (gaidāms) +0.04
 
@@ -182,9 +182,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 10/27, vienības -4.70
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 12/29, vienības -2.24
 
-2.1+ kopā: izgāja 26/81 (32%), robots gaidīja ~32.7, vienības -21.59
+2.1+ kopā: izgāja 29/87 (33%), robots gaidīja ~35.0, vienības -20.70
 1.7+ kopā: izgāja 7/9 (78%), robots gaidīja ~4.7, vienības +3.57
 Crazy Dazy kopā: izgāja 4/9 (44%), robots gaidīja ~2.0, vienības +7.29
 
@@ -192,11 +192,11 @@ Crazy Dazy kopā: izgāja 4/9 (44%), robots gaidīja ~2.0, vienības +7.29
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 26/81 | -21.59 | 10/27 | -4.70 | 7/9 | +3.57 | 4/9 | +7.29 |
+| Novembris 2026 (18.–30.11.) | 29/87 | -20.70 | 12/29 | -2.24 | 7/9 | +3.57 | 4/9 | +7.29 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 22.11. | 14/36 | 14.5 | -3.92 |
+| 22.11. | 17/42 | 16.9 | -3.03 |
 | 20.11. | 11/36 | 14.5 | -10.94 |
 | 19.11. | 1/9 | 3.6 | -6.73 |
 
@@ -204,6 +204,6 @@ Crazy Dazy kopā: izgāja 4/9 (44%), robots gaidīja ~2.0, vienības +7.29
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 2 | 0% | 31% |
-| 35-39 | 28 | 25% | 38% |
-| 40-44 | 51 | 37% | 42% |
+| 0-34 | 3 | 0% | 32% |
+| 35-39 | 29 | 28% | 38% |
+| 40-44 | 55 | 38% | 42% |
