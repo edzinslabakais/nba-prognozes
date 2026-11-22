@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-22",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-22T10:59+00:00",
+ "games": {
+  "401880159": {
+   "game_id": "401880159",
+   "away": "BLK",
+   "home": "BUR",
+   "away_name": "Blackburn Rovers",
+   "home_name": "Burnley",
+   "away_short": "Blackburn",
+   "home_short": "Burnley",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "robot_line": "BUR 50% · X 25% · BLK 25%",
+   "robot_total": "vārti 1.7–1.2",
+   "market_line": "—",
+   "market_total": "kopā 2.5",
+   "injuries": []
+  }
+ },
+ "picks": [
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "kopā",
+   "bet": "abas komandas negūst vārtus",
+   "p": 0.4293357073242139,
+   "p_model": 0.4293,
+   "p_market": 0.4293,
+   "data_score": 0.4293,
+   "fair_odds": 2.33,
+   "est_odds": 2.17,
+   "confidence": 43,
+   "result": null
+  },
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "kopā",
+   "bet": "virs 3.5",
+   "p": 0.3296169571490469,
+   "p_model": 0.3296,
+   "p_market": 0.3296,
+   "data_score": 0.3296,
+   "fair_odds": 3.03,
+   "est_odds": 2.82,
+   "confidence": 33,
+   "result": null
+  }
+ ],
+ "crazy": [
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "kopā",
+   "bet": "zem 1.5",
+   "p": 0.21500981462020965,
+   "fair_odds": 4.65,
+   "est_odds": 4.33,
+   "confidence": 22,
+   "result": null
+  }
+ ],
+ "safe": [],
+ "safe_all": [
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "BUR uzvar",
+   "p": 0.4978005924273666,
+   "p_model": 0.4978,
+   "p_market": 0.4978,
+   "fair_odds": 2.01,
+   "est_odds": 1.87,
+   "confidence": 50,
+   "data_conf": 50,
+   "result": null,
+   "away_short": "Blackburn",
+   "home_short": "Burnley"
+  }
+ ],
+ "robot": [
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "BLK vai neizšķirts",
+   "p": 0.6113070808860595,
+   "p_model": 0.6113,
+   "p_market": 0.5022,
+   "fair_odds": 1.64,
+   "est_odds": 1.85,
+   "confidence": 61,
+   "data_conf": 50,
+   "result": null,
+   "away_short": "Blackburn",
+   "home_short": "Burnley"
+  }
+ ],
+ "p15": [
+  {
+   "game_id": "401880159",
+   "game": "BLK@BUR",
+   "start_utc": "2026-11-22 12:00:00+00:00",
+   "riga_time": "22.11 14:00",
+   "category": "kopā",
+   "bet": "abas komandas gūst vārtus",
+   "p": 0.5706642926757863,
+   "p_model": 0.6293,
+   "p_market": 0.5707,
+   "fair_odds": 1.75,
+   "est_odds": 1.63,
+   "confidence": 57,
+   "data_conf": 57,
+   "result": null,
+   "away_short": "Blackburn",
+   "home_short": "Burnley"
+  }
+ ]
+}
