@@ -94,7 +94,8 @@
    "fair_odds": 2.37,
    "est_odds": 2.2,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892769",
@@ -109,7 +110,8 @@
    "fair_odds": 2.56,
    "est_odds": 2.38,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892769",
@@ -124,7 +126,8 @@
    "fair_odds": 3.42,
    "est_odds": 3.18,
    "confidence": 29,
-   "result": null
+   "result": "izgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892770",
@@ -139,7 +142,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892770",
@@ -154,7 +158,8 @@
    "fair_odds": 2.52,
    "est_odds": 2.35,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892770",
@@ -169,7 +174,8 @@
    "fair_odds": 2.63,
    "est_odds": 2.45,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892771",
@@ -184,7 +190,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892771",
@@ -199,7 +206,8 @@
    "fair_odds": 2.53,
    "est_odds": 2.35,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892771",
@@ -214,7 +222,8 @@
    "fair_odds": 3.39,
    "est_odds": 3.15,
    "confidence": 30,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892772",
@@ -229,7 +238,8 @@
    "fair_odds": 2.37,
    "est_odds": 2.2,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 6 - 3 VAN"
   },
   {
    "game_id": "401892772",
@@ -244,7 +254,8 @@
    "fair_odds": 2.51,
    "est_odds": 2.34,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 6 - 3 VAN"
   },
   {
    "game_id": "401892772",
@@ -259,7 +270,8 @@
    "fair_odds": 2.62,
    "est_odds": 2.44,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 6 - 3 VAN"
   }
  ],
  "crazy": [
@@ -274,7 +286,8 @@
    "fair_odds": 4.38,
    "est_odds": 4.07,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 6 - 3 VAN"
   },
   {
    "game_id": "401892771",
@@ -287,7 +300,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892769",
@@ -300,7 +314,8 @@
    "fair_odds": 4.37,
    "est_odds": 4.06,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "BUF 6 - 2 TB"
   }
  ],
  "safe": [
@@ -318,7 +333,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892769",
@@ -334,7 +350,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892770",
@@ -350,7 +367,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   }
  ],
  "safe_all": [
@@ -368,7 +386,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892769",
@@ -384,7 +403,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892770",
@@ -400,7 +420,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892772",
@@ -416,7 +437,8 @@
    "est_odds": 1.84,
    "confidence": 51,
    "data_conf": 51,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 6 - 3 VAN"
   }
  ],
  "robot": [
@@ -434,7 +456,8 @@
    "est_odds": 1.75,
    "confidence": 57,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892769",
@@ -450,7 +473,8 @@
    "est_odds": 1.8,
    "confidence": 53,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892770",
@@ -466,7 +490,8 @@
    "est_odds": 1.99,
    "confidence": 52,
    "data_conf": 47,
-   "result": null
+   "result": "neizgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892772",
@@ -482,7 +507,8 @@
    "est_odds": 1.9,
    "confidence": 52,
    "data_conf": 49,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 6 - 3 VAN"
   }
  ],
  "p15": [
@@ -500,7 +526,8 @@
    "est_odds": 1.54,
    "confidence": 60,
    "data_conf": 60,
-   "result": null
+   "result": "izgāja",
+   "score": "BUF 6 - 2 TB"
   },
   {
    "game_id": "401892771",
@@ -516,7 +543,8 @@
    "est_odds": 1.52,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 0 - 1 DAL"
   },
   {
    "game_id": "401892770",
@@ -532,7 +560,8 @@
    "est_odds": 1.56,
    "confidence": 59,
    "data_conf": 59,
-   "result": null
+   "result": "izgāja",
+   "score": "EDM 4 - 4 STL (pamatlaikā; bullīšos 4 - 5)"
   },
   {
    "game_id": "401892772",
@@ -548,7 +577,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 6 - 3 VAN"
   }
  ]
 }
