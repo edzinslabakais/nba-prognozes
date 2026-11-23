@@ -1,46 +1,64 @@
 # 🏀 EuroLeague prognozes
 
-_Atjaunināts 23.11.2026 09:57 (Rīgas laiks)_
+_Atjaunināts 23.11.2026 13:18 (Rīgas laiks)_
 
-## Spēles 20.11. — 4 spēles, koef. ≥ 2.1 — izgāja 7/12
+## Spēles 24.11. — 6 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
-### ASV @ IST · 19:30
-Robots: **IST -7.2**, kopā 171.9 · gala rezultāts: **ASV 81 - 107 IST**
+### PRS @ BES · 19:00
+Robots: **BES -2.9**, kopā 184.2
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **IST virs 90.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **virs 173.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
-| 3 | **IST -9.5** | 42/100 | 2.24 | 2.41 | ✅ izgāja |
+| 1 ★ | **PRS virs 91.5** | 44/100 | 2.11 | 2.26 | ⏳ gaida |
+| 2 | **virs 185.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
+| 3 | **BES -4.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
 
-### MAD @ OLY · 21:15
-Robots: **OLY -4.2**, kopā 178.0 · gala rezultāts: **MAD 76 - 92 OLY**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **virs 179.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 2 | **MAD zem 84.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
-| 3 | **OLY -6.5** | 41/100 | 2.24 | 2.41 | ✅ izgāja |
-
-### RED @ BAR · 21:30
-Robots: **BAR -2.7**, kopā 167.4 · gala rezultāts: **RED 85 - 85 BAR (pamatlaikā; ar papildlaiku 103 - 100)**
+### VIR @ RED · 20:00
+Robots: **RED -9.0**, kopā 171.7
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 163.5** | 44/100 | 2.12 | 2.28 | ❌ neizgāja |
-| 2 | **BAR -4.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
-| 3 | **RED virs 83.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
+| 1 ★ | **zem 167.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 2 | **VIR virs 82.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 3 | **VIR +6.5** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
 
-### BES @ PAR · 21:45
-Robots: **PAR -3.0**, kopā 164.0 · gala rezultāts: **BES 77 - 77 PAR (pamatlaikā; ar papildlaiku 87 - 91)**
+### TEL @ MUN · 21:00
+Robots: **MUN -4.1**, kopā 182.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **PAR virs 84.5** | 44/100 | 2.13 | 2.30 | ❌ neizgāja |
-| 2 | **virs 165.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 3 | **BES +0.5** | 42/100 | 2.23 | 2.40 | ✅ izgāja |
+| 1 ★ | **zem 178.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **MUN virs 94.5** | 43/100 | 2.18 | 2.35 | ⏳ gaida |
+| 3 | **TEL +1.5** | 41/100 | 2.24 | 2.41 | ⏳ gaida |
+
+### PAN @ PAM · 21:30
+Robots: **PAM -4.6**, kopā 173.5
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **zem 169.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **PAN virs 85.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **PAN +2.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+
+### MIL @ ASV · 21:45
+Robots: **MIL -1.0**, kopā 175.2
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **ASV -0.5** | 44/100 | 2.11 | 2.26 | ⏳ gaida |
+| 2 | **virs 176.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
+| 3 | **ASV zem 84.5** | 42/100 | 2.19 | 2.36 | ⏳ gaida |
+
+### ULK @ BAR · 22:00
+Robots: **BAR -1.4**, kopā 165.6
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **zem 161.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **BAR virs 84.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **ULK -0.5** | 43/100 | 2.17 | 2.33 | ⏳ gaida |
 
 ## 🛡 1.7+ — koef. ≥ 1.7
 
@@ -48,9 +66,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| RED@BAR | **zem 167.5** | 53/100 | 1.75 | ❌ neizgāja |
-| MAD@OLY | **virs 175.5** | 53/100 | 1.76 | ❌ neizgāja |
-| ASV@IST | **IST zem 89.5** | 53/100 | 1.77 | ❌ neizgāja |
+| TEL@MUN | **zem 182.5** | 53/100 | 1.75 | ⏳ gaida |
+| PAN@PAM | **PAN zem 84.5** | 53/100 | 1.76 | ⏳ gaida |
+| ULK@BAR | **BAR zem 83.5** | 53/100 | 1.77 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -58,9 +76,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| RED@BAR | **RED -5.5** | 23/100 | 4.03 | 4.33 | ❌ neizgāja |
-| ASV@IST | **IST -15.5** | 23/100 | 4.08 | 4.38 | ✅ izgāja |
-| MAD@OLY | **OLY -12.5** | 23/100 | 4.08 | 4.39 | ✅ izgāja |
+| VIR@RED | **VIR +0.5** | 23/100 | 4.03 | 4.33 | ⏳ gaida |
+| PRS@BES | **PRS virs 97.5** | 23/100 | 4.03 | 4.34 | ⏳ gaida |
+| MIL@ASV | **virs 186.5** | 23/100 | 4.06 | 4.37 | ⏳ gaida |
 
 ## Statistika
 
