@@ -1,6 +1,6 @@
 # ⚽ Championship prognozes
 
-_Atjaunināts 23.11.2026 06:16 (Rīgas laiks)_
+_Atjaunināts 23.11.2026 07:48 (Rīgas laiks)_
 
 ## Spēles 22.11. — 1 spēles, koef. ≥ 2.1 — izgāja 1/2
 
