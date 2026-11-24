@@ -181,5 +181,14 @@
   "pushes": 0,
   "expected_hits": 0.57,
   "profit_units": 0.63
+ },
+ "extra": [],
+ "extra_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
  }
 }

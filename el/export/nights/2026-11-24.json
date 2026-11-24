@@ -1,7 +1,7 @@
 {
  "date": "2026-11-24",
  "min_odds": 2.1,
- "generated_at": "2026-11-23T11:18+00:00",
+ "generated_at": "2026-11-24T11:09+00:00",
  "games": [
   {
    "game_id": "E2026_132",
@@ -682,6 +682,15 @@
  },
  "p15": [],
  "p15_summary": {
+  "picks": 0,
+  "settled": 0,
+  "hits": 0,
+  "pushes": 0,
+  "expected_hits": 0,
+  "profit_units": 0
+ },
+ "extra": [],
+ "extra_summary": {
   "picks": 0,
   "settled": 0,
   "hits": 0,
