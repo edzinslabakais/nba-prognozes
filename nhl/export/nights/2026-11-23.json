@@ -21,7 +21,7 @@
     "NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.04",
     "CBJ: vārtsargs Cam Talbot (apstiprināts) +0.08"
    ],
-   "score": null,
+   "score": "CBJ 2 - 3 NJ",
    "picks": [
     {
      "category": "kopā",
@@ -31,7 +31,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "CBJ 2 - 3 NJ",
      "top": true
     },
     {
@@ -42,7 +43,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CBJ 2 - 3 NJ",
      "top": false
     },
     {
@@ -53,7 +55,8 @@
      "fair_odds": 2.72,
      "est_odds": 2.53,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CBJ 2 - 3 NJ",
      "top": false
     }
    ]
@@ -76,7 +79,7 @@
     "MTL: vārtsargs Jakub Dobes (apstiprināts) -0.28",
     "LA: vārtsargs Darcy Kuemper (gaidāms) +0.00"
    ],
-   "score": null,
+   "score": "LA 2 - 1 MTL",
    "picks": [
     {
      "category": "kopā",
@@ -86,7 +89,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "LA 2 - 1 MTL",
      "top": true
     },
     {
@@ -97,7 +101,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "LA 2 - 1 MTL",
      "top": false
     },
     {
@@ -108,7 +113,8 @@
      "fair_odds": 2.52,
      "est_odds": 2.34,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LA 2 - 1 MTL",
      "top": false
     }
    ]
@@ -131,7 +137,7 @@
     "OTT: vārtsargs Linus Ullmark (apstiprināts) +0.24",
     "CGY: vārtsargs Devin Cooley (apstiprināts) +0.15"
    ],
-   "score": null,
+   "score": "CGY 1 - 2 OTT",
    "picks": [
     {
      "category": "komandas vārti",
@@ -141,7 +147,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CGY 1 - 2 OTT",
      "top": true
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.43,
      "est_odds": 2.26,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CGY 1 - 2 OTT",
      "top": false
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 2.93,
      "est_odds": 2.72,
      "confidence": 34,
-     "result": null,
+     "result": "izgāja",
+     "score": "CGY 1 - 2 OTT",
      "top": false
     }
    ]
@@ -186,7 +195,7 @@
     "NYI: vārtsargs Ilya Sorokin (apstiprināts) +0.07",
     "TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.07"
    ],
-   "score": null,
+   "score": "TOR 4 - 2 NYI",
    "picks": [
     {
      "category": "komandas vārti",
@@ -196,7 +205,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "TOR 4 - 2 NYI",
      "top": true
     },
     {
@@ -207,7 +217,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.21,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "TOR 4 - 2 NYI",
      "top": false
     },
     {
@@ -218,7 +229,8 @@
      "fair_odds": 2.48,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null,
+     "result": "izgāja",
+     "score": "TOR 4 - 2 NYI",
      "top": false
     }
    ]
@@ -241,7 +253,7 @@
     "WPG: vārtsargs Stuart Skinner (apstiprināts) -0.02",
     "UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.06"
    ],
-   "score": null,
+   "score": "UTA 2 - 4 WPG",
    "picks": [
     {
      "category": "kopā",
@@ -251,7 +263,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTA 2 - 4 WPG",
      "top": true
     },
     {
@@ -262,7 +275,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTA 2 - 4 WPG",
      "top": false
     },
     {
@@ -273,7 +287,8 @@
      "fair_odds": 2.62,
      "est_odds": 2.44,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTA 2 - 4 WPG",
      "top": false
     }
    ]
@@ -307,6 +322,7 @@
      "est_odds": 2.13,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -318,6 +334,7 @@
      "est_odds": 2.36,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -329,6 +346,7 @@
      "est_odds": 2.58,
      "confidence": 36,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -362,6 +380,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -373,6 +392,7 @@
      "est_odds": 2.38,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -384,6 +404,7 @@
      "est_odds": 2.86,
      "confidence": 33,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -391,11 +412,11 @@
  ],
  "summary": {
   "picks": 21,
-  "settled": 0,
-  "hits": 0,
+  "settled": 15,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 6.17,
+  "profit_units": -3.59
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -432,25 +453,25 @@
    "confidence": 23,
    "fair_odds": 4.38,
    "est_odds": 4.07,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "LA 2 - 1 MTL"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.23,
+  "profit_units": -1
  },
  "top_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 5,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.18,
+  "profit_units": -0.79
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -465,8 +486,8 @@
    "p_model": 0.5137,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "TOR 4 - 2 NYI"
   },
   {
    "game_id": "401892773",
@@ -479,8 +500,8 @@
    "p_model": 0.4613,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "CBJ 2 - 3 NJ"
   },
   {
    "game_id": "401892774",
@@ -493,17 +514,17 @@
    "p_model": 0.53,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "LA 2 - 1 MTL"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.57,
+  "profit_units": 0.56
  },
  "safe_all": [
   {
@@ -519,10 +540,10 @@
    "p_market": 0.5364,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "TOR 4 - 2 NYI"
   },
   {
    "game_id": "401892773",
@@ -537,10 +558,10 @@
    "p_market": 0.5268,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CBJ 2 - 3 NJ"
   },
   {
    "game_id": "401892774",
@@ -555,10 +576,10 @@
    "p_market": 0.5231,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LA 2 - 1 MTL"
   },
   {
    "game_id": "401892778",
@@ -591,10 +612,10 @@
    "p_market": 0.5217,
    "fair_odds": 1.97,
    "est_odds": 1.83,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 1 - 2 OTT"
   },
   {
    "game_id": "401892779",
@@ -627,19 +648,19 @@
    "p_market": 0.4957,
    "fair_odds": 2.02,
    "est_odds": 1.88,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTA 2 - 4 WPG"
   }
  ],
  "safe_all_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 5,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.57,
+  "profit_units": 0.44
  },
  "robot": [
   {
@@ -655,10 +676,10 @@
    "p_market": 0.5436,
    "fair_odds": 1.58,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 1 - 2 OTT"
   },
   {
    "game_id": "401892778",
@@ -709,10 +730,10 @@
    "p_market": 0.46,
    "fair_odds": 1.88,
    "est_odds": 2.02,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CBJ 2 - 3 NJ"
   },
   {
    "game_id": "401892774",
@@ -727,10 +748,10 @@
    "p_market": 0.5231,
    "fair_odds": 1.89,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LA 2 - 1 MTL"
   },
   {
    "game_id": "401892776",
@@ -745,10 +766,10 @@
    "p_market": 0.5364,
    "fair_odds": 1.95,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "TOR 4 - 2 NYI"
   },
   {
    "game_id": "401892777",
@@ -763,19 +784,19 @@
    "p_market": 0.5043,
    "fair_odds": 1.96,
    "est_odds": 1.84,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTA 2 - 4 WPG"
   }
  ],
  "robot_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 5,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.72,
+  "profit_units": -1.56
  },
  "p15": [
   {
@@ -791,10 +812,10 @@
    "p_market": 0.5559,
    "fair_odds": 1.8,
    "est_odds": 1.67,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CBJ 2 - 3 NJ"
   },
   {
    "game_id": "401892774",
@@ -809,10 +830,10 @@
    "p_market": 0.607,
    "fair_odds": 1.65,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LA 2 - 1 MTL"
   },
   {
    "game_id": "401892777",
@@ -827,10 +848,10 @@
    "p_market": 0.6018,
    "fair_odds": 1.66,
    "est_odds": 1.55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTA 2 - 4 WPG"
   },
   {
    "game_id": "401892775",
@@ -845,10 +866,10 @@
    "p_market": 0.6048,
    "fair_odds": 1.65,
    "est_odds": 1.54,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 1 - 2 OTT"
   },
   {
    "game_id": "401892776",
@@ -863,10 +884,10 @@
    "p_market": 0.5961,
    "fair_odds": 1.68,
    "est_odds": 1.56,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "TOR 4 - 2 NYI"
   },
   {
    "game_id": "401892778",
@@ -907,10 +928,10 @@
  ],
  "p15_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 5,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.97,
+  "profit_units": 1.3
  }
 }

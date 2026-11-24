@@ -23,7 +23,7 @@
     "MEM: Jerami Grant (Out) -0.6",
     "MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0"
    ],
-   "score": null,
+   "score": "MEM 117 - 111 CHA",
    "picks": [
     {
      "category": "kopā",
@@ -33,7 +33,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 117 - 111 CHA",
      "top": true
     },
     {
@@ -44,7 +45,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MEM 117 - 111 CHA",
      "top": false
     },
     {
@@ -55,7 +57,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MEM 117 - 111 CHA",
      "top": false
     }
    ]
@@ -80,7 +83,7 @@
     "PHI: Dominick Barlow (spēlēja 1/10 pēdējās) +0.5",
     "POR: Deni Avdija (spēlēja 8/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "POR 128 - 111 PHI",
    "picks": [
     {
      "category": "kopā",
@@ -90,7 +93,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "POR 128 - 111 PHI",
      "top": true
     },
     {
@@ -101,7 +105,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "POR 128 - 111 PHI",
      "top": false
     },
     {
@@ -112,7 +117,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "POR 128 - 111 PHI",
      "top": false
     }
    ]
@@ -138,7 +144,7 @@
     "OKC: Aday Mara (Out) -1.1",
     "OKC: Alex Caruso (Out) -0.7"
    ],
-   "score": null,
+   "score": "OKC 120 - 125 IND",
    "picks": [
     {
      "category": "kopā",
@@ -148,7 +154,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "OKC 120 - 125 IND",
      "top": true
     },
     {
@@ -159,7 +166,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "OKC 120 - 125 IND",
      "top": false
     },
     {
@@ -170,7 +178,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "OKC 120 - 125 IND",
      "top": false
     }
    ]
@@ -193,7 +202,7 @@
     "TOR: RJ Barrett (Out) -1.4",
     "TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.1"
    ],
-   "score": null,
+   "score": "MIL 116 - 111 TOR",
    "picks": [
     {
      "category": "starpība",
@@ -203,7 +212,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 116 - 111 TOR",
      "top": true
     },
     {
@@ -214,7 +224,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 116 - 111 TOR",
      "top": false
     },
     {
@@ -225,7 +236,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 116 - 111 TOR",
      "top": false
     }
    ]
@@ -247,7 +259,7 @@
    "injuries": [
     "BKN: Nolan Traore (Out) -1.0"
    ],
-   "score": null,
+   "score": "BKN 116 - 142 MIN",
    "picks": [
     {
      "category": "starpība",
@@ -257,7 +269,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "BKN 116 - 142 MIN",
      "top": true
     },
     {
@@ -268,7 +281,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "BKN 116 - 142 MIN",
      "top": false
     },
     {
@@ -279,7 +293,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BKN 116 - 142 MIN",
      "top": false
     }
    ]
@@ -304,7 +319,7 @@
     "NO: Yves Missi (spēlēja 5/10 pēdējās) +0.4",
     "PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)",
    "picks": [
     {
      "category": "kopā",
@@ -314,7 +329,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)",
      "top": true
     },
     {
@@ -325,7 +341,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)",
      "top": false
     },
     {
@@ -336,7 +353,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)",
      "top": false
     }
    ]
@@ -361,7 +379,7 @@
     "CLE: Evan Mobley (Out) -1.0",
     "CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "CLE 108 - 122 CHI",
    "picks": [
     {
      "category": "kopā",
@@ -371,7 +389,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CLE 108 - 122 CHI",
      "top": true
     },
     {
@@ -382,7 +401,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CLE 108 - 122 CHI",
      "top": false
     },
     {
@@ -393,7 +413,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "CLE 108 - 122 CHI",
      "top": false
     }
    ]
@@ -415,7 +436,7 @@
    "injuries": [
     "HOU: Clint Capela (jauns komandā / atgriežas) +0.5"
    ],
-   "score": null,
+   "score": "LAC 104 - 116 HOU",
    "picks": [
     {
      "category": "starpība",
@@ -425,7 +446,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 104 - 116 HOU",
      "top": true
     },
     {
@@ -436,7 +458,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 104 - 116 HOU",
      "top": false
     },
     {
@@ -447,7 +470,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LAC 104 - 116 HOU",
      "top": false
     }
    ]
@@ -481,6 +505,7 @@
      "est_odds": 2.13,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -492,6 +517,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -503,6 +529,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -536,6 +563,7 @@
      "est_odds": 2.14,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -547,6 +575,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -558,6 +587,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -565,11 +595,11 @@
  ],
  "summary": {
   "picks": 30,
-  "settled": 0,
-  "hits": 0,
+  "settled": 24,
+  "hits": 10,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 10.42,
+  "profit_units": -2.55
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -582,8 +612,8 @@
    "confidence": 22,
    "fair_odds": 4.52,
    "est_odds": 4.21,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910045",
@@ -606,25 +636,25 @@
    "confidence": 23,
    "fair_odds": 4.33,
    "est_odds": 4.02,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 2,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.45,
+  "profit_units": -2
  },
  "top_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.48,
+  "profit_units": 0.56
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -639,8 +669,8 @@
    "p_model": 0.7459,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -653,8 +683,8 @@
    "p_model": 0.408,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910042",
@@ -667,17 +697,17 @@
    "p_model": 0.6338,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": -1.26
  },
  "safe_all": [
   {
@@ -693,10 +723,10 @@
    "p_market": 0.534,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -711,10 +741,10 @@
    "p_market": 0.534,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910042",
@@ -729,10 +759,10 @@
    "p_market": 0.5336,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910038",
@@ -747,10 +777,10 @@
    "p_market": 0.5328,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910041",
@@ -765,10 +795,10 @@
    "p_market": 0.532,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910039",
@@ -783,10 +813,10 @@
    "p_market": 0.5317,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910045",
@@ -819,10 +849,10 @@
    "p_market": 0.5317,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910043",
@@ -837,10 +867,10 @@
    "p_market": 0.5315,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910044",
@@ -863,11 +893,11 @@
  ],
  "safe_all_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.26,
+  "profit_units": -2.76
  },
  "robot": [
   {
@@ -883,10 +913,10 @@
    "p_market": 0.5469,
    "fair_odds": 1.29,
    "est_odds": 1.7,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910040",
@@ -901,10 +931,10 @@
    "p_market": 0.5211,
    "fair_odds": 1.4,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910037",
@@ -919,10 +949,10 @@
    "p_market": 0.5382,
    "fair_odds": 1.42,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910043",
@@ -937,10 +967,10 @@
    "p_market": 0.5435,
    "fair_odds": 1.43,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910041",
@@ -955,10 +985,10 @@
    "p_market": 0.5435,
    "fair_odds": 1.47,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910044",
@@ -991,10 +1021,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.55,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910042",
@@ -1009,10 +1039,10 @@
    "p_market": 0.5336,
    "fair_odds": 1.58,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910038",
@@ -1027,10 +1057,10 @@
    "p_market": 0.5434,
    "fair_odds": 1.64,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910045",
@@ -1053,11 +1083,11 @@
  ],
  "robot_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 5.46,
+  "profit_units": -1.08
  },
  "p15": [
   {
@@ -1073,10 +1103,10 @@
    "p_market": 0.6199,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -1091,10 +1121,10 @@
    "p_market": 0.6199,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910040",
@@ -1109,10 +1139,10 @@
    "p_market": 0.6174,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910039",
@@ -1127,10 +1157,10 @@
    "p_market": 0.6174,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910038",
@@ -1145,10 +1175,10 @@
    "p_market": 0.6187,
    "fair_odds": 1.62,
    "est_odds": 1.5,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910042",
@@ -1163,10 +1193,10 @@
    "p_market": 0.6195,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910041",
@@ -1181,10 +1211,10 @@
    "p_market": 0.6178,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910043",
@@ -1199,10 +1229,10 @@
    "p_market": 0.6196,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910044",
@@ -1243,10 +1273,10 @@
  ],
  "p15_summary": {
   "picks": 10,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.95,
+  "profit_units": -5.0
  }
 }

@@ -217,7 +217,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910036",
@@ -232,7 +233,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910036",
@@ -247,7 +249,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -262,7 +265,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910037",
@@ -277,7 +281,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910037",
@@ -292,7 +297,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910038",
@@ -307,7 +313,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910038",
@@ -322,7 +329,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910038",
@@ -337,7 +345,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910039",
@@ -352,7 +361,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910039",
@@ -367,7 +377,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910039",
@@ -382,7 +393,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910040",
@@ -397,7 +409,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910040",
@@ -412,7 +425,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910040",
@@ -427,7 +441,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910042",
@@ -442,7 +457,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910042",
@@ -457,7 +473,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910042",
@@ -472,7 +489,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910041",
@@ -487,7 +505,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910041",
@@ -502,7 +521,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910041",
@@ -517,7 +537,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910043",
@@ -532,7 +553,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910043",
@@ -547,7 +569,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910043",
@@ -562,7 +585,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910044",
@@ -667,7 +691,8 @@
    "fair_odds": 4.52,
    "est_odds": 4.21,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910045",
@@ -693,7 +718,8 @@
    "fair_odds": 4.33,
    "est_odds": 4.02,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   }
  ],
  "safe": [
@@ -711,7 +737,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -727,7 +754,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910042",
@@ -743,7 +771,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   }
  ],
  "safe_all": [
@@ -761,7 +790,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -777,7 +807,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910042",
@@ -793,7 +824,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910038",
@@ -809,7 +841,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910041",
@@ -825,7 +858,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910039",
@@ -841,7 +875,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910045",
@@ -873,7 +908,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910043",
@@ -889,7 +925,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910044",
@@ -923,7 +960,8 @@
    "est_odds": 1.7,
    "confidence": 77,
    "data_conf": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910040",
@@ -939,7 +977,8 @@
    "est_odds": 1.78,
    "confidence": 72,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910037",
@@ -955,7 +994,8 @@
    "est_odds": 1.73,
    "confidence": 70,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910043",
@@ -971,7 +1011,8 @@
    "est_odds": 1.71,
    "confidence": 70,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910041",
@@ -987,7 +1028,8 @@
    "est_odds": 1.71,
    "confidence": 68,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910044",
@@ -1019,7 +1061,8 @@
    "est_odds": 1.71,
    "confidence": 64,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910042",
@@ -1035,7 +1078,8 @@
    "est_odds": 1.74,
    "confidence": 63,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910038",
@@ -1051,7 +1095,8 @@
    "est_odds": 1.71,
    "confidence": 61,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910045",
@@ -1085,7 +1130,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "MEM 117 - 111 CHA"
   },
   {
    "game_id": "401910037",
@@ -1101,7 +1147,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "POR 128 - 111 PHI"
   },
   {
    "game_id": "401910040",
@@ -1117,7 +1164,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "BKN 116 - 142 MIN"
   },
   {
    "game_id": "401910039",
@@ -1133,7 +1181,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 116 - 111 TOR"
   },
   {
    "game_id": "401910038",
@@ -1149,7 +1198,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "OKC 120 - 125 IND"
   },
   {
    "game_id": "401910042",
@@ -1165,7 +1215,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)"
   },
   {
    "game_id": "401910041",
@@ -1181,7 +1232,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 108 - 122 CHI"
   },
   {
    "game_id": "401910043",
@@ -1197,7 +1249,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 104 - 116 HOU"
   },
   {
    "game_id": "401910044",
