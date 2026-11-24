@@ -40,6 +40,7 @@ STATIC_LOADER = """function start() {
   state.stats = data.stats || null;
   state.combined = data.combined || [];
   state.rules = data.rules || {};
+  state.checks = data.checks || {};
   render();
 }
 start();"""
@@ -57,6 +58,7 @@ def nav(current: str, depth: int) -> str:
     for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "1.7+", "drosas/"),
                                                                        ("p15", "1.5+", "p15/"),
                                                                        ("robots", "Robots", "robots/"),
+                                                                       ("papildu", "Papildu", "papildu/"),
                                                                        ("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
         links.append(f'<a href="{up}{href or "./"}" data-nav="{key}"{cur}>{label}</a>')
@@ -124,6 +126,9 @@ def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: i
     if key == "p15":
         head = head.replace("<title>1.5+ likmes prognozes</title>", "<title>1.5+ likmes</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>1.5+ <span>likmes</span></h1>')
+    if key == "papildu":
+        head = head.replace("<title>Papildu likmes prognozes</title>", "<title>Papildu likmes</title>")
+        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Papildu <span>likmes</span></h1>')
     if key == "robots":
         head = head.replace("<title>Robota likmes prognozes</title>", "<title>Robota likmes</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Robota <span>likmes</span></h1>')
@@ -170,6 +175,10 @@ def build() -> list[Path]:
     rules_f = ROOT / "p15_rules.json"
     p15["rules"] = json.loads(rules_f.read_text()) if rules_f.exists() else {}
     pages.append(build_one("p15", "1.5+ likmes", None, OUT / "p15", 1, True, (12, 30), data_override=p15))
+    ex = safe_page_data(field="extra")
+    ex_f = ROOT / "extra_params.json"
+    ex["checks"] = json.loads(ex_f.read_text()).get("checks", {}) if ex_f.exists() else {}
+    pages.append(build_one("papildu", "Papildu likmes", None, OUT / "papildu", 1, True, (12, 30), data_override=ex))
     pages.append(build_one("robots", "Robota likmes", None, OUT / "robots", 1, True, (12, 30),
                            data_override=safe_page_data(field="robot")))
     pages.append(build_one("stats", "Statistika", None, OUT / "stats", 1, data_override=combined_data()))

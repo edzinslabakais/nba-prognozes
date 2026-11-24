@@ -1,120 +1,43 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 24.11.2026 09:43 (Rīgas laiks)_
+_Atjaunināts 24.11.2026 09:58 (Rīgas laiks)_
 
-## Nakts uz 24.11. — 10 spēles, koef. ≥ 2.1 — izgāja 14/30
+## Nakts uz 25.11. — 3 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
-### MEM @ CHA · 02:00
-Robots: **MEM -2.5**, kopā 213.5 · bukmeikeri: MEM -2.5, kopā 213.5 · gala rezultāts: **MEM 117 - 111 CHA**
+### DET @ ORL · 02:00
+Robots: **DET -2.5**, kopā 213.5 · bukmeikeri: DET -2.5, kopā 213.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 215.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **MEM -4.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
-| 3 | **MEM zem 105.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
+| 1 ★ | **virs 215.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **DET -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **DET zem 105.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
-Savainojumi/sastāvs: CHA: Grayson Allen (Out) -1.0; MEM: Cameron Boozer (Out) -1.6; MEM: Jerami Grant (Out) -0.6; MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0
+Savainojumi/sastāvs: DET: Duncan Robinson (Out) -1.0; DET: Cade Cunningham (Day-To-Day) -0.9
 
-### POR @ PHI · 02:00
-Robots: **PHI -2.5**, kopā 231.5 · bukmeikeri: PHI -2.5, kopā 231.5 · gala rezultāts: **POR 128 - 111 PHI**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **virs 233.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **PHI -4.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
-| 3 | **PHI zem 114.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
-
-Savainojumi/sastāvs: PHI: Joel Embiid (Day-To-Day) -0.6; PHI: Jaylen Brown (Day-To-Day) -0.4; PHI: Dominick Barlow (spēlēja 1/10 pēdējās) +0.5; POR: Deni Avdija (spēlēja 8/10 pēdējās) +0.5
-
-### OKC @ IND · 02:30
-Robots: **OKC -5.5**, kopā 224.5 · bukmeikeri: OKC -5.5, kopā 224.5 · gala rezultāts: **OKC 120 - 125 IND**
+### BOS @ WSH · 03:00
+Robots: **BOS -10.5**, kopā 217.5 · bukmeikeri: BOS -10.5, kopā 217.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 220.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 2 | **OKC -7.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 3 | **OKC zem 112.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 1 ★ | **BOS -12.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **BOS zem 111.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: IND: Pascal Siakam (Day-To-Day) -0.7; IND: T.J. McConnell (Out) -0.6; IND: Andrew Nembhard (spēlēja 7/10 pēdējās) +0.4; OKC: Aday Mara (Out) -1.1; OKC: Alex Caruso (Out) -0.7
+Savainojumi/sastāvs: WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6; BOS: Mitchell Robinson (Out) -0.5
 
-### MIL @ TOR · 02:30
-Robots: **TOR -10.5**, kopā 222.5 · bukmeikeri: TOR -10.5, kopā 222.5 · gala rezultāts: **MIL 116 - 111 TOR**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **TOR -12.5** | 44/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 2 | **zem 218.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 3 | **MIL virs 107.5** | 43/100 | 2.14 | 2.31 | ✅ izgāja |
-
-Savainojumi/sastāvs: TOR: RJ Barrett (Out) -1.4; TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.1
-
-### BKN @ MIN · 02:30
-Robots: **MIN -10.5**, kopā 223.5 · bukmeikeri: MIN -10.5, kopā 223.5 · gala rezultāts: **BKN 116 - 142 MIN**
+### DAL @ DEN · 05:00
+Robots: **DEN -8.5**, kopā 232.5 · bukmeikeri: DEN -8.5, kopā 232.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **MIN -12.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 3 | **MIN zem 114.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
+| 1 ★ | **zem 228.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **DEN -10.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **DAL virs 113.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: BKN: Nolan Traore (Out) -1.0
-
-### PHX @ NO · 03:00
-Robots: **PHX -3.5**, kopā 232.5 · bukmeikeri: PHX -3.5, kopā 232.5 · gala rezultāts: **PHX 109 - 109 NO (pamatlaikā; ar papildlaiku 123 - 119)**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **zem 228.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **PHX -5.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
-| 3 | **PHX zem 115.5** | 43/100 | 2.15 | 2.32 | ✅ izgāja |
-
-Savainojumi/sastāvs: NO: Zion Williamson (Day-To-Day) -0.5; NO: Dejounte Murray (Out) -0.4; NO: Yves Missi (spēlēja 5/10 pēdējās) +0.4; PHX: Jordan Goodwin (spēlēja 6/10 pēdējās) +0.4
-
-### CLE @ CHI · 03:00
-Robots: **CLE -8.5**, kopā 241.5 · bukmeikeri: CLE -8.5, kopā 241.5 · gala rezultāts: **CLE 108 - 122 CHI**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **virs 243.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 2 | **CLE -10.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 3 | **CLE zem 122.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
-
-Savainojumi/sastāvs: CHI: Norman Powell (Out) -1.2; CHI: Caleb Wilson (Out) -0.5; CLE: Evan Mobley (Out) -1.0; CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5
-
-### LAC @ HOU · 03:30
-Robots: **HOU -12.5**, kopā 223.5 · bukmeikeri: HOU -12.5, kopā 223.5 · gala rezultāts: **LAC 104 - 116 HOU**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **HOU -14.5** | 44/100 | 2.13 | 2.29 | ❌ neizgāja |
-| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
-| 3 | **HOU zem 115.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
-
-Savainojumi/sastāvs: HOU: Clint Capela (jauns komandā / atgriežas) +0.5
-
-### UTAH @ LAL · 05:00
-Robots: **LAL -13.5**, kopā 224.5 · bukmeikeri: LAL -13.5, kopā 224.5 · gala rezultāts: **UTAH 94 - 109 LAL**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **LAL -15.5** | 44/100 | 2.13 | 2.29 | ❌ neizgāja |
-| 2 | **zem 220.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 3 | **LAL zem 116.5** | 43/100 | 2.14 | 2.31 | ✅ izgāja |
-
-Savainojumi/sastāvs: LAL: Austin Reaves (Out) -1.2; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4
-
-### SA @ SAC · 05:00
-Robots: **SA -10.5**, kopā 223.5 · bukmeikeri: SA -10.5, kopā 223.5 · gala rezultāts: **SA 123 - 107 SAC**
-
-| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
-|---|---|---|---|---|---|
-| 1 ★ | **SA -12.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
-| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
-| 3 | **SA zem 114.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
-
-Savainojumi/sastāvs: SA: Victor Wembanyama (Day-To-Day) -1.8; SA: Dylan Harper (Out) -1.6
+Savainojumi/sastāvs: DAL: P.J. Washington (Day-To-Day) -0.4; DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.5
 
 ## 🛡 1.7+ — koef. ≥ 1.7
 
@@ -122,9 +45,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| MEM@CHA | **MEM virs 106.5** | 53/100 | 1.74 | ✅ izgāja |
-| POR@PHI | **PHI virs 115.5** | 53/100 | 1.74 | ❌ neizgāja |
-| PHX@NO | **PHX virs 116.5** | 53/100 | 1.74 | ❌ neizgāja |
+| DET@ORL | **DET virs 106.5** | 53/100 | 1.74 | ⏳ gaida |
+| DAL@DEN | **DAL zem 112.5** | 53/100 | 1.75 | ⏳ gaida |
+| BOS@WSH | **BOS virs 112.5** | 53/100 | 1.75 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -132,9 +55,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| POR@PHI | **POR uzvar & zem 231.5** | 22/100 | 4.21 | 4.52 | ❌ neizgāja |
-| SA@SAC | **SA 21+** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
-| MIL@TOR | **TOR zem 107.5** | 23/100 | 4.02 | 4.33 | ❌ neizgāja |
+| DET@ORL | **ORL -7.5** | 23/100 | 4.05 | 4.35 | ⏳ gaida |
+| BOS@WSH | **WSH zem 94.5** | 23/100 | 4.06 | 4.37 | ⏳ gaida |
+| DAL@DEN | **DEN -18.5** | 22/100 | 4.19 | 4.51 | ⏳ gaida |
 
 ## Statistika
 

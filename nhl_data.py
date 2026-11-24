@@ -73,6 +73,10 @@ def _parse_event(e: dict, day: date) -> dict | None:
     done = bool(st.get("completed"))
     detail = st.get("detail", "") or ""
 
+    def p1(c):
+        ls = c.get("linescores") or []
+        return float(ls[0].get("value", 0) or 0) if ls else None
+
     def reg(c):
         ls = c.get("linescores") or []
         return float(sum(float(x.get("value", 0) or 0) for x in ls[:3])) if ls else None
@@ -88,6 +92,7 @@ def _parse_event(e: dict, day: date) -> dict | None:
         "completed": done, "status": st.get("name", ""), "detail": detail,
         "home_goals": float(h["score"]) if done else None, "away_goals": float(a["score"]) if done else None,
         "home_reg": reg(h) if done else None, "away_reg": reg(a) if done else None,
+        "home_p1": p1(h) if done else None, "away_p1": p1(a) if done else None,
         "ot": done and ("OT" in detail or "SO" in detail), "so": done and "SO" in detail,
         "home_record": next((r["summary"] for r in h.get("records", []) if r.get("type") == "total"), None),
         "away_record": next((r["summary"] for r in a.get("records", []) if r.get("type") == "total"), None),

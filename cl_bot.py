@@ -89,6 +89,7 @@ def _parse(e: dict) -> dict | None:
         "home_record": None, "away_record": None,
     }
     row.update(_odds((c.get("odds") or [None])[0]))
+    row["goals"] = c.get("goals")  # [{clock, team, own, ...}] when the scoreboard has them
     return row
 
 
@@ -467,7 +468,7 @@ def cmd_likmes(args) -> None:
     print("\nCRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
     f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
                         safe_all=pick_safe(df, p, all_games=True), robot=pick_robot(df, p),
-                        p15=core.choose_15(robot_per_game(df, p), df, CL.key))
+                        p15=core.choose_15(robot_per_game(df, p), df, CL.key), extra=core.extra_bets(df, "fb"))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}")
 
 

@@ -108,6 +108,14 @@ ar bukmeikeru noslēguma līnijām (walk-forward, robots redz tikai iepriekšēj
 (likmju veids, robota piekrišana, likmju skaits dienā) nestrādāja uz šīs sezonas datiem, tāpēc visām līgām ir
 vienkāršais noteikums. Lapā var ierakstīt īsto Optibet koeficientu; statistika tajā ierīcē rēķinās ar to.
 
+### Papildu likmes (atsevišķa lapa)
+
+…/nba-prognozes/papildu/ — abas komandas gūst vārtus, pirmie vārti, 1. perioda (NHL) / 1. puslaika (futbols) vārti un
+uzvarētājs, NBA 1. ceturtdaļa un 1. puslaiks. Robots katrā spēlē izvērtē visus šos tirgus un piedāvā visticamāko
+ar koeficientu vismaz 1.7. Varbūtības nāk no spēles sagaidāmajiem vārtiem/punktiem un pagājušajā sezonā izmērītajām
+daļām (`python extra.py kalibret`, rezultāts `extra_params.json`): pārbaudē visi tirgi bija precīzi ±1–2 punktu robežās,
+izņemot NHL 1. perioda uzvarētāju, kas ir izslēgts.
+
 ### Kopējā statistika
 
 Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas

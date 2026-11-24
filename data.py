@@ -56,6 +56,8 @@ def _parse_event(e: dict, day: date) -> dict | None:
     # regulation (48 min) score = first 4 quarters; anything after is overtime
     lh = [float(x.get("value", 0) or 0) for x in h.get("linescores") or []]
     la = [float(x.get("value", 0) or 0) for x in a.get("linescores") or []]
+    # quarters (1st quarter / 1st half bets on the Papildu likmes page)
+    row["home_q"], row["away_q"] = (lh[:4], la[:4]) if status.get("completed") and len(lh) >= 4 else (None, None)
     if status.get("completed") and len(lh) >= 4 and len(la) >= 4:
         row["home_reg"], row["away_reg"] = sum(lh[:4]), sum(la[:4])
         row["ot"] = len(lh) > 4

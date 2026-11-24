@@ -1,0 +1,175 @@
+{
+ "date": "2026-11-24",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-24T07:58+00:00",
+ "games": {
+  "401892780": {
+   "game_id": "401892780",
+   "away": "VGK",
+   "home": "EDM",
+   "away_name": "Vegas Golden Knights",
+   "home_name": "Edmonton Oilers",
+   "away_record": "14-6-5",
+   "home_record": "17-5-4",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "robot_line": "EDM 37% · X 25% · VGK 38%",
+   "robot_total": "vārti 3.0–3.1",
+   "market_line": "VGK 52% ar papildl.",
+   "market_total": "kopā 6.5",
+   "injuries": [
+    "EDM: vārtsargs Devon Levi (gaidāms) -0.02",
+    "VGK: vārtsargs Carter Hart (gaidāms) -0.05"
+   ]
+  }
+ },
+ "picks": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "category": "kopā",
+   "bet": "zem 5.5",
+   "p": 0.4281385079172696,
+   "p_model": 0.4303,
+   "p_market": 0.4271,
+   "data_score": 0.4271,
+   "fair_odds": 2.34,
+   "est_odds": 2.17,
+   "confidence": 43,
+   "result": null
+  },
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "category": "komandas vārti",
+   "bet": "EDM zem 2.5",
+   "p": 0.41607255644402247,
+   "p_model": 0.3832,
+   "p_market": 0.4243,
+   "data_score": 0.4243,
+   "fair_odds": 2.4,
+   "est_odds": 2.24,
+   "confidence": 42,
+   "result": null
+  },
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "VGK uzvar",
+   "p": 0.3788915055742064,
+   "p_model": 0.329,
+   "p_market": 0.3918,
+   "data_score": 0.3918,
+   "fair_odds": 2.64,
+   "est_odds": 2.45,
+   "confidence": 38,
+   "result": null
+  }
+ ],
+ "crazy": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "kombinācija",
+   "bet": "EDM uzvar & virs 5.5",
+   "p": 0.21141347752476333,
+   "fair_odds": 4.73,
+   "est_odds": 4.4,
+   "confidence": 21,
+   "result": null
+  }
+ ],
+ "safe": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "uzvarētājs",
+   "bet": "VGK uzvar (ieskaitot papildlaiku)",
+   "p": 0.5046384519426808,
+   "p_model": 0.4539,
+   "p_market": 0.5174,
+   "fair_odds": 1.98,
+   "est_odds": 1.84,
+   "confidence": 50,
+   "data_conf": 52,
+   "result": null
+  }
+ ],
+ "safe_all": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "uzvarētājs",
+   "bet": "VGK uzvar (ieskaitot papildlaiku)",
+   "p": 0.5046384519426808,
+   "p_model": 0.4539,
+   "p_market": 0.5174,
+   "fair_odds": 1.98,
+   "est_odds": 1.84,
+   "confidence": 50,
+   "data_conf": 52,
+   "result": null
+  }
+ ],
+ "robot": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "uzvarētājs",
+   "bet": "EDM uzvar (ieskaitot papildlaiku)",
+   "p": 0.5460532090387734,
+   "p_model": 0.5461,
+   "p_market": 0.4826,
+   "fair_odds": 1.83,
+   "est_odds": 1.93,
+   "confidence": 55,
+   "data_conf": 48,
+   "result": null
+  }
+ ],
+ "p15": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "kopā",
+   "bet": "zem 6.5",
+   "p": 0.6024113430734042,
+   "p_model": 0.6055,
+   "p_market": 0.6024,
+   "fair_odds": 1.66,
+   "est_odds": 1.54,
+   "confidence": 60,
+   "data_conf": 60,
+   "result": null
+  }
+ ],
+ "extra": [
+  {
+   "game_id": "401892780",
+   "game": "VGK@EDM",
+   "start_utc": "2026-11-25 01:00:00+00:00",
+   "riga_time": "25.11 03:00",
+   "category": "1. periods kopā",
+   "bet": "1. periods virs 1.5",
+   "p": 0.5363192264689282,
+   "fair_odds": 1.86,
+   "est_odds": 1.73,
+   "confidence": 54,
+   "result": null
+  }
+ ]
+}

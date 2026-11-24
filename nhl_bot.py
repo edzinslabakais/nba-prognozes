@@ -306,7 +306,7 @@ def cmd_likmes(args) -> None:
     core.print_safe(safe, 34)
     f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
                         safe_all=pick_safe(df, p, all_games=True), robot=pick_robot(df, p),
-                        p15=core.choose_15(robot_per_game(df, p), df, "nhl"))
+                        p15=core.choose_15(robot_per_game(df, p), df, "nhl"), extra=core.extra_bets(df, "nhl"))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}  — rīt palaid: python nhl_bot.py rezultati")
 
 

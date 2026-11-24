@@ -24,6 +24,7 @@ _session = requests.Session()
 
 # Set to True (via predict.py --refresh) to ignore TTL caches for live data.
 FORCE_REFRESH = False
+FORCE_ALL = False  # also refetch days cached forever (when the cached copy lacks a newer field)
 
 
 def today_et() -> date:
@@ -45,7 +46,7 @@ def get_json(path: str, params: dict | None = None, ttl: float | None = None,
     """GET BASE+path. ttl=None caches forever, ttl=0 never caches.
     trim: optional function that drops unused parts before caching."""
     f = _cache_path(path, params, base)
-    if f.exists() and ttl != 0 and not (FORCE_REFRESH and ttl is not None):
+    if f.exists() and ttl != 0 and not ((FORCE_REFRESH and ttl is not None) or FORCE_ALL):
         if ttl is None or time.time() - f.stat().st_mtime < ttl:
             with open(f) as fh:
                 return json.load(fh)
@@ -98,7 +99,12 @@ def trim_scoreboard(sb: dict) -> dict:
         e = {k: v for k, v in e.items() if k not in ("links", "weather")}
         comps = []
         for c in e.get("competitions", []):
+            goals = [{"clock": (d.get("clock") or {}).get("displayValue"), "team": (d.get("team") or {}).get("id"),
+                      "own": bool(d.get("ownGoal")), "pen": bool(d.get("penaltyKick")), "so": bool(d.get("shootout"))}
+                     for d in c.get("details") or [] if d.get("scoringPlay")]
             c = {k: v for k, v in c.items() if k not in _HEAVY_COMP_KEYS}
+            if goals:
+                c["goals"] = goals  # soccer: who scored when (first goal, 1st half)
             c["competitors"] = [{k: v for k, v in t.items() if k not in ("leaders", "statistics")}
                                 for t in c.get("competitors", [])]
             comps.append(c)
