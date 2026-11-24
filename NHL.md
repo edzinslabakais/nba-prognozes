@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 24.11.2026 07:00 (Rīgas laiks)_
+_Atjaunināts 24.11.2026 07:42 (Rīgas laiks)_
 
-## Nakts uz 24.11. — 7 spēles, koef. ≥ 2.1 — izgāja 5/15
+## Nakts uz 24.11. — 7 spēles, koef. ≥ 2.1 — izgāja 7/21
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -62,24 +62,24 @@ Robots: **WPG 37% · X 25% · UTA 38%**, vārti 3.1–3.1 · bukmeikeri: UTA 50%
 Savainojumi/sastāvs: WPG: vārtsargs Stuart Skinner (apstiprināts) -0.02; UTA: vārtsargs Sebastian Cossa (apstiprināts) +0.06
 
 ### ANA @ SEA · 04:40
-Robots: **SEA 39% · X 24% · ANA 37%**, vārti 3.4–3.3 · bukmeikeri: SEA 52% ar papildl., kopā 6.5
+Robots: **SEA 39% · X 24% · ANA 37%**, vārti 3.4–3.3 · bukmeikeri: SEA 52% ar papildl., kopā 6.5 · gala rezultāts: **ANA 2 - 3 SEA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SEA virs 3.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **SEA uzvar** | 39/100 | 2.36 | 2.54 | ⏳ gaida |
-| 3 | **virs 7.5** | 36/100 | 2.58 | 2.77 | ⏳ gaida |
+| 1 ★ | **SEA virs 3.5** | 44/100 | 2.13 | 2.29 | ❌ neizgāja |
+| 2 | **SEA uzvar** | 39/100 | 2.36 | 2.54 | ✅ izgāja |
+| 3 | **virs 7.5** | 36/100 | 2.58 | 2.77 | ❌ neizgāja |
 
 Savainojumi/sastāvs: SEA: vārtsargs Joey Daccord (gaidāms) -0.09; ANA: vārtsargs Lukas Dostal (gaidāms) -0.09
 
 ### MIN @ SJ · 05:00
-Robots: **SJ 27% · X 24% · MIN 49%**, vārti 2.7–3.5 · bukmeikeri: MIN 61% ar papildl., kopā 6.5
+Robots: **SJ 27% · X 24% · MIN 49%**, vārti 2.7–3.5 · bukmeikeri: MIN 61% ar papildl., kopā 6.5 · gala rezultāts: **MIN 5 - 2 SJ**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 42/100 | 2.21 | 2.38 | ⏳ gaida |
-| 2 | **SJ uzvar (ieskaitot papildlaiku)** | 39/100 | 2.38 | 2.56 | ⏳ gaida |
-| 3 | **MIN zem 2.5** | 33/100 | 2.86 | 3.07 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 42/100 | 2.21 | 2.38 | ✅ izgāja |
+| 2 | **SJ uzvar (ieskaitot papildlaiku)** | 39/100 | 2.38 | 2.56 | ❌ neizgāja |
+| 3 | **MIN zem 2.5** | 33/100 | 2.86 | 3.07 | ❌ neizgāja |
 
 Savainojumi/sastāvs: SJ: vārtsargs Yaroslav Askarov (apstiprināts) -0.03; MIN: vārtsargs Filip Gustavsson (apstiprināts) -0.46
 
@@ -99,27 +99,27 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| ANA@SEA | **ANA virs 4.5** | 23/100 | 4.05 | 4.35 | ⏳ gaida |
-| MIN@SJ | **SJ zem 1.5** | 23/100 | 4.03 | 4.34 | ⏳ gaida |
+| ANA@SEA | **ANA virs 4.5** | 23/100 | 4.05 | 4.35 | ❌ neizgāja |
+| MIN@SJ | **SJ zem 1.5** | 23/100 | 4.03 | 4.34 | ❌ neizgāja |
 | LA@MTL | **LA zem 1.5** | 23/100 | 4.07 | 4.38 | ❌ neizgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 17/38, vienības -0.51
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 18/40, vienības -0.30
 
-2.1+ kopā: izgāja 41/114 (36%), robots gaidīja ~45.9, vienības -18.55
+2.1+ kopā: izgāja 43/120 (36%), robots gaidīja ~48.2, vienības -19.98
 1.7+ kopā: izgāja 11/15 (73%), robots gaidīja ~7.9, vienības +4.61
-Crazy Dazy kopā: izgāja 5/13 (38%), robots gaidīja ~3.0, vienības +7.36
+Crazy Dazy kopā: izgāja 5/15 (33%), robots gaidīja ~3.4, vienības +5.36
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 41/114 | -18.55 | 17/38 | -0.51 | 11/15 | +4.61 | 5/13 | +7.36 |
+| Novembris 2026 (18.–30.11.) | 43/120 | -19.98 | 18/40 | -0.30 | 11/15 | +4.61 | 5/15 | +5.36 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 24.11. | 5/15 | 6.2 | -3.59 |
+| 24.11. | 7/21 | 8.5 | -5.02 |
 | 23.11. | 7/12 | 4.7 | +5.74 |
 | 22.11. | 17/42 | 16.9 | -3.03 |
 | 20.11. | 11/36 | 14.5 | -10.94 |
@@ -129,6 +129,6 @@ Crazy Dazy kopā: izgāja 5/13 (38%), robots gaidīja ~3.0, vienības +7.36
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 6 | 50% | 31% |
-| 35-39 | 34 | 29% | 38% |
-| 40-44 | 74 | 38% | 42% |
+| 0-34 | 7 | 43% | 32% |
+| 35-39 | 37 | 30% | 38% |
+| 40-44 | 76 | 38% | 42% |

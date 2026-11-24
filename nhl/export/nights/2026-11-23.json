@@ -311,7 +311,7 @@
     "SEA: vārtsargs Joey Daccord (gaidāms) -0.09",
     "ANA: vārtsargs Lukas Dostal (gaidāms) -0.09"
    ],
-   "score": null,
+   "score": "ANA 2 - 3 SEA",
    "picks": [
     {
      "category": "komandas vārti",
@@ -321,8 +321,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "ANA 2 - 3 SEA",
      "top": true
     },
     {
@@ -333,8 +333,8 @@
      "fair_odds": 2.54,
      "est_odds": 2.36,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "ANA 2 - 3 SEA",
      "top": false
     },
     {
@@ -345,8 +345,8 @@
      "fair_odds": 2.77,
      "est_odds": 2.58,
      "confidence": 36,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "ANA 2 - 3 SEA",
      "top": false
     }
    ]
@@ -369,7 +369,7 @@
     "SJ: vārtsargs Yaroslav Askarov (apstiprināts) -0.03",
     "MIN: vārtsargs Filip Gustavsson (apstiprināts) -0.46"
    ],
-   "score": null,
+   "score": "MIN 5 - 2 SJ",
    "picks": [
     {
      "category": "kopā",
@@ -379,8 +379,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.21,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "MIN 5 - 2 SJ",
      "top": true
     },
     {
@@ -391,8 +391,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MIN 5 - 2 SJ",
      "top": false
     },
     {
@@ -403,8 +403,8 @@
      "fair_odds": 3.07,
      "est_odds": 2.86,
      "confidence": 33,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MIN 5 - 2 SJ",
      "top": false
     }
    ]
@@ -412,11 +412,11 @@
  ],
  "summary": {
   "picks": 21,
-  "settled": 15,
-  "hits": 5,
+  "settled": 21,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 6.17,
-  "profit_units": -3.59
+  "expected_hits": 8.5,
+  "profit_units": -5.02
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -429,8 +429,8 @@
    "confidence": 23,
    "fair_odds": 4.35,
    "est_odds": 4.05,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -441,8 +441,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.03,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892774",
@@ -459,19 +459,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 1,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0.23,
-  "profit_units": -1
+  "expected_hits": 0.69,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 7,
-  "settled": 5,
-  "hits": 2,
+  "settled": 7,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 2.18,
-  "profit_units": -0.79
+  "expected_hits": 3.04,
+  "profit_units": -0.58
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -594,10 +594,10 @@
    "p_market": 0.523,
    "fair_odds": 1.98,
    "est_odds": 1.84,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892775",
@@ -630,10 +630,10 @@
    "p_market": 0.5143,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892777",
@@ -656,11 +656,11 @@
  ],
  "safe_all_summary": {
   "picks": 7,
-  "settled": 5,
-  "hits": 3,
+  "settled": 7,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 2.57,
-  "profit_units": 0.44
+  "expected_hits": 3.6,
+  "profit_units": 0.28
  },
  "robot": [
   {
@@ -694,10 +694,10 @@
    "p_market": 0.477,
    "fair_odds": 1.77,
    "est_odds": 1.95,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -712,10 +712,10 @@
    "p_market": 0.5143,
    "fair_odds": 1.8,
    "est_odds": 1.81,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892773",
@@ -792,11 +792,11 @@
  ],
  "robot_summary": {
   "picks": 7,
-  "settled": 5,
+  "settled": 7,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 2.72,
-  "profit_units": -1.56
+  "expected_hits": 3.84,
+  "profit_units": -3.56
  },
  "p15": [
   {
@@ -902,10 +902,10 @@
    "p_market": 0.5991,
    "fair_odds": 1.67,
    "est_odds": 1.55,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -920,18 +920,18 @@
    "p_market": 0.6092,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 5 - 2 SJ"
   }
  ],
  "p15_summary": {
   "picks": 7,
-  "settled": 5,
-  "hits": 4,
+  "settled": 7,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 2.97,
-  "profit_units": 1.3
+  "expected_hits": 4.17,
+  "profit_units": 2.38
  }
 }

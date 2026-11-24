@@ -601,7 +601,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910044",
@@ -616,7 +617,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910044",
@@ -631,7 +633,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910045",
@@ -646,7 +649,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910045",
@@ -661,7 +665,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910045",
@@ -676,7 +681,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 123 - 107 SAC"
   }
  ],
  "crazy": [
@@ -705,7 +711,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910039",
@@ -892,7 +899,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910040",
@@ -942,7 +950,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 94 - 109 LAL"
   }
  ],
  "robot": [
@@ -1045,7 +1054,8 @@
    "est_odds": 1.79,
    "confidence": 64,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910039",
@@ -1112,7 +1122,8 @@
    "est_odds": 1.71,
    "confidence": 61,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 123 - 107 SAC"
   }
  ],
  "p15": [
@@ -1266,7 +1277,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910045",
@@ -1282,7 +1294,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 123 - 107 SAC"
   }
  ]
 }

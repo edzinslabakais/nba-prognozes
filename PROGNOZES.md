@@ -1,8 +1,8 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 24.11.2026 07:00 (Rīgas laiks)_
+_Atjaunināts 24.11.2026 07:42 (Rīgas laiks)_
 
-## Nakts uz 24.11. — 10 spēles, koef. ≥ 2.1 — izgāja 10/24
+## Nakts uz 24.11. — 10 spēles, koef. ≥ 2.1 — izgāja 14/30
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -95,24 +95,24 @@ Robots: **HOU -12.5**, kopā 223.5 · bukmeikeri: HOU -12.5, kopā 223.5 · gala
 Savainojumi/sastāvs: HOU: Clint Capela (jauns komandā / atgriežas) +0.5
 
 ### UTAH @ LAL · 05:00
-Robots: **LAL -13.5**, kopā 224.5 · bukmeikeri: LAL -13.5, kopā 224.5
+Robots: **LAL -13.5**, kopā 224.5 · bukmeikeri: LAL -13.5, kopā 224.5 · gala rezultāts: **UTAH 94 - 109 LAL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **LAL -15.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **zem 220.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **LAL zem 116.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 1 ★ | **LAL -15.5** | 44/100 | 2.13 | 2.29 | ❌ neizgāja |
+| 2 | **zem 220.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 3 | **LAL zem 116.5** | 43/100 | 2.14 | 2.31 | ✅ izgāja |
 
 Savainojumi/sastāvs: LAL: Austin Reaves (Out) -1.2; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4
 
 ### SA @ SAC · 05:00
-Robots: **SA -10.5**, kopā 223.5 · bukmeikeri: SA -10.5, kopā 223.5
+Robots: **SA -10.5**, kopā 223.5 · bukmeikeri: SA -10.5, kopā 223.5 · gala rezultāts: **SA 123 - 107 SAC**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SA -12.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **SA zem 114.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 1 ★ | **SA -12.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 3 | **SA zem 114.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: SA: Victor Wembanyama (Day-To-Day) -1.8; SA: Dylan Harper (Out) -1.6
 
@@ -133,26 +133,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | POR@PHI | **POR uzvar & zem 231.5** | 22/100 | 4.21 | 4.52 | ❌ neizgāja |
-| SA@SAC | **SA 21+** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| SA@SAC | **SA 21+** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
 | MIL@TOR | **TOR zem 107.5** | 23/100 | 4.02 | 4.33 | ❌ neizgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 20/46, vienības -3.22
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 21/48, vienības -3.08
 
-2.1+ kopā: izgāja 53/138 (38%), robots gaidīja ~59.9, vienības -24.46
+2.1+ kopā: izgāja 57/144 (40%), robots gaidīja ~62.5, vienības -21.90
 1.7+ kopā: izgāja 10/20 (50%), robots gaidīja ~10.7, vienības -2.55
-Crazy Dazy kopā: izgāja 4/17 (24%), robots gaidīja ~3.9, vienības -0.90
+Crazy Dazy kopā: izgāja 4/18 (22%), robots gaidīja ~4.1, vienības -1.90
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 53/138 | -24.46 | 20/46 | -3.22 | 10/20 | -2.55 | 4/17 | -0.90 |
+| Novembris 2026 (18.–30.11.) | 57/144 | -21.90 | 21/48 | -3.08 | 10/20 | -2.55 | 4/18 | -1.90 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 24.11. | 10/24 | 10.4 | -2.55 |
+| 24.11. | 14/30 | 13.0 | +0.01 |
 | 23.11. | 10/21 | 9.1 | +0.44 |
 | 22.11. | 6/18 | 7.8 | -5.18 |
 | 21.11. | 10/27 | 11.7 | -5.56 |
@@ -163,4 +163,4 @@ Crazy Dazy kopā: izgāja 4/17 (24%), robots gaidīja ~3.9, vienības -0.90
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 138 | 38% | 43% |
+| 40-44 | 144 | 40% | 43% |

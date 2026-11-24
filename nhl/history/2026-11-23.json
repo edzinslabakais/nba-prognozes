@@ -391,7 +391,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892778",
@@ -406,7 +407,8 @@
    "fair_odds": 2.54,
    "est_odds": 2.36,
    "confidence": 39,
-   "result": null
+   "result": "izgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892778",
@@ -421,7 +423,8 @@
    "fair_odds": 2.77,
    "est_odds": 2.58,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -436,7 +439,8 @@
    "fair_odds": 2.38,
    "est_odds": 2.21,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892779",
@@ -451,7 +455,8 @@
    "fair_odds": 2.56,
    "est_odds": 2.38,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892779",
@@ -466,7 +471,8 @@
    "fair_odds": 3.07,
    "est_odds": 2.86,
    "confidence": 33,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   }
  ],
  "crazy": [
@@ -481,7 +487,8 @@
    "fair_odds": 4.35,
    "est_odds": 4.05,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -494,7 +501,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892774",
@@ -630,7 +638,8 @@
    "est_odds": 1.84,
    "confidence": 51,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892775",
@@ -663,7 +672,8 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 51,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892777",
@@ -715,7 +725,8 @@
    "est_odds": 1.95,
    "confidence": 56,
    "data_conf": 48,
-   "result": null
+   "result": "neizgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -731,7 +742,8 @@
    "est_odds": 1.81,
    "confidence": 56,
    "data_conf": 51,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 5 - 2 SJ"
   },
   {
    "game_id": "401892773",
@@ -902,7 +914,8 @@
    "est_odds": 1.55,
    "confidence": 60,
    "data_conf": 60,
-   "result": null
+   "result": "izgāja",
+   "score": "ANA 2 - 3 SEA"
   },
   {
    "game_id": "401892779",
@@ -918,7 +931,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 5 - 2 SJ"
   }
  ]
 }

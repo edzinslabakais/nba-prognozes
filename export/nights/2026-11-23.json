@@ -494,7 +494,7 @@
     "LAL: Austin Reaves (Out) -1.2",
     "LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4"
    ],
-   "score": null,
+   "score": "UTAH 94 - 109 LAL",
    "picks": [
     {
      "category": "starpība",
@@ -504,8 +504,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "UTAH 94 - 109 LAL",
      "top": true
     },
     {
@@ -516,8 +516,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "UTAH 94 - 109 LAL",
      "top": false
     },
     {
@@ -528,8 +528,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "UTAH 94 - 109 LAL",
      "top": false
     }
    ]
@@ -552,7 +552,7 @@
     "SA: Victor Wembanyama (Day-To-Day) -1.8",
     "SA: Dylan Harper (Out) -1.6"
    ],
-   "score": null,
+   "score": "SA 123 - 107 SAC",
    "picks": [
     {
      "category": "starpība",
@@ -562,8 +562,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SA 123 - 107 SAC",
      "top": true
     },
     {
@@ -574,8 +574,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SA 123 - 107 SAC",
      "top": false
     },
     {
@@ -586,8 +586,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "SA 123 - 107 SAC",
      "top": false
     }
    ]
@@ -595,11 +595,11 @@
  ],
  "summary": {
   "picks": 30,
-  "settled": 24,
-  "hits": 10,
+  "settled": 30,
+  "hits": 14,
   "pushes": 0,
-  "expected_hits": 10.42,
-  "profit_units": -2.55
+  "expected_hits": 13.03,
+  "profit_units": 0.01
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -624,8 +624,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910039",
@@ -642,19 +642,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0.45,
-  "profit_units": -2
+  "expected_hits": 0.68,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 10,
-  "settled": 8,
-  "hits": 4,
+  "settled": 10,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.48,
-  "profit_units": 0.56
+  "expected_hits": 4.35,
+  "profit_units": 0.7
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -831,10 +831,10 @@
    "p_market": 0.5317,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 123 - 107 SAC"
   },
   {
    "game_id": "401910040",
@@ -885,19 +885,19 @@
    "p_market": 0.5315,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTAH 94 - 109 LAL"
   }
  ],
  "safe_all_summary": {
   "picks": 10,
-  "settled": 8,
-  "hits": 3,
+  "settled": 10,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 4.26,
-  "profit_units": -2.76
+  "expected_hits": 5.32,
+  "profit_units": -3.01
  },
  "robot": [
   {
@@ -1003,10 +1003,10 @@
    "p_market": 0.5208,
    "fair_odds": 1.55,
    "est_odds": 1.79,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910039",
@@ -1075,19 +1075,19 @@
    "p_market": 0.5438,
    "fair_odds": 1.65,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 123 - 107 SAC"
   }
  ],
  "robot_summary": {
   "picks": 10,
-  "settled": 8,
+  "settled": 10,
   "hits": 4,
   "pushes": 0,
-  "expected_hits": 5.46,
-  "profit_units": -1.08
+  "expected_hits": 6.71,
+  "profit_units": -3.08
  },
  "p15": [
   {
@@ -1247,10 +1247,10 @@
    "p_market": 0.6192,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTAH 94 - 109 LAL"
   },
   {
    "game_id": "401910045",
@@ -1265,18 +1265,18 @@
    "p_market": 0.6174,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 123 - 107 SAC"
   }
  ],
  "p15_summary": {
   "picks": 10,
-  "settled": 8,
-  "hits": 2,
+  "settled": 10,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 4.95,
-  "profit_units": -5.0
+  "expected_hits": 6.19,
+  "profit_units": -3.99
  }
 }
