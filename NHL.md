@@ -1,21 +1,21 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 24.11.2026 09:58 (Rīgas laiks)_
+_Atjaunināts 24.11.2026 22:11 (Rīgas laiks)_
 
 ## Nakts uz 25.11. — 1 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### VGK @ EDM · 03:00
-Robots: **EDM 37% · X 25% · VGK 38%**, vārti 3.0–3.1 · bukmeikeri: VGK 52% ar papildl., kopā 6.5
+Robots: **EDM 36% · X 25% · VGK 39%**, vārti 3.0–3.1 · bukmeikeri: VGK 53% ar papildl., kopā 6.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 5.5** | 43/100 | 2.17 | 2.34 | ⏳ gaida |
-| 2 | **EDM zem 2.5** | 42/100 | 2.24 | 2.40 | ⏳ gaida |
-| 3 | **VGK uzvar** | 38/100 | 2.45 | 2.64 | ⏳ gaida |
+| 1 | **zem 5.5** | 43/100 | 2.18 | 2.35 | ⏳ gaida |
+| 2 ★ | **EDM zem 2.5** | 42/100 | 2.20 | 2.36 | ⏳ gaida |
+| 3 | **VGK uzvar** | 39/100 | 2.37 | 2.55 | ⏳ gaida |
 
-Savainojumi/sastāvs: EDM: vārtsargs Devon Levi (gaidāms) -0.02; VGK: vārtsargs Carter Hart (gaidāms) -0.05
+Savainojumi/sastāvs: EDM: vārtsargs Devon Levi (apstiprināts) -0.04; VGK: vārtsargs Carter Hart (apstiprināts) -0.05
 
 ## 🛡 1.7+ — koef. ≥ 1.7
 
@@ -23,7 +23,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| VGK@EDM | **VGK uzvar (ieskaitot papildlaiku)** | 52/100 | 1.84 | ⏳ gaida |
+| VGK@EDM | **VGK uzvar (ieskaitot papildlaiku)** | 53/100 | 1.80 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -31,7 +31,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| VGK@EDM | **EDM uzvar & virs 5.5** | 21/100 | 4.40 | 4.73 | ⏳ gaida |
+| VGK@EDM | **EDM -1.5** | 22/100 | 4.14 | 4.45 | ⏳ gaida |
 
 ## Statistika
 

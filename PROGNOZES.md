@@ -1,43 +1,41 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 24.11.2026 09:58 (Rīgas laiks)_
+_Atjaunināts 24.11.2026 22:10 (Rīgas laiks)_
 
 ## Nakts uz 25.11. — 3 spēles, koef. ≥ 2.1
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### DET @ ORL · 02:00
-Robots: **DET -2.5**, kopā 213.5 · bukmeikeri: DET -2.5, kopā 213.5
+Robots: **DET -2.5**, kopā 212.5 · bukmeikeri: DET -2.5, kopā 212.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 215.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **zem 208.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **DET -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **DET zem 105.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 3 | **ORL virs 106.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
-Savainojumi/sastāvs: DET: Duncan Robinson (Out) -1.0; DET: Cade Cunningham (Day-To-Day) -0.9
+Savainojumi/sastāvs: DET: Duncan Robinson (Out) -0.9; DET: Cade Cunningham (Day-To-Day) -0.8; DET: Isaiah Joe (spēlēja 3/10 pēdējās) +0.5
 
 ### BOS @ WSH · 03:00
-Robots: **BOS -10.5**, kopā 217.5 · bukmeikeri: BOS -10.5, kopā 217.5
+Robots: **BOS -11.5**, kopā 218.5 · bukmeikeri: BOS -11.5, kopā 218.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **BOS -12.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **BOS zem 111.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
+| 1 ★ | **BOS -13.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **zem 214.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **BOS zem 112.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
 
-Savainojumi/sastāvs: WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6; BOS: Mitchell Robinson (Out) -0.5
+Savainojumi/sastāvs: WSH: Anthony Davis (spēlēja 8/10 pēdējās) +0.6; BOS: Mitchell Robinson (Out) -0.4; BOS: Mike Conley (spēlēja 4/10 pēdējās) +0.4; BOS: Jayson Tatum (spēlēja 8/10 pēdējās) +0.6
 
 ### DAL @ DEN · 05:00
-Robots: **DEN -8.5**, kopā 232.5 · bukmeikeri: DEN -8.5, kopā 232.5
+Robots: **DEN -8.5**, kopā 234.5 · bukmeikeri: DEN -8.5, kopā 234.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 228.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **zem 230.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **DEN -10.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **DAL virs 113.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-
-Savainojumi/sastāvs: DAL: P.J. Washington (Day-To-Day) -0.4; DAL: Kyrie Irving (spēlēja 8/10 pēdējās) +0.5
+| 3 | **DAL virs 114.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 ## 🛡 1.7+ — koef. ≥ 1.7
 
@@ -45,9 +43,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| DET@ORL | **DET virs 106.5** | 53/100 | 1.74 | ⏳ gaida |
-| DAL@DEN | **DAL zem 112.5** | 53/100 | 1.75 | ⏳ gaida |
-| BOS@WSH | **BOS virs 112.5** | 53/100 | 1.75 | ⏳ gaida |
+| DET@ORL | **ORL zem 105.5** | 53/100 | 1.74 | ⏳ gaida |
+| DAL@DEN | **DAL zem 113.5** | 53/100 | 1.75 | ⏳ gaida |
+| BOS@WSH | **BOS virs 113.5** | 53/100 | 1.75 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -55,8 +53,8 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| DET@ORL | **ORL -7.5** | 23/100 | 4.05 | 4.35 | ⏳ gaida |
-| BOS@WSH | **WSH zem 94.5** | 23/100 | 4.06 | 4.37 | ⏳ gaida |
+| BOS@WSH | **WSH virs 111.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| DET@ORL | **DET -12.5** | 23/100 | 4.04 | 4.34 | ⏳ gaida |
 | DAL@DEN | **DEN -18.5** | 22/100 | 4.19 | 4.51 | ⏳ gaida |
 
 ## Statistika
