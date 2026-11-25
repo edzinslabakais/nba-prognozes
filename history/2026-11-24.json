@@ -75,7 +75,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909314",
@@ -90,7 +91,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909314",
@@ -105,7 +107,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909315",
@@ -120,7 +123,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909315",
@@ -135,7 +139,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909315",
@@ -150,7 +155,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909316",
@@ -165,7 +171,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909316",
@@ -180,7 +187,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909316",
@@ -195,7 +203,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "crazy": [
@@ -210,7 +219,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909314",
@@ -223,7 +233,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -236,7 +247,8 @@
    "fair_odds": 4.51,
    "est_odds": 4.19,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "safe": [
@@ -254,7 +266,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -270,7 +283,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909315",
@@ -286,7 +300,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   }
  ],
  "safe_all": [
@@ -304,7 +319,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -320,7 +336,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909315",
@@ -336,7 +353,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   }
  ],
  "robot": [
@@ -354,7 +372,8 @@
    "est_odds": 1.71,
    "confidence": 69,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909315",
@@ -370,7 +389,8 @@
    "est_odds": 1.71,
    "confidence": 64,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909316",
@@ -386,7 +406,8 @@
    "est_odds": 1.79,
    "confidence": 63,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "p15": [
@@ -404,7 +425,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909315",
@@ -420,7 +442,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909316",
@@ -436,7 +459,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "extra": [
@@ -451,7 +475,8 @@
    "fair_odds": 1.87,
    "est_odds": 1.74,
    "confidence": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 104 - 86 ORL (1. ceturtdaļa 16 - 22; 1. puslaiks 48 - 36)"
   },
   {
    "game_id": "401909315",
@@ -464,7 +489,8 @@
    "fair_odds": 1.83,
    "est_odds": 1.7,
    "confidence": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH (1. ceturtdaļa 34 - 28; 1. puslaiks 80 - 49)"
   },
   {
    "game_id": "401909316",
@@ -477,7 +503,8 @@
    "fair_odds": 1.83,
    "est_odds": 1.71,
    "confidence": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "DAL 120 - 101 DEN (1. ceturtdaļa 24 - 17; 1. puslaiks 58 - 39)"
   }
  ]
 }

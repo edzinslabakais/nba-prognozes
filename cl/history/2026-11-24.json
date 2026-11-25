@@ -162,7 +162,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915380",
@@ -177,7 +178,8 @@
    "fair_odds": 2.66,
    "est_odds": 2.48,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915380",
@@ -192,7 +194,8 @@
    "fair_odds": 2.97,
    "est_odds": 2.76,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915300",
@@ -207,7 +210,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.1,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "AVL 0 - 1 GAL"
   },
   {
    "game_id": "401915300",
@@ -222,7 +226,8 @@
    "fair_odds": 2.97,
    "est_odds": 2.76,
    "confidence": 34,
-   "result": null
+   "result": "izgāja",
+   "score": "AVL 0 - 1 GAL"
   },
   {
    "game_id": "401915300",
@@ -237,7 +242,8 @@
    "fair_odds": 3.06,
    "est_odds": 2.85,
    "confidence": 33,
-   "result": null
+   "result": "izgāja",
+   "score": "AVL 0 - 1 GAL"
   },
   {
    "game_id": "401915295",
@@ -252,7 +258,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "DOR 1 - 1 ARS"
   },
   {
    "game_id": "401915295",
@@ -267,7 +274,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "DOR 1 - 1 ARS"
   },
   {
    "game_id": "401915295",
@@ -282,7 +290,8 @@
    "fair_odds": 3.0,
    "est_odds": 2.79,
    "confidence": 33,
-   "result": null
+   "result": "neizgāja",
+   "score": "DOR 1 - 1 ARS"
   },
   {
    "game_id": "401915296",
@@ -297,7 +306,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915296",
@@ -312,7 +322,8 @@
    "fair_odds": 2.53,
    "est_odds": 2.35,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915296",
@@ -327,7 +338,8 @@
    "fair_odds": 2.9,
    "est_odds": 2.7,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915294",
@@ -342,7 +354,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915294",
@@ -357,7 +370,8 @@
    "fair_odds": 2.57,
    "est_odds": 2.39,
    "confidence": 39,
-   "result": null
+   "result": "izgāja",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915294",
@@ -372,7 +386,8 @@
    "fair_odds": 2.59,
    "est_odds": 2.41,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915379",
@@ -387,7 +402,8 @@
    "fair_odds": 2.54,
    "est_odds": 2.36,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915379",
@@ -402,7 +418,8 @@
    "fair_odds": 2.8,
    "est_odds": 2.6,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915379",
@@ -417,7 +434,8 @@
    "fair_odds": 2.93,
    "est_odds": 2.73,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915299",
@@ -432,7 +450,8 @@
    "fair_odds": 2.73,
    "est_odds": 2.54,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915299",
@@ -447,7 +466,8 @@
    "fair_odds": 2.94,
    "est_odds": 2.73,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915299",
@@ -462,7 +482,8 @@
    "fair_odds": 3.09,
    "est_odds": 2.88,
    "confidence": 32,
-   "result": null
+   "result": "neizgāja",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915298",
@@ -477,7 +498,8 @@
    "fair_odds": 2.61,
    "est_odds": 2.43,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915298",
@@ -492,7 +514,8 @@
    "fair_odds": 2.74,
    "est_odds": 2.55,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915298",
@@ -507,7 +530,8 @@
    "fair_odds": 3.06,
    "est_odds": 2.84,
    "confidence": 33,
-   "result": null
+   "result": "neizgāja",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915297",
@@ -522,7 +546,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915297",
@@ -537,7 +562,8 @@
    "fair_odds": 2.48,
    "est_odds": 2.31,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915297",
@@ -552,7 +578,8 @@
    "fair_odds": 2.94,
    "est_odds": 2.74,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "BET 2 - 0 SLB"
   }
  ],
  "crazy": [
@@ -567,7 +594,8 @@
    "fair_odds": 4.32,
    "est_odds": 4.02,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915297",
@@ -580,7 +608,8 @@
    "fair_odds": 4.36,
    "est_odds": 4.05,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915379",
@@ -593,7 +622,8 @@
    "fair_odds": 4.36,
    "est_odds": 4.06,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "NAP 2 - 2 MNC"
   }
  ],
  "safe": [
@@ -611,7 +641,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null
+   "result": "neizgāja",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915297",
@@ -627,7 +658,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915300",
@@ -643,7 +675,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "AVL 0 - 1 GAL"
   }
  ],
  "safe_all": [
@@ -661,9 +694,10 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "FC Porto",
-   "home_short": "Feyenoord"
+   "home_short": "Feyenoord",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915297",
@@ -679,9 +713,10 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Betis",
-   "home_short": "S Bratislava"
+   "home_short": "S Bratislava",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915300",
@@ -697,9 +732,10 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Aston Villa",
-   "home_short": "Galatasaray"
+   "home_short": "Galatasaray",
+   "score": "AVL 0 - 1 GAL"
   },
   {
    "game_id": "401915380",
@@ -715,9 +751,10 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "LASK Linz",
-   "home_short": "Bodo/Glimt"
+   "home_short": "Bodo/Glimt",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915299",
@@ -733,9 +770,10 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Lens",
-   "home_short": "RB Leipzig"
+   "home_short": "RB Leipzig",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915379",
@@ -751,9 +789,10 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Napoli",
-   "home_short": "Man City"
+   "home_short": "Man City",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915298",
@@ -769,9 +808,10 @@
    "est_odds": 1.84,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "PSV",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915296",
@@ -787,9 +827,10 @@
    "est_odds": 1.84,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "AEK Athens",
-   "home_short": "Como"
+   "home_short": "Como",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915295",
@@ -805,9 +846,10 @@
    "est_odds": 1.88,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Dortmund",
-   "home_short": "Arsenal"
+   "home_short": "Arsenal",
+   "score": "DOR 1 - 1 ARS"
   }
  ],
  "robot": [
@@ -825,9 +867,10 @@
    "est_odds": 1.84,
    "confidence": 88,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "AEK Athens",
-   "home_short": "Como"
+   "home_short": "Como",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915298",
@@ -843,9 +886,10 @@
    "est_odds": 1.79,
    "confidence": 76,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "PSV",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915380",
@@ -861,9 +905,10 @@
    "est_odds": 1.73,
    "confidence": 74,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "LASK Linz",
-   "home_short": "Bodo/Glimt"
+   "home_short": "Bodo/Glimt",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915379",
@@ -879,9 +924,10 @@
    "est_odds": 1.73,
    "confidence": 70,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Napoli",
-   "home_short": "Man City"
+   "home_short": "Man City",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915294",
@@ -897,9 +943,10 @@
    "est_odds": 1.7,
    "confidence": 68,
    "data_conf": 55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "FC Porto",
-   "home_short": "Feyenoord"
+   "home_short": "Feyenoord",
+   "score": "FCP 1 - 0 FEY"
   },
   {
    "game_id": "401915297",
@@ -915,9 +962,10 @@
    "est_odds": 1.9,
    "confidence": 60,
    "data_conf": 49,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Betis",
-   "home_short": "S Bratislava"
+   "home_short": "S Bratislava",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915299",
@@ -933,9 +981,10 @@
    "est_odds": 1.73,
    "confidence": 59,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Lens",
-   "home_short": "RB Leipzig"
+   "home_short": "RB Leipzig",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915295",
@@ -951,9 +1000,10 @@
    "est_odds": 1.84,
    "confidence": 55,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Dortmund",
-   "home_short": "Arsenal"
+   "home_short": "Arsenal",
+   "score": "DOR 1 - 1 ARS"
   },
   {
    "game_id": "401915300",
@@ -969,9 +1019,10 @@
    "est_odds": 1.73,
    "confidence": 52,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Aston Villa",
-   "home_short": "Galatasaray"
+   "home_short": "Galatasaray",
+   "score": "AVL 0 - 1 GAL"
   }
  ],
  "p15": [
@@ -989,9 +1040,10 @@
    "est_odds": 1.67,
    "confidence": 56,
    "data_conf": 56,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Aston Villa",
-   "home_short": "Galatasaray"
+   "home_short": "Galatasaray",
+   "score": "AVL 0 - 1 GAL"
   },
   {
    "game_id": "401915380",
@@ -1007,9 +1059,10 @@
    "est_odds": 1.63,
    "confidence": 57,
    "data_conf": 57,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "LASK Linz",
-   "home_short": "Bodo/Glimt"
+   "home_short": "Bodo/Glimt",
+   "score": "LAS 0 - 1 BODO"
   },
   {
    "game_id": "401915296",
@@ -1025,9 +1078,10 @@
    "est_odds": 1.54,
    "confidence": 60,
    "data_conf": 60,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "AEK Athens",
-   "home_short": "Como"
+   "home_short": "Como",
+   "score": "AEK 0 - 1 COMO"
   },
   {
    "game_id": "401915297",
@@ -1043,9 +1097,10 @@
    "est_odds": 1.56,
    "confidence": 60,
    "data_conf": 60,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Betis",
-   "home_short": "S Bratislava"
+   "home_short": "S Bratislava",
+   "score": "BET 2 - 0 SLB"
   },
   {
    "game_id": "401915379",
@@ -1061,9 +1116,10 @@
    "est_odds": 1.54,
    "confidence": 61,
    "data_conf": 61,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Napoli",
-   "home_short": "Man City"
+   "home_short": "Man City",
+   "score": "NAP 2 - 2 MNC"
   },
   {
    "game_id": "401915299",
@@ -1079,9 +1135,10 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Lens",
-   "home_short": "RB Leipzig"
+   "home_short": "RB Leipzig",
+   "score": "RCL 1 - 3 RBL"
   },
   {
    "game_id": "401915295",
@@ -1097,9 +1154,10 @@
    "est_odds": 1.52,
    "confidence": 61,
    "data_conf": 61,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Dortmund",
-   "home_short": "Arsenal"
+   "home_short": "Arsenal",
+   "score": "DOR 1 - 1 ARS"
   },
   {
    "game_id": "401915298",
@@ -1115,9 +1173,10 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null,
+   "result": "izgāja",
    "away_short": "PSV",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "PSV 1 - 5 RMA"
   },
   {
    "game_id": "401915294",
@@ -1133,9 +1192,10 @@
    "est_odds": 1.52,
    "confidence": 61,
    "data_conf": 61,
-   "result": null,
+   "result": "izgāja",
    "away_short": "FC Porto",
-   "home_short": "Feyenoord"
+   "home_short": "Feyenoord",
+   "score": "FCP 1 - 0 FEY"
   }
  ],
  "extra": [
@@ -1150,9 +1210,10 @@
    "fair_odds": 1.83,
    "est_odds": 1.7,
    "confidence": 55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "LASK Linz",
-   "home_short": "Bodo/Glimt"
+   "home_short": "Bodo/Glimt",
+   "score": "LAS 0 - 1 BODO (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401915300",
@@ -1165,9 +1226,10 @@
    "fair_odds": 1.86,
    "est_odds": 1.73,
    "confidence": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Aston Villa",
-   "home_short": "Galatasaray"
+   "home_short": "Galatasaray",
+   "score": "AVL 0 - 1 GAL (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401915295",
@@ -1180,9 +1242,10 @@
    "fair_odds": 1.96,
    "est_odds": 1.83,
    "confidence": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Dortmund",
-   "home_short": "Arsenal"
+   "home_short": "Arsenal",
+   "score": "DOR 1 - 1 ARS (90 min.; 1. puslaiks 0 - 1)"
   },
   {
    "game_id": "401915296",
@@ -1195,9 +1258,10 @@
    "fair_odds": 1.99,
    "est_odds": 1.85,
    "confidence": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "AEK Athens",
-   "home_short": "Como"
+   "home_short": "Como",
+   "score": "AEK 0 - 1 COMO (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401915294",
@@ -1210,9 +1274,10 @@
    "fair_odds": 1.84,
    "est_odds": 1.71,
    "confidence": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "FC Porto",
-   "home_short": "Feyenoord"
+   "home_short": "Feyenoord",
+   "score": "FCP 1 - 0 FEY (90 min.; 1. puslaiks 1 - 0)"
   },
   {
    "game_id": "401915379",
@@ -1225,9 +1290,10 @@
    "fair_odds": 1.91,
    "est_odds": 1.77,
    "confidence": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Napoli",
-   "home_short": "Man City"
+   "home_short": "Man City",
+   "score": "NAP 2 - 2 MNC (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401915299",
@@ -1240,9 +1306,10 @@
    "fair_odds": 1.91,
    "est_odds": 1.77,
    "confidence": 52,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Lens",
-   "home_short": "RB Leipzig"
+   "home_short": "RB Leipzig",
+   "score": "RCL 1 - 3 RBL (90 min.; 1. puslaiks 0 - 2)"
   },
   {
    "game_id": "401915298",
@@ -1255,9 +1322,10 @@
    "fair_odds": 2.6,
    "est_odds": 2.41,
    "confidence": 39,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "PSV",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "PSV 1 - 5 RMA (90 min.; 1. puslaiks 1 - 0)"
   },
   {
    "game_id": "401915297",
@@ -1270,9 +1338,10 @@
    "fair_odds": 1.97,
    "est_odds": 1.83,
    "confidence": 51,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Betis",
-   "home_short": "S Bratislava"
+   "home_short": "S Bratislava",
+   "score": "BET 2 - 0 SLB (90 min.; 1. puslaiks 1 - 0)"
   }
  ]
 }

@@ -114,7 +114,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_132",
@@ -129,7 +130,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_132",
@@ -144,7 +146,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_131",
@@ -159,7 +162,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_131",
@@ -174,7 +178,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_131",
@@ -189,7 +194,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_134",
@@ -204,7 +210,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_134",
@@ -219,7 +226,8 @@
    "fair_odds": 2.35,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_134",
@@ -234,7 +242,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_135",
@@ -249,7 +258,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_135",
@@ -264,7 +274,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_135",
@@ -279,7 +290,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_136",
@@ -294,7 +306,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 95 - 91 ASV"
   },
   {
    "game_id": "E2026_136",
@@ -309,7 +322,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "MIL 95 - 91 ASV"
   },
   {
    "game_id": "E2026_136",
@@ -324,7 +338,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 95 - 91 ASV"
   },
   {
    "game_id": "E2026_133",
@@ -339,7 +354,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_133",
@@ -354,7 +370,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_133",
@@ -369,7 +386,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "ULK 83 - 77 BAR"
   }
  ],
  "crazy": [
@@ -384,7 +402,8 @@
    "fair_odds": 4.33,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_132",
@@ -397,7 +416,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_136",
@@ -410,7 +430,8 @@
    "fair_odds": 4.37,
    "est_odds": 4.06,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIL 95 - 91 ASV"
   }
  ],
  "safe": [
@@ -428,7 +449,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_135",
@@ -444,7 +466,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_133",
@@ -460,7 +483,8 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "ULK 83 - 77 BAR"
   }
  ],
  "safe_all": [
@@ -478,9 +502,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Maccabi",
-   "home_short": "Bayern Munich"
+   "home_short": "Bayern Munich",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_135",
@@ -496,9 +521,10 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Panathinaikos",
-   "home_short": "Valencia"
+   "home_short": "Valencia",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_133",
@@ -514,9 +540,10 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Fenerbahce",
-   "home_short": "FC Barcelona"
+   "home_short": "FC Barcelona",
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_131",
@@ -532,9 +559,10 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Virtus Bologna",
-   "home_short": "Crvena Zvezda"
+   "home_short": "Crvena Zvezda",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_132",
@@ -550,9 +578,10 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Paris",
-   "home_short": "Besiktas"
+   "home_short": "Besiktas",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_136",
@@ -568,9 +597,10 @@
    "est_odds": 1.78,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Milan",
-   "home_short": "LDLC ASVEL"
+   "home_short": "LDLC ASVEL",
+   "score": "MIL 95 - 91 ASV"
   }
  ],
  "robot": [
@@ -588,9 +618,10 @@
    "est_odds": 1.71,
    "confidence": 55,
    "data_conf": null,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Virtus Bologna",
-   "home_short": "Crvena Zvezda"
+   "home_short": "Crvena Zvezda",
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_135",
@@ -606,9 +637,10 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Panathinaikos",
-   "home_short": "Valencia"
+   "home_short": "Valencia",
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_133",
@@ -624,9 +656,10 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Fenerbahce",
-   "home_short": "FC Barcelona"
+   "home_short": "FC Barcelona",
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_134",
@@ -642,9 +675,10 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Maccabi",
-   "home_short": "Bayern Munich"
+   "home_short": "Bayern Munich",
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_132",
@@ -660,9 +694,10 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Paris",
-   "home_short": "Besiktas"
+   "home_short": "Besiktas",
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_136",
@@ -678,9 +713,10 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Milan",
-   "home_short": "LDLC ASVEL"
+   "home_short": "LDLC ASVEL",
+   "score": "MIL 95 - 91 ASV"
   }
  ],
  "p15": [],

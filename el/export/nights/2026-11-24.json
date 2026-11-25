@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "PRS 88 - 76 BES",
    "picks": [
     {
      "category": "komandas punkti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PRS 88 - 76 BES",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PRS 88 - 76 BES",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PRS 88 - 76 BES",
      "top": false
     }
    ]
@@ -70,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "VIR 108 - 84 RED",
    "picks": [
     {
      "category": "kopā",
@@ -80,7 +83,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "VIR 108 - 84 RED",
      "top": true
     },
     {
@@ -91,7 +95,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "VIR 108 - 84 RED",
      "top": false
     },
     {
@@ -102,7 +107,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "VIR 108 - 84 RED",
      "top": false
     }
    ]
@@ -122,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "TEL 87 - 79 MUN",
    "picks": [
     {
      "category": "kopā",
@@ -132,7 +138,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "TEL 87 - 79 MUN",
      "top": true
     },
     {
@@ -143,7 +150,8 @@
      "fair_odds": 2.35,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "TEL 87 - 79 MUN",
      "top": false
     },
     {
@@ -154,7 +162,8 @@
      "fair_odds": 2.41,
      "est_odds": 2.24,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "TEL 87 - 79 MUN",
      "top": false
     }
    ]
@@ -174,7 +183,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "PAN 86 - 83 PAM",
    "picks": [
     {
      "category": "kopā",
@@ -184,7 +193,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "PAN 86 - 83 PAM",
      "top": true
     },
     {
@@ -195,7 +205,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PAN 86 - 83 PAM",
      "top": false
     },
     {
@@ -206,7 +217,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "PAN 86 - 83 PAM",
      "top": false
     }
    ]
@@ -226,7 +238,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "MIL 95 - 91 ASV",
    "picks": [
     {
      "category": "starpība",
@@ -236,7 +248,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 95 - 91 ASV",
      "top": true
     },
     {
@@ -247,7 +260,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 95 - 91 ASV",
      "top": false
     },
     {
@@ -258,7 +272,8 @@
      "fair_odds": 2.36,
      "est_odds": 2.19,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MIL 95 - 91 ASV",
      "top": false
     }
    ]
@@ -278,7 +293,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "ULK 83 - 77 BAR",
    "picks": [
     {
      "category": "kopā",
@@ -288,7 +303,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "ULK 83 - 77 BAR",
      "top": true
     },
     {
@@ -299,7 +315,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "ULK 83 - 77 BAR",
      "top": false
     },
     {
@@ -310,7 +327,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "ULK 83 - 77 BAR",
      "top": false
     }
    ]
@@ -318,11 +336,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 0,
-  "hits": 0,
+  "settled": 18,
+  "hits": 10,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 7.78,
+  "profit_units": 3.62
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -335,8 +353,8 @@
    "confidence": 23,
    "fair_odds": 4.33,
    "est_odds": 4.03,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "VIR 108 - 84 RED",
    "away_short": "Virtus Bologna",
    "home_short": "Crvena Zvezda"
   },
@@ -349,8 +367,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.03,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "PRS 88 - 76 BES",
    "away_short": "Paris",
    "home_short": "Besiktas"
   },
@@ -363,27 +381,27 @@
    "confidence": 23,
    "fair_odds": 4.37,
    "est_odds": 4.06,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "MIL 95 - 91 ASV",
    "away_short": "Milan",
    "home_short": "LDLC ASVEL"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": 1.03
  },
  "top_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.63,
+  "profit_units": 0.4
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -398,8 +416,8 @@
    "p_model": 0.5311,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "TEL 87 - 79 MUN",
    "away_short": "Maccabi",
    "home_short": "Bayern Munich"
   },
@@ -414,8 +432,8 @@
    "p_model": 0.5269,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "PAN 86 - 83 PAM",
    "away_short": "Panathinaikos",
    "home_short": "Valencia"
   },
@@ -430,19 +448,19 @@
    "p_model": 0.5269,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "ULK 83 - 77 BAR",
    "away_short": "Fenerbahce",
    "home_short": "FC Barcelona"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.58,
+  "profit_units": 0.52
  },
  "safe_all": [
   {
@@ -458,10 +476,10 @@
    "p_market": null,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Maccabi",
    "home_short": "Bayern Munich",
-   "score": null
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_135",
@@ -476,10 +494,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Panathinaikos",
    "home_short": "Valencia",
-   "score": null
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_133",
@@ -494,10 +512,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Fenerbahce",
    "home_short": "FC Barcelona",
-   "score": null
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_131",
@@ -512,10 +530,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Virtus Bologna",
    "home_short": "Crvena Zvezda",
-   "score": null
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_132",
@@ -530,10 +548,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Paris",
    "home_short": "Besiktas",
-   "score": null
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_136",
@@ -548,19 +566,19 @@
    "p_market": null,
    "fair_odds": 1.92,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Milan",
    "home_short": "LDLC ASVEL",
-   "score": null
+   "score": "MIL 95 - 91 ASV"
   }
  ],
  "safe_all_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.16,
+  "profit_units": -0.71
  },
  "robot": [
   {
@@ -576,10 +594,10 @@
    "p_market": null,
    "fair_odds": 1.83,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Virtus Bologna",
    "home_short": "Crvena Zvezda",
-   "score": null
+   "score": "VIR 108 - 84 RED"
   },
   {
    "game_id": "E2026_135",
@@ -594,10 +612,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Panathinaikos",
    "home_short": "Valencia",
-   "score": null
+   "score": "PAN 86 - 83 PAM"
   },
   {
    "game_id": "E2026_133",
@@ -612,10 +630,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Fenerbahce",
    "home_short": "FC Barcelona",
-   "score": null
+   "score": "ULK 83 - 77 BAR"
   },
   {
    "game_id": "E2026_134",
@@ -630,10 +648,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Maccabi",
    "home_short": "Bayern Munich",
-   "score": null
+   "score": "TEL 87 - 79 MUN"
   },
   {
    "game_id": "E2026_132",
@@ -648,10 +666,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Paris",
    "home_short": "Besiktas",
-   "score": null
+   "score": "PRS 88 - 76 BES"
   },
   {
    "game_id": "E2026_136",
@@ -666,19 +684,19 @@
    "p_market": null,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Milan",
    "home_short": "LDLC ASVEL",
-   "score": null
+   "score": "MIL 95 - 91 ASV"
   }
  ],
  "robot_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.26,
+  "profit_units": -2.58
  },
  "p15": [],
  "p15_summary": {

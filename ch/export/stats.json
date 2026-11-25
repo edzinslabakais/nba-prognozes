@@ -1,35 +1,35 @@
 {
  "overall": {
   "picks": 22,
-  "settled": 12,
-  "hits": 3,
+  "settled": 22,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 4.96,
-  "profit_units": -4.63
+  "expected_hits": 9.12,
+  "profit_units": -10.27
  },
  "crazy_overall": {
   "picks": 7,
-  "settled": 4,
-  "hits": 0,
+  "settled": 7,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.91,
-  "profit_units": -4
+  "expected_hits": 1.6,
+  "profit_units": -2.99
  },
  "top_overall": {
   "picks": 19,
-  "settled": 11,
-  "hits": 2,
+  "settled": 19,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 4.63,
-  "profit_units": -6.45
+  "expected_hits": 7.94,
+  "profit_units": -12.24
  },
  "safe_all_overall": {
   "picks": 20,
-  "settled": 12,
-  "hits": 3,
+  "settled": 20,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 6.17,
-  "profit_units": -6.73
+  "expected_hits": 10.18,
+  "profit_units": -9.02
  },
  "safe_overall": {
   "picks": 0,
@@ -125,26 +125,26 @@
   {
    "date": "2026-11-24",
    "picks": 10,
-   "settled": 0,
-   "hits": 0,
+   "settled": 10,
+   "hits": 2,
    "pushes": 0,
-   "expected_hits": 0,
-   "profit_units": 0,
+   "expected_hits": 4.16,
+   "profit_units": -5.64,
    "crazy": {
     "picks": 3,
-    "settled": 0,
-    "hits": 0,
+    "settled": 3,
+    "hits": 1,
     "pushes": 0,
-    "expected_hits": 0,
-    "profit_units": 0
+    "expected_hits": 0.7,
+    "profit_units": 1.01
    },
    "top": {
     "picks": 8,
-    "settled": 0,
-    "hits": 0,
+    "settled": 8,
+    "hits": 1,
     "pushes": 0,
-    "expected_hits": 0,
-    "profit_units": 0
+    "expected_hits": 3.31,
+    "profit_units": -5.79
    },
    "safe": {
     "picks": 0,
@@ -156,32 +156,32 @@
    },
    "safe_all": {
     "picks": 8,
-    "settled": 0,
-    "hits": 0,
+    "settled": 8,
+    "hits": 3,
     "pushes": 0,
-    "expected_hits": 0,
-    "profit_units": 0
+    "expected_hits": 4.0,
+    "profit_units": -2.29
    }
   }
  ],
  "calibration": [
   {
    "range": "0-34",
-   "n": 1,
-   "hit_rate": 1.0,
-   "expected": 0.33
+   "n": 2,
+   "hit_rate": 0.5,
+   "expected": 0.337
   },
   {
    "range": "35-39",
-   "n": 2,
-   "hit_rate": 0.5,
-   "expected": 0.389
+   "n": 3,
+   "hit_rate": 0.333,
+   "expected": 0.382
   },
   {
    "range": "40-44",
-   "n": 9,
-   "hit_rate": 0.111,
-   "expected": 0.428
+   "n": 17,
+   "hit_rate": 0.176,
+   "expected": 0.43
   }
  ],
  "months": [
@@ -191,19 +191,19 @@
    "days": "21.–30.11.",
    "all": {
     "picks": 22,
-    "settled": 12,
-    "hits": 3,
+    "settled": 22,
+    "hits": 5,
     "pushes": 0,
-    "expected_hits": 4.96,
-    "profit_units": -4.63
+    "expected_hits": 9.12,
+    "profit_units": -10.27
    },
    "top": {
     "picks": 19,
-    "settled": 11,
-    "hits": 2,
+    "settled": 19,
+    "hits": 3,
     "pushes": 0,
-    "expected_hits": 4.63,
-    "profit_units": -6.45
+    "expected_hits": 7.94,
+    "profit_units": -12.24
    },
    "safe": {
     "picks": 0,
@@ -215,13 +215,13 @@
    },
    "crazy": {
     "picks": 7,
-    "settled": 4,
-    "hits": 0,
+    "settled": 7,
+    "hits": 1,
     "pushes": 0,
-    "expected_hits": 0.91,
-    "profit_units": -4
+    "expected_hits": 1.6,
+    "profit_units": -2.99
    }
   }
  ],
- "updated_at": "2026-11-24T11:09+00:00"
+ "updated_at": "2026-11-25T05:42+00:00"
 }

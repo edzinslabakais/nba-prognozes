@@ -22,7 +22,7 @@
     "DET: Cade Cunningham (Day-To-Day) -0.8",
     "DET: Isaiah Joe (spēlēja 3/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "DET 104 - 86 ORL",
    "picks": [
     {
      "category": "kopā",
@@ -32,7 +32,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DET 104 - 86 ORL",
      "top": true
     },
     {
@@ -43,7 +44,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DET 104 - 86 ORL",
      "top": false
     },
     {
@@ -54,7 +56,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DET 104 - 86 ORL",
      "top": false
     }
    ]
@@ -79,7 +82,7 @@
     "BOS: Mike Conley (spēlēja 4/10 pēdējās) +0.4",
     "BOS: Jayson Tatum (spēlēja 8/10 pēdējās) +0.6"
    ],
-   "score": null,
+   "score": "BOS 131 - 116 WSH",
    "picks": [
     {
      "category": "starpība",
@@ -89,7 +92,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "BOS 131 - 116 WSH",
      "top": true
     },
     {
@@ -100,7 +104,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 131 - 116 WSH",
      "top": false
     },
     {
@@ -111,7 +116,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BOS 131 - 116 WSH",
      "top": false
     }
    ]
@@ -131,7 +137,7 @@
    "market_line": "DEN -8.5",
    "market_total": 234.5,
    "injuries": [],
-   "score": null,
+   "score": "DAL 120 - 101 DEN",
    "picks": [
     {
      "category": "kopā",
@@ -141,7 +147,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DAL 120 - 101 DEN",
      "top": true
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DAL 120 - 101 DEN",
      "top": false
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DAL 120 - 101 DEN",
      "top": false
     }
    ]
@@ -171,11 +180,11 @@
  ],
  "summary": {
   "picks": 9,
-  "settled": 0,
-  "hits": 0,
+  "settled": 9,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.91,
+  "profit_units": 1.71
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -188,8 +197,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909314",
@@ -200,8 +209,8 @@
    "confidence": 23,
    "fair_odds": 4.34,
    "est_odds": 4.04,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -212,25 +221,25 @@
    "confidence": 22,
    "fair_odds": 4.51,
    "est_odds": 4.19,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.68,
+  "profit_units": 5.05
  },
  "top_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.31,
+  "profit_units": 3.41
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -245,8 +254,8 @@
    "p_model": 0.4158,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -259,8 +268,8 @@
    "p_model": 0.5285,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909315",
@@ -273,17 +282,17 @@
    "p_model": 0.4305,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "BOS 131 - 116 WSH"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": 0.49
  },
  "safe_all": [
   {
@@ -299,10 +308,10 @@
    "p_market": 0.534,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909316",
@@ -317,10 +326,10 @@
    "p_market": 0.532,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 120 - 101 DEN"
   },
   {
    "game_id": "401909315",
@@ -335,19 +344,19 @@
    "p_market": 0.5316,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 131 - 116 WSH"
   }
  ],
  "safe_all_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": 0.49
  },
  "robot": [
   {
@@ -363,10 +372,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.44,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909315",
@@ -381,10 +390,10 @@
    "p_market": 0.5435,
    "fair_odds": 1.56,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909316",
@@ -399,19 +408,19 @@
    "p_market": 0.5204,
    "fair_odds": 1.58,
    "est_odds": 1.79,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "robot_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.97,
+  "profit_units": -1.21
  },
  "p15": [
   {
@@ -427,10 +436,10 @@
    "p_market": 0.6199,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DET 104 - 86 ORL"
   },
   {
    "game_id": "401909315",
@@ -445,10 +454,10 @@
    "p_market": 0.6199,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 131 - 116 WSH"
   },
   {
    "game_id": "401909316",
@@ -463,19 +472,19 @@
    "p_market": 0.6178,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 120 - 101 DEN"
   }
  ],
  "p15_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.86,
+  "profit_units": 0.0
  },
  "extra": [
   {
@@ -488,10 +497,10 @@
    "confidence": 54,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DET 104 - 86 ORL (1. ceturtdaļa 16 - 22; 1. puslaiks 48 - 36)"
   },
   {
    "game_id": "401909315",
@@ -503,10 +512,10 @@
    "confidence": 55,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BOS 131 - 116 WSH (1. ceturtdaļa 34 - 28; 1. puslaiks 80 - 49)"
   },
   {
    "game_id": "401909316",
@@ -518,18 +527,18 @@
    "confidence": 55,
    "fair_odds": 1.83,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 120 - 101 DEN (1. ceturtdaļa 24 - 17; 1. puslaiks 58 - 39)"
   }
  ],
  "extra_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.63,
+  "profit_units": 0.41
  }
 }
