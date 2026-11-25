@@ -128,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "IST 81 - 86 BAS",
    "picks": [
     {
      "category": "komandas punkti",
@@ -138,8 +138,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "IST 81 - 86 BAS",
      "top": true
     },
     {
@@ -150,8 +150,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "IST 81 - 86 BAS",
      "top": false
     },
     {
@@ -162,8 +162,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "IST 81 - 86 BAS",
      "top": false
     }
    ]
@@ -226,11 +226,11 @@
  ],
  "summary": {
   "picks": 12,
-  "settled": 6,
-  "hits": 2,
+  "settled": 9,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 2.6,
-  "profit_units": -1.63
+  "expected_hits": 3.9,
+  "profit_units": -0.34
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -271,27 +271,27 @@
    "confidence": 23,
    "fair_odds": 4.41,
    "est_odds": 4.1,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "IST 81 - 86 BAS",
    "away_short": "Anadolu Efes",
    "home_short": "Baskonia"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 1,
+  "settled": 2,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0.23,
-  "profit_units": -1
+  "expected_hits": 0.46,
+  "profit_units": -2
  },
  "top_summary": {
   "picks": 4,
-  "settled": 2,
+  "settled": 3,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.87,
-  "profit_units": 0.13
+  "expected_hits": 1.31,
+  "profit_units": -0.87
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -338,19 +338,19 @@
    "p_model": 0.5245,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "IST 81 - 86 BAS",
    "away_short": "Anadolu Efes",
    "home_short": "Baskonia"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 1,
+  "settled": 2,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.53,
-  "profit_units": 0.77
+  "expected_hits": 1.05,
+  "profit_units": -0.23
  },
  "safe_all": [
   {
@@ -402,10 +402,10 @@
    "p_market": null,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Anadolu Efes",
    "home_short": "Baskonia",
-   "score": null
+   "score": "IST 81 - 86 BAS"
   },
   {
    "game_id": "E2026_140",
@@ -428,11 +428,11 @@
  ],
  "safe_all_summary": {
   "picks": 4,
-  "settled": 2,
+  "settled": 3,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.05,
-  "profit_units": 1.54
+  "expected_hits": 1.57,
+  "profit_units": 0.54
  },
  "robot": [
   {
@@ -466,10 +466,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Anadolu Efes",
    "home_short": "Baskonia",
-   "score": null
+   "score": "IST 81 - 86 BAS"
   },
   {
    "game_id": "E2026_137",
@@ -510,11 +510,11 @@
  ],
  "robot_summary": {
   "picks": 4,
-  "settled": 2,
-  "hits": 1,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.08,
-  "profit_units": -0.28
+  "expected_hits": 1.63,
+  "profit_units": 0.43
  },
  "p15": [],
  "p15_summary": {

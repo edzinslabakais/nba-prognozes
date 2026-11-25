@@ -178,7 +178,9 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   },
   {
    "game_id": "E2026_138",
@@ -193,7 +195,9 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   },
   {
    "game_id": "E2026_138",
@@ -208,7 +212,9 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   },
   {
    "game_id": "E2026_139",
@@ -295,7 +301,9 @@
    "fair_odds": 4.41,
    "est_odds": 4.1,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   }
  ],
  "safe": [
@@ -346,7 +354,9 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   }
  ],
  "safe_all": [
@@ -401,9 +411,11 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Anadolu Efes",
-   "home_short": "Baskonia"
+   "home_short": "Baskonia",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   },
   {
    "game_id": "E2026_140",
@@ -458,9 +470,11 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": null,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Anadolu Efes",
-   "home_short": "Baskonia"
+   "home_short": "Baskonia",
+   "score": "IST 81 - 86 BAS",
+   "source": "manuāli no ekrānuzņēmuma (oficiālajā avotā rezultāts kavējās)"
   },
   {
    "game_id": "E2026_137",
