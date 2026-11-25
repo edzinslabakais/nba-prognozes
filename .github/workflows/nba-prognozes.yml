@@ -19,6 +19,7 @@ on:
     - cron: "33 5 * * *"   # 07:33 ziemā  -> WhatsApp
     - cron: "33 4 * * *"   # 07:33 vasarā -> WhatsApp
     - cron: "17 6 * * *"   # 08:17 ziemā  -> REZULTĀTI
+    - cron: "*/5 * * * *"  # ik pēc 5 min -> rezultāti līgām, kuru spēlēm jau vajadzētu būt beigušām
   workflow_dispatch:
     inputs:
       komanda:
@@ -32,8 +33,11 @@ permissions:
   pages: write
   id-token: write
 
+# The 5-minute results pass has its own queue, so it can never push out a waiting picks/results run
+# (GitHub keeps only one waiting run per queue). If both run at once, saving below starts again from the
+# newest history, so neither overwrites the other.
 concurrency:
-  group: nba-prognozes
+  group: ${{ github.event.schedule == '*/5 * * * *' && 'nba-live' || 'nba-prognozes' }}
   cancel-in-progress: false
 
 jobs:
@@ -41,6 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       komanda: ${{ steps.cmd.outputs.komanda }}
+      bots: ${{ steps.cmd.outputs.bots }}
     steps:
       - uses: actions/checkout@v4
       - name: Izlemt, ko palaist
@@ -54,6 +59,9 @@ jobs:
     timeout-minutes: 30
     env:
       KOMANDA: ${{ needs.decide.outputs.komanda }}
+      BOTS: ${{ needs.decide.outputs.bots }}
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -72,9 +80,9 @@ jobs:
       - name: Instalēt
         run: pip install -r requirements.txt
 
-      - name: Palaist robotus (${{ env.KOMANDA }})
+      - name: Palaist robotus un saglabāt vēsturi (${{ env.KOMANDA }})
+        id: save
         run: |
-          rc=0
           case "$KOMANDA" in
             likmes)    bots="bot.py nhl_bot.py"; cmd=likmes ;;
             likmes_eu) bots="el_bot.py cl_bot.py ch_bot.py"; cmd=likmes ;;
@@ -83,29 +91,32 @@ jobs:
             rezultati_el)  bots="el_bot.py"; cmd=rezultati ;;
             rezultati_cl)  bots="cl_bot.py"; cmd=rezultati ;;
             rezultati_ch)  bots="ch_bot.py"; cmd=rezultati ;;
+            rezultati_live) bots="$BOTS"; cmd=rezultati ;;
             *)         bots="bot.py nhl_bot.py el_bot.py cl_bot.py ch_bot.py"; cmd=rezultati ;;
           esac
-          for b in $bots; do
-            echo "::group::$b $cmd"; python "$b" "$cmd" --refresh || rc=1; echo "::endgroup::"
-          done
-          exit $rc
-
-      - name: Saglabāt vēsturi
-        if: always()
-        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for x in history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md ch CH.md; do
-            if [ -e "$x" ]; then git add "$x"; fi
-          done
-          if git diff --cached --quiet; then
-            echo "Nav izmaiņu."
-            exit 0
-          fi
-          git commit -m "$KOMANDA $(TZ=Europe/Riga date '+%Y-%m-%d %H:%M')"
-          for i in 1 2 3 4; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
-            sleep $((i * 5))
+          rc=0
+          # If someone else pushed meanwhile, start again from the newest history (the robots are safe to re-run).
+          for attempt in 1 2 3 4; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            rc=0
+            for b in $bots; do
+              echo "::group::$b $cmd"; python "$b" "$cmd" --refresh || rc=1; echo "::endgroup::"
+            done
+            for x in history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md ch CH.md; do
+              if [ -e "$x" ]; then git add "$x"; fi
+            done
+            if git diff --cached --quiet; then
+              echo "Nav izmaiņu."
+              exit $rc
+            fi
+            git commit -q -m "$KOMANDA $(TZ=Europe/Riga date '+%Y-%m-%d %H:%M')"
+            if git push origin HEAD:main; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit $rc
+            fi
+            sleep $((attempt * 5))
           done
           exit 1
 
@@ -113,7 +124,8 @@ jobs:
   # (vajag: repozitorijs Public, Settings -> Pages -> Source: GitHub Actions)
   pages:
     needs: [decide, run]
-    if: always() && needs.decide.outputs.komanda != '' && needs.decide.outputs.komanda != 'whatsapp' && needs.run.result != 'failure'
+    # the 5-minute results pass publishes the page only when a result actually changed
+    if: always() && needs.decide.outputs.komanda != '' && needs.decide.outputs.komanda != 'whatsapp' && needs.run.result != 'failure' && (needs.decide.outputs.komanda != 'rezultati_live' || needs.run.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

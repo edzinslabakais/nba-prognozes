@@ -116,6 +116,12 @@ ar koeficientu vismaz 1.7. Varbūtības nāk no spēles sagaidāmajiem vārtiem/
 daļām (`python extra.py kalibret`, rezultāts `extra_params.json`): pārbaudē visi tirgi bija precīzi ±1–2 punktu robežās,
 izņemot NHL 1. perioda uzvarētāju, kas ir izslēgts.
 
+### Rezultāti ik pēc 5 minūtēm
+
+Bez parastajiem rīta laikiem GitHub ik pēc 5 minūtēm (var kavēties) pārbauda, vai kādai likmei spēlei jau vajadzētu
+būt beigušai (NBA/NHL ~2 h 15 min pēc sākuma, EuroLeague un futbols ~1 h 55 min). Ja jā, tiek noslēgtas tikai šīs
+līgas likmes, un lapa tiek publicēta tikai tad, ja kāds rezultāts mainījies.
+
 ### Kopējā statistika
 
 Sadaļa **Statistika** (…/nba-prognozes/stats/) saskaita visus sporta veidus kopā četrās grupās: visas

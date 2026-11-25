@@ -22,7 +22,9 @@ Lietotājs raksta latviski. Atbildi latviski.
 LIKMES (~21:30, cron 21:17), REZULTĀTI (~07:00: 06:47 + 07:17, un ~08:30: 08:17) un WhatsApp statistiku
 (~07:30: 07:33, `whatsapp.py`, CallMeBot; Rīgas laiks) automātiski palaiž GitHub Actions. GitHub cron var kavēties
 līdz ~1 h (īpaši :00/:30), tāpēc laiki ir nepāra minūtēs un rezultāti tiek palaisti vairākkārt
-(`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Pēc tam tiek publicēta publiskā lapa
+(`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Papildus ik pēc 5 min (`*/5`, atsevišķa rinda `nba-live`)
+`scheduler.live_bots()` pārbauda, vai kādai likmei spēlei jau vajadzētu būt beigušai, un palaiž `rezultati_live` tikai
+tām līgām; lapu publicē tikai, ja kaut kas mainījies. Saglabāšana sāk no jaunākā `origin/main` un pārrēķina, ja push neizdodas. Pēc tam tiek publicēta publiskā lapa
 https://edzinslabakais.github.io/nba-prognozes/ un …/nhl/ (`site.py` → `site/`, GitHub Pages), kā arī atjaunināts
 `PROGNOZES.md`. Claude tajā nav vajadzīgs. Galvenā lapa ir šī publiskā lapa. Pirms rokas palaišanas veic `git pull`, jo
 Actions pievieno savus commit.
