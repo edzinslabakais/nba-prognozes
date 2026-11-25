@@ -183,7 +183,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "ZAL 93 - 108 MAD",
    "picks": [
     {
      "category": "starpība",
@@ -193,8 +193,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "ZAL 93 - 108 MAD",
      "top": true
     },
     {
@@ -205,8 +205,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "ZAL 93 - 108 MAD",
      "top": false
     },
     {
@@ -217,8 +217,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "ZAL 93 - 108 MAD",
      "top": false
     }
    ]
@@ -226,11 +226,11 @@
  ],
  "summary": {
   "picks": 12,
-  "settled": 9,
-  "hits": 4,
+  "settled": 12,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 3.9,
-  "profit_units": -0.34
+  "expected_hits": 5.22,
+  "profit_units": 0.93
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -243,8 +243,8 @@
    "confidence": 23,
    "fair_odds": 4.33,
    "est_odds": 4.03,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "ZAL 93 - 108 MAD",
    "away_short": "Zalgiris",
    "home_short": "Real Madrid"
   },
@@ -279,19 +279,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 2,
-  "hits": 0,
-  "pushes": 0,
-  "expected_hits": 0.46,
-  "profit_units": -2
- },
- "top_summary": {
-  "picks": 4,
   "settled": 3,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 1.31,
-  "profit_units": -0.87
+  "expected_hits": 0.69,
+  "profit_units": 1.03
+ },
+ "top_summary": {
+  "picks": 4,
+  "settled": 4,
+  "hits": 1,
+  "pushes": 0,
+  "expected_hits": 1.75,
+  "profit_units": -1.87
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -306,8 +306,8 @@
    "p_model": 0.5319,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "ZAL 93 - 108 MAD",
    "away_short": "Zalgiris",
    "home_short": "Real Madrid"
   },
@@ -346,11 +346,11 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 1.05,
-  "profit_units": -0.23
+  "expected_hits": 1.58,
+  "profit_units": -1.23
  },
  "safe_all": [
   {
@@ -366,10 +366,10 @@
    "p_market": null,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Zalgiris",
    "home_short": "Real Madrid",
-   "score": null
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_137",
@@ -428,11 +428,11 @@
  ],
  "safe_all_summary": {
   "picks": 4,
-  "settled": 3,
+  "settled": 4,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.57,
-  "profit_units": 0.54
+  "expected_hits": 2.11,
+  "profit_units": -0.46
  },
  "robot": [
   {
@@ -448,10 +448,10 @@
    "p_market": null,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Zalgiris",
    "home_short": "Real Madrid",
-   "score": null
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_138",
@@ -510,11 +510,11 @@
  ],
  "robot_summary": {
   "picks": 4,
-  "settled": 3,
+  "settled": 4,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.63,
-  "profit_units": 0.43
+  "expected_hits": 2.17,
+  "profit_units": -0.57
  },
  "p15": [],
  "p15_summary": {

@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "BIR 2 - 0 BUR",
    "picks": [
     {
      "category": "komandas vārti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "BIR 2 - 0 BUR",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "BIR 2 - 0 BUR",
      "top": false
     }
    ]
@@ -59,7 +61,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "WBA 3 - 1 BOL",
    "picks": [
     {
      "category": "kopā",
@@ -69,7 +71,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WBA 3 - 1 BOL",
      "top": true
     },
     {
@@ -80,7 +83,8 @@
      "fair_odds": 2.91,
      "est_odds": 2.71,
      "confidence": 34,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WBA 3 - 1 BOL",
      "top": false
     }
    ]
@@ -100,7 +104,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "BLK 1 - 0 WAT",
    "picks": [
     {
      "category": "komandas vārti",
@@ -110,7 +114,8 @@
      "fair_odds": 2.66,
      "est_odds": 2.47,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BLK 1 - 0 WAT",
      "top": true
     },
     {
@@ -121,7 +126,8 @@
      "fair_odds": 2.69,
      "est_odds": 2.5,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "BLK 1 - 0 WAT",
      "top": false
     }
    ]
@@ -141,7 +147,7 @@
    "market_line": "—",
    "market_total": "kopā 2.5",
    "injuries": [],
-   "score": null,
+   "score": "MIL 1 - 2 STK",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -151,7 +157,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 1 - 2 STK",
      "top": true
     },
     {
@@ -162,7 +169,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "MIL 1 - 2 STK",
      "top": false
     }
    ]
@@ -170,11 +178,11 @@
  ],
  "summary": {
   "picks": 8,
-  "settled": 0,
-  "hits": 0,
+  "settled": 8,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.22,
+  "profit_units": 0.71
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -187,8 +195,8 @@
    "confidence": 23,
    "fair_odds": 4.37,
    "est_odds": 4.07,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "BIR 2 - 0 BUR",
    "away_short": "Birmingham",
    "home_short": "Burnley"
   },
@@ -201,8 +209,8 @@
    "confidence": 23,
    "fair_odds": 4.44,
    "est_odds": 4.12,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "MIL 1 - 2 STK",
    "away_short": "Millwall",
    "home_short": "Stoke"
   },
@@ -215,27 +223,27 @@
    "confidence": 21,
    "fair_odds": 4.72,
    "est_odds": 4.39,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "WBA 3 - 1 BOL",
    "away_short": "West Brom",
    "home_short": "Bolton"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.67,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 4,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.67,
+  "profit_units": 0.25
  },
  "safe_min_odds": 1.7,
  "safe": [],
@@ -261,10 +269,10 @@
    "p_market": 0.5398,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Millwall",
    "home_short": "Stoke",
-   "score": null
+   "score": "MIL 1 - 2 STK"
   },
   {
    "game_id": "401880139",
@@ -279,10 +287,10 @@
    "p_market": 0.5388,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
    "home_short": "Burnley",
-   "score": null
+   "score": "BIR 2 - 0 BUR"
   },
   {
    "game_id": "401880137",
@@ -297,10 +305,10 @@
    "p_market": 0.5299,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Blackburn",
    "home_short": "Watford",
-   "score": null
+   "score": "BLK 1 - 0 WAT"
   },
   {
    "game_id": "401880140",
@@ -315,19 +323,19 @@
    "p_market": 0.525,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
    "home_short": "Bolton",
-   "score": null
+   "score": "WBA 3 - 1 BOL"
   }
  ],
  "safe_all_summary": {
   "picks": 4,
-  "settled": 0,
+  "settled": 4,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.13,
+  "profit_units": -4
  },
  "robot": [
   {
@@ -343,10 +351,10 @@
    "p_market": 0.5388,
    "fair_odds": 1.62,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Birmingham",
    "home_short": "Burnley",
-   "score": null
+   "score": "BIR 2 - 0 BUR"
   },
   {
    "game_id": "401880137",
@@ -361,10 +369,10 @@
    "p_market": 0.5296,
    "fair_odds": 1.69,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Blackburn",
    "home_short": "Watford",
-   "score": null
+   "score": "BLK 1 - 0 WAT"
   },
   {
    "game_id": "401880140",
@@ -379,10 +387,10 @@
    "p_market": 0.525,
    "fair_odds": 1.79,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "West Brom",
    "home_short": "Bolton",
-   "score": null
+   "score": "WBA 3 - 1 BOL"
   },
   {
    "game_id": "401880138",
@@ -397,19 +405,19 @@
    "p_market": 0.5398,
    "fair_odds": 1.91,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Millwall",
    "home_short": "Stoke",
-   "score": null
+   "score": "MIL 1 - 2 STK"
   }
  ],
  "robot_summary": {
   "picks": 4,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.29,
+  "profit_units": -2.24
  },
  "p15": [
   {
@@ -425,10 +433,10 @@
    "p_market": 0.608,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Birmingham",
    "home_short": "Burnley",
-   "score": null
+   "score": "BIR 2 - 0 BUR"
   },
   {
    "game_id": "401880140",
@@ -443,10 +451,10 @@
    "p_market": 0.5807,
    "fair_odds": 1.72,
    "est_odds": 1.6,
-   "result": null,
+   "result": "izgāja",
    "away_short": "West Brom",
    "home_short": "Bolton",
-   "score": null
+   "score": "WBA 3 - 1 BOL"
   },
   {
    "game_id": "401880137",
@@ -461,10 +469,10 @@
    "p_market": 0.5299,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Blackburn",
    "home_short": "Watford",
-   "score": null
+   "score": "BLK 1 - 0 WAT"
   },
   {
    "game_id": "401880138",
@@ -479,19 +487,19 @@
    "p_market": 0.5832,
    "fair_odds": 1.71,
    "est_odds": 1.59,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Millwall",
    "home_short": "Stoke",
-   "score": null
+   "score": "MIL 1 - 2 STK"
   }
  ],
  "p15_summary": {
   "picks": 4,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.3,
+  "profit_units": -0.87
  },
  "extra": [
   {
@@ -504,10 +512,10 @@
    "confidence": 54,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": "West Brom",
    "home_short": "Bolton",
-   "score": null
+   "score": "WBA 3 - 1 BOL (90 min.; 1. puslaiks 1 - 0)"
   },
   {
    "game_id": "401880139",
@@ -519,10 +527,10 @@
    "confidence": 49,
    "fair_odds": 2.02,
    "est_odds": 1.88,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Birmingham",
    "home_short": "Burnley",
-   "score": null
+   "score": "BIR 2 - 0 BUR (90 min.; 1. puslaiks 1 - 0)"
   },
   {
    "game_id": "401880137",
@@ -534,10 +542,10 @@
    "confidence": 52,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Blackburn",
    "home_short": "Watford",
-   "score": null
+   "score": "BLK 1 - 0 WAT (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401880138",
@@ -549,18 +557,18 @@
    "confidence": 52,
    "fair_odds": 1.91,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Millwall",
    "home_short": "Stoke",
-   "score": null
+   "score": "MIL 1 - 2 STK (90 min.; 1. puslaiks 0 - 2)"
   }
  ],
  "extra_summary": {
   "picks": 4,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.08,
+  "profit_units": 1.39
  }
 }

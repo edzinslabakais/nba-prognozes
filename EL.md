@@ -1,8 +1,8 @@
 # 🏀 EuroLeague prognozes
 
-_Atjaunināts 25.11.2026 23:44 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 00:23 (Rīgas laiks)_
 
-## Spēles 25.11. — 4 spēles, koef. ≥ 2.1 — izgāja 4/9
+## Spēles 25.11. — 4 spēles, koef. ≥ 2.1 — izgāja 6/12
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -34,13 +34,13 @@ Robots: **IST -2.6**, kopā 173.6 · gala rezultāts: **IST 81 - 86 BAS**
 | 3 | **BAS +0.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
 
 ### ZAL @ MAD · 21:45
-Robots: **MAD -6.3**, kopā 178.9
+Robots: **MAD -6.3**, kopā 178.9 · gala rezultāts: **ZAL 93 - 108 MAD**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **ZAL +4.5** | 44/100 | 2.11 | 2.26 | ⏳ gaida |
-| 2 | **MAD virs 93.5** | 44/100 | 2.12 | 2.28 | ⏳ gaida |
-| 3 | **virs 180.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **ZAL +4.5** | 44/100 | 2.11 | 2.26 | ❌ neizgāja |
+| 2 | **MAD virs 93.5** | 44/100 | 2.12 | 2.28 | ✅ izgāja |
+| 3 | **virs 180.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
 
 ## 🛡 1.7+ — koef. ≥ 1.7
 
@@ -48,7 +48,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| ZAL@MAD | **ZAL zem 86.5** | 53/100 | 1.75 | ⏳ gaida |
+| ZAL@MAD | **ZAL zem 86.5** | 53/100 | 1.75 | ❌ neizgāja |
 | PAR@DUB | **DUB zem 84.5** | 53/100 | 1.77 | ✅ izgāja |
 | IST@BAS | **BAS zem 85.5** | 52/100 | 1.77 | ❌ neizgāja |
 
@@ -58,27 +58,27 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| ZAL@MAD | **MAD -14.5** | 23/100 | 4.03 | 4.33 | ⏳ gaida |
+| ZAL@MAD | **MAD -14.5** | 23/100 | 4.03 | 4.33 | ✅ izgāja |
 | HTA@OLY | **zem 159.5** | 23/100 | 4.06 | 4.37 | ❌ neizgāja |
 | IST@BAS | **BAS virs 92.5** | 23/100 | 4.10 | 4.41 | ❌ neizgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 7/19, vienības -4.09
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 7/20, vienības -5.09
 
-2.1+ kopā: izgāja 32/57 (56%), robots gaidīja ~24.7, vienības +12.23
-1.7+ kopā: izgāja 5/11 (45%), robots gaidīja ~5.8, vienības -2.20
-Crazy Dazy kopā: izgāja 4/11 (36%), robots gaidīja ~2.5, vienības +5.19
+2.1+ kopā: izgāja 34/60 (57%), robots gaidīja ~26.0, vienības +13.50
+1.7+ kopā: izgāja 5/12 (42%), robots gaidīja ~6.3, vienības -3.20
+Crazy Dazy kopā: izgāja 5/12 (42%), robots gaidīja ~2.8, vienības +8.22
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (19.–30.11.) | 32/57 | +12.23 | 7/19 | -4.09 | 5/11 | -2.20 | 4/11 | +5.19 |
+| Novembris 2026 (19.–30.11.) | 34/60 | +13.50 | 7/20 | -5.09 | 5/12 | -3.20 | 5/12 | +8.22 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 25.11. | 4/9 | 3.9 | -0.34 |
+| 25.11. | 6/12 | 5.2 | +0.93 |
 | 24.11. | 10/18 | 7.8 | +3.62 |
 | 20.11. | 7/12 | 5.2 | +3.33 |
 | 19.11. | 11/18 | 7.8 | +5.62 |
@@ -87,4 +87,4 @@ Crazy Dazy kopā: izgāja 4/11 (36%), robots gaidīja ~2.5, vienības +5.19
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 57 | 56% | 43% |
+| 40-44 | 60 | 57% | 43% |

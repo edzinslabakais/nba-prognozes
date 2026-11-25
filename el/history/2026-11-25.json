@@ -229,7 +229,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_139",
@@ -244,7 +245,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_139",
@@ -259,7 +261,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "ZAL 93 - 108 MAD"
   }
  ],
  "crazy": [
@@ -274,7 +277,8 @@
    "fair_odds": 4.33,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_140",
@@ -321,7 +325,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_137",
@@ -374,9 +379,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Zalgiris",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_137",
@@ -452,9 +458,10 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": null,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Zalgiris",
-   "home_short": "Real Madrid"
+   "home_short": "Real Madrid",
+   "score": "ZAL 93 - 108 MAD"
   },
   {
    "game_id": "E2026_138",
