@@ -1,28 +1,28 @@
 # ⚽ Čempionu līga prognozes
 
-_Atjaunināts 25.11.2026 19:11 (Rīgas laiks)_
+_Atjaunināts 25.11.2026 23:29 (Rīgas laiks)_
 
-## Spēles 25.11. — 9 spēles, koef. ≥ 2.1
+## Spēles 25.11. — 9 spēles, koef. ≥ 2.1 — izgāja 2/6
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### BAR @ SAB · 19:45
-Robots: **SAB 5% · X 7% · BAR 88%**, vārti 0.9–3.9
+Robots: **SAB 5% · X 7% · BAR 88%**, vārti 0.9–3.9 · gala rezultāts: **BAR 4 - 1 SAB**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **SAB +2.5** | 42/100 | 2.19 | 2.36 | ⏳ gaida |
-| 2 | **abas komandas negūst vārtus** | 42/100 | 2.19 | 2.36 | ⏳ gaida |
-| 3 | **SAB zem 0.5** | 41/100 | 2.25 | 2.42 | ⏳ gaida |
+| 1 ★ | **SAB +2.5** | 42/100 | 2.19 | 2.36 | ❌ neizgāja |
+| 2 | **abas komandas negūst vārtus** | 42/100 | 2.19 | 2.36 | ❌ neizgāja |
+| 3 | **SAB zem 0.5** | 41/100 | 2.25 | 2.42 | ❌ neizgāja |
 
 ### VIL @ SLP · 19:45
-Robots: **SLP 31% · X 26% · VIL 44%**, vārti 1.4–1.7
+Robots: **SLP 31% · X 26% · VIL 44%**, vārti 1.4–1.7 · gala rezultāts: **VIL 1 - 0 SLP**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **VIL uzvar** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **zem 2.5** | 42/100 | 2.19 | 2.36 | ⏳ gaida |
-| 3 | **SLP virs 1.5** | 39/100 | 2.37 | 2.55 | ⏳ gaida |
+| 1 ★ | **VIL uzvar** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **zem 2.5** | 42/100 | 2.19 | 2.36 | ✅ izgāja |
+| 3 | **SLP virs 1.5** | 39/100 | 2.37 | 2.55 | ❌ neizgāja |
 
 ### VFK @ ATM · 22:00
 Robots: **ATM 86% · X 9% · VFK 5%**, vārti 3.3–0.7
@@ -93,7 +93,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| BAR@SAB | **BAR virs 3.5** | 55/100 | 1.70 | ⏳ gaida |
+| BAR@SAB | **BAR virs 3.5** | 55/100 | 1.70 | ✅ izgāja |
 | FEN@SHK | **virs 2.5** | 54/100 | 1.73 | ⏳ gaida |
 | VFB@INT | **VFB +1.5** | 53/100 | 1.74 | ⏳ gaida |
 
@@ -104,25 +104,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | FEN@SHK | **FEN zem 0.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
-| BAR@SAB | **BAR uzvar & zem 3.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| BAR@SAB | **BAR uzvar & zem 3.5** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
 | MAN@SCP | **MAN uzvar & abas komandas gūst vārtus** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 5/9, vienības +1.76
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 6/11, vienības +1.90
 
-2.1+ kopā: izgāja 10/27 (37%), robots gaidīja ~10.2, vienības -3.58
-1.7+ kopā: izgāja 2/3 (67%), robots gaidīja ~1.6, vienības +0.43
-Crazy Dazy kopā: izgāja 0/3 (0%), robots gaidīja ~0.7, vienības -3.00
+2.1+ kopā: izgāja 12/33 (36%), robots gaidīja ~12.7, vienības -5.25
+1.7+ kopā: izgāja 3/4 (75%), robots gaidīja ~2.2, vienības +1.13
+Crazy Dazy kopā: izgāja 0/4 (0%), robots gaidīja ~0.9, vienības -4.00
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (24.–30.11.) | 10/27 | -3.58 | 5/9 | +1.76 | 2/3 | +0.43 | 0/3 | -3.00 |
+| Novembris 2026 (24.–30.11.) | 12/33 | -5.25 | 6/11 | +1.90 | 3/4 | +1.13 | 0/4 | -4.00 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 25.11. | 2/6 | 2.5 | -1.67 |
 | 24.11. | 10/27 | 10.2 | -3.58 |
 
 ### Vai drošība atbilst realitātei?
@@ -130,5 +131,5 @@ Crazy Dazy kopā: izgāja 0/3 (0%), robots gaidīja ~0.7, vienības -3.00
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
 | 0-34 | 10 | 20% | 34% |
-| 35-39 | 8 | 12% | 38% |
-| 40-44 | 9 | 78% | 42% |
+| 35-39 | 9 | 11% | 38% |
+| 40-44 | 14 | 64% | 42% |

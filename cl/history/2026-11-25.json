@@ -162,7 +162,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915378",
@@ -177,7 +178,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915378",
@@ -192,7 +194,8 @@
    "fair_odds": 2.42,
    "est_odds": 2.25,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915293",
@@ -207,7 +210,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "VIL 1 - 0 SLP"
   },
   {
    "game_id": "401915293",
@@ -222,7 +226,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "VIL 1 - 0 SLP"
   },
   {
    "game_id": "401915293",
@@ -237,7 +242,8 @@
    "fair_odds": 2.55,
    "est_odds": 2.37,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "VIL 1 - 0 SLP"
   },
   {
    "game_id": "401915291",
@@ -580,7 +586,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915373",
@@ -611,7 +618,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915375",
@@ -661,9 +669,10 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 55,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Barcelona",
-   "home_short": "Sabah"
+   "home_short": "Sabah",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915375",
@@ -805,9 +814,10 @@
    "est_odds": 1.9,
    "confidence": 49,
    "data_conf": 49,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Villarreal",
-   "home_short": "Slavia Prague"
+   "home_short": "Slavia Prague",
+   "score": "VIL 1 - 0 SLP"
   }
  ],
  "robot": [
@@ -951,9 +961,10 @@
    "est_odds": 2.19,
    "confidence": 62,
    "data_conf": 42,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Barcelona",
-   "home_short": "Sabah"
+   "home_short": "Sabah",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915293",
@@ -969,9 +980,10 @@
    "est_odds": 2.37,
    "confidence": 59,
    "data_conf": 39,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Villarreal",
-   "home_short": "Slavia Prague"
+   "home_short": "Slavia Prague",
+   "score": "VIL 1 - 0 SLP"
   }
  ],
  "p15": [
@@ -989,9 +1001,10 @@
    "est_odds": 1.58,
    "confidence": 59,
    "data_conf": 59,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Barcelona",
-   "home_short": "Sabah"
+   "home_short": "Sabah",
+   "score": "BAR 4 - 1 SAB"
   },
   {
    "game_id": "401915293",
@@ -1007,9 +1020,10 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Villarreal",
-   "home_short": "Slavia Prague"
+   "home_short": "Slavia Prague",
+   "score": "VIL 1 - 0 SLP"
   },
   {
    "game_id": "401915291",
@@ -1150,9 +1164,10 @@
    "fair_odds": 2.35,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Barcelona",
-   "home_short": "Sabah"
+   "home_short": "Sabah",
+   "score": "BAR 4 - 1 SAB (90 min.; 1. puslaiks 1 - 0)"
   },
   {
    "game_id": "401915293",
@@ -1165,9 +1180,10 @@
    "fair_odds": 1.89,
    "est_odds": 1.75,
    "confidence": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Villarreal",
-   "home_short": "Slavia Prague"
+   "home_short": "Slavia Prague",
+   "score": "VIL 1 - 0 SLP (90 min.; 1. puslaiks 0 - 0)"
   },
   {
    "game_id": "401915291",

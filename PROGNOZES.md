@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 25.11.2026 22:04 (Rīgas laiks)_
+_Atjaunināts 25.11.2026 23:29 (Rīgas laiks)_
 
 ## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1
 
