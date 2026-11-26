@@ -1,19 +1,19 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 26.11.2026 02:15 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 03:43 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1
+## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 0/3
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### MIA @ PHI · 00:00
-Robots: **PHI -1.5**, kopā 237.5 · bukmeikeri: PHI -1.5, kopā 237.5
+Robots: **PHI -1.5**, kopā 237.5 · bukmeikeri: PHI -1.5, kopā 237.5 · gala rezultāts: **MIA 104 - 111 PHI**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 239.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MIA -0.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIA virs 119.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 239.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **MIA -0.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 3 | **MIA virs 119.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: PHI: Joel Embiid (Day-To-Day) -0.4; PHI: Jaylen Brown (spēlēja 8/10 pēdējās) +0.4; PHI: Dominick Barlow (spēlēja 2/10 pēdējās) +0.5; MIA: Giannis Antetokounmpo (Day-To-Day) -1.2
 
@@ -127,9 +127,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 24/51, vienības +0.33
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 24/52, vienības -0.67
 
-2.1+ kopā: izgāja 62/153 (41%), robots gaidīja ~66.4, vienības -20.19
+2.1+ kopā: izgāja 62/156 (40%), robots gaidīja ~67.7, vienības -23.19
 1.7+ kopā: izgāja 12/23 (52%), robots gaidīja ~12.3, vienības -2.06
 Crazy Dazy kopā: izgāja 6/21 (29%), robots gaidīja ~4.8, vienības +3.15
 
@@ -137,10 +137,11 @@ Crazy Dazy kopā: izgāja 6/21 (29%), robots gaidīja ~4.8, vienības +3.15
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 62/153 | -20.19 | 24/51 | +0.33 | 12/23 | -2.06 | 6/21 | +3.15 |
+| Novembris 2026 (18.–30.11.) | 62/156 | -23.19 | 24/52 | -0.67 | 12/23 | -2.06 | 6/21 | +3.15 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 26.11. | 0/3 | 1.3 | -3.00 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
 | 23.11. | 10/21 | 9.1 | +0.44 |
@@ -153,4 +154,4 @@ Crazy Dazy kopā: izgāja 6/21 (29%), robots gaidīja ~4.8, vienības +3.15
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 153 | 40% | 43% |
+| 40-44 | 156 | 40% | 43% |
