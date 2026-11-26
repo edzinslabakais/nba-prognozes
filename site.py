@@ -62,9 +62,10 @@ def nav(current: str, depth: int) -> str:
     return '<nav class="league" aria-label="Līga">' + "".join(links) + "</nav>"
 
 
-EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: bukmeikeru koeficientu šai līgai nav, tāpēc varbūtības '
-           'nāk no robota modeļa (komandu reitingi, mājas laukums, atpūta), kas kalibrēts uz 2025-26 sezonu '
-           '(uzvarētāju uzmin ~62 % gadījumu). Visas likmes vērtē pēc <b>pamatlaika</b> (40 minūtes).</p>')
+EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: ja ir pieejamas bukmeikeru līnijas (handikaps un kopējie punkti '
+           'no Eiropas bukmeikeriem caur The Odds API), likmes vērtē pēc tām, tāpat kā NBA; robota modelis (komandu '
+           'reitingi, mājas laukums, atpūta) redzams blakus. Ja līniju nav, varbūtības nāk no robota modeļa. Visas likmes '
+           'vērtē pēc <b>pamatlaika</b> (40 minūtes).</p>')
 CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc <b>90 minūtēm</b> (bez pagarinājuma un '
            'pēcspēles sitieniem). Sagaidāmie vārti ir aprēķināti no bukmeikeru koeficientiem, un no tiem tiek '
            'novērtētas visas likmes, arī "abas komandas gūst vārtus" un "uzvara vai neizšķirts".</p>')
@@ -75,7 +76,11 @@ EUHK_NOTE = ('<p data-i18n-html="noteEuhk"><b>{name}</b>: bukmeikeru koeficientu
              'salīdzini ar Optibet.</p>')
 CZ_NOTE = EUHK_NOTE.format(name="Čehijas Extraliga", src="hokej.cz")
 DEL_NOTE = EUHK_NOTE.format(name="Vācijas DEL", src="penny-del.org")
-SHL_NOTE = EUHK_NOTE.format(name="Zviedrijas SHL", src="shl.se")
+SHL_NOTE = ('<p data-i18n-html="noteShl"><b>Zviedrijas SHL</b>: spēles un rezultāti no shl.se. Bukmeikeru līnijas (Pinnacle '
+            'un citi Eiropas bukmeikeri, caur The Odds API) analīzē sver 80 %, robota modelis (komandu uzbrukums un '
+            'aizsardzība, mājas laukums) 20 % — tāpat kā NHL; ★ un 1.7+ likmes izvēlas pēc bukmeikeru varbūtības. '
+            'Ja līniju nav, varbūtības nāk tikai no robota modeļa. Visas likmes vērtē pēc <b>pamatlaika</b> '
+            '(60 minūtes); tikai likmes ar norādi "ieskaitot papildlaiku" ietver papildlaiku un bullīšus.</p>')
 NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE", "cz": "CZ_NOTE", "del": "DEL_NOTE", "shl": "SHL_NOTE"}
 
 

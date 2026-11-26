@@ -16,6 +16,7 @@ import json
 import math
 import sys
 from datetime import date, timedelta
+from statistics import NormalDist
 from zoneinfo import ZoneInfo
 
 import numpy as np
@@ -24,6 +25,7 @@ import pandas as pd
 import bot as core
 import espn
 import model as M
+import odds
 
 RIGA = ZoneInfo("Europe/Riga")
 FEED = "https://api-live.euroleague.net/v2/competitions/E/seasons"
@@ -120,18 +122,31 @@ def predict_day(day: date, p) -> pd.DataFrame:
     if todo.empty:
         return pd.DataFrame()
     r = fit(games, todo["start_utc"].min(), prior_for(year, p), p)
+    # bookmakers' lines from The Odds API (when ODDS_API_KEY is set): then, as for NBA, the bookmakers' spread and
+    # total are used and the robot's model is shown next to them
+    events = odds.fetch("el", "h2h,spreads,totals")
     rows = []
     for g in todo.itertuples():
         m = r.margin(g.home_id, g.away_id, g.neutral, g.home_b2b, g.away_b2b)
         t = r.total(g.home_id, g.away_id)
+        mm = mt = None
+        ev = odds.match(events, g.home_name, g.away_name, g.start_utc) if events else None
+        if ev:
+            ln = odds.lines_for(ev, g.home_name, g.away_name)
+            if ln.get("spread_home") is not None:
+                mm = -ln["spread_home"]
+            elif ln.get("p_home") is not None:
+                mm = p["sigma_margin"] * NormalDist().inv_cdf(min(max(ln["p_home"], 0.02), 0.98))
+            mt = ln.get("total")
         rows.append({
             "date": g.date, "game_id": g.game_id, "start_utc": g.start_utc,
             "riga_time": g.start_utc.tz_convert(RIGA).strftime("%d.%m %H:%M"),
             "home": g.home, "away": g.away, "home_name": g.home_name, "away_name": g.away_name,
             "home_short": g.home_short, "away_short": g.away_short,
             "home_record": None, "away_record": None,
-            "margin_home": m, "model_margin_home": m, "total": t, "model_total": t,
-            "market_margin_home": None, "market_total": None, "has_market": False,
+            "margin_home": mm if mm is not None else m, "model_margin_home": m,
+            "total": mt if mt is not None else t, "model_total": t,
+            "market_margin_home": mm, "market_total": mt, "has_market": mm is not None,
             "s_m": p["sigma_margin"], "s_t": p["sigma_total"], "reg": reg_settings(p),
             "home_net": r.net(g.home_id), "away_net": r.net(g.away_id),
         })
@@ -157,12 +172,18 @@ def cmd_likmes(args) -> None:
         print("Šodien un rīt nav neizspēlētu EuroLeague spēļu.")
         return
     print(f"EUROLEAGUE LIKMES — {day:%d.%m.%Y}, min. koeficients {args.min_odds:g}")
-    print("Bukmeikeru koeficientu šai līgai nav: varbūtības ir no robota modeļa. Likmes vērtē pēc pamatlaika (40 min).")
+    if df["has_market"].any():
+        print("Bukmeikeru līnijas no The Odds API (kā NBA: likmes pēc bukmeikeru līnijām). Likmes vērtē pēc pamatlaika (40 min).")
+    else:
+        print("Bukmeikeru koeficientu nav: varbūtības ir no robota modeļa. Likmes vērtē pēc pamatlaika (40 min).")
     record, games_info = [], {}
     for r in df.itertuples():
         picks = core.pick_for_game(r, args.min_odds)
-        line = f"{r.home} {-r.margin_home:+.1f}" if r.margin_home >= 0 else f"{r.away} {r.margin_home:+.1f}"
-        print(f"\n{r.away} @ {r.home}  {r.riga_time}  |  robots: {line}, kopā {r.total:.1f}")
+        mm = r.model_margin_home
+        line = f"{r.home} {-mm:+.1f}" if mm >= 0 else f"{r.away} {mm:+.1f}"
+        bk = (f"  |  bukmeikeri: {r.home if r.market_margin_home >= 0 else r.away} {-abs(r.market_margin_home):+.1f}"
+              f", kopā {r.market_total}" if r.has_market else "")
+        print(f"\n{r.away} @ {r.home}  {r.riga_time}  |  robots: {line}, kopā {r.model_total:.1f}{bk}")
         top = max(range(len(picks)), key=lambda i: picks[i].get("data_score", picks[i]["p"])) if picks else -1
         for i, x in enumerate(picks, 1):
             print(f"  {i}.{'★' if i - 1 == top else ' '}{x['bet']:<20} drošība {x['confidence']:>3}/100   "
@@ -173,7 +194,11 @@ def cmd_likmes(args) -> None:
             "game_id": r.game_id, "away": r.away, "home": r.home, "away_name": r.away_name, "home_name": r.home_name,
             "away_short": r.away_short, "home_short": r.home_short,
             "start_utc": str(r.start_utc), "riga_time": r.riga_time, "robot_line": line,
-            "robot_total": round(float(r.total), 1), "market_line": "—", "market_total": None, "injuries": [],
+            "robot_total": round(float(r.model_total), 1),
+            "market_line": (f"{r.home} {-r.market_margin_home:+.1f}" if r.has_market and r.market_margin_home >= 0
+                            else f"{r.away} {r.market_margin_home:+.1f}" if r.has_market else "—"),
+            "market_total": r.market_total if r.has_market and r.market_total is not None and pd.notna(r.market_total) else None,
+            "injuries": [],
         }
     crazy = core.pick_crazy(df)
     safe = core.pick_safe(df)

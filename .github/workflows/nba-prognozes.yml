@@ -60,6 +60,7 @@ jobs:
     env:
       KOMANDA: ${{ needs.decide.outputs.komanda }}
       BOTS: ${{ needs.decide.outputs.bots }}
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}  # The Odds API (SHL, EuroLeague lines); without it the robots use their model
     outputs:
       changed: ${{ steps.save.outputs.changed }}
     steps:

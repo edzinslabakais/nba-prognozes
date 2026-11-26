@@ -32,13 +32,14 @@ import bot as core
 import nhl_bets as HB
 import nhl_bot as NB
 import nhl_model as N
+import odds
 
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cache"
 RIGA = ZoneInfo("Europe/Riga")
 UA = {"User-Agent": "Mozilla/5.0 (prognozes)"}
 FORCE_REFRESH = False
-DEFAULTS = {"tie_infl": 0.25, "ot_k": 0.0, "half_life": 120.0, "ridge": 3.0}
+DEFAULTS = {"tie_infl": 0.25, "ot_k": 0.0, "half_life": 120.0, "ridge": 3.0, "market_weight": 0.8}
 
 
 def fetch(url: str, ttl: float | None = 600) -> str:
@@ -297,12 +298,29 @@ def predict_day(spec: Spec, day: date, p: dict) -> pd.DataFrame:
     model = fit_poisson(games, todo["start_utc"].min(), p["half_life"], p["ridge"])
     if model is None:
         return pd.DataFrame()
+    # bookmakers' lines where The Odds API has the league (SHL): then the analysis is the same as NHL —
+    # 80 % bookmakers / 20 % robot model, ★ and 1.7+ picks by the bookmakers' probability
+    events = odds.fetch(spec.key, "h2h,totals") if spec.key in odds.SPORTS else None
     rows = []
     for g in todo.itertuples():
-        lh, la = model(g.home, g.away)
+        olh, ola = model(g.home, g.away)
+        lh, la, mk, total, p_mk = olh, ola, None, None, None
+        ev = odds.match(events, g.home_name, g.away_name, g.start_utc) if events else None
+        if ev:
+            ln = odds.lines_for(ev, g.home_name, g.away_name)
+            total = ln.get("total")
+            if ln.get("p_home") is not None:
+                mk = N.market_lambdas(ln["p_home"], total, ln.get("q_over"), p["tie_infl"], p["ot_k"], olh + ola)
+            elif ln.get("p3"):
+                import cl_bot
+                mk = cl_bot.solve_lambdas(ln["p3"], total, ln.get("q_over"), p["tie_infl"])
+            if mk:
+                lh, la = N.blend((olh, ola), mk, p.get("market_weight", 0.8))
+                p_mk = N.fast_p_home(mk[0], mk[1], p["tie_infl"], p["ot_k"])
         rows.append({**g._asdict(), "riga_time": g.start_utc.tz_convert(RIGA).strftime("%d.%m %H:%M"),
-                     "lh": lh, "la": la, "model_lh": lh, "model_la": la, "mk_lh": None, "mk_la": None,
-                     "total_line": None, "p_market": None, "home_record": None, "away_record": None})
+                     "lh": lh, "la": la, "model_lh": olh, "model_la": ola,
+                     "mk_lh": mk[0] if mk else None, "mk_la": mk[1] if mk else None,
+                     "total_line": total, "p_market": p_mk, "home_record": None, "away_record": None})
     return pd.DataFrame(rows).drop(columns=["Index"], errors="ignore")
 
 
@@ -317,13 +335,16 @@ def cmd_likmes(spec: Spec, L: core.League, args) -> None:
     if df.empty:
         print(f"Šodien nav {spec.title} spēļu.")
         return
-    print(f"{spec.title.upper()} — {day:%d.%m.%Y}, min. koeficients {args.min_odds:g} (bukmeikeru koeficientu nav: "
-          "varbūtības no robota modeļa; visas likmes pēc pamatlaika)")
+    src = ("bukmeikeru līnijas (The Odds API) 80 % + robota modelis 20 %, kā NHL" if df["mk_lh"].notna().any()
+           else "bukmeikeru koeficientu nav: varbūtības no robota modeļa")
+    print(f"{spec.title.upper()} — {day:%d.%m.%Y}, min. koeficients {args.min_odds:g} ({src}; visas likmes pēc pamatlaika)")
     record, games_info = [], {}
     for r in df.itertuples():
         picks = NB.pick_for_game(r, p, args.min_odds)
         rl, _ = NB.win_line(r, p)
-        print(f"\n{r.away} @ {r.home}  {r.riga_time}  |  robots (pamatlaiks): {rl}, vārti {r.lh:.1f}–{r.la:.1f}")
+        mk_txt = NB.market_text(r)
+        print(f"\n{r.away} @ {r.home}  {r.riga_time}  |  robots (pamatlaiks): {rl}, vārti {r.lh:.1f}–{r.la:.1f}"
+              f"  |  bukmeikeri: {(mk_txt or '—') + (f', kopā {r.total_line:g}' if r.total_line else '')}")
         top = max(range(len(picks)), key=lambda i: picks[i].get("data_score", picks[i]["p"])) if picks else -1
         for i, x in enumerate(picks, 1):
             print(f"  {i}.{'★' if i - 1 == top else ' '}{x['bet']:<34} drošība {x['confidence']:>3}/100   "
@@ -334,7 +355,8 @@ def cmd_likmes(spec: Spec, L: core.League, args) -> None:
             "game_id": r.game_id, "away": r.away, "home": r.home, "away_name": r.away_name, "home_name": r.home_name,
             "away_short": r.away_short, "home_short": r.home_short, "start_utc": str(r.start_utc),
             "riga_time": r.riga_time, "robot_line": rl, "robot_total": f"vārti {r.lh:.1f}–{r.la:.1f}",
-            "market_line": "—", "market_total": None, "injuries": [],
+            "market_line": NB.market_text(r) or "—",
+            "market_total": f"kopā {r.total_line:g}" if r.total_line else None, "injuries": [],
         }
     crazy = NB.pick_crazy(df, p)
     safe = NB.pick_safe(df, p)

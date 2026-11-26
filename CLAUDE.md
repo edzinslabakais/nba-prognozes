@@ -61,6 +61,9 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
   tabulas), `shl_bot.py` (SHL, shl.se API `sports-v2/game-schedule`). Bez koeficientiem: robota Puasona modelis (uzbrukums/
   aizsardzība + mājas laukums, `<liga>_params.json`, `python cz_bot.py kalibret`), likmes kā NHL (pamatlaiks), lapas `site/cz|del|shl/`,
   likmes ar `likmes_eu` (12:30), iekļautas kopējā statistikā un 1.7+ lapā.
+- Bukmeikeru līnijas SHL un EuroLeague: `odds.py` (The Odds API, `ODDS_API_KEY` = GitHub secret; Pinnacle vai citu EU
+  bukmeikeru mediāna; kešs 2 h; zem 40 kredītiem neprasa). SHL kā NHL (80 % tirgus / 20 % modelis, ★/1.7+ pēc tirgus),
+  EuroLeague kā NBA (tirgus handikaps/kopā). Bez atslēgas — robota modelis.
 - Izņemti 26.11.2026: Championship, lapas 1.5+, Papildu un Robots (kods git vēsturē). NCAA izņemts 21.11.2026.
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
   Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|cz|del|shl`.
