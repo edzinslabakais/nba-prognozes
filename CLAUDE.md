@@ -24,7 +24,8 @@ LIKMES (~21:30, cron 21:17), REZULTĀTI (~07:00: 06:47 + 07:17, un ~08:30: 08:17
 līdz ~1 h (īpaši :00/:30), tāpēc laiki ir nepāra minūtēs un rezultāti tiek palaisti vairākkārt
 (`.github/workflows/nba-prognozes.yml` + `scheduler.py`). Papildus ik pēc 5 min (`*/5`, atsevišķa rinda `nba-live`)
 `scheduler.live_bots()` pārbauda, vai kādai likmei spēlei jau vajadzētu būt beigušai, un palaiž `rezultati_live` tikai
-tām līgām; lapu publicē tikai, ja kaut kas mainījies. Saglabāšana sāk no jaunākā `origin/main` un pārrēķina, ja push neizdodas. Pēc tam tiek publicēta publiskā lapa
+tām līgām; lapu publicē tikai, ja kaut kas mainījies. Ja GitHub izlaiž likmju palaidienu, jebkurš ieplānotais palaidiens
+(arī 5 min) to izdara vēlāk (`scheduler.missed_picks()`, `runs.json` = kad likmes pēdējo reizi izveidotas; logi 12:17–22:00 un 21:17–03:00). Saglabāšana sāk no jaunākā `origin/main` un pārrēķina, ja push neizdodas. Pēc tam tiek publicēta publiskā lapa
 https://edzinslabakais.github.io/nba-prognozes/ un …/nhl/ (`site.py` → `site/`, GitHub Pages), kā arī atjaunināts
 `PROGNOZES.md`. Claude tajā nav vajadzīgs. Galvenā lapa ir šī publiskā lapa. Pirms rokas palaišanas veic `git pull`, jo
 Actions pievieno savus commit.

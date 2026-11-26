@@ -64,18 +64,44 @@ def live_bots(now: datetime | None = None) -> list[str]:
     return out
 
 
+RUNS_FILE = ROOT / "runs.json"  # when the picks were last made (written by the workflow)
+# picks slot -> (Riga time from which it is due, Riga time until which it may still be made)
+CATCH_UP = {"likmes_eu": ((12, 17), (22, 0)), "likmes": ((21, 17), (27, 0))}  # 27:00 = 03:00 next day
+
+
+def missed_picks(now: datetime | None = None) -> str:
+    """GitHub sometimes drops a scheduled run. If today's picks run has not happened by now, any scheduled run
+    (the 5-minute one included) makes it, so the picks never go missing."""
+    now = (now or datetime.now(timezone.utc)).astimezone(RIGA)
+    try:
+        runs = json.loads(RUNS_FILE.read_text())
+    except (OSError, ValueError):
+        runs = {}
+    for cmd, ((h0, m0), (h1, m1)) in CATCH_UP.items():
+        base = now if now.hour * 60 + now.minute >= h0 * 60 + m0 else now - timedelta(days=1)
+        start = base.replace(hour=h0, minute=m0, second=0, microsecond=0)
+        end = base.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(hours=h1, minutes=m1)
+        if not (start <= now < end):
+            continue
+        last = runs.get(cmd)
+        last_dt = datetime.fromisoformat(last).astimezone(RIGA) if last else None
+        if last_dt is None or last_dt < start - timedelta(minutes=30):
+            return cmd
+    return ""
+
+
 def decide(cron: str, manual: str, now: datetime | None = None) -> str:
     if manual:
         return manual
     if not cron:
         return ""
-    if cron == LIVE_CRON:  # every 5 minutes: results as soon as games are over
-        return "rezultati_live" if live_bots(now) else ""
+    if cron == LIVE_CRON:  # every 5 minutes: missed picks first, then results as soon as games are over
+        return missed_picks(now) or ("rezultati_live" if live_bots(now) else "")
     minute, hour = (int(x) for x in cron.split()[:2])
     now = now or datetime.now(timezone.utc)
     slot = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
     local = slot.astimezone(RIGA)
-    return TARGETS.get((local.hour, local.minute), "")
+    return TARGETS.get((local.hour, local.minute), "") or missed_picks(now)
 
 
 if __name__ == "__main__":

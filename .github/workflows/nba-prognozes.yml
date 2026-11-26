@@ -107,7 +107,10 @@ jobs:
             for b in $bots; do
               echo "::group::$b $cmd"; python "$b" "$cmd" --refresh || rc=1; echo "::endgroup::"
             done
-            for x in history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md cz CZ.md del DEL.md shl SHL.md; do
+            if [ "$cmd" = "likmes" ]; then  # remember when the picks were made (scheduler.py catches up missed runs)
+              python3 -c "import json,os,datetime as d;f='runs.json';r=json.load(open(f)) if os.path.exists(f) else {};r[os.environ['KOMANDA']]=d.datetime.now(d.timezone.utc).isoformat(timespec='minutes');json.dump(r,open(f,'w'),indent=1)"
+            fi
+            for x in runs.json history export odds predictions PROGNOZES.md nhl NHL.md el EL.md cl CL.md cz CZ.md del DEL.md shl SHL.md; do
               if [ -e "$x" ]; then git add "$x"; fi
             done
             if git diff --cached --quiet; then
