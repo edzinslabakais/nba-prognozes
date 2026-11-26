@@ -1,6 +1,6 @@
 # 🏒 DEL prognozes
 
-_Atjaunināts 27.11.2026 00:29 (Rīgas laiks)_
+_Atjaunināts 27.11.2026 01:27 (Rīgas laiks)_
 
 ## Spēles 26.11. — 1 spēles, koef. ≥ 2.1
 
