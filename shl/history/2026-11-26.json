@@ -114,7 +114,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "RBK 4 - 1 SAIK"
   },
   {
    "game_id": "w3fha6cmmv",
@@ -129,7 +130,8 @@
    "fair_odds": 2.35,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "RBK 4 - 1 SAIK"
   },
   {
    "game_id": "w3fha6cmmv",
@@ -144,7 +146,8 @@
    "fair_odds": 2.94,
    "est_odds": 2.73,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "RBK 4 - 1 SAIK"
   },
   {
    "game_id": "hcqkzw4i8a",
@@ -204,7 +207,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "DIF 1 - 4 VLH"
   },
   {
    "game_id": "g3chmdvsvy",
@@ -219,7 +223,8 @@
    "fair_odds": 2.69,
    "est_odds": 2.5,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "DIF 1 - 4 VLH"
   },
   {
    "game_id": "g3chmdvsvy",
@@ -234,7 +239,8 @@
    "fair_odds": 2.71,
    "est_odds": 2.52,
    "confidence": 37,
-   "result": null
+   "result": "izgāja",
+   "score": "DIF 1 - 4 VLH"
   },
   {
    "game_id": "yfzw9fgk02",
@@ -249,7 +255,8 @@
    "fair_odds": 2.45,
    "est_odds": 2.28,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "BIF 4 - 1 LHC"
   },
   {
    "game_id": "yfzw9fgk02",
@@ -264,7 +271,8 @@
    "fair_odds": 2.77,
    "est_odds": 2.57,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "BIF 4 - 1 LHC"
   },
   {
    "game_id": "yfzw9fgk02",
@@ -279,7 +287,8 @@
    "fair_odds": 3.94,
    "est_odds": 3.66,
    "confidence": 25,
-   "result": null
+   "result": "izgāja",
+   "score": "BIF 4 - 1 LHC"
   },
   {
    "game_id": "zlpmwfn138",
@@ -294,7 +303,8 @@
    "fair_odds": 2.34,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "IFB 2 - 5 FHC"
   },
   {
    "game_id": "zlpmwfn138",
@@ -309,7 +319,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "IFB 2 - 5 FHC"
   },
   {
    "game_id": "zlpmwfn138",
@@ -324,7 +335,8 @@
    "fair_odds": 3.15,
    "est_odds": 2.93,
    "confidence": 32,
-   "result": null
+   "result": "izgāja",
+   "score": "IFB 2 - 5 FHC"
   },
   {
    "game_id": "f2tgs7k833",
@@ -339,7 +351,8 @@
    "fair_odds": 2.42,
    "est_odds": 2.25,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "HV71 1 - 2 OHK"
   },
   {
    "game_id": "f2tgs7k833",
@@ -354,7 +367,8 @@
    "fair_odds": 2.72,
    "est_odds": 2.53,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "HV71 1 - 2 OHK"
   },
   {
    "game_id": "f2tgs7k833",
@@ -369,7 +383,8 @@
    "fair_odds": 2.74,
    "est_odds": 2.55,
    "confidence": 37,
-   "result": null
+   "result": "izgāja",
+   "score": "HV71 1 - 2 OHK"
   }
  ],
  "crazy": [
@@ -384,7 +399,8 @@
    "fair_odds": 4.34,
    "est_odds": 4.04,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "IFB 2 - 5 FHC"
   },
   {
    "game_id": "w3fha6cmmv",
@@ -397,7 +413,8 @@
    "fair_odds": 4.36,
    "est_odds": 4.05,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "RBK 4 - 1 SAIK"
   },
   {
    "game_id": "f2tgs7k833",
@@ -410,7 +427,8 @@
    "fair_odds": 4.47,
    "est_odds": 4.16,
    "confidence": 22,
-   "result": null
+   "result": "neizgāja",
+   "score": "HV71 1 - 2 OHK"
   }
  ],
  "safe": [
@@ -428,7 +446,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "HV71 1 - 2 OHK"
   },
   {
    "game_id": "g3chmdvsvy",
@@ -444,7 +463,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "DIF 1 - 4 VLH"
   },
   {
    "game_id": "hcqkzw4i8a",
@@ -478,9 +498,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "HV71",
-   "home_short": "Örebro"
+   "home_short": "Örebro",
+   "score": "HV71 1 - 2 OHK"
   },
   {
    "game_id": "g3chmdvsvy",
@@ -496,9 +517,10 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Djurgården",
-   "home_short": "Växjö"
+   "home_short": "Växjö",
+   "score": "DIF 1 - 4 VLH"
   },
   {
    "game_id": "hcqkzw4i8a",
@@ -532,9 +554,10 @@
    "est_odds": 1.81,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Björklöven",
-   "home_short": "Frölunda "
+   "home_short": "Frölunda ",
+   "score": "IFB 2 - 5 FHC"
   },
   {
    "game_id": "yfzw9fgk02",
@@ -550,9 +573,10 @@
    "est_odds": 1.83,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Brynäs",
-   "home_short": "Linköping"
+   "home_short": "Linköping",
+   "score": "BIF 4 - 1 LHC"
   },
   {
    "game_id": "w3fha6cmmv",
@@ -568,9 +592,10 @@
    "est_odds": 1.87,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Rögle",
-   "home_short": "Skellefteå"
+   "home_short": "Skellefteå",
+   "score": "RBK 4 - 1 SAIK"
   }
  ]
 }
