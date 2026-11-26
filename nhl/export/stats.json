@@ -1,6 +1,6 @@
 {
  "overall": {
-  "picks": 165,
+  "picks": 210,
   "settled": 165,
   "hits": 68,
   "pushes": 0,
@@ -8,7 +8,7 @@
   "profit_units": -7.73
  },
  "crazy_overall": {
-  "picks": 19,
+  "picks": 22,
   "settled": 19,
   "hits": 6,
   "pushes": 0,
@@ -16,7 +16,7 @@
   "profit_units": 5.51
  },
  "top_overall": {
-  "picks": 55,
+  "picks": 70,
   "settled": 55,
   "hits": 25,
   "pushes": 0,
@@ -24,7 +24,7 @@
   "profit_units": -0.16
  },
  "safe_all_overall": {
-  "picks": 40,
+  "picks": 55,
   "settled": 40,
   "hits": 26,
   "pushes": 0,
@@ -32,7 +32,7 @@
   "profit_units": 6.71
  },
  "safe_overall": {
-  "picks": 19,
+  "picks": 22,
   "settled": 19,
   "hits": 14,
   "pushes": 0,
@@ -326,6 +326,47 @@
     "expected_hits": 7.29,
     "profit_units": 1.75
    }
+  },
+  {
+   "date": "2026-11-27",
+   "picks": 45,
+   "settled": 0,
+   "hits": 0,
+   "pushes": 0,
+   "expected_hits": 0,
+   "profit_units": 0,
+   "crazy": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "top": {
+    "picks": 15,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe": {
+    "picks": 3,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   },
+   "safe_all": {
+    "picks": 15,
+    "settled": 0,
+    "hits": 0,
+    "pushes": 0,
+    "expected_hits": 0,
+    "profit_units": 0
+   }
   }
  ],
  "calibration": [
@@ -354,7 +395,7 @@
    "label": "Novembris 2026",
    "days": "18.–30.11.",
    "all": {
-    "picks": 165,
+    "picks": 210,
     "settled": 165,
     "hits": 68,
     "pushes": 0,
@@ -362,7 +403,7 @@
     "profit_units": -7.73
    },
    "top": {
-    "picks": 55,
+    "picks": 70,
     "settled": 55,
     "hits": 25,
     "pushes": 0,
@@ -370,7 +411,7 @@
     "profit_units": -0.16
    },
    "safe": {
-    "picks": 19,
+    "picks": 22,
     "settled": 19,
     "hits": 14,
     "pushes": 0,
@@ -378,7 +419,7 @@
     "profit_units": 5.84
    },
    "crazy": {
-    "picks": 19,
+    "picks": 22,
     "settled": 19,
     "hits": 6,
     "pushes": 0,
@@ -387,5 +428,5 @@
    }
   }
  ],
- "updated_at": "2026-11-26T07:46+00:00"
+ "updated_at": "2026-11-26T19:53+00:00"
 }
