@@ -21,7 +21,7 @@
     "CBJ: vārtsargs Cam Talbot (apstiprināts) +0.06",
     "NJ: vārtsargs Connor Hellebuyck (apstiprināts) +0.04"
    ],
-   "score": null,
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)",
    "picks": [
     {
      "category": "kopā",
@@ -31,8 +31,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)",
      "top": true
     },
     {
@@ -43,8 +43,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)",
      "top": false
     },
     {
@@ -55,8 +55,8 @@
      "fair_odds": 2.52,
      "est_odds": 2.35,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)",
      "top": false
     }
    ]
@@ -79,7 +79,7 @@
     "WSH: vārtsargs Logan Thompson (apstiprināts) +0.04",
     "PHI: vārtsargs Joseph Woll (apstiprināts) +0.03"
    ],
-   "score": null,
+   "score": "PHI 3 - 7 WSH",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -89,8 +89,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "PHI 3 - 7 WSH",
      "top": false
     },
     {
@@ -101,8 +101,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.21,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "PHI 3 - 7 WSH",
      "top": true
     },
     {
@@ -113,8 +113,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "PHI 3 - 7 WSH",
      "top": false
     }
    ]
@@ -195,7 +195,7 @@
     "NYI: vārtsargs Ilya Sorokin (apstiprināts) +0.07",
     "STL: vārtsargs Joel Hofer (gaidāms) +0.15"
    ],
-   "score": null,
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -205,8 +205,8 @@
      "fair_odds": 2.44,
      "est_odds": 2.27,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)",
      "top": true
     },
     {
@@ -217,8 +217,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)",
      "top": false
     },
     {
@@ -229,8 +229,8 @@
      "fair_odds": 2.65,
      "est_odds": 2.47,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)",
      "top": false
     }
    ]
@@ -427,7 +427,7 @@
     "FLA: vārtsargs Jacob Markstrom (apstiprināts) +0.01",
     "OTT: vārtsargs Linus Ullmark (apstiprināts) +0.22"
    ],
-   "score": null,
+   "score": "OTT 3 - 5 FLA",
    "picks": [
     {
      "category": "komandas vārti",
@@ -437,8 +437,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "OTT 3 - 5 FLA",
      "top": true
     },
     {
@@ -449,8 +449,8 @@
      "fair_odds": 2.6,
      "est_odds": 2.42,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "OTT 3 - 5 FLA",
      "top": false
     },
     {
@@ -461,8 +461,8 @@
      "fair_odds": 2.88,
      "est_odds": 2.68,
      "confidence": 35,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "OTT 3 - 5 FLA",
      "top": false
     }
    ]
@@ -485,7 +485,7 @@
     "DET: vārtsargs Daniil Tarasov (apstiprināts) +0.16",
     "VAN: vārtsargs Leevi Merilainen (apstiprināts) +0.07"
    ],
-   "score": null,
+   "score": "VAN 1 - 5 DET",
    "picks": [
     {
      "category": "kopā",
@@ -495,8 +495,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VAN 1 - 5 DET",
      "top": true
     },
     {
@@ -507,8 +507,8 @@
      "fair_odds": 2.53,
      "est_odds": 2.35,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "VAN 1 - 5 DET",
      "top": false
     },
     {
@@ -519,8 +519,8 @@
      "fair_odds": 3.44,
      "est_odds": 3.2,
      "confidence": 29,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VAN 1 - 5 DET",
      "top": false
     }
    ]
@@ -543,7 +543,7 @@
     "DAL: vārtsargs Jake Oettinger (apstiprināts) +0.02",
     "NSH: vārtsargs Juuse Saros (gaidāms) +0.10"
    ],
-   "score": null,
+   "score": "NSH 3 - 1 DAL",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -553,8 +553,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.21,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NSH 3 - 1 DAL",
      "top": true
     },
     {
@@ -565,8 +565,8 @@
      "fair_odds": 2.46,
      "est_odds": 2.29,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NSH 3 - 1 DAL",
      "top": false
     },
     {
@@ -577,8 +577,8 @@
      "fair_odds": 2.91,
      "est_odds": 2.7,
      "confidence": 34,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NSH 3 - 1 DAL",
      "top": false
     }
    ]
@@ -818,11 +818,11 @@
  ],
  "summary": {
   "picks": 42,
-  "settled": 12,
-  "hits": 8,
+  "settled": 30,
+  "hits": 18,
   "pushes": 0,
-  "expected_hits": 4.96,
-  "profit_units": 6.2
+  "expected_hits": 12.14,
+  "profit_units": 11.7
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -873,11 +873,11 @@
  },
  "top_summary": {
   "picks": 14,
-  "settled": 4,
-  "hits": 2,
+  "settled": 10,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 1.69,
-  "profit_units": 0.36
+  "expected_hits": 4.26,
+  "profit_units": 0.89
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -892,8 +892,8 @@
    "p_model": 0.5012,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892782",
@@ -926,11 +926,11 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 1,
-  "hits": 1,
+  "settled": 2,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0.54,
-  "profit_units": 0.72
+  "expected_hits": 1.09,
+  "profit_units": 1.43
  },
  "safe_all": [
   {
@@ -946,10 +946,10 @@
    "p_market": 0.5555,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892782",
@@ -1000,10 +1000,10 @@
    "p_market": 0.5427,
    "fair_odds": 1.87,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892794",
@@ -1036,10 +1036,10 @@
    "p_market": 0.5325,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892791",
@@ -1072,10 +1072,10 @@
    "p_market": 0.5261,
    "fair_odds": 1.98,
    "est_odds": 1.84,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892788",
@@ -1090,10 +1090,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892781",
@@ -1180,19 +1180,19 @@
    "p_market": 0.4734,
    "fair_odds": 2.24,
    "est_odds": 2.08,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHI 3 - 7 WSH"
   }
  ],
  "safe_all_summary": {
   "picks": 14,
-  "settled": 4,
-  "hits": 3,
+  "settled": 10,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 2.09,
-  "profit_units": 1.25
+  "expected_hits": 5.17,
+  "profit_units": 0.5
  },
  "robot": [
   {
@@ -1208,10 +1208,10 @@
    "p_market": 0.5266,
    "fair_odds": 1.51,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892794",
@@ -1244,10 +1244,10 @@
    "p_market": 0.5269,
    "fair_odds": 1.68,
    "est_odds": 1.77,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892781",
@@ -1280,10 +1280,10 @@
    "p_market": 0.5226,
    "fair_odds": 1.72,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892785",
@@ -1298,10 +1298,10 @@
    "p_market": 0.5413,
    "fair_odds": 1.76,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892790",
@@ -1316,10 +1316,10 @@
    "p_market": 0.4739,
    "fair_odds": 1.77,
    "est_odds": 1.96,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892786",
@@ -1388,10 +1388,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.88,
    "est_odds": 1.78,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892791",
@@ -1450,11 +1450,11 @@
  ],
  "robot_summary": {
   "picks": 14,
-  "settled": 4,
-  "hits": 3,
+  "settled": 10,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 2.21,
-  "profit_units": 1.5
+  "expected_hits": 5.71,
+  "profit_units": 1.0
  },
  "p15": [
   {
@@ -1488,10 +1488,10 @@
    "p_market": 0.6177,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892785",
@@ -1506,10 +1506,10 @@
    "p_market": 0.6016,
    "fair_odds": 1.66,
    "est_odds": 1.55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892781",
@@ -1542,10 +1542,10 @@
    "p_market": 0.5733,
    "fair_odds": 1.74,
    "est_odds": 1.62,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892783",
@@ -1596,10 +1596,10 @@
    "p_market": 0.5934,
    "fair_odds": 1.69,
    "est_odds": 1.57,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892789",
@@ -1614,10 +1614,10 @@
    "p_market": 0.6009,
    "fair_odds": 1.66,
    "est_odds": 1.55,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892790",
@@ -1632,10 +1632,10 @@
    "p_market": 0.6048,
    "fair_odds": 1.65,
    "est_odds": 1.54,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892791",
@@ -1712,11 +1712,11 @@
  ],
  "p15_summary": {
   "picks": 14,
-  "settled": 4,
-  "hits": 1,
+  "settled": 10,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 2.42,
-  "profit_units": -2.47
+  "expected_hits": 6.01,
+  "profit_units": -0.68
  },
  "extra": [
   {
@@ -1729,10 +1729,10 @@
    "confidence": 54,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; 1. periods 1 - 0)"
   },
   {
    "game_id": "401892787",
@@ -1744,10 +1744,10 @@
    "confidence": 54,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHI 3 - 7 WSH (pamatlaikā; 1. periods 1 - 1)"
   },
   {
    "game_id": "401892786",
@@ -1774,10 +1774,10 @@
    "confidence": 53,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "STL 2 - 2 NYI (pamatlaikā; 1. periods 0 - 0)"
   },
   {
    "game_id": "401892782",
@@ -1834,10 +1834,10 @@
    "confidence": 51,
    "fair_odds": 1.97,
    "est_odds": 1.83,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OTT 3 - 5 FLA (pamatlaikā; 1. periods 0 - 1)"
   },
   {
    "game_id": "401892789",
@@ -1849,10 +1849,10 @@
    "confidence": 53,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VAN 1 - 5 DET (pamatlaikā; 1. periods 0 - 3)"
   },
   {
    "game_id": "401892790",
@@ -1864,10 +1864,10 @@
    "confidence": 53,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NSH 3 - 1 DAL (pamatlaikā; 1. periods 1 - 0)"
   },
   {
    "game_id": "401892791",
@@ -1932,10 +1932,10 @@
  ],
  "extra_summary": {
   "picks": 14,
-  "settled": 4,
-  "hits": 0,
+  "settled": 10,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 2.08,
-  "profit_units": -4
+  "expected_hits": 5.26,
+  "profit_units": -4.79
  }
 }

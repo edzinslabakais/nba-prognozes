@@ -144,7 +144,7 @@
     "CLE: Evan Mobley (Out) -0.8",
     "CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5"
    ],
-   "score": null,
+   "score": "CLE 102 - 121 NY",
    "picks": [
     {
      "category": "kopā",
@@ -154,8 +154,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "CLE 102 - 121 NY",
      "top": true
     },
     {
@@ -166,8 +166,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "CLE 102 - 121 NY",
      "top": false
     },
     {
@@ -178,8 +178,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "CLE 102 - 121 NY",
      "top": false
     }
    ]
@@ -201,7 +201,7 @@
    "injuries": [
     "OKC: Aday Mara (Out) -1.0"
    ],
-   "score": null,
+   "score": "MIN 113 - 106 OKC",
    "picks": [
     {
      "category": "kopā",
@@ -211,8 +211,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MIN 113 - 106 OKC",
      "top": true
     },
     {
@@ -223,8 +223,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "MIN 113 - 106 OKC",
      "top": false
     },
     {
@@ -235,8 +235,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "MIN 113 - 106 OKC",
      "top": false
     }
    ]
@@ -260,7 +260,7 @@
     "MEM: Jerami Grant (Out) -0.6",
     "MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0"
    ],
-   "score": null,
+   "score": "LAC 97 - 115 MEM",
    "picks": [
     {
      "category": "kopā",
@@ -270,8 +270,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "LAC 97 - 115 MEM",
      "top": true
     },
     {
@@ -282,8 +282,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "LAC 97 - 115 MEM",
      "top": false
     },
     {
@@ -294,8 +294,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "LAC 97 - 115 MEM",
      "top": false
     }
    ]
@@ -317,7 +317,7 @@
    "injuries": [
     "BKN: Nolan Traore (Out) -0.9"
    ],
-   "score": null,
+   "score": "BKN 104 - 97 MIL",
    "picks": [
     {
      "category": "kopā",
@@ -327,8 +327,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "BKN 104 - 97 MIL",
      "top": true
     },
     {
@@ -339,8 +339,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "BKN 104 - 97 MIL",
      "top": false
     },
     {
@@ -351,8 +351,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "BKN 104 - 97 MIL",
      "top": false
     }
    ]
@@ -534,11 +534,11 @@
  ],
  "summary": {
   "picks": 27,
-  "settled": 6,
-  "hits": 0,
+  "settled": 18,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 2.6,
-  "profit_units": -6
+  "expected_hits": 7.8,
+  "profit_units": -5.1
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -589,11 +589,11 @@
  },
  "top_summary": {
   "picks": 9,
-  "settled": 2,
-  "hits": 0,
+  "settled": 6,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.87,
-  "profit_units": -2
+  "expected_hits": 2.61,
+  "profit_units": -3.86
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -608,8 +608,8 @@
    "p_model": 0.4832,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909319",
@@ -622,8 +622,8 @@
    "p_model": 0.4733,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -636,17 +636,17 @@
    "p_model": 0.5468,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.61,
+  "profit_units": 0.48
  },
  "safe_all": [
   {
@@ -662,10 +662,10 @@
    "p_market": 0.5357,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909319",
@@ -680,10 +680,10 @@
    "p_market": 0.5357,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -698,10 +698,10 @@
    "p_market": 0.5357,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909317",
@@ -788,10 +788,10 @@
    "p_market": 0.5322,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909323",
@@ -814,11 +814,11 @@
  ],
  "safe_all_summary": {
   "picks": 9,
-  "settled": 2,
-  "hits": 1,
+  "settled": 6,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 1.07,
-  "profit_units": -0.26
+  "expected_hits": 3.21,
+  "profit_units": 0.97
  },
  "robot": [
   {
@@ -906,10 +906,10 @@
    "p_market": 0.5434,
    "fair_odds": 1.49,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909320",
@@ -924,10 +924,10 @@
    "p_market": 0.5383,
    "fair_odds": 1.51,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909319",
@@ -942,10 +942,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.67,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909324",
@@ -978,19 +978,19 @@
    "p_market": 0.5344,
    "fair_odds": 1.71,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 104 - 97 MIL"
   }
  ],
  "robot_summary": {
   "picks": 9,
-  "settled": 2,
-  "hits": 1,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.4,
-  "profit_units": -0.27
+  "expected_hits": 3.91,
+  "profit_units": -0.83
  },
  "p15": [
   {
@@ -1042,10 +1042,10 @@
    "p_market": 0.6082,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -1060,10 +1060,10 @@
    "p_market": 0.6082,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909321",
@@ -1078,10 +1078,10 @@
    "p_market": 0.6181,
    "fair_odds": 1.62,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909322",
@@ -1096,10 +1096,10 @@
    "p_market": 0.6082,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909323",
@@ -1158,11 +1158,11 @@
  ],
  "p15_summary": {
   "picks": 9,
-  "settled": 2,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.23,
-  "profit_units": -2
+  "expected_hits": 3.67,
+  "profit_units": -1.44
  },
  "extra": [
   {
@@ -1205,10 +1205,10 @@
    "confidence": 53,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CLE 102 - 121 NY (1. ceturtdaļa 34 - 23; 1. puslaiks 61 - 56)"
   },
   {
    "game_id": "401909320",
@@ -1220,10 +1220,10 @@
    "confidence": 54,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MIN 113 - 106 OKC (1. ceturtdaļa 26 - 16; 1. puslaiks 47 - 53)"
   },
   {
    "game_id": "401909321",
@@ -1235,10 +1235,10 @@
    "confidence": 55,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAC 97 - 115 MEM (1. ceturtdaļa 15 - 32; 1. puslaiks 43 - 50)"
   },
   {
    "game_id": "401909322",
@@ -1250,10 +1250,10 @@
    "confidence": 55,
    "fair_odds": 1.83,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "BKN 104 - 97 MIL (1. ceturtdaļa 28 - 24; 1. puslaiks 51 - 47)"
   },
   {
    "game_id": "401909323",
@@ -1303,10 +1303,10 @@
  ],
  "extra_summary": {
   "picks": 9,
-  "settled": 2,
-  "hits": 2,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.08,
-  "profit_units": 1.46
+  "expected_hits": 3.23,
+  "profit_units": -0.83
  }
 }

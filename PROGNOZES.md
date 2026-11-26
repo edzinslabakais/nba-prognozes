@@ -1,8 +1,8 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 26.11.2026 04:42 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 05:41 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 0/6
+## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 6/18
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -29,46 +29,46 @@ Robots: **CHA -3.5**, kopā 219.5 · bukmeikeri: CHA -3.5, kopā 219.5 · gala r
 Savainojumi/sastāvs: CHA: Grayson Allen (Out) -0.9; CHA: Ryan Kalkbrenner (Out) -0.7; CHI: Norman Powell (Out) -1.0; CHI: Caleb Wilson (Out) -0.4
 
 ### CLE @ NY · 02:30
-Robots: **NY -1.5**, kopā 216.5 · bukmeikeri: NY -1.5, kopā 216.5
+Robots: **NY -1.5**, kopā 216.5 · bukmeikeri: NY -1.5, kopā 216.5 · gala rezultāts: **CLE 102 - 121 NY**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 212.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **CLE -0.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **NY zem 106.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **zem 212.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **CLE -0.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 3 | **NY zem 106.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: NY: Jalen Brunson (Day-To-Day) -1.1; NY: OG Anunoby (Out) -0.9; NY: Karl-Anthony Towns (Day-To-Day) -0.9; CLE: Evan Mobley (Out) -0.8; CLE: Jarrett Allen (spēlēja 7/10 pēdējās) +0.5
 
 ### MIN @ OKC · 02:30
-Robots: **OKC -1.5**, kopā 221.5 · bukmeikeri: OKC -1.5, kopā 221.5
+Robots: **OKC -1.5**, kopā 221.5 · bukmeikeri: OKC -1.5, kopā 221.5 · gala rezultāts: **MIN 113 - 106 OKC**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 223.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MIN -0.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIN virs 111.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 223.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **MIN -0.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
+| 3 | **MIN virs 111.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
 
 Savainojumi/sastāvs: OKC: Aday Mara (Out) -1.0
 
 ### LAC @ MEM · 03:00
-Robots: **MEM -7.5**, kopā 227.5 · bukmeikeri: MEM -7.5, kopā 227.5
+Robots: **MEM -7.5**, kopā 227.5 · bukmeikeri: MEM -7.5, kopā 227.5 · gala rezultāts: **LAC 97 - 115 MEM**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 229.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MEM -9.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **LAC virs 111.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **virs 229.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **MEM -9.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 3 | **LAC virs 111.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: MEM: Cameron Boozer (Out) -1.4; MEM: Jerami Grant (Out) -0.6; MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0
 
 ### BKN @ MIL · 03:00
-Robots: **MIL -1.5**, kopā 234.5 · bukmeikeri: MIL -1.5, kopā 234.5
+Robots: **MIL -1.5**, kopā 234.5 · bukmeikeri: MIL -1.5, kopā 234.5 · gala rezultāts: **BKN 104 - 97 MIL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 230.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **BKN -0.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIL zem 115.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **zem 230.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **BKN -0.5** | 43/100 | 2.15 | 2.31 | ✅ izgāja |
+| 3 | **MIL zem 115.5** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
 
 Savainojumi/sastāvs: BKN: Nolan Traore (Out) -0.9
 
@@ -111,9 +111,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
-| BKN@MIL | **MIL zem 118.5** | 54/100 | 1.74 | ⏳ gaida |
-| CLE@NY | **NY zem 109.5** | 54/100 | 1.74 | ⏳ gaida |
-| MIN@OKC | **MIN virs 108.5** | 54/100 | 1.74 | ⏳ gaida |
+| BKN@MIL | **MIL zem 118.5** | 54/100 | 1.74 | ✅ izgāja |
+| CLE@NY | **NY zem 109.5** | 54/100 | 1.74 | ❌ neizgāja |
+| MIN@OKC | **MIN virs 108.5** | 54/100 | 1.74 | ✅ izgāja |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -127,21 +127,21 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 24/53, vienības -1.67
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 25/57, vienības -3.53
 
-2.1+ kopā: izgāja 62/159 (39%), robots gaidīja ~69.0, vienības -26.19
-1.7+ kopā: izgāja 12/23 (52%), robots gaidīja ~12.3, vienības -2.06
+2.1+ kopā: izgāja 68/171 (40%), robots gaidīja ~74.2, vienības -25.29
+1.7+ kopā: izgāja 14/26 (54%), robots gaidīja ~13.9, vienības -1.58
 Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.15
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 62/159 | -26.19 | 24/53 | -1.67 | 12/23 | -2.06 | 6/22 | +2.15 |
+| Novembris 2026 (18.–30.11.) | 68/171 | -25.29 | 25/57 | -3.53 | 14/26 | -1.58 | 6/22 | +2.15 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 0/6 | 2.6 | -6.00 |
+| 26.11. | 6/18 | 7.8 | -5.10 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
 | 23.11. | 10/21 | 9.1 | +0.44 |
@@ -154,4 +154,4 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.15
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 159 | 39% | 43% |
+| 40-44 | 171 | 40% | 43% |

@@ -291,7 +291,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909319",
@@ -306,7 +307,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909319",
@@ -321,7 +323,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -336,7 +339,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909320",
@@ -351,7 +355,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909320",
@@ -366,7 +371,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909321",
@@ -381,7 +387,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909321",
@@ -396,7 +403,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909321",
@@ -411,7 +419,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909322",
@@ -426,7 +435,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909322",
@@ -441,7 +451,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909322",
@@ -456,7 +467,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909323",
@@ -651,7 +663,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909319",
@@ -667,7 +680,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -683,7 +697,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   }
  ],
  "safe_all": [
@@ -701,7 +716,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909319",
@@ -717,7 +733,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -733,7 +750,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909317",
@@ -815,7 +833,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909323",
@@ -915,7 +934,8 @@
    "est_odds": 1.71,
    "confidence": 67,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909320",
@@ -931,7 +951,8 @@
    "est_odds": 1.73,
    "confidence": 66,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909319",
@@ -947,7 +968,8 @@
    "est_odds": 1.71,
    "confidence": 60,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909324",
@@ -979,7 +1001,8 @@
    "est_odds": 1.74,
    "confidence": 58,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "BKN 104 - 97 MIL"
   }
  ],
  "p15": [
@@ -1031,7 +1054,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY"
   },
   {
    "game_id": "401909320",
@@ -1047,7 +1071,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "MIN 113 - 106 OKC"
   },
   {
    "game_id": "401909321",
@@ -1063,7 +1088,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "LAC 97 - 115 MEM"
   },
   {
    "game_id": "401909322",
@@ -1079,7 +1105,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL"
   },
   {
    "game_id": "401909323",
@@ -1170,7 +1197,8 @@
    "fair_odds": 1.9,
    "est_odds": 1.76,
    "confidence": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "CLE 102 - 121 NY (1. ceturtdaļa 34 - 23; 1. puslaiks 61 - 56)"
   },
   {
    "game_id": "401909320",
@@ -1183,7 +1211,8 @@
    "fair_odds": 1.87,
    "est_odds": 1.74,
    "confidence": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "MIN 113 - 106 OKC (1. ceturtdaļa 26 - 16; 1. puslaiks 47 - 53)"
   },
   {
    "game_id": "401909321",
@@ -1196,7 +1225,8 @@
    "fair_odds": 1.83,
    "est_odds": 1.7,
    "confidence": 55,
-   "result": null
+   "result": "neizgāja",
+   "score": "LAC 97 - 115 MEM (1. ceturtdaļa 15 - 32; 1. puslaiks 43 - 50)"
   },
   {
    "game_id": "401909322",
@@ -1209,7 +1239,8 @@
    "fair_odds": 1.83,
    "est_odds": 1.71,
    "confidence": 55,
-   "result": null
+   "result": "izgāja",
+   "score": "BKN 104 - 97 MIL (1. ceturtdaļa 28 - 24; 1. puslaiks 51 - 47)"
   },
   {
    "game_id": "401909323",

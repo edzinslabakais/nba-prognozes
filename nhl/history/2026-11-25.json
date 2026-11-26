@@ -284,7 +284,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892788",
@@ -299,7 +300,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892788",
@@ -314,7 +316,8 @@
    "fair_odds": 2.52,
    "est_odds": 2.35,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892787",
@@ -329,7 +332,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892787",
@@ -344,7 +348,8 @@
    "fair_odds": 2.38,
    "est_odds": 2.21,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892787",
@@ -359,7 +364,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892786",
@@ -422,7 +428,8 @@
    "fair_odds": 2.44,
    "est_odds": 2.27,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892785",
@@ -437,7 +444,8 @@
    "fair_odds": 2.49,
    "est_odds": 2.31,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892785",
@@ -452,7 +460,8 @@
    "fair_odds": 2.65,
    "est_odds": 2.47,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892782",
@@ -611,7 +620,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892784",
@@ -626,7 +636,8 @@
    "fair_odds": 2.6,
    "est_odds": 2.42,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892784",
@@ -641,7 +652,8 @@
    "fair_odds": 2.88,
    "est_odds": 2.68,
    "confidence": 35,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892789",
@@ -656,7 +668,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892789",
@@ -671,7 +684,8 @@
    "fair_odds": 2.53,
    "est_odds": 2.35,
    "confidence": 39,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892789",
@@ -686,7 +700,8 @@
    "fair_odds": 3.44,
    "est_odds": 3.2,
    "confidence": 29,
-   "result": null
+   "result": "neizgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892790",
@@ -701,7 +716,8 @@
    "fair_odds": 2.38,
    "est_odds": 2.21,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892790",
@@ -716,7 +732,8 @@
    "fair_odds": 2.46,
    "est_odds": 2.29,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892790",
@@ -731,7 +748,8 @@
    "fair_odds": 2.91,
    "est_odds": 2.7,
    "confidence": 34,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892791",
@@ -971,7 +989,8 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": 56,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892782",
@@ -1022,7 +1041,8 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": 56,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892782",
@@ -1071,7 +1091,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892794",
@@ -1103,7 +1124,8 @@
    "est_odds": 1.81,
    "confidence": 51,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892791",
@@ -1135,7 +1157,8 @@
    "est_odds": 1.84,
    "confidence": 51,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892788",
@@ -1151,7 +1174,8 @@
    "est_odds": 1.77,
    "confidence": 53,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892781",
@@ -1234,7 +1258,8 @@
    "est_odds": 2.08,
    "confidence": 45,
    "data_conf": 47,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHI 3 - 7 WSH"
   }
  ],
  "robot": [
@@ -1252,7 +1277,8 @@
    "est_odds": 1.77,
    "confidence": 66,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892794",
@@ -1284,7 +1310,8 @@
    "est_odds": 1.77,
    "confidence": 60,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892781",
@@ -1317,7 +1344,8 @@
    "est_odds": 1.78,
    "confidence": 58,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892785",
@@ -1333,7 +1361,8 @@
    "est_odds": 1.72,
    "confidence": 57,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892790",
@@ -1349,7 +1378,8 @@
    "est_odds": 1.96,
    "confidence": 56,
    "data_conf": 47,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892786",
@@ -1415,7 +1445,8 @@
    "est_odds": 1.78,
    "confidence": 53,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892791",
@@ -1499,7 +1530,8 @@
    "est_odds": 1.51,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; bullīšos 3 - 2)"
   },
   {
    "game_id": "401892785",
@@ -1515,7 +1547,8 @@
    "est_odds": 1.55,
    "confidence": 60,
    "data_conf": 60,
-   "result": null
+   "result": "neizgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; bullīšos 2 - 3)"
   },
   {
    "game_id": "401892781",
@@ -1548,7 +1581,8 @@
    "est_odds": 1.62,
    "confidence": 57,
    "data_conf": 57,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 3 - 5 FLA"
   },
   {
    "game_id": "401892783",
@@ -1598,7 +1632,8 @@
    "est_odds": 1.57,
    "confidence": 59,
    "data_conf": 59,
-   "result": null
+   "result": "izgāja",
+   "score": "PHI 3 - 7 WSH"
   },
   {
    "game_id": "401892789",
@@ -1614,7 +1649,8 @@
    "est_odds": 1.55,
    "confidence": 60,
    "data_conf": 60,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET"
   },
   {
    "game_id": "401892790",
@@ -1630,7 +1666,8 @@
    "est_odds": 1.54,
    "confidence": 60,
    "data_conf": 60,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL"
   },
   {
    "game_id": "401892791",
@@ -1709,7 +1746,8 @@
    "fair_odds": 1.85,
    "est_odds": 1.72,
    "confidence": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "NJ 2 - 2 CBJ (pamatlaikā; 1. periods 1 - 0)"
   },
   {
    "game_id": "401892787",
@@ -1722,7 +1760,8 @@
    "fair_odds": 1.86,
    "est_odds": 1.73,
    "confidence": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "PHI 3 - 7 WSH (pamatlaikā; 1. periods 1 - 1)"
   },
   {
    "game_id": "401892786",
@@ -1749,7 +1788,8 @@
    "fair_odds": 1.9,
    "est_odds": 1.77,
    "confidence": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "STL 2 - 2 NYI (pamatlaikā; 1. periods 0 - 0)"
   },
   {
    "game_id": "401892782",
@@ -1804,7 +1844,8 @@
    "fair_odds": 1.97,
    "est_odds": 1.83,
    "confidence": 51,
-   "result": null
+   "result": "neizgāja",
+   "score": "OTT 3 - 5 FLA (pamatlaikā; 1. periods 0 - 1)"
   },
   {
    "game_id": "401892789",
@@ -1817,7 +1858,8 @@
    "fair_odds": 1.87,
    "est_odds": 1.74,
    "confidence": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 1 - 5 DET (pamatlaikā; 1. periods 0 - 3)"
   },
   {
    "game_id": "401892790",
@@ -1830,7 +1872,8 @@
    "fair_odds": 1.88,
    "est_odds": 1.75,
    "confidence": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "NSH 3 - 1 DAL (pamatlaikā; 1. periods 1 - 0)"
   },
   {
    "game_id": "401892791",
