@@ -531,7 +531,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909324",
@@ -546,7 +547,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909324",
@@ -561,7 +563,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909325",
@@ -576,7 +579,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909325",
@@ -591,7 +595,8 @@
    "fair_odds": 2.31,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909325",
@@ -606,7 +611,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 111 - 116 POR"
   }
  ],
  "crazy": [
@@ -649,7 +655,8 @@
    "fair_odds": 4.86,
    "est_odds": 4.52,
    "confidence": 21,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 111 - 116 POR"
   }
  ],
  "safe": [
@@ -788,7 +795,8 @@
    "est_odds": 1.74,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909318",
@@ -821,7 +829,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909321",
@@ -907,7 +916,8 @@
    "est_odds": 1.73,
    "confidence": 69,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909317",
@@ -991,7 +1001,8 @@
    "est_odds": 1.71,
    "confidence": 60,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909322",
@@ -1145,7 +1156,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909325",
@@ -1161,7 +1173,8 @@
    "est_odds": 1.5,
    "confidence": 62,
    "data_conf": 62,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 111 - 116 POR"
   }
  ],
  "extra": [
@@ -1274,7 +1287,8 @@
    "fair_odds": 1.87,
    "est_odds": 1.74,
    "confidence": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "SAC 110 - 129 GS (1. ceturtdaļa 19 - 44; 1. puslaiks 53 - 72)"
   },
   {
    "game_id": "401909325",
@@ -1287,7 +1301,8 @@
    "fair_odds": 1.87,
    "est_odds": 1.74,
    "confidence": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "SA 111 - 116 POR (1. ceturtdaļa 35 - 38; 1. puslaiks 57 - 60)"
   }
  ]
 }

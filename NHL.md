@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 26.11.2026 06:47 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 07:42 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1 — izgāja 19/33
+## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1 — izgāja 24/42
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -128,35 +128,35 @@ Robots: **MIN 46% · X 25% · UTA 29%**, vārti 3.3–2.7 · bukmeikeri: MIN 57%
 Savainojumi/sastāvs: MIN: vārtsargs Jesper Wallstedt (apstiprināts) +0.08; UTA: vārtsargs Karel Vejmelka (gaidāms) -0.05
 
 ### MTL @ COL · 04:30
-Robots: **COL 40% · X 25% · MTL 35%**, vārti 3.1–3.0 · bukmeikeri: COL 52% ar papildl., kopā 6.5
+Robots: **COL 40% · X 25% · MTL 35%**, vārti 3.1–3.0 · bukmeikeri: COL 52% ar papildl., kopā 6.5 · gala rezultāts: **MTL 0 - 6 COL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **zem 5.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 ★ | **MTL zem 2.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **COL uzvar** | 40/100 | 2.34 | 2.51 | ⏳ gaida |
+| 1 | **zem 5.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 ★ | **MTL zem 2.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 3 | **COL uzvar** | 40/100 | 2.34 | 2.51 | ✅ izgāja |
 
 Savainojumi/sastāvs: COL: vārtsargs Mackenzie Blackwood (apstiprināts) +0.03; MTL: vārtsargs Jacob Fowler (apstiprināts) +0.16
 
 ### CHI @ SEA · 04:40
-Robots: **SEA 45% · X 24% · CHI 30%**, vārti 3.4–2.9 · bukmeikeri: SEA 58% ar papildl., kopā 6.5
+Robots: **SEA 45% · X 24% · CHI 30%**, vārti 3.4–2.9 · bukmeikeri: SEA 58% ar papildl., kopā 6.5 · gala rezultāts: **CHI 3 - 1 SEA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **CHI uzvar (ieskaitot papildlaiku)** | 42/100 | 2.19 | 2.35 | ⏳ gaida |
-| 2 ★ | **SEA virs 3.5** | 42/100 | 2.20 | 2.36 | ⏳ gaida |
-| 3 | **virs 6.5** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
+| 1 | **CHI uzvar (ieskaitot papildlaiku)** | 42/100 | 2.19 | 2.35 | ✅ izgāja |
+| 2 ★ | **SEA virs 3.5** | 42/100 | 2.20 | 2.36 | ❌ neizgāja |
+| 3 | **virs 6.5** | 42/100 | 2.23 | 2.40 | ❌ neizgāja |
 
 Savainojumi/sastāvs: SEA: vārtsargs Joey Daccord (gaidāms) -0.07; CHI: vārtsargs Spencer Knight (gaidāms) +0.01
 
 ### SJ @ ANA · 05:00
-Robots: **ANA 43% · X 24% · SJ 33%**, vārti 3.5–3.1 · bukmeikeri: ANA 55% ar papildl., kopā 6.5
+Robots: **ANA 43% · X 24% · SJ 33%**, vārti 3.5–3.1 · bukmeikeri: ANA 55% ar papildl., kopā 6.5 · gala rezultāts: **SJ 0 - 7 ANA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **ANA virs 3.5** | 44/100 | 2.11 | 2.27 | ⏳ gaida |
-| 2 | **ANA uzvar** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
-| 3 | **zem 5.5** | 36/100 | 2.55 | 2.74 | ⏳ gaida |
+| 1 ★ | **ANA virs 3.5** | 44/100 | 2.11 | 2.27 | ✅ izgāja |
+| 2 | **ANA uzvar** | 43/100 | 2.16 | 2.32 | ✅ izgāja |
+| 3 | **zem 5.5** | 36/100 | 2.55 | 2.74 | ❌ neizgāja |
 
 Savainojumi/sastāvs: ANA: vārtsargs Laurent Brossoit (gaidāms) +0.08; SJ: vārtsargs Yaroslav Askarov (gaidāms) -0.03
 
@@ -168,7 +168,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 |---|---|---|---|---|
 | VAN@DET | **DET uzvar** | 56/100 | 1.71 | ✅ izgāja |
 | NYR@BUF | **BUF uzvar (ieskaitot papildlaiku)** | 55/100 | 1.72 | ✅ izgāja |
-| SJ@ANA | **zem 6.5** | 55/100 | 1.73 | ⏳ gaida |
+| SJ@ANA | **zem 6.5** | 55/100 | 1.73 | ❌ neizgāja |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -178,25 +178,25 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 |---|---|---|---|---|---|
 | CAR@TB | **CAR uzvar & virs 5.5** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
 | UTA@MIN | **UTA zem 1.5** | 23/100 | 4.03 | 4.33 | ❌ neizgāja |
-| MTL@COL | **COL uzvar & zem 6.5** | 22/100 | 4.15 | 4.47 | ⏳ gaida |
+| MTL@COL | **COL uzvar & zem 6.5** | 22/100 | 4.15 | 4.47 | ✅ izgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 23/52, vienības -1.41
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 25/55, vienības -0.16
 
-2.1+ kopā: izgāja 63/156 (40%), robots gaidīja ~62.8, vienības -9.67
-1.7+ kopā: izgāja 14/18 (78%), robots gaidīja ~9.5, vienības +6.84
-Crazy Dazy kopā: izgāja 5/18 (28%), robots gaidīja ~4.1, vienības +2.36
+2.1+ kopā: izgāja 68/165 (41%), robots gaidīja ~66.6, vienības -7.73
+1.7+ kopā: izgāja 14/19 (74%), robots gaidīja ~10.0, vienības +5.84
+Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 63/156 | -9.67 | 23/52 | -1.41 | 14/18 | +6.84 | 5/18 | +2.36 |
+| Novembris 2026 (18.–30.11.) | 68/165 | -7.73 | 25/55 | -0.16 | 14/19 | +5.84 | 6/19 | +5.51 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 19/33 | 13.4 | +10.94 |
+| 26.11. | 24/42 | 17.2 | +12.88 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
 | 23.11. | 7/12 | 4.7 | +5.74 |
@@ -209,5 +209,5 @@ Crazy Dazy kopā: izgāja 5/18 (28%), robots gaidīja ~4.1, vienības +2.36
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
 | 0-34 | 9 | 44% | 32% |
-| 35-39 | 43 | 37% | 38% |
-| 40-44 | 104 | 41% | 42% |
+| 35-39 | 44 | 36% | 38% |
+| 40-44 | 112 | 43% | 42% |

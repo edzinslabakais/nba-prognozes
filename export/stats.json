@@ -1,35 +1,35 @@
 {
  "overall": {
   "picks": 180,
-  "settled": 174,
-  "hits": 69,
+  "settled": 180,
+  "hits": 72,
   "pushes": 0,
-  "expected_hits": 75.49,
-  "profit_units": -26.15
+  "expected_hits": 78.09,
+  "profit_units": -25.71
  },
  "crazy_overall": {
   "picks": 24,
-  "settled": 23,
+  "settled": 24,
   "hits": 6,
   "pushes": 0,
-  "expected_hits": 5.24,
-  "profit_units": 1.15
+  "expected_hits": 5.44,
+  "profit_units": 0.15
  },
  "top_overall": {
   "picks": 60,
-  "settled": 58,
+  "settled": 60,
   "hits": 26,
   "pushes": 0,
-  "expected_hits": 25.23,
-  "profit_units": -2.39
+  "expected_hits": 26.1,
+  "profit_units": -4.39
  },
  "safe_all_overall": {
   "picks": 44,
-  "settled": 42,
+  "settled": 44,
   "hits": 21,
   "pushes": 0,
-  "expected_hits": 22.38,
-  "profit_units": -5.31
+  "expected_hits": 23.45,
+  "profit_units": -7.31
  },
  "safe_overall": {
   "picks": 26,
@@ -330,26 +330,26 @@
   {
    "date": "2026-11-25",
    "picks": 27,
-   "settled": 21,
-   "hits": 7,
+   "settled": 27,
+   "hits": 10,
    "pushes": 0,
-   "expected_hits": 9.1,
-   "profit_units": -5.96,
+   "expected_hits": 11.71,
+   "profit_units": -5.52,
    "crazy": {
     "picks": 3,
-    "settled": 2,
+    "settled": 3,
     "hits": 0,
     "pushes": 0,
-    "expected_hits": 0.42,
-    "profit_units": -2
+    "expected_hits": 0.63,
+    "profit_units": -3
    },
    "top": {
     "picks": 9,
-    "settled": 7,
+    "settled": 9,
     "hits": 2,
     "pushes": 0,
-    "expected_hits": 3.04,
-    "profit_units": -2.72
+    "expected_hits": 3.91,
+    "profit_units": -4.72
    },
    "safe": {
     "picks": 3,
@@ -361,19 +361,19 @@
    },
    "safe_all": {
     "picks": 9,
-    "settled": 7,
+    "settled": 9,
     "hits": 5,
     "pushes": 0,
-    "expected_hits": 3.74,
-    "profit_units": 1.72
+    "expected_hits": 4.81,
+    "profit_units": -0.28
    }
   }
  ],
  "calibration": [
   {
    "range": "40-44",
-   "n": 174,
-   "hit_rate": 0.397,
+   "n": 180,
+   "hit_rate": 0.4,
    "expected": 0.434
   }
  ],
@@ -384,19 +384,19 @@
    "days": "18.–30.11.",
    "all": {
     "picks": 180,
-    "settled": 174,
-    "hits": 69,
+    "settled": 180,
+    "hits": 72,
     "pushes": 0,
-    "expected_hits": 75.49,
-    "profit_units": -26.15
+    "expected_hits": 78.09,
+    "profit_units": -25.71
    },
    "top": {
     "picks": 60,
-    "settled": 58,
+    "settled": 60,
     "hits": 26,
     "pushes": 0,
-    "expected_hits": 25.23,
-    "profit_units": -2.39
+    "expected_hits": 26.1,
+    "profit_units": -4.39
    },
    "safe": {
     "picks": 26,
@@ -408,13 +408,13 @@
    },
    "crazy": {
     "picks": 24,
-    "settled": 23,
+    "settled": 24,
     "hits": 6,
     "pushes": 0,
-    "expected_hits": 5.24,
-    "profit_units": 1.15
+    "expected_hits": 5.44,
+    "profit_units": 0.15
    }
   }
  ],
- "updated_at": "2026-11-26T04:47+00:00"
+ "updated_at": "2026-11-26T05:42+00:00"
 }

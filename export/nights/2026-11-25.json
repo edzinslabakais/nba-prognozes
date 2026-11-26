@@ -432,7 +432,7 @@
     "GS: Stephen Curry (Out) -1.7",
     "GS: Yaxel Lendeborg (Day-To-Day) -0.7"
    ],
-   "score": null,
+   "score": "SAC 110 - 129 GS",
    "picks": [
     {
      "category": "kopā",
@@ -442,8 +442,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "SAC 110 - 129 GS",
      "top": true
     },
     {
@@ -454,8 +454,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SAC 110 - 129 GS",
      "top": false
     },
     {
@@ -466,8 +466,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SAC 110 - 129 GS",
      "top": false
     }
    ]
@@ -491,7 +491,7 @@
     "SA: Dylan Harper (Out) -1.4",
     "SA: Victor Wembanyama (Day-To-Day) -1.4"
    ],
-   "score": null,
+   "score": "SA 111 - 116 POR",
    "picks": [
     {
      "category": "kopā",
@@ -501,8 +501,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "SA 111 - 116 POR",
      "top": true
     },
     {
@@ -513,8 +513,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "SA 111 - 116 POR",
      "top": false
     },
     {
@@ -525,8 +525,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "SA 111 - 116 POR",
      "top": false
     }
    ]
@@ -534,11 +534,11 @@
  ],
  "summary": {
   "picks": 27,
-  "settled": 21,
-  "hits": 7,
+  "settled": 27,
+  "hits": 10,
   "pushes": 0,
-  "expected_hits": 9.1,
-  "profit_units": -5.96
+  "expected_hits": 11.71,
+  "profit_units": -5.52
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -575,25 +575,25 @@
    "confidence": 21,
    "fair_odds": 4.86,
    "est_odds": 4.52,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "SA 111 - 116 POR"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0.42,
-  "profit_units": -2
+  "expected_hits": 0.63,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 9,
-  "settled": 7,
+  "settled": 9,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 3.04,
-  "profit_units": -2.72
+  "expected_hits": 3.91,
+  "profit_units": -4.72
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -734,10 +734,10 @@
    "p_market": 0.5336,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909318",
@@ -770,10 +770,10 @@
    "p_market": 0.5325,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909321",
@@ -814,11 +814,11 @@
  ],
  "safe_all_summary": {
   "picks": 9,
-  "settled": 7,
+  "settled": 9,
   "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.74,
-  "profit_units": 1.72
+  "expected_hits": 4.81,
+  "profit_units": -0.28
  },
  "robot": [
   {
@@ -870,10 +870,10 @@
    "p_market": 0.5381,
    "fair_odds": 1.45,
    "est_odds": 1.73,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 111 - 116 POR"
   },
   {
    "game_id": "401909317",
@@ -960,10 +960,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.68,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909322",
@@ -986,11 +986,11 @@
  ],
  "robot_summary": {
   "picks": 9,
-  "settled": 7,
-  "hits": 4,
+  "settled": 9,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 4.61,
-  "profit_units": -0.12
+  "expected_hits": 5.89,
+  "profit_units": 1.32
  },
  "p15": [
   {
@@ -1132,10 +1132,10 @@
    "p_market": 0.6184,
    "fair_odds": 1.62,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SAC 110 - 129 GS"
   },
   {
    "game_id": "401909325",
@@ -1150,19 +1150,19 @@
    "p_market": 0.6195,
    "fair_odds": 1.61,
    "est_odds": 1.5,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 111 - 116 POR"
   }
  ],
  "p15_summary": {
   "picks": 9,
-  "settled": 7,
-  "hits": 4,
+  "settled": 9,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 4.29,
-  "profit_units": -0.93
+  "expected_hits": 5.53,
+  "profit_units": 0.07
  },
  "extra": [
   {
@@ -1280,10 +1280,10 @@
    "confidence": 53,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SAC 110 - 129 GS (1. ceturtdaļa 19 - 44; 1. puslaiks 53 - 72)"
   },
   {
    "game_id": "401909325",
@@ -1295,18 +1295,18 @@
    "confidence": 54,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "SA 111 - 116 POR (1. ceturtdaļa 35 - 38; 1. puslaiks 57 - 60)"
   }
  ],
  "extra_summary": {
   "picks": 9,
-  "settled": 7,
-  "hits": 3,
+  "settled": 9,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.78,
-  "profit_units": -1.83
+  "expected_hits": 4.85,
+  "profit_units": -0.35
  }
 }

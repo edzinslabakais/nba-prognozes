@@ -812,7 +812,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892792",
@@ -827,7 +828,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892792",
@@ -842,7 +844,8 @@
    "fair_odds": 2.51,
    "est_odds": 2.34,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892794",
@@ -857,7 +860,8 @@
    "fair_odds": 2.35,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892794",
@@ -872,7 +876,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.2,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892794",
@@ -887,7 +892,8 @@
    "fair_odds": 2.4,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892793",
@@ -902,7 +908,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "SJ 0 - 7 ANA"
   },
   {
    "game_id": "401892793",
@@ -917,7 +924,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.16,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "SJ 0 - 7 ANA"
   },
   {
    "game_id": "401892793",
@@ -932,7 +940,8 @@
    "fair_odds": 2.74,
    "est_odds": 2.55,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "SJ 0 - 7 ANA"
   }
  ],
  "crazy": [
@@ -975,7 +984,8 @@
    "fair_odds": 4.47,
    "est_odds": 4.15,
    "confidence": 22,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   }
  ],
  "safe": [
@@ -1027,7 +1037,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 55,
-   "result": null
+   "result": "neizgāja",
+   "score": "SJ 0 - 7 ANA"
   }
  ],
  "safe_all": [
@@ -1079,7 +1090,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 55,
-   "result": null
+   "result": "neizgāja",
+   "score": "SJ 0 - 7 ANA"
   },
   {
    "game_id": "401892785",
@@ -1112,7 +1124,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892784",
@@ -1213,7 +1226,8 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892786",
@@ -1299,7 +1313,8 @@
    "est_odds": 1.74,
    "confidence": 60,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892784",
@@ -1434,7 +1449,8 @@
    "est_odds": 1.78,
    "confidence": 53,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892788",
@@ -1484,7 +1500,8 @@
    "est_odds": 2.06,
    "confidence": 51,
    "data_conf": 45,
-   "result": null
+   "result": "izgāja",
+   "score": "SJ 0 - 7 ANA"
   },
   {
    "game_id": "401892782",
@@ -1706,7 +1723,8 @@
    "est_odds": 1.53,
    "confidence": 61,
    "data_conf": 61,
-   "result": null
+   "result": "izgāja",
+   "score": "MTL 0 - 6 COL"
   },
   {
    "game_id": "401892794",
@@ -1722,7 +1740,8 @@
    "est_odds": 1.57,
    "confidence": 59,
    "data_conf": 59,
-   "result": null
+   "result": "izgāja",
+   "score": "CHI 3 - 1 SEA"
   },
   {
    "game_id": "401892793",
@@ -1738,7 +1757,8 @@
    "est_odds": 1.58,
    "confidence": 59,
    "data_conf": 59,
-   "result": null
+   "result": "neizgāja",
+   "score": "SJ 0 - 7 ANA"
   }
  ],
  "extra": [
@@ -1907,7 +1927,8 @@
    "fair_odds": 1.88,
    "est_odds": 1.75,
    "confidence": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "MTL 0 - 6 COL (pamatlaikā; 1. periods 0 - 1)"
   },
   {
    "game_id": "401892794",
@@ -1920,7 +1941,8 @@
    "fair_odds": 1.84,
    "est_odds": 1.71,
    "confidence": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "CHI 3 - 1 SEA (pamatlaikā; 1. periods 0 - 0)"
   },
   {
    "game_id": "401892793",
@@ -1933,7 +1955,8 @@
    "fair_odds": 1.89,
    "est_odds": 1.76,
    "confidence": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "SJ 0 - 7 ANA (pamatlaikā; 1. periods 0 - 3)"
   }
  ]
 }
