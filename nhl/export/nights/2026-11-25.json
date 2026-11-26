@@ -32,6 +32,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -43,6 +44,7 @@
      "est_odds": 2.17,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -54,6 +56,7 @@
      "est_odds": 2.35,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -87,6 +90,7 @@
      "est_odds": 2.16,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -98,6 +102,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -109,6 +114,7 @@
      "est_odds": 2.22,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -131,7 +137,7 @@
     "PIT: vārtsargs Arturs Silovs (apstiprināts) -0.07",
     "CGY: vārtsargs Dustin Wolf (apstiprināts) -0.09"
    ],
-   "score": null,
+   "score": "CGY 6 - 3 PIT",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -141,7 +147,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "CGY 6 - 3 PIT",
      "top": false
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.47,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CGY 6 - 3 PIT",
      "top": true
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 2.66,
      "est_odds": 2.48,
      "confidence": 38,
-     "result": null,
+     "result": "izgāja",
+     "score": "CGY 6 - 3 PIT",
      "top": false
     }
    ]
@@ -197,6 +206,7 @@
      "est_odds": 2.27,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -208,6 +218,7 @@
      "est_odds": 2.31,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -219,6 +230,7 @@
      "est_odds": 2.47,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -241,7 +253,7 @@
     "BUF: vārtsargs Ukko-Pekka Luukkonen (gaidāms) -0.04",
     "NYR: vārtsargs Joonas Korpisalo (apstiprināts) -0.03"
    ],
-   "score": null,
+   "score": "NYR 1 - 5 BUF",
    "picks": [
     {
      "category": "komandas vārti",
@@ -251,7 +263,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "NYR 1 - 5 BUF",
      "top": true
     },
     {
@@ -262,7 +275,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NYR 1 - 5 BUF",
      "top": false
     },
     {
@@ -273,7 +287,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "NYR 1 - 5 BUF",
      "top": false
     }
    ]
@@ -296,7 +311,7 @@
     "TB: vārtsargs Andrei Vasilevskiy (gaidāms) +0.02",
     "CAR: vārtsargs Brandon Bussi (gaidāms) -0.15"
    ],
-   "score": null,
+   "score": "CAR 3 - 1 TB",
    "picks": [
     {
      "category": "komandas vārti",
@@ -306,7 +321,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "CAR 3 - 1 TB",
      "top": false
     },
     {
@@ -317,7 +333,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "CAR 3 - 1 TB",
      "top": true
     },
     {
@@ -328,7 +345,8 @@
      "fair_odds": 2.53,
      "est_odds": 2.35,
      "confidence": 40,
-     "result": null,
+     "result": "izgāja",
+     "score": "CAR 3 - 1 TB",
      "top": false
     }
    ]
@@ -351,7 +369,7 @@
     "BOS: vārtsargs Jeremy Swayman (apstiprināts) -0.02",
     "WPG: vārtsargs Nico Daws (apstiprināts) +0.02"
    ],
-   "score": null,
+   "score": "WPG 4 - 2 BOS",
    "picks": [
     {
      "category": "komandas vārti",
@@ -361,7 +379,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WPG 4 - 2 BOS",
      "top": true
     },
     {
@@ -372,7 +391,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "WPG 4 - 2 BOS",
      "top": false
     },
     {
@@ -383,7 +403,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "WPG 4 - 2 BOS",
      "top": false
     }
    ]
@@ -417,6 +438,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -428,6 +450,7 @@
      "est_odds": 2.42,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -439,6 +462,7 @@
      "est_odds": 2.68,
      "confidence": 35,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -472,6 +496,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -483,6 +508,7 @@
      "est_odds": 2.35,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -494,6 +520,7 @@
      "est_odds": 3.2,
      "confidence": 29,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -527,6 +554,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -538,6 +566,7 @@
      "est_odds": 2.29,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -549,6 +578,7 @@
      "est_odds": 2.7,
      "confidence": 34,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -582,6 +612,7 @@
      "est_odds": 2.15,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -593,6 +624,7 @@
      "est_odds": 2.24,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -604,6 +636,7 @@
      "est_odds": 2.26,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -637,6 +670,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -648,6 +682,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -659,6 +694,7 @@
      "est_odds": 2.34,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -692,6 +728,7 @@
      "est_odds": 2.19,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -703,6 +740,7 @@
      "est_odds": 2.2,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -714,6 +752,7 @@
      "est_odds": 2.23,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -747,6 +786,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -758,6 +798,7 @@
      "est_odds": 2.16,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -769,6 +810,7 @@
      "est_odds": 2.55,
      "confidence": 36,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -776,11 +818,11 @@
  ],
  "summary": {
   "picks": 42,
-  "settled": 0,
-  "hits": 0,
+  "settled": 12,
+  "hits": 8,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.96,
+  "profit_units": 6.2
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -793,8 +835,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "CAR 3 - 1 TB"
   },
   {
    "game_id": "401892791",
@@ -823,19 +865,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.23,
+  "profit_units": -1
  },
  "top_summary": {
   "picks": 14,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.69,
+  "profit_units": 0.36
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -864,8 +906,8 @@
    "p_model": 0.4985,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "NYR 1 - 5 BUF"
   },
   {
    "game_id": "401892793",
@@ -884,11 +926,11 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 1,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.54,
+  "profit_units": 0.72
  },
  "safe_all": [
   {
@@ -922,10 +964,10 @@
    "p_market": 0.5514,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NYR 1 - 5 BUF"
   },
   {
    "game_id": "401892793",
@@ -1066,10 +1108,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "WPG 4 - 2 BOS"
   },
   {
    "game_id": "401892792",
@@ -1102,10 +1144,10 @@
    "p_market": 0.5115,
    "fair_odds": 2.01,
    "est_odds": 1.87,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 6 - 3 PIT"
   },
   {
    "game_id": "401892783",
@@ -1120,10 +1162,10 @@
    "p_market": 0.5108,
    "fair_odds": 1.92,
    "est_odds": 1.79,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CAR 3 - 1 TB"
   },
   {
    "game_id": "401892787",
@@ -1146,11 +1188,11 @@
  ],
  "safe_all_summary": {
   "picks": 14,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.09,
+  "profit_units": 1.25
  },
  "robot": [
   {
@@ -1220,10 +1262,10 @@
    "p_market": 0.5235,
    "fair_odds": 1.71,
    "est_odds": 1.78,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "WPG 4 - 2 BOS"
   },
   {
    "game_id": "401892789",
@@ -1292,10 +1334,10 @@
    "p_market": 0.4885,
    "fair_odds": 1.78,
    "est_odds": 1.9,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 6 - 3 PIT"
   },
   {
    "game_id": "401892783",
@@ -1310,10 +1352,10 @@
    "p_market": 0.5108,
    "fair_odds": 1.79,
    "est_odds": 1.82,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CAR 3 - 1 TB"
   },
   {
    "game_id": "401892792",
@@ -1400,19 +1442,19 @@
    "p_market": 0.4486,
    "fair_odds": 1.99,
    "est_odds": 2.07,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NYR 1 - 5 BUF"
   }
  ],
  "robot_summary": {
   "picks": 14,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.21,
+  "profit_units": 1.5
  },
  "p15": [
   {
@@ -1428,10 +1470,10 @@
    "p_market": 0.6009,
    "fair_odds": 1.66,
    "est_odds": 1.55,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NYR 1 - 5 BUF"
   },
   {
    "game_id": "401892788",
@@ -1482,10 +1524,10 @@
    "p_market": 0.6038,
    "fair_odds": 1.66,
    "est_odds": 1.54,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "WPG 4 - 2 BOS"
   },
   {
    "game_id": "401892784",
@@ -1518,10 +1560,10 @@
    "p_market": 0.6089,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CAR 3 - 1 TB"
   },
   {
    "game_id": "401892786",
@@ -1536,10 +1578,10 @@
    "p_market": 0.6092,
    "fair_odds": 1.64,
    "est_odds": 1.53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 6 - 3 PIT"
   },
   {
    "game_id": "401892787",
@@ -1670,11 +1712,11 @@
  ],
  "p15_summary": {
   "picks": 14,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.42,
+  "profit_units": -2.47
  },
  "extra": [
   {
@@ -1717,10 +1759,10 @@
    "confidence": 54,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 6 - 3 PIT (pamatlaikā; 1. periods 0 - 1)"
   },
   {
    "game_id": "401892785",
@@ -1747,10 +1789,10 @@
    "confidence": 54,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NYR 1 - 5 BUF (pamatlaikā; 1. periods 0 - 1)"
   },
   {
    "game_id": "401892783",
@@ -1762,10 +1804,10 @@
    "confidence": 54,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CAR 3 - 1 TB (pamatlaikā; 1. periods 0 - 0)"
   },
   {
    "game_id": "401892781",
@@ -1777,10 +1819,10 @@
    "confidence": 45,
    "fair_odds": 2.22,
    "est_odds": 2.06,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "WPG 4 - 2 BOS (pamatlaikā; 1. periods 2 - 1)"
   },
   {
    "game_id": "401892784",
@@ -1890,10 +1932,10 @@
  ],
  "extra_summary": {
   "picks": 14,
-  "settled": 0,
+  "settled": 4,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.08,
+  "profit_units": -4
  }
 }

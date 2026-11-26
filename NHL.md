@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 26.11.2026 00:30 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 04:42 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1
+## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1 — izgāja 8/12
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -29,13 +29,13 @@ Robots: **WSH 45% · X 24% · PHI 31%**, vārti 3.4–2.9 · bukmeikeri: WSH 59%
 Savainojumi/sastāvs: WSH: vārtsargs Logan Thompson (apstiprināts) +0.04; PHI: vārtsargs Joseph Woll (apstiprināts) +0.03
 
 ### CGY @ PIT · 02:00
-Robots: **PIT 47% · X 25% · CGY 28%**, vārti 3.3–2.7 · bukmeikeri: PIT 61% ar papildl., kopā 6.5
+Robots: **PIT 47% · X 25% · CGY 28%**, vārti 3.3–2.7 · bukmeikeri: PIT 61% ar papildl., kopā 6.5 · gala rezultāts: **CGY 6 - 3 PIT**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **CGY uzvar (ieskaitot papildlaiku)** | 41/100 | 2.28 | 2.45 | ⏳ gaida |
-| 2 ★ | **PIT virs 3.5** | 40/100 | 2.30 | 2.47 | ⏳ gaida |
-| 3 | **virs 6.5** | 38/100 | 2.48 | 2.66 | ⏳ gaida |
+| 1 | **CGY uzvar (ieskaitot papildlaiku)** | 41/100 | 2.28 | 2.45 | ✅ izgāja |
+| 2 ★ | **PIT virs 3.5** | 40/100 | 2.30 | 2.47 | ❌ neizgāja |
+| 3 | **virs 6.5** | 38/100 | 2.48 | 2.66 | ✅ izgāja |
 
 Savainojumi/sastāvs: PIT: vārtsargs Arturs Silovs (apstiprināts) -0.07; CGY: vārtsargs Dustin Wolf (apstiprināts) -0.09
 
@@ -51,35 +51,35 @@ Robots: **NYI 41% · X 25% · STL 34%**, vārti 3.1–2.9 · bukmeikeri: NYI 54%
 Savainojumi/sastāvs: NYI: vārtsargs Ilya Sorokin (apstiprināts) +0.07; STL: vārtsargs Joel Hofer (gaidāms) +0.15
 
 ### NYR @ BUF · 02:00
-Robots: **BUF 42% · X 25% · NYR 33%**, vārti 3.2–2.9 · bukmeikeri: BUF 55% ar papildl., kopā 6.5
+Robots: **BUF 42% · X 25% · NYR 33%**, vārti 3.2–2.9 · bukmeikeri: BUF 55% ar papildl., kopā 6.5 · gala rezultāts: **NYR 1 - 5 BUF**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **NYR zem 2.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **zem 5.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
-| 3 | **BUF uzvar** | 42/100 | 2.23 | 2.40 | ⏳ gaida |
+| 1 ★ | **NYR zem 2.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **zem 5.5** | 42/100 | 2.22 | 2.39 | ❌ neizgāja |
+| 3 | **BUF uzvar** | 42/100 | 2.23 | 2.40 | ✅ izgāja |
 
 Savainojumi/sastāvs: BUF: vārtsargs Ukko-Pekka Luukkonen (gaidāms) -0.04; NYR: vārtsargs Joonas Korpisalo (apstiprināts) -0.03
 
 ### CAR @ TB · 02:00
-Robots: **TB 35% · X 25% · CAR 40%**, vārti 3.0–3.2 · bukmeikeri: CAR 51% ar papildl., kopā 6.5
+Robots: **TB 35% · X 25% · CAR 40%**, vārti 3.0–3.2 · bukmeikeri: CAR 51% ar papildl., kopā 6.5 · gala rezultāts: **CAR 3 - 1 TB**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **TB zem 2.5** | 42/100 | 2.22 | 2.38 | ⏳ gaida |
-| 2 ★ | **zem 5.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
-| 3 | **CAR uzvar** | 40/100 | 2.35 | 2.53 | ⏳ gaida |
+| 1 | **TB zem 2.5** | 42/100 | 2.22 | 2.38 | ✅ izgāja |
+| 2 ★ | **zem 5.5** | 42/100 | 2.22 | 2.39 | ✅ izgāja |
+| 3 | **CAR uzvar** | 40/100 | 2.35 | 2.53 | ✅ izgāja |
 
 Savainojumi/sastāvs: TB: vārtsargs Andrei Vasilevskiy (gaidāms) +0.02; CAR: vārtsargs Brandon Bussi (gaidāms) -0.15
 
 ### WPG @ BOS · 02:00
-Robots: **BOS 47% · X 24% · WPG 29%**, vārti 3.5–2.8 · bukmeikeri: BOS 60% ar papildl., kopā 6.5
+Robots: **BOS 47% · X 24% · WPG 29%**, vārti 3.5–2.8 · bukmeikeri: BOS 60% ar papildl., kopā 6.5 · gala rezultāts: **WPG 4 - 2 BOS**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **BOS virs 3.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
-| 2 | **virs 6.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
-| 3 | **WPG uzvar (ieskaitot papildlaiku)** | 41/100 | 2.28 | 2.45 | ⏳ gaida |
+| 1 ★ | **BOS virs 3.5** | 44/100 | 2.13 | 2.29 | ❌ neizgāja |
+| 2 | **virs 6.5** | 42/100 | 2.22 | 2.39 | ❌ neizgāja |
+| 3 | **WPG uzvar (ieskaitot papildlaiku)** | 41/100 | 2.28 | 2.45 | ✅ izgāja |
 
 Savainojumi/sastāvs: BOS: vārtsargs Jeremy Swayman (apstiprināts) -0.02; WPG: vārtsargs Nico Daws (apstiprināts) +0.02
 
@@ -167,7 +167,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
 | VAN@DET | **DET uzvar** | 56/100 | 1.71 | ⏳ gaida |
-| NYR@BUF | **BUF uzvar (ieskaitot papildlaiku)** | 55/100 | 1.72 | ⏳ gaida |
+| NYR@BUF | **BUF uzvar (ieskaitot papildlaiku)** | 55/100 | 1.72 | ✅ izgāja |
 | SJ@ANA | **zem 6.5** | 55/100 | 1.73 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
@@ -176,26 +176,27 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| CAR@TB | **CAR uzvar & virs 5.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| CAR@TB | **CAR uzvar & virs 5.5** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
 | UTA@MIN | **UTA zem 1.5** | 23/100 | 4.03 | 4.33 | ⏳ gaida |
 | MTL@COL | **COL uzvar & zem 6.5** | 22/100 | 4.15 | 4.47 | ⏳ gaida |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 18/41, vienības -1.30
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 20/45, vienības -0.94
 
-2.1+ kopā: izgāja 44/123 (36%), robots gaidīja ~49.4, vienības -20.61
-1.7+ kopā: izgāja 12/16 (75%), robots gaidīja ~8.4, vienības +5.41
-Crazy Dazy kopā: izgāja 5/16 (31%), robots gaidīja ~3.7, vienības +4.36
+2.1+ kopā: izgāja 52/135 (39%), robots gaidīja ~54.4, vienības -14.41
+1.7+ kopā: izgāja 13/17 (76%), robots gaidīja ~8.9, vienības +6.13
+Crazy Dazy kopā: izgāja 5/17 (29%), robots gaidīja ~3.9, vienības +3.36
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 44/123 | -20.61 | 18/41 | -1.30 | 12/16 | +5.41 | 5/16 | +4.36 |
+| Novembris 2026 (18.–30.11.) | 52/135 | -14.41 | 20/45 | -0.94 | 13/17 | +6.13 | 5/17 | +3.36 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 26.11. | 8/12 | 5.0 | +6.20 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
 | 23.11. | 7/12 | 4.7 | +5.74 |
@@ -208,5 +209,5 @@ Crazy Dazy kopā: izgāja 5/16 (31%), robots gaidīja ~3.7, vienības +4.36
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
 | 0-34 | 7 | 43% | 32% |
-| 35-39 | 38 | 32% | 38% |
-| 40-44 | 78 | 37% | 42% |
+| 35-39 | 39 | 33% | 38% |
+| 40-44 | 89 | 40% | 42% |

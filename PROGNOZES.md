@@ -1,8 +1,8 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 26.11.2026 03:43 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 04:42 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 0/3
+## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 0/6
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -18,13 +18,13 @@ Robots: **PHI -1.5**, kopā 237.5 · bukmeikeri: PHI -1.5, kopā 237.5 · gala r
 Savainojumi/sastāvs: PHI: Joel Embiid (Day-To-Day) -0.4; PHI: Jaylen Brown (spēlēja 8/10 pēdējās) +0.4; PHI: Dominick Barlow (spēlēja 2/10 pēdējās) +0.5; MIA: Giannis Antetokounmpo (Day-To-Day) -1.2
 
 ### CHI @ CHA · 02:00
-Robots: **CHA -3.5**, kopā 219.5 · bukmeikeri: CHA -3.5, kopā 219.5
+Robots: **CHA -3.5**, kopā 219.5 · bukmeikeri: CHA -3.5, kopā 219.5 · gala rezultāts: **CHI 107 - 105 CHA**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **CHA -5.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
-| 3 | **CHI virs 109.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **CHA -5.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
+| 3 | **CHI virs 109.5** | 43/100 | 2.15 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: CHA: Grayson Allen (Out) -0.9; CHA: Ryan Kalkbrenner (Out) -0.7; CHI: Norman Powell (Out) -1.0; CHI: Caleb Wilson (Out) -0.4
 
@@ -122,26 +122,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | PHX@HOU | **PHX uzvar** | 23/100 | 4.01 | 4.32 | ⏳ gaida |
-| CHI@CHA | **CHI uzvar & virs 219.5** | 19/100 | 4.93 | 5.30 | ⏳ gaida |
+| CHI@CHA | **CHI uzvar & virs 219.5** | 19/100 | 4.93 | 5.30 | ❌ neizgāja |
 | SA@POR | **POR uzvar & zem 225.5** | 21/100 | 4.52 | 4.86 | ⏳ gaida |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 24/52, vienības -0.67
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 24/53, vienības -1.67
 
-2.1+ kopā: izgāja 62/156 (40%), robots gaidīja ~67.7, vienības -23.19
+2.1+ kopā: izgāja 62/159 (39%), robots gaidīja ~69.0, vienības -26.19
 1.7+ kopā: izgāja 12/23 (52%), robots gaidīja ~12.3, vienības -2.06
-Crazy Dazy kopā: izgāja 6/21 (29%), robots gaidīja ~4.8, vienības +3.15
+Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.15
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 62/156 | -23.19 | 24/52 | -0.67 | 12/23 | -2.06 | 6/21 | +3.15 |
+| Novembris 2026 (18.–30.11.) | 62/159 | -26.19 | 24/53 | -1.67 | 12/23 | -2.06 | 6/22 | +2.15 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 0/3 | 1.3 | -3.00 |
+| 26.11. | 0/6 | 2.6 | -6.00 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
 | 23.11. | 10/21 | 9.1 | +0.44 |
@@ -154,4 +154,4 @@ Crazy Dazy kopā: izgāja 6/21 (29%), robots gaidīja ~4.8, vienības +3.15
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 156 | 40% | 43% |
+| 40-44 | 159 | 39% | 43% |
