@@ -162,7 +162,8 @@
    "fair_odds": 2.52,
    "est_odds": 2.34,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   },
   {
    "game_id": "hcqkzw4i8a",
@@ -177,7 +178,8 @@
    "fair_odds": 2.76,
    "est_odds": 2.57,
    "confidence": 36,
-   "result": null
+   "result": "izgāja",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   },
   {
    "game_id": "hcqkzw4i8a",
@@ -192,7 +194,8 @@
    "fair_odds": 2.94,
    "est_odds": 2.73,
    "confidence": 34,
-   "result": null
+   "result": "neizgāja",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   },
   {
    "game_id": "g3chmdvsvy",
@@ -480,7 +483,8 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   }
  ],
  "safe_all": [
@@ -536,9 +540,10 @@
    "est_odds": 1.77,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Färjestad",
-   "home_short": "Timrå"
+   "home_short": "Timrå",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   },
   {
    "game_id": "zlpmwfn138",

@@ -73,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)",
    "picks": [
     {
      "category": "komandas vārti",
@@ -83,8 +83,8 @@
      "fair_odds": 2.52,
      "est_odds": 2.34,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)",
      "top": true
     },
     {
@@ -95,8 +95,8 @@
      "fair_odds": 2.76,
      "est_odds": 2.57,
      "confidence": 36,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)",
      "top": false
     },
     {
@@ -107,8 +107,8 @@
      "fair_odds": 2.94,
      "est_odds": 2.73,
      "confidence": 34,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)",
      "top": false
     }
    ]
@@ -336,11 +336,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 15,
-  "hits": 7,
+  "settled": 18,
+  "hits": 9,
   "pushes": 0,
-  "expected_hits": 5.72,
-  "profit_units": 3.34
+  "expected_hits": 6.82,
+  "profit_units": 5.25
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -397,11 +397,11 @@
  },
  "top_summary": {
   "picks": 6,
-  "settled": 5,
-  "hits": 2,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 2.13,
-  "profit_units": -0.54
+  "expected_hits": 2.52,
+  "profit_units": 0.8
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -448,19 +448,19 @@
    "p_model": 0.5242,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)",
    "away_short": "Färjestad",
    "home_short": "Timrå"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.06,
-  "profit_units": 1.51
+  "expected_hits": 1.58,
+  "profit_units": 0.51
  },
  "safe_all": [
   {
@@ -512,10 +512,10 @@
    "p_market": null,
    "fair_odds": 1.91,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Färjestad",
    "home_short": "Timrå",
-   "score": null
+   "score": "FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)"
   },
   {
    "game_id": "zlpmwfn138",
@@ -574,10 +574,10 @@
  ],
  "safe_all_summary": {
   "picks": 6,
-  "settled": 5,
+  "settled": 6,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 2.58,
-  "profit_units": 0.34
+  "expected_hits": 3.1,
+  "profit_units": -0.66
  }
 }

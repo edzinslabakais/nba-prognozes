@@ -1,8 +1,8 @@
 # 🏒 SHL prognozes
 
-_Atjaunināts 26.11.2026 22:37 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 23:30 (Rīgas laiks)_
 
-## Spēles 26.11. — 6 spēles, koef. ≥ 2.1 — izgāja 7/15
+## Spēles 26.11. — 6 spēles, koef. ≥ 2.1 — izgāja 9/18
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -16,13 +16,13 @@ Robots: **SAIK 59% · X 18% · RBK 23%**, vārti 3.4–2.2 · gala rezultāts: *
 | 3 | **zem 4.5** | 34/100 | 2.73 | 2.94 | ❌ neizgāja |
 
 ### FBK @ TIK · 20:00
-Robots: **TIK 34% · X 21% · FBK 45%**, vārti 2.3–2.6
+Robots: **TIK 34% · X 21% · FBK 45%**, vārti 2.3–2.6 · gala rezultāts: **FBK 4 - 4 TIK (pamatlaikā; bullīšos 5 - 4)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **TIK virs 2.5** | 40/100 | 2.34 | 2.52 | ⏳ gaida |
-| 2 | **virs 5.5** | 36/100 | 2.57 | 2.76 | ⏳ gaida |
-| 3 | **TIK uzvar** | 34/100 | 2.73 | 2.94 | ⏳ gaida |
+| 1 ★ | **TIK virs 2.5** | 40/100 | 2.34 | 2.52 | ✅ izgāja |
+| 2 | **virs 5.5** | 36/100 | 2.57 | 2.76 | ✅ izgāja |
+| 3 | **TIK uzvar** | 34/100 | 2.73 | 2.94 | ❌ neizgāja |
 
 ### DIF @ VLH · 20:00
 Robots: **VLH 53% · X 20% · DIF 27%**, vārti 2.9–2.1 · gala rezultāts: **DIF 1 - 4 VLH**
@@ -68,7 +68,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 |---|---|---|---|---|
 | HV71@OHK | **zem 5.5** | 53/100 | 1.75 | ✅ izgāja |
 | DIF@VLH | **VLH uzvar** | 53/100 | 1.76 | ✅ izgāja |
-| FBK@TIK | **FBK zem 2.5** | 52/100 | 1.77 | ⏳ gaida |
+| FBK@TIK | **FBK zem 2.5** | 52/100 | 1.77 | ❌ neizgāja |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -82,26 +82,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 2/5, vienības -0.54
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 3/6, vienības +0.80
 
-2.1+ kopā: izgāja 7/15 (47%), robots gaidīja ~5.7, vienības +3.34
-1.7+ kopā: izgāja 2/2 (100%), robots gaidīja ~1.1, vienības +1.51
+2.1+ kopā: izgāja 9/18 (50%), robots gaidīja ~6.8, vienības +5.25
+1.7+ kopā: izgāja 2/3 (67%), robots gaidīja ~1.6, vienības +0.51
 Crazy Dazy kopā: izgāja 1/3 (33%), robots gaidīja ~0.7, vienības +1.05
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (26.–30.11.) | 7/15 | +3.34 | 2/5 | -0.54 | 2/2 | +1.51 | 1/3 | +1.05 |
+| Novembris 2026 (26.–30.11.) | 9/18 | +5.25 | 3/6 | +0.80 | 2/3 | +0.51 | 1/3 | +1.05 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 7/15 | 5.7 | +3.34 |
+| 26.11. | 9/18 | 6.8 | +5.25 |
 
 ### Vai drošība atbilst realitātei?
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 3 | 67% | 30% |
-| 35-39 | 5 | 40% | 37% |
-| 40-44 | 7 | 43% | 42% |
+| 0-34 | 4 | 50% | 31% |
+| 35-39 | 6 | 50% | 37% |
+| 40-44 | 8 | 50% | 42% |
