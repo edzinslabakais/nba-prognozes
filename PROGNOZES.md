@@ -1,8 +1,8 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 26.11.2026 05:41 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 06:47 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 6/18
+## Nakts uz 26.11. — 9 spēles, koef. ≥ 2.1 — izgāja 7/21
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -73,13 +73,13 @@ Robots: **MIL -1.5**, kopā 234.5 · bukmeikeri: MIL -1.5, kopā 234.5 · gala r
 Savainojumi/sastāvs: BKN: Nolan Traore (Out) -0.9
 
 ### PHX @ HOU · 03:30
-Robots: **HOU -9.5**, kopā 222.5 · bukmeikeri: HOU -9.5, kopā 222.5
+Robots: **HOU -9.5**, kopā 222.5 · bukmeikeri: HOU -9.5, kopā 222.5 · gala rezultāts: **PHX 104 - 116 HOU**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **HOU -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **zem 218.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **HOU zem 113.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **HOU -11.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **zem 218.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 3 | **HOU zem 113.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: HOU: Clint Capela (jauns komandā / atgriežas) +0.5
 
@@ -121,27 +121,27 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| PHX@HOU | **PHX uzvar** | 23/100 | 4.01 | 4.32 | ⏳ gaida |
+| PHX@HOU | **PHX uzvar** | 23/100 | 4.01 | 4.32 | ❌ neizgāja |
 | CHI@CHA | **CHI uzvar & virs 219.5** | 19/100 | 4.93 | 5.30 | ❌ neizgāja |
 | SA@POR | **POR uzvar & zem 225.5** | 21/100 | 4.52 | 4.86 | ⏳ gaida |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 25/57, vienības -3.53
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 26/58, vienības -2.39
 
-2.1+ kopā: izgāja 68/171 (40%), robots gaidīja ~74.2, vienības -25.29
+2.1+ kopā: izgāja 69/174 (40%), robots gaidīja ~75.5, vienības -26.15
 1.7+ kopā: izgāja 14/26 (54%), robots gaidīja ~13.9, vienības -1.58
-Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.15
+Crazy Dazy kopā: izgāja 6/23 (26%), robots gaidīja ~5.2, vienības +1.15
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 68/171 | -25.29 | 25/57 | -3.53 | 14/26 | -1.58 | 6/22 | +2.15 |
+| Novembris 2026 (18.–30.11.) | 69/174 | -26.15 | 26/58 | -2.39 | 14/26 | -1.58 | 6/23 | +1.15 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 6/18 | 7.8 | -5.10 |
+| 26.11. | 7/21 | 9.1 | -5.96 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
 | 23.11. | 10/21 | 9.1 | +0.44 |
@@ -154,4 +154,4 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.15
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 171 | 40% | 43% |
+| 40-44 | 174 | 40% | 43% |

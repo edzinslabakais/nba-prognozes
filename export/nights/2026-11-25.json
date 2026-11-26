@@ -374,7 +374,7 @@
    "injuries": [
     "HOU: Clint Capela (jauns komandā / atgriežas) +0.5"
    ],
-   "score": null,
+   "score": "PHX 104 - 116 HOU",
    "picks": [
     {
      "category": "starpība",
@@ -384,8 +384,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "PHX 104 - 116 HOU",
      "top": true
     },
     {
@@ -396,8 +396,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "PHX 104 - 116 HOU",
      "top": false
     },
     {
@@ -408,8 +408,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "PHX 104 - 116 HOU",
      "top": false
     }
    ]
@@ -534,11 +534,11 @@
  ],
  "summary": {
   "picks": 27,
-  "settled": 18,
-  "hits": 6,
+  "settled": 21,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 7.8,
-  "profit_units": -5.1
+  "expected_hits": 9.1,
+  "profit_units": -5.96
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -551,8 +551,8 @@
    "confidence": 23,
    "fair_odds": 4.32,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "PHX 104 - 116 HOU"
   },
   {
    "game_id": "401909318",
@@ -581,19 +581,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 1,
+  "settled": 2,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0.19,
-  "profit_units": -1
+  "expected_hits": 0.42,
+  "profit_units": -2
  },
  "top_summary": {
   "picks": 9,
-  "settled": 6,
-  "hits": 1,
+  "settled": 7,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 2.61,
-  "profit_units": -3.86
+  "expected_hits": 3.04,
+  "profit_units": -2.72
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -806,19 +806,19 @@
    "p_market": 0.5318,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 104 - 116 HOU"
   }
  ],
  "safe_all_summary": {
   "picks": 9,
-  "settled": 6,
-  "hits": 4,
+  "settled": 7,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.21,
-  "profit_units": 0.97
+  "expected_hits": 3.74,
+  "profit_units": 1.72
  },
  "robot": [
   {
@@ -852,10 +852,10 @@
    "p_market": 0.5438,
    "fair_odds": 1.45,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 104 - 116 HOU"
   },
   {
    "game_id": "401909325",
@@ -986,11 +986,11 @@
  ],
  "robot_summary": {
   "picks": 9,
-  "settled": 6,
-  "hits": 3,
+  "settled": 7,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 3.91,
-  "profit_units": -0.83
+  "expected_hits": 4.61,
+  "profit_units": -0.12
  },
  "p15": [
   {
@@ -1114,10 +1114,10 @@
    "p_market": 0.6176,
    "fair_odds": 1.62,
    "est_odds": 1.51,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 104 - 116 HOU"
   },
   {
    "game_id": "401909324",
@@ -1158,11 +1158,11 @@
  ],
  "p15_summary": {
   "picks": 9,
-  "settled": 6,
-  "hits": 3,
+  "settled": 7,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 3.67,
-  "profit_units": -1.44
+  "expected_hits": 4.29,
+  "profit_units": -0.93
  },
  "extra": [
   {
@@ -1265,10 +1265,10 @@
    "confidence": 55,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "PHX 104 - 116 HOU (1. ceturtdaļa 33 - 29; 1. puslaiks 56 - 66)"
   },
   {
    "game_id": "401909324",
@@ -1303,10 +1303,10 @@
  ],
  "extra_summary": {
   "picks": 9,
-  "settled": 6,
+  "settled": 7,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 3.23,
-  "profit_units": -0.83
+  "expected_hits": 3.78,
+  "profit_units": -1.83
  }
 }

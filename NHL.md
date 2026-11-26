@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 26.11.2026 05:41 (Rīgas laiks)_
+_Atjaunināts 26.11.2026 06:47 (Rīgas laiks)_
 
-## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1 — izgāja 18/30
+## Nakts uz 26.11. — 14 spēles, koef. ≥ 2.1 — izgāja 19/33
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -117,13 +117,13 @@ Robots: **DAL 45% · X 25% · NSH 29%**, vārti 3.1–2.6 · bukmeikeri: DAL 60%
 Savainojumi/sastāvs: DAL: vārtsargs Jake Oettinger (apstiprināts) +0.02; NSH: vārtsargs Juuse Saros (gaidāms) +0.10
 
 ### UTA @ MIN · 03:00
-Robots: **MIN 46% · X 25% · UTA 29%**, vārti 3.3–2.7 · bukmeikeri: MIN 57% ar papildl., kopā 6.5
+Robots: **MIN 46% · X 25% · UTA 29%**, vārti 3.3–2.7 · bukmeikeri: MIN 57% ar papildl., kopā 6.5 · gala rezultāts: **UTA 4 - 3 MIN**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 5.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 2 | **UTA uzvar (ieskaitot papildlaiku)** | 42/100 | 2.24 | 2.41 | ⏳ gaida |
-| 3 | **MIN virs 3.5** | 41/100 | 2.26 | 2.43 | ⏳ gaida |
+| 1 ★ | **zem 5.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 2 | **UTA uzvar (ieskaitot papildlaiku)** | 42/100 | 2.24 | 2.41 | ✅ izgāja |
+| 3 | **MIN virs 3.5** | 41/100 | 2.26 | 2.43 | ❌ neizgāja |
 
 Savainojumi/sastāvs: MIN: vārtsargs Jesper Wallstedt (apstiprināts) +0.08; UTA: vārtsargs Karel Vejmelka (gaidāms) -0.05
 
@@ -177,26 +177,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | CAR@TB | **CAR uzvar & virs 5.5** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
-| UTA@MIN | **UTA zem 1.5** | 23/100 | 4.03 | 4.33 | ⏳ gaida |
+| UTA@MIN | **UTA zem 1.5** | 23/100 | 4.03 | 4.33 | ❌ neizgāja |
 | MTL@COL | **COL uzvar & zem 6.5** | 22/100 | 4.15 | 4.47 | ⏳ gaida |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 23/51, vienības -0.41
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 23/52, vienības -1.41
 
-2.1+ kopā: izgāja 62/153 (41%), robots gaidīja ~61.6, vienības -8.91
+2.1+ kopā: izgāja 63/156 (40%), robots gaidīja ~62.8, vienības -9.67
 1.7+ kopā: izgāja 14/18 (78%), robots gaidīja ~9.5, vienības +6.84
-Crazy Dazy kopā: izgāja 5/17 (29%), robots gaidīja ~3.9, vienības +3.36
+Crazy Dazy kopā: izgāja 5/18 (28%), robots gaidīja ~4.1, vienības +2.36
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 62/153 | -8.91 | 23/51 | -0.41 | 14/18 | +6.84 | 5/17 | +3.36 |
+| Novembris 2026 (18.–30.11.) | 63/156 | -9.67 | 23/52 | -1.41 | 14/18 | +6.84 | 5/18 | +2.36 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 26.11. | 18/30 | 12.1 | +11.70 |
+| 26.11. | 19/33 | 13.4 | +10.94 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
 | 23.11. | 7/12 | 4.7 | +5.74 |
@@ -210,4 +210,4 @@ Crazy Dazy kopā: izgāja 5/17 (29%), robots gaidīja ~3.9, vienības +3.36
 |---|---|---|---|
 | 0-34 | 9 | 44% | 32% |
 | 35-39 | 43 | 37% | 38% |
-| 40-44 | 101 | 42% | 42% |
+| 40-44 | 104 | 41% | 42% |
