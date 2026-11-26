@@ -373,7 +373,7 @@ const state = { nights: [], stats: null, selected: null, chosenByUser: false };
 const LEAGUE_KEY = "nba"; const DAY_MODE = false; const LEAGUE_TITLE = "NBA";  // site.py sets these per league
 const SIMPLE = false;  // a league page with only the best bets of the night + Crazy Dazy (no ★, no safe bets)
 const IS_NHL = LEAGUE_KEY === "nhl";
-const GOALS = LEAGUE_KEY === "nhl" || LEAGUE_KEY === "cl";
+const GOALS = ["nhl", "cl", "cz", "del", "shl"].includes(LEAGUE_KEY);
 let LANG = "lv";
 try { if (localStorage.getItem("nba-lang") === "en") LANG = "en"; } catch (e) { /* storage unavailable */ }
 const I18N = {
@@ -413,7 +413,7 @@ const I18N = {
     noData: "Dati šajā skatā nav pieejami. Atver lapu claude.ai, ielogojies un mēģini vēlreiz.",
     loadSlow: "Datus pagaidām neizdodas ielādēt. Pārbaudi interneta savienojumu.", loadFail: (c) => `Neizdevās ielādēt datus (${c}).`,
     night: (d) => `Nakts uz ${d}`,
-    statsSub: (n) => `Visi sporta veidi kopā (NBA, NHL, EuroLeague, Čempionu līga) · ${n} spēļu dienas`,
+    statsSub: (n) => `Visi sporta veidi kopā (NBA, NHL, Extraliga, DEL, SHL, EuroLeague, Čempionu līga) · ${n} spēļu dienas`,
     statsIntro: "Četras likmju grupas, saskaitītas pa visiem sporta veidiem: 2.1+, ★ reālākās no 2.1+, 1.7+ un Crazy Dazy. Vienības: ja uz katru likmi liktu 1 vienību pie aptuvenā koeficienta. Nedēļa ir no pirmdienas līdz svētdienai, un skaita pēc spēļu datuma.",
     thisWeek: "Šī nedēļa", thisMonth: "Šis mēnesis", thisYear: "Šis gads", allTime: "Kopā", since: (d) => `kopš ${d}`,
     pastWeeks: "Iepriekšējās nedēļas", pastMonths: "Iepriekšējie mēneši",
@@ -981,7 +981,7 @@ function renderSafePage() {
       if (!byLeague.has(b.league)) byLeague.set(b.league, { title: b.league_title, bets: [] });
       byLeague.get(b.league).bets.push(b);
     }
-    const ORDER = ["nba", "nhl", "el", "cl"];
+    const ORDER = ["nba", "nhl", "cz", "del", "shl", "el", "cl"];
     for (const [key, L] of [...byLeague].sort((a, b) => ORDER.indexOf(a[0]) - ORDER.indexOf(b[0]))) {
       const ss = sumOf(L.bets);
       const h = el("h3", "league-h", leagueName(L.title));
@@ -992,7 +992,7 @@ function renderSafePage() {
   // statistics for every league on its own (no totals across leagues)
   const today = isoDay(new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Riga" }) + " UTC"));
   const wk = mondayOf(today), mo = today.slice(0, 7);
-  const LEAGUE_ORDER = ["nba", "nhl", "el", "cl"];
+  const LEAGUE_ORDER = ["nba", "nhl", "cz", "del", "shl", "el", "cl"];
   const leagues = new Map();
   for (const n of state.nights) for (const b of n.bets || []) {
     if (!leagues.has(b.league)) leagues.set(b.league, { title: b.league_title, bets: [] });

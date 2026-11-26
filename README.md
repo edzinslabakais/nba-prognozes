@@ -68,7 +68,7 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
 
 ### EuroLeague un Čempionu līga
 
-- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | 1.7+ | Statistika).
+- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | CZ | DEL | SHL | 1.7+ | Statistika).
 - **Laiks:** Eiropas spēles sākas vakarā, tāpēc to likmes ir **ap 12:30** (palaišana 12:17), bet rezultāti
   nākamajā rītā kopā ar NBA/NHL. Datums lapā ir spēļu diena.
 - **EuroLeague** (`el_bot.py`): dati no oficiālā EuroLeague avota (api-live.euroleague.net). Bukmeikeru
@@ -91,6 +91,13 @@ mēnesis, kopā, ar sadalījumu pa līgām); tā netiek jaukta ar pārējo stati
 Bez parastajiem rīta laikiem GitHub ik pēc 5 minūtēm (var kavēties) pārbauda, vai kādai likmei spēlei jau vajadzētu
 būt beigušai (NBA/NHL ~2 h 15 min pēc sākuma, EuroLeague un futbols ~1 h 55 min). Ja jā, tiek noslēgtas tikai šīs
 līgas likmes, un lapa tiek publicēta tikai tad, ja kāds rezultāts mainījies.
+
+### Eiropas hokejs: Čehija, Vācija, Zviedrija
+
+Lapas …/nba-prognozes/cz/ (Tipsport Extraliga, dati hokej.cz), …/del/ (PENNY DEL, penny-del.org), …/shl/ (SHL, shl.se).
+Bukmeikeru koeficientu šiem avotiem nav, tāpēc varbūtības nāk no robota modeļa (komandu uzbrukums un aizsardzība pēc šīs
+sezonas pamatlaika rezultātiem, mājas laukums; kalibrēts ar `python cz_bot.py kalibret` u.c.). Likmes kā NHL (pamatlaiks,
+"ieskaitot papildlaiku" tikai, ja rakstīts), ap 12:30 kopā ar EuroLeague un Čempionu līgu.
 
 ### Kopējā statistika
 

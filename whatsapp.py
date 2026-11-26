@@ -25,7 +25,8 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 LEAGUES = [("NBA", ROOT / "export", 1), ("NHL", ROOT / "nhl" / "export", 1),
-           ("EuroLeague", ROOT / "el" / "export", 0), ("Čempionu līga", ROOT / "cl" / "export", 0)]
+           ("EuroLeague", ROOT / "el" / "export", 0), ("Čempionu līga", ROOT / "cl" / "export", 0),
+           ("Extraliga", ROOT / "cz" / "export", 0), ("DEL", ROOT / "del" / "export", 0), ("SHL", ROOT / "shl" / "export", 0)]
 
 
 def _units(x: float) -> str:

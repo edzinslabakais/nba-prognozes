@@ -1,0 +1,123 @@
+{
+ "date": "2026-11-26",
+ "min_odds": 2.1,
+ "generated_at": "2026-11-26T06:06+00:00",
+ "games": {
+  "20261126_loewen-frankfurt_adler-mannheim": {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "away": "MAN",
+   "home": "FRA",
+   "away_name": "Adler Mannheim",
+   "home_name": "Löwen Frankfurt",
+   "away_short": "Mannheim",
+   "home_short": "Frankfurt",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "riga_time": "26.11 20:30",
+   "robot_line": "FRA 41% · X 18% · MAN 41%",
+   "robot_total": "vārti 2.7–2.8",
+   "market_line": "—",
+   "market_total": null,
+   "injuries": []
+  }
+ },
+ "picks": [
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "MAN uzvar",
+   "p": 0.41219638858564595,
+   "p_model": 0.4122,
+   "p_market": null,
+   "data_score": 0.4122,
+   "fair_odds": 2.43,
+   "est_odds": 2.26,
+   "confidence": 41,
+   "result": null
+  },
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "category": "kopā",
+   "bet": "zem 4.5",
+   "p": 0.36131788265761994,
+   "p_model": 0.3613,
+   "p_market": null,
+   "data_score": 0.3613,
+   "fair_odds": 2.77,
+   "est_odds": 2.57,
+   "confidence": 36,
+   "result": null
+  },
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "category": "uzvarētājs / handikaps",
+   "bet": "MAN -1.5",
+   "p": 0.2551507315074486,
+   "p_model": 0.2552,
+   "p_market": null,
+   "data_score": 0.2552,
+   "fair_odds": 3.92,
+   "est_odds": 3.64,
+   "confidence": 26,
+   "result": null
+  }
+ ],
+ "crazy": [
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "riga_time": "26.11 20:30",
+   "category": "kombinācija",
+   "bet": "MAN uzvar & zem 5.5",
+   "p": 0.21820148076898402,
+   "fair_odds": 4.58,
+   "est_odds": 4.26,
+   "confidence": 22,
+   "result": null
+  }
+ ],
+ "safe": [
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "riga_time": "26.11 20:30",
+   "category": "komandas vārti",
+   "bet": "FRA virs 2.5",
+   "p": 0.5140374234660594,
+   "p_model": 0.514,
+   "p_market": null,
+   "fair_odds": 1.95,
+   "est_odds": 1.81,
+   "confidence": 51,
+   "data_conf": 51,
+   "result": null
+  }
+ ],
+ "safe_all": [
+  {
+   "game_id": "20261126_loewen-frankfurt_adler-mannheim",
+   "game": "MAN@FRA",
+   "start_utc": "2026-11-26 18:30:00+00:00",
+   "riga_time": "26.11 20:30",
+   "category": "komandas vārti",
+   "bet": "FRA virs 2.5",
+   "p": 0.5140374234660594,
+   "p_model": 0.514,
+   "p_market": null,
+   "fair_odds": 1.95,
+   "est_odds": 1.81,
+   "confidence": 51,
+   "data_conf": 51,
+   "result": null,
+   "away_short": "Mannheim",
+   "home_short": "Frankfurt"
+  }
+ ]
+}

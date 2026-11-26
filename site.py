@@ -21,6 +21,9 @@ LEAGUES = [
     ("nhl", "NHL", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/", False, (21, 30)),
     ("el", "EL", "EuroLeague", ROOT / "el" / "export", OUT / "el", "el/", True, (12, 30)),
     ("cl", "ČL", "Čempionu līgas", ROOT / "cl" / "export", OUT / "cl", "cl/", True, (12, 30)),
+    ("cz", "CZ", "Extraliga", ROOT / "cz" / "export", OUT / "cz", "cz/", True, (12, 30)),
+    ("del", "DEL", "DEL", ROOT / "del" / "export", OUT / "del", "del/", True, (12, 30)),
+    ("shl", "SHL", "SHL", ROOT / "shl" / "export", OUT / "shl", "shl/", True, (12, 30)),
 ]
 SIMPLE: set[str] = set()  # only the day's best bets + Crazy Dazy, and kept out of the combined statistics
 
@@ -65,7 +68,15 @@ EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: bukmeikeru koeficientu
 CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc <b>90 minūtēm</b> (bez pagarinājuma un '
            'pēcspēles sitieniem). Sagaidāmie vārti ir aprēķināti no bukmeikeru koeficientiem, un no tiem tiek '
            'novērtētas visas likmes, arī "abas komandas gūst vārtus" un "uzvara vai neizšķirts".</p>')
-NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE"}
+EUHK_NOTE = ('<p data-i18n-html="noteEuhk"><b>{name}</b>: bukmeikeru koeficientu šai līgai datos nav, tāpēc varbūtības '
+             'nāk no robota modeļa: katras komandas uzbrukuma un aizsardzības spēks pēc šīs sezonas rezultātiem un mājas '
+             'laukums (dati: {src}). Visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī neizšķirts; '
+             'tikai likmes ar norādi "ieskaitot papildlaiku" ietver papildlaiku un bullīšus. Koeficients ir aptuvens — '
+             'salīdzini ar Optibet.</p>')
+CZ_NOTE = EUHK_NOTE.format(name="Čehijas Extraliga", src="hokej.cz")
+DEL_NOTE = EUHK_NOTE.format(name="Vācijas DEL", src="penny-del.org")
+SHL_NOTE = EUHK_NOTE.format(name="Zviedrijas SHL", src="shl.se")
+NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE", "cz": "CZ_NOTE", "del": "DEL_NOTE", "shl": "SHL_NOTE"}
 
 
 def combined_data() -> dict:

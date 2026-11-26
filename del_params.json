@@ -1,0 +1,6 @@
+{
+  "tie_infl": 0.05,
+  "ot_k": 0.0,
+  "half_life": 120,
+  "ridge": 60
+}

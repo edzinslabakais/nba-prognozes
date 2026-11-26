@@ -1,0 +1,95 @@
+# 🏒 SHL prognozes
+
+_Atjaunināts 26.11.2026 08:06 (Rīgas laiks)_
+
+## Spēles 26.11. — 6 spēles, koef. ≥ 2.1
+
+Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
+
+### RBK @ SAIK · 20:00
+Robots: **SAIK 59% · X 18% · RBK 23%**, vārti 3.4–2.2
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **SAIK virs 3.5** | 44/100 | 2.13 | 2.29 | ⏳ gaida |
+| 2 | **SAIK -1.5** | 42/100 | 2.19 | 2.35 | ⏳ gaida |
+| 3 | **zem 4.5** | 34/100 | 2.73 | 2.94 | ⏳ gaida |
+
+### FBK @ TIK · 20:00
+Robots: **TIK 34% · X 21% · FBK 45%**, vārti 2.3–2.6
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **TIK virs 2.5** | 40/100 | 2.34 | 2.52 | ⏳ gaida |
+| 2 | **virs 5.5** | 36/100 | 2.57 | 2.76 | ⏳ gaida |
+| 3 | **TIK uzvar** | 34/100 | 2.73 | 2.94 | ⏳ gaida |
+
+### DIF @ VLH · 20:00
+Robots: **VLH 53% · X 20% · DIF 27%**, vārti 2.9–2.1
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **zem 4.5** | 44/100 | 2.11 | 2.27 | ⏳ gaida |
+| 2 | **DIF uzvar (ieskaitot papildlaiku)** | 37/100 | 2.50 | 2.69 | ⏳ gaida |
+| 3 | **DIF zem 1.5** | 37/100 | 2.52 | 2.71 | ⏳ gaida |
+
+### BIF @ LHC · 20:00
+Robots: **LHC 39% · X 20% · BIF 41%**, vārti 2.7–2.8
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **BIF uzvar** | 41/100 | 2.28 | 2.45 | ⏳ gaida |
+| 2 | **zem 4.5** | 36/100 | 2.57 | 2.77 | ⏳ gaida |
+| 3 | **BIF -1.5** | 25/100 | 3.66 | 3.94 | ⏳ gaida |
+
+### IFB @ FHC · 20:00
+Robots: **FHC 66% · X 17% · IFB 17%**, vārti 3.4–1.8
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **FHC virs 3.5** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
+| 2 | **virs 5.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
+| 3 | **FHC -2.5** | 32/100 | 2.93 | 3.15 | ⏳ gaida |
+
+### HV71 @ OHK · 20:00
+Robots: **OHK 54% · X 19% · HV71 27%**, vārti 3.2–2.3
+
+| # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| 1 ★ | **HV71 virs 2.5** | 41/100 | 2.25 | 2.42 | ⏳ gaida |
+| 2 | **OHK -1.5** | 37/100 | 2.53 | 2.72 | ⏳ gaida |
+| 3 | **zem 4.5** | 37/100 | 2.55 | 2.74 | ⏳ gaida |
+
+## 🛡 1.7+ — koef. ≥ 1.7
+
+Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta, vārtsargi), nevis pēc bukmeikeriem; no gandrīz vienlīdz drošām līnijām ņemta ar augstāko koeficientu.
+
+| Spēle | Likme | Dati | ~Optibet | Rezultāts |
+|---|---|---|---|---|
+| HV71@OHK | **zem 5.5** | 53/100 | 1.75 | ⏳ gaida |
+| DIF@VLH | **VLH uzvar** | 53/100 | 1.76 | ⏳ gaida |
+| FBK@TIK | **FBK zem 2.5** | 52/100 | 1.77 | ⏳ gaida |
+
+## 🎲 Crazy Dazy — koef. ≥ 4
+
+3 likmes no visām nakts spēlēm, kurām ar koeficientu 4+ ir vislielākā iespēja iziet.
+
+| Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
+|---|---|---|---|---|---|
+| IFB@FHC | **FHC uzvar & zem 4.5** | 23/100 | 4.04 | 4.34 | ⏳ gaida |
+| RBK@SAIK | **RBK uzvar** | 23/100 | 4.05 | 4.36 | ⏳ gaida |
+| HV71@OHK | **OHK -2.5** | 22/100 | 4.16 | 4.47 | ⏳ gaida |
+
+## Statistika
+
+★ Reālākās no 2.1+ (1 katrā spēlē): vēl nav noslēgtu likmju
+
+2.1+ kopā: vēl nav noslēgtu likmju
+1.7+ kopā: vēl nav noslēgtu likmju
+Crazy Dazy kopā: vēl nav noslēgtu likmju
+
+### Mēneša statistika
+
+| Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
+|---|---|---|---|---|---|---|---|---|
+| Novembris 2026 (26.–30.11.) | – | – | – | – | – | – | – | – |

@@ -57,9 +57,13 @@ lietotājs to skaidri prasa. Ja jaunam tekstam nav EN tulkojuma, `t()` rāda lat
 - Čempionu līga: `cl_bot.py` (ESPN + koeficienti, 90 min. likmes, `cl_params.json`), lapa `site/cl/`
 - Drošās likmes lapa `site/drosas/`: katrs robots saglabā `safe_all` (katrā spēlē drošākā likme ar koef. ≥ 1.7,
   `bot.safe_all` / `choose_safe(all_games=True)`), `site.py` `safe_page_data()` savāc visas līgas; sava statistika.
+- Eiropas hokejs: `euhockey.py` + `cz_bot.py` (Čehijas Extraliga, hokej.cz HTML), `del_bot.py` (DEL, penny-del.org mēnešu
+  tabulas), `shl_bot.py` (SHL, shl.se API `sports-v2/game-schedule`). Bez koeficientiem: robota Puasona modelis (uzbrukums/
+  aizsardzība + mājas laukums, `<liga>_params.json`, `python cz_bot.py kalibret`), likmes kā NHL (pamatlaiks), lapas `site/cz|del|shl/`,
+  likmes ar `likmes_eu` (12:30), iekļautas kopējā statistikā un 1.7+ lapā.
 - Izņemti 26.11.2026: Championship, lapas 1.5+, Papildu un Robots (kods git vēsturē). NCAA izņemts 21.11.2026.
 - Eiropas līgu likmes palaiž `likmes_eu` (12:17 Rīgā); rezultāti — visām līgām kopā no rīta.
-  Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl`.
+  Rokas palaišana vienai līgai: Actions → Run workflow → `rezultati_nba|nhl|el|cl|cz|del|shl`.
 - Kopējā statistika: `site/stats/` (`site.py` `combined_data()` + `renderStatsPage()` veidnē) — visas līgas
   kopā, 4 grupas (visas, ★, drošās, Crazy Dazy) pa nedēļām (P–Sv), mēnešiem, gadiem.
 - Simulācijas atziņa (19.11.2026): robota paša modeļa novirze no bukmeikeriem pasliktināja izvēli;
