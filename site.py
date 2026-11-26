@@ -21,9 +21,8 @@ LEAGUES = [
     ("nhl", "NHL", "NHL", ROOT / "nhl" / "export", OUT / "nhl", "nhl/", False, (21, 30)),
     ("el", "EL", "EuroLeague", ROOT / "el" / "export", OUT / "el", "el/", True, (12, 30)),
     ("cl", "ČL", "Čempionu līgas", ROOT / "cl" / "export", OUT / "cl", "cl/", True, (12, 30)),
-    ("ch", "CH", "Championship", ROOT / "ch" / "export", OUT / "ch", "ch/", True, (12, 30)),
 ]
-SIMPLE = {"ch"}  # only the day's best bets + Crazy Dazy, and kept out of the combined statistics
+SIMPLE: set[str] = set()  # only the day's best bets + Crazy Dazy, and kept out of the combined statistics
 
 NHL_NOTE = ('<p data-i18n-html="noteNhl"><b>Hokejā</b> visas likmes vērtē pēc <b>pamatlaika</b> (60 minūtes), tāpēc iespējams arī '
             'neizšķirts. Tikai likmes ar norādi "ieskaitot papildlaiku" ietver papildlaiku un bullīšus '
@@ -39,8 +38,6 @@ STATIC_LOADER = """function start() {
   state.nights = data.nights || [];
   state.stats = data.stats || null;
   state.combined = data.combined || [];
-  state.rules = data.rules || {};
-  state.checks = data.checks || {};
   render();
 }
 start();"""
@@ -56,9 +53,6 @@ def nav(current: str, depth: int) -> str:
     up = "../" * depth
     links = []
     for key, label, href in [(x[0], x[1], x[5]) for x in LEAGUES] + [("drosas", "1.7+", "drosas/"),
-                                                                       ("p15", "1.5+", "p15/"),
-                                                                       ("robots", "Robots", "robots/"),
-                                                                       ("papildu", "Papildu", "papildu/"),
                                                                        ("stats", "Statistika", "stats/")]:
         cur = ' aria-current="page"' if key == current else ""
         links.append(f'<a href="{up}{href or "./"}" data-nav="{key}"{cur}>{label}</a>')
@@ -71,10 +65,7 @@ EL_NOTE = ('<p data-i18n-html="noteEl"><b>EuroLeague</b>: bukmeikeru koeficientu
 CL_NOTE = ('<p data-i18n-html="noteCl"><b>Futbolā</b> visas likmes vērtē pēc <b>90 minūtēm</b> (bez pagarinājuma un '
            'pēcspēles sitieniem). Sagaidāmie vārti ir aprēķināti no bukmeikeru koeficientiem, un no tiem tiek '
            'novērtētas visas likmes, arī "abas komandas gūst vārtus" un "uzvara vai neizšķirts".</p>')
-CH_NOTE = ('<p data-i18n-html="noteCh"><b>Championship</b> (Anglijas otrā līga): no katras spēles drošākā likme ar koeficientu '
-           '2.1+, parādītas līdz <b>10 visdrošākajām</b>, kā arī Crazy Dazy. Sagaidāmie vārti ir aprēķināti no bukmeikeru '
-           'koeficientiem, likmes vērtē pēc <b>90 minūtēm</b>. Championship netiek ieskaitīts kopējā statistikā.</p>')
-NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE", "ch": "CH_NOTE"}
+NOTES_BY_LEAGUE = {"nba": "NBA_NOTE", "nhl": "NHL_NOTE", "el": "EL_NOTE", "cl": "CL_NOTE"}
 
 
 def combined_data() -> dict:
@@ -123,15 +114,6 @@ def build_one(key: str, title: str, export: Path | None, out_dir: Path, depth: i
     if key == "drosas":
         head = head.replace("<title>1.7+ likmes prognozes</title>", "<title>1.7+ likmes</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>1.7+ <span>likmes</span></h1>')
-    if key == "p15":
-        head = head.replace("<title>1.5+ likmes prognozes</title>", "<title>1.5+ likmes</title>")
-        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>1.5+ <span>likmes</span></h1>')
-    if key == "papildu":
-        head = head.replace("<title>Papildu likmes prognozes</title>", "<title>Papildu likmes</title>")
-        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Papildu <span>likmes</span></h1>')
-    if key == "robots":
-        head = head.replace("<title>Robota likmes prognozes</title>", "<title>Robota likmes</title>")
-        body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Robota <span>likmes</span></h1>')
     if key == "stats":
         head = head.replace("<title>Statistika prognozes</title>", "<title>Kopējā statistika</title>")
         body = body.replace('<h1>NBA <span data-i18n="h1">prognozes</span></h1>', '<h1>Kopējā <span>statistika</span></h1>')
@@ -171,16 +153,6 @@ def build() -> list[Path]:
     pages = [build_one(key, title, exp, out, 0 if out == OUT else 1, day_mode, picks_time)
              for key, _, title, exp, out, _, day_mode, picks_time in LEAGUES]
     pages.append(build_one("drosas", "1.7+ likmes", None, OUT / "drosas", 1, True, (12, 30), data_override=safe_page_data()))
-    p15 = safe_page_data(field="p15")
-    rules_f = ROOT / "p15_rules.json"
-    p15["rules"] = json.loads(rules_f.read_text()) if rules_f.exists() else {}
-    pages.append(build_one("p15", "1.5+ likmes", None, OUT / "p15", 1, True, (12, 30), data_override=p15))
-    ex = safe_page_data(field="extra")
-    ex_f = ROOT / "extra_params.json"
-    ex["checks"] = json.loads(ex_f.read_text()).get("checks", {}) if ex_f.exists() else {}
-    pages.append(build_one("papildu", "Papildu likmes", None, OUT / "papildu", 1, True, (12, 30), data_override=ex))
-    pages.append(build_one("robots", "Robota likmes", None, OUT / "robots", 1, True, (12, 30),
-                           data_override=safe_page_data(field="robot")))
     pages.append(build_one("stats", "Statistika", None, OUT / "stats", 1, data_override=combined_data()))
     return pages
 

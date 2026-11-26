@@ -33,8 +33,8 @@ LIVE_CRON = "*/5 * * * *"
 ROOT = Path(__file__).resolve().parent
 # history folder, robot, how long after the start a game is surely over (results are checked from then on)
 LIVE = [("history", "bot.py", 2.25), ("nhl/history", "nhl_bot.py", 2.25), ("el/history", "el_bot.py", 1.9),
-        ("cl/history", "cl_bot.py", 1.9), ("ch/history", "ch_bot.py", 1.9)]
-LISTS = ("picks", "crazy", "safe", "safe_all", "robot", "p15", "extra")
+        ("cl/history", "cl_bot.py", 1.9)]
+LISTS = ("picks", "crazy", "safe", "safe_all")
 
 
 def live_bots(now: datetime | None = None) -> list[str]:

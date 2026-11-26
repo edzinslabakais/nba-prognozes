@@ -68,7 +68,7 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
 
 ### EuroLeague un Čempionu līga
 
-- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | CH | 1.7+ | Statistika).
+- **Lapas:** …/nba-prognozes/el/ un …/nba-prognozes/cl/ (pārslēgs lapas augšā: NBA | NHL | EL | ČL | 1.7+ | Statistika).
 - **Laiks:** Eiropas spēles sākas vakarā, tāpēc to likmes ir **ap 12:30** (palaišana 12:17), bet rezultāti
   nākamajā rītā kopā ar NBA/NHL. Datums lapā ir spēļu diena.
 - **EuroLeague** (`el_bot.py`): dati no oficiālā EuroLeague avota (api-live.euroleague.net). Bukmeikeru
@@ -80,41 +80,11 @@ Noslēgtie mēneši ir redzami lapas apakšā sadaļā **Arhīvs pa mēnešiem**
   novērtē visas 90 minūšu likmes: uzvara, neizšķirts, uzvara vai neizšķirts, handikaps, virs/zem,
   komandas vārti, "abas komandas gūst vārtus" un kombinācijas.
 
-### Championship (tikai labākās likmes)
-
-- **Lapa:** …/nba-prognozes/ch/ (`ch_bot.py`, Anglijas otrā līga): **līdz 10** drošākajām likmēm ar koeficientu 2.1+
-  (viena no spēles) + **3 Crazy Dazy**, ap 12:30. Tas pats futbola modelis kā Čempionu līgai (vārti no bukmeikeru
-  koeficientiem), 90 minūtes. Bez ★ un 1.7+ sadaļas, un tā **netiek ieskaitīta kopējā statistikā**.
-- NCAA koledžu basketbols tika izmēģināts un 21.11.2026 izņemts (pārāk nestabils).
-
 ### Drošās likmes (atsevišķa lapa)
 
-…/nba-prognozes/drosas/ — katrā spēlē visās līgās (NBA, NHL, EuroLeague, Čempionu līga, Championship) drošākā
+…/nba-prognozes/drosas/ — katrā spēlē visās līgās (NBA, NHL, EuroLeague, Čempionu līga) drošākā
 likme ar koeficientu vismaz 1.7 (pēc bukmeikeru vērtējuma, kur tas pieejams). Lapai ir sava statistika (diena, nedēļa,
 mēnesis, kopā, ar sadalījumu pa līgām); tā netiek jaukta ar pārējo statistiku.
-
-### Robota likmes (atsevišķa lapa)
-
-…/nba-prognozes/robots/ — katrā spēlē (NBA, NHL, EuroLeague, Čempionu līga, Championship) likme, kurai robota PAŠA
-modelis dod vislielāko iespēju; bukmeikeru prognozes izvēlē neņem vērā, to līniju izmanto tikai koeficientam (vismaz 1.7).
-Futbolam robotam ir savs Puasona modelis (komandu uzbrukums/aizsardzība no 90 minūšu rezultātiem, šī + pagājušā sezona).
-Sava statistika pa līgām; netiek jaukta ar citām sadaļām.
-
-### 1.5+ likmes (atsevišķa lapa)
-
-…/nba-prognozes/p15/ — viena likme katrā spēlē (NBA, NHL, Čempionu līga, Championship) ar koeficientu vismaz 1.5.
-Noteikumi katrai līgai izvēlēti ar `python sim15.py dati` + `python sim15.py analize`: visa pagājušā sezona un šī sezona
-ar bukmeikeru noslēguma līnijām (walk-forward, robots redz tikai iepriekšējās spēles). 21.11.2026 pārbaudē neviens filtrs
-(likmju veids, robota piekrišana, likmju skaits dienā) nestrādāja uz šīs sezonas datiem, tāpēc visām līgām ir
-vienkāršais noteikums. Lapā var ierakstīt īsto Optibet koeficientu; statistika tajā ierīcē rēķinās ar to.
-
-### Papildu likmes (atsevišķa lapa)
-
-…/nba-prognozes/papildu/ — abas komandas gūst vārtus, pirmie vārti, 1. perioda (NHL) / 1. puslaika (futbols) vārti un
-uzvarētājs, NBA 1. ceturtdaļa un 1. puslaiks. Robots katrā spēlē izvērtē visus šos tirgus un piedāvā visticamāko
-ar koeficientu vismaz 1.7. Varbūtības nāk no spēles sagaidāmajiem vārtiem/punktiem un pagājušajā sezonā izmērītajām
-daļām (`python extra.py kalibret`, rezultāts `extra_params.json`): pārbaudē visi tirgi bija precīzi ±1–2 punktu robežās,
-izņemot NHL 1. perioda uzvarētāju, kas ir izslēgts.
 
 ### Rezultāti ik pēc 5 minūtēm
 

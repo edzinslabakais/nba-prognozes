@@ -328,11 +328,6 @@ def predict_day(day: date, p) -> pd.DataFrame:
     if games.empty:
         return games
     todo = games[~games["completed"]]
-    try:
-        own = robot_lambdas(day, todo) if not todo.empty else {}
-    except Exception as e:  # the robot's own model is extra; never block the normal picks
-        print(f"(robota futbola modelis nav pieejams: {e})")
-        own = {}
     rows = []
     for g in todo.itertuples():
         p3 = devig3(g.ml_home, g.ml_draw, g.ml_away)
@@ -346,87 +341,8 @@ def predict_day(day: date, p) -> pd.DataFrame:
             "home": g.home, "away": g.away, "home_name": g.home_name, "away_name": g.away_name,
             "home_short": g.home_short, "away_short": g.away_short,
             "lh": lh, "la": la, "p3": p3, "total_line": g.total_line,
-            "olh": own.get(g.game_id, (None, None))[0], "ola": own.get(g.game_id, (None, None))[1],
         })
     return pd.DataFrame(rows)
-
-
-# --------------------------------------------------------------------------- robota paša futbola modelis
-
-FB_HALF_LIFE = 150.0   # days: older results count less
-FB_RIDGE = 4.0         # pulls teams with few games towards the average
-
-
-def fit_football(games: pd.DataFrame, as_of: pd.Timestamp):
-    """Poisson goal model from 90-minute results only: log(goals) = base + home + attack(team) - defence(opponent).
-    Returns a function (home_id, away_id) -> (expected home goals, expected away goals)."""
-    g = games[games["completed"] & games["home_reg"].notna() & (games["start_utc"] < as_of)]
-    if len(g) < 20:
-        return None
-    teams = sorted(set(g["home_id"]) | set(g["away_id"]))
-    ix = {t: i for i, t in enumerate(teams)}
-    n = len(teams)
-    age = (as_of - g["start_utc"]).dt.total_seconds().to_numpy() / 86400
-    w = 0.5 ** (age / FB_HALF_LIFE)
-    rows, ys, ws = [], [], []
-    for (hi, ai, hg, ag), wt in zip(zip(g["home_id"], g["away_id"], g["home_reg"], g["away_reg"]), w):
-        rows.append((1, 1, ix[hi], ix[ai])); ys.append(hg); ws.append(wt)      # home goals
-        rows.append((1, 0, ix[ai], ix[hi])); ys.append(ag); ws.append(wt)      # away goals
-    k = 2 + 2 * n  # base, home, attack[n], defence[n]
-    X = np.zeros((len(rows), k))
-    for j, (b, h, att, dfn) in enumerate(rows):
-        X[j, 0] = b; X[j, 1] = h; X[j, 2 + att] = 1; X[j, 2 + n + dfn] = -1
-    y, wv = np.array(ys, float), np.array(ws, float)
-    pen = np.full(k, FB_RIDGE); pen[:2] = 1e-6
-    th = np.zeros(k); th[0] = np.log(max(y.mean(), 0.3))
-    for _ in range(50):  # Newton steps for the penalised Poisson likelihood
-        mu = np.exp(X @ th)
-        grad = X.T @ (wv * (y - mu)) - pen * th
-        H = (X * (wv * mu)[:, None]).T @ X + np.diag(pen)
-        step = np.linalg.solve(H, grad)
-        th += step
-        if np.abs(step).max() < 1e-7:
-            break
-
-    def predict(home_id, away_id):
-        a_h = th[2 + ix[home_id]] if home_id in ix else 0.0
-        a_a = th[2 + ix[away_id]] if away_id in ix else 0.0
-        d_h = th[2 + n + ix[home_id]] if home_id in ix else 0.0
-        d_a = th[2 + n + ix[away_id]] if away_id in ix else 0.0
-        return float(np.exp(th[0] + th[1] + a_h - d_a)), float(np.exp(th[0] + a_a - d_h))
-    return predict
-
-
-def robot_lambdas(day: date, todo: pd.DataFrame) -> dict:
-    """The robot's own expected goals for today's games (this season + last season, older results count less)."""
-    year = season_for(day)
-    start = SEASONS[year - 1][0] if year - 1 in SEASONS else SEASONS[year][0]
-    hist = load_games(start, day - timedelta(days=1))
-    if hist.empty:
-        return {}
-    f = fit_football(hist, todo["start_utc"].min())
-    if f is None:
-        return {}
-    return {g.game_id: f(g.home_id, g.away_id) for g in todo.itertuples()}
-
-
-def pick_robot(df: pd.DataFrame, p) -> list[dict]:
-    """Robota lapa: chosen only by the robot's own goal model; the bookmakers' prices only give the odds."""
-    return core.choose_robot(robot_per_game(df, p), df)
-
-
-def robot_per_game(df: pd.DataFrame, p) -> list:
-    if df.empty or "olh" not in df:
-        return []
-    per_game = []
-    for r in df.itertuples():
-        if r.olh is None or pd.isna(r.olh):
-            continue
-        own = N.HockeyGrid(r.olh, r.ola, p["tie_infl"], 0.0)
-        mkt = N.HockeyGrid(r.lh, r.la, p["tie_infl"], 0.0)
-        cands = candidates(r, own, 0.0, 1.0, crazy=False)
-        per_game.append((r, [(b, pw, HB.prob(mkt, b)[0], cat) for b, pw, cat in cands]))
-    return per_game
 
 
 # --------------------------------------------------------------------------- commands
@@ -467,8 +383,7 @@ def cmd_likmes(args) -> None:
     core.print_safe(safe, 34)
     print("\nCRAZY DAZY: " + "; ".join(f"{x['game']} {x['bet']} (~{x['est_odds']:.2f})" for x in crazy))
     f = core.save_night(day, record, games_info, crazy, args.min_odds, now, safe=safe,
-                        safe_all=pick_safe(df, p, all_games=True), robot=pick_robot(df, p),
-                        p15=core.choose_15(robot_per_game(df, p), df, CL.key), extra=core.extra_bets(df, "fb"))
+                        safe_all=pick_safe(df, p, all_games=True))
     print(f"\nSaglabāts: {f.relative_to(core.ROOT)}")
 
 
