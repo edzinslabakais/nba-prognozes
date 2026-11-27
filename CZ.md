@@ -1,6 +1,6 @@
 # 🏒 Extraliga prognozes
 
-_Atjaunināts 27.11.2026 12:32 (Rīgas laiks)_
+_Atjaunināts 27.11.2026 13:09 (Rīgas laiks)_
 
 ## Spēles 27.11. — 6 spēles, koef. ≥ 2.1
 
