@@ -114,7 +114,8 @@
    "fair_odds": 2.54,
    "est_odds": 2.36,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928409",
@@ -129,7 +130,8 @@
    "fair_odds": 2.85,
    "est_odds": 2.65,
    "confidence": 35,
-   "result": null
+   "result": "neizgāja",
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928409",
@@ -144,7 +146,8 @@
    "fair_odds": 2.88,
    "est_odds": 2.68,
    "confidence": 35,
-   "result": null
+   "result": "izgāja",
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928415",
@@ -159,7 +162,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.1,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928415",
@@ -174,7 +178,8 @@
    "fair_odds": 2.73,
    "est_odds": 2.54,
    "confidence": 37,
-   "result": null
+   "result": "izgāja",
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928415",
@@ -189,7 +194,8 @@
    "fair_odds": 3.12,
    "est_odds": 2.9,
    "confidence": 32,
-   "result": null
+   "result": "izgāja",
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928412",
@@ -204,7 +210,8 @@
    "fair_odds": 2.28,
    "est_odds": 2.12,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "SPA 1 - 1 VIT"
   },
   {
    "game_id": "2928412",
@@ -219,7 +226,8 @@
    "fair_odds": 2.46,
    "est_odds": 2.29,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "SPA 1 - 1 VIT"
   },
   {
    "game_id": "2928412",
@@ -234,7 +242,8 @@
    "fair_odds": 2.6,
    "est_odds": 2.41,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "SPA 1 - 1 VIT"
   },
   {
    "game_id": "2928410",
@@ -249,7 +258,8 @@
    "fair_odds": 2.6,
    "est_odds": 2.41,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "MBL 4 - 0 LIT"
   },
   {
    "game_id": "2928410",
@@ -264,7 +274,8 @@
    "fair_odds": 2.64,
    "est_odds": 2.46,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "MBL 4 - 0 LIT"
   },
   {
    "game_id": "2928410",
@@ -279,7 +290,8 @@
    "fair_odds": 2.79,
    "est_odds": 2.6,
    "confidence": 36,
-   "result": null
+   "result": "neizgāja",
+   "score": "MBL 4 - 0 LIT"
   },
   {
    "game_id": "2928413",
@@ -294,7 +306,8 @@
    "fair_odds": 2.36,
    "est_odds": 2.19,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "MHK 1 - 1 OLO"
   },
   {
    "game_id": "2928413",
@@ -309,7 +322,8 @@
    "fair_odds": 2.7,
    "est_odds": 2.51,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "MHK 1 - 1 OLO"
   },
   {
    "game_id": "2928413",
@@ -324,7 +338,8 @@
    "fair_odds": 2.84,
    "est_odds": 2.64,
    "confidence": 35,
-   "result": null
+   "result": "neizgāja",
+   "score": "MHK 1 - 1 OLO"
   },
   {
    "game_id": "2928414",
@@ -339,7 +354,8 @@
    "fair_odds": 2.35,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928414",
@@ -354,7 +370,8 @@
    "fair_odds": 2.62,
    "est_odds": 2.43,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928414",
@@ -369,7 +386,8 @@
    "fair_odds": 3.0,
    "est_odds": 2.79,
    "confidence": 33,
-   "result": null
+   "result": "neizgāja",
+   "score": "KVA 1 - 1 KLA"
   }
  ],
  "crazy": [
@@ -384,7 +402,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928415",
@@ -397,7 +416,8 @@
    "fair_odds": 4.32,
    "est_odds": 4.02,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928413",
@@ -410,7 +430,8 @@
    "fair_odds": 4.42,
    "est_odds": 4.11,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "MHK 1 - 1 OLO"
   }
  ],
  "safe": [
@@ -428,7 +449,8 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928409",
@@ -444,7 +466,8 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928413",
@@ -460,7 +483,8 @@
    "est_odds": 1.8,
    "confidence": 52,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "MHK 1 - 1 OLO"
   }
  ],
  "safe_all": [
@@ -478,9 +502,10 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Karlovy Vary",
-   "home_short": "Kladno"
+   "home_short": "Kladno",
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928409",
@@ -496,9 +521,10 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Pardubice",
-   "home_short": "Třinec"
+   "home_short": "Třinec",
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928413",
@@ -514,9 +540,10 @@
    "est_odds": 1.8,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Hr. Králové",
-   "home_short": "Olomouc"
+   "home_short": "Olomouc",
+   "score": "MHK 1 - 1 OLO"
   },
   {
    "game_id": "2928415",
@@ -532,9 +559,10 @@
    "est_odds": 1.8,
    "confidence": 52,
    "data_conf": 52,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Kometa",
-   "home_short": "Plzeň"
+   "home_short": "Plzeň",
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928410",
@@ -550,9 +578,10 @@
    "est_odds": 1.82,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Ml. Boleslav",
-   "home_short": "Litvínov"
+   "home_short": "Litvínov",
+   "score": "MBL 4 - 0 LIT"
   },
   {
    "game_id": "2928412",
@@ -568,9 +597,10 @@
    "est_odds": 1.87,
    "confidence": 50,
    "data_conf": 50,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Sparta",
-   "home_short": "Vítkovice"
+   "home_short": "Vítkovice",
+   "score": "SPA 1 - 1 VIT"
   }
  ]
 }

@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "PCE 4 - 2 TRI",
    "picks": [
     {
      "category": "komandas vārti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.54,
      "est_odds": 2.36,
      "confidence": 39,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PCE 4 - 2 TRI",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.85,
      "est_odds": 2.65,
      "confidence": 35,
-     "result": null,
+     "result": "neizgāja",
+     "score": "PCE 4 - 2 TRI",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 2.88,
      "est_odds": 2.68,
      "confidence": 35,
-     "result": null,
+     "result": "izgāja",
+     "score": "PCE 4 - 2 TRI",
      "top": false
     }
    ]
@@ -70,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "KOM 0 - 0 PLZ",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -80,7 +83,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KOM 0 - 0 PLZ",
      "top": true
     },
     {
@@ -91,7 +95,8 @@
      "fair_odds": 2.73,
      "est_odds": 2.54,
      "confidence": 37,
-     "result": null,
+     "result": "izgāja",
+     "score": "KOM 0 - 0 PLZ",
      "top": false
     },
     {
@@ -102,7 +107,8 @@
      "fair_odds": 3.12,
      "est_odds": 2.9,
      "confidence": 32,
-     "result": null,
+     "result": "izgāja",
+     "score": "KOM 0 - 0 PLZ",
      "top": false
     }
    ]
@@ -122,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "SPA 1 - 1 VIT",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -132,7 +138,8 @@
      "fair_odds": 2.28,
      "est_odds": 2.12,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SPA 1 - 1 VIT",
      "top": true
     },
     {
@@ -143,7 +150,8 @@
      "fair_odds": 2.46,
      "est_odds": 2.29,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SPA 1 - 1 VIT",
      "top": false
     },
     {
@@ -154,7 +162,8 @@
      "fair_odds": 2.6,
      "est_odds": 2.41,
      "confidence": 39,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SPA 1 - 1 VIT",
      "top": false
     }
    ]
@@ -174,7 +183,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "MBL 4 - 0 LIT",
    "picks": [
     {
      "category": "komandas vārti",
@@ -184,7 +193,8 @@
      "fair_odds": 2.6,
      "est_odds": 2.41,
      "confidence": 39,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MBL 4 - 0 LIT",
      "top": true
     },
     {
@@ -195,7 +205,8 @@
      "fair_odds": 2.64,
      "est_odds": 2.46,
      "confidence": 38,
-     "result": null,
+     "result": "izgāja",
+     "score": "MBL 4 - 0 LIT",
      "top": false
     },
     {
@@ -206,7 +217,8 @@
      "fair_odds": 2.79,
      "est_odds": 2.6,
      "confidence": 36,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MBL 4 - 0 LIT",
      "top": false
     }
    ]
@@ -226,7 +238,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "MHK 1 - 1 OLO",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -236,7 +248,8 @@
      "fair_odds": 2.36,
      "est_odds": 2.19,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MHK 1 - 1 OLO",
      "top": true
     },
     {
@@ -247,7 +260,8 @@
      "fair_odds": 2.7,
      "est_odds": 2.51,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MHK 1 - 1 OLO",
      "top": false
     },
     {
@@ -258,7 +272,8 @@
      "fair_odds": 2.84,
      "est_odds": 2.64,
      "confidence": 35,
-     "result": null,
+     "result": "neizgāja",
+     "score": "MHK 1 - 1 OLO",
      "top": false
     }
    ]
@@ -278,7 +293,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "KVA 1 - 1 KLA",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -288,7 +303,8 @@
      "fair_odds": 2.35,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KVA 1 - 1 KLA",
      "top": true
     },
     {
@@ -299,7 +315,8 @@
      "fair_odds": 2.62,
      "est_odds": 2.43,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KVA 1 - 1 KLA",
      "top": false
     },
     {
@@ -310,7 +327,8 @@
      "fair_odds": 3.0,
      "est_odds": 2.79,
      "confidence": 33,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KVA 1 - 1 KLA",
      "top": false
     }
    ]
@@ -318,11 +336,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 0,
-  "hits": 0,
+  "settled": 18,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 6.86,
+  "profit_units": -7.42
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -335,8 +353,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "KVA 1 - 1 KLA",
    "away_short": "Karlovy Vary",
    "home_short": "Kladno"
   },
@@ -349,8 +367,8 @@
    "confidence": 23,
    "fair_odds": 4.32,
    "est_odds": 4.02,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "KOM 0 - 0 PLZ",
    "away_short": "Kometa",
    "home_short": "Plzeň"
   },
@@ -363,27 +381,27 @@
    "confidence": 23,
    "fair_odds": 4.42,
    "est_odds": 4.11,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "MHK 1 - 1 OLO",
    "away_short": "Hr. Králové",
    "home_short": "Olomouc"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": 5.12
  },
  "top_summary": {
   "picks": 6,
-  "settled": 0,
+  "settled": 6,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.51,
+  "profit_units": -6
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -398,8 +416,8 @@
    "p_model": 0.542,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "KVA 1 - 1 KLA",
    "away_short": "Karlovy Vary",
    "home_short": "Kladno"
   },
@@ -414,8 +432,8 @@
    "p_model": 0.5403,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "PCE 4 - 2 TRI",
    "away_short": "Pardubice",
    "home_short": "Třinec"
   },
@@ -430,19 +448,19 @@
    "p_model": 0.5175,
    "fair_odds": 1.93,
    "est_odds": 1.8,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "MHK 1 - 1 OLO",
    "away_short": "Hr. Králové",
    "home_short": "Olomouc"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.6,
+  "profit_units": -1.28
  },
  "safe_all": [
   {
@@ -458,10 +476,10 @@
    "p_market": null,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Karlovy Vary",
    "home_short": "Kladno",
-   "score": null
+   "score": "KVA 1 - 1 KLA"
   },
   {
    "game_id": "2928409",
@@ -476,10 +494,10 @@
    "p_market": null,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Pardubice",
    "home_short": "Třinec",
-   "score": null
+   "score": "PCE 4 - 2 TRI"
   },
   {
    "game_id": "2928413",
@@ -494,10 +512,10 @@
    "p_market": null,
    "fair_odds": 1.93,
    "est_odds": 1.8,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Hr. Králové",
    "home_short": "Olomouc",
-   "score": null
+   "score": "MHK 1 - 1 OLO"
   },
   {
    "game_id": "2928415",
@@ -512,10 +530,10 @@
    "p_market": null,
    "fair_odds": 1.93,
    "est_odds": 1.8,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Kometa",
    "home_short": "Plzeň",
-   "score": null
+   "score": "KOM 0 - 0 PLZ"
   },
   {
    "game_id": "2928410",
@@ -530,10 +548,10 @@
    "p_market": null,
    "fair_odds": 1.95,
    "est_odds": 1.82,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Ml. Boleslav",
    "home_short": "Litvínov",
-   "score": null
+   "score": "MBL 4 - 0 LIT"
   },
   {
    "game_id": "2928412",
@@ -548,18 +566,18 @@
    "p_market": null,
    "fair_odds": 2.01,
    "est_odds": 1.87,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Sparta",
    "home_short": "Vítkovice",
-   "score": null
+   "score": "SPA 1 - 1 VIT"
   }
  ],
  "safe_all_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.13,
+  "profit_units": -2.48
  }
 }
