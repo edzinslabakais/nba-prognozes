@@ -1,6 +1,6 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 27.11.2026 21:38 (Rīgas laiks)_
+_Atjaunināts 27.11.2026 22:07 (Rīgas laiks)_
 
 ## Nakts uz 28.11. — 11 spēles, koef. ≥ 2.1
 
@@ -51,24 +51,24 @@ Robots: **TOR -9.5**, kopā 219.5 · bukmeikeri: TOR -9.5, kopā 219.5
 Savainojumi/sastāvs: TOR: RJ Barrett (Out) -1.2; TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.2; BKN: Moritz Wagner (Out) -1.0; BKN: Nolan Traore (Out) -0.8
 
 ### ATL @ BOS · 03:00
-Robots: **BOS -8.5**, kopā 223.5 · bukmeikeri: BOS -8.5, kopā 223.5
+Robots: **BOS -9.5**, kopā 223.5 · bukmeikeri: BOS -9.5, kopā 223.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **BOS -10.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **BOS zem 113.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **BOS -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
+| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 3 | **ATL virs 108.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: BOS: Paul George (spēlēja 8/10 pēdējās) +0.4; BOS: Mike Conley (spēlēja 4/10 pēdējās) +0.4; ATL: CJ McCollum (Out) -0.9; ATL: Jalen Johnson (spēlēja 7/10 pēdējās) +0.6
 
 ### MEM @ MIN · 03:30
-Robots: **MIN -3.5**, kopā 219.5 · bukmeikeri: MIN -3.5, kopā 219.5
+Robots: **MIN -2.5**, kopā 219.5 · bukmeikeri: MIN -2.5, kopā 219.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MIN -5.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
-| 3 | **MEM virs 109.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
+| 2 | **MIN -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **MIN zem 108.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
 
 Savainojumi/sastāvs: MIN: LaMelo Ball (Out) -1.4; MEM: Cameron Boozer (Out) -1.3; MEM: Jerami Grant (Out) -0.5; MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0
 
@@ -117,13 +117,13 @@ Robots: **SA -5.5**, kopā 226.5 · bukmeikeri: SA -5.5, kopā 226.5
 Savainojumi/sastāvs: SA: Victor Wembanyama (spēlēja 9/10 pēdējās) +0.5; LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4; LAL: Austin Reaves (spēlēja 4/10 pēdējās) +1.4
 
 ### GS @ POR · 04:30
-Robots: **POR -7.5**, kopā 217.5 · bukmeikeri: POR -7.5, kopā 217.5
+Robots: **POR -7.5**, kopā 218.5 · bukmeikeri: POR -7.5, kopā 218.5
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 219.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
+| 1 ★ | **zem 214.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
 | 2 | **POR -9.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **GS virs 106.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 3 | **POR zem 110.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
 
 Savainojumi/sastāvs: POR: Damian Lillard (Out) -2.0; POR: Deni Avdija (spēlēja 8/10 pēdējās) +0.6; GS: Stephen Curry (Out) -1.3; GS: Brandon Williams (spēlēja 4/10 pēdējās) +0.6
 
@@ -135,7 +135,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 |---|---|---|---|---|
 | NO@LAC | **NO zem 114.5** | 53/100 | 1.74 | ⏳ gaida |
 | MIA@NY | **MIA zem 110.5** | 53/100 | 1.74 | ⏳ gaida |
-| PHI@IND | **IND zem 113.5** | 53/100 | 1.74 | ⏳ gaida |
+| MEM@MIN | **MIN virs 109.5** | 53/100 | 1.74 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -143,8 +143,8 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| MEM@MIN | **MIN -13.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
 | DEN@UTAH | **DEN virs 128.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| ATL@BOS | **BOS zem 107.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
 | PHI@IND | **PHI zem 107.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
 
 ## Statistika

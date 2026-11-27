@@ -1,7 +1,7 @@
 {
  "date": "2026-11-27",
  "min_odds": 2.1,
- "generated_at": "2026-11-27T19:38+00:00",
+ "generated_at": "2026-11-27T20:07+00:00",
  "games": [
   {
    "game_id": "401892797",
@@ -1073,6 +1073,24 @@
    "score": null
   },
   {
+   "game_id": "401892799",
+   "game": "OTT@TB",
+   "start_utc": "2026-11-27 20:00:00+00:00",
+   "riga_time": "27.11 22:00",
+   "category": "uzvarētājs",
+   "bet": "TB uzvar (ieskaitot papildlaiku)",
+   "confidence": 53,
+   "data_conf": 53,
+   "p_model": 0.5074,
+   "p_market": 0.5325,
+   "fair_odds": 1.9,
+   "est_odds": 1.76,
+   "result": null,
+   "away_short": null,
+   "home_short": null,
+   "score": null
+  },
+  {
    "game_id": "401892805",
    "game": "VGK@SJ",
    "start_utc": "2026-11-27 21:00:00+00:00",
@@ -1103,24 +1121,6 @@
    "p_market": 0.5439,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "away_short": null,
-   "home_short": null,
-   "score": null
-  },
-  {
-   "game_id": "401892799",
-   "game": "OTT@TB",
-   "start_utc": "2026-11-27 20:00:00+00:00",
-   "riga_time": "27.11 22:00",
-   "category": "uzvarētājs",
-   "bet": "TB uzvar (ieskaitot papildlaiku)",
-   "confidence": 53,
-   "data_conf": 53,
-   "p_model": 0.5074,
-   "p_market": 0.5325,
-   "fair_odds": 1.9,
-   "est_odds": 1.76,
    "result": null,
    "away_short": null,
    "home_short": null,
