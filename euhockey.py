@@ -151,8 +151,8 @@ def load_del(today: date) -> pd.DataFrame:
             hname, aname = H.unescape(hname), H.unescape(aname)
             start = pd.Timestamp(datetime(int(when.group(3)), int(when.group(2)), int(when.group(1)),
                                           int(when.group(4)), int(when.group(5)), tzinfo=tz)).tz_convert("UTC")
-            link = re.search(r"spieldetails/([^\"]+)\"", body)
-            gid = link.group(1).rsplit("_", 1)[-1] if link else f"{start:%Y%m%d}_{hslug}_{aslug}"
+            # the site links a game only once it is played, so the id is the date + teams (stable before and after)
+            gid = f"{start.tz_convert(tz):%Y%m%d}_{hslug}_{aslug}"
             res = re.search(r"(\d+) : (\d+)\s*(\((?:OT|SO)\))?.*?\(([\d:, ]+)\)", _txt(body))
             (hc, hsh), (ac, ash) = _del_code(hslug, hname), _del_code(aslug, aname)
             if res:

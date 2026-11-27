@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "MAN 4 - 0 FRA",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -28,7 +28,8 @@
      "fair_odds": 2.43,
      "est_odds": 2.26,
      "confidence": 41,
-     "result": null,
+     "result": "izgāja",
+     "score": "MAN 4 - 0 FRA",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.77,
      "est_odds": 2.57,
      "confidence": 36,
-     "result": null,
+     "result": "izgāja",
+     "score": "MAN 4 - 0 FRA",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 3.92,
      "est_odds": 3.64,
      "confidence": 26,
-     "result": null,
+     "result": "izgāja",
+     "score": "MAN 4 - 0 FRA",
      "top": false
     }
    ]
@@ -58,11 +61,11 @@
  ],
  "summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.03,
+  "profit_units": 5.47
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -75,27 +78,27 @@
    "confidence": 22,
    "fair_odds": 4.58,
    "est_odds": 4.26,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "MAN 4 - 0 FRA",
    "away_short": "Mannheim",
    "home_short": "Frankfurt"
   }
  ],
  "crazy_summary": {
   "picks": 1,
-  "settled": 0,
-  "hits": 0,
+  "settled": 1,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.22,
+  "profit_units": 3.26
  },
  "top_summary": {
   "picks": 1,
-  "settled": 0,
-  "hits": 0,
+  "settled": 1,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.41,
+  "profit_units": 1.26
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -110,19 +113,19 @@
    "p_model": 0.514,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "MAN 4 - 0 FRA",
    "away_short": "Mannheim",
    "home_short": "Frankfurt"
   }
  ],
  "safe_summary": {
   "picks": 1,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.51,
+  "profit_units": -1
  },
  "safe_all": [
   {
@@ -138,18 +141,18 @@
    "p_market": null,
    "fair_odds": 1.95,
    "est_odds": 1.81,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Mannheim",
    "home_short": "Frankfurt",
-   "score": null
+   "score": "MAN 4 - 0 FRA"
   }
  ],
  "safe_all_summary": {
   "picks": 1,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.51,
+  "profit_units": -1
  }
 }

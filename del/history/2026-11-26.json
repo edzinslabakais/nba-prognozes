@@ -34,7 +34,8 @@
    "fair_odds": 2.43,
    "est_odds": 2.26,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "MAN 4 - 0 FRA"
   },
   {
    "game_id": "20261126_loewen-frankfurt_adler-mannheim",
@@ -49,7 +50,8 @@
    "fair_odds": 2.77,
    "est_odds": 2.57,
    "confidence": 36,
-   "result": null
+   "result": "izgāja",
+   "score": "MAN 4 - 0 FRA"
   },
   {
    "game_id": "20261126_loewen-frankfurt_adler-mannheim",
@@ -64,7 +66,8 @@
    "fair_odds": 3.92,
    "est_odds": 3.64,
    "confidence": 26,
-   "result": null
+   "result": "izgāja",
+   "score": "MAN 4 - 0 FRA"
   }
  ],
  "crazy": [
@@ -79,7 +82,8 @@
    "fair_odds": 4.58,
    "est_odds": 4.26,
    "confidence": 22,
-   "result": null
+   "result": "izgāja",
+   "score": "MAN 4 - 0 FRA"
   }
  ],
  "safe": [
@@ -97,7 +101,8 @@
    "est_odds": 1.81,
    "confidence": 51,
    "data_conf": 51,
-   "result": null
+   "result": "neizgāja",
+   "score": "MAN 4 - 0 FRA"
   }
  ],
  "safe_all": [
@@ -115,9 +120,10 @@
    "est_odds": 1.81,
    "confidence": 51,
    "data_conf": 51,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Mannheim",
-   "home_short": "Frankfurt"
+   "home_short": "Frankfurt",
+   "score": "MAN 4 - 0 FRA"
   }
  ]
 }
