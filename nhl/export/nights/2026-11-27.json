@@ -253,7 +253,7 @@
     "TB: vārtsargs Andrei Vasilevskiy (gaidāms) +0.02",
     "OTT: vārtsargs Linus Ullmark (apstiprināts) +0.17"
    ],
-   "score": null,
+   "score": "OTT 6 - 2 TB",
    "picks": [
     {
      "category": "komandas vārti",
@@ -263,8 +263,8 @@
      "fair_odds": 2.44,
      "est_odds": 2.27,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "OTT 6 - 2 TB",
      "top": false
     },
     {
@@ -275,8 +275,8 @@
      "fair_odds": 2.5,
      "est_odds": 2.32,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "OTT 6 - 2 TB",
      "top": true
     },
     {
@@ -287,8 +287,8 @@
      "fair_odds": 2.66,
      "est_odds": 2.47,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "OTT 6 - 2 TB",
      "top": false
     }
    ]
@@ -311,7 +311,7 @@
     "PHI: vārtsargs Dan Vladar (apstiprināts) -0.01",
     "VAN: vārtsargs Leevi Merilainen (gaidāms) +0.03"
    ],
-   "score": null,
+   "score": "VAN 2 - 5 PHI",
    "picks": [
     {
      "category": "kopā",
@@ -321,8 +321,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VAN 2 - 5 PHI",
      "top": true
     },
     {
@@ -333,8 +333,8 @@
      "fair_odds": 2.45,
      "est_odds": 2.28,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "VAN 2 - 5 PHI",
      "top": false
     },
     {
@@ -345,8 +345,8 @@
      "fair_odds": 3.52,
      "est_odds": 3.27,
      "confidence": 28,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VAN 2 - 5 PHI",
      "top": false
     }
    ]
@@ -369,7 +369,7 @@
     "WSH: vārtsargs Logan Thompson (apstiprināts) +0.03",
     "FLA: vārtsargs Jacob Markstrom (apstiprināts) +0.01"
    ],
-   "score": null,
+   "score": "FLA 3 - 2 WSH",
    "picks": [
     {
      "category": "komandas vārti",
@@ -379,8 +379,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "FLA 3 - 2 WSH",
      "top": true
     },
     {
@@ -391,8 +391,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.32,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "FLA 3 - 2 WSH",
      "top": false
     },
     {
@@ -403,8 +403,8 @@
      "fair_odds": 2.72,
      "est_odds": 2.53,
      "confidence": 37,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "FLA 3 - 2 WSH",
      "top": false
     }
    ]
@@ -427,7 +427,7 @@
     "CBJ: vārtsargs Jet Greaves (apstiprināts) -0.15",
     "DET: vārtsargs Daniil Tarasov (gaidāms) +0.13"
    ],
-   "score": null,
+   "score": "DET 2 - 0 CBJ",
    "picks": [
     {
      "category": "komandas vārti",
@@ -437,8 +437,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "DET 2 - 0 CBJ",
      "top": false
     },
     {
@@ -449,8 +449,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.32,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DET 2 - 0 CBJ",
      "top": true
     },
     {
@@ -461,8 +461,8 @@
      "fair_odds": 2.96,
      "est_odds": 2.75,
      "confidence": 34,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "DET 2 - 0 CBJ",
      "top": false
     }
    ]
@@ -876,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 12,
-  "hits": 5,
+  "settled": 24,
+  "hits": 12,
   "pushes": 0,
-  "expected_hits": 4.78,
-  "profit_units": -0.7
+  "expected_hits": 9.44,
+  "profit_units": 4.06
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -893,8 +893,8 @@
    "confidence": 23,
    "fair_odds": 4.3,
    "est_odds": 4.0,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892799",
@@ -905,8 +905,8 @@
    "confidence": 23,
    "fair_odds": 4.33,
    "est_odds": 4.03,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892802",
@@ -917,25 +917,25 @@
    "confidence": 23,
    "fair_odds": 4.36,
    "est_odds": 4.05,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DET 2 - 0 CBJ"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.69,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 15,
-  "settled": 4,
+  "settled": 8,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.65,
-  "profit_units": 2.74
+  "expected_hits": 3.3,
+  "profit_units": -1.26
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -950,8 +950,8 @@
    "p_model": 0.4633,
    "fair_odds": 1.83,
    "est_odds": 1.71,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892798",
@@ -978,17 +978,17 @@
    "p_model": 0.4836,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "VAN 2 - 5 PHI"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 1,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0.54,
-  "profit_units": -1
+  "expected_hits": 1.61,
+  "profit_units": 0.47
  },
  "safe_all": [
   {
@@ -1076,10 +1076,10 @@
    "p_market": 0.5635,
    "fair_odds": 1.83,
    "est_odds": 1.7,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VAN 2 - 5 PHI"
   },
   {
    "game_id": "401892801",
@@ -1094,10 +1094,10 @@
    "p_market": 0.5582,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892802",
@@ -1112,10 +1112,10 @@
    "p_market": 0.5514,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DET 2 - 0 CBJ"
   },
   {
    "game_id": "401892799",
@@ -1130,10 +1130,10 @@
    "p_market": 0.5325,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892805",
@@ -1264,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 4,
-  "hits": 3,
+  "settled": 8,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 2.06,
-  "profit_units": 1.54
+  "expected_hits": 4.2,
+  "profit_units": 0.96
  }
 }

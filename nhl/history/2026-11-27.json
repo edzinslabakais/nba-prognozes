@@ -495,7 +495,8 @@
    "fair_odds": 2.44,
    "est_odds": 2.27,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892799",
@@ -510,7 +511,8 @@
    "fair_odds": 2.5,
    "est_odds": 2.32,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892799",
@@ -525,7 +527,8 @@
    "fair_odds": 2.66,
    "est_odds": 2.47,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892800",
@@ -540,7 +543,8 @@
    "fair_odds": 2.34,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "VAN 2 - 5 PHI"
   },
   {
    "game_id": "401892800",
@@ -555,7 +559,8 @@
    "fair_odds": 2.45,
    "est_odds": 2.28,
    "confidence": 41,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 2 - 5 PHI"
   },
   {
    "game_id": "401892800",
@@ -570,7 +575,8 @@
    "fair_odds": 3.52,
    "est_odds": 3.27,
    "confidence": 28,
-   "result": null
+   "result": "neizgāja",
+   "score": "VAN 2 - 5 PHI"
   },
   {
    "game_id": "401892801",
@@ -585,7 +591,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892801",
@@ -600,7 +607,8 @@
    "fair_odds": 2.49,
    "est_odds": 2.32,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892801",
@@ -615,7 +623,8 @@
    "fair_odds": 2.72,
    "est_odds": 2.53,
    "confidence": 37,
-   "result": null
+   "result": "izgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892802",
@@ -630,7 +639,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 2 - 0 CBJ"
   },
   {
    "game_id": "401892802",
@@ -645,7 +655,8 @@
    "fair_odds": 2.49,
    "est_odds": 2.32,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 2 - 0 CBJ"
   },
   {
    "game_id": "401892802",
@@ -660,7 +671,8 @@
    "fair_odds": 2.96,
    "est_odds": 2.75,
    "confidence": 34,
-   "result": null
+   "result": "izgāja",
+   "score": "DET 2 - 0 CBJ"
   },
   {
    "game_id": "401892803",
@@ -990,7 +1002,8 @@
    "fair_odds": 4.3,
    "est_odds": 4.0,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892799",
@@ -1003,7 +1016,8 @@
    "fair_odds": 4.33,
    "est_odds": 4.03,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892802",
@@ -1016,7 +1030,8 @@
    "fair_odds": 4.36,
    "est_odds": 4.05,
    "confidence": 23,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 2 - 0 CBJ"
   }
  ],
  "safe": [
@@ -1034,7 +1049,8 @@
    "est_odds": 1.71,
    "confidence": 55,
    "data_conf": 57,
-   "result": null
+   "result": "izgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892798",
@@ -1067,7 +1083,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 2 - 5 PHI"
   }
  ],
  "safe_all": [
@@ -1153,7 +1170,8 @@
    "est_odds": 1.7,
    "confidence": 55,
    "data_conf": 56,
-   "result": null
+   "result": "izgāja",
+   "score": "VAN 2 - 5 PHI"
   },
   {
    "game_id": "401892801",
@@ -1169,7 +1187,8 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 56,
-   "result": null
+   "result": "izgāja",
+   "score": "FLA 3 - 2 WSH"
   },
   {
    "game_id": "401892802",
@@ -1185,7 +1204,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 55,
-   "result": null
+   "result": "neizgāja",
+   "score": "DET 2 - 0 CBJ"
   },
   {
    "game_id": "401892799",
@@ -1201,7 +1221,8 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "OTT 6 - 2 TB"
   },
   {
    "game_id": "401892805",
