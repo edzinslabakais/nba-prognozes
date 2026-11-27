@@ -195,7 +195,7 @@
     "STL: vārtsargs Joel Hofer (gaidāms) +0.15",
     "DAL: vārtsargs Jake Oettinger (gaidāms) +0.03"
    ],
-   "score": null,
+   "score": "DAL 3 - 5 STL",
    "picks": [
     {
      "category": "komandas vārti",
@@ -205,8 +205,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 5 STL",
      "top": false
     },
     {
@@ -217,8 +217,8 @@
      "fair_odds": 2.43,
      "est_odds": 2.26,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 5 STL",
      "top": true
     },
     {
@@ -229,8 +229,8 @@
      "fair_odds": 2.96,
      "est_odds": 2.76,
      "confidence": 34,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 3 - 5 STL",
      "top": false
     }
    ]
@@ -876,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 9,
+  "settled": 12,
   "hits": 5,
   "pushes": 0,
-  "expected_hits": 3.6,
-  "profit_units": 2.3
+  "expected_hits": 4.78,
+  "profit_units": -0.7
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -931,11 +931,11 @@
  },
  "top_summary": {
   "picks": 15,
-  "settled": 3,
+  "settled": 4,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.24,
-  "profit_units": 3.74
+  "expected_hits": 1.65,
+  "profit_units": 2.74
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -964,8 +964,8 @@
    "p_model": 0.4462,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DAL 3 - 5 STL"
   },
   {
    "game_id": "401892800",
@@ -984,11 +984,11 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 1,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.54,
+  "profit_units": -1
  },
  "safe_all": [
   {
@@ -1004,10 +1004,10 @@
    "p_market": 0.5635,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 3 - 5 STL"
   },
   {
    "game_id": "401892795",
@@ -1264,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 3,
+  "settled": 4,
   "hits": 3,
   "pushes": 0,
-  "expected_hits": 1.52,
-  "profit_units": 2.54
+  "expected_hits": 2.06,
+  "profit_units": 1.54
  }
 }

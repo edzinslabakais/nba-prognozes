@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 27.11.2026 23:31 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 00:29 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 5/9
+## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 5/12
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -40,13 +40,13 @@ Robots: **BOS 48% · X 24% · TOR 29%**, vārti 3.6–2.9 · bukmeikeri: BOS 60%
 Savainojumi/sastāvs: BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03; TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.07
 
 ### DAL @ STL · 21:00
-Robots: **STL 33% · X 26% · DAL 41%**, vārti 2.7–3.0 · bukmeikeri: DAL 56% ar papildl., kopā 5.5
+Robots: **STL 33% · X 26% · DAL 41%**, vārti 2.7–3.0 · bukmeikeri: DAL 56% ar papildl., kopā 5.5 · gala rezultāts: **DAL 3 - 5 STL**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **DAL zem 2.5** | 43/100 | 2.17 | 2.34 | ⏳ gaida |
-| 2 ★ | **DAL uzvar** | 41/100 | 2.26 | 2.43 | ⏳ gaida |
-| 3 | **zem 4.5** | 34/100 | 2.76 | 2.96 | ⏳ gaida |
+| 1 | **DAL zem 2.5** | 43/100 | 2.17 | 2.34 | ❌ neizgāja |
+| 2 ★ | **DAL uzvar** | 41/100 | 2.26 | 2.43 | ❌ neizgāja |
+| 3 | **zem 4.5** | 34/100 | 2.76 | 2.96 | ❌ neizgāja |
 
 Savainojumi/sastāvs: STL: vārtsargs Joel Hofer (gaidāms) +0.15; DAL: vārtsargs Jake Oettinger (gaidāms) +0.03
 
@@ -178,7 +178,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
 | FLA@WSH | **zem 6.5** | 57/100 | 1.71 | ⏳ gaida |
-| DAL@STL | **DAL uzvar (ieskaitot papildlaiku)** | 56/100 | 1.72 | ⏳ gaida |
+| DAL@STL | **DAL uzvar (ieskaitot papildlaiku)** | 56/100 | 1.72 | ❌ neizgāja |
 | VAN@PHI | **VAN zem 2.5** | 54/100 | 1.76 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
@@ -193,21 +193,21 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 28/58, vienības +3.58
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 28/59, vienības +2.58
 
-2.1+ kopā: izgāja 73/174 (42%), robots gaidīja ~70.2, vienības -5.43
-1.7+ kopā: izgāja 14/19 (74%), robots gaidīja ~10.0, vienības +5.84
+2.1+ kopā: izgāja 73/177 (41%), robots gaidīja ~71.4, vienības -8.43
+1.7+ kopā: izgāja 14/20 (70%), robots gaidīja ~10.6, vienības +4.84
 Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 73/174 | -5.43 | 28/58 | +3.58 | 14/19 | +5.84 | 6/19 | +5.51 |
+| Novembris 2026 (18.–30.11.) | 73/177 | -8.43 | 28/59 | +2.58 | 14/20 | +4.84 | 6/19 | +5.51 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 28.11. | 5/9 | 3.6 | +2.30 |
+| 28.11. | 5/12 | 4.8 | -0.70 |
 | 26.11. | 24/42 | 17.2 | +12.88 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
@@ -220,6 +220,6 @@ Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 10 | 40% | 32% |
+| 0-34 | 11 | 36% | 32% |
 | 35-39 | 46 | 37% | 38% |
-| 40-44 | 118 | 44% | 42% |
+| 40-44 | 120 | 43% | 42% |
