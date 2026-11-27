@@ -1,6 +1,6 @@
 # 🏒 SHL prognozes
 
-_Atjaunināts 27.11.2026 07:46 (Rīgas laiks)_
+_Atjaunināts 27.11.2026 08:10 (Rīgas laiks)_
 
 ## Spēles 26.11. — 6 spēles, koef. ≥ 2.1 — izgāja 9/18
 
