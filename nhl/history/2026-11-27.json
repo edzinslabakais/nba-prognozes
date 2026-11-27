@@ -303,7 +303,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)"
   },
   {
    "game_id": "401892797",
@@ -318,7 +319,8 @@
    "fair_odds": 2.49,
    "est_odds": 2.31,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)"
   },
   {
    "game_id": "401892797",
@@ -333,7 +335,8 @@
    "fair_odds": 2.61,
    "est_odds": 2.43,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)"
   },
   {
    "game_id": "401892796",
@@ -348,7 +351,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "CGY 3 - 5 NJ"
   },
   {
    "game_id": "401892796",
@@ -363,7 +367,8 @@
    "fair_odds": 2.32,
    "est_odds": 2.15,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "CGY 3 - 5 NJ"
   },
   {
    "game_id": "401892796",
@@ -378,7 +383,8 @@
    "fair_odds": 2.38,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "CGY 3 - 5 NJ"
   },
   {
    "game_id": "401892795",
@@ -393,7 +399,8 @@
    "fair_odds": 2.47,
    "est_odds": 2.3,
    "confidence": 40,
-   "result": null
+   "result": "izgāja",
+   "score": "TOR 3 - 1 BOS"
   },
   {
    "game_id": "401892795",
@@ -408,7 +415,8 @@
    "fair_odds": 2.63,
    "est_odds": 2.45,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "TOR 3 - 1 BOS"
   },
   {
    "game_id": "401892795",
@@ -423,7 +431,8 @@
    "fair_odds": 3.11,
    "est_odds": 2.9,
    "confidence": 32,
-   "result": null
+   "result": "neizgāja",
+   "score": "TOR 3 - 1 BOS"
   },
   {
    "game_id": "401892798",
@@ -1088,7 +1097,8 @@
    "est_odds": 1.72,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "izgāja",
+   "score": "TOR 3 - 1 BOS"
   },
   {
    "game_id": "401892797",
@@ -1104,7 +1114,8 @@
    "est_odds": 1.89,
    "confidence": 49,
    "data_conf": 50,
-   "result": null
+   "result": "izgāja",
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)"
   },
   {
    "game_id": "401892796",
@@ -1120,7 +1131,8 @@
    "est_odds": 1.93,
    "confidence": 48,
    "data_conf": 49,
-   "result": null
+   "result": "izgāja",
+   "score": "CGY 3 - 5 NJ"
   },
   {
    "game_id": "401892800",

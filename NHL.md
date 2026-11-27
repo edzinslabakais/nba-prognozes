@@ -1,41 +1,41 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 27.11.2026 22:34 (Rīgas laiks)_
+_Atjaunināts 27.11.2026 23:22 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1
+## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 5/9
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### UTA @ NSH · 20:00
-Robots: **NSH 38% · X 25% · UTA 37%**, vārti 3.2–3.1 · bukmeikeri: UTA 50% ar papildl., kopā 6.5
+Robots: **NSH 38% · X 25% · UTA 37%**, vārti 3.2–3.1 · bukmeikeri: UTA 50% ar papildl., kopā 6.5 · gala rezultāts: **UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 42/100 | 2.22 | 2.39 | ⏳ gaida |
-| 2 | **UTA zem 2.5** | 40/100 | 2.31 | 2.49 | ⏳ gaida |
-| 3 | **NSH uzvar** | 38/100 | 2.43 | 2.61 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 42/100 | 2.22 | 2.39 | ✅ izgāja |
+| 2 | **UTA zem 2.5** | 40/100 | 2.31 | 2.49 | ❌ neizgāja |
+| 3 | **NSH uzvar** | 38/100 | 2.43 | 2.61 | ❌ neizgāja |
 
 Savainojumi/sastāvs: NSH: vārtsargs Juuse Saros (gaidāms) +0.07; UTA: vārtsargs Karel Vejmelka (gaidāms) -0.04
 
 ### CGY @ NJ · 20:00
-Robots: **NJ 57% · X 22% · CGY 21%**, vārti 3.7–2.4 · bukmeikeri: NJ 70% ar papildl., kopā 6.5
+Robots: **NJ 57% · X 22% · CGY 21%**, vārti 3.7–2.4 · bukmeikeri: NJ 70% ar papildl., kopā 6.5 · gala rezultāts: **CGY 3 - 5 NJ**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 | **CGY virs 2.5** | 44/100 | 2.11 | 2.27 | ⏳ gaida |
-| 2 | **zem 5.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
-| 3 ★ | **NJ -1.5** | 42/100 | 2.22 | 2.38 | ⏳ gaida |
+| 1 | **CGY virs 2.5** | 44/100 | 2.11 | 2.27 | ✅ izgāja |
+| 2 | **zem 5.5** | 43/100 | 2.15 | 2.32 | ❌ neizgāja |
+| 3 ★ | **NJ -1.5** | 42/100 | 2.22 | 2.38 | ✅ izgāja |
 
 Savainojumi/sastāvs: NJ: vārtsargs Connor Hellebuyck (gaidāms) +0.05; CGY: vārtsargs Dustin Wolf (gaidāms) -0.09
 
 ### TOR @ BOS · 20:00
-Robots: **BOS 48% · X 24% · TOR 29%**, vārti 3.6–2.9 · bukmeikeri: BOS 60% ar papildl., kopā 6.5
+Robots: **BOS 48% · X 24% · TOR 29%**, vārti 3.6–2.9 · bukmeikeri: BOS 60% ar papildl., kopā 6.5 · gala rezultāts: **TOR 3 - 1 BOS**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **TOR uzvar (ieskaitot papildlaiku)** | 40/100 | 2.30 | 2.47 | ⏳ gaida |
-| 2 | **zem 5.5** | 38/100 | 2.45 | 2.63 | ⏳ gaida |
-| 3 | **TOR virs 3.5** | 32/100 | 2.90 | 3.11 | ⏳ gaida |
+| 1 ★ | **TOR uzvar (ieskaitot papildlaiku)** | 40/100 | 2.30 | 2.47 | ✅ izgāja |
+| 2 | **zem 5.5** | 38/100 | 2.45 | 2.63 | ✅ izgāja |
+| 3 | **TOR virs 3.5** | 32/100 | 2.90 | 3.11 | ❌ neizgāja |
 
 Savainojumi/sastāvs: BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03; TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.07
 
@@ -193,9 +193,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 25/55, vienības -0.16
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 28/58, vienības +3.58
 
-2.1+ kopā: izgāja 68/165 (41%), robots gaidīja ~66.6, vienības -7.73
+2.1+ kopā: izgāja 73/174 (42%), robots gaidīja ~70.2, vienības -5.43
 1.7+ kopā: izgāja 14/19 (74%), robots gaidīja ~10.0, vienības +5.84
 Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
@@ -203,10 +203,11 @@ Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 68/165 | -7.73 | 25/55 | -0.16 | 14/19 | +5.84 | 6/19 | +5.51 |
+| Novembris 2026 (18.–30.11.) | 73/174 | -5.43 | 28/58 | +3.58 | 14/19 | +5.84 | 6/19 | +5.51 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 28.11. | 5/9 | 3.6 | +2.30 |
 | 26.11. | 24/42 | 17.2 | +12.88 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
@@ -219,6 +220,6 @@ Crazy Dazy kopā: izgāja 6/19 (32%), robots gaidīja ~4.3, vienības +5.51
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 9 | 44% | 32% |
-| 35-39 | 44 | 36% | 38% |
-| 40-44 | 112 | 43% | 42% |
+| 0-34 | 10 | 40% | 32% |
+| 35-39 | 46 | 37% | 38% |
+| 40-44 | 118 | 44% | 42% |

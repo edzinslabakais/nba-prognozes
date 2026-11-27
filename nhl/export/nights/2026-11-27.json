@@ -21,7 +21,7 @@
     "NSH: vārtsargs Juuse Saros (gaidāms) +0.07",
     "UTA: vārtsargs Karel Vejmelka (gaidāms) -0.04"
    ],
-   "score": null,
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)",
    "picks": [
     {
      "category": "kopā",
@@ -31,7 +31,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)",
      "top": true
     },
     {
@@ -42,7 +43,8 @@
      "fair_odds": 2.49,
      "est_odds": 2.31,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)",
      "top": false
     },
     {
@@ -53,7 +55,8 @@
      "fair_odds": 2.61,
      "est_odds": 2.43,
      "confidence": 38,
-     "result": null,
+     "result": "neizgāja",
+     "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)",
      "top": false
     }
    ]
@@ -76,7 +79,7 @@
     "NJ: vārtsargs Connor Hellebuyck (gaidāms) +0.05",
     "CGY: vārtsargs Dustin Wolf (gaidāms) -0.09"
    ],
-   "score": null,
+   "score": "CGY 3 - 5 NJ",
    "picks": [
     {
      "category": "komandas vārti",
@@ -86,7 +89,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "CGY 3 - 5 NJ",
      "top": false
     },
     {
@@ -97,7 +101,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "CGY 3 - 5 NJ",
      "top": false
     },
     {
@@ -108,7 +113,8 @@
      "fair_odds": 2.38,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "CGY 3 - 5 NJ",
      "top": true
     }
    ]
@@ -131,7 +137,7 @@
     "BOS: vārtsargs Jeremy Swayman (gaidāms) -0.03",
     "TOR: vārtsargs Anthony Stolarz (apstiprināts) +0.07"
    ],
-   "score": null,
+   "score": "TOR 3 - 1 BOS",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -141,7 +147,8 @@
      "fair_odds": 2.47,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
+     "result": "izgāja",
+     "score": "TOR 3 - 1 BOS",
      "top": true
     },
     {
@@ -152,7 +159,8 @@
      "fair_odds": 2.63,
      "est_odds": 2.45,
      "confidence": 38,
-     "result": null,
+     "result": "izgāja",
+     "score": "TOR 3 - 1 BOS",
      "top": false
     },
     {
@@ -163,7 +171,8 @@
      "fair_odds": 3.11,
      "est_odds": 2.9,
      "confidence": 32,
-     "result": null,
+     "result": "neizgāja",
+     "score": "TOR 3 - 1 BOS",
      "top": false
     }
    ]
@@ -197,6 +206,7 @@
      "est_odds": 2.17,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -208,6 +218,7 @@
      "est_odds": 2.26,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -219,6 +230,7 @@
      "est_odds": 2.76,
      "confidence": 34,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -252,6 +264,7 @@
      "est_odds": 2.27,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -263,6 +276,7 @@
      "est_odds": 2.32,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -274,6 +288,7 @@
      "est_odds": 2.47,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -307,6 +322,7 @@
      "est_odds": 2.18,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -318,6 +334,7 @@
      "est_odds": 2.28,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -329,6 +346,7 @@
      "est_odds": 3.27,
      "confidence": 28,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -362,6 +380,7 @@
      "est_odds": 2.22,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -373,6 +392,7 @@
      "est_odds": 2.32,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -384,6 +404,7 @@
      "est_odds": 2.53,
      "confidence": 37,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -417,6 +438,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -428,6 +450,7 @@
      "est_odds": 2.32,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -439,6 +462,7 @@
      "est_odds": 2.75,
      "confidence": 34,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -472,6 +496,7 @@
      "est_odds": 2.13,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -483,6 +508,7 @@
      "est_odds": 2.38,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -494,6 +520,7 @@
      "est_odds": 2.44,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -527,6 +554,7 @@
      "est_odds": 2.23,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -538,6 +566,7 @@
      "est_odds": 2.3,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -549,6 +578,7 @@
      "est_odds": 2.42,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -582,6 +612,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -593,6 +624,7 @@
      "est_odds": 2.38,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -604,6 +636,7 @@
      "est_odds": 3.01,
      "confidence": 31,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -637,6 +670,7 @@
      "est_odds": 2.24,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -648,6 +682,7 @@
      "est_odds": 2.36,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -659,6 +694,7 @@
      "est_odds": 2.46,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -692,6 +728,7 @@
      "est_odds": 2.2,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -703,6 +740,7 @@
      "est_odds": 2.25,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -714,6 +752,7 @@
      "est_odds": 2.3,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -747,6 +786,7 @@
      "est_odds": 2.14,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -758,6 +798,7 @@
      "est_odds": 2.18,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -769,6 +810,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -802,6 +844,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -813,6 +856,7 @@
      "est_odds": 2.4,
      "confidence": 39,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -824,6 +868,7 @@
      "est_odds": 3.19,
      "confidence": 29,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -831,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 0,
-  "hits": 0,
+  "settled": 9,
+  "hits": 5,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.6,
+  "profit_units": 2.3
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -886,11 +931,11 @@
  },
  "top_summary": {
   "picks": 15,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.24,
+  "profit_units": 3.74
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -977,10 +1022,10 @@
    "p_market": 0.5392,
    "fair_odds": 1.85,
    "est_odds": 1.72,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "TOR 3 - 1 BOS"
   },
   {
    "game_id": "401892797",
@@ -995,10 +1040,10 @@
    "p_market": 0.5043,
    "fair_odds": 2.03,
    "est_odds": 1.89,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "UTA 5 - 5 NSH (pamatlaikā; bullīšos 6 - 5)"
   },
   {
    "game_id": "401892796",
@@ -1013,10 +1058,10 @@
    "p_market": 0.4917,
    "fair_odds": 2.07,
    "est_odds": 1.93,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "CGY 3 - 5 NJ"
   },
   {
    "game_id": "401892800",
@@ -1219,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.52,
+  "profit_units": 2.54
  }
 }

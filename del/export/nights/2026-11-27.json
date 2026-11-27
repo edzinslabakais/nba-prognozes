@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "SWW 1 - 3 BHV",
    "picks": [
     {
      "category": "komandas vārti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "neizgāja",
+     "score": "SWW 1 - 3 BHV",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.54,
      "est_odds": 2.36,
      "confidence": 39,
-     "result": null,
+     "result": "izgāja",
+     "score": "SWW 1 - 3 BHV",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 2.95,
      "est_odds": 2.74,
      "confidence": 34,
-     "result": null,
+     "result": "izgāja",
+     "score": "SWW 1 - 3 BHV",
      "top": false
     }
    ]
@@ -70,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "KEV 2 - 3 ING",
    "picks": [
     {
      "category": "kopā",
@@ -80,7 +83,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "KEV 2 - 3 ING",
      "top": true
     },
     {
@@ -91,7 +95,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KEV 2 - 3 ING",
      "top": false
     },
     {
@@ -102,7 +107,8 @@
      "fair_odds": 2.47,
      "est_odds": 2.3,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "KEV 2 - 3 ING",
      "top": false
     }
    ]
@@ -122,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "EBB 6 - 2 AEV",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -132,7 +138,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "EBB 6 - 2 AEV",
      "top": true
     },
     {
@@ -143,7 +150,8 @@
      "fair_odds": 2.35,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "EBB 6 - 2 AEV",
      "top": false
     },
     {
@@ -154,7 +162,8 @@
      "fair_odds": 2.37,
      "est_odds": 2.2,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "EBB 6 - 2 AEV",
      "top": false
     }
    ]
@@ -174,7 +183,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "NIT 3 - 2 WOB",
    "picks": [
     {
      "category": "komandas vārti",
@@ -184,7 +193,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NIT 3 - 2 WOB",
      "top": true
     },
     {
@@ -195,7 +205,8 @@
      "fair_odds": 2.71,
      "est_odds": 2.52,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NIT 3 - 2 WOB",
      "top": false
     },
     {
@@ -206,7 +217,8 @@
      "fair_odds": 2.95,
      "est_odds": 2.75,
      "confidence": 34,
-     "result": null,
+     "result": "neizgāja",
+     "score": "NIT 3 - 2 WOB",
      "top": false
     }
    ]
@@ -226,7 +238,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "STR 2 - 2 KEC (pamatlaikā; papildlaikā 2 - 3)",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -236,7 +248,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "STR 2 - 2 KEC (pamatlaikā; papildlaikā 2 - 3)",
      "top": true
     },
     {
@@ -247,7 +260,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "STR 2 - 2 KEC (pamatlaikā; papildlaikā 2 - 3)",
      "top": false
     },
     {
@@ -258,7 +272,8 @@
      "fair_odds": 2.55,
      "est_odds": 2.37,
      "confidence": 39,
-     "result": null,
+     "result": "izgāja",
+     "score": "STR 2 - 2 KEC (pamatlaikā; papildlaikā 2 - 3)",
      "top": false
     }
    ]
@@ -278,7 +293,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -288,7 +303,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
+     "result": "neizgāja",
+     "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
      "top": true
     },
     {
@@ -299,7 +315,8 @@
      "fair_odds": 2.34,
      "est_odds": 2.18,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
      "top": false
     },
     {
@@ -310,7 +327,8 @@
      "fair_odds": 2.4,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
      "top": false
     }
    ]
@@ -318,11 +336,11 @@
  ],
  "summary": {
   "picks": 18,
-  "settled": 0,
-  "hits": 0,
+  "settled": 18,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 7.39,
+  "profit_units": -1.79
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -335,8 +353,8 @@
    "confidence": 23,
    "fair_odds": 4.39,
    "est_odds": 4.08,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "NIT 3 - 2 WOB",
    "away_short": "Nürnberg",
    "home_short": "Wolfsburg"
   },
@@ -349,8 +367,8 @@
    "confidence": 23,
    "fair_odds": 4.39,
    "est_odds": 4.08,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
    "away_short": "München",
    "home_short": "Iserlohn"
   },
@@ -363,27 +381,27 @@
    "confidence": 23,
    "fair_odds": 4.42,
    "est_odds": 4.11,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "EBB 6 - 2 AEV",
    "away_short": "Berlin",
    "home_short": "Augsburg"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
+  "settled": 3,
   "hits": 0,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.68,
+  "profit_units": -3
  },
  "top_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.6,
+  "profit_units": -1.69
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -398,8 +416,8 @@
    "p_model": 0.5424,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "NIT 3 - 2 WOB",
    "away_short": "Nürnberg",
    "home_short": "Wolfsburg"
   },
@@ -414,8 +432,8 @@
    "p_model": 0.5251,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)",
    "away_short": "München",
    "home_short": "Iserlohn"
   },
@@ -430,19 +448,19 @@
    "p_model": 0.5183,
    "fair_odds": 1.93,
    "est_odds": 1.79,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "EBB 6 - 2 AEV",
    "away_short": "Berlin",
    "home_short": "Augsburg"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.59,
+  "profit_units": 0.5
  },
  "safe_all": [
   {
@@ -458,10 +476,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Nürnberg",
    "home_short": "Wolfsburg",
-   "score": null
+   "score": "NIT 3 - 2 WOB"
   },
   {
    "game_id": "20261127_iserlohn-roosters_ehc-red-bull-muenchen",
@@ -476,10 +494,10 @@
    "p_market": null,
    "fair_odds": 1.9,
    "est_odds": 1.77,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "München",
    "home_short": "Iserlohn",
-   "score": null
+   "score": "RBM 1 - 1 IEC (pamatlaikā; bullīšos 1 - 2)"
   },
   {
    "game_id": "20261127_augsburger-panther_eisbaeren-berlin",
@@ -494,10 +512,10 @@
    "p_market": null,
    "fair_odds": 1.93,
    "est_odds": 1.79,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Berlin",
    "home_short": "Augsburg",
-   "score": null
+   "score": "EBB 6 - 2 AEV"
   },
   {
    "game_id": "20261127_erc-ingolstadt_krefeld-pinguine",
@@ -512,10 +530,10 @@
    "p_market": null,
    "fair_odds": 1.96,
    "est_odds": 1.82,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Krefeld",
    "home_short": "Ingolstadt",
-   "score": null
+   "score": "KEV 2 - 3 ING"
   },
   {
    "game_id": "20261127_pinguins-bremerhaven_schwenninger-wild-wings",
@@ -530,10 +548,10 @@
    "p_market": null,
    "fair_odds": 2.03,
    "est_odds": 1.89,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Schwenningen",
    "home_short": "Bremerhaven",
-   "score": null
+   "score": "SWW 1 - 3 BHV"
   },
   {
    "game_id": "20261127_koelner-haie_straubing-tigers",
@@ -548,18 +566,18 @@
    "p_market": null,
    "fair_odds": 2.1,
    "est_odds": 1.95,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Straubing",
    "home_short": "Köln",
-   "score": null
+   "score": "STR 2 - 2 KEC (pamatlaikā; papildlaikā 2 - 3)"
   }
  ],
  "safe_all_summary": {
   "picks": 6,
-  "settled": 0,
-  "hits": 0,
+  "settled": 6,
+  "hits": 3,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 3.07,
+  "profit_units": -0.68
  }
 }
