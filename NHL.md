@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 28.11.2026 03:43 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 05:35 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 15/36
+## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 15/39
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -139,13 +139,13 @@ Robots: **CHI 27% · X 24% · NYR 48%**, vārti 2.6–3.4 · bukmeikeri: NYR 62%
 Savainojumi/sastāvs: CHI: vārtsargs Spencer Knight (gaidāms) +0.02; NYR: vārtsargs Dylan Garand (gaidāms) +0.04
 
 ### WPG @ NYI · 02:30
-Robots: **NYI 40% · X 25% · WPG 35%**, vārti 3.2–3.0 · bukmeikeri: NYI 53% ar papildl., kopā 6.5
+Robots: **NYI 40% · X 25% · WPG 35%**, vārti 3.2–3.0 · bukmeikeri: NYI 53% ar papildl., kopā 6.5 · gala rezultāts: **WPG 3 - 1 NYI**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 42/100 | 2.20 | 2.36 | ⏳ gaida |
-| 2 | **WPG zem 2.5** | 41/100 | 2.25 | 2.42 | ⏳ gaida |
-| 3 | **NYI uzvar** | 40/100 | 2.30 | 2.48 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 42/100 | 2.20 | 2.36 | ❌ neizgāja |
+| 2 | **WPG zem 2.5** | 41/100 | 2.25 | 2.42 | ❌ neizgāja |
+| 3 | **NYI uzvar** | 40/100 | 2.30 | 2.48 | ❌ neizgāja |
 
 Savainojumi/sastāvs: NYI: vārtsargs Semyon Varlamov (apstiprināts) -0.17; WPG: vārtsargs Stuart Skinner (apstiprināts) -0.02
 
@@ -193,9 +193,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 29/67, vienības -3.19
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 29/68, vienības -4.19
 
-2.1+ kopā: izgāja 83/201 (41%), robots gaidīja ~80.8, vienības -8.66
+2.1+ kopā: izgāja 83/204 (41%), robots gaidīja ~82.0, vienības -11.66
 1.7+ kopā: izgāja 16/22 (73%), robots gaidīja ~11.6, vienības +6.31
 Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 
@@ -203,11 +203,11 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 83/201 | -8.66 | 29/67 | -3.19 | 16/22 | +6.31 | 6/22 | +2.51 |
+| Novembris 2026 (18.–30.11.) | 83/204 | -11.66 | 29/68 | -4.19 | 16/22 | +6.31 | 6/22 | +2.51 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 28.11. | 15/36 | 14.2 | -0.93 |
+| 28.11. | 15/39 | 15.4 | -3.93 |
 | 26.11. | 24/42 | 17.2 | +12.88 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
@@ -222,4 +222,4 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 |---|---|---|---|
 | 0-34 | 14 | 36% | 32% |
 | 35-39 | 54 | 39% | 38% |
-| 40-44 | 133 | 43% | 42% |
+| 40-44 | 136 | 42% | 42% |

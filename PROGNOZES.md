@@ -1,63 +1,63 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 28.11.2026 04:38 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 05:35 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 11 spēles, koef. ≥ 2.1
+## Nakts uz 28.11. — 11 spēles, koef. ≥ 2.1 — izgāja 5/15
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
 ### MIA @ NY · 02:00
-Robots: **NY -2.5**, kopā 222.5 · bukmeikeri: NY -2.5, kopā 222.5
+Robots: **NY -2.5**, kopā 222.5 · bukmeikeri: NY -2.5, kopā 222.5 · gala rezultāts: **MIA 108 - 105 NY**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **zem 218.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **NY -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIA virs 111.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **zem 218.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **NY -4.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 3 | **MIA virs 111.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: NY: Karl-Anthony Towns (Day-To-Day) -0.9; NY: OG Anunoby (Out) -0.8; NY: Andre Drummond (Out) -0.5; MIA: Giannis Antetokounmpo (Day-To-Day) -1.2
 
 ### MIL @ DET · 02:30
-Robots: **DET -9.5**, kopā 219.5 · bukmeikeri: DET -9.5, kopā 219.5
+Robots: **DET -9.5**, kopā 219.5 · bukmeikeri: DET -9.5, kopā 219.5 · gala rezultāts: **MIL 98 - 113 DET**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **DET -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **MIL virs 106.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **DET -11.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **virs 221.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 3 | **MIL virs 106.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: DET: Cade Cunningham (Out) -2.2; DET: Duncan Robinson (Out) -0.7; DET: Isaiah Joe (spēlēja 4/10 pēdējās) +0.5; MIL: Kasparas Jakucionis (Out) -0.7
 
 ### PHI @ IND · 02:30
-Robots: **PHI -3.5**, kopā 229.5 · bukmeikeri: PHI -3.5, kopā 229.5
+Robots: **PHI -3.5**, kopā 229.5 · bukmeikeri: PHI -3.5, kopā 229.5 · gala rezultāts: **PHI 111 - 87 IND**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 231.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **PHI -5.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
-| 3 | **IND virs 114.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 231.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **PHI -5.5** | 43/100 | 2.14 | 2.31 | ✅ izgāja |
+| 3 | **IND virs 114.5** | 43/100 | 2.15 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: PHI: Jaylen Brown (Out) -1.6; PHI: LeBron James (spēlēja 8/10 pēdējās) +0.4; PHI: Dominick Barlow (spēlēja 3/10 pēdējās) +0.5
 
 ### BKN @ TOR · 02:30
-Robots: **TOR -9.5**, kopā 219.5 · bukmeikeri: TOR -9.5, kopā 219.5
+Robots: **TOR -9.5**, kopā 219.5 · bukmeikeri: TOR -9.5, kopā 219.5 · gala rezultāts: **BKN 100 - 124 TOR**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **TOR -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **BKN virs 106.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **TOR -11.5** | 44/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **virs 221.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 3 | **BKN virs 106.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: TOR: RJ Barrett (Out) -1.2; TOR: Scottie Barnes (spēlēja 5/10 pēdējās) +1.2; BKN: Moritz Wagner (Out) -1.0; BKN: Nolan Traore (Out) -0.8
 
 ### ATL @ BOS · 03:00
-Robots: **BOS -9.5**, kopā 223.5 · bukmeikeri: BOS -9.5, kopā 223.5
+Robots: **BOS -9.5**, kopā 223.5 · bukmeikeri: BOS -9.5, kopā 223.5 · gala rezultāts: **ATL 87 - 86 BOS**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **BOS -11.5** | 44/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 3 | **ATL virs 108.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
+| 1 ★ | **BOS -11.5** | 44/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **virs 225.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 3 | **ATL virs 108.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
 
 Savainojumi/sastāvs: BOS: Paul George (spēlēja 8/10 pēdējās) +0.4; BOS: Mike Conley (spēlēja 4/10 pēdējās) +0.4; ATL: CJ McCollum (Out) -0.9; ATL: Jalen Johnson (spēlēja 7/10 pēdējās) +0.6
 
@@ -134,7 +134,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Dati | ~Optibet | Rezultāts |
 |---|---|---|---|---|
 | NO@LAC | **NO zem 114.5** | 53/100 | 1.74 | ⏳ gaida |
-| MIA@NY | **MIA zem 110.5** | 53/100 | 1.74 | ⏳ gaida |
+| MIA@NY | **MIA zem 110.5** | 53/100 | 1.74 | ✅ izgāja |
 | MEM@MIN | **MIN virs 109.5** | 53/100 | 1.74 | ⏳ gaida |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
@@ -144,25 +144,26 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 | Spēle | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
 | DEN@UTAH | **DEN virs 128.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
-| ATL@BOS | **BOS zem 107.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
-| PHI@IND | **PHI zem 107.5** | 23/100 | 4.01 | 4.31 | ⏳ gaida |
+| ATL@BOS | **BOS zem 107.5** | 23/100 | 4.01 | 4.31 | ✅ izgāja |
+| PHI@IND | **PHI zem 107.5** | 23/100 | 4.01 | 4.31 | ❌ neizgāja |
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 26/60, vienības -4.39
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 29/65, vienības -2.97
 
-2.1+ kopā: izgāja 72/180 (40%), robots gaidīja ~78.1, vienības -25.71
-1.7+ kopā: izgāja 14/26 (54%), robots gaidīja ~13.9, vienības -1.58
-Crazy Dazy kopā: izgāja 6/24 (25%), robots gaidīja ~5.4, vienības +0.15
+2.1+ kopā: izgāja 77/195 (39%), robots gaidīja ~84.6, vienības -30.01
+1.7+ kopā: izgāja 15/27 (56%), robots gaidīja ~14.4, vienības -0.84
+Crazy Dazy kopā: izgāja 7/26 (27%), robots gaidīja ~5.9, vienības +2.16
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 72/180 | -25.71 | 26/60 | -4.39 | 14/26 | -1.58 | 6/24 | +0.15 |
+| Novembris 2026 (18.–30.11.) | 77/195 | -30.01 | 29/65 | -2.97 | 15/27 | -0.84 | 7/26 | +2.16 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
+| 28.11. | 5/15 | 6.5 | -4.30 |
 | 26.11. | 10/27 | 11.7 | -5.52 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
@@ -176,4 +177,4 @@ Crazy Dazy kopā: izgāja 6/24 (25%), robots gaidīja ~5.4, vienības +0.15
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 180 | 40% | 43% |
+| 40-44 | 195 | 40% | 43% |

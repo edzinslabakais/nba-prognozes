@@ -717,7 +717,7 @@
     "NYI: vārtsargs Semyon Varlamov (apstiprināts) -0.17",
     "WPG: vārtsargs Stuart Skinner (apstiprināts) -0.02"
    ],
-   "score": null,
+   "score": "WPG 3 - 1 NYI",
    "picks": [
     {
      "category": "kopā",
@@ -727,8 +727,8 @@
      "fair_odds": 2.36,
      "est_odds": 2.2,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "WPG 3 - 1 NYI",
      "top": true
     },
     {
@@ -739,8 +739,8 @@
      "fair_odds": 2.42,
      "est_odds": 2.25,
      "confidence": 41,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "WPG 3 - 1 NYI",
      "top": false
     },
     {
@@ -751,8 +751,8 @@
      "fair_odds": 2.48,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "WPG 3 - 1 NYI",
      "top": false
     }
    ]
@@ -876,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 36,
+  "settled": 39,
   "hits": 15,
   "pushes": 0,
-  "expected_hits": 14.18,
-  "profit_units": -0.93
+  "expected_hits": 15.42,
+  "profit_units": -3.93
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -931,11 +931,11 @@
  },
  "top_summary": {
   "picks": 15,
-  "settled": 12,
+  "settled": 13,
   "hits": 4,
   "pushes": 0,
-  "expected_hits": 5.01,
-  "profit_units": -3.03
+  "expected_hits": 5.43,
+  "profit_units": -4.03
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -1184,10 +1184,10 @@
    "p_market": 0.5325,
    "fair_odds": 1.9,
    "est_odds": 1.76,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "WPG 3 - 1 NYI"
   },
   {
    "game_id": "401892804",
@@ -1264,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 12,
+  "settled": 13,
   "hits": 7,
   "pushes": 0,
-  "expected_hits": 6.27,
-  "profit_units": 0.62
+  "expected_hits": 6.8,
+  "profit_units": -0.38
  }
 }
