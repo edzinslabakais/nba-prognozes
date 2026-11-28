@@ -1,6 +1,6 @@
 # ⚽ Čempionu līga prognozes
 
-_Atjaunināts 28.11.2026 08:08 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 09:37 (Rīgas laiks)_
 
 ## Spēles 25.11. — 9 spēles, koef. ≥ 2.1 — izgāja 8/27
 
