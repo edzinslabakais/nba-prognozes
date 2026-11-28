@@ -1,8 +1,8 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 28.11.2026 05:35 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 06:39 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 15/39
+## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 16/45
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -150,24 +150,24 @@ Robots: **NYI 40% · X 25% · WPG 35%**, vārti 3.2–3.0 · bukmeikeri: NYI 53%
 Savainojumi/sastāvs: NYI: vārtsargs Semyon Varlamov (apstiprināts) -0.17; WPG: vārtsargs Stuart Skinner (apstiprināts) -0.02
 
 ### PIT @ BUF · 03:00
-Robots: **BUF 43% · X 25% · PIT 33%**, vārti 3.4–3.0 · bukmeikeri: BUF 54% ar papildl., kopā 6.5
+Robots: **BUF 43% · X 25% · PIT 33%**, vārti 3.4–3.0 · bukmeikeri: BUF 54% ar papildl., kopā 6.5 · gala rezultāts: **PIT 6 - 3 BUF**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **BUF uzvar** | 43/100 | 2.18 | 2.34 | ⏳ gaida |
-| 3 | **PIT zem 2.5** | 42/100 | 2.21 | 2.37 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **BUF uzvar** | 43/100 | 2.18 | 2.34 | ❌ neizgāja |
+| 3 | **PIT zem 2.5** | 42/100 | 2.21 | 2.37 | ❌ neizgāja |
 
 Savainojumi/sastāvs: BUF: vārtsargs Ukko-Pekka Luukkonen (apstiprināts) -0.02; PIT: vārtsargs Sergei Murashov (apstiprināts) +0.11
 
 ### SEA @ EDM · 03:00
-Robots: **EDM 54% · X 23% · SEA 24%**, vārti 3.7–2.6 · bukmeikeri: EDM 66% ar papildl., kopā 6.5
+Robots: **EDM 54% · X 23% · SEA 24%**, vārti 3.7–2.6 · bukmeikeri: EDM 66% ar papildl., kopā 6.5 · gala rezultāts: **SEA 4 - 2 EDM**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 6.5** | 42/100 | 2.21 | 2.38 | ⏳ gaida |
-| 2 | **EDM -1.5** | 39/100 | 2.40 | 2.58 | ⏳ gaida |
-| 3 | **virs 7.5** | 29/100 | 3.19 | 3.43 | ⏳ gaida |
+| 1 ★ | **virs 6.5** | 42/100 | 2.21 | 2.38 | ❌ neizgāja |
+| 2 | **EDM -1.5** | 39/100 | 2.40 | 2.58 | ❌ neizgāja |
+| 3 | **virs 7.5** | 29/100 | 3.19 | 3.43 | ❌ neizgāja |
 
 Savainojumi/sastāvs: EDM: vārtsargs Tristan Jarry (apstiprināts) +0.12; SEA: vārtsargs Philipp Grubauer (apstiprināts) +0.04
 
@@ -193,9 +193,9 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 29/68, vienības -4.19
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 30/70, vienības -4.05
 
-2.1+ kopā: izgāja 83/204 (41%), robots gaidīja ~82.0, vienības -11.66
+2.1+ kopā: izgāja 84/210 (40%), robots gaidīja ~84.4, vienības -15.52
 1.7+ kopā: izgāja 16/22 (73%), robots gaidīja ~11.6, vienības +6.31
 Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 
@@ -203,11 +203,11 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 83/204 | -11.66 | 29/68 | -4.19 | 16/22 | +6.31 | 6/22 | +2.51 |
+| Novembris 2026 (18.–30.11.) | 84/210 | -15.52 | 30/70 | -4.05 | 16/22 | +6.31 | 6/22 | +2.51 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 28.11. | 15/39 | 15.4 | -3.93 |
+| 28.11. | 16/45 | 17.8 | -7.79 |
 | 26.11. | 24/42 | 17.2 | +12.88 |
 | 25.11. | 1/3 | 1.2 | -0.63 |
 | 24.11. | 7/21 | 8.5 | -5.02 |
@@ -220,6 +220,6 @@ Crazy Dazy kopā: izgāja 6/22 (27%), robots gaidīja ~5.0, vienības +2.51
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 0-34 | 14 | 36% | 32% |
-| 35-39 | 54 | 39% | 38% |
-| 40-44 | 136 | 42% | 42% |
+| 0-34 | 15 | 33% | 32% |
+| 35-39 | 55 | 38% | 38% |
+| 40-44 | 140 | 41% | 42% |

@@ -927,7 +927,8 @@
    "fair_odds": 2.3,
    "est_odds": 2.14,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 6 - 3 BUF"
   },
   {
    "game_id": "401892808",
@@ -942,7 +943,8 @@
    "fair_odds": 2.34,
    "est_odds": 2.18,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "PIT 6 - 3 BUF"
   },
   {
    "game_id": "401892808",
@@ -957,7 +959,8 @@
    "fair_odds": 2.37,
    "est_odds": 2.21,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "PIT 6 - 3 BUF"
   },
   {
    "game_id": "401892809",
@@ -972,7 +975,8 @@
    "fair_odds": 2.38,
    "est_odds": 2.21,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 4 - 2 EDM"
   },
   {
    "game_id": "401892809",
@@ -987,7 +991,8 @@
    "fair_odds": 2.58,
    "est_odds": 2.4,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 4 - 2 EDM"
   },
   {
    "game_id": "401892809",
@@ -1002,7 +1007,8 @@
    "fair_odds": 3.43,
    "est_odds": 3.19,
    "confidence": 29,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 4 - 2 EDM"
   }
  ],
  "crazy": [
@@ -1270,7 +1276,8 @@
    "est_odds": 1.74,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "SEA 4 - 2 EDM"
   },
   {
    "game_id": "401892807",
@@ -1354,7 +1361,8 @@
    "est_odds": 2.07,
    "confidence": 45,
    "data_conf": 46,
-   "result": null
+   "result": "izgāja",
+   "score": "PIT 6 - 3 BUF"
   }
  ]
 }

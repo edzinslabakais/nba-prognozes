@@ -1,8 +1,8 @@
 # 🏀 NBA prognozes
 
-_Atjaunināts 28.11.2026 05:35 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 06:39 (Rīgas laiks)_
 
-## Nakts uz 28.11. — 11 spēles, koef. ≥ 2.1 — izgāja 5/15
+## Nakts uz 28.11. — 11 spēles, koef. ≥ 2.1 — izgāja 7/21
 
 Drošība = robota aprēķinātā varbūtība, ka likme izies. ~Optibet = aptuvenais koeficients, godīgais = koeficients, pie kura likme ir tieši "vērta savu cenu".
 
@@ -62,24 +62,24 @@ Robots: **BOS -9.5**, kopā 223.5 · bukmeikeri: BOS -9.5, kopā 223.5 · gala r
 Savainojumi/sastāvs: BOS: Paul George (spēlēja 8/10 pēdējās) +0.4; BOS: Mike Conley (spēlēja 4/10 pēdējās) +0.4; ATL: CJ McCollum (Out) -0.9; ATL: Jalen Johnson (spēlēja 7/10 pēdējās) +0.6
 
 ### MEM @ MIN · 03:30
-Robots: **MIN -2.5**, kopā 219.5 · bukmeikeri: MIN -2.5, kopā 219.5
+Robots: **MIN -2.5**, kopā 219.5 · bukmeikeri: MIN -2.5, kopā 219.5 · gala rezultāts: **MEM 114 - 109 MIN**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **MIN -4.5** | 43/100 | 2.15 | 2.31 | ⏳ gaida |
-| 3 | **MIN zem 108.5** | 43/100 | 2.16 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 221.5** | 43/100 | 2.14 | 2.30 | ✅ izgāja |
+| 2 | **MIN -4.5** | 43/100 | 2.15 | 2.31 | ❌ neizgāja |
+| 3 | **MIN zem 108.5** | 43/100 | 2.16 | 2.32 | ❌ neizgāja |
 
 Savainojumi/sastāvs: MIN: LaMelo Ball (Out) -1.4; MEM: Cameron Boozer (Out) -1.3; MEM: Jerami Grant (Out) -0.5; MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0
 
 ### DAL @ PHX · 04:00
-Robots: **PHX -3.5**, kopā 225.5 · bukmeikeri: PHX -3.5, kopā 225.5
+Robots: **PHX -3.5**, kopā 225.5 · bukmeikeri: PHX -3.5, kopā 225.5 · gala rezultāts: **DAL 113 - 109 PHX**
 
 | # | Likme | Drošība | ~Optibet | Godīgais | Rezultāts |
 |---|---|---|---|---|---|
-| 1 ★ | **virs 227.5** | 43/100 | 2.14 | 2.30 | ⏳ gaida |
-| 2 | **PHX -5.5** | 43/100 | 2.14 | 2.31 | ⏳ gaida |
-| 3 | **DAL virs 112.5** | 43/100 | 2.15 | 2.32 | ⏳ gaida |
+| 1 ★ | **virs 227.5** | 43/100 | 2.14 | 2.30 | ❌ neizgāja |
+| 2 | **PHX -5.5** | 43/100 | 2.14 | 2.31 | ❌ neizgāja |
+| 3 | **DAL virs 112.5** | 43/100 | 2.15 | 2.32 | ✅ izgāja |
 
 Savainojumi/sastāvs: DAL: Kyrie Irving (Day-To-Day) -0.7
 
@@ -135,7 +135,7 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 |---|---|---|---|---|
 | NO@LAC | **NO zem 114.5** | 53/100 | 1.74 | ⏳ gaida |
 | MIA@NY | **MIA zem 110.5** | 53/100 | 1.74 | ✅ izgāja |
-| MEM@MIN | **MIN virs 109.5** | 53/100 | 1.74 | ⏳ gaida |
+| MEM@MIN | **MIN virs 109.5** | 53/100 | 1.74 | ❌ neizgāja |
 
 ## 🎲 Crazy Dazy — koef. ≥ 4
 
@@ -149,21 +149,21 @@ Izvēlētas tikai pēc robota statistikas (forma, reitingi, savainojumi, atpūta
 
 ## Statistika
 
-★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 29/65, vienības -2.97
+★ Reālākās no 2.1+ (1 katrā spēlē): uzvarēts 30/67, vienības -2.83
 
-2.1+ kopā: izgāja 77/195 (39%), robots gaidīja ~84.6, vienības -30.01
-1.7+ kopā: izgāja 15/27 (56%), robots gaidīja ~14.4, vienības -0.84
+2.1+ kopā: izgāja 79/201 (39%), robots gaidīja ~87.2, vienības -31.72
+1.7+ kopā: izgāja 15/28 (54%), robots gaidīja ~14.9, vienības -1.84
 Crazy Dazy kopā: izgāja 7/26 (27%), robots gaidīja ~5.9, vienības +2.16
 
 ### Mēneša statistika
 
 | Mēnesis | 2.1+: uzvarēts | Vien. | ★ Reālākās no 2.1+ | Vien. | 1.7+ | Vien. | Crazy Dazy | Vien. |
 |---|---|---|---|---|---|---|---|---|
-| Novembris 2026 (18.–30.11.) | 77/195 | -30.01 | 29/65 | -2.97 | 15/27 | -0.84 | 7/26 | +2.16 |
+| Novembris 2026 (18.–30.11.) | 79/201 | -31.72 | 30/67 | -2.83 | 15/28 | -1.84 | 7/26 | +2.16 |
 
 | Nakts | Izgāja | Robots gaidīja | Vienības |
 |---|---|---|---|
-| 28.11. | 5/15 | 6.5 | -4.30 |
+| 28.11. | 7/21 | 9.1 | -6.01 |
 | 26.11. | 10/27 | 11.7 | -5.52 |
 | 25.11. | 5/9 | 3.9 | +1.71 |
 | 24.11. | 14/30 | 13.0 | +0.01 |
@@ -177,4 +177,4 @@ Crazy Dazy kopā: izgāja 7/26 (27%), robots gaidīja ~5.9, vienības +2.16
 
 | Drošība | Likmes | Izgāja | Gaidīts |
 |---|---|---|---|
-| 40-44 | 195 | 40% | 43% |
+| 40-44 | 201 | 39% | 43% |

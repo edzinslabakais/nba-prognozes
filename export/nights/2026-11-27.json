@@ -322,7 +322,7 @@
     "MEM: Jerami Grant (Out) -0.5",
     "MEM: Ty Jerome (spēlēja 6/10 pēdējās) +1.0"
    ],
-   "score": null,
+   "score": "MEM 114 - 109 MIN",
    "picks": [
     {
      "category": "kopā",
@@ -332,8 +332,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "MEM 114 - 109 MIN",
      "top": true
     },
     {
@@ -344,8 +344,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MEM 114 - 109 MIN",
      "top": false
     },
     {
@@ -356,8 +356,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "MEM 114 - 109 MIN",
      "top": false
     }
    ]
@@ -379,7 +379,7 @@
    "injuries": [
     "DAL: Kyrie Irving (Day-To-Day) -0.7"
    ],
-   "score": null,
+   "score": "DAL 113 - 109 PHX",
    "picks": [
     {
      "category": "kopā",
@@ -389,8 +389,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 113 - 109 PHX",
      "top": true
     },
     {
@@ -401,8 +401,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DAL 113 - 109 PHX",
      "top": false
     },
     {
@@ -413,8 +413,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "DAL 113 - 109 PHX",
      "top": false
     }
    ]
@@ -657,11 +657,11 @@
  ],
  "summary": {
   "picks": 33,
-  "settled": 15,
-  "hits": 5,
+  "settled": 21,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 6.51,
-  "profit_units": -4.3
+  "expected_hits": 9.11,
+  "profit_units": -6.01
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -712,11 +712,11 @@
  },
  "top_summary": {
   "picks": 11,
-  "settled": 5,
-  "hits": 3,
+  "settled": 7,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 2.18,
-  "profit_units": 1.42
+  "expected_hits": 3.05,
+  "profit_units": 1.56
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -759,17 +759,17 @@
    "p_model": 0.6704,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "MEM 114 - 109 MIN"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 1,
+  "settled": 2,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.53,
-  "profit_units": 0.74
+  "expected_hits": 1.07,
+  "profit_units": -0.26
  },
  "safe_all": [
   {
@@ -821,10 +821,10 @@
    "p_market": 0.534,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "MEM 114 - 109 MIN"
   },
   {
    "game_id": "401909328",
@@ -857,10 +857,10 @@
    "p_market": 0.5336,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DAL 113 - 109 PHX"
   },
   {
    "game_id": "401909333",
@@ -973,10 +973,10 @@
  ],
  "safe_all_summary": {
   "picks": 11,
-  "settled": 5,
+  "settled": 7,
   "hits": 5,
   "pushes": 0,
-  "expected_hits": 2.66,
-  "profit_units": 3.73
+  "expected_hits": 3.73,
+  "profit_units": 1.73
  }
 }
