@@ -687,7 +687,8 @@
    "fair_odds": 2.29,
    "est_odds": 2.13,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)"
   },
   {
    "game_id": "401892803",
@@ -702,7 +703,8 @@
    "fair_odds": 2.56,
    "est_odds": 2.38,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)"
   },
   {
    "game_id": "401892803",
@@ -717,7 +719,8 @@
    "fair_odds": 2.62,
    "est_odds": 2.44,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)"
   },
   {
    "game_id": "401892804",
@@ -732,7 +735,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.23,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "LA 5 - 3 ANA"
   },
   {
    "game_id": "401892804",
@@ -747,7 +751,8 @@
    "fair_odds": 2.47,
    "est_odds": 2.3,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "LA 5 - 3 ANA"
   },
   {
    "game_id": "401892804",
@@ -762,7 +767,8 @@
    "fair_odds": 2.6,
    "est_odds": 2.42,
    "confidence": 39,
-   "result": null
+   "result": "izgāja",
+   "score": "LA 5 - 3 ANA"
   },
   {
    "game_id": "401892805",
@@ -777,7 +783,8 @@
    "fair_odds": 2.27,
    "est_odds": 2.11,
    "confidence": 44,
-   "result": null
+   "result": "neizgāja",
+   "score": "VGK 1 - 4 SJ"
   },
   {
    "game_id": "401892805",
@@ -792,7 +799,8 @@
    "fair_odds": 2.56,
    "est_odds": 2.38,
    "confidence": 39,
-   "result": null
+   "result": "neizgāja",
+   "score": "VGK 1 - 4 SJ"
   },
   {
    "game_id": "401892805",
@@ -807,7 +815,8 @@
    "fair_odds": 3.24,
    "est_odds": 3.01,
    "confidence": 31,
-   "result": null
+   "result": "neizgāja",
+   "score": "VGK 1 - 4 SJ"
   },
   {
    "game_id": "401892806",
@@ -1238,7 +1247,8 @@
    "est_odds": 1.73,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "VGK 1 - 4 SJ"
   },
   {
    "game_id": "401892809",
@@ -1286,7 +1296,8 @@
    "est_odds": 1.83,
    "confidence": 51,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LA 5 - 3 ANA"
   },
   {
    "game_id": "401892803",
@@ -1302,7 +1313,8 @@
    "est_odds": 1.8,
    "confidence": 52,
    "data_conf": 52,
-   "result": null
+   "result": "neizgāja",
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)"
   },
   {
    "game_id": "401892806",

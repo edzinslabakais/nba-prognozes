@@ -485,7 +485,7 @@
     "MIN: vārtsargs Jesper Wallstedt (gaidāms) +0.07",
     "COL: vārtsargs Mackenzie Blackwood (gaidāms) +0.05"
    ],
-   "score": null,
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)",
    "picks": [
     {
      "category": "komandas vārti",
@@ -495,8 +495,8 @@
      "fair_odds": 2.29,
      "est_odds": 2.13,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)",
      "top": true
     },
     {
@@ -507,8 +507,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     },
     {
@@ -519,8 +519,8 @@
      "fair_odds": 2.62,
      "est_odds": 2.44,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)",
      "top": false
     }
    ]
@@ -543,7 +543,7 @@
     "ANA: vārtsargs Laurent Brossoit (apstiprināts) +0.12",
     "LA: vārtsargs Darcy Kuemper (gaidāms) +0.02"
    ],
-   "score": null,
+   "score": "LA 5 - 3 ANA",
    "picks": [
     {
      "category": "kopā",
@@ -553,8 +553,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.23,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "LA 5 - 3 ANA",
      "top": true
     },
     {
@@ -565,8 +565,8 @@
      "fair_odds": 2.47,
      "est_odds": 2.3,
      "confidence": 40,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "LA 5 - 3 ANA",
      "top": false
     },
     {
@@ -577,8 +577,8 @@
      "fair_odds": 2.6,
      "est_odds": 2.42,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "LA 5 - 3 ANA",
      "top": false
     }
    ]
@@ -601,7 +601,7 @@
     "SJ: vārtsargs Yaroslav Askarov (apstiprināts) -0.00",
     "VGK: vārtsargs Carter Hart (gaidāms) -0.06"
    ],
-   "score": null,
+   "score": "VGK 1 - 4 SJ",
    "picks": [
     {
      "category": "kopā",
@@ -611,8 +611,8 @@
      "fair_odds": 2.27,
      "est_odds": 2.11,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VGK 1 - 4 SJ",
      "top": true
     },
     {
@@ -623,8 +623,8 @@
      "fair_odds": 2.56,
      "est_odds": 2.38,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VGK 1 - 4 SJ",
      "top": false
     },
     {
@@ -635,8 +635,8 @@
      "fair_odds": 3.24,
      "est_odds": 3.01,
      "confidence": 31,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "VGK 1 - 4 SJ",
      "top": false
     }
    ]
@@ -876,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 24,
-  "hits": 12,
+  "settled": 33,
+  "hits": 14,
   "pushes": 0,
-  "expected_hits": 9.44,
-  "profit_units": 4.06
+  "expected_hits": 13.0,
+  "profit_units": -0.29
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -931,11 +931,11 @@
  },
  "top_summary": {
   "picks": 15,
-  "settled": 8,
-  "hits": 3,
+  "settled": 11,
+  "hits": 4,
   "pushes": 0,
-  "expected_hits": 3.3,
-  "profit_units": -1.26
+  "expected_hits": 4.6,
+  "profit_units": -2.03
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -1148,10 +1148,10 @@
    "p_market": 0.5447,
    "fair_odds": 1.86,
    "est_odds": 1.73,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "VGK 1 - 4 SJ"
   },
   {
    "game_id": "401892809",
@@ -1202,10 +1202,10 @@
    "p_market": 0.5261,
    "fair_odds": 1.96,
    "est_odds": 1.83,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LA 5 - 3 ANA"
   },
   {
    "game_id": "401892803",
@@ -1220,10 +1220,10 @@
    "p_market": 0.5174,
    "fair_odds": 1.93,
    "est_odds": 1.8,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "COL 3 - 3 MIN (pamatlaikā; bullīšos 4 - 3)"
   },
   {
    "game_id": "401892806",
@@ -1264,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 8,
-  "hits": 5,
+  "settled": 11,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 4.2,
-  "profit_units": 0.96
+  "expected_hits": 5.76,
+  "profit_units": -0.21
  }
 }
