@@ -831,7 +831,8 @@
    "fair_odds": 2.41,
    "est_odds": 2.24,
    "confidence": 42,
-   "result": null
+   "result": "neizgāja",
+   "score": "NYR 1 - 2 CHI"
   },
   {
    "game_id": "401892806",
@@ -846,7 +847,8 @@
    "fair_odds": 2.54,
    "est_odds": 2.36,
    "confidence": 39,
-   "result": null
+   "result": "izgāja",
+   "score": "NYR 1 - 2 CHI"
   },
   {
    "game_id": "401892806",
@@ -861,7 +863,8 @@
    "fair_odds": 2.65,
    "est_odds": 2.46,
    "confidence": 38,
-   "result": null
+   "result": "neizgāja",
+   "score": "NYR 1 - 2 CHI"
   },
   {
    "game_id": "401892807",
@@ -1330,7 +1333,8 @@
    "est_odds": 1.83,
    "confidence": 51,
    "data_conf": 52,
-   "result": null
+   "result": "izgāja",
+   "score": "NYR 1 - 2 CHI"
   },
   {
    "game_id": "401892808",

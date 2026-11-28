@@ -659,7 +659,7 @@
     "CHI: vārtsargs Spencer Knight (gaidāms) +0.02",
     "NYR: vārtsargs Dylan Garand (gaidāms) +0.04"
    ],
-   "score": null,
+   "score": "NYR 1 - 2 CHI",
    "picks": [
     {
      "category": "komandas vārti",
@@ -669,8 +669,8 @@
      "fair_odds": 2.41,
      "est_odds": 2.24,
      "confidence": 42,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NYR 1 - 2 CHI",
      "top": true
     },
     {
@@ -681,8 +681,8 @@
      "fair_odds": 2.54,
      "est_odds": 2.36,
      "confidence": 39,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NYR 1 - 2 CHI",
      "top": false
     },
     {
@@ -693,8 +693,8 @@
      "fair_odds": 2.65,
      "est_odds": 2.46,
      "confidence": 38,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NYR 1 - 2 CHI",
      "top": false
     }
    ]
@@ -876,11 +876,11 @@
  ],
  "summary": {
   "picks": 45,
-  "settled": 33,
-  "hits": 14,
+  "settled": 36,
+  "hits": 15,
   "pushes": 0,
-  "expected_hits": 13.0,
-  "profit_units": -0.29
+  "expected_hits": 14.18,
+  "profit_units": -0.93
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -931,11 +931,11 @@
  },
  "top_summary": {
   "picks": 15,
-  "settled": 11,
+  "settled": 12,
   "hits": 4,
   "pushes": 0,
-  "expected_hits": 4.6,
-  "profit_units": -2.03
+  "expected_hits": 5.01,
+  "profit_units": -3.03
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -1238,10 +1238,10 @@
    "p_market": 0.5172,
    "fair_odds": 1.97,
    "est_odds": 1.83,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NYR 1 - 2 CHI"
   },
   {
    "game_id": "401892808",
@@ -1264,10 +1264,10 @@
  ],
  "safe_all_summary": {
   "picks": 15,
-  "settled": 11,
-  "hits": 6,
+  "settled": 12,
+  "hits": 7,
   "pushes": 0,
-  "expected_hits": 5.76,
-  "profit_units": -0.21
+  "expected_hits": 6.27,
+  "profit_units": 0.62
  }
 }
