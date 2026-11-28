@@ -436,7 +436,7 @@
    "injuries": [
     "UTAH: Mo Bamba (Day-To-Day) -0.5"
    ],
-   "score": null,
+   "score": "DEN 120 - 107 UTAH",
    "picks": [
     {
      "category": "starpība",
@@ -446,8 +446,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 44,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "DEN 120 - 107 UTAH",
      "top": true
     },
     {
@@ -458,8 +458,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "DEN 120 - 107 UTAH",
      "top": false
     },
     {
@@ -470,8 +470,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "DEN 120 - 107 UTAH",
      "top": false
     }
    ]
@@ -495,7 +495,7 @@
     "NO: Zion Williamson (spēlēja 8/10 pēdējās) +0.5",
     "NO: Trey Murphy III (spēlēja 3/10 pēdējās) +0.9"
    ],
-   "score": null,
+   "score": "NO 105 - 104 LAC",
    "picks": [
     {
      "category": "kopā",
@@ -505,8 +505,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "NO 105 - 104 LAC",
      "top": true
     },
     {
@@ -517,8 +517,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NO 105 - 104 LAC",
      "top": false
     },
     {
@@ -529,8 +529,8 @@
      "fair_odds": 2.32,
      "est_odds": 2.16,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "NO 105 - 104 LAC",
      "top": false
     }
    ]
@@ -554,7 +554,7 @@
     "LAL: Luka Doncic (spēlēja 9/10 pēdējās) +0.4",
     "LAL: Austin Reaves (spēlēja 4/10 pēdējās) +1.4"
    ],
-   "score": null,
+   "score": "LAL 96 - 99 SA",
    "picks": [
     {
      "category": "kopā",
@@ -564,8 +564,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "LAL 96 - 99 SA",
      "top": true
     },
     {
@@ -576,8 +576,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "LAL 96 - 99 SA",
      "top": false
     },
     {
@@ -588,8 +588,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "LAL 96 - 99 SA",
      "top": false
     }
    ]
@@ -614,7 +614,7 @@
     "GS: Stephen Curry (Out) -1.3",
     "GS: Brandon Williams (spēlēja 4/10 pēdējās) +0.6"
    ],
-   "score": null,
+   "score": "GS 94 - 116 POR",
    "picks": [
     {
      "category": "kopā",
@@ -624,8 +624,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "GS 94 - 116 POR",
      "top": true
     },
     {
@@ -636,8 +636,8 @@
      "fair_odds": 2.3,
      "est_odds": 2.14,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "izgāja",
+     "score": "GS 94 - 116 POR",
      "top": false
     },
     {
@@ -648,8 +648,8 @@
      "fair_odds": 2.31,
      "est_odds": 2.15,
      "confidence": 43,
-     "result": null,
-     "score": null,
+     "result": "neizgāja",
+     "score": "GS 94 - 116 POR",
      "top": false
     }
    ]
@@ -657,11 +657,11 @@
  ],
  "summary": {
   "picks": 33,
-  "settled": 21,
-  "hits": 7,
+  "settled": 33,
+  "hits": 14,
   "pushes": 0,
-  "expected_hits": 9.11,
-  "profit_units": -6.01
+  "expected_hits": 14.32,
+  "profit_units": -3.02
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -674,8 +674,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null
+   "result": "neizgāja",
+   "score": "DEN 120 - 107 UTAH"
   },
   {
    "game_id": "401909330",
@@ -704,19 +704,19 @@
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 2,
+  "settled": 3,
   "hits": 1,
   "pushes": 0,
-  "expected_hits": 0.46,
-  "profit_units": 2.01
+  "expected_hits": 0.7,
+  "profit_units": 1.01
  },
  "top_summary": {
   "picks": 11,
-  "settled": 7,
-  "hits": 4,
+  "settled": 11,
+  "hits": 8,
   "pushes": 0,
-  "expected_hits": 3.05,
-  "profit_units": 1.56
+  "expected_hits": 4.79,
+  "profit_units": 6.12
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -731,8 +731,8 @@
    "p_model": 0.4305,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
-   "score": null
+   "result": "izgāja",
+   "score": "NO 105 - 104 LAC"
   },
   {
    "game_id": "401909326",
@@ -765,11 +765,11 @@
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 2,
-  "hits": 1,
+  "settled": 3,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 1.07,
-  "profit_units": -0.26
+  "expected_hits": 1.6,
+  "profit_units": 0.48
  },
  "safe_all": [
   {
@@ -785,10 +785,10 @@
    "p_market": 0.534,
    "fair_odds": 1.87,
    "est_odds": 1.74,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "NO 105 - 104 LAC"
   },
   {
    "game_id": "401909326",
@@ -875,10 +875,10 @@
    "p_market": 0.5328,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "LAL 96 - 99 SA"
   },
   {
    "game_id": "401909336",
@@ -893,10 +893,10 @@
    "p_market": 0.5322,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "GS 94 - 116 POR"
   },
   {
    "game_id": "401909330",
@@ -965,18 +965,18 @@
    "p_market": 0.5318,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": null,
    "home_short": null,
-   "score": null
+   "score": "DEN 120 - 107 UTAH"
   }
  ],
  "safe_all_summary": {
   "picks": 11,
-  "settled": 7,
-  "hits": 5,
+  "settled": 11,
+  "hits": 8,
   "pushes": 0,
-  "expected_hits": 3.73,
-  "profit_units": 1.73
+  "expected_hits": 5.86,
+  "profit_units": 2.97
  }
 }
