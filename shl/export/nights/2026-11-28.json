@@ -18,7 +18,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "DIF 2 - 1 MIF",
    "picks": [
     {
      "category": "komandas vārti",
@@ -28,7 +28,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "izgāja",
+     "score": "DIF 2 - 1 MIF",
      "top": true
     },
     {
@@ -39,7 +40,8 @@
      "fair_odds": 2.5,
      "est_odds": 2.32,
      "confidence": 40,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DIF 2 - 1 MIF",
      "top": false
     },
     {
@@ -50,7 +52,8 @@
      "fair_odds": 2.67,
      "est_odds": 2.48,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "DIF 2 - 1 MIF",
      "top": false
     }
    ]
@@ -70,7 +73,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "OHK 0 - 3 BIF",
    "picks": [
     {
      "category": "komandas vārti",
@@ -80,7 +83,8 @@
      "fair_odds": 2.46,
      "est_odds": 2.29,
      "confidence": 41,
-     "result": null,
+     "result": "neizgāja",
+     "score": "OHK 0 - 3 BIF",
      "top": true
     },
     {
@@ -91,7 +95,8 @@
      "fair_odds": 2.64,
      "est_odds": 2.46,
      "confidence": 38,
-     "result": null,
+     "result": "izgāja",
+     "score": "OHK 0 - 3 BIF",
      "top": false
     },
     {
@@ -102,7 +107,8 @@
      "fair_odds": 2.75,
      "est_odds": 2.56,
      "confidence": 36,
-     "result": null,
+     "result": "izgāja",
+     "score": "OHK 0 - 3 BIF",
      "top": false
     }
    ]
@@ -122,7 +128,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "LHC 0 - 6 TIK",
    "picks": [
     {
      "category": "komandas vārti",
@@ -132,7 +138,8 @@
      "fair_odds": 2.33,
      "est_odds": 2.17,
      "confidence": 43,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LHC 0 - 6 TIK",
      "top": true
     },
     {
@@ -143,7 +150,8 @@
      "fair_odds": 2.39,
      "est_odds": 2.22,
      "confidence": 42,
-     "result": null,
+     "result": "izgāja",
+     "score": "LHC 0 - 6 TIK",
      "top": false
     },
     {
@@ -154,7 +162,8 @@
      "fair_odds": 2.69,
      "est_odds": 2.51,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "LHC 0 - 6 TIK",
      "top": false
     }
    ]
@@ -174,7 +183,7 @@
    "market_line": "—",
    "market_total": null,
    "injuries": [],
-   "score": null,
+   "score": "FBK 6 - 3 SAIK",
    "picks": [
     {
      "category": "uzvarētājs / handikaps",
@@ -184,7 +193,8 @@
      "fair_odds": 2.26,
      "est_odds": 2.1,
      "confidence": 44,
-     "result": null,
+     "result": "izgāja",
+     "score": "FBK 6 - 3 SAIK",
      "top": true
     },
     {
@@ -195,7 +205,8 @@
      "fair_odds": 2.69,
      "est_odds": 2.5,
      "confidence": 37,
-     "result": null,
+     "result": "neizgāja",
+     "score": "FBK 6 - 3 SAIK",
      "top": false
     },
     {
@@ -206,7 +217,8 @@
      "fair_odds": 2.93,
      "est_odds": 2.72,
      "confidence": 34,
-     "result": null,
+     "result": "izgāja",
+     "score": "FBK 6 - 3 SAIK",
      "top": false
     }
    ]
@@ -237,6 +249,7 @@
      "est_odds": 2.11,
      "confidence": 44,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -248,6 +261,7 @@
      "est_odds": 2.18,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -259,6 +273,7 @@
      "est_odds": 2.31,
      "confidence": 40,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -289,6 +304,7 @@
      "est_odds": 2.21,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -300,6 +316,7 @@
      "est_odds": 2.28,
      "confidence": 41,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -311,6 +328,7 @@
      "est_odds": 3.34,
      "confidence": 28,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -341,6 +359,7 @@
      "est_odds": 2.15,
      "confidence": 43,
      "result": null,
+     "score": null,
      "top": true
     },
     {
@@ -352,6 +371,7 @@
      "est_odds": 2.2,
      "confidence": 42,
      "result": null,
+     "score": null,
      "top": false
     },
     {
@@ -363,6 +383,7 @@
      "est_odds": 2.44,
      "confidence": 38,
      "result": null,
+     "score": null,
      "top": false
     }
    ]
@@ -370,11 +391,11 @@
  ],
  "summary": {
   "picks": 21,
-  "settled": 0,
-  "hits": 0,
+  "settled": 12,
+  "hits": 6,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 4.73,
+  "profit_units": 2.23
  },
  "crazy_min_odds": 4.0,
  "crazy": [
@@ -387,8 +408,8 @@
    "confidence": 23,
    "fair_odds": 4.31,
    "est_odds": 4.01,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "OHK 0 - 3 BIF",
    "away_short": "Örebro",
    "home_short": "Brynäs"
   },
@@ -415,27 +436,27 @@
    "confidence": 23,
    "fair_odds": 4.37,
    "est_odds": 4.07,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "DIF 2 - 1 MIF",
    "away_short": "Djurgården",
    "home_short": "Malmö"
   }
  ],
  "crazy_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 2,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 0.46,
+  "profit_units": 6.08
  },
  "top_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.71,
+  "profit_units": 0.27
  },
  "safe_min_odds": 1.7,
  "safe": [
@@ -450,8 +471,8 @@
    "p_model": 0.5448,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "DIF 2 - 1 MIF",
    "away_short": "Djurgården",
    "home_short": "Malmö"
   },
@@ -466,8 +487,8 @@
    "p_model": 0.5325,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
-   "score": null,
+   "result": "neizgāja",
+   "score": "FBK 6 - 3 SAIK",
    "away_short": "Färjestad",
    "home_short": "Skellefteå"
   },
@@ -482,19 +503,19 @@
    "p_model": 0.53,
    "fair_odds": 1.89,
    "est_odds": 1.75,
-   "result": null,
-   "score": null,
+   "result": "izgāja",
+   "score": "LHC 0 - 6 TIK",
    "away_short": "Linköping",
    "home_short": "Timrå"
   }
  ],
  "safe_summary": {
   "picks": 3,
-  "settled": 0,
-  "hits": 0,
+  "settled": 3,
+  "hits": 1,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 1.61,
+  "profit_units": -1.25
  },
  "safe_all": [
   {
@@ -510,10 +531,10 @@
    "p_market": null,
    "fair_odds": 1.84,
    "est_odds": 1.71,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Djurgården",
    "home_short": "Malmö",
-   "score": null
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "uauki1g3ey",
@@ -528,10 +549,10 @@
    "p_market": null,
    "fair_odds": 1.88,
    "est_odds": 1.75,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Färjestad",
    "home_short": "Skellefteå",
-   "score": null
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -546,10 +567,10 @@
    "p_market": null,
    "fair_odds": 1.89,
    "est_odds": 1.75,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Linköping",
    "home_short": "Timrå",
-   "score": null
+   "score": "LHC 0 - 6 TIK"
   },
   {
    "game_id": "k5h4n84mim",
@@ -564,10 +585,10 @@
    "p_market": null,
    "fair_odds": 1.89,
    "est_odds": 1.76,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Örebro",
    "home_short": "Brynäs",
-   "score": null
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "a6n8gk47ok",
@@ -626,10 +647,10 @@
  ],
  "safe_all_summary": {
   "picks": 7,
-  "settled": 0,
-  "hits": 0,
+  "settled": 4,
+  "hits": 2,
   "pushes": 0,
-  "expected_hits": 0,
-  "profit_units": 0
+  "expected_hits": 2.14,
+  "profit_units": -0.49
  }
 }

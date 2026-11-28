@@ -130,7 +130,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "izgāja",
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "vi56wm32hl",
@@ -145,7 +146,8 @@
    "fair_odds": 2.5,
    "est_odds": 2.32,
    "confidence": 40,
-   "result": null
+   "result": "neizgāja",
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "vi56wm32hl",
@@ -160,7 +162,8 @@
    "fair_odds": 2.67,
    "est_odds": 2.48,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "k5h4n84mim",
@@ -175,7 +178,8 @@
    "fair_odds": 2.46,
    "est_odds": 2.29,
    "confidence": 41,
-   "result": null
+   "result": "neizgāja",
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "k5h4n84mim",
@@ -190,7 +194,8 @@
    "fair_odds": 2.64,
    "est_odds": 2.46,
    "confidence": 38,
-   "result": null
+   "result": "izgāja",
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "k5h4n84mim",
@@ -205,7 +210,8 @@
    "fair_odds": 2.75,
    "est_odds": 2.56,
    "confidence": 36,
-   "result": null
+   "result": "izgāja",
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -220,7 +226,8 @@
    "fair_odds": 2.33,
    "est_odds": 2.17,
    "confidence": 43,
-   "result": null
+   "result": "neizgāja",
+   "score": "LHC 0 - 6 TIK"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -235,7 +242,8 @@
    "fair_odds": 2.39,
    "est_odds": 2.22,
    "confidence": 42,
-   "result": null
+   "result": "izgāja",
+   "score": "LHC 0 - 6 TIK"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -250,7 +258,8 @@
    "fair_odds": 2.69,
    "est_odds": 2.51,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "LHC 0 - 6 TIK"
   },
   {
    "game_id": "uauki1g3ey",
@@ -265,7 +274,8 @@
    "fair_odds": 2.26,
    "est_odds": 2.1,
    "confidence": 44,
-   "result": null
+   "result": "izgāja",
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "uauki1g3ey",
@@ -280,7 +290,8 @@
    "fair_odds": 2.69,
    "est_odds": 2.5,
    "confidence": 37,
-   "result": null
+   "result": "neizgāja",
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "uauki1g3ey",
@@ -295,7 +306,8 @@
    "fair_odds": 2.93,
    "est_odds": 2.72,
    "confidence": 34,
-   "result": null
+   "result": "izgāja",
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "zwx8yvhv4j",
@@ -445,7 +457,8 @@
    "fair_odds": 4.31,
    "est_odds": 4.01,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "a6n8gk47ok",
@@ -471,7 +484,8 @@
    "fair_odds": 4.37,
    "est_odds": 4.07,
    "confidence": 23,
-   "result": null
+   "result": "izgāja",
+   "score": "DIF 2 - 1 MIF"
   }
  ],
  "safe": [
@@ -489,7 +503,8 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": 54,
-   "result": null
+   "result": "neizgāja",
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "uauki1g3ey",
@@ -505,7 +520,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "neizgāja",
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -521,7 +537,8 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null
+   "result": "izgāja",
+   "score": "LHC 0 - 6 TIK"
   }
  ],
  "safe_all": [
@@ -539,9 +556,10 @@
    "est_odds": 1.71,
    "confidence": 54,
    "data_conf": 54,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Djurgården",
-   "home_short": "Malmö"
+   "home_short": "Malmö",
+   "score": "DIF 2 - 1 MIF"
   },
   {
    "game_id": "uauki1g3ey",
@@ -557,9 +575,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "neizgāja",
    "away_short": "Färjestad",
-   "home_short": "Skellefteå"
+   "home_short": "Skellefteå",
+   "score": "FBK 6 - 3 SAIK"
   },
   {
    "game_id": "r5b0s51nu8",
@@ -575,9 +594,10 @@
    "est_odds": 1.75,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Linköping",
-   "home_short": "Timrå"
+   "home_short": "Timrå",
+   "score": "LHC 0 - 6 TIK"
   },
   {
    "game_id": "k5h4n84mim",
@@ -593,9 +613,10 @@
    "est_odds": 1.76,
    "confidence": 53,
    "data_conf": 53,
-   "result": null,
+   "result": "izgāja",
    "away_short": "Örebro",
-   "home_short": "Brynäs"
+   "home_short": "Brynäs",
+   "score": "OHK 0 - 3 BIF"
   },
   {
    "game_id": "a6n8gk47ok",
