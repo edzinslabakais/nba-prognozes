@@ -1,6 +1,6 @@
 # 🏒 NHL prognozes
 
-_Atjaunināts 28.11.2026 17:41 (Rīgas laiks)_
+_Atjaunināts 28.11.2026 20:10 (Rīgas laiks)_
 
 ## Nakts uz 28.11. — 15 spēles, koef. ≥ 2.1 — izgāja 16/45
 
